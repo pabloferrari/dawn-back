@@ -1,0 +1,306 @@
+<!-- templates/budget-planner/expense-tracker.hbs -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    @page {
+      size: A4;
+      margin: 15mm;
+    }
+
+    body {
+      font-family: {
+          {
+          customization.fontFamily
+        }
+      }
+
+      ;
+      color: #333;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+
+      border-bottom: 3px solid {
+          {
+          customization.primaryColor
+        }
+      }
+
+      ;
+      padding-bottom: 12px;
+    }
+
+    .title {
+      font-size: 24px;
+
+      color: {
+          {
+          customization.primaryColor
+        }
+      }
+
+      ;
+      margin: 0;
+    }
+
+    .month-label {
+      font-size: 16px;
+      color: #666;
+      margin-top: 5px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 10px;
+    }
+
+    th {
+      background: {
+          {
+          customization.primaryColor
+        }
+      }
+
+      ;
+      color: white;
+      padding: 6px 4px;
+      text-align: left;
+      font-size: 11px;
+    }
+
+    td {
+      padding: 8px 4px;
+      border-bottom: 1px solid #e0e0e0;
+    }
+
+    .date-col {
+      width: 55px;
+    }
+
+    .category-col {
+      width: 90px;
+    }
+
+    .description-col {
+      width: auto;
+    }
+
+    .amount-col {
+      width: 70px;
+      text-align: right;
+    }
+
+    .notes-col {
+      width: 110px;
+      font-size: 9px;
+    }
+
+    tr:nth-child(even) {
+      background: #f9f9f9;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    <h1 class="title">Expense Tracker</h1>
+    <p class="month-label">{{currentMonth}} {{year}}</p>
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th class="date-col">Date</th>
+        <th class="category-col">Category</th>
+        <th class="description-col">Description</th>
+        <th class="amount-col">Amount</th>
+        <th class="notes-col">Notes</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- REDUCIDO A 25 FILAS (antes 30) -->
+      <tr>
+        <td class="date-col"></td>
+        <td class="category-col"></td>
+        <td class="description-col"></td>
+        <td class="amount-col">$</td>
+        <td class="notes-col"></td>
+      </tr>
+      <tr>
+        <td class="date-col"></td>
+        <td class="category-col"></td>
+        <td class="description-col"></td>
+        <td class="amount-col">$</td>
+        <td class="notes-col"></td>
+      </tr>
+      <tr>
+        <td class="date-col"></td>
+        <td class="category-col"></td>
+        <td class="description-col"></td>
+        <td class="amount-col">$</td>
+        <td class="notes-col"></td>
+      </tr>
+      <tr>
+        <td class="date-col"></td>
+        <td class="category-col"></td>
+        <td class="description-col"></td>
+        <td class="amount-col">$</td>
+        <td class="notes-col"></td>
+      </tr>
+      <tr>
+        <td class="date-col"></td>
+        <td class="category-col"></td>
+        <td class="description-col"></td>
+        <td class="amount-col">$</td>
+        <td class="notes-col"></td>
+      </tr>
+      <tr>
+        <td class="date-col"></td>
+        <td class="category-col"></td>
+        <td class="description-col"></td>
+        <td class="amount-col">$</td>
+        <td class="notes-col"></td>
+      </tr>
+      <tr>
+        <td class="date-col"></td>
+        <td class="category-col"></td>
+        <td class="description-col"></td>
+        <td class="amount-col">$</td>
+        <td class="notes-col"></td>
+      </tr>
+      <tr>
+        <td class="date-col"></td>
+        <td class="category-col"></td>
+        <td class="description-col"></td>
+        <td class="amount-col">$</td>
+        <td class="notes-col"></td>
+      </tr>
+      <tr>
+        <td class="date-col"></td>
+        <td class="category-col"></td>
+        <td class="description-col"></td>
+        <td class="amount-col">$</td>
+        <td class="notes-col"></td>
+      </tr>
+      <tr>
+        <td class="date-col"></td>
+        <td class="category-col"></td>
+        <td class="description-col"></td>
+        <td class="amount-col">$</td>
+        <td class="notes-col"></td>
+      </tr>
+      <tr>
+        <td class="date-col"></td>
+        <td class="category-col"></td>
+        <td class="description-col"></td>
+        <td class="amount-col">$</td>
+        <td class="notes-col"></td>
+      </tr>
+      <tr>
+        <td class="date-col"></td>
+        <td class="category-col"></td>
+        <td class="description-col"></td>
+        <td class="amount-col">$</td>
+        <td class="notes-col"></td>
+      </tr>
+      <tr>
+        <td class="date-col"></td>
+        <td class="category-col"></td>
+        <td class="description-col"></td>
+        <td class="amount-col">$</td>
+        <td class="notes-col"></td>
+      </tr>
+      <tr>
+        <td class="date-col"></td>
+        <td class="category-col"></td>
+        <td class="description-col"></td>
+        <td class="amount-col">$</td>
+        <td class="notes-col"></td>
+      </tr>
+      <tr>
+        <td class="date-col"></td>
+        <td class="category-col"></td>
+        <td class="description-col"></td>
+        <td class="amount-col">$</td>
+        <td class="notes-col"></td>
+      </tr>
+      <tr>
+        <td class="date-col"></td>
+        <td class="category-col"></td>
+        <td class="description-col"></td>
+        <td class="amount-col">$</td>
+        <td class="notes-col"></td>
+      </tr>
+      <tr>
+        <td class="date-col"></td>
+        <td class="category-col"></td>
+        <td class="description-col"></td>
+        <td class="amount-col">$</td>
+        <td class="notes-col"></td>
+      </tr>
+      <tr>
+        <td class="date-col"></td>
+        <td class="category-col"></td>
+        <td class="description-col"></td>
+        <td class="amount-col">$</td>
+        <td class="notes-col"></td>
+      </tr>
+      <tr>
+        <td class="date-col"></td>
+        <td class="category-col"></td>
+        <td class="description-col"></td>
+        <td class="amount-col">$</td>
+        <td class="notes-col"></td>
+      </tr>
+      <tr>
+        <td class="date-col"></td>
+        <td class="category-col"></td>
+        <td class="description-col"></td>
+        <td class="amount-col">$</td>
+        <td class="notes-col"></td>
+      </tr>
+      <tr>
+        <td class="date-col"></td>
+        <td class="category-col"></td>
+        <td class="description-col"></td>
+        <td class="amount-col">$</td>
+        <td class="notes-col"></td>
+      </tr>
+      <tr>
+        <td class="date-col"></td>
+        <td class="category-col"></td>
+        <td class="description-col"></td>
+        <td class="amount-col">$</td>
+        <td class="notes-col"></td>
+      </tr>
+      <tr>
+        <td class="date-col"></td>
+        <td class="category-col"></td>
+        <td class="description-col"></td>
+        <td class="amount-col">$</td>
+        <td class="notes-col"></td>
+      </tr>
+      <tr>
+        <td class="date-col"></td>
+        <td class="category-col"></td>
+        <td class="description-col"></td>
+        <td class="amount-col">$</td>
+        <td class="notes-col"></td>
+      </tr>
+      <tr>
+        <td class="date-col"></td>
+        <td class="category-col"></td>
+        <td class="description-col"></td>
+        <td class="amount-col">$</td>
+        <td class="notes-col"></td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+
+</html>

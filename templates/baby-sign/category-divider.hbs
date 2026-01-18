@@ -1,0 +1,65 @@
+<!-- templates/baby-sign/category-divider.hbs -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    @page {
+      size: A4;
+      margin: 0;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+
+      font-family: {
+          {
+          fontFamily
+        }
+      }
+
+      ;
+
+      background: {
+          {
+          categoryColor
+        }
+      }
+
+      ;
+      height: 297mm;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+    }
+
+    .category-name {
+      font-size: 64px;
+      font-weight: bold;
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .icon {
+      font-size: 120px;
+      margin-bottom: 30px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="icon">
+    {{#if (eq categoryName "Food & Drink")}}🍼{{/if}}
+    {{#if (eq categoryName "Daily Routine")}}🛁{{/if}}
+    {{#if (eq categoryName "Feelings & Emotions")}}😊{{/if}}
+    {{#if (eq categoryName "Animals")}}🐶{{/if}}
+    {{#if (eq categoryName "Family")}}👨‍👩‍👧{{/if}}
+    {{#if (eq categoryName "Actions & Activities")}}🎵{{/if}}
+  </div>
+  <h1 class="category-name">{{categoryName}}</h1>
+</body>
+
+</html>

@@ -1,0 +1,321 @@
+<!-- templates/budget-planner/debt-payoff.hbs -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    @page {
+      size: A4;
+      margin: 15mm;
+    }
+
+    body {
+      font-family: {{customization.fontFamily}};
+      color: #333;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 30px;
+      border-bottom: 3px solid {{customization.primaryColor}};
+      padding-bottom: 15px;
+    }
+
+    .title {
+      font-size: 32px;
+      color: {{customization.primaryColor}};
+      margin: 0;
+    }
+
+    .subtitle {
+      font-size: 16px;
+      color: #666;
+      margin-top: 5px;
+    }
+
+    .debt-card {
+      border: 2px solid {{customization.primaryColor}};
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 20px;
+      background: white;
+    }
+
+    .debt-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 15px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #e0e0e0;
+    }
+
+    .debt-name {
+      font-size: 18px;
+      font-weight: bold;
+      color: {{customization.primaryColor}};
+    }
+
+    .debt-total {
+      font-size: 22px;
+      font-weight: bold;
+      color: #e74c3c;
+    }
+
+    .info-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+      margin-bottom: 15px;
+    }
+
+    .info-item {
+      padding: 10px;
+      background: #f5f5f5;
+      border-radius: 5px;
+      text-align: center;
+    }
+
+    .info-label {
+      font-size: 11px;
+      color: #666;
+      margin-bottom: 5px;
+    }
+
+    .info-value {
+      font-size: 14px;
+      font-weight: bold;
+      color: {{customization.primaryColor}};
+    }
+
+    .progress-section {
+      margin-top: 15px;
+    }
+
+    .progress-bar-container {
+      background: #e0e0e0;
+      height: 20px;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .progress-segments {
+      display: flex;
+      height: 100%;
+    }
+
+    .segment {
+      flex: 1;
+      border-right: 2px solid white;
+      background: #f0f0f0;
+    }
+
+    .segment:last-child {
+      border-right: none;
+    }
+
+    .progress-labels {
+      display: flex;
+      justify-content: space-between;
+      font-size: 10px;
+      color: #666;
+      margin-top: 5px;
+    }
+
+    .payment-tracker {
+      margin-top: 20px;
+    }
+
+    .tracker-title {
+      font-size: 14px;
+      font-weight: bold;
+      color: {{customization.primaryColor}};
+      margin-bottom: 10px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 11px;
+    }
+
+    th {
+      background: {{customization.primaryColor}};
+      color: white;
+      padding: 8px 5px;
+      text-align: left;
+    }
+
+    td {
+      padding: 8px 5px;
+      border-bottom: 1px solid #e0e0e0;
+    }
+
+    tr:nth-child(even) {
+      background: #f9f9f9;
+    }
+
+    .summary-box {
+      margin-top: 30px;
+      padding: 20px;
+      background: linear-gradient(135deg, {{customization.primaryColor}}10, {{customization.secondaryColor}}10);
+      border-radius: 10px;
+      border: 2px solid {{customization.primaryColor}};
+    }
+
+    .summary-title {
+      font-size: 18px;
+      font-weight: bold;
+      color: {{customization.primaryColor}};
+      margin-bottom: 15px;
+    }
+
+    .summary-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+    }
+
+    .summary-item {
+      text-align: center;
+    }
+
+    .summary-label {
+      font-size: 12px;
+      color: #666;
+    }
+
+    .summary-value {
+      font-size: 20px;
+      font-weight: bold;
+      color: {{customization.primaryColor}};
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    <h1 class="title">Debt Payoff Tracker</h1>
+    <p class="subtitle">{{year}} - Track your journey to becoming debt-free</p>
+  </div>
+
+  <div class="debt-card">
+    <div class="debt-header">
+      <div class="debt-name">Debt #1: ________________</div>
+      <div class="debt-total">$_______</div>
+    </div>
+
+    <div class="info-grid">
+      <div class="info-item">
+        <div class="info-label">Interest Rate</div>
+        <div class="info-value">____%</div>
+      </div>
+      <div class="info-item">
+        <div class="info-label">Min. Payment</div>
+        <div class="info-value">$_______</div>
+      </div>
+      <div class="info-item">
+        <div class="info-label">Target Payoff</div>
+        <div class="info-value">___/___/____</div>
+      </div>
+      <div class="info-item">
+        <div class="info-label">Remaining</div>
+        <div class="info-value">$_______</div>
+      </div>
+    </div>
+
+    <div class="progress-section">
+      <div class="progress-bar-container">
+        <div class="progress-segments">
+          <div class="segment"></div>
+          <div class="segment"></div>
+          <div class="segment"></div>
+          <div class="segment"></div>
+          <div class="segment"></div>
+          <div class="segment"></div>
+          <div class="segment"></div>
+          <div class="segment"></div>
+          <div class="segment"></div>
+          <div class="segment"></div>
+        </div>
+      </div>
+      <div class="progress-labels">
+        <span>0%</span>
+        <span>25%</span>
+        <span>50%</span>
+        <span>75%</span>
+        <span>100%</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="debt-card">
+    <div class="debt-header">
+      <div class="debt-name">Debt #2: ________________</div>
+      <div class="debt-total">$_______</div>
+    </div>
+
+    <div class="info-grid">
+      <div class="info-item">
+        <div class="info-label">Interest Rate</div>
+        <div class="info-value">____%</div>
+      </div>
+      <div class="info-item">
+        <div class="info-label">Min. Payment</div>
+        <div class="info-value">$_______</div>
+      </div>
+      <div class="info-item">
+        <div class="info-label">Target Payoff</div>
+        <div class="info-value">___/___/____</div>
+      </div>
+      <div class="info-item">
+        <div class="info-label">Remaining</div>
+        <div class="info-value">$_______</div>
+      </div>
+    </div>
+
+    <div class="progress-section">
+      <div class="progress-bar-container">
+        <div class="progress-segments">
+          <div class="segment"></div>
+          <div class="segment"></div>
+          <div class="segment"></div>
+          <div class="segment"></div>
+          <div class="segment"></div>
+          <div class="segment"></div>
+          <div class="segment"></div>
+          <div class="segment"></div>
+          <div class="segment"></div>
+          <div class="segment"></div>
+        </div>
+      </div>
+      <div class="progress-labels">
+        <span>0%</span>
+        <span>25%</span>
+        <span>50%</span>
+        <span>75%</span>
+        <span>100%</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="summary-box">
+    <div class="summary-title">Total Debt Summary</div>
+    <div class="summary-grid">
+      <div class="summary-item">
+        <div class="summary-label">Total Debt</div>
+        <div class="summary-value">$_______</div>
+      </div>
+      <div class="summary-item">
+        <div class="summary-label">Total Paid</div>
+        <div class="summary-value">$_______</div>
+      </div>
+      <div class="summary-item">
+        <div class="summary-label">Remaining</div>
+        <div class="summary-value">$_______</div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

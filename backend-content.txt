@@ -1,0 +1,22 @@
+Orden Recomendado para Copiar Contenido
+
+src/common/interfaces/product-config.interface.ts
+src/modules/pdf-generator/pdf-generator.service.ts
+src/modules/pdf-generator/pdf-generator.module.ts
+src/modules/templates/template.service.ts
+src/modules/templates/template.module.ts
+src/modules/auth/auth.service.ts
+src/modules/auth/auth.controller.ts
+src/modules/auth/auth.module.ts
+src/modules/auth/jwt-auth.guard.ts
+src/modules/products/budget-planner/interfaces/budget-planner-config.interface.ts
+src/modules/products/budget-planner/budget-planner.service.ts
+src/modules/products/budget-planner/budget-planner.controller.ts
+src/modules/products/budget-planner/budget-planner.module.ts
+src/modules/products/baby-sign/interfaces/baby-sign-config.interface.ts
+src/modules/products/baby-sign/baby-sign.service.ts
+src/modules/products/baby-sign/baby-sign.controller.ts
+src/modules/products/baby-sign/baby-sign.module.ts
+src/app.module.ts
+src/main.ts
+Todos los .hbs en templates/

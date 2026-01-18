@@ -1,0 +1,206 @@
+<!-- templates/budget-planner/how-to-use.hbs -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    @page {
+      size: A4;
+      margin: 20mm;
+    }
+
+    body {
+      font-family: {{customization.fontFamily}};
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 30px;
+      padding-bottom: 20px;
+      border-bottom: 4px solid {{customization.primaryColor}};
+    }
+
+    .title {
+      font-size: 32px;
+      color: {{customization.primaryColor}};
+      margin: 0 0 10px 0;
+    }
+
+    .subtitle {
+      font-size: 16px;
+      color: #666;
+      font-style: italic;
+    }
+
+    .section {
+      margin: 25px 0;
+    }
+
+    .section-number {
+      display: inline-block;
+      width: 35px;
+      height: 35px;
+      background: {{customization.primaryColor}};
+      color: white;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 35px;
+      font-weight: bold;
+      font-size: 18px;
+      margin-right: 12px;
+      float: left;
+    }
+
+    .section-title {
+      font-size: 20px;
+      font-weight: bold;
+      color: {{customization.primaryColor}};
+      margin-bottom: 10px;
+      overflow: hidden;
+    }
+
+    .section-content {
+      margin-left: 47px;
+      font-size: 14px;
+      color: #555;
+    }
+
+    .section-content ul {
+      margin: 8px 0;
+      padding-left: 20px;
+    }
+
+    .section-content li {
+      margin: 5px 0;
+    }
+
+    .tip-box {
+      background: linear-gradient(135deg, #FFF9E6 0%, #FFE5E5 100%);
+      border-left: 4px solid {{customization.primaryColor}};
+      padding: 15px 20px;
+      margin: 25px 0;
+      border-radius: 5px;
+    }
+
+    .tip-title {
+      font-weight: bold;
+      font-size: 16px;
+      color: {{customization.primaryColor}};
+      margin-bottom: 8px;
+    }
+
+    .tip-content {
+      font-size: 14px;
+      color: #555;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 30px;
+      padding-top: 15px;
+      border-top: 2px solid #ddd;
+      font-size: 13px;
+      color: #888;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    <h1 class="title">How to Use This Planner</h1>
+    <p class="subtitle">Your Complete Guide to Financial Success</p>
+  </div>
+
+  <div class="section">
+    <div class="section-number">1</div>
+    <div class="section-title">Monthly Budget Pages</div>
+    <div class="section-content">
+      <strong>Purpose:</strong> Plan and track your monthly income and expenses
+      <ul>
+        <li><strong>Planned Column:</strong> Write your expected amounts at the beginning of the month</li>
+        <li><strong>Actual Column:</strong> Record what you really earned/spent throughout the month</li>
+        <li><strong>Income Section:</strong> Include all sources (salary, freelance, investments, etc.)</li>
+        <li><strong>Expenses Section:</strong> Fill in your budget for each category</li>
+        <li><strong>Summary Box:</strong> Compare planned vs actual to see where you stand</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-number">2</div>
+    <div class="section-title">Expense Tracker</div>
+    <div class="section-content">
+      <strong>Purpose:</strong> Record every transaction to stay aware of your spending
+      <ul>
+        <li><strong>Date:</strong> When you made the purchase</li>
+        <li><strong>Category:</strong> Which budget category (Housing, Food, etc.)</li>
+        <li><strong>Description:</strong> What you bought (e.g., "Grocery shopping at Target")</li>
+        <li><strong>Amount:</strong> How much you spent</li>
+        <li><strong>Notes:</strong> Any additional details or reminders</li>
+      </ul>
+      <strong>Tip:</strong> Track expenses daily or weekly to avoid forgetting purchases
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-number">3</div>
+    <div class="section-title">Savings Goals</div>
+    <div class="section-content">
+      <strong>Purpose:</strong> Visualize and track progress toward your financial goals
+      <ul>
+        <li><strong>Goal Name & Amount:</strong> Already filled in with your targets</li>
+        <li><strong>Progress Bar:</strong> Shade one segment for every 10% you save</li>
+        <li><strong>Target Date:</strong> Write your deadline</li>
+        <li><strong>Monthly Savings:</strong> Calculate how much to save each month</li>
+        <li><strong>Current Amount:</strong> Update regularly to track progress</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-number">4</div>
+    <div class="section-title">Debt Payoff Tracker</div>
+    <div class="section-content">
+      <strong>Purpose:</strong> Stay motivated as you eliminate debt
+      <ul>
+        <li>Fill in debt names and amounts</li>
+        <li>Record interest rates and minimum payments</li>
+        <li>Shade progress bars as you pay down debt</li>
+        <li>Celebrate milestones at 25%, 50%, 75%, and 100%!</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-number">5</div>
+    <div class="section-title">Year at a Glance</div>
+    <div class="section-content">
+      <strong>Purpose:</strong> See your complete financial picture for {{year}}
+      <ul>
+        <li>Fill in at the end of each month</li>
+        <li>Track trends over time</li>
+        <li>Identify your best and worst months financially</li>
+        <li>Use insights to improve your budget planning</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="tip-box">
+    <div class="tip-title">💡 Pro Tips for Success</div>
+    <div class="tip-content">
+      • Review your budget weekly to stay on track<br>
+      • Use different colored pens to make tracking more visual<br>
+      • Don't beat yourself up if you overspend - adjust and move forward<br>
+      • Celebrate small wins along the way<br>
+      • Keep this planner where you'll see it daily
+    </div>
+  </div>
+
+  <div class="footer">
+    You've got this! Small steps lead to big financial wins. 🎯
+  </div>
+</body>
+
+</html>

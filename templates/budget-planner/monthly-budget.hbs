@@ -1,0 +1,208 @@
+<!-- templates/budget-planner/monthly-budget.hbs -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    @page {
+      size: A4;
+      margin: 15mm;
+    }
+
+    body {
+      font-family: {
+          {
+          customization.fontFamily
+        }
+      }
+
+      ;
+      color: #333;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+
+      border-bottom: 3px solid {
+          {
+          customization.primaryColor
+        }
+      }
+
+      ;
+      padding-bottom: 15px;
+    }
+
+    .month {
+      font-size: 28px;
+
+      color: {
+          {
+          customization.primaryColor
+        }
+      }
+
+      ;
+      margin: 0;
+    }
+
+    .section {
+      margin: 20px 0;
+    }
+
+    .section-title {
+      background: {
+          {
+          customization.primaryColor
+        }
+      }
+
+      ;
+      color: white;
+      padding: 6px 12px;
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 11px;
+    }
+
+    th {
+      background: #f5f5f5;
+      padding: 8px;
+      text-align: left;
+
+      border-bottom: 2px solid {
+          {
+          customization.primaryColor
+        }
+      }
+
+      ;
+      font-size: 12px;
+    }
+
+    td {
+      padding: 8px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .amount-col {
+      width: 100px;
+      text-align: right;
+    }
+
+    .total-row {
+      font-weight: bold;
+      background: #f9f9f9;
+    }
+
+    .summary-box {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 20px;
+      padding: 15px;
+      background: #f0f0f0;
+      border-radius: 8px;
+    }
+
+    .summary-item {
+      text-align: center;
+    }
+
+    .summary-label {
+      font-size: 12px;
+      color: #666;
+    }
+
+    .summary-value {
+      font-size: 20px;
+      font-weight: bold;
+
+      color: {
+          {
+          customization.primaryColor
+        }
+      }
+
+      ;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    <h1 class="month">{{currentMonth}} {{year}}</h1>
+  </div>
+
+  <!-- Income Section -->
+  <div class="section">
+    <div class="section-title">INCOME</div>
+    <table>
+      <tr>
+        <th>Source</th>
+        <th class="amount-col">Planned</th>
+        <th class="amount-col">Actual</th>
+      </tr>
+      {{#each incomeRows}}
+      <tr>
+        <td>{{this.label}}</td>
+        <td class="amount-col">$</td>
+        <td class="amount-col">$</td>
+      </tr>
+      {{/each}}
+      <tr class="total-row">
+        <td>TOTAL INCOME</td>
+        <td class="amount-col">$</td>
+        <td class="amount-col">$</td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- Expenses Section -->
+  <div class="section">
+    <div class="section-title">EXPENSES</div>
+    <table>
+      <tr>
+        <th>Category</th>
+        <th class="amount-col">Planned</th>
+        <th class="amount-col">Actual</th>
+      </tr>
+      {{#each expenseCategories}}
+      <tr>
+        <td>{{this.label}}</td>
+        <td class="amount-col">$</td>
+        <td class="amount-col">$</td>
+      </tr>
+      {{/each}}
+      <tr class="total-row">
+        <td>TOTAL EXPENSES</td>
+        <td class="amount-col">$</td>
+        <td class="amount-col">$</td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- Summary - AHORA EN LA MISMA PÁGINA -->
+  <div class="summary-box">
+    <div class="summary-item">
+      <div class="summary-label">Total Income</div>
+      <div class="summary-value">$_____</div>
+    </div>
+    <div class="summary-item">
+      <div class="summary-label">Total Expenses</div>
+      <div class="summary-value">$_____</div>
+    </div>
+    <div class="summary-item">
+      <div class="summary-label">Balance</div>
+      <div class="summary-value">$_____</div>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+<!-- templates/budget-planner/cover.hbs -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    @page {
+      size: A4;
+      margin: 0;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: {{customization.fontFamily}};
+      background: linear-gradient(135deg, {{customization.primaryColor}} 0%, {{customization.secondaryColor}} 100%);
+      height: 297mm;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+    }
+
+    .year {
+      font-size: 120px;
+      font-weight: bold;
+      margin: 0;
+    }
+
+    .title {
+      font-size: 48px;
+      margin: 20px 0;
+      text-align: center;
+    }
+
+    .subtitle {
+      font-size: 24px;
+      opacity: 0.9;
+    }
+
+    .name {
+      font-size: 28px;
+      margin-top: 40px;
+      font-style: italic;
+    }
+  </style>
+</head>
+
+<body>
+  <h1 class="year">{{year}}</h1>
+  <h2 class="title">{{coverTitle}}</h2>
+  <p class="subtitle">Take Control of Your Finances</p>
+  {{#if userName}}
+  <p class="name">{{userName}}</p>
+  {{/if}}
+</body>
+
+</html>

@@ -1,0 +1,144 @@
+<!-- templates/baby-sign/practice-log.hbs -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    @page {
+      size: A4;
+      margin: 15mm;
+    }
+
+    body {
+      font-family: {
+          {
+          fontFamily
+        }
+      }
+
+      ;
+      color: #333;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 25px;
+      padding-bottom: 15px;
+
+      border-bottom: 3px solid {
+          {
+          primaryColor
+        }
+      }
+
+      ;
+    }
+
+    .title {
+      font-size: 32px;
+
+      color: {
+          {
+          primaryColor
+        }
+      }
+
+      ;
+      margin: 0;
+    }
+
+    .subtitle {
+      font-size: 16px;
+      color: #666;
+      margin-top: 8px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    th {
+      background: {
+          {
+          primaryColor
+        }
+      }
+
+      ;
+      color: white;
+      padding: 12px 8px;
+      text-align: left;
+      font-size: 14px;
+    }
+
+    td {
+      padding: 12px 8px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .sign-col {
+      width: 25%;
+    }
+
+    .date-col {
+      width: 20%;
+    }
+
+    .attempt-col {
+      width: 15%;
+      text-align: center;
+    }
+
+    .notes-col {
+      width: 40%;
+    }
+
+    tr:nth-child(even) {
+      background: #f9f9f9;
+    }
+
+    .checkbox {
+      width: 18px;
+      height: 18px;
+      border: 2px solid #999;
+      display: inline-block;
+      margin: 0 3px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    <h1 class="title">Practice Log</h1>
+    <p class="subtitle">Track your baby's signing journey</p>
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th class="sign-col">Sign</th>
+        <th class="date-col">First Used</th>
+        <th class="attempt-col">Progress</th>
+        <th class="notes-col">Notes</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#times 25}}
+      <tr>
+        <td class="sign-col"></td>
+        <td class="date-col"></td>
+        <td class="attempt-col">
+          <span class="checkbox"></span>
+          <span class="checkbox"></span>
+          <span class="checkbox"></span>
+        </td>
+        <td class="notes-col"></td>
+      </tr>
+      {{/times}}
+    </tbody>
+  </table>
+</body>
+
+</html>

@@ -1,0 +1,104 @@
+<!-- templates/baby-sign/category-index.hbs -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    @page {
+      size: A4;
+      margin: 20mm;
+    }
+
+    body {
+      font-family: {
+          {
+          fontFamily
+        }
+      }
+
+      ;
+      color: #333;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .title {
+      font-size: 36px;
+
+      color: {
+          {
+          primaryColor
+        }
+      }
+
+      ;
+      margin: 0;
+    }
+
+    .subtitle {
+      font-size: 18px;
+      color: #666;
+      margin-top: 10px;
+    }
+
+    .categories {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .category-card {
+      padding: 25px;
+      border-radius: 15px;
+      text-align: center;
+      border: 3px solid;
+      background: white;
+    }
+
+    .category-icon {
+      font-size: 50px;
+      margin-bottom: 15px;
+    }
+
+    .category-name {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+
+    .category-count {
+      font-size: 16px;
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    <h1 class="title">Sign Categories</h1>
+    <p class="subtitle">{{categories.length}} categories • {{signs.length}} total signs</p>
+  </div>
+
+  <div class="categories">
+    {{#each categories}}
+    <div class="category-card" style="border-color: {{this.color}};">
+      <div class="category-icon">
+        {{#if (eq this.name "Food & Drink")}}🍼{{/if}}
+        {{#if (eq this.name "Daily Routine")}}🛁{{/if}}
+        {{#if (eq this.name "Feelings & Emotions")}}😊{{/if}}
+        {{#if (eq this.name "Animals")}}🐶{{/if}}
+        {{#if (eq this.name "Family")}}👨‍👩‍👧{{/if}}
+        {{#if (eq this.name "Actions & Activities")}}🎵{{/if}}
+      </div>
+      <div class="category-name" style="color: {{this.color}};">{{this.name}}</div>
+      <div class="category-count">{{this.count}} signs</div>
+    </div>
+    {{/each}}
+  </div>
+</body>
+
+</html>

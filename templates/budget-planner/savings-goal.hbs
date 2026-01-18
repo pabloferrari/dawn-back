@@ -1,0 +1,165 @@
+<!-- templates/budget-planner/savings-goal.hbs -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    @page {
+      size: A4;
+      margin: 15mm;
+    }
+
+    body {
+      font-family: {{customization.fontFamily}};
+      color: #333;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 30px;
+      border-bottom: 3px solid {{customization.primaryColor}};
+      padding-bottom: 15px;
+    }
+
+    .title {
+      font-size: 32px;
+      color: {{customization.primaryColor}};
+      margin: 0;
+    }
+
+    .goal-card {
+      border: 2px solid {{customization.primaryColor}};
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 25px;
+      background: white;
+    }
+
+    .goal-header {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 15px;
+    }
+
+    .goal-name {
+      font-size: 20px;
+      font-weight: bold;
+      color: {{customization.primaryColor}};
+    }
+
+    .goal-amount {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .progress-bar-container {
+      background: #e0e0e0;
+      height: 30px;
+      border-radius: 15px;
+      margin: 15px 0;
+      position: relative;
+    }
+
+    .progress-segments {
+      display: flex;
+      height: 100%;
+    }
+
+    .segment {
+      flex: 1;
+      border-right: 2px solid white;
+      background: #f0f0f0;
+    }
+
+    .segment:last-child {
+      border-right: none;
+      border-radius: 0 15px 15px 0;
+    }
+
+    .segment:first-child {
+      border-radius: 15px 0 0 15px;
+    }
+
+    .milestone-label {
+      font-size: 11px;
+      color: #666;
+      margin-top: 5px;
+    }
+
+    .info-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+      margin-top: 15px;
+    }
+
+    .info-item {
+      padding: 10px;
+      background: #f5f5f5;
+      border-radius: 5px;
+    }
+
+    .info-label {
+      font-size: 12px;
+      color: #666;
+    }
+
+    .info-value {
+      font-size: 18px;
+      font-weight: bold;
+      color: {{customization.primaryColor}};
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    <h1 class="title">Savings Goals {{year}}</h1>
+  </div>
+
+  {{#each goals}}
+  <div class="goal-card">
+    <div class="goal-header">
+      <div class="goal-name">{{this.name}}</div>
+      <div class="goal-amount">${{this.targetAmount}}</div>
+    </div>
+
+    <div class="progress-bar-container">
+      <div class="progress-segments">
+        <div class="segment"></div>
+        <div class="segment"></div>
+        <div class="segment"></div>
+        <div class="segment"></div>
+        <div class="segment"></div>
+        <div class="segment"></div>
+        <div class="segment"></div>
+        <div class="segment"></div>
+        <div class="segment"></div>
+        <div class="segment"></div>
+      </div>
+    </div>
+    <div class="milestone-label">Shade each segment as you reach 10% milestones</div>
+
+    <div class="info-grid">
+      <div class="info-item">
+        <div class="info-label">Target Date</div>
+        <div class="info-value">___/___/{{../year}}</div>
+      </div>
+      <div class="info-item">
+        <div class="info-label">Monthly Savings Needed</div>
+        <div class="info-value">$_______</div>
+      </div>
+      <div class="info-item">
+        <div class="info-label">Current Amount</div>
+        <div class="info-value">$_______</div>
+      </div>
+      <div class="info-item">
+        <div class="info-label">Remaining</div>
+        <div class="info-value">$_______</div>
+      </div>
+    </div>
+  </div>
+  {{/each}}
+</body>
+
+</html>

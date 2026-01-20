@@ -1,0 +1,336 @@
+<!-- templates/budget-planner/financial-goals.hbs -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    @page {
+      size: A4;
+      margin: 12mm;
+    }
+
+    body {
+      font-family: {{customization.fontFamily}};
+      color: #333;
+      line-height: 1.3;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 10px;
+      border-bottom: 3px solid {{customization.primaryColor}};
+      padding-bottom: 8px;
+    }
+
+    .title {
+      font-size: 24px;
+      color: {{customization.primaryColor}};
+      margin-bottom: 3px;
+    }
+
+    .subtitle {
+      font-size: 12px;
+      color: #666;
+    }
+
+    .intro {
+      text-align: center;
+      font-size: 12px;
+      color: #555;
+      margin-bottom: 12px;
+      font-style: italic;
+    }
+
+    .goals-container {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .goal-card {
+      border: 2px solid {{customization.primaryColor}};
+      border-radius: 12px;
+      padding: 14px 18px;
+      background: white;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    .goal-left {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .goal-right {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .goal-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+
+    .goal-number {
+      width: 32px;
+      height: 32px;
+      background: {{customization.primaryColor}};
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 16px;
+      flex-shrink: 0;
+    }
+
+    .goal-name-input {
+      flex: 1;
+      border-bottom: 2px dotted #ccc;
+      font-size: 14px;
+      font-weight: bold;
+      color: {{customization.primaryColor}};
+      min-height: 22px;
+    }
+
+    .goal-row {
+      margin-bottom: 8px;
+    }
+
+    .goal-label {
+      font-size: 10px;
+      color: #888;
+      margin-bottom: 3px;
+    }
+
+    .goal-input {
+      border-bottom: 1px dotted #ccc;
+      min-height: 18px;
+      font-size: 12px;
+    }
+
+    .goal-row-inline {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    .why-section {
+      flex: 1;
+      background: #f8f9fa;
+      border-radius: 8px;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .why-label {
+      font-size: 11px;
+      color: {{customization.primaryColor}};
+      font-weight: bold;
+      margin-bottom: 6px;
+    }
+
+    .why-input {
+      flex: 1;
+      min-height: 45px;
+      border: 1px solid #e0e0e0;
+      border-radius: 6px;
+      background: white;
+      padding: 6px;
+      font-size: 11px;
+    }
+
+    .action-box {
+      background: linear-gradient(135deg, {{customization.secondaryColor}}15, {{customization.primaryColor}}15);
+      border-radius: 8px;
+      padding: 10px;
+      margin-top: auto;
+    }
+
+    .action-label {
+      font-size: 10px;
+      color: #666;
+      margin-bottom: 5px;
+    }
+
+    .action-input {
+      border-bottom: 1px dotted {{customization.primaryColor}};
+      min-height: 18px;
+      font-size: 11px;
+    }
+
+    .tips-box {
+      margin-top: 12px;
+      padding: 14px 18px;
+      background: #fff8e1;
+      border-radius: 10px;
+      border-left: 4px solid #ffc107;
+    }
+
+    .tips-title {
+      font-size: 13px;
+      font-weight: bold;
+      color: #f57c00;
+      margin-bottom: 10px;
+    }
+
+    .tips-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 10px;
+    }
+
+    .tip-item {
+      background: white;
+      padding: 10px 8px;
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    .tip-name {
+      font-size: 11px;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 4px;
+    }
+
+    .tip-desc {
+      font-size: 9px;
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    <h1 class="title">Your 3 Financial Goals for {{year}}</h1>
+    <p class="subtitle">Dream big, but be specific</p>
+  </div>
+
+  <p class="intro">"A goal without a plan is just a wish." — Make yours real.</p>
+
+  <div class="goals-container">
+    <!-- Goal 1 -->
+    <div class="goal-card">
+      <div class="goal-left">
+        <div class="goal-header">
+          <div class="goal-number">1</div>
+          <div class="goal-name-input"></div>
+        </div>
+        <div class="goal-row-inline">
+          <div class="goal-row">
+            <div class="goal-label">Target amount</div>
+            <div class="goal-input">$ ___________</div>
+          </div>
+          <div class="goal-row">
+            <div class="goal-label">Deadline</div>
+            <div class="goal-input">____/____/{{year}}</div>
+          </div>
+        </div>
+        <div class="action-box">
+          <div class="action-label">One step I'll take THIS WEEK:</div>
+          <div class="action-input"></div>
+        </div>
+      </div>
+      <div class="goal-right">
+        <div class="why-section">
+          <div class="why-label">Why is this important to me?</div>
+          <div class="why-input"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Goal 2 -->
+    <div class="goal-card">
+      <div class="goal-left">
+        <div class="goal-header">
+          <div class="goal-number">2</div>
+          <div class="goal-name-input"></div>
+        </div>
+        <div class="goal-row-inline">
+          <div class="goal-row">
+            <div class="goal-label">Target amount</div>
+            <div class="goal-input">$ ___________</div>
+          </div>
+          <div class="goal-row">
+            <div class="goal-label">Deadline</div>
+            <div class="goal-input">____/____/{{year}}</div>
+          </div>
+        </div>
+        <div class="action-box">
+          <div class="action-label">One step I'll take THIS WEEK:</div>
+          <div class="action-input"></div>
+        </div>
+      </div>
+      <div class="goal-right">
+        <div class="why-section">
+          <div class="why-label">Why is this important to me?</div>
+          <div class="why-input"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Goal 3 -->
+    <div class="goal-card">
+      <div class="goal-left">
+        <div class="goal-header">
+          <div class="goal-number">3</div>
+          <div class="goal-name-input"></div>
+        </div>
+        <div class="goal-row-inline">
+          <div class="goal-row">
+            <div class="goal-label">Target amount</div>
+            <div class="goal-input">$ ___________</div>
+          </div>
+          <div class="goal-row">
+            <div class="goal-label">Deadline</div>
+            <div class="goal-input">____/____/{{year}}</div>
+          </div>
+        </div>
+        <div class="action-box">
+          <div class="action-label">One step I'll take THIS WEEK:</div>
+          <div class="action-input"></div>
+        </div>
+      </div>
+      <div class="goal-right">
+        <div class="why-section">
+          <div class="why-label">Why is this important to me?</div>
+          <div class="why-input"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="tips-box">
+    <div class="tips-title">Goal Ideas (if you need inspiration)</div>
+    <div class="tips-grid">
+      <div class="tip-item">
+        <div class="tip-name">Emergency Fund</div>
+        <div class="tip-desc">3-6 months of expenses</div>
+      </div>
+      <div class="tip-item">
+        <div class="tip-name">Pay Off Debt</div>
+        <div class="tip-desc">Stop paying interest</div>
+      </div>
+      <div class="tip-item">
+        <div class="tip-name">Vacation</div>
+        <div class="tip-desc">Travel debt-free</div>
+      </div>
+      <div class="tip-item">
+        <div class="tip-name">Down Payment</div>
+        <div class="tip-desc">Car or home</div>
+      </div>
+      <div class="tip-item">
+        <div class="tip-name">Education</div>
+        <div class="tip-desc">Courses & certs</div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

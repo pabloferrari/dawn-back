@@ -1,0 +1,370 @@
+<!-- templates/budget-planner/budget-guide.hbs -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    @page {
+      size: A4;
+      margin: 12mm;
+    }
+
+    body {
+      font-family: {{customization.fontFamily}};
+      color: #333;
+      line-height: 1.4;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 15px;
+      border-bottom: 3px solid {{customization.primaryColor}};
+      padding-bottom: 10px;
+    }
+
+    .title {
+      font-size: 26px;
+      color: {{customization.primaryColor}};
+      margin-bottom: 5px;
+    }
+
+    .subtitle {
+      font-size: 13px;
+      color: #666;
+    }
+
+    .formula-box {
+      background: linear-gradient(135deg, {{customization.primaryColor}}, {{customization.secondaryColor}});
+      color: white;
+      padding: 18px;
+      border-radius: 12px;
+      text-align: center;
+      margin-bottom: 18px;
+    }
+
+    .formula-label {
+      font-size: 12px;
+      opacity: 0.9;
+      margin-bottom: 8px;
+    }
+
+    .formula {
+      font-size: 26px;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+
+    .formula-note {
+      font-size: 12px;
+      opacity: 0.85;
+      margin-top: 8px;
+    }
+
+    .rule-section {
+      margin-bottom: 18px;
+    }
+
+    .rule-title {
+      font-size: 18px;
+      color: {{customization.primaryColor}};
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .rule-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+    }
+
+    .rule-card {
+      border-radius: 12px;
+      padding: 15px;
+      text-align: center;
+    }
+
+    .rule-card.needs {
+      background: #e3f2fd;
+      border: 2px solid #2196f3;
+    }
+
+    .rule-card.wants {
+      background: #fff3e0;
+      border: 2px solid #ff9800;
+    }
+
+    .rule-card.savings {
+      background: #e8f5e9;
+      border: 2px solid #4caf50;
+    }
+
+    .rule-percent {
+      font-size: 32px;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .rule-card.needs .rule-percent { color: #1976d2; }
+    .rule-card.wants .rule-percent { color: #f57c00; }
+    .rule-card.savings .rule-percent { color: #388e3c; }
+
+    .rule-name {
+      font-size: 14px;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+
+    .rule-examples {
+      font-size: 11px;
+      color: #666;
+      line-height: 1.4;
+    }
+
+    .middle-section {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+      margin-bottom: 18px;
+    }
+
+    .example-section {
+      background: #f8f9fa;
+      border-radius: 12px;
+      padding: 15px;
+    }
+
+    .example-title {
+      font-size: 14px;
+      font-weight: bold;
+      color: {{customization.primaryColor}};
+      margin-bottom: 12px;
+    }
+
+    .example-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      text-align: center;
+    }
+
+    .example-item {
+      padding: 10px;
+      background: white;
+      border-radius: 8px;
+    }
+
+    .example-amount {
+      font-size: 18px;
+      font-weight: bold;
+      color: {{customization.primaryColor}};
+    }
+
+    .example-label {
+      font-size: 11px;
+      color: #666;
+    }
+
+    .your-turn {
+      border: 2px dashed {{customization.primaryColor}};
+      border-radius: 12px;
+      padding: 15px;
+    }
+
+    .your-turn-title {
+      font-size: 14px;
+      font-weight: bold;
+      color: {{customization.primaryColor}};
+      margin-bottom: 12px;
+      text-align: center;
+    }
+
+    .your-turn-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 8px 12px;
+      background: #fafafa;
+      border-radius: 6px;
+      margin-bottom: 6px;
+    }
+
+    .your-turn-label {
+      font-size: 13px;
+    }
+
+    .your-turn-input {
+      width: 90px;
+      border-bottom: 2px dotted #ccc;
+      text-align: right;
+      font-weight: bold;
+      font-size: 13px;
+    }
+
+    .bottom-section {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+    }
+
+    .tip-box {
+      background: #fff8e1;
+      border-left: 4px solid #ffc107;
+      padding: 12px 15px;
+      border-radius: 0 10px 10px 0;
+    }
+
+    .tip-title {
+      font-weight: bold;
+      color: #f57c00;
+      margin-bottom: 8px;
+      font-size: 13px;
+    }
+
+    .tip-text {
+      font-size: 12px;
+      color: #555;
+      line-height: 1.5;
+    }
+
+    .mistakes-box {
+      background: #ffebee;
+      border-left: 4px solid #e91e63;
+      padding: 12px 15px;
+      border-radius: 0 10px 10px 0;
+    }
+
+    .mistakes-title {
+      font-weight: bold;
+      color: #c2185b;
+      margin-bottom: 8px;
+      font-size: 13px;
+    }
+
+    .mistakes-list {
+      font-size: 11px;
+      color: #555;
+      padding-left: 15px;
+      margin: 0;
+    }
+
+    .mistakes-list li {
+      margin-bottom: 4px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    <h1 class="title">Mini Guide: How to Budget</h1>
+    <p class="subtitle">The basics you need to know (nothing complicated, we promise)</p>
+  </div>
+
+  <div class="formula-box">
+    <div class="formula-label">The Only Formula You Need</div>
+    <div class="formula">INCOME - EXPENSES = BALANCE</div>
+    <div class="formula-note">Positive balance = you're saving money! Negative = spending more than you earn.</div>
+  </div>
+
+  <div class="rule-section">
+    <div class="rule-title">The 50/30/20 Rule (A Starting Point)</div>
+    <div class="rule-grid">
+      <div class="rule-card needs">
+        <div class="rule-percent">50%</div>
+        <div class="rule-name">NEEDS</div>
+        <div class="rule-examples">
+          Rent/mortgage<br>
+          Utilities<br>
+          Groceries<br>
+          Insurance<br>
+          Transportation
+        </div>
+      </div>
+      <div class="rule-card wants">
+        <div class="rule-percent">30%</div>
+        <div class="rule-name">WANTS</div>
+        <div class="rule-examples">
+          Dining out<br>
+          Entertainment<br>
+          Shopping<br>
+          Subscriptions<br>
+          Hobbies
+        </div>
+      </div>
+      <div class="rule-card savings">
+        <div class="rule-percent">20%</div>
+        <div class="rule-name">SAVINGS & DEBT</div>
+        <div class="rule-examples">
+          Emergency fund<br>
+          Retirement<br>
+          Extra debt payments<br>
+          Savings goals
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="middle-section">
+    <div class="example-section">
+      <div class="example-title">Example: $3,000/month income</div>
+      <div class="example-grid">
+        <div class="example-item">
+          <div class="example-amount">$1,500</div>
+          <div class="example-label">Needs (50%)</div>
+        </div>
+        <div class="example-item">
+          <div class="example-amount">$900</div>
+          <div class="example-label">Wants (30%)</div>
+        </div>
+        <div class="example-item">
+          <div class="example-amount">$600</div>
+          <div class="example-label">Savings (20%)</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="your-turn">
+      <div class="your-turn-title">Your Turn: Calculate Your 50/30/20</div>
+      <div class="your-turn-row">
+        <span class="your-turn-label">My monthly income:</span>
+        <span class="your-turn-input">$ _______</span>
+      </div>
+      <div class="your-turn-row">
+        <span class="your-turn-label">50% for Needs:</span>
+        <span class="your-turn-input">$ _______</span>
+      </div>
+      <div class="your-turn-row">
+        <span class="your-turn-label">30% for Wants:</span>
+        <span class="your-turn-input">$ _______</span>
+      </div>
+      <div class="your-turn-row">
+        <span class="your-turn-label">20% for Savings/Debt:</span>
+        <span class="your-turn-input">$ _______</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="bottom-section">
+    <div class="tip-box">
+      <div class="tip-title">Pro Tip</div>
+      <div class="tip-text">
+        This rule is a <strong>guideline</strong>, not a strict law. If your rent is 40% of income, that's okay — adjust the other categories.
+        The goal is awareness and balance, not perfection. Start where you are and improve over time.
+      </div>
+    </div>
+
+    <div class="mistakes-box">
+      <div class="mistakes-title">Common Mistakes to Avoid</div>
+      <ul class="mistakes-list">
+        <li>Not tracking small purchases (they add up!)</li>
+        <li>Forgetting irregular expenses (car repairs, gifts)</li>
+        <li>Being too strict (you'll burn out)</li>
+        <li>Not adjusting when income changes</li>
+        <li>Skipping the "pay yourself first" rule</li>
+      </ul>
+    </div>
+  </div>
+</body>
+
+</html>

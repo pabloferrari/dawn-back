@@ -1,0 +1,192 @@
+<!-- templates/budget-planner/for-you-if.hbs -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    @page {
+      size: A4;
+      margin: 15mm;
+    }
+
+    body {
+      font-family: {{customization.fontFamily}};
+      color: #333;
+      line-height: 1.4;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .title {
+      font-size: 28px;
+      color: {{customization.primaryColor}};
+      margin-bottom: 8px;
+    }
+
+    .subtitle {
+      font-size: 14px;
+      color: #666;
+    }
+
+    .intro {
+      text-align: center;
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 20px;
+      padding: 0 20px;
+    }
+
+    .checklist {
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    .check-item {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 12px;
+      padding: 10px 15px;
+      background: #f8f9fa;
+      border-radius: 8px;
+      border-left: 4px solid {{customization.primaryColor}};
+    }
+
+    .checkbox {
+      width: 20px;
+      height: 20px;
+      border: 2px solid {{customization.primaryColor}};
+      border-radius: 4px;
+      margin-right: 12px;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .check-text {
+      font-size: 13px;
+      color: #444;
+    }
+
+    .result-box {
+      margin-top: 20px;
+      padding: 20px;
+      background: linear-gradient(135deg, {{customization.primaryColor}}15, {{customization.secondaryColor}}15);
+      border-radius: 12px;
+      text-align: center;
+    }
+
+    .result-title {
+      font-size: 16px;
+      color: {{customization.primaryColor}};
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    .result-text {
+      font-size: 13px;
+      color: #555;
+      line-height: 1.5;
+    }
+
+    .highlight {
+      color: {{customization.primaryColor}};
+      font-weight: bold;
+    }
+
+    .count-box {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .count-label {
+      font-size: 12px;
+      color: #666;
+      margin-bottom: 8px;
+    }
+
+    .count-circles {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+    }
+
+    .circle {
+      width: 32px;
+      height: 32px;
+      border: 2px solid {{customization.primaryColor}};
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      font-weight: bold;
+      color: {{customization.primaryColor}};
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    <h1 class="title">This Planner Is For You If...</h1>
+    <p class="subtitle">Check all that apply to you</p>
+  </div>
+
+  <p class="intro">Be honest with yourself. The more boxes you check, the more this planner will help you transform your financial life.</p>
+
+  <div class="checklist">
+    <div class="check-item">
+      <div class="checkbox"></div>
+      <span class="check-text">You've never made a formal budget before (or tried and gave up)</span>
+    </div>
+
+    <div class="check-item">
+      <div class="checkbox"></div>
+      <span class="check-text">You don't know exactly where your money goes each month</span>
+    </div>
+
+    <div class="check-item">
+      <div class="checkbox"></div>
+      <span class="check-text">You have debt and want a clear plan to pay it off</span>
+    </div>
+
+    <div class="check-item">
+      <div class="checkbox"></div>
+      <span class="check-text">You want to build an emergency fund but don't know how to start</span>
+    </div>
+
+    <div class="check-item">
+      <div class="checkbox"></div>
+      <span class="check-text">You prefer simplicity over complicated spreadsheets</span>
+    </div>
+
+    <div class="check-item">
+      <div class="checkbox"></div>
+      <span class="check-text">You're ready to take control of your financial future</span>
+    </div>
+  </div>
+
+  <div class="count-box">
+    <p class="count-label">How many did you check?</p>
+    <div class="count-circles">
+      <div class="circle">1</div>
+      <div class="circle">2</div>
+      <div class="circle">3</div>
+      <div class="circle">4</div>
+      <div class="circle">5</div>
+      <div class="circle">6</div>
+    </div>
+  </div>
+
+  <div class="result-box">
+    <p class="result-title">If you checked even ONE box...</p>
+    <p class="result-text">
+      You're in the right place. This planner was designed specifically for people like you.
+      No judgment, no complicated formulas — just a <span class="highlight">simple system</span>
+      that works. Let's make {{year}} the year you finally feel confident about money.
+    </p>
+  </div>
+</body>
+
+</html>

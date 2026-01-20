@@ -125,8 +125,8 @@ export class BabySignService implements ProductGenerator {
       const fileName = `baby-sign-guide-${Date.now()}.pdf`;
       const outputPath = await this.pdfGeneratorService.savePdf(
         finalPdf,
-        fileName,
         this.PRODUCT_TYPE,
+        fileName,
       );
 
       await browser.close();

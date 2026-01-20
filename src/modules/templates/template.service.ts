@@ -32,6 +32,11 @@ export class TemplateService {
   }
 
   private registerHelpers() {
+    // Helper para comparar igualdad
+    Handlebars.registerHelper('eq', function (a, b) {
+      return a === b;
+    });
+
     // Helper para repetir elementos N veces
     Handlebars.registerHelper('times', function (n, block) {
       let result = '';

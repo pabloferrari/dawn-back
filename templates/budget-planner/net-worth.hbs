@@ -1,0 +1,480 @@
+<!-- templates/budget-planner/net-worth.hbs -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    @page {
+      size: A4;
+      margin: 15mm;
+    }
+
+    body {
+      font-family: {{customization.fontFamily}};
+      color: #333;
+      line-height: 1.4;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+      border-bottom: 3px solid {{customization.primaryColor}};
+      padding-bottom: 12px;
+    }
+
+    .title {
+      font-size: 28px;
+      color: {{customization.primaryColor}};
+      margin: 0;
+    }
+
+    .subtitle {
+      font-size: 13px;
+      color: #666;
+      margin-top: 5px;
+    }
+
+    .intro {
+      background: #e8f5e9;
+      border-left: 4px solid #4caf50;
+      padding: 12px 15px;
+      margin-bottom: 20px;
+      border-radius: 0 8px 8px 0;
+      font-size: 12px;
+    }
+
+    .intro strong {
+      color: #2e7d32;
+    }
+
+    .tracker-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+    }
+
+    .quarter-column {
+      border: 2px solid {{customization.primaryColor}};
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .quarter-header {
+      background: {{customization.primaryColor}};
+      color: white;
+      padding: 10px;
+      text-align: center;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    .quarter-date {
+      font-size: 10px;
+      opacity: 0.9;
+      font-weight: normal;
+    }
+
+    .quarter-content {
+      padding: 12px;
+    }
+
+    .section-label {
+      font-size: 11px;
+      font-weight: bold;
+      color: {{customization.primaryColor}};
+      margin-bottom: 8px;
+      padding-bottom: 5px;
+      border-bottom: 1px solid #e0e0e0;
+    }
+
+    .section-label.assets {
+      color: #4caf50;
+    }
+
+    .section-label.liabilities {
+      color: #e91e63;
+    }
+
+    .row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 4px 0;
+      font-size: 10px;
+    }
+
+    .row-label {
+      color: #555;
+    }
+
+    .row-value {
+      font-weight: 500;
+      min-width: 55px;
+      text-align: right;
+      border-bottom: 1px dotted #ccc;
+    }
+
+    .total-row {
+      margin-top: 8px;
+      padding-top: 8px;
+      border-top: 2px solid #e0e0e0;
+      font-weight: bold;
+    }
+
+    .total-row.assets .row-value {
+      color: #4caf50;
+    }
+
+    .total-row.liabilities .row-value {
+      color: #e91e63;
+    }
+
+    .net-worth-box {
+      margin-top: 12px;
+      padding: 10px;
+      background: linear-gradient(135deg, {{customization.primaryColor}}15, {{customization.secondaryColor}}15);
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    .net-worth-label {
+      font-size: 9px;
+      color: #666;
+      margin-bottom: 3px;
+    }
+
+    .net-worth-value {
+      font-size: 16px;
+      font-weight: bold;
+      color: {{customization.primaryColor}};
+    }
+
+    .comparison-section {
+      margin-top: 25px;
+      padding: 15px;
+      background: #f5f5f5;
+      border-radius: 10px;
+    }
+
+    .comparison-title {
+      font-size: 14px;
+      font-weight: bold;
+      color: {{customization.primaryColor}};
+      margin-bottom: 12px;
+      text-align: center;
+    }
+
+    .comparison-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 15px;
+      background: white;
+      border-radius: 8px;
+      margin-bottom: 8px;
+    }
+
+    .comparison-label {
+      font-size: 12px;
+      color: #555;
+    }
+
+    .comparison-value {
+      font-size: 16px;
+      font-weight: bold;
+      color: {{customization.primaryColor}};
+      min-width: 100px;
+      text-align: right;
+      border-bottom: 2px dotted #ccc;
+    }
+
+    .change-indicator {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 12px;
+    }
+
+    .tip-box {
+      margin-top: 20px;
+      padding: 12px 15px;
+      background: #fff8e1;
+      border-radius: 8px;
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .tip-box strong {
+      color: #f57c00;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    <h1 class="title">Net Worth Tracker</h1>
+    <p class="subtitle">{{year}} — Track your wealth quarterly</p>
+  </div>
+
+  <div class="intro">
+    <strong>Net Worth = What You Own - What You Owe.</strong>
+    Update this page every 3 months. Don't worry if it's negative — what matters is the direction it's moving!
+  </div>
+
+  <div class="tracker-grid">
+    <!-- Q1 -->
+    <div class="quarter-column">
+      <div class="quarter-header">
+        Q1
+        <div class="quarter-date">Jan - Mar</div>
+      </div>
+      <div class="quarter-content">
+        <div class="section-label assets">ASSETS (What I Own)</div>
+        <div class="row">
+          <span class="row-label">Checking</span>
+          <span class="row-value">$_____</span>
+        </div>
+        <div class="row">
+          <span class="row-label">Savings</span>
+          <span class="row-value">$_____</span>
+        </div>
+        <div class="row">
+          <span class="row-label">Investments</span>
+          <span class="row-value">$_____</span>
+        </div>
+        <div class="row">
+          <span class="row-label">Other</span>
+          <span class="row-value">$_____</span>
+        </div>
+        <div class="row total-row assets">
+          <span class="row-label">TOTAL</span>
+          <span class="row-value">$_____</span>
+        </div>
+
+        <div class="section-label liabilities" style="margin-top: 12px;">LIABILITIES (What I Owe)</div>
+        <div class="row">
+          <span class="row-label">Credit Cards</span>
+          <span class="row-value">$_____</span>
+        </div>
+        <div class="row">
+          <span class="row-label">Student Loans</span>
+          <span class="row-value">$_____</span>
+        </div>
+        <div class="row">
+          <span class="row-label">Car Loan</span>
+          <span class="row-value">$_____</span>
+        </div>
+        <div class="row">
+          <span class="row-label">Other</span>
+          <span class="row-value">$_____</span>
+        </div>
+        <div class="row total-row liabilities">
+          <span class="row-label">TOTAL</span>
+          <span class="row-value">$_____</span>
+        </div>
+
+        <div class="net-worth-box">
+          <div class="net-worth-label">NET WORTH</div>
+          <div class="net-worth-value">$________</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Q2 -->
+    <div class="quarter-column">
+      <div class="quarter-header">
+        Q2
+        <div class="quarter-date">Apr - Jun</div>
+      </div>
+      <div class="quarter-content">
+        <div class="section-label assets">ASSETS (What I Own)</div>
+        <div class="row">
+          <span class="row-label">Checking</span>
+          <span class="row-value">$_____</span>
+        </div>
+        <div class="row">
+          <span class="row-label">Savings</span>
+          <span class="row-value">$_____</span>
+        </div>
+        <div class="row">
+          <span class="row-label">Investments</span>
+          <span class="row-value">$_____</span>
+        </div>
+        <div class="row">
+          <span class="row-label">Other</span>
+          <span class="row-value">$_____</span>
+        </div>
+        <div class="row total-row assets">
+          <span class="row-label">TOTAL</span>
+          <span class="row-value">$_____</span>
+        </div>
+
+        <div class="section-label liabilities" style="margin-top: 12px;">LIABILITIES (What I Owe)</div>
+        <div class="row">
+          <span class="row-label">Credit Cards</span>
+          <span class="row-value">$_____</span>
+        </div>
+        <div class="row">
+          <span class="row-label">Student Loans</span>
+          <span class="row-value">$_____</span>
+        </div>
+        <div class="row">
+          <span class="row-label">Car Loan</span>
+          <span class="row-value">$_____</span>
+        </div>
+        <div class="row">
+          <span class="row-label">Other</span>
+          <span class="row-value">$_____</span>
+        </div>
+        <div class="row total-row liabilities">
+          <span class="row-label">TOTAL</span>
+          <span class="row-value">$_____</span>
+        </div>
+
+        <div class="net-worth-box">
+          <div class="net-worth-label">NET WORTH</div>
+          <div class="net-worth-value">$________</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Q3 -->
+    <div class="quarter-column">
+      <div class="quarter-header">
+        Q3
+        <div class="quarter-date">Jul - Sep</div>
+      </div>
+      <div class="quarter-content">
+        <div class="section-label assets">ASSETS (What I Own)</div>
+        <div class="row">
+          <span class="row-label">Checking</span>
+          <span class="row-value">$_____</span>
+        </div>
+        <div class="row">
+          <span class="row-label">Savings</span>
+          <span class="row-value">$_____</span>
+        </div>
+        <div class="row">
+          <span class="row-label">Investments</span>
+          <span class="row-value">$_____</span>
+        </div>
+        <div class="row">
+          <span class="row-label">Other</span>
+          <span class="row-value">$_____</span>
+        </div>
+        <div class="row total-row assets">
+          <span class="row-label">TOTAL</span>
+          <span class="row-value">$_____</span>
+        </div>
+
+        <div class="section-label liabilities" style="margin-top: 12px;">LIABILITIES (What I Owe)</div>
+        <div class="row">
+          <span class="row-label">Credit Cards</span>
+          <span class="row-value">$_____</span>
+        </div>
+        <div class="row">
+          <span class="row-label">Student Loans</span>
+          <span class="row-value">$_____</span>
+        </div>
+        <div class="row">
+          <span class="row-label">Car Loan</span>
+          <span class="row-value">$_____</span>
+        </div>
+        <div class="row">
+          <span class="row-label">Other</span>
+          <span class="row-value">$_____</span>
+        </div>
+        <div class="row total-row liabilities">
+          <span class="row-label">TOTAL</span>
+          <span class="row-value">$_____</span>
+        </div>
+
+        <div class="net-worth-box">
+          <div class="net-worth-label">NET WORTH</div>
+          <div class="net-worth-value">$________</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Q4 -->
+    <div class="quarter-column">
+      <div class="quarter-header">
+        Q4
+        <div class="quarter-date">Oct - Dec</div>
+      </div>
+      <div class="quarter-content">
+        <div class="section-label assets">ASSETS (What I Own)</div>
+        <div class="row">
+          <span class="row-label">Checking</span>
+          <span class="row-value">$_____</span>
+        </div>
+        <div class="row">
+          <span class="row-label">Savings</span>
+          <span class="row-value">$_____</span>
+        </div>
+        <div class="row">
+          <span class="row-label">Investments</span>
+          <span class="row-value">$_____</span>
+        </div>
+        <div class="row">
+          <span class="row-label">Other</span>
+          <span class="row-value">$_____</span>
+        </div>
+        <div class="row total-row assets">
+          <span class="row-label">TOTAL</span>
+          <span class="row-value">$_____</span>
+        </div>
+
+        <div class="section-label liabilities" style="margin-top: 12px;">LIABILITIES (What I Owe)</div>
+        <div class="row">
+          <span class="row-label">Credit Cards</span>
+          <span class="row-value">$_____</span>
+        </div>
+        <div class="row">
+          <span class="row-label">Student Loans</span>
+          <span class="row-value">$_____</span>
+        </div>
+        <div class="row">
+          <span class="row-label">Car Loan</span>
+          <span class="row-value">$_____</span>
+        </div>
+        <div class="row">
+          <span class="row-label">Other</span>
+          <span class="row-value">$_____</span>
+        </div>
+        <div class="row total-row liabilities">
+          <span class="row-label">TOTAL</span>
+          <span class="row-value">$_____</span>
+        </div>
+
+        <div class="net-worth-box">
+          <div class="net-worth-label">NET WORTH</div>
+          <div class="net-worth-value">$________</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="comparison-section">
+    <div class="comparison-title">Year-End Comparison</div>
+    <div class="comparison-row">
+      <span class="comparison-label">Net Worth at Start of Year (Q1)</span>
+      <span class="comparison-value">$_________</span>
+    </div>
+    <div class="comparison-row">
+      <span class="comparison-label">Net Worth at End of Year (Q4)</span>
+      <span class="comparison-value">$_________</span>
+    </div>
+    <div class="comparison-row">
+      <span class="comparison-label">Total Change in {{year}}</span>
+      <span class="comparison-value">$_________</span>
+    </div>
+  </div>
+
+  <div class="tip-box">
+    <strong>Remember:</strong> Net worth is a long-term game. Focus on the trend, not any single quarter.
+    Small, consistent progress adds up to big changes over time!
+  </div>
+</body>
+
+</html>

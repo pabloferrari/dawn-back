@@ -6,116 +6,191 @@
   <style>
     @page {
       size: A4;
-      margin: 20mm;
+      margin: 18mm;
     }
 
     body {
-      font-family: {
-          {
-          fontFamily
-        }
-      }
-
-      ;
+      font-family: {{customization.fontFamily}};
       color: #333;
-      line-height: 1.8;
+      line-height: 1.6;
     }
 
     .header {
       text-align: center;
-      margin-bottom: 30px;
-      padding-bottom: 20px;
-
-      border-bottom: 3px solid {
-          {
-          primaryColor
-        }
-      }
-
-      ;
+      margin-bottom: 20px;
+      padding-bottom: 12px;
+      border-bottom: 3px solid {{customization.primaryColor}};
     }
 
     .title {
-      font-size: 36px;
-
-      color: {
-          {
-          primaryColor
-        }
-      }
-
-      ;
+      font-size: 30px;
+      color: {{customization.primaryColor}};
       margin: 0;
     }
 
     .icon {
-      font-size: 60px;
-      margin-bottom: 15px;
+      font-size: 45px;
+      margin-bottom: 8px;
+    }
+
+    .section {
+      margin-bottom: 20px;
+    }
+
+    .section-title {
+      font-size: 16px;
+      font-weight: bold;
+      color: {{customization.primaryColor}};
+      margin-bottom: 12px;
+      padding-bottom: 5px;
+      border-bottom: 2px solid #EEE;
+    }
+
+    .tips-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
     }
 
     .tip {
-      margin: 20px 0;
-      padding: 20px;
-      background: white;
+      padding: 12px;
+      background: #FAFAFA;
+      border-radius: 8px;
+      border-left: 3px solid {{customization.primaryColor}};
+    }
 
-      border: 2px solid {
-          {
-          primaryColor
-        }
-      }
-
-      ;
-      border-radius: 10px;
+    .tip-header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 6px;
     }
 
     .tip-number {
-      display: inline-block;
-      width: 40px;
-      height: 40px;
-
-      background: {
-          {
-          primaryColor
-        }
-      }
-
-      ;
+      width: 24px;
+      height: 24px;
+      background: {{customization.primaryColor}};
       color: white;
       border-radius: 50%;
-      text-align: center;
-      line-height: 40px;
+      font-size: 12px;
       font-weight: bold;
-      font-size: 20px;
-      margin-right: 15px;
-      float: left;
-    }
-
-    .tip-content {
-      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 10px;
+      flex-shrink: 0;
     }
 
     .tip-title {
-      font-size: 20px;
+      font-size: 13px;
       font-weight: bold;
-      margin-bottom: 8px;
+      color: #333;
+    }
 
-      color: {
-          {
-          primaryColor
-        }
-      }
+    .tip p {
+      font-size: 11px;
+      margin: 0;
+      color: #555;
+    }
 
-      ;
+    .positioning-box {
+      background: linear-gradient(135deg, #FFF5E6 0%, #FFE6F0 100%);
+      padding: 15px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    .positioning-box h3 {
+      font-size: 14px;
+      color: {{customization.primaryColor}};
+      margin: 0 0 10px 0;
+    }
+
+    .position-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+    }
+
+    .position-item {
+      background: white;
+      padding: 10px;
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    .position-item .emoji {
+      font-size: 24px;
+      margin-bottom: 5px;
+    }
+
+    .position-item .name {
+      font-size: 11px;
+      font-weight: bold;
+      color: {{customization.primaryColor}};
+      margin-bottom: 4px;
+    }
+
+    .position-item .desc {
+      font-size: 10px;
+      color: #666;
+    }
+
+    .checklist-box {
+      background: #F0F7FF;
+      padding: 15px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    .checklist-box h3 {
+      font-size: 14px;
+      color: {{customization.primaryColor}};
+      margin: 0 0 10px 0;
+    }
+
+    .checklist-box p {
+      font-size: 12px;
+      margin: 0 0 8px 0;
+    }
+
+    .checklist {
+      display: flex;
+      gap: 15px;
+    }
+
+    .check-item {
+      flex: 1;
+      background: white;
+      padding: 10px;
+      border-radius: 6px;
+      text-align: center;
+    }
+
+    .check-item .icon {
+      font-size: 20px;
+      margin-bottom: 4px;
+    }
+
+    .check-item .label {
+      font-size: 11px;
+      font-weight: bold;
+      color: {{customization.primaryColor}};
+    }
+
+    .check-item .desc {
+      font-size: 10px;
+      color: #666;
+      margin-top: 3px;
     }
 
     .encouragement {
-      background: linear-gradient(135deg, #FFE5E5 0%, #FFF5E1 100%);
-      padding: 25px;
-      margin: 30px 0;
+      background: linear-gradient(135deg, {{customization.primaryColor}}15 0%, {{customization.secondaryColor}}15 100%);
+      padding: 15px;
       border-radius: 10px;
       text-align: center;
-      font-size: 18px;
-      font-weight: 500;
+      font-size: 13px;
+      color: #444;
+      margin-top: 15px;
     }
   </style>
 </head>
@@ -126,70 +201,120 @@
     <h1 class="title">Tips for Success</h1>
   </div>
 
-  <div class="tip">
-    <div class="tip-number">1</div>
-    <div class="tip-content">
-      <div class="tip-title">Be Consistent</div>
-      <p>Use the same sign every time for each word. Sign during daily routines - meals, diaper changes, bath time.</p>
+  <div class="positioning-box">
+    <h3>👀 Best Positions for Signing</h3>
+    <div class="position-grid">
+      <div class="position-item">
+        <div class="emoji">👫</div>
+        <div class="name">Face to Face</div>
+        <div class="desc">The gold standard! Get down to their eye level when possible.</div>
+      </div>
+      <div class="position-item">
+        <div class="emoji">🪞</div>
+        <div class="name">In Front of Mirror</div>
+        <div class="desc">Baby sees both you signing and themselves—great for learning!</div>
+      </div>
+      <div class="position-item">
+        <div class="emoji">🧒</div>
+        <div class="name">On Their Body</div>
+        <div class="desc">For signs like EAT or BATH, gently sign on baby so they feel it too.</div>
+      </div>
     </div>
   </div>
 
-  <div class="tip">
-    <div class="tip-number">2</div>
-    <div class="tip-content">
-      <div class="tip-title">Say the Word</div>
-      <p>Always say the word OUT LOUD while signing. This helps with speech development and reinforces the connection.
-      </p>
+  <div class="checklist-box">
+    <h3>✅ How to Know Baby is Really Signing</h3>
+    <p>Not sure if that hand movement was intentional? Look for these three signs:</p>
+    <div class="checklist">
+      <div class="check-item">
+        <div class="icon">🎯</div>
+        <div class="label">Intentional</div>
+        <div class="desc">Used to express a real need in the right context</div>
+      </div>
+      <div class="check-item">
+        <div class="icon">🆓</div>
+        <div class="label">Independent</div>
+        <div class="desc">Not copying you—they initiate it on their own</div>
+      </div>
+      <div class="check-item">
+        <div class="icon">🔄</div>
+        <div class="label">Consistent</div>
+        <div class="desc">They use it repeatedly, not just a one-time thing</div>
+      </div>
     </div>
   </div>
 
-  <div class="tip">
-    <div class="tip-number">3</div>
-    <div class="tip-content">
-      <div class="tip-title">Start Simple</div>
-      <p>Begin with 3-5 signs that are most useful: MILK, MORE, EAT, ALL DONE. Add new signs once baby masters these.
-      </p>
-    </div>
-  </div>
+  <div class="section">
+    <div class="section-title">🔑 Keys to Success</div>
+    <div class="tips-grid">
+      <div class="tip">
+        <div class="tip-header">
+          <div class="tip-number">1</div>
+          <div class="tip-title">Sign with the Action</div>
+        </div>
+        <p>Always sign during, just before, or right after the action. "Time for BATH" as you turn on the water helps baby connect sign, word, and meaning.</p>
+      </div>
 
-  <div class="tip">
-    <div class="tip-number">4</div>
-    <div class="tip-content">
-      <div class="tip-title">Make Eye Contact</div>
-      <p>Get baby's attention before signing. Sign within their line of sight so they can see both the sign and the
-        object.</p>
-    </div>
-  </div>
+      <div class="tip">
+        <div class="tip-header">
+          <div class="tip-number">2</div>
+          <div class="tip-title">Be Consistent</div>
+        </div>
+        <p>Use the same sign every time. The more you sign throughout the day, the faster baby will sign back. Try placing reminder notes in key areas!</p>
+      </div>
 
-  <div class="tip">
-    <div class="tip-number">5</div>
-    <div class="tip-content">
-      <div class="tip-title">Be Patient</div>
-      <p>It may take weeks or months before baby signs back. Keep signing! They're absorbing everything you show them.
-      </p>
-    </div>
-  </div>
+      <div class="tip">
+        <div class="tip-header">
+          <div class="tip-number">3</div>
+          <div class="tip-title">Repeat Naturally</div>
+        </div>
+        <p>"We're going to BATH. Daddy is giving you a BATH. All done with BATH!" Repetition during activities reinforces learning—just don't overdo it.</p>
+      </div>
 
-  <div class="tip">
-    <div class="tip-number">6</div>
-    <div class="tip-content">
-      <div class="tip-title">Celebrate Attempts</div>
-      <p>Any approximation of a sign counts! Even if it's not perfect, respond enthusiastically to encourage more
-        communication.</p>
-    </div>
-  </div>
+      <div class="tip">
+        <div class="tip-header">
+          <div class="tip-number">4</div>
+          <div class="tip-title">Make Eye Contact</div>
+        </div>
+        <p>Unlike speech, signing requires visual attention. Try to be in baby's line of sight. But if they're not looking, sign anyway—you're building the habit!</p>
+      </div>
 
-  <div class="tip">
-    <div class="tip-number">7</div>
-    <div class="tip-content">
-      <div class="tip-title">Get Everyone Involved</div>
-      <p>Teach signs to caregivers, grandparents, and siblings. The more people who sign with baby, the faster they'll
-        learn.</p>
+      <div class="tip">
+        <div class="tip-header">
+          <div class="tip-number">5</div>
+          <div class="tip-title">Keep It Fun</div>
+        </div>
+        <p>Babies learn through play, not memorization! Use signs during songs, games, and storytime. Their interest grows much faster when it's enjoyable.</p>
+      </div>
+
+      <div class="tip">
+        <div class="tip-header">
+          <div class="tip-number">6</div>
+          <div class="tip-title">Celebrate Every Attempt</div>
+        </div>
+        <p>Baby's sign won't look perfect—and that's okay! Respond enthusiastically to any approximation. They'll refine it over time by watching you model it correctly.</p>
+      </div>
+
+      <div class="tip">
+        <div class="tip-header">
+          <div class="tip-number">7</div>
+          <div class="tip-title">Don't Stop When They Talk</div>
+        </div>
+        <p>Keep signing even after first words appear! Early speech is often unclear. Signs remain a valuable backup that prevents frustration. Let them phase out signs naturally.</p>
+      </div>
+
+      <div class="tip">
+        <div class="tip-header">
+          <div class="tip-number">8</div>
+          <div class="tip-title">Get Everyone Involved</div>
+        </div>
+        <p>Teach signs to partners, grandparents, caregivers, and siblings. The more people who sign with baby, the faster they'll learn and the more connected they'll feel.</p>
+      </div>
     </div>
   </div>
 
   <div class="encouragement">
-    You've got this! Every baby learns at their own pace. 🌟
+    <strong>Remember:</strong> Every baby learns at their own pace. Some sign back in weeks, others take months. What matters is the connection you're building. You've got this! 🌟
   </div>
 </body>
 

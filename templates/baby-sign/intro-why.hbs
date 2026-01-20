@@ -10,87 +10,91 @@
     }
 
     body {
-      font-family: {
-          {
-          fontFamily
-        }
-      }
-
-      ;
+      font-family: {{customization.fontFamily}};
       color: #333;
-      line-height: 1.8;
+      line-height: 1.7;
     }
 
     .header {
       text-align: center;
-      margin-bottom: 30px;
-      padding-bottom: 20px;
-
-      border-bottom: 3px solid {
-          {
-          primaryColor
-        }
-      }
-
-      ;
+      margin-bottom: 25px;
+      padding-bottom: 15px;
+      border-bottom: 3px solid {{customization.primaryColor}};
     }
 
     .title {
-      font-size: 36px;
-
-      color: {
-          {
-          primaryColor
-        }
-      }
-
-      ;
+      font-size: 32px;
+      color: {{customization.primaryColor}};
       margin: 0;
     }
 
     .icon {
-      font-size: 60px;
-      margin-bottom: 15px;
-    }
-
-    .content {
-      font-size: 16px;
-    }
-
-    .benefit {
-      margin: 25px 0;
-      padding: 20px;
-      background: #FFF9E6;
-
-      border-left: 5px solid {
-          {
-          primaryColor
-        }
-      }
-
-      ;
-      border-radius: 5px;
-    }
-
-    .benefit-title {
-      font-size: 20px;
-      font-weight: bold;
-
-      color: {
-          {
-          primaryColor
-        }
-      }
-
-      ;
+      font-size: 50px;
       margin-bottom: 10px;
     }
 
-    .highlight {
-      background: #FFE5E5;
-      padding: 2px 6px;
-      border-radius: 3px;
-      font-weight: 500;
+    .intro-text {
+      font-size: 15px;
+      margin-bottom: 20px;
+      text-align: justify;
+    }
+
+    .highlight-box {
+      background: linear-gradient(135deg, #FFF9E6 0%, #FFF5F5 100%);
+      border-left: 4px solid {{customization.primaryColor}};
+      padding: 15px 20px;
+      margin: 20px 0;
+      border-radius: 0 8px 8px 0;
+    }
+
+    .highlight-box p {
+      margin: 0;
+      font-size: 14px;
+    }
+
+    .benefits-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .benefit {
+      padding: 15px;
+      background: #FAFAFA;
+      border-radius: 10px;
+      border: 1px solid #EEE;
+    }
+
+    .benefit-icon {
+      font-size: 28px;
+      margin-bottom: 8px;
+    }
+
+    .benefit-title {
+      font-size: 14px;
+      font-weight: bold;
+      color: {{customization.primaryColor}};
+      margin-bottom: 6px;
+    }
+
+    .benefit p {
+      font-size: 12px;
+      margin: 0;
+      color: #555;
+    }
+
+    .research-note {
+      background: #F0F7FF;
+      padding: 12px 15px;
+      border-radius: 8px;
+      margin-top: 20px;
+      font-size: 12px;
+      color: #444;
+    }
+
+    .research-note strong {
+      color: {{customization.primaryColor}};
     }
   </style>
 </head>
@@ -98,36 +102,59 @@
 <body>
   <div class="header">
     <div class="icon">💡</div>
-    <h1 class="title">Why Baby Sign Language?</h1>
+    <h1 class="title">Why Baby Hands Talk?</h1>
   </div>
 
-  <div class="content">
-    <p>Baby sign language is a simple way to communicate with your baby before they can talk. Using basic hand gestures,
-      you can understand your baby's needs and wants, reducing frustration for both of you.</p>
+  <div class="intro-text">
+    <p>Here's something amazing: your baby understands far more than they can say. Between 6 and 8 months, babies develop a strong desire to communicate—they want to tell you what they need, what they see, and how they feel. But here's the challenge: the complex motor skills needed for speech don't fully develop until around 18 months, and clear verbal communication often doesn't come until age 2 or 3.</p>
+    
+    <p>This creates a "communication gap"—a period where your baby has so much to say but no way to say it. That's where Baby Hands Talk comes in.</p>
+  </div>
 
+  <div class="highlight-box">
+    <p><strong>Baby Hands Talk bridges this gap.</strong> Using simple hand gestures, your little one can tell you they're hungry, tired, want more, or even that they love you—months before they can speak these words.</p>
+  </div>
+
+  <div class="benefits-grid">
     <div class="benefit">
-      <div class="benefit-title">🗣️ Reduces Frustration</div>
-      <p>Babies know what they want long before they can speak. Signs give them a way to tell you they're <span
-          class="highlight">hungry</span>, <span class="highlight">tired</span>, or want <span
-          class="highlight">more</span>.</p>
+      <div class="benefit-icon">😌</div>
+      <div class="benefit-title">Reduces Frustration</div>
+      <p>When babies can express their needs—whether it's pain, hunger, or wanting a specific toy—tantrums and crying decrease dramatically. You'll spend less time guessing and more time connecting.</p>
     </div>
 
     <div class="benefit">
-      <div class="benefit-title">🧠 Boosts Brain Development</div>
-      <p>Research shows that baby sign language can enhance cognitive development and may lead to earlier speech
-        development.</p>
+      <div class="benefit-icon">🧠</div>
+      <div class="benefit-title">Boosts Brain Development</div>
+      <p>When your baby signs, they're activating multiple brain areas simultaneously—visual, auditory, and motor. This creates stronger neural connections and enhances overall cognitive development.</p>
     </div>
 
     <div class="benefit">
-      <div class="benefit-title">❤️ Strengthens Bond</div>
-      <p>The joy of understanding your baby creates a deeper emotional connection and builds confidence in both parent
-        and child.</p>
+      <div class="benefit-icon">❤️</div>
+      <div class="benefit-title">Deepens Your Bond</div>
+      <p>Two-way communication creates a powerful emotional connection. When your baby asks to play ball and you understand, both of you feel seen, heard, and connected.</p>
     </div>
 
     <div class="benefit">
-      <div class="benefit-title">⭐ Accelerates Language Skills</div>
-      <p>Studies suggest signing babies may speak earlier and develop larger vocabularies than non-signing babies.</p>
+      <div class="benefit-icon">🗣️</div>
+      <div class="benefit-title">Accelerates Speech</div>
+      <p>Signing babies don't speak later—they often speak earlier and with larger vocabularies. The signs serve as a bridge to verbal language, not a replacement.</p>
     </div>
+
+    <div class="benefit">
+      <div class="benefit-icon">💪</div>
+      <div class="benefit-title">Builds Confidence</div>
+      <p>Being understood gives babies a sense of accomplishment and self-worth. They become active participants in family life rather than passive observers.</p>
+    </div>
+
+    <div class="benefit">
+      <div class="benefit-icon">🎭</div>
+      <div class="benefit-title">Supports Emotional Growth</div>
+      <p>Signs help babies identify and express emotions like happy, sad, or scared. This early emotional vocabulary is the foundation for healthy self-regulation.</p>
+    </div>
+  </div>
+
+  <div class="research-note">
+    <strong>📚 Research shows:</strong> Studies found that babies who signed were speaking like children 4 months ahead by age 2, and nearly a full year ahead by age 3. At age 8, these children scored an average of 12 points higher on IQ tests than their non-signing peers.
   </div>
 </body>
 

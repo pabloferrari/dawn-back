@@ -1,0 +1,382 @@
+<!-- templates/budget-planner/debt-guide.hbs -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    @page {
+      size: A4;
+      margin: 18mm;
+    }
+
+    body {
+      font-family: {{customization.fontFamily}};
+      color: #333;
+      line-height: 1.5;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 25px;
+      border-bottom: 3px solid {{customization.primaryColor}};
+      padding-bottom: 15px;
+    }
+
+    .title {
+      font-size: 28px;
+      color: {{customization.primaryColor}};
+      margin-bottom: 5px;
+    }
+
+    .subtitle {
+      font-size: 14px;
+      color: #666;
+    }
+
+    .intro {
+      background: #f8f9fa;
+      padding: 15px 20px;
+      border-radius: 10px;
+      margin-bottom: 25px;
+      font-size: 14px;
+      text-align: center;
+    }
+
+    .methods-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      margin-bottom: 25px;
+    }
+
+    .method-card {
+      border-radius: 15px;
+      padding: 20px;
+      border: 2px solid;
+    }
+
+    .method-card.snowball {
+      background: #e3f2fd;
+      border-color: #2196f3;
+    }
+
+    .method-card.avalanche {
+      background: #fce4ec;
+      border-color: #e91e63;
+    }
+
+    .method-icon {
+      font-size: 40px;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .method-name {
+      font-size: 20px;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .method-card.snowball .method-name { color: #1976d2; }
+    .method-card.avalanche .method-name { color: #c2185b; }
+
+    .method-how {
+      font-size: 13px;
+      margin-bottom: 15px;
+      padding: 10px;
+      background: rgba(255,255,255,0.7);
+      border-radius: 8px;
+    }
+
+    .method-how-title {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .method-pros {
+      font-size: 12px;
+    }
+
+    .method-pros-title {
+      font-weight: bold;
+      margin-bottom: 5px;
+      color: #388e3c;
+    }
+
+    .method-pros ul {
+      margin: 0;
+      padding-left: 18px;
+    }
+
+    .method-pros li {
+      margin-bottom: 3px;
+    }
+
+    .method-best {
+      margin-top: 12px;
+      padding: 10px;
+      background: rgba(255,255,255,0.8);
+      border-radius: 8px;
+      font-size: 12px;
+    }
+
+    .method-best-title {
+      font-weight: bold;
+      margin-bottom: 3px;
+    }
+
+    .vs-badge {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      background: {{customization.primaryColor}};
+      color: white;
+      padding: 8px 15px;
+      border-radius: 20px;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    .example-section {
+      background: #fff8e1;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    .example-title {
+      font-size: 16px;
+      font-weight: bold;
+      color: #f57c00;
+      margin-bottom: 15px;
+    }
+
+    .example-debts {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      margin-bottom: 15px;
+    }
+
+    .example-debt {
+      background: white;
+      padding: 12px;
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    .debt-name {
+      font-size: 12px;
+      color: #666;
+      margin-bottom: 5px;
+    }
+
+    .debt-amount {
+      font-size: 18px;
+      font-weight: bold;
+      color: #e91e63;
+    }
+
+    .debt-rate {
+      font-size: 11px;
+      color: #999;
+    }
+
+    .example-order {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+    }
+
+    .order-box {
+      padding: 12px;
+      border-radius: 8px;
+      font-size: 12px;
+    }
+
+    .order-box.snowball { background: #e3f2fd; }
+    .order-box.avalanche { background: #fce4ec; }
+
+    .order-title {
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+
+    .order-list {
+      margin: 0;
+      padding-left: 20px;
+    }
+
+    .choice-section {
+      border: 3px solid {{customization.primaryColor}};
+      border-radius: 15px;
+      padding: 25px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .choice-title {
+      font-size: 18px;
+      font-weight: bold;
+      color: {{customization.primaryColor}};
+      margin-bottom: 15px;
+    }
+
+    .choice-options {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin-bottom: 15px;
+    }
+
+    .choice-option {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 16px;
+    }
+
+    .choice-checkbox {
+      width: 24px;
+      height: 24px;
+      border: 2px solid {{customization.primaryColor}};
+      border-radius: 50%;
+    }
+
+    .quote-box {
+      background: linear-gradient(135deg, {{customization.primaryColor}}, {{customization.secondaryColor}});
+      color: white;
+      padding: 20px;
+      border-radius: 12px;
+      text-align: center;
+    }
+
+    .quote-text {
+      font-size: 16px;
+      font-style: italic;
+      margin-bottom: 8px;
+    }
+
+    .quote-meaning {
+      font-size: 12px;
+      opacity: 0.9;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    <h1 class="title">Mini Guide: Paying Off Debt</h1>
+    <p class="subtitle">Two proven strategies — pick the one that fits your personality</p>
+  </div>
+
+  <div class="intro">
+    <strong>Good news:</strong> You don't need a finance degree to get out of debt.
+    You just need a plan and consistency. Here are the two most effective methods.
+  </div>
+
+  <div class="methods-grid" style="position: relative;">
+    <div class="method-card snowball">
+      <div class="method-icon">⛄</div>
+      <div class="method-name">Debt Snowball</div>
+      <div class="method-how">
+        <div class="method-how-title">How it works:</div>
+        Pay minimum on all debts, then put extra money toward the <strong>smallest balance</strong> first.
+      </div>
+      <div class="method-pros">
+        <div class="method-pros-title">✓ Pros:</div>
+        <ul>
+          <li>Quick wins = motivation boost</li>
+          <li>Fewer bills faster</li>
+          <li>Psychologically satisfying</li>
+        </ul>
+      </div>
+      <div class="method-best">
+        <div class="method-best-title">Best if you:</div>
+        Need motivation and quick victories to stay on track
+      </div>
+    </div>
+
+    <div class="method-card avalanche">
+      <div class="method-icon">🏔️</div>
+      <div class="method-name">Debt Avalanche</div>
+      <div class="method-how">
+        <div class="method-how-title">How it works:</div>
+        Pay minimum on all debts, then put extra money toward the <strong>highest interest rate</strong> first.
+      </div>
+      <div class="method-pros">
+        <div class="method-pros-title">✓ Pros:</div>
+        <ul>
+          <li>Saves most money on interest</li>
+          <li>Mathematically optimal</li>
+          <li>Faster total payoff time</li>
+        </ul>
+      </div>
+      <div class="method-best">
+        <div class="method-best-title">Best if you:</div>
+        Are disciplined and motivated by saving money long-term
+      </div>
+    </div>
+  </div>
+
+  <div class="example-section">
+    <div class="example-title">📝 Example: You have 3 debts</div>
+    <div class="example-debts">
+      <div class="example-debt">
+        <div class="debt-name">Credit Card A</div>
+        <div class="debt-amount">$500</div>
+        <div class="debt-rate">22% APR</div>
+      </div>
+      <div class="example-debt">
+        <div class="debt-name">Credit Card B</div>
+        <div class="debt-amount">$2,000</div>
+        <div class="debt-rate">18% APR</div>
+      </div>
+      <div class="example-debt">
+        <div class="debt-name">Car Loan</div>
+        <div class="debt-amount">$8,000</div>
+        <div class="debt-rate">6% APR</div>
+      </div>
+    </div>
+    <div class="example-order">
+      <div class="order-box snowball">
+        <div class="order-title">⛄ Snowball order:</div>
+        <ol class="order-list">
+          <li>Card A ($500) ← smallest</li>
+          <li>Card B ($2,000)</li>
+          <li>Car Loan ($8,000)</li>
+        </ol>
+      </div>
+      <div class="order-box avalanche">
+        <div class="order-title">🏔️ Avalanche order:</div>
+        <ol class="order-list">
+          <li>Card A (22%) ← highest rate</li>
+          <li>Card B (18%)</li>
+          <li>Car Loan (6%)</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+
+  <div class="choice-section">
+    <div class="choice-title">✏️ My debt payoff strategy will be:</div>
+    <div class="choice-options">
+      <div class="choice-option">
+        <div class="choice-checkbox"></div>
+        <span>Snowball (smallest first)</span>
+      </div>
+      <div class="choice-option">
+        <div class="choice-checkbox"></div>
+        <span>Avalanche (highest interest first)</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="quote-box">
+    <div class="quote-text">"Every dollar you pay toward debt is buying your future freedom."</div>
+    <div class="quote-meaning">The best method is the one you'll actually stick with.</div>
+  </div>
+</body>
+
+</html>

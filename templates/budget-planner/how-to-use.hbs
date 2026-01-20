@@ -6,103 +6,229 @@
   <style>
     @page {
       size: A4;
-      margin: 20mm;
+      margin: 12mm;
     }
 
     body {
       font-family: {{customization.fontFamily}};
       color: #333;
-      line-height: 1.6;
+      line-height: 1.3;
     }
 
     .header {
       text-align: center;
-      margin-bottom: 30px;
-      padding-bottom: 20px;
-      border-bottom: 4px solid {{customization.primaryColor}};
+      margin-bottom: 12px;
+      border-bottom: 3px solid {{customization.primaryColor}};
+      padding-bottom: 8px;
     }
 
     .title {
-      font-size: 32px;
+      font-size: 24px;
       color: {{customization.primaryColor}};
-      margin: 0 0 10px 0;
+      margin-bottom: 3px;
     }
 
     .subtitle {
-      font-size: 16px;
+      font-size: 12px;
       color: #666;
-      font-style: italic;
+    }
+
+    .time-badge {
+      display: inline-block;
+      background: {{customization.primaryColor}};
+      color: white;
+      padding: 5px 15px;
+      border-radius: 15px;
+      font-size: 12px;
+      margin-bottom: 12px;
     }
 
     .section {
-      margin: 25px 0;
-    }
-
-    .section-number {
-      display: inline-block;
-      width: 35px;
-      height: 35px;
-      background: {{customization.primaryColor}};
-      color: white;
-      border-radius: 50%;
-      text-align: center;
-      line-height: 35px;
-      font-weight: bold;
-      font-size: 18px;
-      margin-right: 12px;
-      float: left;
+      margin-bottom: 12px;
     }
 
     .section-title {
-      font-size: 20px;
+      font-size: 14px;
+      font-weight: bold;
+      color: {{customization.primaryColor}};
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .weekly-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 8px;
+    }
+
+    .week-card {
+      background: #f8f9fa;
+      border-radius: 8px;
+      padding: 10px;
+      text-align: center;
+      border-top: 3px solid {{customization.primaryColor}};
+    }
+
+    .week-label {
+      font-size: 10px;
+      color: #666;
+      margin-bottom: 5px;
+    }
+
+    .week-task {
+      font-size: 11px;
+      font-weight: 500;
+      color: #333;
+      min-height: 36px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .week-time {
+      font-size: 10px;
+      color: {{customization.secondaryColor}};
+      margin-top: 5px;
+    }
+
+    .checklist-box {
+      background: linear-gradient(135deg, {{customization.primaryColor}}10, {{customization.secondaryColor}}10);
+      border-radius: 10px;
+      padding: 12px;
+      margin-bottom: 12px;
+    }
+
+    .checklist-title {
+      font-size: 13px;
       font-weight: bold;
       color: {{customization.primaryColor}};
       margin-bottom: 10px;
-      overflow: hidden;
     }
 
-    .section-content {
-      margin-left: 47px;
-      font-size: 14px;
-      color: #555;
+    .checklist-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 6px;
     }
 
-    .section-content ul {
-      margin: 8px 0;
-      padding-left: 20px;
+    .check-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      padding: 6px 8px;
+      background: white;
+      border-radius: 6px;
     }
 
-    .section-content li {
-      margin: 5px 0;
+    .checkbox {
+      width: 16px;
+      height: 16px;
+      border: 2px solid {{customization.primaryColor}};
+      border-radius: 3px;
+      flex-shrink: 0;
+      margin-top: 1px;
     }
 
-    .tip-box {
-      background: linear-gradient(135deg, #FFF9E6 0%, #FFE5E5 100%);
-      border-left: 4px solid {{customization.primaryColor}};
-      padding: 15px 20px;
-      margin: 25px 0;
-      border-radius: 5px;
+    .check-text {
+      font-size: 11px;
+      color: #444;
     }
 
-    .tip-title {
+    .monthly-section {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+
+    .monthly-box {
+      border: 2px solid #e0e0e0;
+      border-radius: 10px;
+      padding: 12px;
+    }
+
+    .monthly-box.start {
+      border-color: #4caf50;
+      background: #e8f5e9;
+    }
+
+    .monthly-box.end {
+      border-color: #ff9800;
+      background: #fff3e0;
+    }
+
+    .monthly-title {
+      font-size: 12px;
       font-weight: bold;
-      font-size: 16px;
-      color: {{customization.primaryColor}};
       margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
     }
 
-    .tip-content {
-      font-size: 14px;
+    .monthly-box.start .monthly-title { color: #2e7d32; }
+    .monthly-box.end .monthly-title { color: #ef6c00; }
+
+    .monthly-list {
+      font-size: 10px;
+      color: #555;
+      padding-left: 15px;
+      margin: 0;
+    }
+
+    .monthly-list li {
+      margin-bottom: 4px;
+    }
+
+    .tips-section {
+      background: #fff8e1;
+      border-radius: 10px;
+      padding: 12px;
+    }
+
+    .tips-title {
+      font-size: 13px;
+      font-weight: bold;
+      color: #f57c00;
+      margin-bottom: 10px;
+    }
+
+    .tips-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+
+    .tip-card {
+      display: flex;
+      gap: 8px;
+      font-size: 10px;
+    }
+
+    .tip-icon {
+      font-size: 16px;
+      flex-shrink: 0;
+    }
+
+    .tip-text {
       color: #555;
     }
 
-    .footer {
+    .tip-text strong {
+      color: #333;
+    }
+
+    .footer-quote {
+      margin-top: 12px;
       text-align: center;
-      margin-top: 30px;
-      padding-top: 15px;
-      border-top: 2px solid #ddd;
-      font-size: 13px;
-      color: #888;
+      padding: 10px;
+      background: {{customization.primaryColor}};
+      color: white;
+      border-radius: 8px;
+      font-style: italic;
+      font-size: 12px;
     }
   </style>
 </head>
@@ -110,96 +236,114 @@
 <body>
   <div class="header">
     <h1 class="title">How to Use This Planner</h1>
-    <p class="subtitle">Your Complete Guide to Financial Success</p>
+    <p class="subtitle">Your weekly routine for financial success</p>
+  </div>
+
+  <div style="text-align: center;">
+    <span class="time-badge">Just 15 minutes per week</span>
   </div>
 
   <div class="section">
-    <div class="section-number">1</div>
-    <div class="section-title">Monthly Budget Pages</div>
-    <div class="section-content">
-      <strong>Purpose:</strong> Plan and track your monthly income and expenses
-      <ul>
-        <li><strong>Planned Column:</strong> Write your expected amounts at the beginning of the month</li>
-        <li><strong>Actual Column:</strong> Record what you really earned/spent throughout the month</li>
-        <li><strong>Income Section:</strong> Include all sources (salary, freelance, investments, etc.)</li>
-        <li><strong>Expenses Section:</strong> Fill in your budget for each category</li>
-        <li><strong>Summary Box:</strong> Compare planned vs actual to see where you stand</li>
+    <div class="section-title">Your Weekly Money Date</div>
+    <div class="weekly-grid">
+      <div class="week-card">
+        <div class="week-label">Week 1</div>
+        <div class="week-task">Review last week's spending</div>
+        <div class="week-time">5 min</div>
+      </div>
+      <div class="week-card">
+        <div class="week-label">Week 2</div>
+        <div class="week-task">Update "Actual" column in budget</div>
+        <div class="week-time">5 min</div>
+      </div>
+      <div class="week-card">
+        <div class="week-label">Week 3</div>
+        <div class="week-task">Check savings goal progress</div>
+        <div class="week-time">3 min</div>
+      </div>
+      <div class="week-card">
+        <div class="week-label">Week 4</div>
+        <div class="week-task">Plan next month's adjustments</div>
+        <div class="week-time">5 min</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="checklist-box">
+    <div class="checklist-title">Weekly Check-In (pick a day and stick to it!)</div>
+    <div class="checklist-grid">
+      <div class="check-item">
+        <div class="checkbox"></div>
+        <span class="check-text">Review this week's expenses in tracker</span>
+      </div>
+      <div class="check-item">
+        <div class="checkbox"></div>
+        <span class="check-text">Update "Actual" amounts in budget</span>
+      </div>
+      <div class="check-item">
+        <div class="checkbox"></div>
+        <span class="check-text">Check if any bills are due this week</span>
+      </div>
+      <div class="check-item">
+        <div class="checkbox"></div>
+        <span class="check-text">Transfer money to savings (if able)</span>
+      </div>
+      <div class="check-item">
+        <div class="checkbox"></div>
+        <span class="check-text">Celebrate one small win this week!</span>
+      </div>
+      <div class="check-item">
+        <div class="checkbox"></div>
+        <span class="check-text">Set one intention for next week</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="monthly-section">
+    <div class="monthly-box start">
+      <div class="monthly-title">Start of Month</div>
+      <ul class="monthly-list">
+        <li>Fill in "Planned" column for income & expenses</li>
+        <li>Write your 3 priorities for the month</li>
+        <li>Set a specific expense to reduce this month</li>
+        <li>Review subscriptions — cancel unused ones</li>
+      </ul>
+    </div>
+    <div class="monthly-box end">
+      <div class="monthly-title">End of Month</div>
+      <ul class="monthly-list">
+        <li>Complete the reflection box</li>
+        <li>Calculate total income vs expenses</li>
+        <li>Update savings goal progress bars</li>
+        <li>Carry lessons into next month's plan</li>
       </ul>
     </div>
   </div>
 
-  <div class="section">
-    <div class="section-number">2</div>
-    <div class="section-title">Expense Tracker</div>
-    <div class="section-content">
-      <strong>Purpose:</strong> Record every transaction to stay aware of your spending
-      <ul>
-        <li><strong>Date:</strong> When you made the purchase</li>
-        <li><strong>Category:</strong> Which budget category (Housing, Food, etc.)</li>
-        <li><strong>Description:</strong> What you bought (e.g., "Grocery shopping at Target")</li>
-        <li><strong>Amount:</strong> How much you spent</li>
-        <li><strong>Notes:</strong> Any additional details or reminders</li>
-      </ul>
-      <strong>Tip:</strong> Track expenses daily or weekly to avoid forgetting purchases
+  <div class="tips-section">
+    <div class="tips-title">Pro Tips for Success</div>
+    <div class="tips-grid">
+      <div class="tip-card">
+        <span class="tip-icon">📱</span>
+        <span class="tip-text"><strong>Set a recurring reminder</strong> — Same day, same time each week (Sunday evening works great)</span>
+      </div>
+      <div class="tip-card">
+        <span class="tip-icon">☕</span>
+        <span class="tip-text"><strong>Make it enjoyable</strong> — Grab a coffee, put on music. It's a date with your future self.</span>
+      </div>
+      <div class="tip-card">
+        <span class="tip-icon">✏️</span>
+        <span class="tip-text"><strong>Write in pencil</strong> — Plans change. That's okay. Erase and adjust.</span>
+      </div>
+      <div class="tip-card">
+        <span class="tip-icon">🎉</span>
+        <span class="tip-text"><strong>Celebrate small wins</strong> — Paid a bill on time? That counts. Saved $20? Victory.</span>
+      </div>
     </div>
   </div>
 
-  <div class="section">
-    <div class="section-number">3</div>
-    <div class="section-title">Savings Goals</div>
-    <div class="section-content">
-      <strong>Purpose:</strong> Visualize and track progress toward your financial goals
-      <ul>
-        <li><strong>Goal Name & Amount:</strong> Already filled in with your targets</li>
-        <li><strong>Progress Bar:</strong> Shade one segment for every 10% you save</li>
-        <li><strong>Target Date:</strong> Write your deadline</li>
-        <li><strong>Monthly Savings:</strong> Calculate how much to save each month</li>
-        <li><strong>Current Amount:</strong> Update regularly to track progress</li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="section">
-    <div class="section-number">4</div>
-    <div class="section-title">Debt Payoff Tracker</div>
-    <div class="section-content">
-      <strong>Purpose:</strong> Stay motivated as you eliminate debt
-      <ul>
-        <li>Fill in debt names and amounts</li>
-        <li>Record interest rates and minimum payments</li>
-        <li>Shade progress bars as you pay down debt</li>
-        <li>Celebrate milestones at 25%, 50%, 75%, and 100%!</li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="section">
-    <div class="section-number">5</div>
-    <div class="section-title">Year at a Glance</div>
-    <div class="section-content">
-      <strong>Purpose:</strong> See your complete financial picture for {{year}}
-      <ul>
-        <li>Fill in at the end of each month</li>
-        <li>Track trends over time</li>
-        <li>Identify your best and worst months financially</li>
-        <li>Use insights to improve your budget planning</li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="tip-box">
-    <div class="tip-title">💡 Pro Tips for Success</div>
-    <div class="tip-content">
-      • Review your budget weekly to stay on track<br>
-      • Use different colored pens to make tracking more visual<br>
-      • Don't beat yourself up if you overspend - adjust and move forward<br>
-      • Celebrate small wins along the way<br>
-      • Keep this planner where you'll see it daily
-    </div>
-  </div>
-
-  <div class="footer">
-    You've got this! Small steps lead to big financial wins. 🎯
+  <div class="footer-quote">
+    "The best budget is one you'll actually use. Done is better than perfect."
   </div>
 </body>
 

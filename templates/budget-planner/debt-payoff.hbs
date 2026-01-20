@@ -12,32 +12,46 @@
     body {
       font-family: {{customization.fontFamily}};
       color: #333;
+      line-height: 1.4;
     }
 
     .header {
       text-align: center;
-      margin-bottom: 30px;
+      margin-bottom: 15px;
       border-bottom: 3px solid {{customization.primaryColor}};
-      padding-bottom: 15px;
+      padding-bottom: 12px;
     }
 
     .title {
-      font-size: 32px;
+      font-size: 28px;
       color: {{customization.primaryColor}};
       margin: 0;
     }
 
     .subtitle {
-      font-size: 16px;
+      font-size: 13px;
       color: #666;
       margin-top: 5px;
     }
 
+    .strategy-tip {
+      background: #e3f2fd;
+      border-left: 4px solid #2196f3;
+      padding: 10px 15px;
+      margin-bottom: 15px;
+      border-radius: 0 8px 8px 0;
+      font-size: 11px;
+    }
+
+    .strategy-tip strong {
+      color: #1976d2;
+    }
+
     .debt-card {
-      border: 2px solid {{customization.primaryColor}};
-      border-radius: 10px;
-      padding: 20px;
-      margin-bottom: 20px;
+      border: 2px solid #e91e63;
+      border-radius: 12px;
+      padding: 15px;
+      margin-bottom: 15px;
       background: white;
     }
 
@@ -45,129 +59,164 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-bottom: 15px;
+      margin-bottom: 12px;
       padding-bottom: 10px;
-      border-bottom: 1px solid #e0e0e0;
+      border-bottom: 1px dashed #e0e0e0;
     }
 
     .debt-name {
-      font-size: 18px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .debt-number {
+      width: 30px;
+      height: 30px;
+      background: #e91e63;
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       font-weight: bold;
-      color: {{customization.primaryColor}};
+      font-size: 14px;
+    }
+
+    .debt-input {
+      font-size: 16px;
+      font-weight: bold;
+      color: #333;
+      border-bottom: 2px dotted #ccc;
+      min-width: 180px;
     }
 
     .debt-total {
       font-size: 22px;
       font-weight: bold;
-      color: #e74c3c;
+      color: #e91e63;
     }
 
-    .info-grid {
+    .debt-info-grid {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       gap: 10px;
-      margin-bottom: 15px;
+      margin-bottom: 12px;
     }
 
     .info-item {
-      padding: 10px;
-      background: #f5f5f5;
-      border-radius: 5px;
+      background: #f8f8f8;
+      padding: 8px;
+      border-radius: 6px;
       text-align: center;
     }
 
     .info-label {
-      font-size: 11px;
+      font-size: 9px;
       color: #666;
-      margin-bottom: 5px;
+      margin-bottom: 3px;
     }
 
     .info-value {
-      font-size: 14px;
+      font-size: 13px;
       font-weight: bold;
       color: {{customization.primaryColor}};
     }
 
     .progress-section {
-      margin-top: 15px;
+      margin: 10px 0;
     }
 
-    .progress-bar-container {
-      background: #e0e0e0;
-      height: 20px;
-      border-radius: 10px;
-      overflow: hidden;
-    }
-
-    .progress-segments {
+    .progress-bar {
       display: flex;
-      height: 100%;
+      height: 22px;
+      border-radius: 11px;
+      overflow: hidden;
+      background: #e8e8e8;
     }
 
-    .segment {
+    .progress-segment {
       flex: 1;
       border-right: 2px solid white;
       background: #f0f0f0;
     }
 
-    .segment:last-child {
+    .progress-segment:last-child {
       border-right: none;
     }
 
     .progress-labels {
       display: flex;
       justify-content: space-between;
-      font-size: 10px;
-      color: #666;
-      margin-top: 5px;
+      font-size: 9px;
+      color: #888;
+      margin-top: 3px;
     }
 
-    .payment-tracker {
+    .milestones-box {
+      background: linear-gradient(135deg, #4caf5015, #8bc34a15);
+      border: 2px solid #4caf50;
+      border-radius: 12px;
+      padding: 15px;
       margin-top: 20px;
     }
 
-    .tracker-title {
+    .milestones-title {
       font-size: 14px;
       font-weight: bold;
-      color: {{customization.primaryColor}};
-      margin-bottom: 10px;
+      color: #2e7d32;
+      margin-bottom: 12px;
+      text-align: center;
     }
 
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      font-size: 11px;
+    .milestones-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 8px;
     }
 
-    th {
-      background: {{customization.primaryColor}};
-      color: white;
-      padding: 8px 5px;
-      text-align: left;
+    .milestone {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 10px 5px;
+      background: white;
+      border-radius: 8px;
+      text-align: center;
     }
 
-    td {
-      padding: 8px 5px;
-      border-bottom: 1px solid #e0e0e0;
+    .milestone-checkbox {
+      width: 24px;
+      height: 24px;
+      border: 2px solid #4caf50;
+      border-radius: 50%;
+      margin-bottom: 5px;
     }
 
-    tr:nth-child(even) {
-      background: #f9f9f9;
+    .milestone-label {
+      font-size: 10px;
+      color: #555;
+      font-weight: 500;
+    }
+
+    .milestone-emoji {
+      font-size: 16px;
+      margin-top: 3px;
     }
 
     .summary-box {
-      margin-top: 30px;
-      padding: 20px;
-      background: linear-gradient(135deg, {{customization.primaryColor}}10, {{customization.secondaryColor}}10);
+      margin-top: 15px;
+      padding: 15px;
+      background: #f5f5f5;
       border-radius: 10px;
-      border: 2px solid {{customization.primaryColor}};
     }
 
     .summary-title {
-      font-size: 18px;
+      font-size: 14px;
       font-weight: bold;
       color: {{customization.primaryColor}};
-      margin-bottom: 15px;
+      margin-bottom: 12px;
+      text-align: center;
     }
 
     .summary-grid {
@@ -178,11 +227,15 @@
 
     .summary-item {
       text-align: center;
+      padding: 10px;
+      background: white;
+      border-radius: 8px;
     }
 
     .summary-label {
-      font-size: 12px;
+      font-size: 11px;
       color: #666;
+      margin-bottom: 5px;
     }
 
     .summary-value {
@@ -190,25 +243,44 @@
       font-weight: bold;
       color: {{customization.primaryColor}};
     }
+
+    .quote-footer {
+      margin-top: 15px;
+      text-align: center;
+      padding: 12px;
+      background: linear-gradient(135deg, {{customization.primaryColor}}, {{customization.secondaryColor}});
+      color: white;
+      border-radius: 8px;
+      font-style: italic;
+      font-size: 13px;
+    }
   </style>
 </head>
 
 <body>
   <div class="header">
     <h1 class="title">Debt Payoff Tracker</h1>
-    <p class="subtitle">{{year}} - Track your journey to becoming debt-free</p>
+    <p class="subtitle">{{year}} — Your journey to financial freedom</p>
   </div>
 
+  <div class="strategy-tip">
+    <strong>Tip:</strong> Order your debts by <strong>interest rate (Avalanche)</strong> to save the most money,
+    or by <strong>smallest balance (Snowball)</strong> for quick motivation wins. Pick one and stick with it!
+  </div>
+
+  <!-- Debt 1 -->
   <div class="debt-card">
     <div class="debt-header">
-      <div class="debt-name">Debt #1: ________________</div>
-      <div class="debt-total">$_______</div>
+      <div class="debt-name">
+        <span class="debt-number">1</span>
+        <span class="debt-input">_________________________</span>
+      </div>
+      <div class="debt-total">$__________</div>
     </div>
-
-    <div class="info-grid">
+    <div class="debt-info-grid">
       <div class="info-item">
         <div class="info-label">Interest Rate</div>
-        <div class="info-value">____%</div>
+        <div class="info-value">_____% APR</div>
       </div>
       <div class="info-item">
         <div class="info-label">Min. Payment</div>
@@ -216,49 +288,45 @@
       </div>
       <div class="info-item">
         <div class="info-label">Target Payoff</div>
-        <div class="info-value">___/___/____</div>
+        <div class="info-value">__/__/____</div>
       </div>
       <div class="info-item">
         <div class="info-label">Remaining</div>
         <div class="info-value">$_______</div>
       </div>
     </div>
-
     <div class="progress-section">
-      <div class="progress-bar-container">
-        <div class="progress-segments">
-          <div class="segment"></div>
-          <div class="segment"></div>
-          <div class="segment"></div>
-          <div class="segment"></div>
-          <div class="segment"></div>
-          <div class="segment"></div>
-          <div class="segment"></div>
-          <div class="segment"></div>
-          <div class="segment"></div>
-          <div class="segment"></div>
-        </div>
+      <div class="progress-bar">
+        <div class="progress-segment"></div>
+        <div class="progress-segment"></div>
+        <div class="progress-segment"></div>
+        <div class="progress-segment"></div>
+        <div class="progress-segment"></div>
+        <div class="progress-segment"></div>
+        <div class="progress-segment"></div>
+        <div class="progress-segment"></div>
+        <div class="progress-segment"></div>
+        <div class="progress-segment"></div>
       </div>
       <div class="progress-labels">
-        <span>0%</span>
-        <span>25%</span>
-        <span>50%</span>
-        <span>75%</span>
-        <span>100%</span>
+        <span>0%</span><span>25%</span><span>50%</span><span>75%</span><span>100%</span>
       </div>
     </div>
   </div>
 
+  <!-- Debt 2 -->
   <div class="debt-card">
     <div class="debt-header">
-      <div class="debt-name">Debt #2: ________________</div>
-      <div class="debt-total">$_______</div>
+      <div class="debt-name">
+        <span class="debt-number">2</span>
+        <span class="debt-input">_________________________</span>
+      </div>
+      <div class="debt-total">$__________</div>
     </div>
-
-    <div class="info-grid">
+    <div class="debt-info-grid">
       <div class="info-item">
         <div class="info-label">Interest Rate</div>
-        <div class="info-value">____%</div>
+        <div class="info-value">_____% APR</div>
       </div>
       <div class="info-item">
         <div class="info-label">Min. Payment</div>
@@ -266,55 +334,85 @@
       </div>
       <div class="info-item">
         <div class="info-label">Target Payoff</div>
-        <div class="info-value">___/___/____</div>
+        <div class="info-value">__/__/____</div>
       </div>
       <div class="info-item">
         <div class="info-label">Remaining</div>
         <div class="info-value">$_______</div>
       </div>
     </div>
-
     <div class="progress-section">
-      <div class="progress-bar-container">
-        <div class="progress-segments">
-          <div class="segment"></div>
-          <div class="segment"></div>
-          <div class="segment"></div>
-          <div class="segment"></div>
-          <div class="segment"></div>
-          <div class="segment"></div>
-          <div class="segment"></div>
-          <div class="segment"></div>
-          <div class="segment"></div>
-          <div class="segment"></div>
-        </div>
+      <div class="progress-bar">
+        <div class="progress-segment"></div>
+        <div class="progress-segment"></div>
+        <div class="progress-segment"></div>
+        <div class="progress-segment"></div>
+        <div class="progress-segment"></div>
+        <div class="progress-segment"></div>
+        <div class="progress-segment"></div>
+        <div class="progress-segment"></div>
+        <div class="progress-segment"></div>
+        <div class="progress-segment"></div>
       </div>
       <div class="progress-labels">
-        <span>0%</span>
-        <span>25%</span>
-        <span>50%</span>
-        <span>75%</span>
-        <span>100%</span>
+        <span>0%</span><span>25%</span><span>50%</span><span>75%</span><span>100%</span>
       </div>
     </div>
   </div>
 
+  <!-- Milestones -->
+  <div class="milestones-box">
+    <div class="milestones-title">Debt Freedom Milestones</div>
+    <div class="milestones-grid">
+      <div class="milestone">
+        <div class="milestone-checkbox"></div>
+        <span class="milestone-label">First debt paid!</span>
+        <span class="milestone-emoji">🎉</span>
+      </div>
+      <div class="milestone">
+        <div class="milestone-checkbox"></div>
+        <span class="milestone-label">25% gone</span>
+        <span class="milestone-emoji">💪</span>
+      </div>
+      <div class="milestone">
+        <div class="milestone-checkbox"></div>
+        <span class="milestone-label">Halfway!</span>
+        <span class="milestone-emoji">🔥</span>
+      </div>
+      <div class="milestone">
+        <div class="milestone-checkbox"></div>
+        <span class="milestone-label">75% done</span>
+        <span class="milestone-emoji">🚀</span>
+      </div>
+      <div class="milestone">
+        <div class="milestone-checkbox"></div>
+        <span class="milestone-label">DEBT FREE!</span>
+        <span class="milestone-emoji">🏆</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Summary -->
   <div class="summary-box">
     <div class="summary-title">Total Debt Summary</div>
     <div class="summary-grid">
       <div class="summary-item">
-        <div class="summary-label">Total Debt</div>
-        <div class="summary-value">$_______</div>
+        <div class="summary-label">Starting Total Debt</div>
+        <div class="summary-value">$________</div>
       </div>
       <div class="summary-item">
-        <div class="summary-label">Total Paid</div>
-        <div class="summary-value">$_______</div>
+        <div class="summary-label">Total Paid Off</div>
+        <div class="summary-value">$________</div>
       </div>
       <div class="summary-item">
         <div class="summary-label">Remaining</div>
-        <div class="summary-value">$_______</div>
+        <div class="summary-value">$________</div>
       </div>
     </div>
+  </div>
+
+  <div class="quote-footer">
+    "Every dollar you pay toward debt is buying your future freedom."
   </div>
 </body>
 

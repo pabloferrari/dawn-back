@@ -1,0 +1,442 @@
+<!-- templates/budget-planner/subscriptions.hbs -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    @page {
+      size: A4;
+      margin: 15mm;
+    }
+
+    body {
+      font-family: {{customization.fontFamily}};
+      color: #333;
+      line-height: 1.4;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+      border-bottom: 3px solid {{customization.primaryColor}};
+      padding-bottom: 12px;
+    }
+
+    .title {
+      font-size: 26px;
+      color: {{customization.primaryColor}};
+      margin: 0;
+    }
+
+    .subtitle {
+      font-size: 13px;
+      color: #666;
+      margin-top: 5px;
+    }
+
+    .intro {
+      background: #fff3e0;
+      border-left: 4px solid #ff9800;
+      padding: 12px 15px;
+      margin-bottom: 20px;
+      border-radius: 0 8px 8px 0;
+      font-size: 12px;
+    }
+
+    .intro strong {
+      color: #e65100;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 11px;
+    }
+
+    th {
+      background: {{customization.primaryColor}};
+      color: white;
+      padding: 10px 8px;
+      text-align: left;
+      font-size: 11px;
+    }
+
+    td {
+      padding: 12px 8px;
+      border-bottom: 1px solid #e0e0e0;
+      vertical-align: middle;
+    }
+
+    tr:nth-child(even) {
+      background: #fafafa;
+    }
+
+    .service-col {
+      width: 25%;
+    }
+
+    .amount-col {
+      width: 12%;
+      text-align: right;
+    }
+
+    .freq-col {
+      width: 12%;
+      text-align: center;
+    }
+
+    .date-col {
+      width: 12%;
+      text-align: center;
+    }
+
+    .using-col {
+      width: 12%;
+      text-align: center;
+    }
+
+    .cancel-col {
+      width: 12%;
+      text-align: center;
+    }
+
+    .notes-col {
+      width: 15%;
+    }
+
+    .checkbox {
+      width: 18px;
+      height: 18px;
+      border: 2px solid {{customization.primaryColor}};
+      border-radius: 3px;
+      display: inline-block;
+    }
+
+    .checkbox.cancel {
+      border-color: #e91e63;
+    }
+
+    .category-row {
+      background: {{customization.primaryColor}}15 !important;
+    }
+
+    .category-label {
+      font-weight: bold;
+      color: {{customization.primaryColor}};
+      font-size: 12px;
+    }
+
+    .summary-section {
+      margin-top: 25px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    .summary-box {
+      padding: 15px;
+      border-radius: 10px;
+      background: #f5f5f5;
+    }
+
+    .summary-box.totals {
+      background: linear-gradient(135deg, {{customization.primaryColor}}10, {{customization.secondaryColor}}10);
+      border: 2px solid {{customization.primaryColor}};
+    }
+
+    .summary-title {
+      font-size: 14px;
+      font-weight: bold;
+      color: {{customization.primaryColor}};
+      margin-bottom: 12px;
+    }
+
+    .summary-row {
+      display: flex;
+      justify-content: space-between;
+      padding: 8px 0;
+      border-bottom: 1px solid #e0e0e0;
+      font-size: 12px;
+    }
+
+    .summary-row:last-child {
+      border-bottom: none;
+      padding-top: 10px;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    .summary-value {
+      font-weight: bold;
+      color: {{customization.primaryColor}};
+    }
+
+    .action-box {
+      padding: 15px;
+      border-radius: 10px;
+      background: #e8f5e9;
+      border: 2px solid #4caf50;
+    }
+
+    .action-title {
+      font-size: 14px;
+      font-weight: bold;
+      color: #2e7d32;
+      margin-bottom: 10px;
+    }
+
+    .action-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 0;
+      font-size: 12px;
+    }
+
+    .action-checkbox {
+      width: 16px;
+      height: 16px;
+      border: 2px solid #4caf50;
+      border-radius: 3px;
+    }
+
+    .tip-footer {
+      margin-top: 20px;
+      text-align: center;
+      padding: 12px;
+      background: {{customization.primaryColor}};
+      color: white;
+      border-radius: 8px;
+      font-size: 12px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    <h1 class="title">Subscriptions & Fixed Payments</h1>
+    <p class="subtitle">{{year}} — Know exactly where your money goes every month</p>
+  </div>
+
+  <div class="intro">
+    <strong>The average person spends $273/month on subscriptions</strong> and often forgets about half of them.
+    Use this tracker to audit your recurring payments — you might be surprised what you find!
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th class="service-col">Service / Description</th>
+        <th class="amount-col">Amount</th>
+        <th class="freq-col">Frequency</th>
+        <th class="date-col">Billing Date</th>
+        <th class="using-col">Still Using?</th>
+        <th class="cancel-col">Cancel?</th>
+        <th class="notes-col">Notes</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Streaming -->
+      <tr class="category-row">
+        <td colspan="7" class="category-label">📺 Streaming & Entertainment</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td class="amount-col">$</td>
+        <td class="freq-col"></td>
+        <td class="date-col"></td>
+        <td class="using-col"><div class="checkbox"></div></td>
+        <td class="cancel-col"><div class="checkbox cancel"></div></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td class="amount-col">$</td>
+        <td class="freq-col"></td>
+        <td class="date-col"></td>
+        <td class="using-col"><div class="checkbox"></div></td>
+        <td class="cancel-col"><div class="checkbox cancel"></div></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td class="amount-col">$</td>
+        <td class="freq-col"></td>
+        <td class="date-col"></td>
+        <td class="using-col"><div class="checkbox"></div></td>
+        <td class="cancel-col"><div class="checkbox cancel"></div></td>
+        <td></td>
+      </tr>
+
+      <!-- Software & Apps -->
+      <tr class="category-row">
+        <td colspan="7" class="category-label">💻 Software & Apps</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td class="amount-col">$</td>
+        <td class="freq-col"></td>
+        <td class="date-col"></td>
+        <td class="using-col"><div class="checkbox"></div></td>
+        <td class="cancel-col"><div class="checkbox cancel"></div></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td class="amount-col">$</td>
+        <td class="freq-col"></td>
+        <td class="date-col"></td>
+        <td class="using-col"><div class="checkbox"></div></td>
+        <td class="cancel-col"><div class="checkbox cancel"></div></td>
+        <td></td>
+      </tr>
+
+      <!-- Health & Fitness -->
+      <tr class="category-row">
+        <td colspan="7" class="category-label">🏋️ Health & Fitness</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td class="amount-col">$</td>
+        <td class="freq-col"></td>
+        <td class="date-col"></td>
+        <td class="using-col"><div class="checkbox"></div></td>
+        <td class="cancel-col"><div class="checkbox cancel"></div></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td class="amount-col">$</td>
+        <td class="freq-col"></td>
+        <td class="date-col"></td>
+        <td class="using-col"><div class="checkbox"></div></td>
+        <td class="cancel-col"><div class="checkbox cancel"></div></td>
+        <td></td>
+      </tr>
+
+      <!-- Insurance & Utilities -->
+      <tr class="category-row">
+        <td colspan="7" class="category-label">🏠 Insurance & Utilities</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td class="amount-col">$</td>
+        <td class="freq-col"></td>
+        <td class="date-col"></td>
+        <td class="using-col"><div class="checkbox"></div></td>
+        <td class="cancel-col"><div class="checkbox cancel"></div></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td class="amount-col">$</td>
+        <td class="freq-col"></td>
+        <td class="date-col"></td>
+        <td class="using-col"><div class="checkbox"></div></td>
+        <td class="cancel-col"><div class="checkbox cancel"></div></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td class="amount-col">$</td>
+        <td class="freq-col"></td>
+        <td class="date-col"></td>
+        <td class="using-col"><div class="checkbox"></div></td>
+        <td class="cancel-col"><div class="checkbox cancel"></div></td>
+        <td></td>
+      </tr>
+
+      <!-- Other -->
+      <tr class="category-row">
+        <td colspan="7" class="category-label">📦 Other Subscriptions</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td class="amount-col">$</td>
+        <td class="freq-col"></td>
+        <td class="date-col"></td>
+        <td class="using-col"><div class="checkbox"></div></td>
+        <td class="cancel-col"><div class="checkbox cancel"></div></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td class="amount-col">$</td>
+        <td class="freq-col"></td>
+        <td class="date-col"></td>
+        <td class="using-col"><div class="checkbox"></div></td>
+        <td class="cancel-col"><div class="checkbox cancel"></div></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td class="amount-col">$</td>
+        <td class="freq-col"></td>
+        <td class="date-col"></td>
+        <td class="using-col"><div class="checkbox"></div></td>
+        <td class="cancel-col"><div class="checkbox cancel"></div></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="summary-section">
+    <div class="summary-box totals">
+      <div class="summary-title">Monthly Totals</div>
+      <div class="summary-row">
+        <span>Streaming & Entertainment</span>
+        <span class="summary-value">$_______</span>
+      </div>
+      <div class="summary-row">
+        <span>Software & Apps</span>
+        <span class="summary-value">$_______</span>
+      </div>
+      <div class="summary-row">
+        <span>Health & Fitness</span>
+        <span class="summary-value">$_______</span>
+      </div>
+      <div class="summary-row">
+        <span>Insurance & Utilities</span>
+        <span class="summary-value">$_______</span>
+      </div>
+      <div class="summary-row">
+        <span>Other</span>
+        <span class="summary-value">$_______</span>
+      </div>
+      <div class="summary-row">
+        <span>TOTAL MONTHLY</span>
+        <span class="summary-value">$_______</span>
+      </div>
+    </div>
+
+    <div class="action-box">
+      <div class="action-title">✅ Subscription Audit Checklist</div>
+      <div class="action-item">
+        <div class="action-checkbox"></div>
+        <span>Reviewed all bank/card statements</span>
+      </div>
+      <div class="action-item">
+        <div class="action-checkbox"></div>
+        <span>Checked email for subscription receipts</span>
+      </div>
+      <div class="action-item">
+        <div class="action-checkbox"></div>
+        <span>Identified services I don't use</span>
+      </div>
+      <div class="action-item">
+        <div class="action-checkbox"></div>
+        <span>Canceled unnecessary subscriptions</span>
+      </div>
+      <div class="action-item">
+        <div class="action-checkbox"></div>
+        <span>Set calendar reminder for next audit</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="tip-footer">
+    Review this page quarterly. Subscriptions have a sneaky way of adding up!
+  </div>
+</body>
+
+</html>

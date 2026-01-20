@@ -9,51 +9,104 @@
       margin: 0;
     }
 
-    body {
+    * {
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
       font-family: {{customization.fontFamily}};
-      background: linear-gradient(135deg, {{customization.primaryColor}} 0%, {{customization.secondaryColor}} 100%);
+      background: linear-gradient(145deg, {{customization.primaryColor}} 0%, {{customization.secondaryColor}} 100%);
       height: 297mm;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       color: white;
+      text-align: center;
+      padding: 40px;
     }
 
     .year {
-      font-size: 120px;
-      font-weight: bold;
-      margin: 0;
+      font-size: 140px;
+      font-weight: 800;
+      letter-spacing: -5px;
+      margin-bottom: 10px;
+      text-shadow: 0 4px 20px rgba(0,0,0,0.2);
     }
 
     .title {
-      font-size: 48px;
-      margin: 20px 0;
-      text-align: center;
+      font-size: 52px;
+      font-weight: 700;
+      margin: 15px 0;
+      text-transform: uppercase;
+      letter-spacing: 3px;
     }
 
     .subtitle {
-      font-size: 24px;
-      opacity: 0.9;
+      font-size: 18px;
+      opacity: 0.95;
+      max-width: 450px;
+      line-height: 1.5;
+      margin-top: 10px;
+      font-weight: 300;
+    }
+
+    .badge {
+      margin-top: 40px;
+      padding: 12px 30px;
+      background: rgba(255,255,255,0.2);
+      border-radius: 30px;
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      backdrop-filter: blur(10px);
     }
 
     .name {
-      font-size: 28px;
-      margin-top: 40px;
+      font-size: 24px;
+      margin-top: 50px;
       font-style: italic;
+      opacity: 0.9;
+    }
+
+    .icon-row {
+      display: flex;
+      gap: 30px;
+      margin-top: 30px;
+      opacity: 0.8;
+      font-size: 28px;
+    }
+
+    .tagline {
+      position: absolute;
+      bottom: 40px;
+      font-size: 13px;
+      opacity: 0.7;
+      letter-spacing: 1px;
     }
   </style>
 </head>
 
 <body>
+  <div class="badge">For Beginners</div>
+
   <h1 class="year">{{year}}</h1>
   <h2 class="title">{{coverTitle}}</h2>
-  <p class="subtitle">Take Control of Your Finances</p>
+  <p class="subtitle">A Simple 12-Month System to Track Income, Pay Off Debt, and Build Savings</p>
+
+  <div class="icon-row">
+    <span>📊</span>
+    <span>💰</span>
+    <span>🎯</span>
+  </div>
+
   {{#if userName}}
   <p class="name">{{userName}}</p>
   {{/if}}
+
+  <p class="tagline">Take control of your finances, one month at a time</p>
 </body>
 
 </html>

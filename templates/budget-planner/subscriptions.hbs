@@ -1,6 +1,6 @@
 <!-- templates/budget-planner/subscriptions.hbs -->
 <!DOCTYPE html>
-<html>
+<html lang="{{lang}}">
 
 <head>
   <style>
@@ -17,7 +17,7 @@
 
     .header {
       text-align: center;
-      margin-bottom: 20px;
+      margin-bottom: 15px;
       border-bottom: 3px solid {{customization.primaryColor}};
       padding-bottom: 12px;
     }
@@ -32,19 +32,6 @@
       font-size: 13px;
       color: #666;
       margin-top: 5px;
-    }
-
-    .intro {
-      background: #fff3e0;
-      border-left: 4px solid #ff9800;
-      padding: 12px 15px;
-      margin-bottom: 20px;
-      border-radius: 0 8px 8px 0;
-      font-size: 12px;
-    }
-
-    .intro strong {
-      color: #e65100;
     }
 
     table {
@@ -71,38 +58,10 @@
       background: #fafafa;
     }
 
-    .service-col {
-      width: 25%;
-    }
-
-    .amount-col {
-      width: 12%;
-      text-align: right;
-    }
-
-    .freq-col {
-      width: 12%;
-      text-align: center;
-    }
-
-    .date-col {
-      width: 12%;
-      text-align: center;
-    }
-
-    .using-col {
-      width: 12%;
-      text-align: center;
-    }
-
-    .cancel-col {
-      width: 12%;
-      text-align: center;
-    }
-
-    .notes-col {
-      width: 15%;
-    }
+    .amount-col { width: 15%; text-align: right; }
+    .freq-col { width: 15%; text-align: center; }
+    .worth-col { width: 15%; text-align: center; }
+    .action-col { width: 15%; text-align: center; }
 
     .checkbox {
       width: 18px;
@@ -112,34 +71,16 @@
       display: inline-block;
     }
 
-    .checkbox.cancel {
-      border-color: #e91e63;
-    }
-
-    .category-row {
-      background: {{customization.primaryColor}}15 !important;
-    }
-
-    .category-label {
-      font-weight: bold;
-      color: {{customization.primaryColor}};
-      font-size: 12px;
-    }
-
     .summary-section {
-      margin-top: 25px;
+      margin-top: 20px;
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 20px;
+      gap: 15px;
     }
 
     .summary-box {
       padding: 15px;
       border-radius: 10px;
-      background: #f5f5f5;
-    }
-
-    .summary-box.totals {
       background: linear-gradient(135deg, {{customization.primaryColor}}10, {{customization.secondaryColor}}10);
       border: 2px solid {{customization.primaryColor}};
     }
@@ -174,268 +115,94 @@
     .action-box {
       padding: 15px;
       border-radius: 10px;
-      background: #e8f5e9;
-      border: 2px solid #4caf50;
+      background: #f5f5f5;
     }
 
     .action-title {
       font-size: 14px;
       font-weight: bold;
-      color: #2e7d32;
+      color: {{customization.primaryColor}};
       margin-bottom: 10px;
     }
 
     .action-item {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      padding: 6px 0;
-      font-size: 12px;
+      margin-bottom: 10px;
     }
 
-    .action-checkbox {
-      width: 16px;
-      height: 16px;
-      border: 2px solid #4caf50;
-      border-radius: 3px;
+    .action-label {
+      font-size: 11px;
+      color: #666;
+      margin-bottom: 4px;
     }
 
-    .tip-footer {
-      margin-top: 20px;
-      text-align: center;
-      padding: 12px;
-      background: {{customization.primaryColor}};
-      color: white;
-      border-radius: 8px;
-      font-size: 12px;
+    .action-input {
+      border-bottom: 1px dotted #ccc;
+      min-height: 18px;
     }
   </style>
 </head>
 
 <body>
   <div class="header">
-    <h1 class="title">Subscriptions & Fixed Payments</h1>
-    <p class="subtitle">{{year}} — Know exactly where your money goes every month</p>
-  </div>
-
-  <div class="intro">
-    <strong>The average person spends $273/month on subscriptions</strong> and often forgets about half of them.
-    Use this tracker to audit your recurring payments — you might be surprised what you find!
+    <h1 class="title">{{t.subscriptions.title}}</h1>
+    <p class="subtitle">{{t.subscriptions.subtitle}}</p>
   </div>
 
   <table>
     <thead>
       <tr>
-        <th class="service-col">Service / Description</th>
-        <th class="amount-col">Amount</th>
-        <th class="freq-col">Frequency</th>
-        <th class="date-col">Billing Date</th>
-        <th class="using-col">Still Using?</th>
-        <th class="cancel-col">Cancel?</th>
-        <th class="notes-col">Notes</th>
+        <th>{{t.subscriptions.service}}</th>
+        <th class="amount-col">{{t.subscriptions.cost}}</th>
+        <th class="freq-col">{{t.subscriptions.useFrequency}}</th>
+        <th class="worth-col">{{t.subscriptions.worthIt}}</th>
+        <th class="action-col">{{t.subscriptions.action}}</th>
       </tr>
     </thead>
     <tbody>
-      <!-- Streaming -->
-      <tr class="category-row">
-        <td colspan="7" class="category-label">📺 Streaming & Entertainment</td>
-      </tr>
+      {{#times 12}}
       <tr>
         <td></td>
         <td class="amount-col">$</td>
         <td class="freq-col"></td>
-        <td class="date-col"></td>
-        <td class="using-col"><div class="checkbox"></div></td>
-        <td class="cancel-col"><div class="checkbox cancel"></div></td>
-        <td></td>
+        <td class="worth-col"><div class="checkbox"></div></td>
+        <td class="action-col"></td>
       </tr>
-      <tr>
-        <td></td>
-        <td class="amount-col">$</td>
-        <td class="freq-col"></td>
-        <td class="date-col"></td>
-        <td class="using-col"><div class="checkbox"></div></td>
-        <td class="cancel-col"><div class="checkbox cancel"></div></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td></td>
-        <td class="amount-col">$</td>
-        <td class="freq-col"></td>
-        <td class="date-col"></td>
-        <td class="using-col"><div class="checkbox"></div></td>
-        <td class="cancel-col"><div class="checkbox cancel"></div></td>
-        <td></td>
-      </tr>
-
-      <!-- Software & Apps -->
-      <tr class="category-row">
-        <td colspan="7" class="category-label">💻 Software & Apps</td>
-      </tr>
-      <tr>
-        <td></td>
-        <td class="amount-col">$</td>
-        <td class="freq-col"></td>
-        <td class="date-col"></td>
-        <td class="using-col"><div class="checkbox"></div></td>
-        <td class="cancel-col"><div class="checkbox cancel"></div></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td></td>
-        <td class="amount-col">$</td>
-        <td class="freq-col"></td>
-        <td class="date-col"></td>
-        <td class="using-col"><div class="checkbox"></div></td>
-        <td class="cancel-col"><div class="checkbox cancel"></div></td>
-        <td></td>
-      </tr>
-
-      <!-- Health & Fitness -->
-      <tr class="category-row">
-        <td colspan="7" class="category-label">🏋️ Health & Fitness</td>
-      </tr>
-      <tr>
-        <td></td>
-        <td class="amount-col">$</td>
-        <td class="freq-col"></td>
-        <td class="date-col"></td>
-        <td class="using-col"><div class="checkbox"></div></td>
-        <td class="cancel-col"><div class="checkbox cancel"></div></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td></td>
-        <td class="amount-col">$</td>
-        <td class="freq-col"></td>
-        <td class="date-col"></td>
-        <td class="using-col"><div class="checkbox"></div></td>
-        <td class="cancel-col"><div class="checkbox cancel"></div></td>
-        <td></td>
-      </tr>
-
-      <!-- Insurance & Utilities -->
-      <tr class="category-row">
-        <td colspan="7" class="category-label">🏠 Insurance & Utilities</td>
-      </tr>
-      <tr>
-        <td></td>
-        <td class="amount-col">$</td>
-        <td class="freq-col"></td>
-        <td class="date-col"></td>
-        <td class="using-col"><div class="checkbox"></div></td>
-        <td class="cancel-col"><div class="checkbox cancel"></div></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td></td>
-        <td class="amount-col">$</td>
-        <td class="freq-col"></td>
-        <td class="date-col"></td>
-        <td class="using-col"><div class="checkbox"></div></td>
-        <td class="cancel-col"><div class="checkbox cancel"></div></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td></td>
-        <td class="amount-col">$</td>
-        <td class="freq-col"></td>
-        <td class="date-col"></td>
-        <td class="using-col"><div class="checkbox"></div></td>
-        <td class="cancel-col"><div class="checkbox cancel"></div></td>
-        <td></td>
-      </tr>
-
-      <!-- Other -->
-      <tr class="category-row">
-        <td colspan="7" class="category-label">📦 Other Subscriptions</td>
-      </tr>
-      <tr>
-        <td></td>
-        <td class="amount-col">$</td>
-        <td class="freq-col"></td>
-        <td class="date-col"></td>
-        <td class="using-col"><div class="checkbox"></div></td>
-        <td class="cancel-col"><div class="checkbox cancel"></div></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td></td>
-        <td class="amount-col">$</td>
-        <td class="freq-col"></td>
-        <td class="date-col"></td>
-        <td class="using-col"><div class="checkbox"></div></td>
-        <td class="cancel-col"><div class="checkbox cancel"></div></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td></td>
-        <td class="amount-col">$</td>
-        <td class="freq-col"></td>
-        <td class="date-col"></td>
-        <td class="using-col"><div class="checkbox"></div></td>
-        <td class="cancel-col"><div class="checkbox cancel"></div></td>
-        <td></td>
-      </tr>
+      {{/times}}
     </tbody>
   </table>
 
   <div class="summary-section">
-    <div class="summary-box totals">
-      <div class="summary-title">Monthly Totals</div>
+    <div class="summary-box">
+      <div class="summary-title">{{t.subscriptions.totalMonthly}}</div>
       <div class="summary-row">
-        <span>Streaming & Entertainment</span>
+        <span>{{t.subscriptions.totalMonthly}}</span>
         <span class="summary-value">$_______</span>
       </div>
       <div class="summary-row">
-        <span>Software & Apps</span>
+        <span>{{t.subscriptions.totalYearly}}</span>
         <span class="summary-value">$_______</span>
       </div>
       <div class="summary-row">
-        <span>Health & Fitness</span>
-        <span class="summary-value">$_______</span>
-      </div>
-      <div class="summary-row">
-        <span>Insurance & Utilities</span>
-        <span class="summary-value">$_______</span>
-      </div>
-      <div class="summary-row">
-        <span>Other</span>
-        <span class="summary-value">$_______</span>
-      </div>
-      <div class="summary-row">
-        <span>TOTAL MONTHLY</span>
+        <span>{{t.subscriptions.potentialSavings}}</span>
         <span class="summary-value">$_______</span>
       </div>
     </div>
 
     <div class="action-box">
-      <div class="action-title">✅ Subscription Audit Checklist</div>
+      <div class="action-title">{{t.subscriptions.actionPlan}}</div>
       <div class="action-item">
-        <div class="action-checkbox"></div>
-        <span>Reviewed all bank/card statements</span>
+        <div class="action-label">{{t.subscriptions.cancelThis}}</div>
+        <div class="action-input"></div>
       </div>
       <div class="action-item">
-        <div class="action-checkbox"></div>
-        <span>Checked email for subscription receipts</span>
+        <div class="action-label">{{t.subscriptions.downgradeThis}}</div>
+        <div class="action-input"></div>
       </div>
       <div class="action-item">
-        <div class="action-checkbox"></div>
-        <span>Identified services I don't use</span>
-      </div>
-      <div class="action-item">
-        <div class="action-checkbox"></div>
-        <span>Canceled unnecessary subscriptions</span>
-      </div>
-      <div class="action-item">
-        <div class="action-checkbox"></div>
-        <span>Set calendar reminder for next audit</span>
+        <div class="action-label">{{t.subscriptions.reviewDate}}</div>
+        <div class="action-input"></div>
       </div>
     </div>
-  </div>
-
-  <div class="tip-footer">
-    Review this page quarterly. Subscriptions have a sneaky way of adding up!
   </div>
 </body>
 

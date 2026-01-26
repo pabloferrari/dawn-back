@@ -1,0 +1,156 @@
+<!-- templates/athlete-cookbook/category-divider.hbs -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    @page {
+      size: A4;
+      margin: 0;
+    }
+
+    body {
+      font-family: {{customization.fontFamily}};
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      background: linear-gradient(135deg, {{category.color}}15 0%, {{category.color}}05 50%, white 100%);
+    }
+
+    .content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 40px;
+    }
+
+    .icon-container {
+      width: 140px;
+      height: 140px;
+      background: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 10px 40px {{category.color}}40;
+      margin-bottom: 30px;
+    }
+
+    .category-icon {
+      font-size: 80px;
+    }
+
+    .category-name {
+      font-size: 48px;
+      font-weight: 800;
+      color: {{category.color}};
+      margin: 0 0 15px 0;
+      text-align: center;
+      letter-spacing: -1px;
+    }
+
+    .category-description {
+      font-size: 18px;
+      color: #555;
+      text-align: center;
+      max-width: 450px;
+      line-height: 1.6;
+      margin-bottom: 40px;
+    }
+
+    .recipe-count {
+      background: {{category.color}};
+      color: white;
+      padding: 12px 30px;
+      border-radius: 30px;
+      font-size: 16px;
+      font-weight: 700;
+    }
+
+    /* Decorative elements */
+    .decoration-top {
+      height: 8px;
+      background: linear-gradient(90deg, {{category.color}} 0%, {{customization.secondaryColor}} 100%);
+    }
+
+    .decoration-bottom {
+      padding: 20px 40px;
+      background: {{category.color}};
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .tips-label {
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .tips-text {
+      font-size: 13px;
+      opacity: 0.95;
+      max-width: 70%;
+      text-align: right;
+    }
+
+    /* Featured tags */
+    .featured-tags {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .featured-tag {
+      background: white;
+      color: {{category.color}};
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 600;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="decoration-top"></div>
+
+  <div class="content">
+    <div class="icon-container">
+      <span class="category-icon">{{category.icon}}</span>
+    </div>
+
+    <h1 class="category-name">{{category.name}}</h1>
+
+    <p class="category-description">{{category.description}}</p>
+
+    <div class="recipe-count">{{category.recipeCount}} Recipes</div>
+
+    {{#if category.featuredTags}}
+    <div class="featured-tags">
+      {{#each category.featuredTags}}
+      <span class="featured-tag">{{this}}</span>
+      {{/each}}
+    </div>
+    {{/if}}
+  </div>
+
+  <div class="decoration-bottom">
+    <span class="tips-label">{{category.tipLabel}}</span>
+    <span class="tips-text">{{category.tip}}</span>
+  </div>
+</body>
+
+</html>

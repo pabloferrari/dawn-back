@@ -1,0 +1,241 @@
+<!-- templates/athlete-cookbook/shopping-list.hbs -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    @page {
+      size: A4;
+      margin: 12mm;
+    }
+
+    body {
+      font-family: {{customization.fontFamily}};
+      color: #333;
+      line-height: 1.4;
+      margin: 0;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 15px;
+      padding-bottom: 10px;
+      border-bottom: 3px solid {{customization.primaryColor}};
+    }
+
+    .header-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+    }
+
+    .header .icon {
+      font-size: 28px;
+    }
+
+    .title {
+      font-size: 24px;
+      color: {{customization.primaryColor}};
+      margin: 0;
+    }
+
+    .subtitle {
+      font-size: 11px;
+      color: #888;
+      margin-top: 5px;
+    }
+
+    /* Shopping list grid - 3 columns */
+    .list-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+    }
+
+    .item {
+      display: flex;
+      align-items: center;
+      padding: 5px 8px;
+      background: #FAFAFA;
+      border-radius: 5px;
+      border-left: 3px solid {{customization.primaryColor}};
+    }
+
+    .checkbox {
+      width: 14px;
+      height: 14px;
+      border: 2px solid {{customization.primaryColor}};
+      border-radius: 3px;
+      margin-right: 8px;
+      flex-shrink: 0;
+    }
+
+    .item-name {
+      flex: 1;
+      font-size: 10px;
+      color: #444;
+      text-transform: capitalize;
+    }
+
+    .item-count {
+      font-size: 8px;
+      color: #999;
+      background: #EEE;
+      padding: 2px 5px;
+      border-radius: 10px;
+      margin-left: 5px;
+    }
+
+    /* Notes section */
+    .notes-section {
+      margin-top: 15px;
+      padding: 12px;
+      background: linear-gradient(135deg, {{customization.primaryColor}}10 0%, {{customization.secondaryColor}}10 100%);
+      border-radius: 10px;
+    }
+
+    .notes-title {
+      font-size: 12px;
+      font-weight: 700;
+      color: {{customization.primaryColor}};
+      margin: 0 0 10px 0;
+      text-align: center;
+    }
+
+    .notes-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 8px;
+    }
+
+    .note-box {
+      background: white;
+      padding: 8px;
+      border-radius: 6px;
+      text-align: center;
+    }
+
+    .note-icon {
+      font-size: 18px;
+      margin-bottom: 4px;
+    }
+
+    .note-text {
+      font-size: 9px;
+      color: #666;
+    }
+
+    /* Write-in section */
+    .write-in-section {
+      margin-top: 12px;
+      padding: 10px;
+      background: #F8F9FA;
+      border-radius: 8px;
+    }
+
+    .write-in-title {
+      font-size: 11px;
+      font-weight: 600;
+      color: {{customization.primaryColor}};
+      margin-bottom: 8px;
+    }
+
+    .write-in-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 6px;
+    }
+
+    .write-in-item {
+      display: flex;
+      align-items: center;
+      padding: 4px 6px;
+      border-bottom: 1px dashed #CCC;
+    }
+
+    .write-in-item .checkbox {
+      width: 12px;
+      height: 12px;
+    }
+
+    .write-in-item .line {
+      flex: 1;
+      border-bottom: 1px solid #DDD;
+      margin-left: 6px;
+      height: 12px;
+    }
+
+    .footer-info {
+      margin-top: 10px;
+      text-align: center;
+      font-size: 9px;
+      color: #999;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    <div class="header-content">
+      <span class="icon">🛒</span>
+      <div>
+        <h1 class="title">Shopping List</h1>
+        <p class="subtitle">Most common ingredients from {{totalItems}} items • Week of: _______________</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="list-container">
+    {{#each shoppingItems}}
+    <div class="item">
+      <span class="checkbox"></span>
+      <span class="item-name">{{this.name}}</span>
+      <span class="item-count">{{this.recipeCount}}</span>
+    </div>
+    {{/each}}
+  </div>
+
+  <div class="write-in-section">
+    <div class="write-in-title">✏️ Additional Items</div>
+    <div class="write-in-grid">
+      {{#times 12}}
+      <div class="write-in-item">
+        <span class="checkbox"></span>
+        <span class="line"></span>
+      </div>
+      {{/times}}
+    </div>
+  </div>
+
+  <div class="notes-section">
+    <h3 class="notes-title">🏃 Athlete Shopping Tips</h3>
+    <div class="notes-grid">
+      <div class="note-box">
+        <div class="note-icon">🛒</div>
+        <div class="note-text">Shop the perimeter first — fresh foods are there</div>
+      </div>
+      <div class="note-box">
+        <div class="note-icon">📅</div>
+        <div class="note-text">Buy enough for meal prep day (usually Sunday)</div>
+      </div>
+      <div class="note-box">
+        <div class="note-icon">❄️</div>
+        <div class="note-text">Frozen fruits & veggies are just as nutritious</div>
+      </div>
+      <div class="note-box">
+        <div class="note-icon">🔢</div>
+        <div class="note-text">Numbers show how many recipes use each item</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-info">
+    Items sorted by frequency of use across all recipes in this cookbook
+  </div>
+</body>
+
+</html>

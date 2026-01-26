@@ -1,6 +1,6 @@
 <!-- templates/budget-planner/budget-guide.hbs -->
 <!DOCTYPE html>
-<html>
+<html lang="{{lang}}">
 
 <head>
   <style>
@@ -33,50 +33,11 @@
       color: #666;
     }
 
-    .formula-box {
-      background: linear-gradient(135deg, {{customization.primaryColor}}, {{customization.secondaryColor}});
-      color: white;
-      padding: 18px;
-      border-radius: 12px;
-      text-align: center;
-      margin-bottom: 18px;
-    }
-
-    .formula-label {
-      font-size: 12px;
-      opacity: 0.9;
-      margin-bottom: 8px;
-    }
-
-    .formula {
-      font-size: 26px;
-      font-weight: bold;
-      letter-spacing: 2px;
-    }
-
-    .formula-note {
-      font-size: 12px;
-      opacity: 0.85;
-      margin-top: 8px;
-    }
-
-    .rule-section {
-      margin-bottom: 18px;
-    }
-
-    .rule-title {
-      font-size: 18px;
-      color: {{customization.primaryColor}};
-      margin-bottom: 12px;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-
     .rule-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 12px;
+      margin-bottom: 18px;
     }
 
     .rule-card {
@@ -119,57 +80,14 @@
     .rule-examples {
       font-size: 11px;
       color: #666;
-      line-height: 1.4;
-    }
-
-    .middle-section {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 15px;
-      margin-bottom: 18px;
-    }
-
-    .example-section {
-      background: #f8f9fa;
-      border-radius: 12px;
-      padding: 15px;
-    }
-
-    .example-title {
-      font-size: 14px;
-      font-weight: bold;
-      color: {{customization.primaryColor}};
-      margin-bottom: 12px;
-    }
-
-    .example-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 10px;
-      text-align: center;
-    }
-
-    .example-item {
-      padding: 10px;
-      background: white;
-      border-radius: 8px;
-    }
-
-    .example-amount {
-      font-size: 18px;
-      font-weight: bold;
-      color: {{customization.primaryColor}};
-    }
-
-    .example-label {
-      font-size: 11px;
-      color: #666;
+      line-height: 1.5;
     }
 
     .your-turn {
       border: 2px dashed {{customization.primaryColor}};
       border-radius: 12px;
       padding: 15px;
+      margin-bottom: 15px;
     }
 
     .your-turn-title {
@@ -202,12 +120,6 @@
       font-size: 13px;
     }
 
-    .bottom-section {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 15px;
-    }
-
     .tip-box {
       background: #fff8e1;
       border-left: 4px solid #ffc107;
@@ -227,143 +139,71 @@
       color: #555;
       line-height: 1.5;
     }
-
-    .mistakes-box {
-      background: #ffebee;
-      border-left: 4px solid #e91e63;
-      padding: 12px 15px;
-      border-radius: 0 10px 10px 0;
-    }
-
-    .mistakes-title {
-      font-weight: bold;
-      color: #c2185b;
-      margin-bottom: 8px;
-      font-size: 13px;
-    }
-
-    .mistakes-list {
-      font-size: 11px;
-      color: #555;
-      padding-left: 15px;
-      margin: 0;
-    }
-
-    .mistakes-list li {
-      margin-bottom: 4px;
-    }
   </style>
 </head>
 
 <body>
   <div class="header">
-    <h1 class="title">Mini Guide: How to Budget</h1>
-    <p class="subtitle">The basics you need to know (nothing complicated, we promise)</p>
+    <h1 class="title">{{t.budgetGuide.title}}</h1>
+    <p class="subtitle">{{t.budgetGuide.subtitle}}</p>
   </div>
 
-  <div class="formula-box">
-    <div class="formula-label">The Only Formula You Need</div>
-    <div class="formula">INCOME - EXPENSES = BALANCE</div>
-    <div class="formula-note">Positive balance = you're saving money! Negative = spending more than you earn.</div>
-  </div>
-
-  <div class="rule-section">
-    <div class="rule-title">The 50/30/20 Rule (A Starting Point)</div>
-    <div class="rule-grid">
-      <div class="rule-card needs">
-        <div class="rule-percent">50%</div>
-        <div class="rule-name">NEEDS</div>
-        <div class="rule-examples">
-          Rent/mortgage<br>
-          Utilities<br>
-          Groceries<br>
-          Insurance<br>
-          Transportation
-        </div>
+  <div class="rule-grid">
+    <div class="rule-card needs">
+      <div class="rule-percent">{{t.budgetGuide.needsPercent}}</div>
+      <div class="rule-name">{{t.budgetGuide.needsTitle}}</div>
+      <div class="rule-examples">{{t.budgetGuide.needsDesc}}</div>
+      <div class="rule-examples" style="margin-top: 8px;">
+        {{#each t.budgetGuide.needsItems}}
+        {{this}}<br>
+        {{/each}}
       </div>
-      <div class="rule-card wants">
-        <div class="rule-percent">30%</div>
-        <div class="rule-name">WANTS</div>
-        <div class="rule-examples">
-          Dining out<br>
-          Entertainment<br>
-          Shopping<br>
-          Subscriptions<br>
-          Hobbies
-        </div>
+    </div>
+    <div class="rule-card wants">
+      <div class="rule-percent">{{t.budgetGuide.wantsPercent}}</div>
+      <div class="rule-name">{{t.budgetGuide.wantsTitle}}</div>
+      <div class="rule-examples">{{t.budgetGuide.wantsDesc}}</div>
+      <div class="rule-examples" style="margin-top: 8px;">
+        {{#each t.budgetGuide.wantsItems}}
+        {{this}}<br>
+        {{/each}}
       </div>
-      <div class="rule-card savings">
-        <div class="rule-percent">20%</div>
-        <div class="rule-name">SAVINGS & DEBT</div>
-        <div class="rule-examples">
-          Emergency fund<br>
-          Retirement<br>
-          Extra debt payments<br>
-          Savings goals
-        </div>
+    </div>
+    <div class="rule-card savings">
+      <div class="rule-percent">{{t.budgetGuide.savingsPercent}}</div>
+      <div class="rule-name">{{t.budgetGuide.savingsTitle}}</div>
+      <div class="rule-examples">{{t.budgetGuide.savingsDesc}}</div>
+      <div class="rule-examples" style="margin-top: 8px;">
+        {{#each t.budgetGuide.savingsItems}}
+        {{this}}<br>
+        {{/each}}
       </div>
     </div>
   </div>
 
-  <div class="middle-section">
-    <div class="example-section">
-      <div class="example-title">Example: $3,000/month income</div>
-      <div class="example-grid">
-        <div class="example-item">
-          <div class="example-amount">$1,500</div>
-          <div class="example-label">Needs (50%)</div>
-        </div>
-        <div class="example-item">
-          <div class="example-amount">$900</div>
-          <div class="example-label">Wants (30%)</div>
-        </div>
-        <div class="example-item">
-          <div class="example-amount">$600</div>
-          <div class="example-label">Savings (20%)</div>
-        </div>
-      </div>
+  <div class="your-turn">
+    <div class="your-turn-title">{{t.budgetGuide.yourNumbersTitle}}</div>
+    <div class="your-turn-row">
+      <span class="your-turn-label">{{t.budgetGuide.monthlyIncome}}:</span>
+      <span class="your-turn-input">$ _______</span>
     </div>
-
-    <div class="your-turn">
-      <div class="your-turn-title">Your Turn: Calculate Your 50/30/20</div>
-      <div class="your-turn-row">
-        <span class="your-turn-label">My monthly income:</span>
-        <span class="your-turn-input">$ _______</span>
-      </div>
-      <div class="your-turn-row">
-        <span class="your-turn-label">50% for Needs:</span>
-        <span class="your-turn-input">$ _______</span>
-      </div>
-      <div class="your-turn-row">
-        <span class="your-turn-label">30% for Wants:</span>
-        <span class="your-turn-input">$ _______</span>
-      </div>
-      <div class="your-turn-row">
-        <span class="your-turn-label">20% for Savings/Debt:</span>
-        <span class="your-turn-input">$ _______</span>
-      </div>
+    <div class="your-turn-row">
+      <span class="your-turn-label">50% {{t.budgetGuide.forNeeds}}:</span>
+      <span class="your-turn-input">$ _______</span>
+    </div>
+    <div class="your-turn-row">
+      <span class="your-turn-label">30% {{t.budgetGuide.forWants}}:</span>
+      <span class="your-turn-input">$ _______</span>
+    </div>
+    <div class="your-turn-row">
+      <span class="your-turn-label">20% {{t.budgetGuide.forSavings}}:</span>
+      <span class="your-turn-input">$ _______</span>
     </div>
   </div>
 
-  <div class="bottom-section">
-    <div class="tip-box">
-      <div class="tip-title">Pro Tip</div>
-      <div class="tip-text">
-        This rule is a <strong>guideline</strong>, not a strict law. If your rent is 40% of income, that's okay — adjust the other categories.
-        The goal is awareness and balance, not perfection. Start where you are and improve over time.
-      </div>
-    </div>
-
-    <div class="mistakes-box">
-      <div class="mistakes-title">Common Mistakes to Avoid</div>
-      <ul class="mistakes-list">
-        <li>Not tracking small purchases (they add up!)</li>
-        <li>Forgetting irregular expenses (car repairs, gifts)</li>
-        <li>Being too strict (you'll burn out)</li>
-        <li>Not adjusting when income changes</li>
-        <li>Skipping the "pay yourself first" rule</li>
-      </ul>
-    </div>
+  <div class="tip-box">
+    <div class="tip-title">{{t.budgetGuide.flexibleTitle}}</div>
+    <div class="tip-text">{{t.budgetGuide.flexibleText}}</div>
   </div>
 </body>
 

@@ -1,0 +1,317 @@
+<!-- templates/athlete-cookbook/recipe-page.hbs -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    @page {
+      size: A4;
+      margin: 15mm;
+    }
+
+    body {
+      font-family: {{customization.fontFamily}};
+      color: #333;
+      line-height: 1.5;
+      margin: 0;
+    }
+
+    /* Header with title and category */
+    .recipe-header {
+      border-bottom: 3px solid {{categoryColor}};
+      padding-bottom: 12px;
+      margin-bottom: 15px;
+    }
+
+    .category-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: {{categoryColor}}15;
+      color: {{categoryColor}};
+      padding: 4px 12px;
+      border-radius: 15px;
+      font-size: 11px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .category-icon {
+      font-size: 14px;
+    }
+
+    .recipe-title {
+      font-size: 26px;
+      font-weight: 800;
+      color: {{categoryColor}};
+      margin: 0 0 8px 0;
+      line-height: 1.2;
+    }
+
+    .recipe-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .tag {
+      background: #F5F5F5;
+      color: #666;
+      padding: 3px 10px;
+      border-radius: 12px;
+      font-size: 10px;
+      font-weight: 600;
+    }
+
+    .tag.highlight {
+      background: {{customization.secondaryColor}}20;
+      color: {{customization.secondaryColor}};
+    }
+
+    /* Two column layout */
+    .recipe-content {
+      display: grid;
+      grid-template-columns: 1fr 1.5fr;
+      gap: 20px;
+    }
+
+    /* Ingredients column */
+    .ingredients-section {
+      background: #FAFAFA;
+      border-radius: 12px;
+      padding: 15px;
+    }
+
+    .section-title {
+      font-size: 14px;
+      font-weight: 700;
+      color: {{categoryColor}};
+      margin: 0 0 12px 0;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .section-icon {
+      font-size: 16px;
+    }
+
+    .ingredients-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .ingredients-list li {
+      font-size: 12px;
+      padding: 6px 0;
+      border-bottom: 1px dashed #E0E0E0;
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+    }
+
+    .ingredients-list li:last-child {
+      border-bottom: none;
+    }
+
+    .ingredient-bullet {
+      color: {{categoryColor}};
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+
+    /* Preparation column */
+    .preparation-section {
+      padding: 0;
+    }
+
+    .preparation-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .preparation-list li {
+      font-size: 12px;
+      padding: 8px 0;
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      border-bottom: 1px solid #F0F0F0;
+    }
+
+    .preparation-list li:last-child {
+      border-bottom: none;
+    }
+
+    .step-number {
+      width: 24px;
+      height: 24px;
+      background: {{categoryColor}};
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 11px;
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+
+    .step-text {
+      flex: 1;
+      padding-top: 3px;
+    }
+
+    /* Notes section */
+    .notes-section {
+      margin-top: 15px;
+      background: linear-gradient(135deg, {{customization.primaryColor}}10 0%, {{customization.secondaryColor}}10 100%);
+      border-radius: 12px;
+      padding: 12px 15px;
+    }
+
+    .notes-title {
+      font-size: 12px;
+      font-weight: 700;
+      color: {{customization.primaryColor}};
+      margin: 0 0 8px 0;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .notes-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .notes-list li {
+      font-size: 11px;
+      color: #555;
+      padding: 3px 0;
+      display: flex;
+      align-items: flex-start;
+      gap: 6px;
+    }
+
+    .note-bullet {
+      color: {{customization.secondaryColor}};
+    }
+
+    /* Recipe number in corner */
+    .recipe-number {
+      position: absolute;
+      top: 15mm;
+      right: 15mm;
+      font-size: 10px;
+      color: #CCC;
+      font-weight: 600;
+    }
+
+    /* Nutrition quick info (if available) */
+    .nutrition-quick {
+      display: flex;
+      gap: 15px;
+      margin-top: 10px;
+      padding-top: 10px;
+      border-top: 1px dashed #DDD;
+    }
+
+    .nutrition-item {
+      font-size: 10px;
+      color: #777;
+    }
+
+    .nutrition-item strong {
+      color: {{categoryColor}};
+    }
+  </style>
+</head>
+
+<body>
+  <div class="recipe-header">
+    <div class="category-badge">
+      <span class="category-icon">{{categoryIcon}}</span>
+      <span>{{categoryName}}</span>
+    </div>
+
+    <h1 class="recipe-title">{{recipe.title}}</h1>
+
+    <div class="recipe-tags">
+      {{#each recipe.tags}}
+      <span class="tag {{#if (eq this 'high-protein')}}highlight{{/if}}{{#if (eq this 'quick')}}highlight{{/if}}">{{this}}</span>
+      {{/each}}
+    </div>
+  </div>
+
+  <div class="recipe-content">
+    <div class="ingredients-section">
+      <h3 class="section-title">
+        <span class="section-icon">🥗</span>
+        Ingredients
+      </h3>
+      <ul class="ingredients-list">
+        {{#each recipe.ingredients}}
+        <li>
+          <span class="ingredient-bullet">•</span>
+          <span>{{this}}</span>
+        </li>
+        {{/each}}
+      </ul>
+
+      {{#if recipe.nutrition}}
+      <div class="nutrition-quick">
+        {{#if recipe.nutrition.protein}}
+        <span class="nutrition-item"><strong>{{recipe.nutrition.protein}}g</strong> protein</span>
+        {{/if}}
+        {{#if recipe.nutrition.carbs}}
+        <span class="nutrition-item"><strong>{{recipe.nutrition.carbs}}g</strong> carbs</span>
+        {{/if}}
+        {{#if recipe.nutrition.calories}}
+        <span class="nutrition-item"><strong>{{recipe.nutrition.calories}}</strong> kcal</span>
+        {{/if}}
+      </div>
+      {{/if}}
+    </div>
+
+    <div class="preparation-section">
+      <h3 class="section-title">
+        <span class="section-icon">👨‍🍳</span>
+        Preparation
+      </h3>
+      <ol class="preparation-list">
+        {{#each recipe.preparation}}
+        <li>
+          <span class="step-number">{{add @index 1}}</span>
+          <span class="step-text">{{this}}</span>
+        </li>
+        {{/each}}
+      </ol>
+    </div>
+  </div>
+
+  {{#if recipe.notes}}
+  <div class="notes-section">
+    <h4 class="notes-title">
+      <span>💡</span>
+      Coach Notes
+    </h4>
+    <ul class="notes-list">
+      {{#each recipe.notes}}
+      <li>
+        <span class="note-bullet">→</span>
+        <span>{{this}}</span>
+      </li>
+      {{/each}}
+    </ul>
+  </div>
+  {{/if}}
+</body>
+
+</html>

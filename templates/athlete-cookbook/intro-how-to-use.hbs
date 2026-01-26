@@ -1,0 +1,388 @@
+<!-- templates/athlete-cookbook/intro-how-to-use.hbs -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    @page {
+      size: A4;
+      margin: 15mm;
+    }
+
+    body {
+      font-family: {{customization.fontFamily}};
+      color: #333;
+      line-height: 1.5;
+      margin: 0;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 15px;
+      padding-bottom: 10px;
+      border-bottom: 3px solid {{customization.primaryColor}};
+    }
+
+    .header .icon {
+      font-size: 28px;
+      margin-bottom: 5px;
+    }
+
+    .title {
+      font-size: 26px;
+      color: {{customization.primaryColor}};
+      margin: 0;
+    }
+
+    .intro-text {
+      font-size: 12px;
+      text-align: center;
+      margin-bottom: 15px;
+      color: #555;
+    }
+
+    .section {
+      margin-bottom: 15px;
+    }
+
+    .section h3 {
+      font-size: 14px;
+      color: {{customization.primaryColor}};
+      margin: 0 0 8px 0;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .section h3 .icon {
+      font-size: 16px;
+    }
+
+    /* Recipe anatomy */
+    .recipe-anatomy {
+      background: #FAFAFA;
+      border-radius: 10px;
+      padding: 12px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+
+    .anatomy-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+    }
+
+    .anatomy-number {
+      width: 22px;
+      height: 22px;
+      background: {{customization.primaryColor}};
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 11px;
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+
+    .anatomy-text {
+      font-size: 11px;
+    }
+
+    .anatomy-text strong {
+      display: block;
+      color: #333;
+      margin-bottom: 2px;
+    }
+
+    .anatomy-text span {
+      color: #666;
+    }
+
+    /* Categories grid */
+    .categories-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 8px;
+    }
+
+    .category-item {
+      text-align: center;
+      padding: 10px 5px;
+      background: #FAFAFA;
+      border-radius: 8px;
+    }
+
+    .category-icon {
+      font-size: 22px;
+      margin-bottom: 4px;
+    }
+
+    .category-name {
+      font-size: 9px;
+      font-weight: 600;
+      color: #444;
+    }
+
+    /* Tags */
+    .tags-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      padding: 4px 10px;
+      border-radius: 12px;
+      font-size: 10px;
+      font-weight: 600;
+    }
+
+    .tag.nutrition {
+      background: #E8F5E9;
+      color: #2E7D32;
+    }
+
+    .tag.dietary {
+      background: #FFF3E0;
+      color: #E65100;
+    }
+
+    .tag.timing {
+      background: #E3F2FD;
+      color: #1565C0;
+    }
+
+    .tag.prep {
+      background: #F3E5F5;
+      color: #7B1FA2;
+    }
+
+    /* Timing guide */
+    .timing-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+    }
+
+    .timing-item {
+      background: linear-gradient(135deg, {{customization.primaryColor}}10 0%, {{customization.secondaryColor}}10 100%);
+      padding: 12px 10px;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    .timing-icon {
+      font-size: 26px;
+      margin-bottom: 5px;
+    }
+
+    .timing-title {
+      font-size: 11px;
+      font-weight: 700;
+      color: {{customization.primaryColor}};
+      margin-bottom: 3px;
+    }
+
+    .timing-desc {
+      font-size: 9px;
+      color: #666;
+      line-height: 1.4;
+    }
+
+    /* Pro tip */
+    .pro-tip {
+      background: linear-gradient(135deg, {{customization.primaryColor}} 0%, {{customization.secondaryColor}} 100%);
+      padding: 14px 20px;
+      border-radius: 12px;
+      color: white;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      margin-top: 15px;
+    }
+
+    .pro-tip-icon {
+      font-size: 32px;
+    }
+
+    .pro-tip-content {
+      flex: 1;
+    }
+
+    .pro-tip-title {
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 3px;
+    }
+
+    .pro-tip-text {
+      font-size: 11px;
+      opacity: 0.95;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    <div class="icon">📖</div>
+    <h1 class="title">How to Use This Book</h1>
+  </div>
+
+  <p class="intro-text">
+    Each recipe is designed to fuel your training. Here's how to get the most out of this cookbook.
+  </p>
+
+  <div class="section">
+    <h3><span class="icon">📋</span> Reading a Recipe</h3>
+    <div class="recipe-anatomy">
+      <div class="anatomy-item">
+        <div class="anatomy-number">1</div>
+        <div class="anatomy-text">
+          <strong>Category & Tags</strong>
+          <span>Quick reference for meal type and nutritional profile</span>
+        </div>
+      </div>
+      <div class="anatomy-item">
+        <div class="anatomy-number">2</div>
+        <div class="anatomy-text">
+          <strong>Ingredients</strong>
+          <span>Fresh, whole foods with simple substitutions when available</span>
+        </div>
+      </div>
+      <div class="anatomy-item">
+        <div class="anatomy-number">3</div>
+        <div class="anatomy-text">
+          <strong>Preparation Steps</strong>
+          <span>Clear instructions from start to finish</span>
+        </div>
+      </div>
+      <div class="anatomy-item">
+        <div class="anatomy-number">4</div>
+        <div class="anatomy-text">
+          <strong>Coach Notes</strong>
+          <span>Tips for timing, variations, and storage</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h3><span class="icon">📂</span> Recipe Categories</h3>
+    <div class="categories-grid">
+      <div class="category-item">
+        <div class="category-icon">🌅</div>
+        <div class="category-name">Breakfast</div>
+      </div>
+      <div class="category-item">
+        <div class="category-icon">🥗</div>
+        <div class="category-name">Lunch</div>
+      </div>
+      <div class="category-item">
+        <div class="category-icon">🍽️</div>
+        <div class="category-name">Dinner</div>
+      </div>
+      <div class="category-item">
+        <div class="category-icon">🍪</div>
+        <div class="category-name">Snacks</div>
+      </div>
+      <div class="category-item">
+        <div class="category-icon">⚡</div>
+        <div class="category-name">Energy Bars</div>
+      </div>
+      <div class="category-item">
+        <div class="category-icon">🏃</div>
+        <div class="category-name">Pre-Race</div>
+      </div>
+      <div class="category-item">
+        <div class="category-icon">💪</div>
+        <div class="category-name">Post-Workout</div>
+      </div>
+      <div class="category-item">
+        <div class="category-icon">💧</div>
+        <div class="category-name">Hydration</div>
+      </div>
+      <div class="category-item">
+        <div class="category-icon">🧈</div>
+        <div class="category-name">Bases</div>
+      </div>
+      <div class="category-item">
+        <div class="category-icon">ℹ️</div>
+        <div class="category-name">Tips & Info</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h3><span class="icon">🏷️</span> Understanding Tags</h3>
+    <div class="tags-container">
+      <span class="tag nutrition">🥩 High Protein</span>
+      <span class="tag nutrition">🌱 Plant Protein</span>
+      <span class="tag nutrition">🌾 Complex Carbs</span>
+      <span class="tag nutrition">🥬 High Fiber</span>
+      <span class="tag dietary">🌿 Vegan</span>
+      <span class="tag dietary">🚫 Gluten-Free</span>
+      <span class="tag timing">⚡ Quick</span>
+      <span class="tag timing">❄️ No Cook</span>
+      <span class="tag prep">📦 Meal Prep</span>
+      <span class="tag prep">🎒 Portable</span>
+      <span class="tag nutrition">🔥 Anti-Inflammatory</span>
+      <span class="tag timing">🏁 Race Fuel</span>
+    </div>
+  </div>
+
+  <div class="section">
+    <h3><span class="icon">⏰</span> When to Eat What</h3>
+    <div class="timing-grid">
+      <div class="timing-item">
+        <div class="timing-icon">🌙</div>
+        <div class="timing-title">Night Before</div>
+        <div class="timing-desc">Complex carbs, familiar foods, easy to digest</div>
+      </div>
+      <div class="timing-item">
+        <div class="timing-icon">🌅</div>
+        <div class="timing-title">Pre-Workout</div>
+        <div class="timing-desc">2-3h before: light carbs, low fat, low fiber</div>
+      </div>
+      <div class="timing-item">
+        <div class="timing-icon">🏃</div>
+        <div class="timing-title">During Training</div>
+        <div class="timing-desc">Energy bars, gels for sessions 90min+</div>
+      </div>
+      <div class="timing-item">
+        <div class="timing-icon">💪</div>
+        <div class="timing-title">Post-Workout</div>
+        <div class="timing-desc">Within 30min: protein + carbs for recovery</div>
+      </div>
+      <div class="timing-item">
+        <div class="timing-icon">🌿</div>
+        <div class="timing-title">Recovery Days</div>
+        <div class="timing-desc">Anti-inflammatory foods, balanced meals</div>
+      </div>
+      <div class="timing-item">
+        <div class="timing-icon">🏁</div>
+        <div class="timing-title">Race Week</div>
+        <div class="timing-desc">Nothing new! Stick to tested favorites</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="pro-tip">
+    <div class="pro-tip-icon">💡</div>
+    <div class="pro-tip-content">
+      <div class="pro-tip-title">The Golden Rule</div>
+      <div class="pro-tip-text">Never try new foods on race day. Test everything during training first. Your stomach will thank you!</div>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,534 @@
+{
+  "en": {
+    "product": {
+      "title": "Fuel Like a Runner",
+      "subtitle": "The Amateur Athlete's Cookbook"
+    },
+    "cover": {
+      "tagline": "Fresh ingredients. Real food. No processed junk.",
+      "tagline2": "Fuel your runs the natural way.",
+      "badge": {
+        "runner": "For Runners",
+        "cyclist": "For Cyclists",
+        "triathlete": "For Triathletes",
+        "athlete": "For Athletes"
+      },
+      "edition": "Edition"
+    },
+    "sections": {
+      "philosophy": {
+        "title": "My Philosophy",
+        "quote": "Real food doesn't have ingredients. Real food IS ingredients.",
+        "quoteAuthor": "Jamie Oliver",
+        "intro1": "As athletes, we often get caught up in the latest supplements, energy gels, and performance products. But the truth is simpler: your body performs best when fueled by real, whole foods.",
+        "intro2": "This cookbook is built on a fundamental belief: fresh ingredients, prepared simply, will always outperform processed alternatives. Every recipe here uses ingredients you can recognize, pronounce, and find at your local market.",
+        "intro3": "No artificial colors. No mystery powders. No ingredient lists that read like chemistry experiments. Just food—the way nature intended.",
+        "principlesTitle": "My Core Principles",
+        "bottomMessage": "Food is fuel. Make it count.",
+        "bottomMessage2": "Your performance starts in the kitchen."
+      },
+      "howToUse": {
+        "title": "How to Use This Book",
+        "intro": "Each recipe is designed to fuel your training. Here's how to get the most out of this cookbook.",
+        "readingRecipe": "Reading a Recipe",
+        "categoryTags": "Category & Tags",
+        "categoryTagsDesc": "Quick reference for meal type and nutritional profile",
+        "ingredients": "Ingredients",
+        "ingredientsDesc": "Fresh, whole foods with simple substitutions when available",
+        "preparation": "Preparation Steps",
+        "preparationDesc": "Clear instructions from start to finish",
+        "coachNotes": "Coach Notes",
+        "coachNotesDesc": "Tips for timing, variations, and storage",
+        "categoriesTitle": "Recipe Categories",
+        "tagsTitle": "Understanding Tags",
+        "timingTitle": "When to Eat What",
+        "goldenRule": "The Golden Rule",
+        "goldenRuleText": "Never try new foods on race day. Test everything during training first. Your stomach will thank you!"
+      },
+      "nutrition": {
+        "title": "Nutrition Basics",
+        "subtitle": "Fuel your body right for peak performance",
+        "carbs": "Carbohydrates",
+        "carbsRole": "Primary Fuel",
+        "carbsSources": "Oats, rice, potatoes, fruits, whole grain bread, quinoa",
+        "protein": "Protein",
+        "proteinRole": "Repair & Recover",
+        "proteinSources": "Eggs, chicken, fish, legumes, yogurt, tofu",
+        "fats": "Healthy Fats",
+        "fatsRole": "Sustained Energy",
+        "fatsSources": "Avocado, nuts, olive oil, seeds, fatty fish",
+        "plateTitle": "The Athlete's Plate",
+        "plateCarbs": "50% Carbs — Your main energy source for training",
+        "plateProtein": "25% Protein — Muscle repair and recovery",
+        "plateVeggies": "25% Vegetables — Vitamins, minerals, and fiber",
+        "hydrationTitle": "Hydration Guide",
+        "recoveryTitle": "Recovery Power Foods",
+        "bottomTip": "Listen to your body.",
+        "bottomTipText": "These are guidelines, not rules. Adjust based on your training intensity, body weight, and how you feel."
+      },
+      "index": {
+        "title": "Recipe Index",
+        "subtitle": "recipes organized by category",
+        "recipes": "Recipes",
+        "categories": "Categories",
+        "freshIngredients": "Fresh Ingredients"
+      },
+      "mealPlanner": {
+        "title": "Weekly Meal Planner",
+        "weekOf": "Week of:",
+        "training": "Training",
+        "recovery": "Recovery",
+        "longRun": "Long Run",
+        "rest": "Rest",
+        "trainingDaysTip": "Higher carbs, eat 2-3h before workout",
+        "recoveryDaysTip": "Focus on protein & anti-inflammatory foods",
+        "longRunTip": "Carb-load night before, light breakfast",
+        "mealPrepTip": "Batch cook on Sunday for the week ahead"
+      },
+      "recipe": {
+        "ingredients": "Ingredients",
+        "preparation": "Preparation",
+        "coachNotes": "Coach Notes"
+      }
+    },
+    "categories": {
+      "breakfast": {
+        "name": "Breakfast",
+        "description": "Start your day with energy-packed morning meals",
+        "tip": "Eat 2-3 hours before morning training for best digestion",
+        "tipLabel": "Morning Tip"
+      },
+      "lunch": {
+        "name": "Lunch",
+        "description": "Balanced midday meals to keep you fueled",
+        "tip": "Include complex carbs to sustain afternoon energy levels",
+        "tipLabel": "Midday Tip"
+      },
+      "dinner": {
+        "name": "Dinner",
+        "description": "Recovery-focused meals to end your day right",
+        "tip": "Prioritize protein for overnight muscle repair",
+        "tipLabel": "Evening Tip"
+      },
+      "snacks": {
+        "name": "Snacks",
+        "description": "Quick bites to keep energy steady between meals",
+        "tip": "Great for pre-workout fuel or afternoon energy boost",
+        "tipLabel": "Snack Tip"
+      },
+      "energy-bars": {
+        "name": "Energy Bars",
+        "description": "Portable, homemade fuel for training and races",
+        "tip": "Make a batch on weekends for the week ahead",
+        "tipLabel": "Fuel Tip"
+      },
+      "pre-race": {
+        "name": "Pre-Race",
+        "description": "Easy-to-digest meals for race day preparation",
+        "tip": "Stick to familiar foods—never try anything new on race day",
+        "tipLabel": "Race Day Tip"
+      },
+      "post-workout": {
+        "name": "Post-Workout",
+        "description": "Recovery meals to refuel within the golden window",
+        "tip": "Aim for a 3:1 carb-to-protein ratio within 30 minutes",
+        "tipLabel": "Recovery Tip"
+      },
+      "hydration": {
+        "name": "Hydration",
+        "description": "Homemade drinks and plant-based milks",
+        "tip": "Hydration starts the day before your workout or race",
+        "tipLabel": "Hydration Tip"
+      },
+      "base": {
+        "name": "Bases & Staples",
+        "description": "Foundational recipes for breads, doughs, and spreads",
+        "tip": "Prep these on weekends to use throughout the week",
+        "tipLabel": "Prep Tip"
+      },
+      "info": {
+        "name": "Tips & Info",
+        "description": "Helpful cooking tips and nutritional information",
+        "tip": "Knowledge is power—understanding food helps you fuel better",
+        "tipLabel": "Learn Tip"
+      }
+    },
+    "tags": {
+      "fresh-ingredients": "Fresh Ingredients",
+      "high-protein": "High Protein",
+      "plant-protein": "Plant Protein",
+      "complex-carbs": "Complex Carbs",
+      "high-fiber": "High Fiber",
+      "vegan": "Vegan",
+      "gluten-free": "Gluten-Free",
+      "quick": "Quick",
+      "no-cook": "No Cook",
+      "meal-prep": "Meal Prep",
+      "portable": "Portable",
+      "anti-inflammatory": "Anti-Inflammatory",
+      "race-fuel": "Race Fuel",
+      "recovery": "Recovery",
+      "easy-digest": "Easy Digest",
+      "high-carb": "High Carb",
+      "race-day": "Race Day",
+      "light": "Light",
+      "vegetables": "Vegetables",
+      "comfort-food": "Comfort Food",
+      "hydrating": "Hydrating",
+      "satisfying": "Satisfying",
+      "sweet": "Sweet",
+      "batch-cooking": "Batch Cooking",
+      "base-recipe": "Base Recipe",
+      "dairy-free": "Dairy-Free",
+      "informational": "Informational",
+      "cooking-tips": "Cooking Tips",
+      "morning-fuel": "Morning Fuel"
+    },
+    "timing": {
+      "nightBefore": "Night Before",
+      "nightBeforeDesc": "Complex carbs, familiar foods, easy to digest",
+      "preWorkout": "Pre-Workout",
+      "preWorkoutDesc": "2-3h before: light carbs, low fat, low fiber",
+      "during": "During Training",
+      "duringDesc": "Energy bars, gels for sessions 90min+",
+      "postWorkout": "Post-Workout",
+      "postWorkoutDesc": "Within 30min: protein + carbs for recovery",
+      "recoveryDays": "Recovery Days",
+      "recoveryDaysDesc": "Anti-inflammatory foods, balanced meals",
+      "raceWeek": "Race Week",
+      "raceWeekDesc": "Nothing new! Stick to tested favorites"
+    },
+    "hydration": {
+      "daily": "Daily",
+      "dailyAmount": "2-3 liters of water minimum",
+      "beforeWorkout": "Before Workout",
+      "beforeAmount": "500ml 2 hours before",
+      "during": "During",
+      "duringAmount": "150-250ml every 15-20 min",
+      "after": "After",
+      "afterAmount": "500ml within 30 minutes",
+      "hotWeather": "Hot Weather",
+      "hotAmount": "Add electrolytes for 60min+",
+      "urineCheck": "Urine Check",
+      "urineAmount": "Light yellow = well hydrated"
+    },
+    "principles": {
+      "freshFirst": {
+        "title": "Fresh First",
+        "description": "Whole vegetables, fruits, and proteins form the foundation of every recipe. The closer to its natural state, the better."
+      },
+      "noProcessed": {
+        "title": "No Processed Junk",
+        "description": "We skip the ultra-processed foods, artificial sweeteners, and chemical additives. Your body deserves better fuel."
+      },
+      "performanceFocused": {
+        "title": "Performance Focused",
+        "description": "Every recipe is designed with athletes in mind—optimal macros, proper timing, and nutrients that support training and recovery."
+      },
+      "simpleToMake": {
+        "title": "Simple to Make",
+        "description": "You're busy training. These recipes are practical, with accessible ingredients and straightforward preparation."
+      },
+      "sustainable": {
+        "title": "Sustainably Minded",
+        "description": "Eating whole foods means less packaging, less waste, and a smaller environmental footprint."
+      },
+      "delicious": {
+        "title": "Actually Delicious",
+        "description": "Healthy doesn't mean boring. These recipes prove that nutritious food can—and should—taste amazing."
+      }
+    },
+    "days": {
+      "monday": "Monday",
+      "tuesday": "Tuesday",
+      "wednesday": "Wednesday",
+      "thursday": "Thursday",
+      "friday": "Friday",
+      "saturday": "Saturday",
+      "sunday": "Sunday"
+    },
+    "meals": {
+      "breakfast": "Breakfast",
+      "preWorkout": "Pre-Workout",
+      "lunch": "Lunch",
+      "snack": "Snack",
+      "dinner": "Dinner"
+    },
+    "recoveryFoods": {
+      "banana": { "name": "Banana", "benefit": "Potassium & quick carbs" },
+      "eggs": { "name": "Eggs", "benefit": "Complete protein" },
+      "berries": { "name": "Berries", "benefit": "Antioxidants" },
+      "nuts": { "name": "Nuts", "benefit": "Healthy fats & protein" },
+      "salmon": { "name": "Salmon", "benefit": "Omega-3 anti-inflammatory" },
+      "sweetPotato": { "name": "Sweet Potato", "benefit": "Complex carbs & vitamins" },
+      "greekYogurt": { "name": "Greek Yogurt", "benefit": "Protein & probiotics" },
+      "leafyGreens": { "name": "Leafy Greens", "benefit": "Iron & vitamins" }
+    }
+  },
+  "es": {
+    "product": {
+      "title": "Combustible de Corredor",
+      "subtitle": "El Recetario del Atleta Amateur"
+    },
+    "cover": {
+      "tagline": "Ingredientes frescos. Comida real. Sin procesados.",
+      "tagline2": "Alimenta tus carreras de forma natural.",
+      "badge": {
+        "runner": "Para Corredores",
+        "cyclist": "Para Ciclistas",
+        "triathlete": "Para Triatletas",
+        "athlete": "Para Atletas"
+      },
+      "edition": "Edición"
+    },
+    "sections": {
+      "philosophy": {
+        "title": "Nuestra Filosofía",
+        "quote": "La comida real no tiene ingredientes. La comida real ES ingredientes.",
+        "quoteAuthor": "Jamie Oliver",
+        "intro1": "Como atletas, a menudo nos dejamos llevar por los últimos suplementos, geles energéticos y productos de rendimiento. Pero la verdad es más simple: tu cuerpo rinde mejor cuando se alimenta con comida real e integral.",
+        "intro2": "Este recetario está construido sobre una creencia fundamental: los ingredientes frescos, preparados de forma simple, siempre superarán a las alternativas procesadas. Cada receta aquí usa ingredientes que puedes reconocer, pronunciar y encontrar en tu mercado local.",
+        "intro3": "Sin colorantes artificiales. Sin polvos misteriosos. Sin listas de ingredientes que parecen experimentos de química. Solo comida—como la naturaleza la creó.",
+        "principlesTitle": "Nuestros Principios",
+        "bottomMessage": "La comida es combustible. Que valga la pena.",
+        "bottomMessage2": "Tu rendimiento comienza en la cocina."
+      },
+      "howToUse": {
+        "title": "Cómo Usar Este Libro",
+        "intro": "Cada receta está diseñada para alimentar tu entrenamiento. Así es como puedes sacar el máximo provecho de este recetario.",
+        "readingRecipe": "Leyendo una Receta",
+        "categoryTags": "Categoría y Etiquetas",
+        "categoryTagsDesc": "Referencia rápida del tipo de comida y perfil nutricional",
+        "ingredients": "Ingredientes",
+        "ingredientsDesc": "Alimentos frescos e integrales con sustituciones simples cuando están disponibles",
+        "preparation": "Pasos de Preparación",
+        "preparationDesc": "Instrucciones claras de principio a fin",
+        "coachNotes": "Notas del Coach",
+        "coachNotesDesc": "Tips sobre tiempos, variaciones y almacenamiento",
+        "categoriesTitle": "Categorías de Recetas",
+        "tagsTitle": "Entendiendo las Etiquetas",
+        "timingTitle": "Cuándo Comer Qué",
+        "goldenRule": "La Regla de Oro",
+        "goldenRuleText": "Nunca pruebes comidas nuevas el día de la carrera. Prueba todo durante el entrenamiento primero. ¡Tu estómago te lo agradecerá!"
+      },
+      "nutrition": {
+        "title": "Nutrición Básica",
+        "subtitle": "Alimenta tu cuerpo correctamente para un rendimiento óptimo",
+        "carbs": "Carbohidratos",
+        "carbsRole": "Combustible Principal",
+        "carbsSources": "Avena, arroz, papas, frutas, pan integral, quinoa",
+        "protein": "Proteína",
+        "proteinRole": "Reparar y Recuperar",
+        "proteinSources": "Huevos, pollo, pescado, legumbres, yogur, tofu",
+        "fats": "Grasas Saludables",
+        "fatsRole": "Energía Sostenida",
+        "fatsSources": "Palta, frutos secos, aceite de oliva, semillas, pescado graso",
+        "plateTitle": "El Plato del Atleta",
+        "plateCarbs": "50% Carbohidratos — Tu principal fuente de energía para entrenar",
+        "plateProtein": "25% Proteína — Reparación y recuperación muscular",
+        "plateVeggies": "25% Vegetales — Vitaminas, minerales y fibra",
+        "hydrationTitle": "Guía de Hidratación",
+        "recoveryTitle": "Alimentos para la Recuperación",
+        "bottomTip": "Escucha a tu cuerpo.",
+        "bottomTipText": "Estas son guías, no reglas. Ajusta según tu intensidad de entrenamiento, peso corporal y cómo te sientes."
+      },
+      "index": {
+        "title": "Índice de Recetas",
+        "subtitle": "recetas organizadas por categoría",
+        "recipes": "Recetas",
+        "categories": "Categorías",
+        "freshIngredients": "Ingredientes Frescos"
+      },
+      "mealPlanner": {
+        "title": "Planificador Semanal",
+        "weekOf": "Semana del:",
+        "training": "Entrenamiento",
+        "recovery": "Recuperación",
+        "longRun": "Fondo",
+        "rest": "Descanso",
+        "trainingDaysTip": "Más carbohidratos, comer 2-3h antes del entrenamiento",
+        "recoveryDaysTip": "Enfócate en proteína y alimentos antiinflamatorios",
+        "longRunTip": "Carga de carbohidratos la noche anterior, desayuno liviano",
+        "mealPrepTip": "Cocina en cantidad el domingo para toda la semana"
+      },
+      "recipe": {
+        "ingredients": "Ingredientes",
+        "preparation": "Preparación",
+        "coachNotes": "Notas del Coach"
+      }
+    },
+    "categories": {
+      "breakfast": {
+        "name": "Desayuno",
+        "description": "Comienza tu día con comidas matutinas llenas de energía",
+        "tip": "Come 2-3 horas antes del entrenamiento matutino para mejor digestión",
+        "tipLabel": "Tip Matutino"
+      },
+      "lunch": {
+        "name": "Almuerzo",
+        "description": "Comidas equilibradas del mediodía para mantenerte con energía",
+        "tip": "Incluye carbohidratos complejos para sostener la energía de la tarde",
+        "tipLabel": "Tip del Mediodía"
+      },
+      "dinner": {
+        "name": "Cena",
+        "description": "Comidas enfocadas en la recuperación para terminar bien el día",
+        "tip": "Prioriza la proteína para la reparación muscular nocturna",
+        "tipLabel": "Tip Nocturno"
+      },
+      "snacks": {
+        "name": "Snacks",
+        "description": "Bocados rápidos para mantener la energía entre comidas",
+        "tip": "Geniales para antes del entrenamiento o el impulso de la tarde",
+        "tipLabel": "Tip de Snack"
+      },
+      "energy-bars": {
+        "name": "Barritas Energéticas",
+        "description": "Combustible casero y portátil para entrenamientos y carreras",
+        "tip": "Prepara un lote el fin de semana para toda la semana",
+        "tipLabel": "Tip de Combustible"
+      },
+      "pre-race": {
+        "name": "Pre-Carrera",
+        "description": "Comidas fáciles de digerir para prepararte el día de la carrera",
+        "tip": "Quédate con comidas familiares—nunca pruebes nada nuevo el día de la carrera",
+        "tipLabel": "Tip de Carrera"
+      },
+      "post-workout": {
+        "name": "Post-Entrenamiento",
+        "description": "Comidas de recuperación para recargar en la ventana dorada",
+        "tip": "Apunta a una proporción 3:1 de carbohidratos a proteína dentro de los 30 minutos",
+        "tipLabel": "Tip de Recuperación"
+      },
+      "hydration": {
+        "name": "Hidratación",
+        "description": "Bebidas caseras y leches vegetales",
+        "tip": "La hidratación comienza el día anterior a tu entrenamiento o carrera",
+        "tipLabel": "Tip de Hidratación"
+      },
+      "base": {
+        "name": "Bases y Básicos",
+        "description": "Recetas fundamentales para panes, masas y untables",
+        "tip": "Prepara estos el fin de semana para usar durante la semana",
+        "tipLabel": "Tip de Preparación"
+      },
+      "info": {
+        "name": "Tips e Info",
+        "description": "Consejos útiles de cocina e información nutricional",
+        "tip": "El conocimiento es poder—entender la comida te ayuda a alimentarte mejor",
+        "tipLabel": "Tip de Aprendizaje"
+      }
+    },
+    "tags": {
+      "fresh-ingredients": "Ingredientes Frescos",
+      "high-protein": "Alto en Proteína",
+      "plant-protein": "Proteína Vegetal",
+      "complex-carbs": "Carbohidratos Complejos",
+      "high-fiber": "Alto en Fibra",
+      "vegan": "Vegano",
+      "gluten-free": "Sin Gluten",
+      "quick": "Rápido",
+      "no-cook": "Sin Cocción",
+      "meal-prep": "Meal Prep",
+      "portable": "Portátil",
+      "anti-inflammatory": "Antiinflamatorio",
+      "race-fuel": "Combustible de Carrera",
+      "recovery": "Recuperación",
+      "easy-digest": "Fácil Digestión",
+      "high-carb": "Alto en Carbohidratos",
+      "race-day": "Día de Carrera",
+      "light": "Ligero",
+      "vegetables": "Vegetales",
+      "comfort-food": "Comfort Food",
+      "hydrating": "Hidratante",
+      "satisfying": "Satisfactorio",
+      "sweet": "Dulce",
+      "batch-cooking": "Cocina en Lotes",
+      "base-recipe": "Receta Base",
+      "dairy-free": "Sin Lácteos",
+      "informational": "Informativo",
+      "cooking-tips": "Tips de Cocina",
+      "morning-fuel": "Combustible Matutino"
+    },
+    "timing": {
+      "nightBefore": "Noche Anterior",
+      "nightBeforeDesc": "Carbohidratos complejos, comidas familiares, fácil digestión",
+      "preWorkout": "Pre-Entrenamiento",
+      "preWorkoutDesc": "2-3h antes: carbohidratos ligeros, baja grasa, baja fibra",
+      "during": "Durante el Entrenamiento",
+      "duringDesc": "Barritas energéticas, geles para sesiones de 90min+",
+      "postWorkout": "Post-Entrenamiento",
+      "postWorkoutDesc": "Dentro de 30min: proteína + carbohidratos para recuperación",
+      "recoveryDays": "Días de Recuperación",
+      "recoveryDaysDesc": "Alimentos antiinflamatorios, comidas equilibradas",
+      "raceWeek": "Semana de Carrera",
+      "raceWeekDesc": "¡Nada nuevo! Quédate con tus favoritos probados"
+    },
+    "hydration": {
+      "daily": "Diario",
+      "dailyAmount": "2-3 litros de agua mínimo",
+      "beforeWorkout": "Antes del Entrenamiento",
+      "beforeAmount": "500ml 2 horas antes",
+      "during": "Durante",
+      "duringAmount": "150-250ml cada 15-20 min",
+      "after": "Después",
+      "afterAmount": "500ml dentro de 30 minutos",
+      "hotWeather": "Clima Caluroso",
+      "hotAmount": "Agregar electrolitos para sesiones de 60min+",
+      "urineCheck": "Chequeo de Orina",
+      "urineAmount": "Amarillo claro = bien hidratado"
+    },
+    "principles": {
+      "freshFirst": {
+        "title": "Fresco Primero",
+        "description": "Vegetales, frutas y proteínas integrales son la base de cada receta. Cuanto más cerca de su estado natural, mejor."
+      },
+      "noProcessed": {
+        "title": "Sin Procesados",
+        "description": "Evitamos los alimentos ultraprocesados, edulcorantes artificiales y aditivos químicos. Tu cuerpo merece mejor combustible."
+      },
+      "performanceFocused": {
+        "title": "Enfocado en Rendimiento",
+        "description": "Cada receta está diseñada pensando en atletas—macros óptimos, tiempos adecuados y nutrientes que apoyan el entrenamiento y la recuperación."
+      },
+      "simpleToMake": {
+        "title": "Simple de Hacer",
+        "description": "Estás ocupado entrenando. Estas recetas son prácticas, con ingredientes accesibles y preparación directa."
+      },
+      "sustainable": {
+        "title": "Mentalidad Sustentable",
+        "description": "Comer alimentos integrales significa menos empaque, menos desperdicio y una huella ambiental más pequeña."
+      },
+      "delicious": {
+        "title": "Realmente Delicioso",
+        "description": "Saludable no significa aburrido. Estas recetas demuestran que la comida nutritiva puede—y debe—ser deliciosa."
+      }
+    },
+    "days": {
+      "monday": "Lunes",
+      "tuesday": "Martes",
+      "wednesday": "Miércoles",
+      "thursday": "Jueves",
+      "friday": "Viernes",
+      "saturday": "Sábado",
+      "sunday": "Domingo"
+    },
+    "meals": {
+      "breakfast": "Desayuno",
+      "preWorkout": "Pre-Entreno",
+      "lunch": "Almuerzo",
+      "snack": "Snack",
+      "dinner": "Cena"
+    },
+    "recoveryFoods": {
+      "banana": { "name": "Banana", "benefit": "Potasio y carbohidratos rápidos" },
+      "eggs": { "name": "Huevos", "benefit": "Proteína completa" },
+      "berries": { "name": "Frutos Rojos", "benefit": "Antioxidantes" },
+      "nuts": { "name": "Frutos Secos", "benefit": "Grasas saludables y proteína" },
+      "salmon": { "name": "Salmón", "benefit": "Omega-3 antiinflamatorio" },
+      "sweetPotato": { "name": "Batata", "benefit": "Carbohidratos complejos y vitaminas" },
+      "greekYogurt": { "name": "Yogur Griego", "benefit": "Proteína y probióticos" },
+      "leafyGreens": { "name": "Hojas Verdes", "benefit": "Hierro y vitaminas" }
+    }
+  }
+}

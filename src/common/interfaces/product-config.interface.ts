@@ -4,6 +4,7 @@ export interface BaseProductConfig {
   year: number;
   coverTitle: string;
   userName?: string;
+  language?: 'en' | 'es';
   theme: 'minimal' | 'colorful' | 'professional';
   customization: {
     primaryColor: string;

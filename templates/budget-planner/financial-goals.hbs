@@ -1,6 +1,6 @@
 <!-- templates/budget-planner/financial-goals.hbs -->
 <!DOCTYPE html>
-<html>
+<html lang="{{lang}}">
 
 <head>
   <style>
@@ -31,14 +31,6 @@
     .subtitle {
       font-size: 12px;
       color: #666;
-    }
-
-    .intro {
-      text-align: center;
-      font-size: 12px;
-      color: #555;
-      margin-bottom: 12px;
-      font-style: italic;
     }
 
     .goals-container {
@@ -176,160 +168,58 @@
       font-size: 13px;
       font-weight: bold;
       color: #f57c00;
-      margin-bottom: 10px;
+      margin-bottom: 8px;
     }
 
-    .tips-grid {
-      display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      gap: 10px;
-    }
-
-    .tip-item {
-      background: white;
-      padding: 10px 8px;
-      border-radius: 8px;
-      text-align: center;
-    }
-
-    .tip-name {
+    .tips-text {
       font-size: 11px;
-      font-weight: bold;
-      color: #333;
-      margin-bottom: 4px;
-    }
-
-    .tip-desc {
-      font-size: 9px;
-      color: #666;
+      color: #555;
     }
   </style>
 </head>
 
 <body>
   <div class="header">
-    <h1 class="title">Your 3 Financial Goals for {{year}}</h1>
-    <p class="subtitle">Dream big, but be specific</p>
+    <h1 class="title">{{tt t.financialGoals.title year=year}}</h1>
+    <p class="subtitle">{{t.financialGoals.subtitle}}</p>
   </div>
 
-  <p class="intro">"A goal without a plan is just a wish." — Make yours real.</p>
-
   <div class="goals-container">
-    <!-- Goal 1 -->
+    {{#times 3}}
     <div class="goal-card">
       <div class="goal-left">
         <div class="goal-header">
-          <div class="goal-number">1</div>
+          <div class="goal-number">{{this}}</div>
           <div class="goal-name-input"></div>
         </div>
         <div class="goal-row-inline">
           <div class="goal-row">
-            <div class="goal-label">Target amount</div>
+            <div class="goal-label">{{../t.financialGoals.targetAmount}}</div>
             <div class="goal-input">$ ___________</div>
           </div>
           <div class="goal-row">
-            <div class="goal-label">Deadline</div>
-            <div class="goal-input">____/____/{{year}}</div>
+            <div class="goal-label">{{../t.financialGoals.deadline}}</div>
+            <div class="goal-input">____/____/{{../year}}</div>
           </div>
         </div>
         <div class="action-box">
-          <div class="action-label">One step I'll take THIS WEEK:</div>
+          <div class="action-label">{{../t.financialGoals.firstStep}}</div>
           <div class="action-input"></div>
         </div>
       </div>
       <div class="goal-right">
         <div class="why-section">
-          <div class="why-label">Why is this important to me?</div>
+          <div class="why-label">{{../t.financialGoals.whyMatters}}</div>
           <div class="why-input"></div>
         </div>
       </div>
     </div>
-
-    <!-- Goal 2 -->
-    <div class="goal-card">
-      <div class="goal-left">
-        <div class="goal-header">
-          <div class="goal-number">2</div>
-          <div class="goal-name-input"></div>
-        </div>
-        <div class="goal-row-inline">
-          <div class="goal-row">
-            <div class="goal-label">Target amount</div>
-            <div class="goal-input">$ ___________</div>
-          </div>
-          <div class="goal-row">
-            <div class="goal-label">Deadline</div>
-            <div class="goal-input">____/____/{{year}}</div>
-          </div>
-        </div>
-        <div class="action-box">
-          <div class="action-label">One step I'll take THIS WEEK:</div>
-          <div class="action-input"></div>
-        </div>
-      </div>
-      <div class="goal-right">
-        <div class="why-section">
-          <div class="why-label">Why is this important to me?</div>
-          <div class="why-input"></div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Goal 3 -->
-    <div class="goal-card">
-      <div class="goal-left">
-        <div class="goal-header">
-          <div class="goal-number">3</div>
-          <div class="goal-name-input"></div>
-        </div>
-        <div class="goal-row-inline">
-          <div class="goal-row">
-            <div class="goal-label">Target amount</div>
-            <div class="goal-input">$ ___________</div>
-          </div>
-          <div class="goal-row">
-            <div class="goal-label">Deadline</div>
-            <div class="goal-input">____/____/{{year}}</div>
-          </div>
-        </div>
-        <div class="action-box">
-          <div class="action-label">One step I'll take THIS WEEK:</div>
-          <div class="action-input"></div>
-        </div>
-      </div>
-      <div class="goal-right">
-        <div class="why-section">
-          <div class="why-label">Why is this important to me?</div>
-          <div class="why-input"></div>
-        </div>
-      </div>
-    </div>
+    {{/times}}
   </div>
 
   <div class="tips-box">
-    <div class="tips-title">Goal Ideas (if you need inspiration)</div>
-    <div class="tips-grid">
-      <div class="tip-item">
-        <div class="tip-name">Emergency Fund</div>
-        <div class="tip-desc">3-6 months of expenses</div>
-      </div>
-      <div class="tip-item">
-        <div class="tip-name">Pay Off Debt</div>
-        <div class="tip-desc">Stop paying interest</div>
-      </div>
-      <div class="tip-item">
-        <div class="tip-name">Vacation</div>
-        <div class="tip-desc">Travel debt-free</div>
-      </div>
-      <div class="tip-item">
-        <div class="tip-name">Down Payment</div>
-        <div class="tip-desc">Car or home</div>
-      </div>
-      <div class="tip-item">
-        <div class="tip-name">Education</div>
-        <div class="tip-desc">Courses & certs</div>
-      </div>
-    </div>
+    <div class="tips-title">{{t.financialGoals.tipTitle}}</div>
+    <div class="tips-text">{{t.financialGoals.tipText}}</div>
   </div>
 </body>
 

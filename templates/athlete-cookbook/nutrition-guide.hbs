@@ -1,0 +1,429 @@
+<!-- templates/athlete-cookbook/nutrition-guide.hbs -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    @page {
+      size: A4;
+      margin: 15mm;
+    }
+
+    body {
+      font-family: {{customization.fontFamily}};
+      color: #333;
+      line-height: 1.5;
+      margin: 0;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 15px;
+      padding-bottom: 10px;
+      border-bottom: 3px solid {{customization.primaryColor}};
+    }
+
+    .header .icon {
+      font-size: 28px;
+      margin-bottom: 5px;
+    }
+
+    .title {
+      font-size: 26px;
+      color: {{customization.primaryColor}};
+      margin: 0;
+    }
+
+    .subtitle {
+      font-size: 12px;
+      color: #666;
+      margin-top: 4px;
+    }
+
+    /* Macros section */
+    .macros-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin-bottom: 15px;
+    }
+
+    .macro-card {
+      padding: 12px;
+      border-radius: 12px;
+      text-align: center;
+    }
+
+    .macro-card.carbs {
+      background: linear-gradient(135deg, #FFF8E1 0%, #FFECB3 100%);
+      border: 2px solid #FFC107;
+    }
+
+    .macro-card.protein {
+      background: linear-gradient(135deg, #FFEBEE 0%, #FFCDD2 100%);
+      border: 2px solid #E91E63;
+    }
+
+    .macro-card.fats {
+      background: linear-gradient(135deg, #E8F5E9 0%, #C8E6C9 100%);
+      border: 2px solid #4CAF50;
+    }
+
+    .macro-icon {
+      font-size: 28px;
+      margin-bottom: 4px;
+    }
+
+    .macro-name {
+      font-size: 14px;
+      font-weight: 700;
+      margin-bottom: 2px;
+    }
+
+    .macro-role {
+      font-size: 10px;
+      font-weight: 600;
+      color: #666;
+      margin-bottom: 6px;
+    }
+
+    .macro-sources {
+      font-size: 10px;
+      color: #555;
+      line-height: 1.4;
+    }
+
+    /* Plate visual */
+    .plate-section {
+      display: flex;
+      gap: 20px;
+      margin-bottom: 15px;
+      align-items: center;
+    }
+
+    .plate-visual {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      border: 4px solid {{customization.primaryColor}};
+      position: relative;
+      flex-shrink: 0;
+      overflow: hidden;
+    }
+
+    .plate-carbs {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 50%;
+      height: 100%;
+      background: #FFF8E1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .plate-protein {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 50%;
+      height: 50%;
+      background: #FFEBEE;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .plate-veggies {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 50%;
+      height: 50%;
+      background: #E8F5E9;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .plate-section-icon {
+      font-size: 22px;
+    }
+
+    .plate-legend {
+      flex: 1;
+    }
+
+    .legend-title {
+      font-size: 15px;
+      font-weight: 700;
+      color: {{customization.primaryColor}};
+      margin-bottom: 10px;
+    }
+
+    .legend-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 8px;
+      font-size: 11px;
+    }
+
+    .legend-color {
+      width: 16px;
+      height: 16px;
+      border-radius: 4px;
+    }
+
+    /* Hydration */
+    .hydration-section {
+      background: linear-gradient(135deg, #E3F2FD 0%, #BBDEFB 100%);
+      padding: 12px;
+      border-radius: 12px;
+      margin-bottom: 15px;
+    }
+
+    .hydration-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+
+    .hydration-icon {
+      font-size: 24px;
+    }
+
+    .hydration-title {
+      font-size: 14px;
+      font-weight: 700;
+      color: #1565C0;
+    }
+
+    .hydration-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+    }
+
+    .hydration-item {
+      background: white;
+      padding: 8px;
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    .hydration-when {
+      font-size: 10px;
+      font-weight: 700;
+      color: #1565C0;
+      margin-bottom: 2px;
+    }
+
+    .hydration-amount {
+      font-size: 9px;
+      color: #555;
+    }
+
+    /* Recovery foods */
+    .recovery-section h3 {
+      font-size: 14px;
+      color: {{customization.primaryColor}};
+      margin: 0 0 10px 0;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .recovery-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+    }
+
+    .recovery-item {
+      background: #FAFAFA;
+      padding: 10px 8px;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    .recovery-item-icon {
+      font-size: 26px;
+      margin-bottom: 4px;
+    }
+
+    .recovery-item-name {
+      font-size: 10px;
+      font-weight: 600;
+      color: #333;
+      margin-bottom: 2px;
+    }
+
+    .recovery-item-benefit {
+      font-size: 9px;
+      color: #666;
+    }
+
+    /* Bottom tip */
+    .bottom-tip {
+      background: linear-gradient(135deg, {{customization.primaryColor}} 0%, {{customization.secondaryColor}} 100%);
+      padding: 14px 20px;
+      border-radius: 12px;
+      margin-top: 15px;
+      color: white;
+      text-align: center;
+    }
+
+    .bottom-tip p {
+      font-size: 12px;
+      margin: 0;
+    }
+
+    .bottom-tip strong {
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    <div class="icon">🍎</div>
+    <h1 class="title">Nutrition Basics</h1>
+    <p class="subtitle">Fuel your body right for peak performance</p>
+  </div>
+
+  <div class="macros-grid">
+    <div class="macro-card carbs">
+      <div class="macro-icon">🌾</div>
+      <div class="macro-name">Carbohydrates</div>
+      <div class="macro-role">PRIMARY FUEL</div>
+      <div class="macro-sources">Oats, rice, potatoes, fruits, whole grain bread, quinoa</div>
+    </div>
+    <div class="macro-card protein">
+      <div class="macro-icon">🥩</div>
+      <div class="macro-name">Protein</div>
+      <div class="macro-role">REPAIR & RECOVER</div>
+      <div class="macro-sources">Eggs, chicken, fish, legumes, yogurt, tofu</div>
+    </div>
+    <div class="macro-card fats">
+      <div class="macro-icon">🥑</div>
+      <div class="macro-name">Healthy Fats</div>
+      <div class="macro-role">SUSTAINED ENERGY</div>
+      <div class="macro-sources">Avocado, nuts, olive oil, seeds, fatty fish</div>
+    </div>
+  </div>
+
+  <div class="plate-section">
+    <div class="plate-visual">
+      <div class="plate-carbs"><span class="plate-section-icon">🍚</span></div>
+      <div class="plate-protein"><span class="plate-section-icon">🍗</span></div>
+      <div class="plate-veggies"><span class="plate-section-icon">🥦</span></div>
+    </div>
+    <div class="plate-legend">
+      <div class="legend-title">The Athlete's Plate</div>
+      <div class="legend-item">
+        <div class="legend-color" style="background: #FFF8E1; border: 1px solid #FFC107;"></div>
+        <span><strong>50% Carbs</strong> — Your main energy source for training</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-color" style="background: #FFEBEE; border: 1px solid #E91E63;"></div>
+        <span><strong>25% Protein</strong> — Muscle repair and recovery</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-color" style="background: #E8F5E9; border: 1px solid #4CAF50;"></div>
+        <span><strong>25% Vegetables</strong> — Vitamins, minerals, and fiber</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="hydration-section">
+    <div class="hydration-header">
+      <span class="hydration-icon">💧</span>
+      <span class="hydration-title">Hydration Guide</span>
+    </div>
+    <div class="hydration-grid">
+      <div class="hydration-item">
+        <div class="hydration-when">DAILY</div>
+        <div class="hydration-amount">2-3 liters of water minimum</div>
+      </div>
+      <div class="hydration-item">
+        <div class="hydration-when">BEFORE WORKOUT</div>
+        <div class="hydration-amount">500ml 2 hours before</div>
+      </div>
+      <div class="hydration-item">
+        <div class="hydration-when">DURING</div>
+        <div class="hydration-amount">150-250ml every 15-20 min</div>
+      </div>
+      <div class="hydration-item">
+        <div class="hydration-when">AFTER</div>
+        <div class="hydration-amount">500ml within 30 minutes</div>
+      </div>
+      <div class="hydration-item">
+        <div class="hydration-when">HOT WEATHER</div>
+        <div class="hydration-amount">Add electrolytes for 60min+</div>
+      </div>
+      <div class="hydration-item">
+        <div class="hydration-when">URINE CHECK</div>
+        <div class="hydration-amount">Light yellow = well hydrated</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="recovery-section">
+    <h3>🔋 Recovery Power Foods</h3>
+    <div class="recovery-grid">
+      <div class="recovery-item">
+        <div class="recovery-item-icon">🍌</div>
+        <div class="recovery-item-name">Banana</div>
+        <div class="recovery-item-benefit">Potassium & quick carbs</div>
+      </div>
+      <div class="recovery-item">
+        <div class="recovery-item-icon">🥚</div>
+        <div class="recovery-item-name">Eggs</div>
+        <div class="recovery-item-benefit">Complete protein</div>
+      </div>
+      <div class="recovery-item">
+        <div class="recovery-item-icon">🫐</div>
+        <div class="recovery-item-name">Berries</div>
+        <div class="recovery-item-benefit">Antioxidants</div>
+      </div>
+      <div class="recovery-item">
+        <div class="recovery-item-icon">🥜</div>
+        <div class="recovery-item-name">Nuts</div>
+        <div class="recovery-item-benefit">Healthy fats & protein</div>
+      </div>
+      <div class="recovery-item">
+        <div class="recovery-item-icon">🐟</div>
+        <div class="recovery-item-name">Salmon</div>
+        <div class="recovery-item-benefit">Omega-3 anti-inflammatory</div>
+      </div>
+      <div class="recovery-item">
+        <div class="recovery-item-icon">🍠</div>
+        <div class="recovery-item-name">Sweet Potato</div>
+        <div class="recovery-item-benefit">Complex carbs & vitamins</div>
+      </div>
+      <div class="recovery-item">
+        <div class="recovery-item-icon">🥛</div>
+        <div class="recovery-item-name">Greek Yogurt</div>
+        <div class="recovery-item-benefit">Protein & probiotics</div>
+      </div>
+      <div class="recovery-item">
+        <div class="recovery-item-icon">🥬</div>
+        <div class="recovery-item-name">Leafy Greens</div>
+        <div class="recovery-item-benefit">Iron & vitamins</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bottom-tip">
+    <p><strong>Listen to your body.</strong></p>
+    <p>These are guidelines, not rules. Adjust based on your training intensity, body weight, and how you feel.</p>
+  </div>
+</body>
+
+</html>

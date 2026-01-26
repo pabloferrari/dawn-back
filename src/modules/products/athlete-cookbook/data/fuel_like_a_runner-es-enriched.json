@@ -1,0 +1,5132 @@
+[
+  {
+    "id": "recipe-001",
+    "title": "Ensalada de Garbanzos",
+    "ingredients": [
+      "150 gr de garbanzos hervidos",
+      "1 tomate grande",
+      "Hojas de lechuga",
+      "1 planta pequeña de rúcula",
+      "1/2 cebolla morada",
+      "1 zanahoria rallada",
+      "Condimentos a gusto"
+    ],
+    "preparation": [
+      "Lavar bien todos los ingredientes.",
+      "Cortar como más te gusten.",
+      "Condimentar a gusto."
+    ],
+    "notes": [],
+    "category": "lunch",
+    "tags": [
+      "fresh-ingredients",
+      "light",
+      "high-fiber",
+      "vegetables",
+      "high-protein",
+      "plant-protein",
+      "vegan",
+      "quick",
+      "no-cook"
+    ],
+    "nutrition": {
+      "calories": 285,
+      "protein": 12,
+      "carbs": 42,
+      "fat": 8,
+      "fiber": 14
+    },
+    "timing": {
+      "bestConsumed": "2-4 horas antes del entrenamiento o post-entrenamiento",
+      "digestionTime": 180,
+      "idealFor": [
+        "días de entrenamiento suave",
+        "días de recuperación",
+        "carreras de base"
+      ]
+    },
+    "trainingPhase": [
+      "base",
+      "recovery"
+    ],
+    "prepTime": 15,
+    "servings": 2
+  },
+  {
+    "id": "recipe-002",
+    "title": "Ensalada de Rabanitos",
+    "ingredients": [
+      "1 paquete de rabanitos",
+      "1 planta de rúcula",
+      "Jugo de 2 limones",
+      "1 zanahoria en rodajas",
+      "Cuadraditos de queso Port Salut Light",
+      "Condimentos a gusto"
+    ],
+    "preparation": [
+      "Lavar bien todos los ingredientes.",
+      "Cortar como más te gusten.",
+      "Condimentar a gusto."
+    ],
+    "notes": [],
+    "category": "lunch",
+    "tags": [
+      "fresh-ingredients",
+      "light",
+      "high-fiber",
+      "vegetables",
+      "quick",
+      "no-cook"
+    ],
+    "nutrition": {
+      "calories": 185,
+      "protein": 8,
+      "carbs": 12,
+      "fat": 13,
+      "fiber": 6
+    },
+    "timing": {
+      "bestConsumed": "2-3 horas antes del entrenamiento o cualquier momento en días suaves",
+      "digestionTime": 90,
+      "idealFor": [
+        "días de entrenamiento suave",
+        "días de recuperación",
+        "carreras de base"
+      ]
+    },
+    "trainingPhase": [
+      "base",
+      "recovery"
+    ],
+    "prepTime": 10,
+    "servings": 2
+  },
+  {
+    "id": "recipe-003",
+    "title": "Ensalada espiral",
+    "ingredients": [
+      "1 pepino en rodajas",
+      "2 tomates en rodajas",
+      "1 cebolla morada en rodajas",
+      "1 zanahoria en rodajas",
+      "1 papa chica hervida en rodajas",
+      "Condimentos a gusto"
+    ],
+    "preparation": [
+      "Lavar bien todos los ingredientes.",
+      "Cortar como más te gusten.",
+      "Condimentar a gusto."
+    ],
+    "notes": [],
+    "category": "lunch",
+    "tags": [
+      "fresh-ingredients",
+      "light",
+      "high-fiber",
+      "vegetables",
+      "complex-carbs",
+      "vegan",
+      "quick",
+      "no-cook"
+    ],
+    "nutrition": {
+      "calories": 185,
+      "protein": 4,
+      "carbs": 35,
+      "fat": 5,
+      "fiber": 7
+    },
+    "timing": {
+      "bestConsumed": "2-3 horas antes del entrenamiento o cualquier momento en días suaves",
+      "digestionTime": 90,
+      "idealFor": [
+        "días de entrenamiento suave",
+        "días de recuperación",
+        "carreras de base"
+      ]
+    },
+    "trainingPhase": [
+      "base",
+      "recovery"
+    ],
+    "prepTime": 15,
+    "servings": 2
+  },
+  {
+    "id": "recipe-004",
+    "title": "Ensalada de Atún",
+    "ingredients": [
+      "1 filet de atún hervido o 1 lata de atún al natural",
+      "1 tomate",
+      "1/2 planta de lechuga",
+      "1/2 planta de lechuga morada",
+      "1 zanahoria rallada",
+      "Condimentos a gusto"
+    ],
+    "preparation": [
+      "Lavar bien todos los ingredientes.",
+      "Cortar como más te gusten.",
+      "Condimentar a gusto."
+    ],
+    "notes": [],
+    "category": "lunch",
+    "tags": [
+      "fresh-ingredients",
+      "light",
+      "high-fiber",
+      "vegetables",
+      "high-protein",
+      "quick",
+      "no-cook"
+    ],
+    "nutrition": {
+      "calories": 280,
+      "protein": 32,
+      "carbs": 12,
+      "fat": 12,
+      "fiber": 6
+    },
+    "timing": {
+      "bestConsumed": "2-3 horas antes del entrenamiento o dentro de 2 horas post-entrenamiento",
+      "digestionTime": 90,
+      "idealFor": [
+        "días de recuperación",
+        "días de entrenamiento suave",
+        "comida post-entrenamiento"
+      ]
+    },
+    "trainingPhase": [
+      "base",
+      "build",
+      "recovery"
+    ],
+    "prepTime": 10,
+    "servings": 2
+  },
+  {
+    "id": "recipe-005",
+    "title": "Ensalada de lentejas y arroz",
+    "ingredients": [
+      "1 taza de arroz integral hervido",
+      "1 taza de lentejas hervidas",
+      "1/2 morrón rojo en cuadraditos",
+      "1 zanahoria en cuadraditos",
+      "1 cebolla",
+      "1 planta de espinaca",
+      "Condimentos a gusto"
+    ],
+    "preparation": [
+      "Lavar bien todos los ingredientes.",
+      "Cortar como más te gusten.",
+      "Condimentar a gusto."
+    ],
+    "notes": [],
+    "category": "lunch",
+    "tags": [
+      "fresh-ingredients",
+      "light",
+      "high-fiber",
+      "vegetables",
+      "high-protein",
+      "plant-protein",
+      "complex-carbs",
+      "vegan",
+      "quick",
+      "no-cook",
+      "anti-inflammatory"
+    ],
+    "nutrition": {
+      "calories": 320,
+      "protein": 14,
+      "carbs": 58,
+      "fat": 4,
+      "fiber": 12
+    },
+    "timing": {
+      "bestConsumed": "2-4 hours before training or anytime on easy days",
+      "digestionTime": 120,
+      "idealFor": [
+        "días de entrenamiento suave",
+        "días de recuperación",
+        "long runs"
+      ]
+    },
+    "trainingPhase": [
+      "base",
+      "recovery"
+    ],
+    "prepTime": 15,
+    "servings": 4
+  },
+  {
+    "id": "recipe-006",
+    "title": "Ensalada de arvejas",
+    "ingredients": [
+      "1 lata de arvejas",
+      "1/2 lata de choclo",
+      "2 huevos duros",
+      "100 gr de tomatitos cherry",
+      "1/2 repollo morado",
+      "Condimentos a gusto"
+    ],
+    "preparation": [
+      "Lavar bien todos los ingredientes.",
+      "Cortar como más te gusten.",
+      "Condimentar a gusto."
+    ],
+    "notes": [],
+    "category": "lunch",
+    "tags": [
+      "fresh-ingredients",
+      "light",
+      "high-fiber",
+      "vegetables",
+      "high-protein",
+      "quick",
+      "no-cook"
+    ],
+    "nutrition": {
+      "calories": 285,
+      "protein": 16,
+      "carbs": 38,
+      "fat": 8,
+      "fiber": 12
+    },
+    "timing": {
+      "bestConsumed": "2-4 hours before training or post-workout meal",
+      "digestionTime": 120,
+      "idealFor": [
+        "días de recuperación",
+        "días de entrenamiento suave",
+        "long runs preparation"
+      ]
+    },
+    "trainingPhase": [
+      "base",
+      "recovery"
+    ],
+    "prepTime": 15,
+    "servings": 2
+  },
+  {
+    "id": "recipe-007",
+    "title": "Ensalada de tirabuzones",
+    "ingredients": [
+      "1 taza de tirabuzones cocidos",
+      "1 pepino",
+      "1 tomate",
+      "1 paquete de rúcula",
+      "Condimentos a gusto"
+    ],
+    "preparation": [
+      "Lavar bien todos los ingredientes.",
+      "Cortar como más te gusten.",
+      "Condimentar a gusto."
+    ],
+    "notes": [],
+    "category": "lunch",
+    "tags": [
+      "fresh-ingredients",
+      "light",
+      "high-fiber",
+      "vegetables",
+      "vegan",
+      "quick",
+      "no-cook"
+    ],
+    "nutrition": {
+      "calories": 285,
+      "protein": 9,
+      "carbs": 48,
+      "fat": 8,
+      "fiber": 6
+    },
+    "timing": {
+      "bestConsumed": "2-3 horas antes del entrenamiento",
+      "digestionTime": 120,
+      "idealFor": [
+        "días de entrenamiento suave",
+        "días de recuperación",
+        "carreras de base"
+      ]
+    },
+    "trainingPhase": [
+      "base",
+      "recovery"
+    ],
+    "prepTime": 15,
+    "servings": 2
+  },
+  {
+    "id": "recipe-008",
+    "title": "Ensalada de Brocoli",
+    "ingredients": [
+      "1 atado de brócoli hervido",
+      "1 atado de rúcula",
+      "250 gr de tomates cherry",
+      "1/2 repollo morado",
+      "Condimentos a gusto"
+    ],
+    "preparation": [
+      "Lavar bien todos los ingredientes.",
+      "Cortar como más te gusten.",
+      "Condimentar a gusto."
+    ],
+    "notes": [],
+    "category": "lunch",
+    "tags": [
+      "fresh-ingredients",
+      "light",
+      "high-fiber",
+      "vegetables",
+      "high-protein",
+      "quick",
+      "no-cook"
+    ],
+    "nutrition": {
+      "calories": 145,
+      "protein": 7,
+      "carbs": 22,
+      "fat": 5,
+      "fiber": 9
+    },
+    "timing": {
+      "bestConsumed": "2-4 hours before training or anytime on easy days",
+      "digestionTime": 90,
+      "idealFor": [
+        "días de recuperación",
+        "días de entrenamiento suave",
+        "carreras de base"
+      ]
+    },
+    "trainingPhase": [
+      "base",
+      "recovery"
+    ],
+    "prepTime": 15,
+    "servings": 4
+  },
+  {
+    "id": "recipe-010",
+    "title": "Ensalada de Quinoa",
+    "ingredients": [
+      "2 tazas de quinoa cocida",
+      "1/2 morrón rojo picado",
+      "1 zanahoria pelada y rallada",
+      "1 pepino picado",
+      "1 tomate cortado en cubitos",
+      "1/2 lata de choclo entero",
+      "1 a 2 tazas de repollo cortado",
+      "1 limón exprimido",
+      "Perejil a gusto",
+      "1 cucharada de aceite de oliva"
+    ],
+    "preparation": [
+      "Lavar bien todos los ingredientes.",
+      "Cortar como más te gusten.",
+      "Condimentar a gusto."
+    ],
+    "notes": [],
+    "category": "lunch",
+    "tags": [
+      "fresh-ingredients",
+      "light",
+      "high-fiber",
+      "vegetables",
+      "high-protein",
+      "plant-protein",
+      "complex-carbs",
+      "gluten-free",
+      "quick",
+      "no-cook"
+    ],
+    "nutrition": {
+      "calories": 320,
+      "protein": 12,
+      "carbs": 58,
+      "fat": 6,
+      "fiber": 8
+    },
+    "timing": {
+      "bestConsumed": "2-4 hours before training or anytime on easy days",
+      "digestionTime": 120,
+      "idealFor": [
+        "días de entrenamiento suave",
+        "long runs",
+        "días de recuperación",
+        "base building"
+      ]
+    },
+    "trainingPhase": [
+      "base",
+      "build",
+      "recovery"
+    ],
+    "prepTime": 15,
+    "servings": 4
+  },
+  {
+    "id": "recipe-011",
+    "title": "Ensalada con porotos aduki",
+    "ingredients": [
+      "1/4 taza de aduki (azuki) cocidos",
+      "1/4 taza de germinados de lentejas (opcional)",
+      "Hojas verdes",
+      "8 tomates cherry",
+      "Aceite y condimentos a gusto"
+    ],
+    "preparation": [
+      "Dejar en remojo los porotos entre 8 y 12 horas.",
+      "Desechar el agua de remojo y colocarlos en una cacerola.",
+      "Agregar agua hirviendo, cocinar a fuego medio al menos 30 minutos o hasta que estén blandos.",
+      "Colocar los aduki en un bol, agregar los germinados, hojas verdes y tomates cherry cortados por la mitad.",
+      "Condimentar a gusto."
+    ],
+    "notes": [],
+    "category": "lunch",
+    "tags": [
+      "fresh-ingredients",
+      "light",
+      "high-fiber",
+      "vegetables",
+      "high-protein",
+      "plant-protein",
+      "vegan"
+    ],
+    "nutrition": {
+      "calories": 185,
+      "protein": 8,
+      "carbs": 28,
+      "fat": 4,
+      "fiber": 9
+    },
+    "timing": {
+      "bestConsumed": "2-3 horas antes del entrenamiento",
+      "digestionTime": 120,
+      "idealFor": [
+        "días de entrenamiento suave",
+        "días de recuperación",
+        "carreras de base"
+      ]
+    },
+    "trainingPhase": [
+      "base",
+      "recovery"
+    ],
+    "prepTime": 45,
+    "servings": 2
+  },
+  {
+    "id": "recipe-012",
+    "title": "Ensalada taboule",
+    "ingredients": [
+      "1/2 taza de trigo burgol hervido",
+      "1 cebolla de verdeo picada",
+      "1 tomate en cubos",
+      "2 cucharadas de aceite de oliva",
+      "Perejil fresco a gusto",
+      "Jugo de limón a gusto"
+    ],
+    "preparation": [
+      "Poner el trigo burgol en un recipiente con agua hirviendo y dejar en remojo 10 a 15 minutos hasta que el grano hinche y se separe.",
+      "Escurrir y exprimir el agua restante presionando con una cuchara.",
+      "Colocar en un bowl con el resto de los ingredientes y mezclar bien.",
+      "Condimentar con sal, pimienta, aceite de oliva y jugo de limón."
+    ],
+    "notes": [],
+    "category": "lunch",
+    "tags": [
+      "fresh-ingredients",
+      "light",
+      "high-fiber",
+      "vegetables",
+      "vegan",
+      "quick",
+      "no-cook"
+    ],
+    "nutrition": {
+      "calories": 285,
+      "protein": 6,
+      "carbs": 38,
+      "fat": 14,
+      "fiber": 8
+    },
+    "timing": {
+      "bestConsumed": "2-4 hours before training or anytime on recovery days",
+      "digestionTime": 120,
+      "idealFor": [
+        "días de entrenamiento suave",
+        "días de recuperación",
+        "carreras de base"
+      ]
+    },
+    "trainingPhase": [
+      "base",
+      "recovery"
+    ],
+    "prepTime": 25,
+    "servings": 2
+  },
+  {
+    "id": "recipe-013",
+    "title": "Ensalada multicolor",
+    "ingredients": [
+      "8 tomates cherry cortados por la mitad",
+      "1/2 palta en rodajas finas",
+      "50 g de repollo morado",
+      "50 g de lechuga en tiras finas",
+      "1 zanahoria en tiras",
+      "1/2 cebolla blanca picada"
+    ],
+    "preparation": [
+      "Mezclar todos los ingredientes.",
+      "Condimentar a gusto."
+    ],
+    "notes": [],
+    "category": "lunch",
+    "tags": [
+      "fresh-ingredients",
+      "light",
+      "high-fiber",
+      "vegetables",
+      "high-protein",
+      "quick",
+      "no-cook"
+    ],
+    "nutrition": {
+      "calories": 185,
+      "protein": 4,
+      "carbs": 18,
+      "fat": 12,
+      "fiber": 8
+    },
+    "timing": {
+      "bestConsumed": "2-3 hours before training or post-workout",
+      "digestionTime": 120,
+      "idealFor": [
+        "días de entrenamiento suave",
+        "días de recuperación",
+        "días de descanso"
+      ]
+    },
+    "trainingPhase": [
+      "base",
+      "recovery"
+    ],
+    "prepTime": 15,
+    "servings": 2
+  },
+  {
+    "id": "recipe-014",
+    "title": "Masa integral de tarta",
+    "ingredients": [
+      "200 gr de harina integral",
+      "1 cucharada sopera de aceite de oliva",
+      "Sal a gusto",
+      "Agua tibia (cantidad necesaria)"
+    ],
+    "preparation": [
+      "Mezclar la harina con la sal y el aceite.",
+      "Incorporar agua de a poco hasta formar la masa.",
+      "Amasar.",
+      "Dejar reposar unos minutos y estirar."
+    ],
+    "notes": [],
+    "category": "base",
+    "tags": [
+      "base-recipe",
+      "meal-prep",
+      "complex-carbs",
+      "high-fiber",
+      "vegan",
+      "quick",
+      "no-cook"
+    ],
+    "nutrition": {
+      "calories": 180,
+      "protein": 6,
+      "carbs": 34,
+      "fat": 3,
+      "fiber": 6
+    },
+    "timing": {
+      "bestConsumed": "2-4 hours before training",
+      "digestionTime": 180,
+      "idealFor": [
+        "long runs",
+        "base training days",
+        "meal prep base"
+      ]
+    },
+    "trainingPhase": [
+      "base",
+      "build"
+    ],
+    "prepTime": 15,
+    "servings": 8
+  },
+  {
+    "id": "recipe-015",
+    "title": "Tarta de brócoli y calabaza",
+    "ingredients": [
+      "Filling: 1 taza de calabaza en cubos",
+      "Filling: 1 taza de flores de brócoli",
+      "Filling: 1 cebolla morada en cubos",
+      "Filling: 1 cucharada de curry",
+      "Filling: 1 cucharada de tomillo fresco",
+      "Filling: 1/2 taza de queso Port Salut en cubos",
+      "Filling: 2 cucharaditas de semillas de sésamo",
+      "Filling: 1 huevo batido"
+    ],
+    "preparation": [
+      "Lavar y cortar el brócoli y el zapallo (calabaza) como se indica.",
+      "Cocer al vapor o hervido.",
+      "Saltear la cebolla.",
+      "Colocar todo en un bowl, sumar el huevo batido y los condimentos.",
+      "Rellenar la masa integral; por arriba sumar el queso en cubos y las semillas.",
+      "Llevar a horno."
+    ],
+    "notes": [],
+    "category": "lunch",
+    "tags": [
+      "fresh-ingredients",
+      "meal-prep",
+      "vegetables",
+      "batch-cooking",
+      "high-protein",
+      "complex-carbs",
+      "high-fiber"
+    ],
+    "nutrition": {
+      "calories": 285,
+      "protein": 14,
+      "carbs": 32,
+      "fat": 12,
+      "fiber": 6
+    },
+    "timing": {
+      "bestConsumed": "2-3 horas antes del entrenamiento",
+      "digestionTime": 120,
+      "idealFor": [
+        "días de entrenamiento suave",
+        "días de recuperación",
+        "long runs"
+      ]
+    },
+    "trainingPhase": [
+      "base",
+      "recovery"
+    ],
+    "prepTime": 45,
+    "servings": 6
+  },
+  {
+    "id": "recipe-016",
+    "title": "Tarta vegana Ratatouille",
+    "ingredients": [
+      "Filling: 2 berenjenas",
+      "Filling: 2 zapallitos",
+      "Filling: 2 tomates perita",
+      "Filling: 1/2 pimiento rojo",
+      "Filling: 1/2 pimiento verde",
+      "Filling: 1/2 pimiento amarillo",
+      "Filling: 2 dientes de ajo",
+      "Filling: 2 cebollas",
+      "Filling: 2 ramitas de tomillo",
+      "Filling: 2 ramitas de perejil",
+      "Filling: Pimienta negra",
+      "Filling: Sal"
+    ],
+    "preparation": [
+      "Lavar y cortar todos los vegetales en rebanadas finas.",
+      "Asarlos en el horno o en un grill en la hornalla.",
+      "Colocarlos arriba de la masa formando un espiral.",
+      "Hornear unos minutos hasta que se dore la masa."
+    ],
+    "notes": [],
+    "category": "lunch",
+    "tags": [
+      "fresh-ingredients",
+      "meal-prep",
+      "vegetables",
+      "batch-cooking",
+      "vegan",
+      "quick"
+    ],
+    "nutrition": {
+      "calories": 180,
+      "protein": 6,
+      "carbs": 35,
+      "fat": 4,
+      "fiber": 12
+    },
+    "timing": {
+      "bestConsumed": "2-3 horas antes del entrenamiento",
+      "digestionTime": 120,
+      "idealFor": [
+        "días de entrenamiento suave",
+        "días de recuperación",
+        "carreras de base"
+      ]
+    },
+    "trainingPhase": [
+      "base",
+      "recovery"
+    ],
+    "prepTime": 45,
+    "servings": 6
+  },
+  {
+    "id": "recipe-017",
+    "title": "Tarta de masa de calabaza",
+    "ingredients": [
+      "Base: 750 gr de calabaza",
+      "Base: 100 gr de zanahoria",
+      "Base: 1 huevo",
+      "Base: 2 cucharadas de maicena",
+      "Base: Condimentos",
+      "Filling: 300 gr de espinaca",
+      "Filling: 1 cebolla",
+      "Filling: 3 huevos",
+      "Filling: 50 gr de queso untable",
+      "Filling: 50 gr de leche descremada",
+      "Filling: 1 cucharadita de aceite",
+      "Filling: Condimentos"
+    ],
+    "preparation": [
+      "Cortar la calabaza y cocinar al vapor o en microondas.",
+      "Cocinar la espinaca al vapor y escurrir bien.",
+      "Picar la cebolla y saltear.",
+      "Pelar y rallar la zanahoria.",
+      "Hacer un puré con la calabaza y agregar zanahoria rallada, huevo y condimentos.",
+      "Colocar la base en una tartera o molde desmontable aceitado y hornear a 180°C ~12 minutos o hasta que la superficie empiece a endurecer. Retirar.",
+      "Mezclar espinaca picada con cebolla salteada y el resto de ingredientes del relleno.",
+      "Colocar el relleno sobre la base y hornear nuevamente hasta que endurezca (~35 minutos)."
+    ],
+    "notes": [],
+    "category": "lunch",
+    "tags": [
+      "fresh-ingredients",
+      "high-protein",
+      "complex-carbs",
+      "high-fiber",
+      "anti-inflammatory"
+    ],
+    "nutrition": {
+      "calories": 285,
+      "protein": 14,
+      "carbs": 28,
+      "fat": 12,
+      "fiber": 8
+    },
+    "timing": {
+      "bestConsumed": "2-3 horas antes del entrenamiento",
+      "digestionTime": 120,
+      "idealFor": [
+        "días de entrenamiento suave",
+        "días de recuperación",
+        "long runs"
+      ]
+    },
+    "trainingPhase": [
+      "base",
+      "recovery"
+    ],
+    "prepTime": 75,
+    "servings": 6
+  },
+  {
+    "id": "recipe-018",
+    "title": "Tarta de espinaca con ricota",
+    "ingredients": [
+      "Masa de tarta del recetario",
+      "1 taza de espinaca hervida, escurrida y picada",
+      "200 gr de ricota descremada",
+      "2 cucharadas de queso rallado",
+      "1 pizca de pimienta",
+      "1 pizca de nuez moscada",
+      "2 huevos"
+    ],
+    "preparation": [
+      "Batir los huevos con los condimentos.",
+      "Mezclar con la espinaca y la ricota.",
+      "Armar la tarta con el relleno y la masa integral.",
+      "Hornear hasta que se dore la masa."
+    ],
+    "notes": [
+      "Tip: freezar en porciones."
+    ],
+    "category": "lunch",
+    "tags": [
+      "fresh-ingredients",
+      "meal-prep",
+      "vegetables",
+      "batch-cooking",
+      "high-protein",
+      "high-fiber",
+      "quick",
+      "anti-inflammatory"
+    ],
+    "nutrition": {
+      "calories": 285,
+      "protein": 16,
+      "carbs": 22,
+      "fat": 15,
+      "fiber": 4
+    },
+    "timing": {
+      "bestConsumed": "2-3 horas antes del entrenamiento",
+      "digestionTime": 120,
+      "idealFor": [
+        "días de entrenamiento suave",
+        "días de recuperación",
+        "long runs"
+      ]
+    },
+    "trainingPhase": [
+      "base",
+      "recovery"
+    ],
+    "prepTime": 45,
+    "servings": 6
+  },
+  {
+    "id": "recipe-019",
+    "title": "Tarta de atún",
+    "ingredients": [
+      "1 cebolla picada",
+      "1/2 morrón rojo picado",
+      "1/2 morrón verde picado",
+      "1 lata de atún al natural",
+      "1 tomate en cubitos",
+      "Masa integral del recetario"
+    ],
+    "preparation": [
+      "Saltear en un wok antiadherente la cebolla con los morrones.",
+      "Mezclar con el atún y el tomate.",
+      "Formar la tarta.",
+      "Hornear."
+    ],
+    "notes": [],
+    "category": "lunch",
+    "tags": [
+      "fresh-ingredients",
+      "meal-prep",
+      "vegetables",
+      "batch-cooking",
+      "high-protein",
+      "high-fiber",
+      "quick"
+    ],
+    "nutrition": {
+      "calories": 285,
+      "protein": 22,
+      "carbs": 32,
+      "fat": 8,
+      "fiber": 6
+    },
+    "timing": {
+      "bestConsumed": "2-3 horas antes del entrenamiento",
+      "digestionTime": 120,
+      "idealFor": [
+        "días de entrenamiento suave",
+        "días de recuperación",
+        "long runs"
+      ]
+    },
+    "trainingPhase": [
+      "base",
+      "recovery"
+    ],
+    "prepTime": 45,
+    "servings": 4
+  },
+  {
+    "id": "recipe-020",
+    "title": "Tarta de berenjenas",
+    "ingredients": [
+      "1 cebolla cortada en aros",
+      "1 ajo picado",
+      "2 tomates perita finamente picados",
+      "3 berenjenas medianas cortadas en rodajas",
+      "2 huevos",
+      "2 cucharadas de queso untable light",
+      "Condimentos a gusto"
+    ],
+    "preparation": [
+      "Saltear el ajo con la cebolla.",
+      "Incorporar los tomates y las berenjenas.",
+      "Tapar y cocinar a fuego suave 15 minutos.",
+      "Batir los huevos con el queso y los condimentos.",
+      "Mezclar el batido con la preparación de berenjenas.",
+      "Armar la tarta."
+    ],
+    "notes": [],
+    "category": "lunch",
+    "tags": [
+      "fresh-ingredients",
+      "meal-prep",
+      "vegetables",
+      "batch-cooking",
+      "high-protein"
+    ],
+    "nutrition": {
+      "calories": 165,
+      "protein": 8,
+      "carbs": 18,
+      "fat": 7,
+      "fiber": 9
+    },
+    "timing": {
+      "bestConsumed": "2-4 hours before training or post-workout meal",
+      "digestionTime": 120,
+      "idealFor": [
+        "días de recuperación",
+        "días de entrenamiento suave",
+        "carreras de base"
+      ]
+    },
+    "trainingPhase": [
+      "base",
+      "recovery"
+    ],
+    "prepTime": 45,
+    "servings": 4
+  },
+  {
+    "id": "recipe-021",
+    "title": "Sopa de vegetales y quinoa",
+    "ingredients": [
+      "1 zanahoria",
+      "1 puerro",
+      "1 cebolla",
+      "1 morrón",
+      "Apio",
+      "100 gr de quinoa",
+      "Condimentos"
+    ],
+    "preparation": [
+      "Picar las verduras bien finas.",
+      "Saltear cebolla, morrón y puerro en sartén antiadherente sin aceite.",
+      "Pasar a una olla con el resto de vegetales y cubrir con agua.",
+      "Lavar bien la quinoa, agregar a la olla y hervir junto con las verduras."
+    ],
+    "notes": [],
+    "category": "dinner",
+    "tags": [
+      "fresh-ingredients",
+      "comfort-food",
+      "easy-digest",
+      "hydrating",
+      "recovery",
+      "high-protein",
+      "plant-protein",
+      "complex-carbs",
+      "gluten-free",
+      "vegan",
+      "quick"
+    ],
+    "nutrition": {
+      "calories": 185,
+      "protein": 7,
+      "carbs": 38,
+      "fat": 2,
+      "fiber": 6
+    },
+    "timing": {
+      "bestConsumed": "2-3 horas antes del entrenamiento o dentro de 2 horas post-entrenamiento",
+      "digestionTime": 120,
+      "idealFor": [
+        "días de recuperación",
+        "días de entrenamiento suave",
+        "post-long runs",
+        "base building"
+      ]
+    },
+    "trainingPhase": [
+      "base",
+      "recovery"
+    ],
+    "prepTime": 35,
+    "servings": 4
+  },
+  {
+    "id": "recipe-022",
+    "title": "Sopa de Zapallo",
+    "ingredients": [
+      "1 zapallo o calabaza grande, pelado, sin semillas y en trozos pequeños",
+      "1 cebolla blanca picada finamente",
+      "3 dientes de ajo machacados",
+      "1 cucharadita de comino molido",
+      "4 tomates pelados y picados",
+      "6 tazas de caldo",
+      "Sal y pimienta a gusto"
+    ],
+    "preparation": [
+      "Saltear cebolla en sartén antiadherente junto con ajo y tomates.",
+      "Añadir el caldo y el zapallo y hervir ~30 minutos.",
+      "Dejar enfriar y licuar.",
+      "Añadir condimentos y recalentar."
+    ],
+    "notes": [
+      "En el PDF aparece la frase “Y llevar a horno.” al final; parece un remanente/errata y no es necesaria para una sopa licuada."
+    ],
+    "category": "dinner",
+    "tags": [
+      "fresh-ingredients",
+      "comfort-food",
+      "easy-digest",
+      "hydrating",
+      "recovery",
+      "complex-carbs",
+      "vegan",
+      "quick"
+    ],
+    "nutrition": {
+      "calories": 110,
+      "protein": 4,
+      "carbs": 26,
+      "fat": 1,
+      "fiber": 6
+    },
+    "timing": {
+      "bestConsumed": "2-4 hours before training or post-workout dinner",
+      "digestionTime": 90,
+      "idealFor": [
+        "días de recuperación",
+        "días de entrenamiento suave",
+        "cold weather runs",
+        "hydration"
+      ]
+    },
+    "trainingPhase": [
+      "base",
+      "recovery"
+    ],
+    "prepTime": 45,
+    "servings": 6
+  },
+  {
+    "id": "recipe-023",
+    "title": "Sopa de espinaca y brócoli",
+    "ingredients": [
+      "1 atado de espinaca",
+      "1 planta de brócoli cortado",
+      "1 cebolla blanca picada finamente",
+      "3 dientes de ajo machacados",
+      "6 tazas de caldo",
+      "Sal y pimienta a gusto"
+    ],
+    "preparation": [
+      "Saltear cebollas en sartén antiadherente junto con el ajo.",
+      "Añadir el caldo, el brócoli y la espinaca y hervir ~30 minutos.",
+      "Dejar enfriar y licuar.",
+      "Añadir condimentos y recalentar."
+    ],
+    "notes": [],
+    "category": "dinner",
+    "tags": [
+      "fresh-ingredients",
+      "comfort-food",
+      "easy-digest",
+      "hydrating",
+      "recovery",
+      "high-fiber",
+      "vegan",
+      "quick",
+      "anti-inflammatory"
+    ],
+    "nutrition": {
+      "calories": 85,
+      "protein": 5,
+      "carbs": 12,
+      "fat": 2,
+      "fiber": 6
+    },
+    "timing": {
+      "bestConsumed": "2-3 horas antes del entrenamiento o dentro de 2 horas post-entrenamiento",
+      "digestionTime": 90,
+      "idealFor": [
+        "días de recuperación",
+        "días de entrenamiento suave",
+        "post-long runs",
+        "hydration support"
+      ]
+    },
+    "trainingPhase": [
+      "base",
+      "recovery"
+    ],
+    "prepTime": 45,
+    "servings": 6
+  },
+  {
+    "id": "recipe-024",
+    "title": "Tarta de zapallitos",
+    "ingredients": [
+      "Filling: 4 zapallitos",
+      "Filling: 1 cebolla",
+      "Filling: 1/2 morrón rojo",
+      "Filling: 2 huevos batidos",
+      "Filling: 200 g de ricota magra",
+      "Filling: Condimentos a gusto",
+      "Filling: Semillas a gusto"
+    ],
+    "preparation": [
+      "Lavar y cortar todos los vegetales.",
+      "Saltearlos.",
+      "Sumar ricota, huevo y semillas.",
+      "Rellenar la tarta y llevar a horno."
+    ],
+    "notes": [],
+    "category": "lunch",
+    "tags": [
+      "fresh-ingredients",
+      "meal-prep",
+      "vegetables",
+      "batch-cooking",
+      "high-protein",
+      "quick"
+    ],
+    "nutrition": {
+      "calories": 280,
+      "protein": 16,
+      "carbs": 22,
+      "fat": 14,
+      "fiber": 4
+    },
+    "timing": {
+      "bestConsumed": "2-3 horas antes del entrenamiento",
+      "digestionTime": 120,
+      "idealFor": [
+        "días de entrenamiento suave",
+        "días de recuperación",
+        "preparación de comidas"
+      ]
+    },
+    "trainingPhase": [
+      "base",
+      "recovery"
+    ],
+    "prepTime": 45,
+    "servings": 6
+  },
+  {
+    "id": "recipe-025",
+    "title": "Sopa de puerro y zanahoria",
+    "ingredients": [
+      "1 puerro picado",
+      "3 zanahorias peladas",
+      "1 cebolla blanca picada finamente",
+      "6 tazas de caldo",
+      "Sal y pimienta a gusto"
+    ],
+    "preparation": [
+      "Saltear cebollas con el puerro en sartén antiadherente.",
+      "Añadir el caldo y las zanahorias y hervir ~30 minutos.",
+      "Dejar enfriar y licuar.",
+      "Añadir condimentos y recalentar."
+    ],
+    "notes": [],
+    "category": "dinner",
+    "tags": [
+      "fresh-ingredients",
+      "comfort-food",
+      "easy-digest",
+      "hydrating",
+      "recovery",
+      "vegan",
+      "quick"
+    ],
+    "nutrition": {
+      "calories": 85,
+      "protein": 2,
+      "carbs": 18,
+      "fat": 1,
+      "fiber": 4
+    },
+    "timing": {
+      "bestConsumed": "2-4 hours before training or within 2 hours post-workout",
+      "digestionTime": 90,
+      "idealFor": [
+        "días de recuperación",
+        "días de entrenamiento suave",
+        "post-long runs",
+        "between training sessions"
+      ]
+    },
+    "trainingPhase": [
+      "base",
+      "recovery"
+    ],
+    "prepTime": 45,
+    "servings": 6
+  },
+  {
+    "id": "recipe-026",
+    "title": "Sopa de arvejas",
+    "ingredients": [
+      "2 latas de arvejas",
+      "2 dientes de ajo picados",
+      "1 cebolla blanca picada finamente",
+      "4 tazas de caldo",
+      "Sal y pimienta a gusto"
+    ],
+    "preparation": [
+      "Saltear cebollas con el ajo en sartén antiadherente.",
+      "Añadir el caldo y las arvejas y hervir ~20 minutos.",
+      "Dejar enfriar y licuar.",
+      "Añadir condimentos y recalentar."
+    ],
+    "notes": [],
+    "category": "dinner",
+    "tags": [
+      "fresh-ingredients",
+      "comfort-food",
+      "easy-digest",
+      "hydrating",
+      "recovery",
+      "vegan",
+      "quick"
+    ],
+    "nutrition": {
+      "calories": 180,
+      "protein": 11,
+      "carbs": 32,
+      "fat": 1,
+      "fiber": 11
+    },
+    "timing": {
+      "bestConsumed": "2-3 hours post-workout or recovery days",
+      "digestionTime": 90,
+      "idealFor": [
+        "días de recuperación",
+        "días de entrenamiento suave",
+        "post long runs"
+      ]
+    },
+    "trainingPhase": [
+      "base",
+      "recovery"
+    ],
+    "prepTime": 35,
+    "servings": 4
+  },
+  {
+    "id": "recipe-027",
+    "title": "Pastel de pollo y calabaza",
+    "ingredients": [
+      "150 gr de pechuga de pollo (1 porción)",
+      "1 cebolla",
+      "1 trozo de morrón rojo",
+      "1 tomate pequeño",
+      "1 zanahoria rallada",
+      "Condimentos",
+      "200 gr de calabaza (sin cáscara)",
+      "50 ml de leche"
+    ],
+    "preparation": [
+      "Saltear la cebolla en sartén antiadherente hasta que quede transparente.",
+      "Añadir morrón y pollo en trozos hasta que el pollo quede cocido.",
+      "Agregar zanahoria y condimentos. Reservar.",
+      "Hacer puré de calabaza (con leche según el recetario).",
+      "En un molde para horno colocar el relleno de pollo y arriba una capa de puré de calabaza.",
+      "Llevar al horno unos minutos."
+    ],
+    "notes": [],
+    "category": "dinner",
+    "tags": [
+      "fresh-ingredients",
+      "high-protein",
+      "satisfying",
+      "complex-carbs"
+    ],
+    "nutrition": {
+      "calories": 285,
+      "protein": 35,
+      "carbs": 22,
+      "fat": 6,
+      "fiber": 4
+    },
+    "timing": {
+      "bestConsumed": "2-3 horas antes del entrenamiento",
+      "digestionTime": 120,
+      "idealFor": [
+        "días de recuperación",
+        "días de entrenamiento suave",
+        "carreras de base"
+      ]
+    },
+    "trainingPhase": [
+      "base",
+      "recovery"
+    ],
+    "prepTime": 35,
+    "servings": 1
+  },
+  {
+    "id": "recipe-028",
+    "title": "Hamburguesas de atún",
+    "ingredients": [
+      "1 lata de atún al natural escurrido",
+      "1/2 cebolla salteada en cubitos",
+      "1 clara",
+      "1 cucharadita de perejil picado",
+      "1 cucharadita de mostaza",
+      "1 cucharada de jugo de limón",
+      "3 cucharadas de avena"
+    ],
+    "preparation": [
+      "Mezclar todos los ingredientes en un bowl.",
+      "Humedecerse las manos y formar bolitas.",
+      "Aplastar entre las palmas para dar forma de hamburguesa.",
+      "Cocinar en sartén antiadherente o con rocío vegetal."
+    ],
+    "notes": [
+      "Rinde aprox. 2 a 3 hamburguesas (según el recetario)."
+    ],
+    "category": "dinner",
+    "tags": [
+      "fresh-ingredients",
+      "high-protein",
+      "satisfying",
+      "complex-carbs",
+      "high-fiber",
+      "quick",
+      "meal-prep"
+    ],
+    "nutrition": {
+      "calories": 320,
+      "protein": 32,
+      "carbs": 18,
+      "fat": 12,
+      "fiber": 4
+    },
+    "timing": {
+      "bestConsumed": "2-3 hours before training or post-workout dinner",
+      "digestionTime": 120,
+      "idealFor": [
+        "días de recuperación",
+        "días de entrenamiento suave",
+        "strength training days"
+      ]
+    },
+    "trainingPhase": [
+      "base",
+      "build",
+      "recovery"
+    ],
+    "prepTime": 20,
+    "servings": 2
+  },
+  {
+    "id": "recipe-029",
+    "title": "Hamburguesas de carne",
+    "ingredients": [
+      "1/2 kg de carne picada magra",
+      "1 zanahoria rallada",
+      "1 cebolla pequeña cortada y salteada",
+      "1/2 morrón cortado y salteado",
+      "2 claras",
+      "Avena o pan rallado integral (cantidad necesaria)"
+    ],
+    "preparation": [
+      "Mezclar todo (menos la avena/pan rallado) hasta integrar.",
+      "Formar esferas del tamaño deseado y luego aplastar para dar forma.",
+      "Pasarlas por avena (o pan rallado integral).",
+      "Colocarlas en una fuente para horno."
+    ],
+    "notes": [],
+    "category": "dinner",
+    "tags": [
+      "fresh-ingredients",
+      "high-protein",
+      "satisfying",
+      "complex-carbs",
+      "high-fiber",
+      "quick",
+      "meal-prep"
+    ],
+    "nutrition": {
+      "calories": 285,
+      "protein": 28,
+      "carbs": 12,
+      "fat": 14,
+      "fiber": 2
+    },
+    "timing": {
+      "bestConsumed": "2-4 hours before training or anytime on rest days",
+      "digestionTime": 180,
+      "idealFor": [
+        "días de recuperación",
+        "días de entrenamiento suave",
+        "strength training days"
+      ]
+    },
+    "trainingPhase": [
+      "base",
+      "build",
+      "recovery"
+    ],
+    "prepTime": 35,
+    "servings": 6
+  },
+  {
+    "id": "recipe-030",
+    "title": "Filet en colchón de vegetales",
+    "ingredients": [
+      "1 filet de pescado",
+      "1 cebolla picada muy fina",
+      "1/2 morrón en cubitos",
+      "100 gr de chauchas cortadas a la mitad",
+      "1 tomate en cubos",
+      "1 zanahoria rallada",
+      "1 puerro picado",
+      "Champiñones (cantidad a gusto)",
+      "Condimentos"
+    ],
+    "preparation": [
+      "Hervir 10 minutos el filet.",
+      "Retirar y escurrir bien.",
+      "Saltear cebolla, morrón y puerro en sartén antiadherente.",
+      "Colocar esos vegetales junto con el resto en una placa para horno formando un colchón.",
+      "Poner el filet encima y llevar a horno a fuego bajo unos minutos hasta que se dore."
+    ],
+    "notes": [],
+    "category": "dinner",
+    "tags": [
+      "fresh-ingredients",
+      "high-protein",
+      "satisfying"
+    ],
+    "nutrition": {
+      "calories": 285,
+      "protein": 32,
+      "carbs": 28,
+      "fat": 4,
+      "fiber": 8
+    },
+    "timing": {
+      "bestConsumed": "2-3 hours before training or post-workout dinner",
+      "digestionTime": 120,
+      "idealFor": [
+        "días de recuperación",
+        "días de entrenamiento suave",
+        "post-long runs"
+      ]
+    },
+    "trainingPhase": [
+      "base",
+      "build",
+      "recovery"
+    ],
+    "prepTime": 35,
+    "servings": 1
+  },
+  {
+    "id": "recipe-031",
+    "title": "Wok de pollo y vegetales",
+    "ingredients": [
+      "2 pechugas de pollo",
+      "3 zanahorias",
+      "1 pimiento rojo",
+      "1 pimiento verde",
+      "1 zucchini",
+      "1 cebolla",
+      "100 g de champiñones",
+      "2 cebollas de verdeo",
+      "100 g de brotes de soja",
+      "3 cucharadas de salsa de soja",
+      "Opcional: nueces picadas"
+    ],
+    "preparation": [
+      "Hervir 10 minutos el filet.",
+      "Sacarlo y escurrirlo bien.",
+      "Saltear en sartén antiadherente la cebolla, el morrón y el puerro.",
+      "Colocar junto con el resto de los vegetales en una placa para horno formando un colchón.",
+      "Colocar el filet por encima y llevar a horno a fuego bajo hasta que se dore."
+    ],
+    "notes": [
+      "La preparación en el PDF parece estar copiada por error desde “Filet en colchón de vegetales” (menciona filet/morrón/puerro/horno). Conviene corregirla a mano si querés un wok salteado."
+    ],
+    "category": "dinner",
+    "tags": [
+      "fresh-ingredients",
+      "high-protein",
+      "satisfying",
+      "plant-protein"
+    ],
+    "nutrition": {
+      "calories": 285,
+      "protein": 32,
+      "carbs": 18,
+      "fat": 10,
+      "fiber": 6
+    },
+    "timing": {
+      "bestConsumed": "2-3 horas antes del entrenamiento o dentro de 2 horas post-entrenamiento",
+      "digestionTime": 120,
+      "idealFor": [
+        "días de recuperación",
+        "días de entrenamiento suave",
+        "post long runs"
+      ]
+    },
+    "trainingPhase": [
+      "base",
+      "build",
+      "recovery"
+    ],
+    "prepTime": 25,
+    "servings": 4
+  },
+  {
+    "id": "recipe-032",
+    "title": "Pizza de quinoa",
+    "ingredients": [
+      "1 taza de quinoa cocida",
+      "3 claras",
+      "1 cebolla picada",
+      "1 cucharada de pimentón",
+      "1 tomate pequeño en cubos",
+      "Orégano y albahaca",
+      "Ajo picado",
+      "Aceite de oliva",
+      "200 gr de queso Port Salut light en cubitos",
+      "Salsa de tomate"
+    ],
+    "preparation": [
+      "Precalentar el horno.",
+      "Mezclar en un bowl todos los ingredientes excepto queso, salsa y tomate.",
+      "Revolver hasta formar una mezcla homogénea.",
+      "Colocar en un molde para pizza y aplanar con las manos.",
+      "Agregar salsa, queso y tomate; sumar albahaca y ajo.",
+      "Hornear 15 minutos.",
+      "Puede acompañarse con una ensalada."
+    ],
+    "notes": [],
+    "category": "dinner",
+    "tags": [
+      "fresh-ingredients",
+      "comfort-food",
+      "high-protein",
+      "plant-protein",
+      "complex-carbs",
+      "gluten-free"
+    ],
+    "nutrition": {
+      "calories": 420,
+      "protein": 28,
+      "carbs": 35,
+      "fat": 18,
+      "fiber": 4
+    },
+    "timing": {
+      "bestConsumed": "2-3 hours before training or post-workout dinner",
+      "digestionTime": 180,
+      "idealFor": [
+        "días de recuperación",
+        "días de entrenamiento suave",
+        "strength training days"
+      ]
+    },
+    "trainingPhase": [
+      "base",
+      "build",
+      "recovery"
+    ],
+    "prepTime": 30,
+    "servings": 4
+  },
+  {
+    "id": "recipe-033",
+    "title": "Albondigas de quinoa",
+    "ingredients": [
+      "1/2 taza de quinoa seca",
+      "1 taza de agua",
+      "1 taza de lentejas cocidas (bien escurridas)",
+      "1/2 pimiento rojo en cubitos",
+      "1 cebolla pequeña picada",
+      "Rebozador (cantidad necesaria)",
+      "Condimentos a gusto",
+      "2 claras de huevo",
+      "2 cucharadas de aceite de oliva"
+    ],
+    "preparation": [
+      "Remojar la quinoa unos minutos, escurrir y enjuagar con agua fría.",
+      "Hervir con 1 taza de agua durante 15 a 20 minutos.",
+      "Saltear los vegetales en sartén antiadherente con agua o rocío vegetal.",
+      "Dejar reposar la quinoa.",
+      "Procesar/mixear quinoa, vegetales salteados y lentejas.",
+      "Añadir las claras y mezclar.",
+      "Formar bolitas y pasarlas por rebozador.",
+      "Llevar al horno unos minutos."
+    ],
+    "notes": [],
+    "category": "dinner",
+    "tags": [
+      "fresh-ingredients",
+      "high-protein",
+      "satisfying",
+      "plant-protein",
+      "complex-carbs",
+      "high-fiber",
+      "gluten-free"
+    ],
+    "nutrition": {
+      "calories": 285,
+      "protein": 14,
+      "carbs": 42,
+      "fat": 8,
+      "fiber": 9
+    },
+    "timing": {
+      "bestConsumed": "2-3 horas antes del entrenamiento",
+      "digestionTime": 120,
+      "idealFor": [
+        "días de entrenamiento suave",
+        "días de recuperación",
+        "long runs"
+      ]
+    },
+    "trainingPhase": [
+      "base",
+      "recovery"
+    ],
+    "prepTime": 45,
+    "servings": 4
+  },
+  {
+    "id": "recipe-034",
+    "title": "Hamburguesas de lentejas",
+    "ingredients": [
+      "250 g de lentejas cocidas",
+      "1 zanahoria",
+      "1/2 cebolla",
+      "1 diente de ajo",
+      "1 trozo de morrón",
+      "1 clara",
+      "Avena (cantidad necesaria)",
+      "Condimentos"
+    ],
+    "preparation": [
+      "Pisar o procesar las lentejas cocidas (mejor si no están al dente; un poco pasadas).",
+      "Rallar la zanahoria y sumarla.",
+      "Picar cebolla, ajo y morrón; saltear con agua en sartén antiadherente hasta transparentar la cebolla.",
+      "Mezclar los vegetales salteados con las lentejas.",
+      "Añadir la clara y dejar reposar unos minutos.",
+      "Formar bollitos, aplastar y pasar por avena/salvado/pan rallado.",
+      "Cocinar a la plancha o al horno."
+    ],
+    "notes": [
+      "Se pueden congelar con separadores."
+    ],
+    "category": "dinner",
+    "tags": [
+      "fresh-ingredients",
+      "high-protein",
+      "satisfying",
+      "plant-protein",
+      "complex-carbs",
+      "high-fiber",
+      "meal-prep"
+    ],
+    "nutrition": {
+      "calories": 285,
+      "protein": 18,
+      "carbs": 48,
+      "fat": 3,
+      "fiber": 12
+    },
+    "timing": {
+      "bestConsumed": "3-4 hours before training or post-workout dinner",
+      "digestionTime": 180,
+      "idealFor": [
+        "días de recuperación",
+        "días de entrenamiento suave",
+        "carreras de base"
+      ]
+    },
+    "trainingPhase": [
+      "base",
+      "build",
+      "recovery"
+    ],
+    "prepTime": 35,
+    "servings": 4
+  },
+  {
+    "id": "recipe-035",
+    "title": "Albondigas de soja texturizada",
+    "ingredients": [
+      "100 gr de soja texturizada fina (aprox. 300 gr hidratada)",
+      "2 cucharadas de harina de avena (avena molida)",
+      "1 cucharadita de ajo en polvo",
+      "1 cucharadita de cebolla en polvo",
+      "1/2 cucharadita de pimienta negra molida",
+      "1/2 cucharadita de sal",
+      "Un puñadito de perejil",
+      "Un poco más de harina de avena para rebozar"
+    ],
+    "preparation": [
+      "Hidratar la soja.",
+      "Escurrir y mezclar con harina de avena, ajo, cebolla, pimienta, sal y perejil.",
+      "Triturar unos segundos hasta lograr una masa homogénea.",
+      "Armar las albóndigas y cocinarlas al horno."
+    ],
+    "notes": [],
+    "category": "dinner",
+    "tags": [
+      "fresh-ingredients",
+      "high-protein",
+      "satisfying",
+      "plant-protein",
+      "complex-carbs",
+      "high-fiber",
+      "vegan",
+      "quick"
+    ],
+    "nutrition": {
+      "calories": 320,
+      "protein": 52,
+      "carbs": 18,
+      "fat": 3,
+      "fiber": 12
+    },
+    "timing": {
+      "bestConsumed": "2-3 hours before training or post-workout dinner",
+      "digestionTime": 120,
+      "idealFor": [
+        "días de recuperación",
+        "días de entrenamiento suave",
+        "strength training days"
+      ]
+    },
+    "trainingPhase": [
+      "base",
+      "build",
+      "recovery"
+    ],
+    "prepTime": 25,
+    "servings": 3
+  },
+  {
+    "id": "recipe-036",
+    "title": "Bifecitos de Seitan",
+    "ingredients": [
+      "1/2 taza de gluten de trigo",
+      "1/2 taza de agua",
+      "1 cucharada de salsa de soja",
+      "1 cucharadita de pimentón",
+      "3 cucharadas de pan rallado o salvado de avena"
+    ],
+    "preparation": [
+      "Mezclar bien todos los ingredientes.",
+      "Dar forma de bifecitos.",
+      "Hervir 8 minutos y llevar al freezer.",
+      "Para cocinarlos: vuelta y vuelta en una plancha."
+    ],
+    "notes": [],
+    "category": "dinner",
+    "tags": [
+      "fresh-ingredients",
+      "high-protein",
+      "satisfying",
+      "plant-protein",
+      "complex-carbs",
+      "high-fiber",
+      "vegan",
+      "quick"
+    ],
+    "nutrition": {
+      "calories": 380,
+      "protein": 72,
+      "carbs": 14,
+      "fat": 3,
+      "fiber": 2
+    },
+    "timing": {
+      "bestConsumed": "2-3 hours before training or post-workout dinner",
+      "digestionTime": 180,
+      "idealFor": [
+        "días de recuperación",
+        "strength training days",
+        "carreras de base"
+      ]
+    },
+    "trainingPhase": [
+      "base",
+      "build",
+      "recovery"
+    ],
+    "prepTime": 25,
+    "servings": 2
+  },
+  {
+    "id": "recipe-037",
+    "title": "Guiso de porotos blancos",
+    "ingredients": [
+      "500 gr de porotos blancos",
+      "4 a 5 tomates",
+      "2 zanahorias",
+      "1 cebolla",
+      "1/2 morrón",
+      "Condimentos a gusto"
+    ],
+    "preparation": [
+      "Hervir los porotos previamente remojados (toda la noche).",
+      "Para la salsa: picar cebolla, zanahorias y pimiento; llevar a sartén con un poco de agua o rocío vegetal.",
+      "Cuando la cebolla esté dorada, sumar los tomates triturados/licuados (y agua a gusto).",
+      "Colar los porotos y mezclar con la salsa."
+    ],
+    "notes": [],
+    "category": "dinner",
+    "tags": [
+      "fresh-ingredients",
+      "high-protein",
+      "satisfying",
+      "plant-protein",
+      "vegan"
+    ],
+    "nutrition": {
+      "calories": 385,
+      "protein": 22,
+      "carbs": 68,
+      "fat": 2,
+      "fiber": 18
+    },
+    "timing": {
+      "bestConsumed": "3-4 hours before training or post-workout dinner",
+      "digestionTime": 180,
+      "idealFor": [
+        "días de recuperación",
+        "días de entrenamiento suave",
+        "carreras de base"
+      ]
+    },
+    "trainingPhase": [
+      "base",
+      "recovery"
+    ],
+    "prepTime": 45,
+    "servings": 4
+  },
+  {
+    "id": "recipe-038",
+    "title": "Guiso de lentejas",
+    "ingredients": [
+      "1 taza de lentejas",
+      "1 cebolla",
+      "1 cebolla de verdeo",
+      "1 zanahoria",
+      "1/2 pimiento morrón verde",
+      "1/2 pimiento morrón rojo",
+      "2 tomates en cubos",
+      "1/2 kg de zapallo",
+      "2 dientes de ajo",
+      "2 hojas de laurel",
+      "3 tazas de agua"
+    ],
+    "preparation": [
+      "Cortar el zapallo en cubitos y hervir en una cacerola junto con lentejas, laurel y 3 tazas de agua.",
+      "Cortar zanahoria en cubitos; picar cebolla, morrones y ajos.",
+      "Saltear las verduras.",
+      "Agregar tomates en cubos y cocinar ~10 minutos.",
+      "Incorporar las verduras salteadas a la cacerola, condimentar y terminar de cocinar todo junto."
+    ],
+    "notes": [],
+    "category": "dinner",
+    "tags": [
+      "fresh-ingredients",
+      "high-protein",
+      "satisfying",
+      "plant-protein",
+      "complex-carbs",
+      "high-fiber",
+      "vegan"
+    ],
+    "nutrition": {
+      "calories": 285,
+      "protein": 15,
+      "carbs": 58,
+      "fat": 2,
+      "fiber": 16
+    },
+    "timing": {
+      "bestConsumed": "2-3 hours before training or post-workout dinner",
+      "digestionTime": 180,
+      "idealFor": [
+        "días de recuperación",
+        "días de entrenamiento suave",
+        "carreras de base"
+      ]
+    },
+    "trainingPhase": [
+      "base",
+      "recovery"
+    ],
+    "prepTime": 45,
+    "servings": 4
+  },
+  {
+    "id": "recipe-039",
+    "title": "Lasagna de Züccini",
+    "ingredients": [
+      "1 zucchini rebanado a lo largo",
+      "50 gr de queso port salut light",
+      "1 zanahoria pequeña",
+      "1 tomate",
+      "1/2 cebolla",
+      "1/4 de morrón",
+      "100gr de pechuga de pollo",
+      "Condimentos"
+    ],
+    "preparation": [
+      "Hacer una salsa con el tomate en cubitos, zanahoria y condimentos; reservar.",
+      "Saltear la cebolla en sartén antiadherente; agregar el morrón y el pollo en cubitos hasta cocinar la carne.",
+      "En un recipiente para horno, verter un poco de salsa y cubrir el fondo con una capa de zucchini.",
+      "Agregar el relleno de pollo y queso en cubitos.",
+      "Repetir las capas (zucchini, salsa, relleno) hasta terminar los ingredientes.",
+      "Hornear a 180°C por 20 minutos."
+    ],
+    "notes": [],
+    "category": "dinner",
+    "tags": [
+      "fresh-ingredients",
+      "high-protein",
+      "satisfying"
+    ],
+    "nutrition": {
+      "calories": 285,
+      "protein": 28,
+      "carbs": 12,
+      "fat": 14,
+      "fiber": 4
+    },
+    "timing": {
+      "bestConsumed": "2-3 hours before training or post-workout dinner",
+      "digestionTime": 120,
+      "idealFor": [
+        "días de recuperación",
+        "días de entrenamiento suave",
+        "strength training days"
+      ]
+    },
+    "trainingPhase": [
+      "base",
+      "build",
+      "recovery"
+    ],
+    "prepTime": 45,
+    "servings": 2
+  },
+  {
+    "id": "recipe-040",
+    "title": "Berenjenas a la napolitana",
+    "ingredients": [
+      "1 berenjena",
+      "1 puñado de arroz integral / yamaní (ya cocido)",
+      "1/2 zanahoria rallada",
+      "1/2 cebolla picada y salteada",
+      "Ajo picado (cantidad suficiente)",
+      "Salsa de tomate",
+      "1 rebanada fina de queso port salut light"
+    ],
+    "preparation": [
+      "Cortar la berenjena por la mitad a lo largo.",
+      "Hervir en agua con vinagre y laurel hasta que pierda rigidez. Escurrir y quitar semillas.",
+      "Unir el arroz cocido con la zanahoria, cebolla y ajo.",
+      "Rellenar la berenjena con la mezcla.",
+      "Colocar en fuente térmica, bañar con salsa y hornear a fuego moderado por 15 minutos.",
+      "Cubrir con queso y hornear hasta gratinar."
+    ],
+    "notes": [],
+    "category": "dinner",
+    "tags": [
+      "fresh-ingredients",
+      "high-protein",
+      "satisfying",
+      "complex-carbs",
+      "high-fiber"
+    ],
+    "nutrition": {
+      "calories": 285,
+      "protein": 12,
+      "carbs": 48,
+      "fat": 6,
+      "fiber": 14
+    },
+    "timing": {
+      "bestConsumed": "2-3 horas antes del entrenamiento",
+      "digestionTime": 120,
+      "idealFor": [
+        "días de entrenamiento suave",
+        "días de recuperación",
+        "carreras de base"
+      ]
+    },
+    "trainingPhase": [
+      "base",
+      "recovery"
+    ],
+    "prepTime": 45,
+    "servings": 2
+  },
+  {
+    "id": "recipe-041",
+    "title": "Zapallitos rellenos",
+    "ingredients": [
+      "2 zapallitos",
+      "1 taza de arroz yamaní",
+      "2 cebollas de verdeo",
+      "1 trozo de morrón rojo",
+      "1 diente de ajo",
+      "1/2 berenjena",
+      "Condimentos"
+    ],
+    "preparation": [
+      "Hervir los zapallitos enteros por 10 minutos. Enfriar, cortar por la mitad y ahuecar.",
+      "Saltear las verduras picadas junto con la pulpa extraída de los zapallitos a fuego bajo.",
+      "Mezclar las verduras con el arroz y rellenar los zapallitos.",
+      "Hornear hasta que estén dorados."
+    ],
+    "notes": [],
+    "category": "dinner",
+    "tags": [
+      "fresh-ingredients",
+      "high-protein",
+      "satisfying",
+      "vegan",
+      "quick"
+    ],
+    "nutrition": {
+      "calories": 320,
+      "protein": 8,
+      "carbs": 68,
+      "fat": 3,
+      "fiber": 12
+    },
+    "timing": {
+      "bestConsumed": "2-3 horas antes del entrenamiento",
+      "digestionTime": 120,
+      "idealFor": [
+        "días de entrenamiento suave",
+        "días de recuperación",
+        "carreras de base"
+      ]
+    },
+    "trainingPhase": [
+      "base",
+      "recovery"
+    ],
+    "prepTime": 45,
+    "servings": 2
+  },
+  {
+    "id": "recipe-042",
+    "title": "Pastas con repollitos y cherrys",
+    "ingredients": [
+      "1 porción de pastas a elección",
+      "15 repollitos de bruselas",
+      "100gr de cherrys",
+      "1/2 cebolla",
+      "Semillas y condimentos a elección"
+    ],
+    "preparation": [
+      "Hervir los repollitos durante 3 minutos.",
+      "En un wok con aceite o rocío vegetal, saltear la cebolla.",
+      "Cuando transparente, sumar los repollitos (cortados a la mitad) y los cherrys.",
+      "Agregar semillas, condimentos y mezclar el salteado con las pastas cocidas."
+    ],
+    "notes": [],
+    "category": "dinner",
+    "tags": [
+      "fresh-ingredients",
+      "high-protein",
+      "satisfying",
+      "vegan",
+      "quick"
+    ],
+    "nutrition": {
+      "calories": 420,
+      "protein": 16,
+      "carbs": 78,
+      "fat": 6,
+      "fiber": 12
+    },
+    "timing": {
+      "bestConsumed": "2-3 horas antes del entrenamiento",
+      "digestionTime": 120,
+      "idealFor": [
+        "días de entrenamiento suave",
+        "días de recuperación",
+        "carreras de base"
+      ]
+    },
+    "trainingPhase": [
+      "base",
+      "recovery"
+    ],
+    "prepTime": 25,
+    "servings": 1
+  },
+  {
+    "id": "recipe-043",
+    "title": "Pizza integral",
+    "ingredients": [
+      "500 gr harina integral",
+      "1 sobrecito de levadura",
+      "300 cc agua tibia (1.5 tazas aprox.)",
+      "2 cditas azúcar",
+      "2 cdas aceite de girasol u oliva",
+      "1 cda sal"
+    ],
+    "preparation": [
+      "Formar una corona con la harina; en el centro colocar levadura, aceite, azúcar y parte del agua.",
+      "Colocar la sal por los bordes externos.",
+      "Disolver la levadura con los dedos e integrar el agua de a poco con la harina.",
+      "Formar un bollo y dejar reposar unos minutos.",
+      "Estirar en pizzeras y hornear."
+    ],
+    "notes": [],
+    "category": "dinner",
+    "tags": [
+      "fresh-ingredients",
+      "comfort-food",
+      "complex-carbs",
+      "high-fiber",
+      "vegan"
+    ],
+    "nutrition": {
+      "calories": 285,
+      "protein": 9,
+      "carbs": 52,
+      "fat": 5,
+      "fiber": 7
+    },
+    "timing": {
+      "bestConsumed": "2-4 hours before training",
+      "digestionTime": 180,
+      "idealFor": [
+        "long runs",
+        "días de entrenamiento suave",
+        "carreras de base"
+      ]
+    },
+    "trainingPhase": [
+      "base",
+      "build"
+    ],
+    "prepTime": 20,
+    "servings": 8
+  },
+  {
+    "id": "recipe-044",
+    "title": "Ñoquis de remolacha",
+    "ingredients": [
+      "2 remolachas",
+      "1 papa mediana",
+      "1 taza de harina",
+      "1 huevo",
+      "1 cucharada de aceite",
+      "Sal y pimienta"
+    ],
+    "preparation": [
+      "Hervir remolachas (en cuartos) y agregar la papa pelada a mitad de cocción.",
+      "Escurrir remolachas, dejar evaporar el agua y procesar hasta obtener un puré fino.",
+      "Hacer puré con la papa caliente y dejar enfriar.",
+      "Mezclar ambos purés, formar corona y agregar huevo, condimentos y mitad de la harina.",
+      "Amasar agregando harina según sea necesario hasta obtener masa suave. Reposar 10 min.",
+      "Formar cilindros y cortar."
+    ],
+    "notes": [],
+    "category": "base",
+    "tags": [
+      "base-recipe",
+      "meal-prep",
+      "high-protein",
+      "complex-carbs"
+    ],
+    "nutrition": {
+      "calories": 185,
+      "protein": 6,
+      "carbs": 38,
+      "fat": 2,
+      "fiber": 3
+    },
+    "timing": {
+      "bestConsumed": "2-3 horas antes del entrenamiento",
+      "digestionTime": 120,
+      "idealFor": [
+        "long runs",
+        "días de entrenamiento suave",
+        "base building"
+      ]
+    },
+    "trainingPhase": [
+      "base"
+    ],
+    "prepTime": 45,
+    "servings": 4
+  },
+  {
+    "id": "recipe-045",
+    "title": "Ñoquis de papa sin TACC",
+    "ingredients": [
+      "1 kilo de papa",
+      "400gr de premezcla (400g fécula maíz, 300g mandioca, 300g harina arroz)",
+      "2 huevos",
+      "Sal, pimienta y nuez moscada a gusto"
+    ],
+    "preparation": [
+      "Hervir las papas y hacer un puré.",
+      "Mezclar en un bowl con huevos e integrar bien.",
+      "Agregar la premezcla de a poco hasta formar una masa lisa que no se pegue.",
+      "Reposar unos minutos, formar cilindros y cortar."
+    ],
+    "notes": [],
+    "category": "base",
+    "tags": [
+      "base-recipe",
+      "meal-prep",
+      "high-protein",
+      "complex-carbs",
+      "gluten-free",
+      "quick"
+    ],
+    "nutrition": {
+      "calories": 320,
+      "protein": 8,
+      "carbs": 68,
+      "fat": 2,
+      "fiber": 3
+    },
+    "timing": {
+      "bestConsumed": "2-4 hours before training",
+      "digestionTime": 120,
+      "idealFor": [
+        "long runs",
+        "base training days",
+        "carb loading"
+      ]
+    },
+    "trainingPhase": [
+      "base",
+      "build"
+    ],
+    "prepTime": 45,
+    "servings": 8
+  },
+  {
+    "id": "recipe-046",
+    "title": "Ñoquis de remolacha sin TACC",
+    "ingredients": [
+      "750gr de papa",
+      "3 remolachas",
+      "2 huevos",
+      "400gr de premezcla (ver receta anterior)",
+      "Sal, pimienta y nuez moscada"
+    ],
+    "preparation": [
+      "Hervir papas y remolachas; hacer un puré con ambas.",
+      "Mezclar con huevos y condimentos.",
+      "Incorporar la premezcla gradualmente hasta obtener masa lisa.",
+      "Reposar, formar cilindros y cortar."
+    ],
+    "notes": [],
+    "category": "base",
+    "tags": [
+      "base-recipe",
+      "meal-prep",
+      "high-protein",
+      "complex-carbs",
+      "gluten-free",
+      "quick"
+    ],
+    "nutrition": {
+      "calories": 285,
+      "protein": 8,
+      "carbs": 58,
+      "fat": 2,
+      "fiber": 4
+    },
+    "timing": {
+      "bestConsumed": "2-3 horas antes del entrenamiento",
+      "digestionTime": 120,
+      "idealFor": [
+        "long runs",
+        "días de entrenamiento suave",
+        "carb loading"
+      ]
+    },
+    "trainingPhase": [
+      "base",
+      "build"
+    ],
+    "prepTime": 45,
+    "servings": 8
+  },
+  {
+    "id": "recipe-047",
+    "title": "Pancitos sin TACC",
+    "ingredients": [
+      "500gr de premezcla",
+      "1 cucharadita de sal",
+      "10gr de levadura seca",
+      "100gr de aceite",
+      "1 cucharadita de azúcar",
+      "300ml de leche tibia",
+      "1 huevo",
+      "Mix de semillas sin gluten"
+    ],
+    "preparation": [
+      "Mezclar leche, levadura y azúcar; reposar 10 min.",
+      "Mezclar premezcla con sal; formar corona y añadir aceite, huevo y levadura activada.",
+      "Formar masa homogénea y dejar leudar 40 min.",
+      "Armar bollitos, colocar en placa, espolvorear semillas y hornear a fuego medio ~20 min."
+    ],
+    "notes": [],
+    "category": "base",
+    "tags": [
+      "base-recipe",
+      "meal-prep",
+      "high-protein",
+      "gluten-free",
+      "quick"
+    ],
+    "nutrition": {
+      "calories": 285,
+      "protein": 8,
+      "carbs": 48,
+      "fat": 8,
+      "fiber": 3
+    },
+    "timing": {
+      "bestConsumed": "2-4 hours before training",
+      "digestionTime": 120,
+      "idealFor": [
+        "días de entrenamiento suave",
+        "carreras de base",
+        "días de recuperación"
+      ]
+    },
+    "trainingPhase": [
+      "base",
+      "recovery"
+    ],
+    "prepTime": 90,
+    "servings": 12
+  },
+  {
+    "id": "recipe-048",
+    "title": "Pan integral casero",
+    "ingredients": [
+      "650 gramos de harina integral",
+      "1 cucharadita de sal",
+      "1 paquete de levadura seca",
+      "450ml de agua tibia"
+    ],
+    "preparation": [
+      "Disolver levadura en 100ml de agua tibia; reposar 10 min.",
+      "Mezclar harina y sal en un bowl; hacer hueco central y añadir levadura.",
+      "Integrar con las manos añadiendo el resto del agua de a poco.",
+      "Formar masa y dejar reposar 30 min.",
+      "Hornear entre 30 y 40 min."
+    ],
+    "notes": [],
+    "category": "base",
+    "tags": [
+      "base-recipe",
+      "meal-prep",
+      "complex-carbs",
+      "high-fiber",
+      "vegan"
+    ],
+    "nutrition": {
+      "calories": 120,
+      "protein": 5,
+      "carbs": 24,
+      "fat": 1,
+      "fiber": 4
+    },
+    "timing": {
+      "bestConsumed": "2-4 hours before training",
+      "digestionTime": 120,
+      "idealFor": [
+        "long runs",
+        "base training days",
+        "carb loading"
+      ]
+    },
+    "trainingPhase": [
+      "base",
+      "build"
+    ],
+    "prepTime": 240,
+    "servings": 16
+  },
+  {
+    "id": "recipe-049",
+    "title": "Pan nube",
+    "ingredients": [
+      "1 huevo",
+      "2 claras",
+      "2 cucharadas de queso untable light",
+      "1 cucharada de polvo para hornear"
+    ],
+    "preparation": [
+      "Mezclar la yema con el queso crema hasta homogeneizar.",
+      "Agregar polvo de hornear a las claras y batir a punto nieve.",
+      "Incorporar la mezcla de yema a las claras con movimientos envolventes.",
+      "Distribuir cucharadas en fuente con papel manteca y hornear 20 min a fuego medio."
+    ],
+    "notes": [],
+    "category": "base",
+    "tags": [
+      "base-recipe",
+      "meal-prep",
+      "high-protein",
+      "quick"
+    ],
+    "nutrition": {
+      "calories": 180,
+      "protein": 12,
+      "carbs": 2,
+      "fat": 13,
+      "fiber": 0
+    },
+    "timing": {
+      "bestConsumed": "2-3 horas antes del entrenamiento",
+      "digestionTime": 90,
+      "idealFor": [
+        "días de entrenamiento suave",
+        "días de recuperación",
+        "carreras de base"
+      ]
+    },
+    "trainingPhase": [
+      "base",
+      "recovery"
+    ],
+    "prepTime": 35,
+    "servings": 4
+  },
+  {
+    "id": "recipe-050",
+    "title": "Omelete vegano",
+    "ingredients": [
+      "4 cucharadas de harina de garbanzos",
+      "4 cucharadas de agua",
+      "1 cucharadita de semillas",
+      "1/2 cucharadita de polvo de hornear",
+      "1/2 cucharadita de cúrcuma",
+      "Relleno a gusto (vegetales sugeridos)"
+    ],
+    "preparation": [
+      "Colocar ingredientes en bowl y mixear o licuar.",
+      "Cocinar en sartén antiadherente vuelta y vuelta."
+    ],
+    "notes": [],
+    "category": "breakfast",
+    "tags": [
+      "fresh-ingredients",
+      "morning-fuel",
+      "high-protein",
+      "plant-protein",
+      "high-fiber",
+      "vegan",
+      "quick",
+      "anti-inflammatory"
+    ],
+    "nutrition": {
+      "calories": 180,
+      "protein": 8,
+      "carbs": 18,
+      "fat": 6,
+      "fiber": 5
+    },
+    "timing": {
+      "bestConsumed": "2-3 horas antes del entrenamiento",
+      "digestionTime": 90,
+      "idealFor": [
+        "días de entrenamiento suave",
+        "días de recuperación",
+        "carreras de base"
+      ]
+    },
+    "trainingPhase": [
+      "base",
+      "recovery"
+    ],
+    "prepTime": 10,
+    "servings": 1
+  },
+  {
+    "id": "recipe-051",
+    "title": "Tacos caseros",
+    "ingredients": [
+      "3/4 taza de polenta",
+      "1/2 taza de harina 0000",
+      "3 cucharadas aceite de oliva",
+      "Agua tibia (cantidad necesaria)",
+      "Condimentos (ej. pimentón ahumado)"
+    ],
+    "preparation": [
+      "Mezclar polenta, harina, aceite y condimentos.",
+      "Añadir agua hasta formar masa; amasar y reposar unos minutos.",
+      "Dividir en bolitas y estirar en círculos.",
+      "Cocinar en sartén antiadherente vuelta y vuelta.",
+      "Rellenar a gusto (ej. salteado de verduras)."
+    ],
+    "notes": [],
+    "category": "lunch",
+    "tags": [
+      "fresh-ingredients",
+      "vegan"
+    ],
+    "nutrition": {
+      "calories": 285,
+      "protein": 6,
+      "carbs": 45,
+      "fat": 10,
+      "fiber": 4
+    },
+    "timing": {
+      "bestConsumed": "2-3 horas antes del entrenamiento",
+      "digestionTime": 120,
+      "idealFor": [
+        "días de entrenamiento suave",
+        "días de recuperación",
+        "carreras de base"
+      ]
+    },
+    "trainingPhase": [
+      "base",
+      "recovery"
+    ],
+    "prepTime": 25,
+    "servings": 4
+  },
+  {
+    "id": "recipe-052",
+    "title": "Muffins de banana",
+    "ingredients": [
+      "2 bananas",
+      "80 gr azúcar mascabo",
+      "2 huevos",
+      "200 gr harina integral",
+      "2 cditas polvo de hornear",
+      "1 pizca sal",
+      "Opcional: mix de frutos secos, chocolate amargo, semillas amapola"
+    ],
+    "preparation": [
+      "Mixear huevos, azúcar, edulcorante y bananas.",
+      "Agregar ingredientes secos y batir.",
+      "Incorporar opcionales y colocar en pirotines.",
+      "Hornear a 190°C en horno precalentado."
+    ],
+    "notes": [],
+    "category": "snacks",
+    "tags": [
+      "fresh-ingredients",
+      "portable",
+      "sweet",
+      "high-protein",
+      "complex-carbs",
+      "high-fiber",
+      "quick",
+      "meal-prep"
+    ],
+    "nutrition": {
+      "calories": 185,
+      "protein": 5,
+      "carbs": 38,
+      "fat": 2,
+      "fiber": 4
+    },
+    "timing": {
+      "bestConsumed": "2-3 horas antes del entrenamiento",
+      "digestionTime": 90,
+      "idealFor": [
+        "días de entrenamiento suave",
+        "long runs",
+        "días de recuperación"
+      ]
+    },
+    "trainingPhase": [
+      "base",
+      "build"
+    ],
+    "prepTime": 25,
+    "servings": 12
+  },
+  {
+    "id": "recipe-053",
+    "title": "Muffins de arandanos",
+    "ingredients": [
+      "140 g arándanos",
+      "200 g harina integral",
+      "7 sobres de edulcorante",
+      "2 cditas polvo de hornear",
+      "1/2 cdita bicarbonato",
+      "1/2 cdita sal",
+      "80 ml aceite de girasol",
+      "1 huevo grande",
+      "1 yogur natural",
+      "2 cditas esencia de vainilla",
+      "1 cdita colmada queso crema"
+    ],
+    "preparation": [
+      "Mezclar secos en un bol y húmedos en otro.",
+      "Integrar ambas preparaciones sin remover demasiado.",
+      "Pasar arándanos por harina y añadir a la mezcla.",
+      "Colocar en moldes y hornear 20-25 min."
+    ],
+    "notes": [],
+    "category": "snacks",
+    "tags": [
+      "fresh-ingredients",
+      "portable",
+      "sweet",
+      "high-protein",
+      "complex-carbs",
+      "high-fiber",
+      "quick",
+      "anti-inflammatory",
+      "meal-prep"
+    ],
+    "nutrition": {
+      "calories": 185,
+      "protein": 6,
+      "carbs": 28,
+      "fat": 7,
+      "fiber": 4
+    },
+    "timing": {
+      "bestConsumed": "2-3 horas antes del entrenamiento",
+      "digestionTime": 90,
+      "idealFor": [
+        "días de entrenamiento suave",
+        "long runs",
+        "días de recuperación"
+      ]
+    },
+    "trainingPhase": [
+      "base",
+      "recovery"
+    ],
+    "prepTime": 35,
+    "servings": 12
+  },
+  {
+    "id": "recipe-054",
+    "title": "Muffins de mandarina",
+    "ingredients": [
+      "4 mandarinas",
+      "100 grs de azúcar",
+      "3 sobres de stevia",
+      "80 ml de aceite",
+      "1 cda al ras de polvo de hornear",
+      "1 pizca de sal",
+      "150 grs de harina integral",
+      "100 grs de harina 0000"
+    ],
+    "preparation": [
+      "Exprimir 2 mandarinas (jugo) y trocear las otras 2 (sin semillas).",
+      "Licuar jugo y trozos; agregar azúcar y stevia y licuar de nuevo.",
+      "Añadir aceite, polvo de hornear y sal.",
+      "Pasar a un bol e incorporar harina poco a poco. Reposar 15 min.",
+      "Rellenar pirotines y hornear a 180°C por 25 min."
+    ],
+    "notes": [],
+    "category": "snacks",
+    "tags": [
+      "fresh-ingredients",
+      "portable",
+      "sweet",
+      "complex-carbs",
+      "high-fiber",
+      "vegan",
+      "meal-prep"
+    ],
+    "nutrition": {
+      "calories": 185,
+      "protein": 4,
+      "carbs": 32,
+      "fat": 5,
+      "fiber": 3
+    },
+    "timing": {
+      "bestConsumed": "2-3 horas antes del entrenamiento",
+      "digestionTime": 90,
+      "idealFor": [
+        "días de entrenamiento suave",
+        "long runs",
+        "carreras de base"
+      ]
+    },
+    "trainingPhase": [
+      "base",
+      "build"
+    ],
+    "prepTime": 45,
+    "servings": 12
+  },
+  {
+    "id": "recipe-055",
+    "title": "Muffins de pera",
+    "ingredients": [
+      "150 g de harina integral",
+      "1 cucharada de polvo de hornear",
+      "3 huevos",
+      "100ml de aceite",
+      "2 peras",
+      "150g de azúcar",
+      "5 sobres de stevia"
+    ],
+    "preparation": [
+      "Batir huevos con azúcar y stevia; sumar aceite.",
+      "Rallar las peras y añadir a la mezcla junto con harina y polvo de hornear.",
+      "Colocar en moldes y hornear a 180°C por ~25 min."
+    ],
+    "notes": [],
+    "category": "snacks",
+    "tags": [
+      "fresh-ingredients",
+      "portable",
+      "sweet",
+      "high-protein",
+      "complex-carbs",
+      "high-fiber",
+      "quick",
+      "meal-prep"
+    ],
+    "nutrition": {
+      "calories": 285,
+      "protein": 6,
+      "carbs": 45,
+      "fat": 10,
+      "fiber": 4
+    },
+    "timing": {
+      "bestConsumed": "2-3 horas antes del entrenamiento",
+      "digestionTime": 90,
+      "idealFor": [
+        "días de entrenamiento suave",
+        "long runs",
+        "días de recuperación"
+      ]
+    },
+    "trainingPhase": [
+      "base",
+      "build"
+    ],
+    "prepTime": 35,
+    "servings": 12
+  },
+  {
+    "id": "recipe-056",
+    "title": "Muffins dulce de vegetales",
+    "ingredients": [
+      "150 g harina integral",
+      "50 g harina de trigo",
+      "50 g copos de avena",
+      "100 g azúcar",
+      "5 sobres stevia",
+      "1 cda polvo de hornear",
+      "1 cdita sal",
+      "2 huevos",
+      "100ml aceite",
+      "100 g zapallito rallado (grueso)",
+      "100 g zanahoria picada fina o rallada"
+    ],
+    "preparation": [
+      "Mezclar ingredientes secos.",
+      "Añadir huevos batidos y aceite al centro e integrar.",
+      "Sumar zapallito y zanahoria.",
+      "Colocar en moldes y hornear ~20 min."
+    ],
+    "notes": [],
+    "category": "snacks",
+    "tags": [
+      "fresh-ingredients",
+      "portable",
+      "sweet",
+      "high-protein",
+      "complex-carbs",
+      "high-fiber",
+      "quick",
+      "meal-prep"
+    ],
+    "nutrition": {
+      "calories": 195,
+      "protein": 4,
+      "carbs": 28,
+      "fat": 8,
+      "fiber": 3
+    },
+    "timing": {
+      "bestConsumed": "2-3 horas antes del entrenamiento o dentro de 2 horas post-entrenamiento",
+      "digestionTime": 90,
+      "idealFor": [
+        "días de entrenamiento suave",
+        "días de recuperación",
+        "long runs"
+      ]
+    },
+    "trainingPhase": [
+      "base",
+      "recovery"
+    ],
+    "prepTime": 35,
+    "servings": 12
+  },
+  {
+    "id": "recipe-057",
+    "title": "Muffins salados",
+    "ingredients": [
+      "3 claras",
+      "200gr de premezcla",
+      "1 cdita polvo de hornear",
+      "200 ml leche descremada",
+      "1 cda aceite",
+      "Condimentos (orégano, provenzal, pimentón)",
+      "Saborizantes: 1 diente ajo, 1/2 cebolla, 1/2 morrón"
+    ],
+    "preparation": [
+      "Mezclar premezcla y polvo de hornear.",
+      "Batir claras y añadir a la premezcla con la leche hasta formar pasta sin grumos.",
+      "Agregar aceite y condimentos.",
+      "Saltear ajo, cebolla y morrón; incorporar a la masa.",
+      "Colocar en pirotines y hornear a fuego medio ~15 min."
+    ],
+    "notes": [],
+    "category": "snacks",
+    "tags": [
+      "fresh-ingredients",
+      "portable",
+      "sweet",
+      "meal-prep"
+    ],
+    "nutrition": {
+      "calories": 95,
+      "protein": 4,
+      "carbs": 16,
+      "fat": 2,
+      "fiber": 1
+    },
+    "timing": {
+      "bestConsumed": "1-2 hours before training or anytime",
+      "digestionTime": 90,
+      "idealFor": [
+        "días de entrenamiento suave",
+        "días de recuperación",
+        "meal prep snacks"
+      ]
+    },
+    "trainingPhase": [
+      "base",
+      "recovery"
+    ],
+    "prepTime": 35,
+    "servings": 12
+  },
+  {
+    "id": "recipe-058",
+    "title": "Budin de pera",
+    "ingredients": [
+      "2 peras",
+      "1 huevo y 3 claras",
+      "8 sobres stevia",
+      "Esencia de vainilla",
+      "1 taza harina integral",
+      "Polvo de hornear"
+    ],
+    "preparation": [
+      "Licuar peras, huevos, stevia y vainilla.",
+      "Agregar harina integral y polvo de hornear.",
+      "Hornear a fuego medio hasta que el cuchillo salga limpio."
+    ],
+    "notes": [],
+    "category": "snacks",
+    "tags": [
+      "fresh-ingredients",
+      "portable",
+      "sweet",
+      "high-protein",
+      "complex-carbs",
+      "high-fiber",
+      "quick"
+    ],
+    "nutrition": {
+      "calories": 165,
+      "protein": 6,
+      "carbs": 35,
+      "fat": 2,
+      "fiber": 5
+    },
+    "timing": {
+      "bestConsumed": "2-3 horas antes del entrenamiento",
+      "digestionTime": 90,
+      "idealFor": [
+        "días de entrenamiento suave",
+        "long runs",
+        "días de recuperación"
+      ]
+    },
+    "trainingPhase": [
+      "base",
+      "recovery"
+    ],
+    "prepTime": 60,
+    "servings": 8
+  },
+  {
+    "id": "recipe-059",
+    "title": "Budin de manzana",
+    "ingredients": [
+      "50 g maizena",
+      "100 g harina integral",
+      "60 g avena arrollada gruesa",
+      "60 g azúcar rubia",
+      "50 g almendras molidas",
+      "3 huevos",
+      "50 ml aceite girasol",
+      "200 g queso crema",
+      "3 cditas polvo de hornear",
+      "400 g manzanas"
+    ],
+    "preparation": [
+      "Mezclar secos (maizena, harinas, polvo, almendras, azúcar, avena).",
+      "Agregar huevos, aceite y queso crema; batir hasta homogeneizar.",
+      "Incorporar manzanas en rodajas finas sin piel.",
+      "Volcar en molde enmantecado y hornear 45 min a fuego moderado."
+    ],
+    "notes": [],
+    "category": "snacks",
+    "tags": [
+      "fresh-ingredients",
+      "portable",
+      "sweet",
+      "high-protein",
+      "complex-carbs",
+      "high-fiber",
+      "quick"
+    ],
+    "nutrition": {
+      "calories": 285,
+      "protein": 8,
+      "carbs": 35,
+      "fat": 13,
+      "fiber": 4
+    },
+    "timing": {
+      "bestConsumed": "2-3 horas antes del entrenamiento o cualquier momento en días suaves",
+      "digestionTime": 120,
+      "idealFor": [
+        "días de entrenamiento suave",
+        "días de recuperación",
+        "long runs"
+      ]
+    },
+    "trainingPhase": [
+      "base",
+      "recovery"
+    ],
+    "prepTime": 15,
+    "servings": 10
+  },
+  {
+    "id": "recipe-060",
+    "title": "Budin de mandarina",
+    "ingredients": [
+      "1 mandarina",
+      "1 huevo",
+      "1/2 taza harina integral",
+      "1/2 taza avena",
+      "1/4 taza aceite",
+      "1/4 taza azúcar",
+      "1 cda postre polvo de hornear",
+      "1 pizca sal",
+      "1 cdita esencia vainilla"
+    ],
+    "preparation": [
+      "Batir huevo con sal y azúcar hasta que esté espumoso.",
+      "Añadir aceite, ralladura de mandarina y vainilla.",
+      "Agregar jugo de mandarina y avena.",
+      "Incorporar harina integral y polvo de hornear.",
+      "Hornear a 180°C por 25 min en molde enharinado."
+    ],
+    "notes": [],
+    "category": "snacks",
+    "tags": [
+      "fresh-ingredients",
+      "portable",
+      "sweet",
+      "high-protein",
+      "complex-carbs",
+      "high-fiber"
+    ],
+    "nutrition": {
+      "calories": 185,
+      "protein": 4,
+      "carbs": 28,
+      "fat": 7,
+      "fiber": 3
+    },
+    "timing": {
+      "bestConsumed": "2-3 horas antes del entrenamiento",
+      "digestionTime": 90,
+      "idealFor": [
+        "días de entrenamiento suave",
+        "long runs",
+        "días de recuperación"
+      ]
+    },
+    "trainingPhase": [
+      "base",
+      "build"
+    ],
+    "prepTime": 35,
+    "servings": 6
+  },
+  {
+    "id": "recipe-061",
+    "title": "Budín integral de limón y amapola",
+    "ingredients": [
+      "Ralladura y jugo de 2 limones",
+      "2 cdas postre semillas amapola",
+      "1 taza harina integral",
+      "2 huevos",
+      "1/2 taza aceite",
+      "1/4 taza azúcar",
+      "1 cdita bicarbonato de sodio",
+      "1 pizca sal"
+    ],
+    "preparation": [
+      "Batir huevos con ralladura, sal, azúcar y aceite.",
+      "Mezclar harina tamizada con polvo de hornear y semillas.",
+      "Añadir jugo de limones a la primera mezcla (completar con leche/agua si no llega a 1 taza).",
+      "Juntar ambas preparaciones y hornear ~30 min."
+    ],
+    "notes": [],
+    "category": "snacks",
+    "tags": [
+      "fresh-ingredients",
+      "portable",
+      "sweet",
+      "high-protein",
+      "complex-carbs",
+      "high-fiber",
+      "quick"
+    ],
+    "nutrition": {
+      "calories": 285,
+      "protein": 6,
+      "carbs": 32,
+      "fat": 15,
+      "fiber": 4
+    },
+    "timing": {
+      "bestConsumed": "2-3 horas antes del entrenamiento",
+      "digestionTime": 120,
+      "idealFor": [
+        "días de entrenamiento suave",
+        "long runs",
+        "días de recuperación"
+      ]
+    },
+    "trainingPhase": [
+      "base",
+      "recovery"
+    ],
+    "prepTime": 45,
+    "servings": 8
+  },
+  {
+    "id": "recipe-062",
+    "title": "Budin de banana",
+    "ingredients": [
+      "1.5 tazas harina integral",
+      "1/2 taza avena arrollada",
+      "15 nueces picadas",
+      "1/3 taza azúcar mascabo",
+      "1 cdita polvo para hornear",
+      "4 bananas pisadas",
+      "Jugo de 1/2 limón",
+      "1 huevo",
+      "1/3 taza aceite",
+      "Esencia de vainilla"
+    ],
+    "preparation": [
+      "Licuar bananas con jugo de limón.",
+      "Batir huevo, azúcar, aceite y vainilla; agregar puré de banana.",
+      "Mezclar secos en otro bowl e incorporar a la mezcla líquida.",
+      "Hornear 60 min a fuego medio en molde con papel manteca."
+    ],
+    "notes": [],
+    "category": "snacks",
+    "tags": [
+      "fresh-ingredients",
+      "portable",
+      "sweet",
+      "high-protein",
+      "complex-carbs",
+      "high-fiber",
+      "quick"
+    ],
+    "nutrition": {
+      "calories": 245,
+      "protein": 6,
+      "carbs": 38,
+      "fat": 9,
+      "fiber": 4
+    },
+    "timing": {
+      "bestConsumed": "2-3 horas antes del entrenamiento",
+      "digestionTime": 120,
+      "idealFor": [
+        "long runs",
+        "días de entrenamiento suave",
+        "carreras de base"
+      ]
+    },
+    "trainingPhase": [
+      "base",
+      "build"
+    ],
+    "prepTime": 75,
+    "servings": 12
+  },
+  {
+    "id": "recipe-063",
+    "title": "Cookies de zanahoria",
+    "ingredients": [
+      "2 zanahorias medianas",
+      "100 ml aceite",
+      "10 sobres edulcorante apto cocción",
+      "2 cditas polvo para hornear",
+      "150 grs harina integral",
+      "250 grs harina leudante"
+    ],
+    "preparation": [
+      "Mezclar zanahorias ralladas con aceite.",
+      "Incorporar harinas y formar masa.",
+      "Estirar con rodillo y cortar con moldes.",
+      "Hornear 25 min a fuego medio."
+    ],
+    "notes": [],
+    "category": "snacks",
+    "tags": [
+      "fresh-ingredients",
+      "portable",
+      "sweet",
+      "complex-carbs",
+      "high-fiber",
+      "vegan",
+      "quick"
+    ],
+    "nutrition": {
+      "calories": 185,
+      "protein": 5,
+      "carbs": 32,
+      "fat": 5,
+      "fiber": 3
+    },
+    "timing": {
+      "bestConsumed": "2-3 hours before training or anytime as snack",
+      "digestionTime": 90,
+      "idealFor": [
+        "días de entrenamiento suave",
+        "long runs",
+        "días de recuperación"
+      ]
+    },
+    "trainingPhase": [
+      "base",
+      "build"
+    ],
+    "prepTime": 45,
+    "servings": 18
+  },
+  {
+    "id": "recipe-064",
+    "title": "Galletas de coco y banana",
+    "ingredients": [
+      "2 bananas",
+      "100gr coco rallado",
+      "50gr semillas de girasol"
+    ],
+    "preparation": [
+      "Pisar bananas y mezclar con coco y girasol.",
+      "Colocar cucharadas en placa antiadherente y dar forma de galleta.",
+      "Hornear 15 min a fuego medio, dar vuelta y cocinar unos minutos más."
+    ],
+    "notes": [],
+    "category": "energy-bars",
+    "tags": [
+      "fresh-ingredients",
+      "portable",
+      "energy-dense",
+      "race-fuel",
+      "vegan",
+      "quick"
+    ],
+    "nutrition": {
+      "calories": 185,
+      "protein": 4,
+      "carbs": 18,
+      "fat": 12,
+      "fiber": 5
+    },
+    "timing": {
+      "bestConsumed": "1-2 hours before training",
+      "digestionTime": 90,
+      "idealFor": [
+        "long runs",
+        "race day morning",
+        "días de entrenamiento suave"
+      ]
+    },
+    "trainingPhase": [
+      "base",
+      "build",
+      "peak"
+    ],
+    "prepTime": 25,
+    "servings": 12
+  },
+  {
+    "id": "recipe-065",
+    "title": "Pancake de avena y banana",
+    "ingredients": [
+      "1/2 banana",
+      "2 claras",
+      "3 cucharadas de avena",
+      "Esencia de vainilla (opcional)"
+    ],
+    "preparation": [
+      "Pisar banana, agregar claras y vainilla.",
+      "Añadir avena e integrar.",
+      "Cocinar en sartén caliente vuelta y vuelta."
+    ],
+    "notes": [],
+    "category": "breakfast",
+    "tags": [
+      "fresh-ingredients",
+      "morning-fuel",
+      "complex-carbs",
+      "high-fiber",
+      "quick"
+    ],
+    "nutrition": {
+      "calories": 180,
+      "protein": 8,
+      "carbs": 32,
+      "fat": 1,
+      "fiber": 4
+    },
+    "timing": {
+      "bestConsumed": "1-2 hours before training",
+      "digestionTime": 90,
+      "idealFor": [
+        "días de entrenamiento suave",
+        "long runs",
+        "recovery runs"
+      ]
+    },
+    "trainingPhase": [
+      "base",
+      "build",
+      "peak"
+    ],
+    "prepTime": 10,
+    "servings": 1
+  },
+  {
+    "id": "recipe-066",
+    "title": "Hummus de garbanzos",
+    "ingredients": [
+      "250gr de garbanzos cocidos",
+      "1 cucharada de aceite de oliva extra virgen",
+      "Pimienta",
+      "Jugo de 1 limón",
+      "1 diente de ajo",
+      "Perejil fresco"
+    ],
+    "preparation": [
+      "Colocar los garbanzos, el aceite, el jugo de limón y unas hojas de perejil fresco en una procesadora.",
+      "Procesar hasta obtener una pasta homogénea.",
+      "Condimentar a gusto."
+    ],
+    "notes": [
+      "Ideal para untar en tostadas como opción distinta para el desayuno."
+    ],
+    "category": "breakfast",
+    "tags": [
+      "fresh-ingredients",
+      "morning-fuel",
+      "high-protein",
+      "plant-protein",
+      "high-fiber",
+      "vegan",
+      "quick",
+      "no-cook"
+    ],
+    "nutrition": {
+      "calories": 320,
+      "protein": 12,
+      "carbs": 42,
+      "fat": 10,
+      "fiber": 12
+    },
+    "timing": {
+      "bestConsumed": "2-3 horas antes del entrenamiento",
+      "digestionTime": 120,
+      "idealFor": [
+        "días de entrenamiento suave",
+        "días de recuperación",
+        "carreras de base"
+      ]
+    },
+    "trainingPhase": [
+      "base",
+      "recovery"
+    ],
+    "prepTime": 10,
+    "servings": 2
+  },
+  {
+    "id": "recipe-067",
+    "title": "Mermelada de arándanos (sin azúcar)",
+    "ingredients": [
+      "1 cajita de arándanos",
+      "1 cda de semillas de chía",
+      "3 sobres de edulcorante"
+    ],
+    "preparation": [
+      "Colocar los arándanos limpios en una sartén caliente.",
+      "Mover con cuchara de madera y aplastar un poco con un pisapapas.",
+      "Agregar el resto de los ingredientes y cocinar 2 minutos más hasta obtener la consistencia deseada.",
+      "Enfriar y envasar en frasco esterilizado. Refrigerar."
+    ],
+    "notes": [],
+    "category": "base",
+    "tags": [
+      "base-recipe",
+      "meal-prep",
+      "vegan",
+      "quick",
+      "anti-inflammatory"
+    ],
+    "nutrition": {
+      "calories": 25,
+      "protein": 1,
+      "carbs": 5,
+      "fat": 0.5,
+      "fiber": 2
+    },
+    "timing": {
+      "bestConsumed": "anytime",
+      "digestionTime": 30,
+      "idealFor": [
+        "días de entrenamiento suave",
+        "días de recuperación",
+        "breakfast enhancement"
+      ]
+    },
+    "trainingPhase": [
+      "base",
+      "recovery"
+    ],
+    "prepTime": 10,
+    "servings": 16
+  },
+  {
+    "id": "recipe-068",
+    "title": "Smoothie bowl arándanos",
+    "ingredients": [
+      "Base: 1 banana congelada",
+      "Base: 1/2 taza de mix de arándanos",
+      "Base: 1/2 taza de leche de coco",
+      "Topping: Coco deshidratado",
+      "Topping: Granola",
+      "Topping: Arándanos frescos"
+    ],
+    "preparation": [
+      "Colocar todos los ingredientes de la base en un bowl.",
+      "Procesar hasta que se encuentren perfectamente incorporados.",
+      "Servir y decorar con granola, arándanos y coco deshidratado (o los ingredientes que desees)."
+    ],
+    "notes": [],
+    "category": "breakfast",
+    "tags": [
+      "fresh-ingredients",
+      "morning-fuel",
+      "quick",
+      "no-cook",
+      "anti-inflammatory"
+    ],
+    "nutrition": {
+      "calories": 485,
+      "protein": 8,
+      "carbs": 68,
+      "fat": 22,
+      "fiber": 12
+    },
+    "timing": {
+      "bestConsumed": "2-3 horas antes del entrenamiento",
+      "digestionTime": 120,
+      "idealFor": [
+        "días de entrenamiento suave",
+        "días de recuperación",
+        "long runs"
+      ]
+    },
+    "trainingPhase": [
+      "base",
+      "recovery"
+    ],
+    "prepTime": 5,
+    "servings": 1
+  },
+  {
+    "id": "recipe-069",
+    "title": "Gránola de almendras y coco",
+    "ingredients": [
+      "1 taza de avena",
+      "1 cucharada de coco rallado",
+      "4 almendras en trozos",
+      "2 sobres de stevia",
+      "1 cucharada de aceite de coco",
+      "1/2 cucharada de extracto de vainilla",
+      "1/4 cucharada de canela",
+      "Frutas (para servir)"
+    ],
+    "preparation": [
+      "Mezclar todos los ingredientes en un bowl.",
+      "Colocar la mezcla en una fuente para hornear.",
+      "Precalentar el horno por 15 minutos.",
+      "Hornear a fuego medio por 15-20 minutos.",
+      "Retirar del horno y dejar enfriar por 1 hora.",
+      "Servir con fruta fresca."
+    ],
+    "notes": [],
+    "category": "breakfast",
+    "tags": [
+      "fresh-ingredients",
+      "morning-fuel",
+      "complex-carbs",
+      "high-fiber",
+      "vegan"
+    ],
+    "nutrition": {
+      "calories": 385,
+      "protein": 12,
+      "carbs": 45,
+      "fat": 18,
+      "fiber": 8
+    },
+    "timing": {
+      "bestConsumed": "2-3 horas antes del entrenamiento",
+      "digestionTime": 150,
+      "idealFor": [
+        "long runs",
+        "días de entrenamiento suave",
+        "base building workouts"
+      ]
+    },
+    "trainingPhase": [
+      "base",
+      "build"
+    ],
+    "prepTime": 45,
+    "servings": 2
+  },
+  {
+    "id": "recipe-070",
+    "title": "Matcha smoothie bowl",
+    "ingredients": [
+      "Base: 2 bananas grandes congeladas",
+      "Base: 1/4 taza de leche vegetal a elección",
+      "Base: 1 cucharadita de matcha en polvo",
+      "Base: 2 sobres de stevia",
+      "Topping: Granola",
+      "Topping: Coco rallado",
+      "Topping: Maní sin sal"
+    ],
+    "preparation": [
+      "Colocar todos los ingredientes de la base en un procesador de alimentos o licuadora.",
+      "Procesar hasta que estén perfectamente incorporados.",
+      "Servir en un plato hondo con los toppings deseados."
+    ],
+    "notes": [],
+    "category": "breakfast",
+    "tags": [
+      "fresh-ingredients",
+      "morning-fuel",
+      "quick",
+      "no-cook"
+    ],
+    "nutrition": {
+      "calories": 385,
+      "protein": 8,
+      "carbs": 62,
+      "fat": 14,
+      "fiber": 8
+    },
+    "timing": {
+      "bestConsumed": "1-2 hours before training",
+      "digestionTime": 90,
+      "idealFor": [
+        "días de entrenamiento suave",
+        "días de recuperación",
+        "long runs"
+      ]
+    },
+    "trainingPhase": [
+      "base",
+      "recovery"
+    ],
+    "prepTime": 5,
+    "servings": 1
+  },
+  {
+    "id": "recipe-071",
+    "title": "Waffles integrales",
+    "ingredients": [
+      "1 taza de harina de trigo integral",
+      "3/4 taza de harina de avena",
+      "1/4 taza de fécula de maíz",
+      "4 sobres de stevia",
+      "1 cucharadita de canela en polvo",
+      "1 cucharadita de polvo para hornear",
+      "1 cucharadita de vainilla",
+      "1 1/2 tazas de leche vegetal"
+    ],
+    "preparation": [
+      "Mezclar todos los ingredientes en un bowl hasta obtener una mezcla homogénea.",
+      "Verter la mezcla en la wafflera siguiendo las instrucciones del equipo."
+    ],
+    "notes": [],
+    "category": "breakfast",
+    "tags": [
+      "fresh-ingredients",
+      "morning-fuel",
+      "complex-carbs",
+      "high-fiber",
+      "quick"
+    ],
+    "nutrition": {
+      "calories": 180,
+      "protein": 6,
+      "carbs": 35,
+      "fat": 3,
+      "fiber": 5
+    },
+    "timing": {
+      "bestConsumed": "2-3 horas antes del entrenamiento",
+      "digestionTime": 90,
+      "idealFor": [
+        "long runs",
+        "días de entrenamiento suave",
+        "carreras de base"
+      ]
+    },
+    "trainingPhase": [
+      "base",
+      "build"
+    ],
+    "prepTime": 15,
+    "servings": 4
+  },
+  {
+    "id": "recipe-072",
+    "title": "Tostadas francesas",
+    "ingredients": [
+      "2 rebanadas de pan de molde",
+      "1 huevo batido",
+      "1 chorrito de leche"
+    ],
+    "preparation": [
+      "Mezclar el huevo con la leche.",
+      "Remojar las rebanadas de pan por ambos lados.",
+      "Cocinar en una sartén antiadherente vuelta y vuelta.",
+      "Acompañar con frutas, semillas, tomate o rúcula."
+    ],
+    "notes": [],
+    "category": "breakfast",
+    "tags": [
+      "fresh-ingredients",
+      "morning-fuel",
+      "high-protein",
+      "quick"
+    ],
+    "nutrition": {
+      "calories": 280,
+      "protein": 12,
+      "carbs": 38,
+      "fat": 8,
+      "fiber": 2
+    },
+    "timing": {
+      "bestConsumed": "2-3 horas antes del entrenamiento",
+      "digestionTime": 120,
+      "idealFor": [
+        "días de entrenamiento suave",
+        "días de recuperación",
+        "carreras de base"
+      ]
+    },
+    "trainingPhase": [
+      "base",
+      "recovery"
+    ],
+    "prepTime": 8,
+    "servings": 1
+  },
+  {
+    "id": "recipe-073",
+    "title": "Tostadas mediterráneas",
+    "ingredients": [
+      "2 rebanadas de pan de molde",
+      "1 tomate grande",
+      "Chorrito de aceite de oliva"
+    ],
+    "preparation": [
+      "Licuar o procesar el tomate junto con el chorrito de aceite de oliva.",
+      "Acompañar las tostadas o rebanadas de pan fresco con esta mezcla."
+    ],
+    "notes": [],
+    "category": "breakfast",
+    "tags": [
+      "fresh-ingredients",
+      "morning-fuel",
+      "vegan",
+      "quick",
+      "no-cook"
+    ],
+    "nutrition": {
+      "calories": 280,
+      "protein": 8,
+      "carbs": 42,
+      "fat": 10,
+      "fiber": 5
+    },
+    "timing": {
+      "bestConsumed": "1-2 hours before training",
+      "digestionTime": 60,
+      "idealFor": [
+        "días de entrenamiento suave",
+        "días de recuperación",
+        "base runs"
+      ]
+    },
+    "trainingPhase": [
+      "base",
+      "recovery"
+    ],
+    "prepTime": 5,
+    "servings": 1
+  },
+  {
+    "id": "recipe-074",
+    "title": "Omelette capresse",
+    "ingredients": [
+      "1 huevo y 1 clara batidos",
+      "4 cubitos pequeños de queso magro",
+      "1/2 tomate",
+      "Albahaca fresca"
+    ],
+    "preparation": [
+      "Volcar el huevo y la clara batidos en una sartén antiadherente.",
+      "Cocinar por unos minutos a fuego mínimo.",
+      "Dar vuelta el omelette y colocar los cubitos de queso hasta que se derritan.",
+      "Cerrar el omelette y servir con el tomate y la albahaca."
+    ],
+    "notes": [],
+    "category": "breakfast",
+    "tags": [
+      "fresh-ingredients",
+      "morning-fuel",
+      "high-protein",
+      "quick"
+    ],
+    "nutrition": {
+      "calories": 185,
+      "protein": 18,
+      "carbs": 4,
+      "fat": 10,
+      "fiber": 1
+    },
+    "timing": {
+      "bestConsumed": "2-3 horas antes del entrenamiento",
+      "digestionTime": 120,
+      "idealFor": [
+        "días de entrenamiento suave",
+        "días de recuperación",
+        "strength training"
+      ]
+    },
+    "trainingPhase": [
+      "base",
+      "recovery"
+    ],
+    "prepTime": 8,
+    "servings": 1
+  },
+  {
+    "id": "recipe-075",
+    "title": "Brownie proteico",
+    "ingredients": [
+      "2 yemas de huevo",
+      "100gr de queso untable descremado",
+      "1 cucharada de maicena",
+      "150 gr de cacao en polvo (o 3 medidas de whey protein sabor chocolate)",
+      "3 cucharadas de edulcorante en polvo para cocinar",
+      "1 cucharadita de polvo de hornear",
+      "3 claras batidas a nieve",
+      "Opcional: nueces picadas"
+    ],
+    "preparation": [
+      "En un bowl, mezclar las yemas, el queso untable, la maicena, el cacao (o proteína), el edulcorante y el polvo de hornear.",
+      "Batir las 3 claras a nieve e incorporarlas suavemente a la preparación.",
+      "Hornear durante 20 minutos."
+    ],
+    "notes": [],
+    "category": "snacks",
+    "tags": [
+      "fresh-ingredients",
+      "portable",
+      "sweet",
+      "high-protein",
+      "quick"
+    ],
+    "nutrition": {
+      "calories": 95,
+      "protein": 8,
+      "carbs": 6,
+      "fat": 3,
+      "fiber": 3
+    },
+    "timing": {
+      "bestConsumed": "1-2 hours post-workout or as recovery snack",
+      "digestionTime": 90,
+      "idealFor": [
+        "días de recuperación",
+        "post-entrenamiento",
+        "between meals"
+      ]
+    },
+    "trainingPhase": [
+      "build",
+      "recovery"
+    ],
+    "prepTime": 35,
+    "servings": 12
+  },
+  {
+    "id": "recipe-076",
+    "title": "Cookies con chips",
+    "ingredients": [
+      "1 taza de harina leudante",
+      "1 huevo",
+      "1/2 taza de azúcar (o 8 sobres de edulcorante)",
+      "1/2 taza de aceite",
+      "Chips de chocolate o chocolate amargo picado",
+      "Esencia de vainilla"
+    ],
+    "preparation": [
+      "Mezclar el aceite con el azúcar y la esencia de vainilla.",
+      "Incorporar el huevo batido.",
+      "Agregar la harina de a poco hasta formar una mezcla homogénea.",
+      "Sumar los chips de chocolate (aprox. 1/3 taza).",
+      "Dejar reposar la masa en la heladera por 20 minutos.",
+      "Estirar la masa, cortar con formas y hornear a fuego mínimo por 20 minutos aprox."
+    ],
+    "notes": [],
+    "category": "snacks",
+    "tags": [
+      "fresh-ingredients",
+      "portable",
+      "sweet",
+      "high-protein"
+    ],
+    "nutrition": {
+      "calories": 185,
+      "protein": 3,
+      "carbs": 22,
+      "fat": 10,
+      "fiber": 1
+    },
+    "timing": {
+      "bestConsumed": "2-3 horas antes del entrenamiento o dentro de 2 horas post-entrenamiento",
+      "digestionTime": 90,
+      "idealFor": [
+        "días de entrenamiento suave",
+        "días de recuperación",
+        "long runs"
+      ]
+    },
+    "trainingPhase": [
+      "base",
+      "recovery"
+    ],
+    "prepTime": 60,
+    "servings": 18
+  },
+  {
+    "id": "recipe-077",
+    "title": "Trufas de avena",
+    "ingredients": [
+      "3 cucharadas de avena",
+      "3 cucharadas de dulce de leche",
+      "2 cucharadas de cacao amargo",
+      "2 cucharadas de leche",
+      "Coco rallado (cantidad necesaria)",
+      "Opcional: frutos secos triturados o scoop de proteína en polvo"
+    ],
+    "preparation": [
+      "Mezclar todos los ingredientes (excepto el coco) en un bowl.",
+      "Formar bolitas y pasarlas por el coco rallado.",
+      "Colocar en una bandeja y llevar al freezer hasta que endurezcan."
+    ],
+    "notes": [
+      "Se pueden usar galletitas de agua trituradas si no hay avena.",
+      "Para versión proteica, reemplazar el cacao por proteína en polvo o sumar leche en polvo descremada."
+    ],
+    "category": "energy-bars",
+    "tags": [
+      "fresh-ingredients",
+      "portable",
+      "energy-dense",
+      "race-fuel",
+      "complex-carbs",
+      "high-fiber",
+      "quick",
+      "no-cook"
+    ],
+    "nutrition": {
+      "calories": 180,
+      "protein": 4,
+      "carbs": 28,
+      "fat": 6,
+      "fiber": 4
+    },
+    "timing": {
+      "bestConsumed": "1-2 hours before training or immediately post-workout",
+      "digestionTime": 60,
+      "idealFor": [
+        "días de entrenamiento suave",
+        "long runs",
+        "días de recuperación"
+      ]
+    },
+    "trainingPhase": [
+      "base",
+      "recovery"
+    ],
+    "prepTime": 15,
+    "servings": 8
+  },
+  {
+    "id": "recipe-078",
+    "title": "Untable de castañas",
+    "ingredients": [
+      "1/2 taza de castañas de cajú crudas (sin tostar ni salar)",
+      "1/4 a 1/2 taza de agua fresca",
+      "1/4 taza de levadura nutricional",
+      "1 cucharada de jugo de limón",
+      "1/4 cucharadita de cúrcuma en polvo (opcional para color)",
+      "1/2 cucharadita de sal de ajo"
+    ],
+    "preparation": [
+      "Remojar las castañas en agua entre 30 minutos y 24 horas.",
+      "Enjuagar y descartar el agua de remojo.",
+      "Procesar las castañas con el resto de los ingredientes hasta obtener una crema homogénea.",
+      "Refrigerar tapado hasta servir."
+    ],
+    "notes": [],
+    "category": "base",
+    "tags": [
+      "base-recipe",
+      "meal-prep",
+      "vegan",
+      "quick",
+      "no-cook",
+      "anti-inflammatory"
+    ],
+    "nutrition": {
+      "calories": 185,
+      "protein": 7,
+      "carbs": 9,
+      "fat": 14,
+      "fiber": 2
+    },
+    "timing": {
+      "bestConsumed": "anytime",
+      "digestionTime": 60,
+      "idealFor": [
+        "días de recuperación",
+        "días de entrenamiento suave",
+        "base building"
+      ]
+    },
+    "trainingPhase": [
+      "base",
+      "recovery"
+    ],
+    "prepTime": 35,
+    "servings": 4
+  },
+  {
+    "id": "recipe-079",
+    "title": "Untable de girasol",
+    "ingredients": [
+      "200 gr de semillas de girasol",
+      "1/2 cucharadita de sal",
+      "1 cucharadita de provenzal",
+      "1/2 limón exprimido"
+    ],
+    "preparation": [
+      "Activar las semillas de girasol en agua entre 6 y 8 horas.",
+      "Colocar en procesadora con un poco de agua (aprox. 1/2 taza) y licuar.",
+      "Agregar sal, provenzal y jugo de limón.",
+      "Licuar hasta obtener la consistencia deseada."
+    ],
+    "notes": [],
+    "category": "base",
+    "tags": [
+      "base-recipe",
+      "meal-prep",
+      "vegan",
+      "quick",
+      "no-cook"
+    ],
+    "nutrition": {
+      "calories": 165,
+      "protein": 6,
+      "carbs": 6,
+      "fat": 14,
+      "fiber": 3
+    },
+    "timing": {
+      "bestConsumed": "2-4 hours before training or anytime on easy days",
+      "digestionTime": 120,
+      "idealFor": [
+        "días de entrenamiento suave",
+        "días de recuperación",
+        "carreras de base"
+      ]
+    },
+    "trainingPhase": [
+      "base",
+      "recovery"
+    ],
+    "prepTime": 15,
+    "servings": 8
+  },
+  {
+    "id": "recipe-080",
+    "title": "Leche de avena",
+    "ingredients": [
+      "1 litro de agua",
+      "140g de avena arrollada gruesa (tradicional)"
+    ],
+    "preparation": [
+      "Remojar la avena en abundante agua por al menos 5 horas.",
+      "Colar, enjuagar y colocar en la licuadora con el litro de agua.",
+      "Procesar unos segundos hasta que el líquido sea blanco y la avena se disuelva.",
+      "Colar con colador de malla fina y descartar el remanente.",
+      "Envasar en botella y tapar."
+    ],
+    "notes": [],
+    "category": "breakfast",
+    "tags": [
+      "fresh-ingredients",
+      "morning-fuel",
+      "complex-carbs",
+      "high-fiber",
+      "vegan",
+      "no-cook"
+    ],
+    "nutrition": {
+      "calories": 80,
+      "protein": 3,
+      "carbs": 14,
+      "fat": 2,
+      "fiber": 2
+    },
+    "timing": {
+      "bestConsumed": "1-2 hours before training or anytime",
+      "digestionTime": 45,
+      "idealFor": [
+        "días de entrenamiento suave",
+        "días de recuperación",
+        "combustible matutino"
+      ]
+    },
+    "trainingPhase": [
+      "base",
+      "recovery"
+    ],
+    "prepTime": 10,
+    "servings": 4
+  },
+  {
+    "id": "recipe-081",
+    "title": "Leche de girasol",
+    "ingredients": [
+      "1 litro de agua",
+      "60g de semillas de girasol peladas (sin salar ni tostar)"
+    ],
+    "preparation": [
+      "Remojar las semillas en abundante agua por al menos 4 horas.",
+      "Colar, enjuagar y colocar en la licuadora con el litro de agua.",
+      "Procesar unos segundos hasta que el líquido sea blanco.",
+      "Colar con colador de malla fina y descartar el remanente.",
+      "Envasar en botella y tapar."
+    ],
+    "notes": [],
+    "category": "hydration",
+    "tags": [
+      "fresh-ingredients",
+      "plant-based",
+      "dairy-free",
+      "vegan",
+      "no-cook"
+    ],
+    "nutrition": {
+      "calories": 95,
+      "protein": 4,
+      "carbs": 6,
+      "fat": 8,
+      "fiber": 2
+    },
+    "timing": {
+      "bestConsumed": "anytime",
+      "digestionTime": 30,
+      "idealFor": [
+        "días de recuperación",
+        "días de entrenamiento suave",
+        "hydration"
+      ]
+    },
+    "trainingPhase": [
+      "base",
+      "recovery"
+    ],
+    "prepTime": 10,
+    "servings": 4
+  },
+  {
+    "id": "recipe-082",
+    "title": "Crackers de semillas",
+    "ingredients": [
+      "1/2 taza de nueces",
+      "1/4 taza de semillas de zapallo",
+      "1/4 taza de semillas de girasol",
+      "1/4 taza de semillas de lino",
+      "1/2 cebolla morada",
+      "1/2 morrón rojo",
+      "1 zanahoria",
+      "1 rama de apio"
+    ],
+    "preparation": [
+      "Activar nueces, semillas de girasol y zapallo en remojo por 8 horas o toda la noche. Colar.",
+      "Remojar las semillas de lino por media hora.",
+      "Rallar la zanahoria y picar el morrón, cebolla y apio en trozos pequeños.",
+      "Mezclar todo en un bowl y procesar hasta formar una pasta húmeda.",
+      "Extender la mezcla en una placa y hornear a fuego mínimo unos minutos."
+    ],
+    "notes": [],
+    "category": "energy-bars",
+    "tags": [
+      "fresh-ingredients",
+      "portable",
+      "energy-dense",
+      "race-fuel",
+      "complex-carbs",
+      "vegan"
+    ],
+    "nutrition": {
+      "calories": 145,
+      "protein": 5,
+      "carbs": 8,
+      "fat": 12,
+      "fiber": 4
+    },
+    "timing": {
+      "bestConsumed": "2-3 horas antes del entrenamiento o cualquier momento en días suaves",
+      "digestionTime": 120,
+      "idealFor": [
+        "días de entrenamiento suave",
+        "días de recuperación",
+        "long runs"
+      ]
+    },
+    "trainingPhase": [
+      "base",
+      "recovery"
+    ],
+    "prepTime": 30,
+    "servings": 12
+  },
+  {
+    "id": "recipe-083",
+    "title": "Bananas masticables",
+    "ingredients": [
+      "2 cucharadas de aceite de coco, derretido",
+      "1 cucharada de jugo de limón",
+      "1 cucharadita de canela molida",
+      "1/4 cucharadita de sal marina fina",
+      "3 bananas maduras, peladas y cortadas en rodajas de 2 o 3 cms de grosor"
+    ],
+    "preparation": [
+      "Precaliente el horno a 250 °F. Forre una bandeja para hornear con papel de fiesta y cepille con aproximadamente 1 cucharada de coco (un cepillo de silicona funciona muy bien).",
+      "En un tazón pequeño, combine la 1 cucharada restante de aceite de coco, el jugo de limón, la canela y la sal.",
+      "Extienda los plátanos de manera uniforme en la bandeja para hornear y cubra cada rebanada con la mezcla de limón.",
+      "Hornee en el centro del horno durante 2 horas. Después de 1 hora, retire del horno, use pinzas para voltear cada rebanada de plátano y vuelva a meterla en el horno.",
+      "Coloque la bandeja para hornear en una rejilla de alambre para que se enfríe por completo. Guardar en frasco de vidrio o recipiente hermético hasta por 1 mes."
+    ],
+    "notes": [
+      "Fuente: notas personales (internet/YouTube/etc.)"
+    ],
+    "category": "energy-bars",
+    "tags": [
+      "fresh-ingredients",
+      "portable",
+      "energy-dense",
+      "race-fuel",
+      "vegan"
+    ],
+    "nutrition": {
+      "calories": 65,
+      "protein": 1,
+      "carbs": 13,
+      "fat": 2,
+      "fiber": 2
+    },
+    "timing": {
+      "bestConsumed": "30-60 minutes before training or during long sessions",
+      "digestionTime": 30,
+      "idealFor": [
+        "long runs",
+        "día de carrera",
+        "during ultramarathons",
+        "pre-workout fuel"
+      ]
+    },
+    "trainingPhase": [
+      "base",
+      "build",
+      "peak"
+    ],
+    "prepTime": 15,
+    "servings": 18
+  },
+  {
+    "id": "recipe-084",
+    "title": "Muffins poderosos",
+    "ingredients": [
+      "2 tazas de harina de almendras",
+      "1 taza de copos de avena a la antigua (sin gluten si son sensibles)",
+      "2 cucharaditas de canela molida",
+      "1/2 cucharadita de nuez moscada molida",
+      "1 cucharadita de bicarbonato de sodio",
+      "1/2 cucharadita de sal marina fina",
+      "1/2 taza de nueces picadas (opcional)",
+      "1/2 taza de pasas, dátiles picados o chispas de chocolate (opcional)",
+      "3 huevos, batidos",
+      "1 taza de calabacín rallado (alrededor de 1 calabacín)",
+      "1 taza de zanahorias ralladas (aproximadamente 2 zanahorias)",
+      "6 cucharadas de mantequilla sin sal, derretida",
+      "1/2 taza de jarabe de arce ámbar oscuro",
+      "1 cucharadita de extracto de vainilla"
+    ],
+    "preparation": [
+      "Coloque una rejilla en el centro del horno. Precalentar el horno a 350°F. Forre un molde para muffins estándar de 12 tazas con tazas de papel para muffins.",
+      "En un tazón grande, combine la harina de almendras, la avena, la canela, la nuez moscada, el bicarbonato de sodio, la sal y las nueces/pasas/dátiles/chispas (si se usan).",
+      "En un tazón aparte, mezcle los huevos, el calabacín, las zanahorias, la mantequilla, el jarabe de arce y la vainilla.",
+      "Agregue los húmedos a los secos y mezcle hasta combinar (la masa será espesa).",
+      "Vierta la masa en los moldes para muffins, llenándolos hasta el borde.",
+      "Hornee hasta que estén bien dorados arriba y un palillo salga limpio: 25 a 35 minutos."
+    ],
+    "notes": [
+      "Fuente: notas personales (internet/YouTube/etc.)"
+    ],
+    "category": "snacks",
+    "tags": [
+      "fresh-ingredients",
+      "portable",
+      "sweet",
+      "high-protein",
+      "complex-carbs",
+      "high-fiber",
+      "meal-prep"
+    ],
+    "nutrition": {
+      "calories": 285,
+      "protein": 9,
+      "carbs": 28,
+      "fat": 16,
+      "fiber": 5
+    },
+    "timing": {
+      "bestConsumed": "2-3 hours before training or anytime as snack",
+      "digestionTime": 90,
+      "idealFor": [
+        "días de entrenamiento suave",
+        "long runs",
+        "días de recuperación"
+      ]
+    },
+    "trainingPhase": [
+      "base",
+      "recovery"
+    ],
+    "prepTime": 45,
+    "servings": 12
+  },
+  {
+    "id": "recipe-085",
+    "title": "Mi versión de avena (para todos los días)",
+    "ingredients": [
+      "1 taza de copos de avena a la antigua (sin gluten si son sensibles)",
+      "4 tazas de leche de almendras sin azúcar u otra leche de su elección",
+      "3/4 taza de yogur de leche entera natural",
+      "2 cucharaditas de miel",
+      "1 cucharadita de canela molida",
+      "Chorrito de extracto de vainilla (opcional)",
+      "Una pizca de sal marina fina",
+      "1 manzana (opción sin pelar), rallada",
+      "Opcionales: bayas frescas, semillas de chía o semillas de girasol, nueces, copos de coco tostado, dátiles u otra fruta seca"
+    ],
+    "preparation": [
+      "En un tazón mediano, combine la avena, la leche, el yogur, la miel, la canela, la vainilla (si la usa) y la sal.",
+      "Cubrir y dejar en remojo durante al menos 1 hora o refrigerar durante la noche.",
+      "Agregue la manzana. Si queda demasiado espesa, agregue más leche.",
+      "Divida entre 2 cuencos y agregue toppings opcionales a gusto."
+    ],
+    "notes": [
+      "Fuente: notas personales (internet/YouTube/etc.)"
+    ],
+    "category": "breakfast",
+    "tags": [
+      "fresh-ingredients",
+      "morning-fuel",
+      "high-protein",
+      "complex-carbs",
+      "high-fiber",
+      "quick",
+      "no-cook"
+    ],
+    "nutrition": {
+      "calories": 485,
+      "protein": 18,
+      "carbs": 78,
+      "fat": 12,
+      "fiber": 11
+    },
+    "timing": {
+      "bestConsumed": "2-3 horas antes del entrenamiento",
+      "digestionTime": 120,
+      "idealFor": [
+        "días de entrenamiento suave",
+        "long runs",
+        "días de recuperación"
+      ]
+    },
+    "trainingPhase": [
+      "base",
+      "build"
+    ],
+    "prepTime": 10,
+    "servings": 2
+  },
+  {
+    "id": "recipe-086",
+    "title": "Mi versión de avena (para días de carrera / entrenamiento intenso)",
+    "ingredients": [
+      "1/2 taza de avena instantánea (sin gluten si es sensible)",
+      "1 plátano, en rodajas",
+      "Una pizca de sal marina",
+      "1/4 taza de leche de almendras u otra leche de su elección",
+      "Nueces o mantequilla de almendras",
+      "Pasas o bayas frescas",
+      "Canela molida",
+      "Miel (opcional)",
+      "3/4 taza de agua"
+    ],
+    "preparation": [
+      "Combine la avena, el plátano, la sal y 3/4 taza de agua en un recipiente apto para microondas.",
+      "Microondas a alta potencia durante 1 o 2 minutos, o hasta que espese.",
+      "Triture el plátano ligeramente y agregue la leche.",
+      "Agregue nueces o mantequilla de almendras y pasas o bayas al gusto.",
+      "Cubra con una pizca de canela y un chorrito de miel si lo desea."
+    ],
+    "notes": [
+      "Fuente: notas personales (internet/YouTube/etc.)"
+    ],
+    "category": "pre-race",
+    "tags": [
+      "fresh-ingredients",
+      "race-day",
+      "easy-digest",
+      "high-carb",
+      "complex-carbs",
+      "high-fiber",
+      "no-cook"
+    ],
+    "nutrition": {
+      "calories": 385,
+      "protein": 12,
+      "carbs": 68,
+      "fat": 9,
+      "fiber": 8
+    },
+    "timing": {
+      "bestConsumed": "2-3 hours before race",
+      "digestionTime": 120,
+      "idealFor": [
+        "race day morning",
+        "long runs",
+        "tempo runs"
+      ]
+    },
+    "trainingPhase": [
+      "peak",
+      "build"
+    ],
+    "prepTime": 5,
+    "servings": 1
+  },
+  {
+    "id": "recipe-087",
+    "title": "Burritos (desayuno post entrenamiento)",
+    "ingredients": [
+      "1 cucharada de aceite de oliva",
+      "1 bolsa (6 onzas) de espinacas pequeñas (alrededor de 4 tazas envasadas)",
+      "10 huevos, batidos",
+      "1/2 cucharadita de sal marina fina",
+      "1/4 de cucharadita de pimienta negra recién molida",
+      "6 tortillas integrales tamaño burrito (aprox. 10 pulgadas)",
+      "1 1/2 tazas de gruyere rallado u otro queso favorito",
+      "1 1/2 tazas de frijoles negros picantes o 1 lata (15 onzas)"
+    ],
+    "preparation": [
+      "Calienta el aceite en una sartén grande antiadherente a fuego medio.",
+      "Agregue las espinacas y cocine hasta que se marchiten.",
+      "Agregue los huevos, la sal y la pimienta y cocine, revolviendo continuamente, hasta que estén revueltos. Retirar del fuego.",
+      "Coloque cada tortilla en una hoja de papel de aluminio (12 x 12 pulgadas) y espolvoree con 1/4 taza de queso.",
+      "Divida la mezcla de huevo y espinacas entre las 6 tortillas (en una tira en el centro) y cubra cada una con 1/4 taza de frijoles.",
+      "Enrolle cada tortilla como un burrito (doblando parte superior e inferior) y envuélvala bien en el papel de aluminio.",
+      "Colóquelas juntas en una bolsa de congelador grande y congele hasta por 2 meses.",
+      "Para recalentar: desenvuelva el papel de aluminio, ponga en plato apto microondas y caliente 2-3 minutos, girando después de 1 minuto."
+    ],
+    "notes": [
+      "Fuente: notas personales (internet/YouTube/etc.)"
+    ],
+    "category": "post-workout",
+    "tags": [
+      "fresh-ingredients",
+      "recovery",
+      "anti-inflammatory",
+      "high-protein",
+      "high-fiber"
+    ],
+    "nutrition": {
+      "calories": 485,
+      "protein": 25,
+      "carbs": 42,
+      "fat": 24,
+      "fiber": 8
+    },
+    "timing": {
+      "bestConsumed": "within 2 hours post-workout",
+      "digestionTime": 90,
+      "idealFor": [
+        "días de recuperación",
+        "long runs",
+        "strength training sessions",
+        "moderate intensity workouts"
+      ]
+    },
+    "trainingPhase": [
+      "base",
+      "build",
+      "recovery"
+    ],
+    "prepTime": 25,
+    "servings": 6
+  },
+  {
+    "id": "recipe-088",
+    "title": "Tostadas (de banana) francesas",
+    "ingredients": [
+      "4 huevos",
+      "1/4 de taza de leche de almendras sin azúcar u otra leche a elección",
+      "1/2 cucharadita de canela molida",
+      "1/2 cucharadita de extracto de almendra",
+      "1/8 cucharadita de sal marina fina",
+      "Pizca de nuez moscada molida (opcional)",
+      "Giro de pimienta negra recién molida",
+      "2 cucharadas de mantequilla",
+      "8 rebanadas de pan (espelta) de 1 pulgada de grosor o pan a elección",
+      "Opcionales: sal marina gruesa, plátanos en rodajas, jarabe de arce"
+    ],
+    "preparation": [
+      "En una fuente para hornear de 8 x 8 pulgadas (o tazón de fondo plano), bata los huevos, la leche, la canela, el extracto de almendras, la sal, la nuez moscada (si se usa) y la pimienta.",
+      "Derrita 1 cucharada de mantequilla en una sartén grande a fuego medio-alto.",
+      "Sumerja cada rebanada en la mezcla de huevo (cubrir ambos lados) y coloque en un plato.",
+      "Coloque 4 rebanadas en la sartén, vertiendo un poco más de mezcla de huevo encima. Freír hasta dorar (1-2 minutos).",
+      "Voltear y dorar el segundo lado.",
+      "Si la mantequilla se quema, limpie con toalla de papel, agregue otra cucharada de mantequilla y repita con las rebanadas restantes.",
+      "Servir con sal marina gruesa, rodajas de plátano y/o jarabe de arce (opcional)."
+    ],
+    "notes": [
+      "Fuente: notas personales (internet/YouTube/etc.)"
+    ],
+    "category": "lunch",
+    "tags": [
+      "fresh-ingredients",
+      "high-protein"
+    ],
+    "nutrition": {
+      "calories": 485,
+      "protein": 18,
+      "carbs": 58,
+      "fat": 20,
+      "fiber": 4
+    },
+    "timing": {
+      "bestConsumed": "2-3 horas antes del entrenamiento",
+      "digestionTime": 120,
+      "idealFor": [
+        "long runs",
+        "días de entrenamiento suave",
+        "días de recuperación"
+      ]
+    },
+    "trainingPhase": [
+      "base",
+      "build"
+    ],
+    "prepTime": 15,
+    "servings": 4
+  },
+  {
+    "id": "recipe-089",
+    "title": "Mi receta de granola",
+    "ingredients": [
+      "400 gr de copos de avena",
+      "100 gr de almendras naturales",
+      "100 gr de avellanas naturales",
+      "65 gr de semillas varias (chía, sésamo, calabaza, pipas, etc.)",
+      "2 cucharaditas de canela en polvo",
+      "150 gr de miel",
+      "100 gr de aceite de coco",
+      "2 cucharaditas de pasta de vainilla o extracto de vainilla",
+      "75 gr de arándanos secos, o pasas, o fruta seca a elección"
+    ],
+    "preparation": [
+      "Precalentar el horno a 170°C y preparar una bandeja grande.",
+      "Calentar en un cazo el aceite de coco con la miel (o sirope) y la vainilla.",
+      "Mezclar avena, frutos secos (enteros o picados), semillas y canela.",
+      "Añadir el aceite de coco derretido con la miel y mezclar.",
+      "Reservar los arándanos/pasas para después del horneado.",
+      "Extender la mezcla en la bandeja y hornear ~25 minutos, removiendo cada 5 minutos.",
+      "Dejar enfriar por completo.",
+      "Agregar la fruta seca reservada y guardar en frasco hermético."
+    ],
+    "notes": [
+      "Fuente: notas personales (internet/YouTube/etc.)"
+    ],
+    "category": "breakfast",
+    "tags": [
+      "fresh-ingredients",
+      "morning-fuel",
+      "complex-carbs",
+      "high-fiber",
+      "vegan",
+      "anti-inflammatory",
+      "meal-prep"
+    ],
+    "nutrition": {
+      "calories": 485,
+      "protein": 12,
+      "carbs": 58,
+      "fat": 24,
+      "fiber": 8
+    },
+    "timing": {
+      "bestConsumed": "2-3 horas antes del entrenamiento",
+      "digestionTime": 120,
+      "idealFor": [
+        "long runs",
+        "días de entrenamiento suave",
+        "días de recuperación"
+      ]
+    },
+    "trainingPhase": [
+      "base",
+      "build"
+    ],
+    "prepTime": 40,
+    "servings": 12
+  },
+  {
+    "id": "recipe-090",
+    "title": "Bocaditos energéticos (reemplazo ideal para barritas industriales)",
+    "ingredients": [
+      "12 dátiles grandes, deshuesados",
+      "1 taza de cerezas secas sin azúcar",
+      "1 taza de nueces crudas picadas",
+      "1/4 taza de mantequilla de almendras sin sal",
+      "1 cucharada de cacao en polvo sin azúcar",
+      "2 cucharadas de granos de café finamente molidos",
+      "1/4 cucharadita de sal marina fina",
+      "1/2 taza de coco seco rallado sin azúcar, tostado"
+    ],
+    "preparation": [
+      "En un procesador de alimentos, combine dátiles, cerezas, nueces, mantequilla de almendras, cacao, café y sal.",
+      "Pulse para picar y luego procese 1-2 minutos, raspando los bordes si hace falta, hasta que la mezcla comience a agruparse.",
+      "Pasar a un recipiente y formar 24 bolitas del tamaño de una nuez.",
+      "Rebozar cada bolita en el coco tostado.",
+      "Guardar en recipiente hermético hasta 1 mes o en freezer hasta 6 meses."
+    ],
+    "notes": [
+      "Fuente: notas personales (internet/YouTube/etc.)"
+    ],
+    "category": "energy-bars",
+    "tags": [
+      "fresh-ingredients",
+      "portable",
+      "energy-dense",
+      "race-fuel",
+      "no-cook"
+    ],
+    "nutrition": {
+      "calories": 145,
+      "protein": 3,
+      "carbs": 18,
+      "fat": 8,
+      "fiber": 3
+    },
+    "timing": {
+      "bestConsumed": "1-2 hours before training or immediately post-workout",
+      "digestionTime": 60,
+      "idealFor": [
+        "long runs",
+        "días de entrenamiento suave",
+        "recovery snack",
+        "pre-workout fuel"
+      ]
+    },
+    "trainingPhase": [
+      "base",
+      "build",
+      "recovery"
+    ],
+    "prepTime": 15,
+    "servings": 24
+  },
+  {
+    "id": "recipe-091",
+    "title": "Scones de harina de maíz con arándanos y limón",
+    "ingredients": [
+      "1 taza de harina de maíz molida a la piedra",
+      "1 taza de harina para todo uso",
+      "1/4 de taza de azúcar de coco u otro azúcar granulado",
+      "2 cucharaditas de levadura en polvo",
+      "1/2 cucharadita de sal marina fina",
+      "1 barra (8 cucharadas) de mantequilla fría sin sal, en cubos",
+      "2 huevos",
+      "1/3 taza de yogur griego con leche entera",
+      "1 cucharadita de extracto de vainilla",
+      "Ralladura fina de 2 limones",
+      "1 taza de arándanos congelados"
+    ],
+    "preparation": [
+      "Coloque una rejilla en el centro del horno. Precalentar a 350°F. Forre una bandeja con papel pergamino.",
+      "En un tazón grande, mezcle harina de maíz, harina, azúcar, polvo de hornear y sal.",
+      "Con los dedos o cortapastas, integre la mantequilla hasta que quede del tamaño de guisantes.",
+      "En otro tazón, bata huevos, yogur, vainilla y ralladura. Agregue a los secos y revuelva hasta combinar.",
+      "Incorpore los arándanos (la masa será gruesa y pegajosa).",
+      "Enharine una superficie, forme un tronco semiaplanado de ~2 pulgadas de diámetro y corte en 10 triángulos; coloque separados en la bandeja.",
+      "Alternativa: colocar cucharadas grandes de masa en la bandeja.",
+      "Hornear 15-20 minutos, hasta dorar levemente abajo. Enfriar en rejilla."
+    ],
+    "notes": [
+      "Fuente: notas personales (internet/YouTube/etc.)"
+    ],
+    "category": "snacks",
+    "tags": [
+      "fresh-ingredients",
+      "portable",
+      "sweet",
+      "high-protein",
+      "anti-inflammatory"
+    ],
+    "nutrition": {
+      "calories": 285,
+      "protein": 7,
+      "carbs": 42,
+      "fat": 11,
+      "fiber": 3
+    },
+    "timing": {
+      "bestConsumed": "2-3 horas antes del entrenamiento",
+      "digestionTime": 90,
+      "idealFor": [
+        "días de entrenamiento suave",
+        "long runs",
+        "días de recuperación"
+      ]
+    },
+    "trainingPhase": [
+      "base",
+      "build"
+    ],
+    "prepTime": 35,
+    "servings": 10
+  },
+  {
+    "id": "recipe-092",
+    "title": "Snack de avellanas",
+    "ingredients": [
+      "2 cucharadas de mantequilla",
+      "2 cucharaditas de canela molida",
+      "1/2 cucharadita de pimiento rojo molido",
+      "2 cucharadas de miel",
+      "3/4 cucharadita de sal marina fina",
+      "2 tazas de avellanas crudas"
+    ],
+    "preparation": [
+      "Precaliente el horno a 350°F. Forre una bandeja con papel manteca.",
+      "Derrita la mantequilla a fuego medio-bajo. Agregue canela y pimienta y cocine 1 minuto, revolviendo.",
+      "Retire del fuego y agregue miel y sal. Agregue las avellanas y revuelva para cubrir.",
+      "Extienda en la bandeja y ase 15 minutos, revolviendo cada 5 minutos.",
+      "Enfríe completamente en una sola capa, rompa racimos y guarde en frasco."
+    ],
+    "notes": [
+      "Fuente: notas personales (internet/YouTube/etc.)"
+    ],
+    "category": "snacks",
+    "tags": [
+      "fresh-ingredients",
+      "portable",
+      "sweet"
+    ],
+    "nutrition": {
+      "calories": 195,
+      "protein": 4.5,
+      "carbs": 8,
+      "fat": 18,
+      "fiber": 3
+    },
+    "timing": {
+      "bestConsumed": "2-4 hours before training or anytime as snack",
+      "digestionTime": 90,
+      "idealFor": [
+        "días de entrenamiento suave",
+        "long runs",
+        "días de recuperación"
+      ]
+    },
+    "trainingPhase": [
+      "base",
+      "recovery"
+    ],
+    "prepTime": 25,
+    "servings": 8
+  },
+  {
+    "id": "recipe-093",
+    "title": "Tostadas con higos, queso y tomillo",
+    "ingredients": [
+      "1/2 baguette grande o 1 baguette pequeña (aprox. 1 pie), en rodajas de 1/2 pulgada",
+      "Aceite de oliva virgen extra, para rociar",
+      "1 diente de ajo grande",
+      "1 paquete (4 onzas) de chevre natural (queso de cabra)",
+      "4 o 5 higos frescos, en rodajas finas (o 1/2 pera madura en rodajas finas)",
+      "Miel, para rociar",
+      "1 cucharada de hojas de tomillo fresco",
+      "Sal marina gruesa"
+    ],
+    "preparation": [
+      "Ponga el horno en modo grill/asador con una rejilla en el estante superior.",
+      "Coloque las rodajas de baguette en una bandeja y rocíe un lado generosamente con aceite.",
+      "Asar hasta dorar ligeramente (~1 minuto). Retirar, dar vuelta y asar el segundo lado (30 segundos a 1 minuto).",
+      "Frotar un lado de cada tostada con ajo y pasar a una fuente.",
+      "Cubrir con queso de cabra, higo (o pera), un chorrito de miel, tomillo y sal."
+    ],
+    "notes": [
+      "Fuente: notas personales (internet/YouTube/etc.)"
+    ],
+    "category": "lunch",
+    "tags": [
+      "fresh-ingredients"
+    ],
+    "nutrition": {
+      "calories": 285,
+      "protein": 12,
+      "carbs": 32,
+      "fat": 13,
+      "fiber": 3
+    },
+    "timing": {
+      "bestConsumed": "2-3 horas antes del entrenamiento",
+      "digestionTime": 120,
+      "idealFor": [
+        "días de entrenamiento suave",
+        "días de recuperación",
+        "carreras de base"
+      ]
+    },
+    "trainingPhase": [
+      "base",
+      "recovery"
+    ],
+    "prepTime": 15,
+    "servings": 4
+  },
+  {
+    "id": "recipe-094",
+    "title": "Pepitas de cúrcuma (para después de entrenar)",
+    "ingredients": [
+      "1 cucharada de mantequilla",
+      "1 cucharadita de cúrcuma",
+      "1 cucharadita de curry en polvo",
+      "2 cucharadas de miel",
+      "1/2 cucharadita de sal marina fina",
+      "2 tazas de pepitas crudas (de calabaza)"
+    ],
+    "preparation": [
+      "Precaliente el horno a 350°F. Forre una bandeja con papel manteca.",
+      "Derrita la mantequilla a fuego medio-bajo. Agregue cúrcuma y curry y cocine ~1 minuto, revolviendo.",
+      "Apague el fuego y agregue miel y sal. Incorpore las pepitas y revuelva para cubrir.",
+      "Extienda en la bandeja y ase 10 minutos, revolviendo después de 5 minutos.",
+      "Enfríe completamente; se vuelven crujientes al enfriarse. Rompa racimos y guarde en frasco."
+    ],
+    "notes": [
+      "Fuente: notas personales (internet/YouTube/etc.)"
+    ],
+    "category": "post-workout",
+    "tags": [
+      "fresh-ingredients",
+      "recovery",
+      "anti-inflammatory",
+      "complex-carbs"
+    ],
+    "nutrition": {
+      "calories": 195,
+      "protein": 9,
+      "carbs": 8,
+      "fat": 16,
+      "fiber": 2
+    },
+    "timing": {
+      "bestConsumed": "within 2 hours post-workout",
+      "digestionTime": 45,
+      "idealFor": [
+        "días de recuperación",
+        "días de entrenamiento suave",
+        "strength training recovery"
+      ]
+    },
+    "trainingPhase": [
+      "recovery",
+      "base"
+    ],
+    "prepTime": 20,
+    "servings": 8
+  },
+  {
+    "id": "recipe-095",
+    "title": "Ensalada fresca con salmón a la parrilla",
+    "ingredients": [
+      "1 cucharada de aceite de oliva",
+      "1/4 de libra de salmón salvaje o carbón ártico, en 2 filetes",
+      "1/2 libra de espárragos, recortados",
+      "1/2 cucharadita de sal marina gruesa",
+      "1/4 de cucharadita de pimienta negra recién molida",
+      "3 tazas de rúcula u hojas verdes",
+      "1/2 taza de arándanos",
+      "1/2 taza de avellanas tostadas picadas",
+      "1/2 taza de queso de cabra desmenuzado o queso feta",
+      "1 receta de vinagreta balsámica básica"
+    ],
+    "preparation": [
+      "Precaliente la parrilla a medio-alto (o el grill/asador del horno con rejilla arriba).",
+      "Rocíe aceite sobre el salmón y los espárragos y condimente con sal y pimienta.",
+      "Asar el salmón 2-3 minutos por lado (según grosor) y los espárragos 3-4 minutos, rotando.",
+      "Alternativa horno: colocar en bandeja con aluminio y cocinar bajo el grill hasta que el salmón esté opaco (6-10 min) y los espárragos ligeramente carbonados (3-4 min).",
+      "Armar ensaladeras con rúcula/hojas verdes. Cubrir con arándanos, avellanas y queso.",
+      "Cortar espárragos en trozos de 2 pulgadas. Poner un filete de salmón y espárragos en cada ensalada y rociar con aderezo."
+    ],
+    "notes": [
+      "Fuente: notas personales (internet/YouTube/etc.)"
+    ],
+    "category": "lunch",
+    "tags": [
+      "fresh-ingredients",
+      "light",
+      "high-fiber",
+      "vegetables",
+      "high-protein",
+      "anti-inflammatory"
+    ],
+    "nutrition": {
+      "calories": 485,
+      "protein": 32,
+      "carbs": 18,
+      "fat": 34,
+      "fiber": 8
+    },
+    "timing": {
+      "bestConsumed": "2-3 horas antes del entrenamiento o dentro de 2 horas post-entrenamiento",
+      "digestionTime": 120,
+      "idealFor": [
+        "días de recuperación",
+        "días de entrenamiento suave",
+        "post-long runs"
+      ]
+    },
+    "trainingPhase": [
+      "base",
+      "recovery"
+    ],
+    "prepTime": 25,
+    "servings": 2
+  },
+  {
+    "id": "recipe-096",
+    "title": "Cookies doble chocolate",
+    "ingredients": [
+      "3/4 taza de harina teff",
+      "1/2 taza de harina de almendras",
+      "1/3 taza de chispas de chocolate semidulce",
+      "1/4 taza de cacao en polvo sin azúcar",
+      "1 cucharadita de levadura en polvo",
+      "1/4 cucharadita de bicarbonato de sodio",
+      "1/4 cucharadita de sal marina fina",
+      "1/2 taza de jarabe de arce puro",
+      "1/3 taza de aceite de coco, derretido",
+      "1 cucharadita de extracto de vainilla"
+    ],
+    "preparation": [
+      "En un tazón grande, mezcle harina de teff, harina de almendras, chispas, cacao, polvo de hornear, bicarbonato y sal.",
+      "Agregue jarabe de arce, aceite de coco y vainilla; revuelva hasta combinar.",
+      "Opcional: cubrir la masa y refrigerar durante la noche para una galleta más tierna.",
+      "Precaliente el horno a 350°F. Forre bandeja con papel pergamino.",
+      "Deje caer cucharadas de masa separadas ~1 pulgada.",
+      "Hornear 12 minutos (hasta que el fondo esté ligeramente dorado). Enfriar 5 min y luego pasar a rejilla."
+    ],
+    "notes": [
+      "Fuente: notas personales (internet/YouTube/etc.)"
+    ],
+    "category": "snacks",
+    "tags": [
+      "fresh-ingredients",
+      "portable",
+      "sweet",
+      "vegan"
+    ],
+    "nutrition": {
+      "calories": 165,
+      "protein": 4,
+      "carbs": 22,
+      "fat": 8,
+      "fiber": 3
+    },
+    "timing": {
+      "bestConsumed": "1-2 hours before training or immediately post-workout",
+      "digestionTime": 45,
+      "idealFor": [
+        "días de entrenamiento suave",
+        "días de recuperación",
+        "pre-workout fuel"
+      ]
+    },
+    "trainingPhase": [
+      "base",
+      "recovery"
+    ],
+    "prepTime": 25,
+    "servings": 18
+  },
+  {
+    "id": "recipe-097",
+    "title": "Trufas de chocolate con mantequilla de nueces con sal marina",
+    "ingredients": [
+      "Nut butter: 2 tazas de nueces",
+      "Nut butter: 10 dátiles Deglet (deshuesados)",
+      "Nut butter: 1 cucharadita de canela molida",
+      "Cobertura: 2 cucharadas de aceite de coco virgen",
+      "Cobertura: 3 cucharadas de jarabe de arce",
+      "Cobertura: 3 cucharadas de cacao en polvo sin azúcar",
+      "Cobertura: 1 cucharadita de sal marina gruesa (para terminar)"
+    ],
+    "preparation": [
+      "Precaliente el horno a 350°F. Forre una bandeja con papel manteca.",
+      "Para la mantequilla de nueces: ase las nueces 8 minutos, revolviendo a los 4 minutos. Deje enfriar completamente.",
+      "Procese nueces, dátiles y canela hasta obtener una pasta espesa (sin sobreprocesar).",
+      "Forme bolitas del tamaño de un bocado y colóquelas en la bandeja. Si está muy blanda, enfriar en heladera.",
+      "Para la cobertura: derrita el aceite de coco (microondas en tandas cortas o cacerola). Mezcle con jarabe de arce y cacao hasta que quede suave.",
+      "Bañe cada bolita en chocolate, escurra con un tenedor y vuelva a la bandeja. Ponga una pizca de sal encima.",
+      "Refrigerar 10-15 minutos hasta que esté firme.",
+      "Guardar en recipiente hermético (con papel pergamino) en heladera hasta 1 semana o freezer hasta 3 meses."
+    ],
+    "notes": [
+      "Fuente: notas personales (internet/YouTube/etc.)"
+    ],
+    "category": "energy-bars",
+    "tags": [
+      "fresh-ingredients",
+      "portable",
+      "energy-dense",
+      "race-fuel",
+      "vegan"
+    ],
+    "nutrition": {
+      "calories": 145,
+      "protein": 3,
+      "carbs": 12,
+      "fat": 10,
+      "fiber": 2
+    },
+    "timing": {
+      "bestConsumed": "1-2 hours before training or immediately post-workout",
+      "digestionTime": 60,
+      "idealFor": [
+        "long runs",
+        "días de recuperación",
+        "días de entrenamiento suave",
+        "pre-workout fuel"
+      ]
+    },
+    "trainingPhase": [
+      "base",
+      "build",
+      "recovery"
+    ],
+    "prepTime": 35,
+    "servings": 20
+  },
+  {
+    "id": "recipe-098",
+    "title": "Crumble de bayas de Oregón",
+    "ingredients": [
+      "Relleno: 3 tazas de fresas en rodajas",
+      "Relleno: 3 tazas de arándanos",
+      "Relleno: 1 cucharada de zumo de limón",
+      "Relleno: 2 cucharadas de harina de tapioca o almidón de tapioca",
+      "Crumble: 3/4 taza de copos de avena a la antigua (sin gluten si es sensible)",
+      "Crumble: 1/2 taza de harina de almendras",
+      "Crumble: 1/2 taza de nueces crudas picadas o pacanas",
+      "Crumble: 1/2 cucharadita de canela molida",
+      "Crumble: 1/4 cucharadita de jengibre molido",
+      "Crumble: 1/4 cucharadita de sal marina fina",
+      "Crumble: 1/3 taza de jarabe de arce (grado B)",
+      "Crumble: 1/4 taza de aceite de coco virgen",
+      "Opcional: helado de vainilla (a base de leche de coco si es sensible a los lácteos)"
+    ],
+    "preparation": [
+      "Precaliente el horno a 400°F. Ponga una fuente 8 x 8 pulgadas (o sartén 10 pulgadas, o 6 moldes individuales) sobre una bandeja.",
+      "Mezcle fresas, arándanos, jugo de limón y harina/almidón de tapioca. Extienda en la fuente (o distribuya en moldes).",
+      "En el mismo tazón, bata avena, harina de almendras, nueces, canela, jengibre y sal.",
+      "Agregue jarabe de arce y aceite y revuelva hasta combinar.",
+      "Distribuya el crumble sobre la fruta.",
+      "Hornear 25-30 minutos (20 min si son moldes). Si las bayas estaban congeladas, sumar 10 minutos.",
+      "Servir caliente o a temperatura ambiente (opcional con helado)."
+    ],
+    "notes": [
+      "Fuente: notas personales (internet/YouTube/etc.)"
+    ],
+    "category": "snacks",
+    "tags": [
+      "fresh-ingredients",
+      "portable",
+      "sweet",
+      "complex-carbs",
+      "high-fiber",
+      "anti-inflammatory"
+    ],
+    "nutrition": {
+      "calories": 285,
+      "protein": 6,
+      "carbs": 42,
+      "fat": 12,
+      "fiber": 7
+    },
+    "timing": {
+      "bestConsumed": "2-3 hours before training or post-workout",
+      "digestionTime": 90,
+      "idealFor": [
+        "días de recuperación",
+        "días de entrenamiento suave",
+        "pre-long run fuel"
+      ]
+    },
+    "trainingPhase": [
+      "base",
+      "recovery"
+    ],
+    "prepTime": 45,
+    "servings": 8
+  },
+  {
+    "id": "recipe-099",
+    "title": "Macarrones de cacao y coco",
+    "ingredients": [
+      "7 onzas de coco seco rallado sin azúcar (2 1/4 a 3 tazas, depende de la marca)",
+      "1/4 de taza de cacao en polvo sin azúcar",
+      "1/4 cucharadita de sal marina fina",
+      "1/2 taza de jarabe de arce",
+      "2 cucharadas de aceite de coco virgen, derretido",
+      "2 cucharaditas de extracto de vainilla"
+    ],
+    "preparation": [
+      "Precaliente el horno a 325°F. Forre una bandeja con papel manteca.",
+      "En procesador o licuadora potente, pulse el coco hasta que tenga consistencia de arena gruesa.",
+      "Pase a un tazón y agregue cacao y sal.",
+      "Agregue jarabe de arce, aceite y vainilla; mezcle hasta combinar.",
+      "Presione porciones con una cuchara medidora y colóquelas sobre la bandeja.",
+      "Hornear 20 minutos, hasta que esté crujiente por fuera y suave por dentro.",
+      "Enfriar completamente antes de guardar en recipiente hermético."
+    ],
+    "notes": [
+      "Fuente: notas personales (internet/YouTube/etc.)"
+    ],
+    "category": "snacks",
+    "tags": [
+      "fresh-ingredients",
+      "portable",
+      "sweet",
+      "vegan"
+    ],
+    "nutrition": {
+      "calories": 145,
+      "protein": 2,
+      "carbs": 14,
+      "fat": 10,
+      "fiber": 3
+    },
+    "timing": {
+      "bestConsumed": "Cualquier momento como snack o 1-2 horas antes de entrenamiento suave",
+      "digestionTime": 60,
+      "idealFor": [
+        "picar entre comidas",
+        "combustible portátil",
+        "días de recuperación"
+      ]
+    },
+    "trainingPhase": [
+      "base",
+      "recovery"
+    ],
+    "prepTime": 35,
+    "servings": 18
+  }
+]

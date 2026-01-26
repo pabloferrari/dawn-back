@@ -1,0 +1,346 @@
+<!-- templates/athlete-cookbook/category-index.hbs -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    @page {
+      size: A4;
+      margin: 0;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html, body {
+      height: 297mm;
+      width: 210mm;
+      font-family: {{customization.fontFamily}};
+      color: #333;
+      line-height: 1.3;
+      overflow: hidden;
+    }
+
+    .page {
+      height: 297mm;
+      width: 210mm;
+      padding: 8mm 10mm;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Header */
+    .page-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 2px solid #1B5E3F;
+      padding-bottom: 3mm;
+      margin-bottom: 4mm;
+      flex-shrink: 0;
+    }
+
+    .header-logo {
+      height: 8mm;
+    }
+
+    .header-title {
+      display: flex;
+      align-items: center;
+      gap: 2mm;
+    }
+
+    .header-icon {
+      font-size: 18px;
+    }
+
+    .header-text {
+      font-size: 16px;
+      font-weight: 800;
+      color: #1B5E3F;
+    }
+
+    .header-count {
+      font-size: 10px;
+      color: #666;
+      background: #E8F5E9;
+      padding: 2px 8px;
+      border-radius: 10px;
+    }
+
+    /* Categories grid - 3 columns */
+    .categories-grid {
+      flex: 1;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 3mm;
+      overflow: hidden;
+    }
+
+    /* Category card */
+    .category-card {
+      background: #FAFAFA;
+      border-radius: 6px;
+      padding: 2.5mm;
+      border-left: 3px solid #1B5E3F;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    .category-header {
+      display: flex;
+      align-items: center;
+      gap: 2mm;
+      margin-bottom: 2mm;
+      padding-bottom: 1.5mm;
+      border-bottom: 1px solid #E0E0E0;
+      flex-shrink: 0;
+    }
+
+    .category-icon {
+      font-size: 14px;
+    }
+
+    .category-name {
+      font-size: 10px;
+      font-weight: 800;
+      flex: 1;
+    }
+
+    .category-count {
+      font-size: 8px;
+      color: #888;
+      background: white;
+      padding: 1px 5px;
+      border-radius: 8px;
+    }
+
+    /* Recipe list */
+    .recipe-list {
+      list-style: none;
+      overflow: hidden;
+      flex: 1;
+    }
+
+    .recipe-item {
+      font-size: 8px;
+      padding: 0.8mm 0;
+      display: flex;
+      align-items: baseline;
+      gap: 1.5mm;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .recipe-bullet {
+      color: #1B5E3F;
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+
+    .recipe-name {
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    /* Category colors */
+    .category-card[data-category="breakfast"] { border-color: #FF8F00; }
+    .category-card[data-category="breakfast"] .category-name { color: #E65100; }
+    .category-card[data-category="breakfast"] .recipe-bullet { color: #FF8F00; }
+
+    .category-card[data-category="lunch"] { border-color: #43A047; }
+    .category-card[data-category="lunch"] .category-name { color: #2E7D32; }
+    .category-card[data-category="lunch"] .recipe-bullet { color: #43A047; }
+
+    .category-card[data-category="dinner"] { border-color: #7E57C2; }
+    .category-card[data-category="dinner"] .category-name { color: #4527A0; }
+    .category-card[data-category="dinner"] .recipe-bullet { color: #7E57C2; }
+
+    .category-card[data-category="snacks"] { border-color: #EF6C00; }
+    .category-card[data-category="snacks"] .category-name { color: #D84315; }
+    .category-card[data-category="snacks"] .recipe-bullet { color: #EF6C00; }
+
+    .category-card[data-category="energy-bars"] { border-color: #A55EEA; }
+    .category-card[data-category="energy-bars"] .category-name { color: #7B1FA2; }
+    .category-card[data-category="energy-bars"] .recipe-bullet { color: #A55EEA; }
+
+    .category-card[data-category="pre-race"] { border-color: #FFE66D; }
+    .category-card[data-category="pre-race"] .category-name { color: #F9A825; }
+    .category-card[data-category="pre-race"] .recipe-bullet { color: #F9A825; }
+
+    .category-card[data-category="post-workout"] { border-color: #4ECDC4; }
+    .category-card[data-category="post-workout"] .category-name { color: #00897B; }
+    .category-card[data-category="post-workout"] .recipe-bullet { color: #4ECDC4; }
+
+    .category-card[data-category="hydration"] { border-color: #45AAF2; }
+    .category-card[data-category="hydration"] .category-name { color: #1976D2; }
+    .category-card[data-category="hydration"] .recipe-bullet { color: #45AAF2; }
+
+    .category-card[data-category="base"] { border-color: #8D6E63; }
+    .category-card[data-category="base"] .category-name { color: #5D4037; }
+    .category-card[data-category="base"] .recipe-bullet { color: #8D6E63; }
+
+    /* Special Recipes Section */
+    .special-section {
+      background: linear-gradient(135deg, #F5F5F5 0%, #EEEEEE 100%);
+      border-radius: 6px;
+      padding: 2.5mm 3mm;
+      border: 1px dashed #BDBDBD;
+    }
+
+    .special-header {
+      display: flex;
+      align-items: center;
+      gap: 2mm;
+      margin-bottom: 2mm;
+      padding-bottom: 1.5mm;
+      border-bottom: 1px solid #E0E0E0;
+    }
+
+    .special-icon {
+      font-size: 14px;
+    }
+
+    .special-title {
+      font-size: 10px;
+      font-weight: 800;
+      color: #555;
+    }
+
+    .special-list {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2mm;
+    }
+
+    .special-item {
+      display: flex;
+      align-items: center;
+      gap: 1.5mm;
+      font-size: 8px;
+      background: white;
+      padding: 1.5mm 2.5mm;
+      border-radius: 4px;
+      border: 1px solid #E0E0E0;
+    }
+
+    .special-badge {
+      font-size: 6px;
+      font-weight: 800;
+      padding: 0.5mm 2mm;
+      border-radius: 3px;
+      color: white;
+      text-transform: uppercase;
+      letter-spacing: 0.3px;
+    }
+
+    .special-name {
+      color: #333;
+    }
+
+    /* Footer stats */
+    .page-footer {
+      flex-shrink: 0;
+      margin-top: 3mm;
+      padding: 3mm;
+      background: linear-gradient(135deg, #E8F5E9 0%, #C8E6C9 100%);
+      border-radius: 6px;
+      display: flex;
+      justify-content: center;
+      gap: 8mm;
+    }
+
+    .stat-item {
+      text-align: center;
+    }
+
+    .stat-number {
+      font-size: 18px;
+      font-weight: 800;
+      color: #1B5E3F;
+    }
+
+    .stat-label {
+      font-size: 8px;
+      color: #555;
+      text-transform: uppercase;
+      letter-spacing: 0.3px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page">
+    <div class="page-header">
+      <img src="{{images.banner}}" alt="Fuel Like a Runner" class="header-logo">
+      <div class="header-title">
+        <span class="header-icon">📚</span>
+        <span class="header-text">Recipe Index</span>
+      </div>
+      <span class="header-count">{{totalRecipes}} recipes</span>
+    </div>
+
+    <div class="categories-grid">
+      {{#each categories}}
+      <div class="category-card" data-category="{{this.id}}">
+        <div class="category-header">
+          <span class="category-icon">{{this.icon}}</span>
+          <span class="category-name">{{this.name}}</span>
+          <span class="category-count">{{this.count}}</span>
+        </div>
+        <ul class="recipe-list">
+          {{#each this.recipes}}
+          <li class="recipe-item">
+            <span class="recipe-bullet">•</span>
+            <span class="recipe-name">{{this}}</span>
+          </li>
+          {{/each}}
+        </ul>
+      </div>
+      {{/each}}
+
+      {{#if hasSpecialRecipes}}
+      <div class="special-section">
+        <div class="special-header">
+          <span class="special-icon">⭐</span>
+          <span class="special-title">Special Purpose Recipes</span>
+        </div>
+        <ul class="special-list">
+          {{#each specialRecipes}}
+          <li class="special-item">
+            <span class="special-badge" style="background-color: {{this.color}}">{{this.categoryName}}</span>
+            <span class="special-name">{{this.title}}</span>
+          </li>
+          {{/each}}
+        </ul>
+      </div>
+      {{/if}}
+    </div>
+
+    <div class="page-footer">
+      <div class="stat-item">
+        <div class="stat-number">{{totalRecipes}}</div>
+        <div class="stat-label">Recipes</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">{{totalCategories}}</div>
+        <div class="stat-label">Categories</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">100%</div>
+        <div class="stat-label">Fresh Ingredients</div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

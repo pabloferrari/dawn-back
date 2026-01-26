@@ -1,6 +1,6 @@
 <!-- templates/budget-planner/starting-point.hbs -->
 <!DOCTYPE html>
-<html>
+<html lang="{{lang}}">
 
 <head>
   <style>
@@ -17,13 +17,13 @@
 
     .header {
       text-align: center;
-      margin-bottom: 15px;
+      margin-bottom: 12px;
       border-bottom: 3px solid {{customization.primaryColor}};
-      padding-bottom: 10px;
+      padding-bottom: 8px;
     }
 
     .title {
-      font-size: 26px;
+      font-size: 24px;
       color: {{customization.primaryColor}};
       margin-bottom: 5px;
     }
@@ -33,213 +33,271 @@
       color: #666;
     }
 
-    .intro {
-      background: #f8f9fa;
-      padding: 12px 15px;
-      border-radius: 8px;
-      margin-bottom: 15px;
-      font-size: 12px;
-      color: #555;
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+      margin-bottom: 12px;
     }
 
     .section {
-      margin-bottom: 15px;
+      margin-bottom: 12px;
     }
 
     .section-title {
-      font-size: 13px;
+      font-size: 12px;
       font-weight: bold;
       color: {{customization.primaryColor}};
-      margin-bottom: 8px;
-      display: flex;
-      align-items: center;
-      gap: 8px;
+      margin-bottom: 6px;
+      padding-bottom: 4px;
+      border-bottom: 2px solid {{customization.primaryColor}};
     }
 
-    .icon {
-      font-size: 16px;
+    .section-desc {
+      font-size: 10px;
+      color: #888;
+      margin-bottom: 8px;
     }
 
     .input-row {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 8px 12px;
-      background: white;
-      border: 1px solid #e0e0e0;
-      border-radius: 6px;
-      margin-bottom: 6px;
+      padding: 6px 10px;
+      background: #fafafa;
+      border-radius: 4px;
+      margin-bottom: 4px;
     }
 
     .input-label {
-      font-size: 12px;
+      font-size: 11px;
       color: #444;
     }
 
     .input-value {
-      font-size: 14px;
+      font-size: 11px;
       font-weight: bold;
-      color: {{customization.primaryColor}};
-      min-width: 100px;
+      min-width: 80px;
       text-align: right;
-      border-bottom: 2px dotted #ccc;
+      border-bottom: 1px dotted #999;
     }
 
-    .calculation-box {
-      background: linear-gradient(135deg, {{customization.primaryColor}}10, {{customization.secondaryColor}}10);
-      border: 2px solid {{customization.primaryColor}};
-      border-radius: 12px;
+    .total-row {
+      background: {{customization.primaryColor}}15;
+      border-left: 3px solid {{customization.primaryColor}};
+    }
+
+    .total-row .input-label {
+      font-weight: bold;
+    }
+
+    .debt-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 10px;
+    }
+
+    .debt-table th {
+      background: {{customization.primaryColor}};
+      color: white;
+      padding: 6px 4px;
+      text-align: left;
+      font-weight: 600;
+    }
+
+    .debt-table td {
+      padding: 6px 4px;
+      border-bottom: 1px solid #e0e0e0;
+    }
+
+    .debt-table tr:last-child {
+      background: #f5f5f5;
+      font-weight: bold;
+    }
+
+    .snapshot-box {
+      background: linear-gradient(135deg, {{customization.primaryColor}}, {{customization.secondaryColor}});
+      color: white;
       padding: 15px;
-      margin-top: 15px;
+      border-radius: 10px;
+      margin-top: 12px;
     }
 
-    .calc-title {
+    .snapshot-title {
       font-size: 14px;
       font-weight: bold;
-      color: {{customization.primaryColor}};
       text-align: center;
       margin-bottom: 12px;
     }
 
-    .calc-row {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 6px 0;
-      border-bottom: 1px solid #e0e0e0;
+    .snapshot-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 10px;
     }
 
-    .calc-row:last-child {
-      border-bottom: none;
-      padding-top: 10px;
-      margin-top: 6px;
-      border-top: 2px solid {{customization.primaryColor}};
+    .snapshot-item {
+      background: rgba(255,255,255,0.15);
+      padding: 10px;
+      border-radius: 8px;
+      text-align: center;
     }
 
-    .calc-label {
-      font-size: 12px;
+    .snapshot-label {
+      font-size: 10px;
+      opacity: 0.9;
+      margin-bottom: 5px;
     }
 
-    .calc-value {
+    .snapshot-value {
       font-size: 16px;
       font-weight: bold;
-      color: {{customization.primaryColor}};
-      min-width: 100px;
-      text-align: right;
-      border-bottom: 2px dotted #ccc;
-    }
-
-    .result-value {
-      font-size: 18px;
-      color: {{customization.primaryColor}};
-    }
-
-    .note {
-      margin-top: 15px;
-      padding: 10px 12px;
-      background: #fff3cd;
-      border-radius: 6px;
-      font-size: 11px;
-      color: #856404;
-    }
-
-    .note-title {
-      font-weight: bold;
-      margin-bottom: 3px;
-    }
-
-    .date-box {
-      margin-top: 12px;
-      text-align: right;
-      font-size: 12px;
-      color: #666;
     }
   </style>
 </head>
 
 <body>
   <div class="header">
-    <h1 class="title">Your Financial Starting Point</h1>
-    <p class="subtitle">Complete this page before you begin — it's your baseline for measuring progress</p>
+    <h1 class="title">{{t.startingPoint.title}}</h1>
+    <p class="subtitle">{{t.startingPoint.subtitle}}</p>
   </div>
 
-  <div class="intro">
-    <strong>Why this matters:</strong> You can't improve what you don't measure. Take 10 minutes to fill this out honestly.
-    Come back to this page in December to see how far you've come!
-  </div>
+  <div class="two-col">
+    <div class="section">
+      <div class="section-title">💵 {{t.startingPoint.monthlyIncomeTitle}}</div>
+      <div class="section-desc">{{t.startingPoint.monthlyIncomeDesc}}</div>
+      <div class="input-row">
+        <span class="input-label">{{t.startingPoint.primaryIncome}}</span>
+        <span class="input-value">$ _______</span>
+      </div>
+      <div class="input-row">
+        <span class="input-label">{{t.startingPoint.secondaryIncome}}</span>
+        <span class="input-value">$ _______</span>
+      </div>
+      <div class="input-row">
+        <span class="input-label">{{t.startingPoint.otherIncome}}</span>
+        <span class="input-value">$ _______</span>
+      </div>
+      <div class="input-row total-row">
+        <span class="input-label">{{t.startingPoint.totalMonthlyIncome}}</span>
+        <span class="input-value">$ _______</span>
+      </div>
+    </div>
 
-  <div class="section">
-    <div class="section-title"><span class="icon">💵</span> Monthly Income (after taxes)</div>
-    <div class="input-row">
-      <span class="input-label">Primary job / salary</span>
-      <span class="input-value">$ _______</span>
-    </div>
-    <div class="input-row">
-      <span class="input-label">Side income / freelance</span>
-      <span class="input-value">$ _______</span>
-    </div>
-    <div class="input-row">
-      <span class="input-label">Other income</span>
-      <span class="input-value">$ _______</span>
-    </div>
-    <div class="input-row" style="background: #f0f0f0;">
-      <span class="input-label"><strong>TOTAL MONTHLY INCOME</strong></span>
-      <span class="input-value">$ _______</span>
-    </div>
-  </div>
-
-  <div class="section">
-    <div class="section-title"><span class="icon">🏠</span> Monthly Fixed Expenses</div>
-    <div class="input-row">
-      <span class="input-label">Rent / Mortgage</span>
-      <span class="input-value">$ _______</span>
-    </div>
-    <div class="input-row">
-      <span class="input-label">Utilities (electric, water, gas, internet)</span>
-      <span class="input-value">$ _______</span>
-    </div>
-    <div class="input-row">
-      <span class="input-label">Transportation (car payment, insurance, gas)</span>
-      <span class="input-value">$ _______</span>
-    </div>
-    <div class="input-row">
-      <span class="input-label">Insurance (health, life, etc.)</span>
-      <span class="input-value">$ _______</span>
-    </div>
-    <div class="input-row">
-      <span class="input-label">Subscriptions & memberships</span>
-      <span class="input-value">$ _______</span>
-    </div>
-    <div class="input-row" style="background: #f0f0f0;">
-      <span class="input-label"><strong>TOTAL FIXED EXPENSES</strong></span>
-      <span class="input-value">$ _______</span>
-    </div>
-  </div>
-
-  <div class="calculation-box">
-    <div class="calc-title">📊 Your Net Worth Snapshot</div>
-    <div class="calc-row">
-      <span class="calc-label">Total Savings (all accounts)</span>
-      <span class="calc-value">$ _______</span>
-    </div>
-    <div class="calc-row">
-      <span class="calc-label">Total Debt (credit cards, loans, etc.)</span>
-      <span class="calc-value">$ _______</span>
-    </div>
-    <div class="calc-row">
-      <span class="calc-label"><strong>NET WORTH</strong> (Savings - Debt)</span>
-      <span class="calc-value result-value">$ _______</span>
+    <div class="section">
+      <div class="section-title">🏠 {{t.startingPoint.fixedExpensesTitle}}</div>
+      <div class="section-desc">{{t.startingPoint.fixedExpensesDesc}}</div>
+      <div class="input-row">
+        <span class="input-label">{{t.startingPoint.rentMortgage}}</span>
+        <span class="input-value">$ _______</span>
+      </div>
+      <div class="input-row">
+        <span class="input-label">{{t.startingPoint.utilities}}</span>
+        <span class="input-value">$ _______</span>
+      </div>
+      <div class="input-row">
+        <span class="input-label">{{t.startingPoint.insurance}}</span>
+        <span class="input-value">$ _______</span>
+      </div>
+      <div class="input-row">
+        <span class="input-label">{{t.startingPoint.carPayment}}</span>
+        <span class="input-value">$ _______</span>
+      </div>
+      <div class="input-row">
+        <span class="input-label">{{t.startingPoint.phoneInternet}}</span>
+        <span class="input-value">$ _______</span>
+      </div>
+      <div class="input-row">
+        <span class="input-label">{{t.startingPoint.subscriptions}}</span>
+        <span class="input-value">$ _______</span>
+      </div>
+      <div class="input-row total-row">
+        <span class="input-label">{{t.startingPoint.totalFixedExpenses}}</span>
+        <span class="input-value">$ _______</span>
+      </div>
     </div>
   </div>
 
-  <div class="note">
-    <div class="note-title">💡 Don't worry if your net worth is negative!</div>
-    Many people start there. What matters is the direction you're heading.
-    This number will improve as you follow your budget and pay down debt.
+  <div class="two-col">
+    <div class="section">
+      <div class="section-title">💰 {{t.startingPoint.currentSavingsTitle}}</div>
+      <div class="input-row">
+        <span class="input-label">{{t.startingPoint.emergencyFund}}</span>
+        <span class="input-value">$ _______</span>
+      </div>
+      <div class="input-row">
+        <span class="input-label">{{t.startingPoint.generalSavings}}</span>
+        <span class="input-value">$ _______</span>
+      </div>
+      <div class="input-row">
+        <span class="input-label">{{t.startingPoint.retirement}}</span>
+        <span class="input-value">$ _______</span>
+      </div>
+      <div class="input-row">
+        <span class="input-label">{{t.startingPoint.otherSavings}}</span>
+        <span class="input-value">$ _______</span>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">📋 {{t.startingPoint.currentDebtTitle}}</div>
+      <table class="debt-table">
+        <tr>
+          <th>{{t.startingPoint.debtType}}</th>
+          <th>{{t.startingPoint.debtBalance}}</th>
+          <th>{{t.startingPoint.debtMinPayment}}</th>
+          <th>{{t.startingPoint.debtInterest}}</th>
+        </tr>
+        <tr>
+          <td>{{t.startingPoint.creditCards}}</td>
+          <td>$</td>
+          <td>$</td>
+          <td>%</td>
+        </tr>
+        <tr>
+          <td>{{t.startingPoint.studentLoans}}</td>
+          <td>$</td>
+          <td>$</td>
+          <td>%</td>
+        </tr>
+        <tr>
+          <td>{{t.startingPoint.carLoan}}</td>
+          <td>$</td>
+          <td>$</td>
+          <td>%</td>
+        </tr>
+        <tr>
+          <td>{{t.startingPoint.otherDebt}}</td>
+          <td>$</td>
+          <td>$</td>
+          <td>%</td>
+        </tr>
+        <tr>
+          <td>{{t.startingPoint.totalDebt}}</td>
+          <td>$</td>
+          <td>$</td>
+          <td>-</td>
+        </tr>
+      </table>
+    </div>
   </div>
 
-  <div class="date-box">
-    Date completed: ____/____/{{year}}
+  <div class="snapshot-box">
+    <div class="snapshot-title">📊 {{t.startingPoint.snapshotTitle}}</div>
+    <div class="snapshot-grid">
+      <div class="snapshot-item">
+        <div class="snapshot-label">{{t.startingPoint.monthlyIncomeLabel}}</div>
+        <div class="snapshot-value">$ _______</div>
+      </div>
+      <div class="snapshot-item">
+        <div class="snapshot-label">{{t.startingPoint.fixedExpensesLabel}}</div>
+        <div class="snapshot-value">$ _______</div>
+      </div>
+      <div class="snapshot-item">
+        <div class="snapshot-label">{{t.startingPoint.moneyLeftOver}}</div>
+        <div class="snapshot-value">$ _______</div>
+      </div>
+    </div>
   </div>
 </body>
 

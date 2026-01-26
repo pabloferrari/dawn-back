@@ -1,6 +1,6 @@
 <!-- templates/budget-planner/monthly-budget.hbs -->
 <!DOCTYPE html>
-<html>
+<html lang="{{lang}}">
 
 <head>
   <style>
@@ -170,7 +170,14 @@
     .reflection-grid {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
-      gap: 8px;
+      gap: 6px;
+      margin-bottom: 6px;
+    }
+
+    .reflection-grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 6px;
     }
 
     .reflection-item {
@@ -179,15 +186,25 @@
 
     .reflection-label {
       color: #666;
-      margin-bottom: 3px;
+      margin-bottom: 2px;
     }
 
     .reflection-input {
       border: 1px solid #ddd;
       border-radius: 4px;
-      padding: 6px;
-      min-height: 35px;
+      padding: 5px;
+      min-height: 30px;
       background: white;
+    }
+
+    .reflection-highlight {
+      background: linear-gradient(135deg, {{customization.primaryColor}}10, {{customization.secondaryColor}}10);
+      border-color: {{customization.primaryColor}}40;
+    }
+
+    .reflection-highlight .reflection-label {
+      color: {{customization.primaryColor}};
+      font-weight: bold;
     }
 
     .tip-footer {
@@ -207,7 +224,7 @@
 
   <!-- Priorities Section -->
   <div class="priorities-box">
-    <div class="priorities-title">My 3 Priorities This Month</div>
+    <div class="priorities-title">{{t.monthlyBudget.prioritiesTitle}}</div>
     <div class="priorities-grid">
       <div class="priority-item">
         <span class="priority-num">1</span>
@@ -222,7 +239,7 @@
         <div class="priority-line"></div>
       </div>
       <div class="reduce-item">
-        <span style="color: {{customization.primaryColor}}; font-weight: bold;">One expense I'll reduce:</span>
+        <span style="color: {{customization.primaryColor}}; font-weight: bold;">{{t.monthlyBudget.reduceExpense}}</span>
         <div class="priority-line"></div>
       </div>
     </div>
@@ -230,12 +247,12 @@
 
   <!-- Income Section -->
   <div class="section">
-    <div class="section-title">INCOME</div>
+    <div class="section-title">{{t.monthlyBudget.income}}</div>
     <table>
       <tr>
-        <th>Source</th>
-        <th class="amount-col">Planned</th>
-        <th class="amount-col">Actual</th>
+        <th>{{t.monthlyBudget.source}}</th>
+        <th class="amount-col">{{t.monthlyBudget.planned}}</th>
+        <th class="amount-col">{{t.monthlyBudget.actual}}</th>
       </tr>
       {{#each incomeRows}}
       <tr>
@@ -245,7 +262,7 @@
       </tr>
       {{/each}}
       <tr class="total-row">
-        <td>TOTAL INCOME</td>
+        <td>{{t.monthlyBudget.totalIncome}}</td>
         <td class="amount-col">$</td>
         <td class="amount-col">$</td>
       </tr>
@@ -254,12 +271,12 @@
 
   <!-- Expenses Section -->
   <div class="section">
-    <div class="section-title">EXPENSES</div>
+    <div class="section-title">{{t.monthlyBudget.expenses}}</div>
     <table>
       <tr>
-        <th>Category</th>
-        <th class="amount-col">Planned</th>
-        <th class="amount-col">Actual</th>
+        <th>{{t.monthlyBudget.category}}</th>
+        <th class="amount-col">{{t.monthlyBudget.planned}}</th>
+        <th class="amount-col">{{t.monthlyBudget.actual}}</th>
       </tr>
       {{#each expenseCategories}}
       <tr>
@@ -269,7 +286,7 @@
       </tr>
       {{/each}}
       <tr class="total-row">
-        <td>TOTAL EXPENSES</td>
+        <td>{{t.monthlyBudget.totalExpenses}}</td>
         <td class="amount-col">$</td>
         <td class="amount-col">$</td>
       </tr>
@@ -279,33 +296,43 @@
   <!-- Summary -->
   <div class="summary-box">
     <div class="summary-item">
-      <div class="summary-label">Total Income</div>
+      <div class="summary-label">{{t.monthlyBudget.totalIncomeLabel}}</div>
       <div class="summary-value">$______</div>
     </div>
     <div class="summary-item">
-      <div class="summary-label">Total Expenses</div>
+      <div class="summary-label">{{t.monthlyBudget.totalExpensesLabel}}</div>
       <div class="summary-value">$______</div>
     </div>
     <div class="summary-item">
-      <div class="summary-label">Balance</div>
+      <div class="summary-label">{{t.monthlyBudget.balance}}</div>
       <div class="summary-value">$______</div>
     </div>
   </div>
 
   <!-- Monthly Reflection -->
   <div class="reflection-box">
-    <div class="reflection-title">End of Month Reflection</div>
+    <div class="reflection-title">{{t.monthlyBudget.reflectionTitle}}</div>
     <div class="reflection-grid">
       <div class="reflection-item">
-        <div class="reflection-label">What I did well:</div>
+        <div class="reflection-label">{{t.monthlyBudget.whatDidWell}}</div>
         <div class="reflection-input"></div>
       </div>
       <div class="reflection-item">
-        <div class="reflection-label">Where I overspent:</div>
+        <div class="reflection-label">{{t.monthlyBudget.whereOverspent}}</div>
         <div class="reflection-input"></div>
       </div>
       <div class="reflection-item">
-        <div class="reflection-label">What I'll change next month:</div>
+        <div class="reflection-label">{{t.monthlyBudget.whatChange}}</div>
+        <div class="reflection-input"></div>
+      </div>
+    </div>
+    <div class="reflection-grid-2">
+      <div class="reflection-item reflection-highlight">
+        <div class="reflection-label">{{t.monthlyBudget.smallWin}}</div>
+        <div class="reflection-input"></div>
+      </div>
+      <div class="reflection-item reflection-highlight">
+        <div class="reflection-label">{{t.monthlyBudget.habitFocus}}</div>
         <div class="reflection-input"></div>
       </div>
     </div>

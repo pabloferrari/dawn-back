@@ -1,6 +1,6 @@
 <!-- templates/budget-planner/how-to-use.hbs -->
 <!DOCTYPE html>
-<html>
+<html lang="{{lang}}">
 
 <head>
   <style>
@@ -33,317 +33,168 @@
       color: #666;
     }
 
-    .time-badge {
-      display: inline-block;
-      background: {{customization.primaryColor}};
-      color: white;
-      padding: 5px 15px;
-      border-radius: 15px;
-      font-size: 12px;
-      margin-bottom: 12px;
-    }
-
-    .section {
-      margin-bottom: 12px;
-    }
-
-    .section-title {
-      font-size: 14px;
-      font-weight: bold;
-      color: {{customization.primaryColor}};
-      margin-bottom: 8px;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-
-    .weekly-grid {
+    .steps-grid {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(5, 1fr);
       gap: 8px;
+      margin-bottom: 15px;
     }
 
-    .week-card {
+    .step-card {
       background: #f8f9fa;
       border-radius: 8px;
-      padding: 10px;
+      padding: 12px 8px;
       text-align: center;
       border-top: 3px solid {{customization.primaryColor}};
     }
 
-    .week-label {
-      font-size: 10px;
-      color: #666;
-      margin-bottom: 5px;
-    }
-
-    .week-task {
-      font-size: 11px;
-      font-weight: 500;
-      color: #333;
-      min-height: 36px;
+    .step-number {
+      width: 24px;
+      height: 24px;
+      background: {{customization.primaryColor}};
+      color: white;
+      border-radius: 50%;
       display: flex;
       align-items: center;
       justify-content: center;
+      font-weight: bold;
+      font-size: 12px;
+      margin: 0 auto 8px;
     }
 
-    .week-time {
-      font-size: 10px;
-      color: {{customization.secondaryColor}};
-      margin-top: 5px;
-    }
-
-    .checklist-box {
-      background: linear-gradient(135deg, {{customization.primaryColor}}10, {{customization.secondaryColor}}10);
-      border-radius: 10px;
-      padding: 12px;
-      margin-bottom: 12px;
-    }
-
-    .checklist-title {
-      font-size: 13px;
+    .step-title {
+      font-size: 11px;
       font-weight: bold;
       color: {{customization.primaryColor}};
+      margin-bottom: 5px;
+    }
+
+    .step-desc {
+      font-size: 10px;
+      color: #666;
+    }
+
+    .weekly-box {
+      background: linear-gradient(135deg, {{customization.primaryColor}}10, {{customization.secondaryColor}}10);
+      border-radius: 10px;
+      padding: 15px;
+      margin-bottom: 15px;
+    }
+
+    .weekly-title {
+      font-size: 14px;
+      font-weight: bold;
+      color: {{customization.primaryColor}};
+      margin-bottom: 8px;
+    }
+
+    .weekly-desc {
+      font-size: 11px;
+      color: #666;
       margin-bottom: 10px;
     }
 
-    .checklist-grid {
+    .weekly-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 6px;
+      gap: 8px;
     }
 
-    .check-item {
+    .weekly-item {
       display: flex;
       align-items: flex-start;
       gap: 8px;
-      padding: 6px 8px;
+      padding: 8px;
       background: white;
       border-radius: 6px;
     }
 
     .checkbox {
-      width: 16px;
-      height: 16px;
+      width: 14px;
+      height: 14px;
       border: 2px solid {{customization.primaryColor}};
       border-radius: 3px;
       flex-shrink: 0;
       margin-top: 1px;
     }
 
-    .check-text {
+    .weekly-text {
       font-size: 11px;
       color: #444;
     }
 
-    .monthly-section {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 12px;
-      margin-bottom: 12px;
-    }
-
-    .monthly-box {
-      border: 2px solid #e0e0e0;
-      border-radius: 10px;
-      padding: 12px;
-    }
-
-    .monthly-box.start {
-      border-color: #4caf50;
-      background: #e8f5e9;
-    }
-
-    .monthly-box.end {
-      border-color: #ff9800;
-      background: #fff3e0;
-    }
-
-    .monthly-title {
-      font-size: 12px;
-      font-weight: bold;
-      margin-bottom: 8px;
-      display: flex;
-      align-items: center;
-      gap: 6px;
-    }
-
-    .monthly-box.start .monthly-title { color: #2e7d32; }
-    .monthly-box.end .monthly-title { color: #ef6c00; }
-
-    .monthly-list {
-      font-size: 10px;
-      color: #555;
-      padding-left: 15px;
-      margin: 0;
-    }
-
-    .monthly-list li {
-      margin-bottom: 4px;
-    }
-
-    .tips-section {
+    .tip-box {
       background: #fff8e1;
-      border-radius: 10px;
-      padding: 12px;
+      border-left: 4px solid #ffc107;
+      padding: 15px;
+      border-radius: 0 10px 10px 0;
     }
 
-    .tips-title {
+    .tip-title {
       font-size: 13px;
       font-weight: bold;
       color: #f57c00;
-      margin-bottom: 10px;
-    }
-
-    .tips-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 10px;
-    }
-
-    .tip-card {
-      display: flex;
-      gap: 8px;
-      font-size: 10px;
-    }
-
-    .tip-icon {
-      font-size: 16px;
-      flex-shrink: 0;
+      margin-bottom: 8px;
     }
 
     .tip-text {
-      color: #555;
-    }
-
-    .tip-text strong {
-      color: #333;
-    }
-
-    .footer-quote {
-      margin-top: 12px;
-      text-align: center;
-      padding: 10px;
-      background: {{customization.primaryColor}};
-      color: white;
-      border-radius: 8px;
-      font-style: italic;
       font-size: 12px;
+      color: #555;
+      line-height: 1.6;
     }
   </style>
 </head>
 
 <body>
   <div class="header">
-    <h1 class="title">How to Use This Planner</h1>
-    <p class="subtitle">Your weekly routine for financial success</p>
+    <h1 class="title">{{t.howToUse.title}}</h1>
+    <p class="subtitle">{{t.howToUse.subtitle}}</p>
   </div>
 
-  <div style="text-align: center;">
-    <span class="time-badge">Just 15 minutes per week</span>
+  <div class="steps-grid">
+    <div class="step-card">
+      <div class="step-number">1</div>
+      <div class="step-title">{{t.howToUse.step1Title}}</div>
+      <div class="step-desc">{{t.howToUse.step1Desc}}</div>
+    </div>
+    <div class="step-card">
+      <div class="step-number">2</div>
+      <div class="step-title">{{t.howToUse.step2Title}}</div>
+      <div class="step-desc">{{t.howToUse.step2Desc}}</div>
+    </div>
+    <div class="step-card">
+      <div class="step-number">3</div>
+      <div class="step-title">{{t.howToUse.step3Title}}</div>
+      <div class="step-desc">{{t.howToUse.step3Desc}}</div>
+    </div>
+    <div class="step-card">
+      <div class="step-number">4</div>
+      <div class="step-title">{{t.howToUse.step4Title}}</div>
+      <div class="step-desc">{{t.howToUse.step4Desc}}</div>
+    </div>
+    <div class="step-card">
+      <div class="step-number">5</div>
+      <div class="step-title">{{t.howToUse.step5Title}}</div>
+      <div class="step-desc">{{t.howToUse.step5Desc}}</div>
+    </div>
   </div>
 
-  <div class="section">
-    <div class="section-title">Your Weekly Money Date</div>
+  <div class="weekly-box">
+    <div class="weekly-title">{{t.howToUse.weeklyRoutineTitle}}</div>
+    <div class="weekly-desc">{{t.howToUse.weeklyRoutineDesc}}</div>
     <div class="weekly-grid">
-      <div class="week-card">
-        <div class="week-label">Week 1</div>
-        <div class="week-task">Review last week's spending</div>
-        <div class="week-time">5 min</div>
+      {{#each t.howToUse.weeklyItems}}
+      <div class="weekly-item">
+        <div class="checkbox"></div>
+        <span class="weekly-text">{{this}}</span>
       </div>
-      <div class="week-card">
-        <div class="week-label">Week 2</div>
-        <div class="week-task">Update "Actual" column in budget</div>
-        <div class="week-time">5 min</div>
-      </div>
-      <div class="week-card">
-        <div class="week-label">Week 3</div>
-        <div class="week-task">Check savings goal progress</div>
-        <div class="week-time">3 min</div>
-      </div>
-      <div class="week-card">
-        <div class="week-label">Week 4</div>
-        <div class="week-task">Plan next month's adjustments</div>
-        <div class="week-time">5 min</div>
-      </div>
+      {{/each}}
     </div>
   </div>
 
-  <div class="checklist-box">
-    <div class="checklist-title">Weekly Check-In (pick a day and stick to it!)</div>
-    <div class="checklist-grid">
-      <div class="check-item">
-        <div class="checkbox"></div>
-        <span class="check-text">Review this week's expenses in tracker</span>
-      </div>
-      <div class="check-item">
-        <div class="checkbox"></div>
-        <span class="check-text">Update "Actual" amounts in budget</span>
-      </div>
-      <div class="check-item">
-        <div class="checkbox"></div>
-        <span class="check-text">Check if any bills are due this week</span>
-      </div>
-      <div class="check-item">
-        <div class="checkbox"></div>
-        <span class="check-text">Transfer money to savings (if able)</span>
-      </div>
-      <div class="check-item">
-        <div class="checkbox"></div>
-        <span class="check-text">Celebrate one small win this week!</span>
-      </div>
-      <div class="check-item">
-        <div class="checkbox"></div>
-        <span class="check-text">Set one intention for next week</span>
-      </div>
-    </div>
-  </div>
-
-  <div class="monthly-section">
-    <div class="monthly-box start">
-      <div class="monthly-title">Start of Month</div>
-      <ul class="monthly-list">
-        <li>Fill in "Planned" column for income & expenses</li>
-        <li>Write your 3 priorities for the month</li>
-        <li>Set a specific expense to reduce this month</li>
-        <li>Review subscriptions — cancel unused ones</li>
-      </ul>
-    </div>
-    <div class="monthly-box end">
-      <div class="monthly-title">End of Month</div>
-      <ul class="monthly-list">
-        <li>Complete the reflection box</li>
-        <li>Calculate total income vs expenses</li>
-        <li>Update savings goal progress bars</li>
-        <li>Carry lessons into next month's plan</li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="tips-section">
-    <div class="tips-title">Pro Tips for Success</div>
-    <div class="tips-grid">
-      <div class="tip-card">
-        <span class="tip-icon">📱</span>
-        <span class="tip-text"><strong>Set a recurring reminder</strong> — Same day, same time each week (Sunday evening works great)</span>
-      </div>
-      <div class="tip-card">
-        <span class="tip-icon">☕</span>
-        <span class="tip-text"><strong>Make it enjoyable</strong> — Grab a coffee, put on music. It's a date with your future self.</span>
-      </div>
-      <div class="tip-card">
-        <span class="tip-icon">✏️</span>
-        <span class="tip-text"><strong>Write in pencil</strong> — Plans change. That's okay. Erase and adjust.</span>
-      </div>
-      <div class="tip-card">
-        <span class="tip-icon">🎉</span>
-        <span class="tip-text"><strong>Celebrate small wins</strong> — Paid a bill on time? That counts. Saved $20? Victory.</span>
-      </div>
-    </div>
-  </div>
-
-  <div class="footer-quote">
-    "The best budget is one you'll actually use. Done is better than perfect."
+  <div class="tip-box">
+    <div class="tip-title">{{t.howToUse.tipTitle}}</div>
+    <div class="tip-text">{{t.howToUse.tipText}}</div>
   </div>
 </body>
 

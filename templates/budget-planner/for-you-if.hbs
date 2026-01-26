@@ -1,12 +1,12 @@
 <!-- templates/budget-planner/for-you-if.hbs -->
 <!DOCTYPE html>
-<html>
+<html lang="{{lang}}">
 
 <head>
   <style>
     @page {
       size: A4;
-      margin: 15mm;
+      margin: 12mm;
     }
 
     body {
@@ -17,175 +17,196 @@
 
     .header {
       text-align: center;
-      margin-bottom: 20px;
+      margin-bottom: 15px;
+      border-bottom: 3px solid {{customization.primaryColor}};
+      padding-bottom: 10px;
     }
 
     .title {
-      font-size: 28px;
+      font-size: 24px;
       color: {{customization.primaryColor}};
-      margin-bottom: 8px;
+      margin-bottom: 5px;
     }
 
     .subtitle {
-      font-size: 14px;
+      font-size: 12px;
       color: #666;
     }
 
-    .intro {
-      text-align: center;
-      font-size: 14px;
-      color: #555;
-      margin-bottom: 20px;
-      padding: 0 20px;
+    .checklist {
+      margin-bottom: 15px;
     }
 
-    .checklist {
-      max-width: 500px;
-      margin: 0 auto;
+    .check-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 8px;
     }
 
     .check-item {
       display: flex;
       align-items: flex-start;
-      margin-bottom: 12px;
-      padding: 10px 15px;
+      padding: 10px 12px;
       background: #f8f9fa;
       border-radius: 8px;
-      border-left: 4px solid {{customization.primaryColor}};
+      border-left: 3px solid {{customization.primaryColor}};
     }
 
     .checkbox {
-      width: 20px;
-      height: 20px;
+      width: 18px;
+      height: 18px;
       border: 2px solid {{customization.primaryColor}};
       border-radius: 4px;
-      margin-right: 12px;
+      margin-right: 10px;
       flex-shrink: 0;
-      margin-top: 2px;
+      margin-top: 1px;
     }
 
     .check-text {
-      font-size: 13px;
+      font-size: 12px;
       color: #444;
     }
 
-    .result-box {
-      margin-top: 20px;
-      padding: 20px;
-      background: linear-gradient(135deg, {{customization.primaryColor}}15, {{customization.secondaryColor}}15);
-      border-radius: 12px;
-      text-align: center;
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+      margin-bottom: 15px;
     }
 
-    .result-title {
-      font-size: 16px;
-      color: {{customization.primaryColor}};
-      margin-bottom: 10px;
-      font-weight: bold;
+    .not-about-box {
+      background: #ffebee;
+      border-radius: 10px;
+      padding: 15px;
     }
 
-    .result-text {
+    .not-about-box .box-title {
+      color: #c62828;
+    }
+
+    .is-about-box {
+      background: #e8f5e9;
+      border-radius: 10px;
+      padding: 15px;
+    }
+
+    .is-about-box .box-title {
+      color: #2e7d32;
+    }
+
+    .box-title {
       font-size: 13px;
-      color: #555;
-      line-height: 1.5;
-    }
-
-    .highlight {
-      color: {{customization.primaryColor}};
       font-weight: bold;
+      margin-bottom: 10px;
     }
 
-    .count-box {
-      margin-top: 20px;
+    .box-list {
+      font-size: 11px;
+      padding-left: 18px;
+      margin: 0;
+      color: #555;
+    }
+
+    .box-list li {
+      margin-bottom: 5px;
+    }
+
+    .promise-box {
+      background: linear-gradient(135deg, {{customization.primaryColor}}, {{customization.secondaryColor}});
+      color: white;
+      padding: 20px;
+      border-radius: 12px;
+      margin-top: 15px;
+    }
+
+    .promise-title {
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 12px;
       text-align: center;
     }
 
-    .count-label {
+    .promise-text {
       font-size: 12px;
-      color: #666;
-      margin-bottom: 8px;
+      line-height: 1.7;
+      text-align: center;
+      margin-bottom: 15px;
     }
 
-    .count-circles {
+    .signature-row {
       display: flex;
-      justify-content: center;
-      gap: 8px;
+      justify-content: space-around;
+      margin-top: 15px;
     }
 
-    .circle {
-      width: 32px;
-      height: 32px;
-      border: 2px solid {{customization.primaryColor}};
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 14px;
-      font-weight: bold;
-      color: {{customization.primaryColor}};
+    .signature-item {
+      text-align: center;
+    }
+
+    .signature-line {
+      width: 120px;
+      border-bottom: 2px solid rgba(255,255,255,0.5);
+      margin-bottom: 5px;
+      height: 25px;
+    }
+
+    .signature-label {
+      font-size: 10px;
+      opacity: 0.8;
     }
   </style>
 </head>
 
 <body>
   <div class="header">
-    <h1 class="title">This Planner Is For You If...</h1>
-    <p class="subtitle">Check all that apply to you</p>
+    <h1 class="title">{{t.forYouIf.title}}</h1>
+    <p class="subtitle">{{t.forYouIf.subtitle}}</p>
   </div>
-
-  <p class="intro">Be honest with yourself. The more boxes you check, the more this planner will help you transform your financial life.</p>
 
   <div class="checklist">
-    <div class="check-item">
-      <div class="checkbox"></div>
-      <span class="check-text">You've never made a formal budget before (or tried and gave up)</span>
-    </div>
-
-    <div class="check-item">
-      <div class="checkbox"></div>
-      <span class="check-text">You don't know exactly where your money goes each month</span>
-    </div>
-
-    <div class="check-item">
-      <div class="checkbox"></div>
-      <span class="check-text">You have debt and want a clear plan to pay it off</span>
-    </div>
-
-    <div class="check-item">
-      <div class="checkbox"></div>
-      <span class="check-text">You want to build an emergency fund but don't know how to start</span>
-    </div>
-
-    <div class="check-item">
-      <div class="checkbox"></div>
-      <span class="check-text">You prefer simplicity over complicated spreadsheets</span>
-    </div>
-
-    <div class="check-item">
-      <div class="checkbox"></div>
-      <span class="check-text">You're ready to take control of your financial future</span>
+    <div class="check-grid">
+      {{#each t.forYouIf.items}}
+      <div class="check-item">
+        <div class="checkbox"></div>
+        <span class="check-text">{{this}}</span>
+      </div>
+      {{/each}}
     </div>
   </div>
 
-  <div class="count-box">
-    <p class="count-label">How many did you check?</p>
-    <div class="count-circles">
-      <div class="circle">1</div>
-      <div class="circle">2</div>
-      <div class="circle">3</div>
-      <div class="circle">4</div>
-      <div class="circle">5</div>
-      <div class="circle">6</div>
+  <div class="two-col">
+    <div class="not-about-box">
+      <div class="box-title">{{t.forYouIf.notAbout}}</div>
+      <ul class="box-list">
+        {{#each t.forYouIf.notItems}}
+        <li>{{this}}</li>
+        {{/each}}
+      </ul>
+    </div>
+
+    <div class="is-about-box">
+      <div class="box-title">{{t.forYouIf.thisIsAbout}}</div>
+      <ul class="box-list">
+        {{#each t.forYouIf.isItems}}
+        <li>{{this}}</li>
+        {{/each}}
+      </ul>
     </div>
   </div>
 
-  <div class="result-box">
-    <p class="result-title">If you checked even ONE box...</p>
-    <p class="result-text">
-      You're in the right place. This planner was designed specifically for people like you.
-      No judgment, no complicated formulas — just a <span class="highlight">simple system</span>
-      that works. Let's make {{year}} the year you finally feel confident about money.
-    </p>
+  <div class="promise-box">
+    <div class="promise-title">{{t.forYouIf.promiseTitle}}</div>
+    <p class="promise-text">{{t.forYouIf.promiseText}}</p>
+    <div class="signature-row">
+      <div class="signature-item">
+        <div class="signature-line"></div>
+        <div class="signature-label">{{t.forYouIf.signatureLabel}}</div>
+      </div>
+      <div class="signature-item">
+        <div class="signature-line"></div>
+        <div class="signature-label">{{t.forYouIf.dateLabel}}</div>
+      </div>
+    </div>
   </div>
 </body>
 

@@ -1,0 +1,334 @@
+<!-- templates/athlete-cookbook/meal-planner.hbs -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    @page {
+      size: A4 landscape;
+      margin: 12mm;
+    }
+
+    body {
+      font-family: {{customization.fontFamily}};
+      color: #333;
+      line-height: 1.4;
+      margin: 0;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 15px;
+      padding-bottom: 10px;
+      border-bottom: 3px solid {{customization.primaryColor}};
+    }
+
+    .header-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    .header .icon {
+      font-size: 32px;
+    }
+
+    .title {
+      font-size: 24px;
+      color: {{customization.primaryColor}};
+      margin: 0;
+    }
+
+    .week-label {
+      font-size: 12px;
+      color: #888;
+      margin-top: 5px;
+    }
+
+    /* Planner grid */
+    .planner-grid {
+      display: grid;
+      grid-template-columns: 80px repeat(7, 1fr);
+      gap: 1px;
+      background: #DDD;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .grid-header {
+      background: {{customization.primaryColor}};
+      color: white;
+      padding: 8px;
+      text-align: center;
+      font-size: 11px;
+      font-weight: 700;
+    }
+
+    .grid-header.meal-type {
+      background: #555;
+      writing-mode: vertical-rl;
+      text-orientation: mixed;
+      transform: rotate(180deg);
+      font-size: 10px;
+    }
+
+    .day-header {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .day-name {
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .day-type {
+      font-size: 9px;
+      opacity: 0.85;
+      margin-top: 2px;
+    }
+
+    .meal-cell {
+      background: white;
+      padding: 6px;
+      min-height: 45px;
+    }
+
+    .meal-cell.training {
+      background: {{customization.primaryColor}}08;
+    }
+
+    .meal-cell.rest {
+      background: #F8F9FA;
+    }
+
+    .meal-slot {
+      font-size: 9px;
+      color: #666;
+      border: 1px dashed #DDD;
+      border-radius: 4px;
+      padding: 4px;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .meal-slot.filled {
+      border: 1px solid {{customization.secondaryColor}}50;
+      background: {{customization.secondaryColor}}10;
+      color: #444;
+    }
+
+    /* Legend */
+    .legend {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      margin-top: 15px;
+      padding: 10px;
+      background: #FAFAFA;
+      border-radius: 8px;
+    }
+
+    .legend-item {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 10px;
+      color: #666;
+    }
+
+    .legend-color {
+      width: 14px;
+      height: 14px;
+      border-radius: 3px;
+    }
+
+    /* Tips section */
+    .tips-row {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+      margin-top: 15px;
+    }
+
+    .tip-box {
+      background: linear-gradient(135deg, {{customization.primaryColor}}10 0%, {{customization.secondaryColor}}10 100%);
+      padding: 10px;
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    .tip-icon {
+      font-size: 20px;
+      margin-bottom: 5px;
+    }
+
+    .tip-title {
+      font-size: 10px;
+      font-weight: 700;
+      color: {{customization.primaryColor}};
+      margin-bottom: 3px;
+    }
+
+    .tip-text {
+      font-size: 9px;
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    <div class="header-content">
+      <span class="icon">📅</span>
+      <div>
+        <h1 class="title">Weekly Meal Planner</h1>
+        <p class="week-label">Week of: _______________</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="planner-grid">
+    <!-- Header row -->
+    <div class="grid-header"></div>
+    <div class="grid-header">
+      <div class="day-header">
+        <span class="day-name">Monday</span>
+        <span class="day-type">Training</span>
+      </div>
+    </div>
+    <div class="grid-header">
+      <div class="day-header">
+        <span class="day-name">Tuesday</span>
+        <span class="day-type">Training</span>
+      </div>
+    </div>
+    <div class="grid-header">
+      <div class="day-header">
+        <span class="day-name">Wednesday</span>
+        <span class="day-type">Recovery</span>
+      </div>
+    </div>
+    <div class="grid-header">
+      <div class="day-header">
+        <span class="day-name">Thursday</span>
+        <span class="day-type">Training</span>
+      </div>
+    </div>
+    <div class="grid-header">
+      <div class="day-header">
+        <span class="day-name">Friday</span>
+        <span class="day-type">Training</span>
+      </div>
+    </div>
+    <div class="grid-header">
+      <div class="day-header">
+        <span class="day-name">Saturday</span>
+        <span class="day-type">Long Run</span>
+      </div>
+    </div>
+    <div class="grid-header">
+      <div class="day-header">
+        <span class="day-name">Sunday</span>
+        <span class="day-type">Rest</span>
+      </div>
+    </div>
+
+    <!-- Breakfast row -->
+    <div class="grid-header meal-type">🌅 Breakfast</div>
+    <div class="meal-cell training"><div class="meal-slot"></div></div>
+    <div class="meal-cell training"><div class="meal-slot"></div></div>
+    <div class="meal-cell rest"><div class="meal-slot"></div></div>
+    <div class="meal-cell training"><div class="meal-slot"></div></div>
+    <div class="meal-cell training"><div class="meal-slot"></div></div>
+    <div class="meal-cell training"><div class="meal-slot"></div></div>
+    <div class="meal-cell rest"><div class="meal-slot"></div></div>
+
+    <!-- Pre-workout row -->
+    <div class="grid-header meal-type">⚡ Pre-Workout</div>
+    <div class="meal-cell training"><div class="meal-slot"></div></div>
+    <div class="meal-cell training"><div class="meal-slot"></div></div>
+    <div class="meal-cell rest"><div class="meal-slot">—</div></div>
+    <div class="meal-cell training"><div class="meal-slot"></div></div>
+    <div class="meal-cell training"><div class="meal-slot"></div></div>
+    <div class="meal-cell training"><div class="meal-slot"></div></div>
+    <div class="meal-cell rest"><div class="meal-slot">—</div></div>
+
+    <!-- Lunch row -->
+    <div class="grid-header meal-type">🥗 Lunch</div>
+    <div class="meal-cell training"><div class="meal-slot"></div></div>
+    <div class="meal-cell training"><div class="meal-slot"></div></div>
+    <div class="meal-cell rest"><div class="meal-slot"></div></div>
+    <div class="meal-cell training"><div class="meal-slot"></div></div>
+    <div class="meal-cell training"><div class="meal-slot"></div></div>
+    <div class="meal-cell training"><div class="meal-slot"></div></div>
+    <div class="meal-cell rest"><div class="meal-slot"></div></div>
+
+    <!-- Snack row -->
+    <div class="grid-header meal-type">🍪 Snack</div>
+    <div class="meal-cell training"><div class="meal-slot"></div></div>
+    <div class="meal-cell training"><div class="meal-slot"></div></div>
+    <div class="meal-cell rest"><div class="meal-slot"></div></div>
+    <div class="meal-cell training"><div class="meal-slot"></div></div>
+    <div class="meal-cell training"><div class="meal-slot"></div></div>
+    <div class="meal-cell training"><div class="meal-slot"></div></div>
+    <div class="meal-cell rest"><div class="meal-slot"></div></div>
+
+    <!-- Dinner row -->
+    <div class="grid-header meal-type">🍽️ Dinner</div>
+    <div class="meal-cell training"><div class="meal-slot"></div></div>
+    <div class="meal-cell training"><div class="meal-slot"></div></div>
+    <div class="meal-cell rest"><div class="meal-slot"></div></div>
+    <div class="meal-cell training"><div class="meal-slot"></div></div>
+    <div class="meal-cell training"><div class="meal-slot"></div></div>
+    <div class="meal-cell training"><div class="meal-slot"></div></div>
+    <div class="meal-cell rest"><div class="meal-slot"></div></div>
+  </div>
+
+  <div class="legend">
+    <div class="legend-item">
+      <div class="legend-color" style="background: {{customization.primaryColor}}15;"></div>
+      <span>Training Day</span>
+    </div>
+    <div class="legend-item">
+      <div class="legend-color" style="background: #F8F9FA;"></div>
+      <span>Recovery/Rest</span>
+    </div>
+    <div class="legend-item">
+      <div class="legend-color" style="background: {{customization.secondaryColor}}20; border: 1px solid {{customization.secondaryColor}}50;"></div>
+      <span>Filled Slot</span>
+    </div>
+  </div>
+
+  <div class="tips-row">
+    <div class="tip-box">
+      <div class="tip-icon">🌅</div>
+      <div class="tip-title">Training Days</div>
+      <div class="tip-text">Higher carbs, eat 2-3h before workout</div>
+    </div>
+    <div class="tip-box">
+      <div class="tip-icon">🌿</div>
+      <div class="tip-title">Recovery Days</div>
+      <div class="tip-text">Focus on protein & anti-inflammatory foods</div>
+    </div>
+    <div class="tip-box">
+      <div class="tip-icon">🏃</div>
+      <div class="tip-title">Long Run Day</div>
+      <div class="tip-text">Carb-load night before, light breakfast</div>
+    </div>
+    <div class="tip-box">
+      <div class="tip-icon">📝</div>
+      <div class="tip-title">Meal Prep</div>
+      <div class="tip-text">Batch cook on Sunday for the week ahead</div>
+    </div>
+  </div>
+</body>
+
+</html>

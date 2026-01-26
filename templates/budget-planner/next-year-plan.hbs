@@ -1,0 +1,265 @@
+<!-- templates/budget-planner/next-year-plan.hbs -->
+<!DOCTYPE html>
+<html lang="{{lang}}">
+
+<head>
+  <style>
+    @page {
+      size: A4;
+      margin: 12mm;
+    }
+
+    body {
+      font-family: {{customization.fontFamily}};
+      color: #333;
+      line-height: 1.4;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 15px;
+      border-bottom: 3px solid {{customization.primaryColor}};
+      padding-bottom: 10px;
+    }
+
+    .title {
+      font-size: 26px;
+      color: {{customization.primaryColor}};
+      margin-bottom: 5px;
+    }
+
+    .subtitle {
+      font-size: 12px;
+      color: #666;
+    }
+
+    .goals-section {
+      margin-bottom: 15px;
+    }
+
+    .section-title {
+      font-size: 14px;
+      font-weight: bold;
+      color: {{customization.primaryColor}};
+      margin-bottom: 10px;
+      padding-bottom: 5px;
+      border-bottom: 2px solid {{customization.primaryColor}}30;
+    }
+
+    .goals-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 12px;
+    }
+
+    .goal-card {
+      border: 2px solid {{customization.primaryColor}};
+      border-radius: 10px;
+      padding: 12px;
+      background: white;
+    }
+
+    .goal-icon {
+      width: 36px;
+      height: 36px;
+      background: linear-gradient(135deg, {{customization.primaryColor}}, {{customization.secondaryColor}});
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 16px;
+      margin: 0 auto 10px;
+    }
+
+    .goal-type {
+      font-size: 12px;
+      font-weight: bold;
+      color: {{customization.primaryColor}};
+      text-align: center;
+      margin-bottom: 8px;
+    }
+
+    .goal-input-group {
+      margin-bottom: 8px;
+    }
+
+    .goal-label {
+      font-size: 9px;
+      color: #888;
+      margin-bottom: 2px;
+    }
+
+    .goal-input {
+      border-bottom: 2px dotted #ccc;
+      min-height: 18px;
+      font-size: 11px;
+    }
+
+    .goal-amount {
+      font-size: 16px;
+      font-weight: bold;
+      color: {{customization.primaryColor}};
+      text-align: center;
+      border-bottom: 2px dotted {{customization.primaryColor}};
+      padding: 5px 0;
+    }
+
+    .reflection-section {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+      margin-bottom: 15px;
+    }
+
+    .reflection-box {
+      border-radius: 10px;
+      padding: 12px 15px;
+      background: #f5f5f5;
+    }
+
+    .reflection-title {
+      font-size: 13px;
+      font-weight: bold;
+      color: {{customization.primaryColor}};
+      margin-bottom: 10px;
+    }
+
+    .reflection-input {
+      border-bottom: 1px dotted #ccc;
+      min-height: 60px;
+      font-size: 11px;
+    }
+
+    .first-steps-box {
+      background: #e8f5e9;
+      border: 2px solid #4caf50;
+      border-radius: 10px;
+      padding: 15px;
+      margin-bottom: 15px;
+    }
+
+    .first-steps-title {
+      font-size: 14px;
+      font-weight: bold;
+      color: #2e7d32;
+      margin-bottom: 12px;
+    }
+
+    .steps-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+    }
+
+    .step-item {
+      background: white;
+      padding: 10px;
+      border-radius: 6px;
+    }
+
+    .step-num {
+      width: 24px;
+      height: 24px;
+      background: #4caf50;
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+
+    .step-input {
+      border-bottom: 1px dotted #ccc;
+      min-height: 30px;
+      font-size: 10px;
+    }
+
+    .one-word-box {
+      background: linear-gradient(135deg, {{customization.primaryColor}}, {{customization.secondaryColor}});
+      color: white;
+      padding: 20px;
+      border-radius: 12px;
+      text-align: center;
+    }
+
+    .one-word-title {
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+
+    .one-word-desc {
+      font-size: 12px;
+      opacity: 0.9;
+      margin-bottom: 15px;
+    }
+
+    .one-word-input {
+      background: rgba(255,255,255,0.2);
+      border-radius: 10px;
+      padding: 15px;
+      font-size: 24px;
+      font-weight: bold;
+      border-bottom: 3px dotted rgba(255,255,255,0.5);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    <h1 class="title">{{tt t.nextYearPlan.title nextYear=nextYear}}</h1>
+    <p class="subtitle">{{t.nextYearPlan.subtitle}}</p>
+  </div>
+
+  <div class="reflection-section">
+    <div class="reflection-box">
+      <div class="reflection-title">{{tt t.nextYearPlan.achievedTitle year=year}}</div>
+      <div class="reflection-input">{{t.nextYearPlan.achievedPrompt}}</div>
+    </div>
+    <div class="reflection-box">
+      <div class="reflection-title">{{t.nextYearPlan.learnedTitle}}</div>
+      <div class="reflection-input">{{t.nextYearPlan.learnedPrompt}}</div>
+    </div>
+  </div>
+
+  <div class="goals-section">
+    <div class="section-title">{{tt t.nextYearPlan.goalsTitle nextYear=nextYear}}</div>
+    <div class="goals-grid">
+      {{#times 3}}
+      <div class="goal-card">
+        <div class="goal-icon">{{this}}</div>
+        <div class="goal-type">{{../t.nextYearPlan.goalLabel}} {{this}}</div>
+        <div class="goal-amount">$__________</div>
+        <div class="goal-input-group">
+          <div class="goal-label">{{../t.nextYearPlan.whyLabel}}:</div>
+          <div class="goal-input"></div>
+        </div>
+      </div>
+      {{/times}}
+    </div>
+  </div>
+
+  <div class="first-steps-box">
+    <div class="first-steps-title">{{t.nextYearPlan.firstStepsTitle}}</div>
+    <div class="steps-grid">
+      {{#times 3}}
+      <div class="step-item">
+        <div class="step-num">{{this}}</div>
+        <div class="step-input"></div>
+      </div>
+      {{/times}}
+    </div>
+  </div>
+
+  <div class="one-word-box">
+    <div class="one-word-title">{{tt t.nextYearPlan.oneWordTitle nextYear=nextYear}}</div>
+    <div class="one-word-desc">{{t.nextYearPlan.oneWordDesc}}</div>
+    <div class="one-word-input"></div>
+  </div>
+</body>
+
+</html>

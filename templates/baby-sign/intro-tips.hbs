@@ -3,57 +3,164 @@
 <html>
 
 <head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
     @page {
       size: A4;
-      margin: 18mm;
+      margin: 15mm;
     }
 
     body {
       font-family: {{customization.fontFamily}};
       color: #333;
-      line-height: 1.6;
+      line-height: 1.5;
     }
 
     .header {
       text-align: center;
-      margin-bottom: 20px;
-      padding-bottom: 12px;
+      margin-bottom: 12px;
+      padding-bottom: 8px;
       border-bottom: 3px solid {{customization.primaryColor}};
     }
 
     .title {
-      font-size: 30px;
+      font-size: 26px;
       color: {{customization.primaryColor}};
       margin: 0;
     }
 
-    .icon {
-      font-size: 45px;
-      margin-bottom: 8px;
+    .header .icon {
+      font-size: 28px;
+      margin-bottom: 4px;
     }
 
-    .section {
-      margin-bottom: 20px;
+    /* Top sections in 2 columns */
+    .top-sections {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-bottom: 12px;
+    }
+
+    .positioning-box {
+      background: linear-gradient(135deg, #FFF5E6 0%, #FFE6F0 100%);
+      padding: 10px;
+      border-radius: 10px;
+    }
+
+    .positioning-box h3 {
+      font-size: 12px;
+      color: {{customization.primaryColor}};
+      margin: 0 0 8px 0;
+    }
+
+    .position-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .position-item {
+      background: white;
+      padding: 6px 8px;
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .position-item .emoji {
+      font-size: 16px;
+      flex-shrink: 0;
+    }
+
+    .position-item .text {
+      flex: 1;
+    }
+
+    .position-item .name {
+      font-size: 10px;
+      font-weight: bold;
+      color: {{customization.primaryColor}};
+    }
+
+    .position-item .desc {
+      font-size: 9px;
+      color: #666;
+    }
+
+    .checklist-box {
+      background: #F0F7FF;
+      padding: 10px;
+      border-radius: 10px;
+    }
+
+    .checklist-box h3 {
+      font-size: 12px;
+      color: {{customization.primaryColor}};
+      margin: 0 0 6px 0;
+    }
+
+    .checklist-box > p {
+      font-size: 9px;
+      margin: 0 0 6px 0;
+      color: #555;
+    }
+
+    .checklist {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .check-item {
+      background: white;
+      padding: 6px 8px;
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .check-item .icon {
+      font-size: 14px;
+      flex-shrink: 0;
+    }
+
+    .check-item .text {
+      flex: 1;
+    }
+
+    .check-item .label {
+      font-size: 10px;
+      font-weight: bold;
+      color: {{customization.primaryColor}};
+    }
+
+    .check-item .desc {
+      font-size: 9px;
+      color: #666;
     }
 
     .section-title {
-      font-size: 16px;
+      font-size: 14px;
       font-weight: bold;
       color: {{customization.primaryColor}};
-      margin-bottom: 12px;
-      padding-bottom: 5px;
+      margin-bottom: 10px;
+      padding-bottom: 4px;
       border-bottom: 2px solid #EEE;
     }
 
     .tips-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 10px;
+      gap: 8px;
     }
 
     .tip {
-      padding: 12px;
+      padding: 8px 10px;
       background: #FAFAFA;
       border-radius: 8px;
       border-left: 3px solid {{customization.primaryColor}};
@@ -62,135 +169,51 @@
     .tip-header {
       display: flex;
       align-items: center;
-      margin-bottom: 6px;
+      margin-bottom: 4px;
     }
 
     .tip-number {
-      width: 24px;
-      height: 24px;
+      width: 18px;
+      height: 18px;
       background: {{customization.primaryColor}};
       color: white;
       border-radius: 50%;
-      font-size: 12px;
+      font-size: 10px;
       font-weight: bold;
       display: flex;
       align-items: center;
       justify-content: center;
-      margin-right: 10px;
+      margin-right: 8px;
       flex-shrink: 0;
     }
 
     .tip-title {
-      font-size: 13px;
+      font-size: 11px;
       font-weight: bold;
       color: #333;
     }
 
     .tip p {
-      font-size: 11px;
+      font-size: 9px;
       margin: 0;
       color: #555;
-    }
-
-    .positioning-box {
-      background: linear-gradient(135deg, #FFF5E6 0%, #FFE6F0 100%);
-      padding: 15px;
-      border-radius: 10px;
-      margin-bottom: 20px;
-    }
-
-    .positioning-box h3 {
-      font-size: 14px;
-      color: {{customization.primaryColor}};
-      margin: 0 0 10px 0;
-    }
-
-    .position-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 10px;
-    }
-
-    .position-item {
-      background: white;
-      padding: 10px;
-      border-radius: 8px;
-      text-align: center;
-    }
-
-    .position-item .emoji {
-      font-size: 24px;
-      margin-bottom: 5px;
-    }
-
-    .position-item .name {
-      font-size: 11px;
-      font-weight: bold;
-      color: {{customization.primaryColor}};
-      margin-bottom: 4px;
-    }
-
-    .position-item .desc {
-      font-size: 10px;
-      color: #666;
-    }
-
-    .checklist-box {
-      background: #F0F7FF;
-      padding: 15px;
-      border-radius: 10px;
-      margin-bottom: 20px;
-    }
-
-    .checklist-box h3 {
-      font-size: 14px;
-      color: {{customization.primaryColor}};
-      margin: 0 0 10px 0;
-    }
-
-    .checklist-box p {
-      font-size: 12px;
-      margin: 0 0 8px 0;
-    }
-
-    .checklist {
-      display: flex;
-      gap: 15px;
-    }
-
-    .check-item {
-      flex: 1;
-      background: white;
-      padding: 10px;
-      border-radius: 6px;
-      text-align: center;
-    }
-
-    .check-item .icon {
-      font-size: 20px;
-      margin-bottom: 4px;
-    }
-
-    .check-item .label {
-      font-size: 11px;
-      font-weight: bold;
-      color: {{customization.primaryColor}};
-    }
-
-    .check-item .desc {
-      font-size: 10px;
-      color: #666;
-      margin-top: 3px;
+      line-height: 1.4;
     }
 
     .encouragement {
-      background: linear-gradient(135deg, {{customization.primaryColor}}15 0%, {{customization.secondaryColor}}15 100%);
-      padding: 15px;
+      background: linear-gradient(135deg, {{customization.primaryColor}} 0%, {{customization.secondaryColor}} 100%);
+      padding: 12px 15px;
       border-radius: 10px;
       text-align: center;
-      font-size: 13px;
-      color: #444;
-      margin-top: 15px;
+      font-size: 11px;
+      color: white;
+      margin-top: 12px;
+    }
+
+    .encouragement strong {
+      display: block;
+      font-size: 12px;
+      margin-bottom: 3px;
     }
   </style>
 </head>
@@ -201,120 +224,133 @@
     <h1 class="title">Tips for Success</h1>
   </div>
 
-  <div class="positioning-box">
-    <h3>👀 Best Positions for Signing</h3>
-    <div class="position-grid">
-      <div class="position-item">
-        <div class="emoji">👫</div>
-        <div class="name">Face to Face</div>
-        <div class="desc">The gold standard! Get down to their eye level when possible.</div>
+  <div class="top-sections">
+    <div class="positioning-box">
+      <h3>👀 Best Positions for Signing</h3>
+      <div class="position-grid">
+        <div class="position-item">
+          <span class="emoji">👫</span>
+          <div class="text">
+            <div class="name">Face to Face</div>
+            <div class="desc">Get down to their eye level when possible</div>
+          </div>
+        </div>
+        <div class="position-item">
+          <span class="emoji">🪞</span>
+          <div class="text">
+            <div class="name">In Front of Mirror</div>
+            <div class="desc">Baby sees both you and themselves signing</div>
+          </div>
+        </div>
+        <div class="position-item">
+          <span class="emoji">🧒</span>
+          <div class="text">
+            <div class="name">On Their Body</div>
+            <div class="desc">For EAT or BATH, sign on baby so they feel it</div>
+          </div>
+        </div>
       </div>
-      <div class="position-item">
-        <div class="emoji">🪞</div>
-        <div class="name">In Front of Mirror</div>
-        <div class="desc">Baby sees both you signing and themselves—great for learning!</div>
-      </div>
-      <div class="position-item">
-        <div class="emoji">🧒</div>
-        <div class="name">On Their Body</div>
-        <div class="desc">For signs like EAT or BATH, gently sign on baby so they feel it too.</div>
+    </div>
+
+    <div class="checklist-box">
+      <h3>✅ How to Know Baby is Really Signing</h3>
+      <p>Not sure if that movement was intentional? Look for:</p>
+      <div class="checklist">
+        <div class="check-item">
+          <span class="icon">🎯</span>
+          <div class="text">
+            <span class="label">Intentional</span>
+            <span class="desc"> — Used in the right context</span>
+          </div>
+        </div>
+        <div class="check-item">
+          <span class="icon">🆓</span>
+          <div class="text">
+            <span class="label">Independent</span>
+            <span class="desc"> — They initiate it on their own</span>
+          </div>
+        </div>
+        <div class="check-item">
+          <span class="icon">🔄</span>
+          <div class="text">
+            <span class="label">Consistent</span>
+            <span class="desc"> — Used repeatedly, not one-time</span>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 
-  <div class="checklist-box">
-    <h3>✅ How to Know Baby is Really Signing</h3>
-    <p>Not sure if that hand movement was intentional? Look for these three signs:</p>
-    <div class="checklist">
-      <div class="check-item">
-        <div class="icon">🎯</div>
-        <div class="label">Intentional</div>
-        <div class="desc">Used to express a real need in the right context</div>
+  <div class="section-title">🔑 Keys to Success</div>
+  <div class="tips-grid">
+    <div class="tip">
+      <div class="tip-header">
+        <div class="tip-number">1</div>
+        <div class="tip-title">Sign with the Action</div>
       </div>
-      <div class="check-item">
-        <div class="icon">🆓</div>
-        <div class="label">Independent</div>
-        <div class="desc">Not copying you—they initiate it on their own</div>
-      </div>
-      <div class="check-item">
-        <div class="icon">🔄</div>
-        <div class="label">Consistent</div>
-        <div class="desc">They use it repeatedly, not just a one-time thing</div>
-      </div>
+      <p>Sign during, before, or right after actions. "Time for BATH" as you turn on the water connects sign, word, and meaning.</p>
     </div>
-  </div>
 
-  <div class="section">
-    <div class="section-title">🔑 Keys to Success</div>
-    <div class="tips-grid">
-      <div class="tip">
-        <div class="tip-header">
-          <div class="tip-number">1</div>
-          <div class="tip-title">Sign with the Action</div>
-        </div>
-        <p>Always sign during, just before, or right after the action. "Time for BATH" as you turn on the water helps baby connect sign, word, and meaning.</p>
+    <div class="tip">
+      <div class="tip-header">
+        <div class="tip-number">2</div>
+        <div class="tip-title">Be Consistent</div>
       </div>
+      <p>Use the same sign every time. The more you sign throughout the day, the faster baby will sign back!</p>
+    </div>
 
-      <div class="tip">
-        <div class="tip-header">
-          <div class="tip-number">2</div>
-          <div class="tip-title">Be Consistent</div>
-        </div>
-        <p>Use the same sign every time. The more you sign throughout the day, the faster baby will sign back. Try placing reminder notes in key areas!</p>
+    <div class="tip">
+      <div class="tip-header">
+        <div class="tip-number">3</div>
+        <div class="tip-title">Repeat Naturally</div>
       </div>
+      <p>"We're going to BATH. Daddy's giving you a BATH." Repetition reinforces learning—just don't overdo it.</p>
+    </div>
 
-      <div class="tip">
-        <div class="tip-header">
-          <div class="tip-number">3</div>
-          <div class="tip-title">Repeat Naturally</div>
-        </div>
-        <p>"We're going to BATH. Daddy is giving you a BATH. All done with BATH!" Repetition during activities reinforces learning—just don't overdo it.</p>
+    <div class="tip">
+      <div class="tip-header">
+        <div class="tip-number">4</div>
+        <div class="tip-title">Make Eye Contact</div>
       </div>
+      <p>Signing requires visual attention. Try to be in baby's line of sight. If they're not looking, sign anyway!</p>
+    </div>
 
-      <div class="tip">
-        <div class="tip-header">
-          <div class="tip-number">4</div>
-          <div class="tip-title">Make Eye Contact</div>
-        </div>
-        <p>Unlike speech, signing requires visual attention. Try to be in baby's line of sight. But if they're not looking, sign anyway—you're building the habit!</p>
+    <div class="tip">
+      <div class="tip-header">
+        <div class="tip-number">5</div>
+        <div class="tip-title">Keep It Fun</div>
       </div>
+      <p>Babies learn through play! Use signs during songs, games, and storytime. Interest grows when it's enjoyable.</p>
+    </div>
 
-      <div class="tip">
-        <div class="tip-header">
-          <div class="tip-number">5</div>
-          <div class="tip-title">Keep It Fun</div>
-        </div>
-        <p>Babies learn through play, not memorization! Use signs during songs, games, and storytime. Their interest grows much faster when it's enjoyable.</p>
+    <div class="tip">
+      <div class="tip-header">
+        <div class="tip-number">6</div>
+        <div class="tip-title">Celebrate Every Attempt</div>
       </div>
+      <p>Baby's sign won't look perfect—that's okay! Respond enthusiastically to any approximation.</p>
+    </div>
 
-      <div class="tip">
-        <div class="tip-header">
-          <div class="tip-number">6</div>
-          <div class="tip-title">Celebrate Every Attempt</div>
-        </div>
-        <p>Baby's sign won't look perfect—and that's okay! Respond enthusiastically to any approximation. They'll refine it over time by watching you model it correctly.</p>
+    <div class="tip">
+      <div class="tip-header">
+        <div class="tip-number">7</div>
+        <div class="tip-title">Don't Stop When They Talk</div>
       </div>
+      <p>Keep signing after first words! Early speech is often unclear. Signs remain a valuable backup.</p>
+    </div>
 
-      <div class="tip">
-        <div class="tip-header">
-          <div class="tip-number">7</div>
-          <div class="tip-title">Don't Stop When They Talk</div>
-        </div>
-        <p>Keep signing even after first words appear! Early speech is often unclear. Signs remain a valuable backup that prevents frustration. Let them phase out signs naturally.</p>
+    <div class="tip">
+      <div class="tip-header">
+        <div class="tip-number">8</div>
+        <div class="tip-title">Get Everyone Involved</div>
       </div>
-
-      <div class="tip">
-        <div class="tip-header">
-          <div class="tip-number">8</div>
-          <div class="tip-title">Get Everyone Involved</div>
-        </div>
-        <p>Teach signs to partners, grandparents, caregivers, and siblings. The more people who sign with baby, the faster they'll learn and the more connected they'll feel.</p>
-      </div>
+      <p>Teach signs to partners, grandparents, and caregivers. More people signing = faster learning!</p>
     </div>
   </div>
 
   <div class="encouragement">
-    <strong>Remember:</strong> Every baby learns at their own pace. Some sign back in weeks, others take months. What matters is the connection you're building. You've got this! 🌟
+    <strong>Remember: Every baby learns at their own pace!</strong>
+    Some sign back in weeks, others take months. What matters is the connection you're building. You've got this! 🌟
   </div>
 </body>
 

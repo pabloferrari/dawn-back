@@ -1,0 +1,3348 @@
+{
+  "language": "en",
+  "total_items": 442,
+  "items": [
+    {
+      "item": "onion,",
+      "recipe_count": 11,
+      "recipes": [
+        "recipe-005",
+        "recipe-019",
+        "recipe-021",
+        "recipe-027",
+        "recipe-031",
+        "recipe-032",
+        "recipe-033",
+        "recipe-034",
+        "recipe-038",
+        "recipe-039",
+        "recipe-042"
+      ]
+    },
+    {
+      "item": "eggs",
+      "recipe_count": 11,
+      "recipes": [
+        "recipe-018",
+        "recipe-020",
+        "recipe-045",
+        "recipe-046",
+        "recipe-052",
+        "recipe-055",
+        "recipe-056",
+        "recipe-059",
+        "recipe-061",
+        "recipe-088",
+        "recipe-091"
+      ]
+    },
+    {
+      "item": "tomato,",
+      "recipe_count": 10,
+      "recipes": [
+        "recipe-004",
+        "recipe-007",
+        "recipe-010",
+        "recipe-012",
+        "recipe-019",
+        "recipe-027",
+        "recipe-030",
+        "recipe-032",
+        "recipe-039",
+        "recipe-074"
+      ]
+    },
+    {
+      "item": "red bell pepper,",
+      "recipe_count": 9,
+      "recipes": [
+        "recipe-005",
+        "recipe-010",
+        "recipe-019",
+        "recipe-027",
+        "recipe-030",
+        "recipe-031",
+        "recipe-033",
+        "recipe-038",
+        "recipe-041"
+      ]
+    },
+    {
+      "item": "seasonings",
+      "recipe_count": 9,
+      "recipes": [
+        "recipe-020",
+        "recipe-021",
+        "recipe-027",
+        "recipe-030",
+        "recipe-033",
+        "recipe-034",
+        "recipe-037",
+        "recipe-039",
+        "recipe-041"
+      ]
+    },
+    {
+      "item": "whole wheat flour",
+      "recipe_count": 9,
+      "recipes": [
+        "recipe-054",
+        "recipe-055",
+        "recipe-056",
+        "recipe-058",
+        "recipe-059",
+        "recipe-060",
+        "recipe-061",
+        "recipe-063",
+        "recipe-071"
+      ]
+    },
+    {
+      "item": "teaspoon fine sea salt",
+      "recipe_count": 9,
+      "recipes": [
+        "recipe-083",
+        "recipe-084",
+        "recipe-087",
+        "recipe-088",
+        "recipe-090",
+        "recipe-091",
+        "recipe-092",
+        "recipe-094",
+        "recipe-096"
+      ]
+    },
+    {
+      "item": "carrot, shredded",
+      "recipe_count": 7,
+      "recipes": [
+        "recipe-001",
+        "recipe-004",
+        "recipe-027",
+        "recipe-029",
+        "recipe-030",
+        "recipe-034",
+        "recipe-040"
+      ]
+    },
+    {
+      "item": "salt and pepper",
+      "recipe_count": 7,
+      "recipes": [
+        "recipe-010",
+        "recipe-012",
+        "recipe-022",
+        "recipe-023",
+        "recipe-025",
+        "recipe-026",
+        "recipe-044"
+      ]
+    },
+    {
+      "item": "teaspoon baking powder",
+      "recipe_count": 7,
+      "recipes": [
+        "recipe-050",
+        "recipe-057",
+        "recipe-060",
+        "recipe-062",
+        "recipe-071",
+        "recipe-075",
+        "recipe-096"
+      ]
+    },
+    {
+      "item": "packets stevia",
+      "recipe_count": 7,
+      "recipes": [
+        "recipe-053",
+        "recipe-054",
+        "recipe-055",
+        "recipe-056",
+        "recipe-058",
+        "recipe-069",
+        "recipe-071"
+      ]
+    },
+    {
+      "item": "carrot,",
+      "recipe_count": 6,
+      "recipes": [
+        "recipe-002",
+        "recipe-003",
+        "recipe-005",
+        "recipe-021",
+        "recipe-038",
+        "recipe-039"
+      ]
+    },
+    {
+      "item": "egg whites",
+      "recipe_count": 6,
+      "recipes": [
+        "recipe-029",
+        "recipe-032",
+        "recipe-033",
+        "recipe-049",
+        "recipe-057",
+        "recipe-065"
+      ]
+    },
+    {
+      "item": "teaspoon salt",
+      "recipe_count": 6,
+      "recipes": [
+        "recipe-035",
+        "recipe-047",
+        "recipe-048",
+        "recipe-053",
+        "recipe-056",
+        "recipe-079"
+      ]
+    },
+    {
+      "item": "egg",
+      "recipe_count": 6,
+      "recipes": [
+        "recipe-044",
+        "recipe-047",
+        "recipe-049",
+        "recipe-060",
+        "recipe-062",
+        "recipe-076"
+      ]
+    },
+    {
+      "item": "salt, pepper, olive oil, and vinegar",
+      "recipe_count": 5,
+      "recipes": [
+        "recipe-003",
+        "recipe-005",
+        "recipe-006",
+        "recipe-007",
+        "recipe-008"
+      ]
+    },
+    {
+      "item": "pinch of salt",
+      "recipe_count": 5,
+      "recipes": [
+        "recipe-014",
+        "recipe-052",
+        "recipe-054",
+        "recipe-060",
+        "recipe-061"
+      ]
+    },
+    {
+      "item": "all-purpose flour",
+      "recipe_count": 5,
+      "recipes": [
+        "recipe-044",
+        "recipe-051",
+        "recipe-054",
+        "recipe-056",
+        "recipe-091"
+      ]
+    },
+    {
+      "item": "oil",
+      "recipe_count": 5,
+      "recipes": [
+        "recipe-047",
+        "recipe-060",
+        "recipe-061",
+        "recipe-062",
+        "recipe-076"
+      ]
+    },
+    {
+      "item": "teaspoons baking powder",
+      "recipe_count": 5,
+      "recipes": [
+        "recipe-052",
+        "recipe-053",
+        "recipe-059",
+        "recipe-063",
+        "recipe-091"
+      ]
+    },
+    {
+      "item": "sugar",
+      "recipe_count": 5,
+      "recipes": [
+        "recipe-054",
+        "recipe-055",
+        "recipe-056",
+        "recipe-060",
+        "recipe-061"
+      ]
+    },
+    {
+      "item": "rolled oats",
+      "recipe_count": 5,
+      "recipes": [
+        "recipe-056",
+        "recipe-059",
+        "recipe-062",
+        "recipe-069",
+        "recipe-089"
+      ]
+    },
+    {
+      "item": "s vegetable broth",
+      "recipe_count": 4,
+      "recipes": [
+        "recipe-022",
+        "recipe-023",
+        "recipe-025",
+        "recipe-026"
+      ]
+    },
+    {
+      "item": "white onion, finely",
+      "recipe_count": 4,
+      "recipes": [
+        "recipe-022",
+        "recipe-023",
+        "recipe-025",
+        "recipe-026"
+      ]
+    },
+    {
+      "item": "s whole wheat flour",
+      "recipe_count": 4,
+      "recipes": [
+        "recipe-043",
+        "recipe-048",
+        "recipe-052",
+        "recipe-053"
+      ]
+    },
+    {
+      "item": "tablespoon baking powder",
+      "recipe_count": 4,
+      "recipes": [
+        "recipe-049",
+        "recipe-054",
+        "recipe-055",
+        "recipe-056"
+      ]
+    },
+    {
+      "item": "teaspoon baking soda",
+      "recipe_count": 4,
+      "recipes": [
+        "recipe-053",
+        "recipe-061",
+        "recipe-084",
+        "recipe-096"
+      ]
+    },
+    {
+      "item": "fl oil",
+      "recipe_count": 4,
+      "recipes": [
+        "recipe-054",
+        "recipe-055",
+        "recipe-056",
+        "recipe-063"
+      ]
+    },
+    {
+      "item": "teaspoon vanilla extract",
+      "recipe_count": 4,
+      "recipes": [
+        "recipe-060",
+        "recipe-084",
+        "recipe-091",
+        "recipe-096"
+      ]
+    },
+    {
+      "item": "teaspoon cinnamon",
+      "recipe_count": 4,
+      "recipes": [
+        "recipe-071",
+        "recipe-083",
+        "recipe-085",
+        "recipe-088"
+      ]
+    },
+    {
+      "item": "arugula",
+      "recipe_count": 3,
+      "recipes": [
+        "recipe-002",
+        "recipe-007",
+        "recipe-008"
+      ]
+    },
+    {
+      "item": "lentils",
+      "recipe_count": 3,
+      "recipes": [
+        "recipe-005",
+        "recipe-034",
+        "recipe-038"
+      ]
+    },
+    {
+      "item": "red cabbage, shredded",
+      "recipe_count": 3,
+      "recipes": [
+        "recipe-006",
+        "recipe-008",
+        "recipe-013"
+      ]
+    },
+    {
+      "item": "cherry tomatoes",
+      "recipe_count": 3,
+      "recipes": [
+        "recipe-006",
+        "recipe-008",
+        "recipe-042"
+      ]
+    },
+    {
+      "item": "parsley",
+      "recipe_count": 3,
+      "recipes": [
+        "recipe-010",
+        "recipe-012",
+        "recipe-066"
+      ]
+    },
+    {
+      "item": "tablespoon olive oil",
+      "recipe_count": 3,
+      "recipes": [
+        "recipe-014",
+        "recipe-087",
+        "recipe-095"
+      ]
+    },
+    {
+      "item": "een bell pepper,",
+      "recipe_count": 3,
+      "recipes": [
+        "recipe-019",
+        "recipe-031",
+        "recipe-038"
+      ]
+    },
+    {
+      "item": "arlic clove, minced",
+      "recipe_count": 3,
+      "recipes": [
+        "recipe-020",
+        "recipe-034",
+        "recipe-041"
+      ]
+    },
+    {
+      "item": "bell pepper,",
+      "recipe_count": 3,
+      "recipes": [
+        "recipe-021",
+        "recipe-034",
+        "recipe-039"
+      ]
+    },
+    {
+      "item": "eek,",
+      "recipe_count": 3,
+      "recipes": [
+        "recipe-021",
+        "recipe-025",
+        "recipe-030"
+      ]
+    },
+    {
+      "item": "tablespoon lemon juice",
+      "recipe_count": 3,
+      "recipes": [
+        "recipe-028",
+        "recipe-078",
+        "recipe-083"
+      ]
+    },
+    {
+      "item": "tablespoons rolled oats",
+      "recipe_count": 3,
+      "recipes": [
+        "recipe-028",
+        "recipe-065",
+        "recipe-077"
+      ]
+    },
+    {
+      "item": "water",
+      "recipe_count": 3,
+      "recipes": [
+        "recipe-033",
+        "recipe-036",
+        "recipe-086"
+      ]
+    },
+    {
+      "item": "s water",
+      "recipe_count": 3,
+      "recipes": [
+        "recipe-038",
+        "recipe-080",
+        "recipe-081"
+      ]
+    },
+    {
+      "item": "brown sugar",
+      "recipe_count": 3,
+      "recipes": [
+        "recipe-052",
+        "recipe-059",
+        "recipe-062"
+      ]
+    },
+    {
+      "item": "blueberries",
+      "recipe_count": 3,
+      "recipes": [
+        "recipe-053",
+        "recipe-091",
+        "recipe-095"
+      ]
+    },
+    {
+      "item": "vanilla extract",
+      "recipe_count": 3,
+      "recipes": [
+        "recipe-058",
+        "recipe-062",
+        "recipe-076"
+      ]
+    },
+    {
+      "item": "sunflower seeds",
+      "recipe_count": 3,
+      "recipes": [
+        "recipe-064",
+        "recipe-079",
+        "recipe-082"
+      ]
+    },
+    {
+      "item": "teaspoons cinnamon",
+      "recipe_count": 3,
+      "recipes": [
+        "recipe-084",
+        "recipe-089",
+        "recipe-092"
+      ]
+    },
+    {
+      "item": "salt, pepper, olive oil, and lemon juice",
+      "recipe_count": 2,
+      "recipes": [
+        "recipe-001",
+        "recipe-004"
+      ]
+    },
+    {
+      "item": "chickpeas",
+      "recipe_count": 2,
+      "recipes": [
+        "recipe-001",
+        "recipe-066"
+      ]
+    },
+    {
+      "item": "salt, pepper, and olive oil",
+      "recipe_count": 2,
+      "recipes": [
+        "recipe-002",
+        "recipe-013"
+      ]
+    },
+    {
+      "item": "tomatoes,",
+      "recipe_count": 2,
+      "recipes": [
+        "recipe-003",
+        "recipe-038"
+      ]
+    },
+    {
+      "item": "brown rice",
+      "recipe_count": 2,
+      "recipes": [
+        "recipe-005",
+        "recipe-041"
+      ]
+    },
+    {
+      "item": "spinach",
+      "recipe_count": 2,
+      "recipes": [
+        "recipe-005",
+        "recipe-023"
+      ]
+    },
+    {
+      "item": "cucumber,",
+      "recipe_count": 2,
+      "recipes": [
+        "recipe-007",
+        "recipe-010"
+      ]
+    },
+    {
+      "item": "tablespoon extra-virgin olive oil",
+      "recipe_count": 2,
+      "recipes": [
+        "recipe-010",
+        "recipe-066"
+      ]
+    },
+    {
+      "item": "juice of 1 lemon",
+      "recipe_count": 2,
+      "recipes": [
+        "recipe-010",
+        "recipe-066"
+      ]
+    },
+    {
+      "item": "cherry tomatoes, halved",
+      "recipe_count": 2,
+      "recipes": [
+        "recipe-011",
+        "recipe-013"
+      ]
+    },
+    {
+      "item": "1/2 cups whole wheat flour",
+      "recipe_count": 2,
+      "recipes": [
+        "recipe-014",
+        "recipe-062"
+      ]
+    },
+    {
+      "item": "warm water as needed",
+      "recipe_count": 2,
+      "recipes": [
+        "recipe-014",
+        "recipe-051"
+      ]
+    },
+    {
+      "item": "filling: 1 onion,",
+      "recipe_count": 2,
+      "recipes": [
+        "recipe-017",
+        "recipe-024"
+      ]
+    },
+    {
+      "item": "filling: seasonings",
+      "recipe_count": 2,
+      "recipes": [
+        "recipe-017",
+        "recipe-024"
+      ]
+    },
+    {
+      "item": "(5 ) tuna in water, drained",
+      "recipe_count": 2,
+      "recipes": [
+        "recipe-019",
+        "recipe-028"
+      ]
+    },
+    {
+      "item": "tablespoons light cream cheese",
+      "recipe_count": 2,
+      "recipes": [
+        "recipe-020",
+        "recipe-049"
+      ]
+    },
+    {
+      "item": "quinoa",
+      "recipe_count": 2,
+      "recipes": [
+        "recipe-021",
+        "recipe-032"
+      ],
+      "images": ["assets/athlete-cookbook/quinoa.png"],
+      "preparation": [
+        "Quinoa cannot be cooked in its natural state because it contains saponins, which can be toxic.",
+        "Step 1: Place quinoa in a bowl, cover with hot water, stir, and let rest for a few minutes covered with a cloth.",
+        "Step 2: Drain the quinoa to remove the water.",
+        "Step 3: Rinse again with cold water, rubbing with your hands to remove any remaining dirt or saponins.",
+        "Step 4: Drain and cook in a pot over medium heat for 15–20 minutes until tender."
+      ]
+    },
+    {
+      "item": "arlic cloves, crushed",
+      "recipe_count": 2,
+      "recipes": [
+        "recipe-022",
+        "recipe-023"
+      ]
+    },
+    {
+      "item": "arlic cloves, minced",
+      "recipe_count": 2,
+      "recipes": [
+        "recipe-026",
+        "recipe-038"
+      ]
+    },
+    {
+      "item": "egg white",
+      "recipe_count": 2,
+      "recipes": [
+        "recipe-028",
+        "recipe-034"
+      ]
+    },
+    {
+      "item": "onion, and sautéed",
+      "recipe_count": 2,
+      "recipes": [
+        "recipe-029",
+        "recipe-040"
+      ]
+    },
+    {
+      "item": "een onions,",
+      "recipe_count": 2,
+      "recipes": [
+        "recipe-031",
+        "recipe-041"
+      ]
+    },
+    {
+      "item": ": walnuts",
+      "recipe_count": 2,
+      "recipes": [
+        "recipe-031",
+        "recipe-075"
+      ]
+    },
+    {
+      "item": "minced garlic",
+      "recipe_count": 2,
+      "recipes": [
+        "recipe-032",
+        "recipe-040"
+      ]
+    },
+    {
+      "item": "tomato sauce",
+      "recipe_count": 2,
+      "recipes": [
+        "recipe-032",
+        "recipe-040"
+      ]
+    },
+    {
+      "item": "tablespoons olive oil",
+      "recipe_count": 2,
+      "recipes": [
+        "recipe-033",
+        "recipe-051"
+      ]
+    },
+    {
+      "item": "packet active dry yeast",
+      "recipe_count": 2,
+      "recipes": [
+        "recipe-043",
+        "recipe-048"
+      ]
+    },
+    {
+      "item": "tablespoon oil",
+      "recipe_count": 2,
+      "recipes": [
+        "recipe-044",
+        "recipe-057"
+      ]
+    },
+    {
+      "item": "salt, pepper, and nutmeg",
+      "recipe_count": 2,
+      "recipes": [
+        "recipe-045",
+        "recipe-046"
+      ]
+    },
+    {
+      "item": "bs potatoes",
+      "recipe_count": 2,
+      "recipes": [
+        "recipe-045",
+        "recipe-046"
+      ]
+    },
+    {
+      "item": "teaspoon turmeric",
+      "recipe_count": 2,
+      "recipes": [
+        "recipe-050",
+        "recipe-094"
+      ]
+    },
+    {
+      "item": "fl sunflower oil",
+      "recipe_count": 2,
+      "recipes": [
+        "recipe-053",
+        "recipe-059"
+      ]
+    },
+    {
+      "item": "cornstarch",
+      "recipe_count": 2,
+      "recipes": [
+        "recipe-059",
+        "recipe-071"
+      ]
+    },
+    {
+      "item": "almonds",
+      "recipe_count": 2,
+      "recipes": [
+        "recipe-059",
+        "recipe-089"
+      ]
+    },
+    {
+      "item": "bananas, mashed",
+      "recipe_count": 2,
+      "recipes": [
+        "recipe-062",
+        "recipe-064"
+      ]
+    },
+    {
+      "item": "walnuts,",
+      "recipe_count": 2,
+      "recipes": [
+        "recipe-062",
+        "recipe-090"
+      ]
+    },
+    {
+      "item": "self-rising flour",
+      "recipe_count": 2,
+      "recipes": [
+        "recipe-063",
+        "recipe-076"
+      ]
+    },
+    {
+      "item": "topping: granola",
+      "recipe_count": 2,
+      "recipes": [
+        "recipe-068",
+        "recipe-070"
+      ]
+    },
+    {
+      "item": "topping: shredded coconut",
+      "recipe_count": 2,
+      "recipes": [
+        "recipe-068",
+        "recipe-070"
+      ]
+    },
+    {
+      "item": "s bread",
+      "recipe_count": 2,
+      "recipes": [
+        "recipe-072",
+        "recipe-073"
+      ]
+    },
+    {
+      "item": "eggs,",
+      "recipe_count": 2,
+      "recipes": [
+        "recipe-084",
+        "recipe-087"
+      ]
+    },
+    {
+      "item": "old-fashioned rolled oats (gluten-free if sensitive)",
+      "recipe_count": 2,
+      "recipes": [
+        "recipe-084",
+        "recipe-085"
+      ]
+    },
+    {
+      "item": "teaspoon freshly black pepper",
+      "recipe_count": 2,
+      "recipes": [
+        "recipe-087",
+        "recipe-095"
+      ]
+    },
+    {
+      "item": "tablespoons butter",
+      "recipe_count": 2,
+      "recipes": [
+        "recipe-088",
+        "recipe-092"
+      ]
+    },
+    {
+      "item": "tablespoons honey",
+      "recipe_count": 2,
+      "recipes": [
+        "recipe-092",
+        "recipe-094"
+      ]
+    },
+    {
+      "item": "lettuce leaves",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-001"
+      ]
+    },
+    {
+      "item": "arge tomato,",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-001"
+      ]
+    },
+    {
+      "item": "bunch arugula",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-001"
+      ]
+    },
+    {
+      "item": "red onion, thinly",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-001"
+      ]
+    },
+    {
+      "item": "radishes",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-002"
+      ]
+    },
+    {
+      "item": "light semi-soft cheese, cubed (port salut or similar)",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-002"
+      ]
+    },
+    {
+      "item": "juice of 2 lemons",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-002"
+      ]
+    },
+    {
+      "item": "red onion,",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-003"
+      ]
+    },
+    {
+      "item": "potato, and",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-003"
+      ]
+    },
+    {
+      "item": "cucumber, into rounds",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-003"
+      ]
+    },
+    {
+      "item": "head green lettuce",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-004"
+      ]
+    },
+    {
+      "item": "head red lettuce",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-004"
+      ]
+    },
+    {
+      "item": "tuna fillet, , or 1 can (5 ) tuna in water, drained",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-004"
+      ]
+    },
+    {
+      "item": "(7 ) corn kernels, drained",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-006"
+      ]
+    },
+    {
+      "item": "hard- eggs,",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-006"
+      ]
+    },
+    {
+      "item": "(15 ) peas, drained",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-006"
+      ]
+    },
+    {
+      "item": "pasta (rotini or fusilli)",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-007"
+      ]
+    },
+    {
+      "item": "broccoli, steamed",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-008"
+      ]
+    },
+    {
+      "item": "(7 ) corn kernels",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-010"
+      ]
+    },
+    {
+      "item": "carrot, and shredded",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-010"
+      ]
+    },
+    {
+      "item": "–2 cups shredded cabbage",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-010"
+      ]
+    },
+    {
+      "item": "s quinoa",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-010"
+      ]
+    },
+    {
+      "item": "olive oil and seasonings",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-011"
+      ]
+    },
+    {
+      "item": "mixed greens",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-011"
+      ]
+    },
+    {
+      "item": "lentil sprouts ()",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-011"
+      ]
+    },
+    {
+      "item": "adzuki beans",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-011"
+      ]
+    },
+    {
+      "item": "tablespoons extra-virgin olive oil",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-012"
+      ]
+    },
+    {
+      "item": "een onion, finely",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-012"
+      ]
+    },
+    {
+      "item": "bulgur wheat,",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-012"
+      ]
+    },
+    {
+      "item": "lemon juice",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-012"
+      ]
+    },
+    {
+      "item": "white onion,",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-013"
+      ]
+    },
+    {
+      "item": "avocado, thinly",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-013"
+      ]
+    },
+    {
+      "item": "carrot, julienned",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-013"
+      ]
+    },
+    {
+      "item": "lettuce, thinly",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-013"
+      ]
+    },
+    {
+      "item": "filling: 2 teaspoons sesame seeds",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-015"
+      ]
+    },
+    {
+      "item": "filling: 1 red onion,",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-015"
+      ]
+    },
+    {
+      "item": "filling: 1 cup broccoli florets",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-015"
+      ]
+    },
+    {
+      "item": "filling: 1 egg,",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-015"
+      ]
+    },
+    {
+      "item": "filling: 1 tablespoon thyme",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-015"
+      ]
+    },
+    {
+      "item": "filling: 1 tablespoon curry powder",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-015"
+      ]
+    },
+    {
+      "item": "filling: 1/2 cup semi-soft cheese, cubed",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-015"
+      ]
+    },
+    {
+      "item": "filling: 1 cup pumpkin or butternut squash,",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-015"
+      ]
+    },
+    {
+      "item": "filling: 2 eggplants",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-016"
+      ]
+    },
+    {
+      "item": "filling: 2 zucchini",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-016"
+      ]
+    },
+    {
+      "item": "filling: 2 roma tomatoes",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-016"
+      ]
+    },
+    {
+      "item": "filling: 2 onions",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-016"
+      ]
+    },
+    {
+      "item": "filling: black pepper and salt",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-016"
+      ]
+    },
+    {
+      "item": "filling: 1/2 green bell pepper",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-016"
+      ]
+    },
+    {
+      "item": "filling: 1/2 yellow bell pepper",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-016"
+      ]
+    },
+    {
+      "item": "filling: 2 sprigs thyme",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-016"
+      ]
+    },
+    {
+      "item": "filling: 2 sprigs parsley",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-016"
+      ]
+    },
+    {
+      "item": "filling: 2 garlic cloves",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-016"
+      ]
+    },
+    {
+      "item": "filling: 1/2 red bell pepper",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-016"
+      ]
+    },
+    {
+      "item": "filling: 3 eggs",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-017"
+      ]
+    },
+    {
+      "item": "filling: 10.5 spinach",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-017"
+      ]
+    },
+    {
+      "item": "crust: 2 tablespoons cornstarch",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-017"
+      ]
+    },
+    {
+      "item": "crust: 3.5 carrot, shredded",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-017"
+      ]
+    },
+    {
+      "item": "filling: 1 teaspoon oil",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-017"
+      ]
+    },
+    {
+      "item": "crust: 1 egg",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-017"
+      ]
+    },
+    {
+      "item": "filling: 1.7 skim milk",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-017"
+      ]
+    },
+    {
+      "item": "filling: 1.7 cream cheese",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-017"
+      ]
+    },
+    {
+      "item": "crust: 1.6 lbs pumpkin or butternut squash",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-017"
+      ]
+    },
+    {
+      "item": "crust: seasonings",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-017"
+      ]
+    },
+    {
+      "item": "low-fat ricotta",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-018"
+      ]
+    },
+    {
+      "item": "tablespoons grated cheese",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-018"
+      ]
+    },
+    {
+      "item": "pinch of nutmeg",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-018"
+      ]
+    },
+    {
+      "item": "pinch of black pepper",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-018"
+      ]
+    },
+    {
+      "item": "spinach, drained and",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-018"
+      ]
+    },
+    {
+      "item": "whole wheat pie crust (from cookbook)",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-018"
+      ]
+    },
+    {
+      "item": "whole wheat crust (from cookbook)",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-019"
+      ]
+    },
+    {
+      "item": "roma tomatoes, finely",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-020"
+      ]
+    },
+    {
+      "item": "onion, into rings",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-020"
+      ]
+    },
+    {
+      "item": "eggplants,",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-020"
+      ]
+    },
+    {
+      "item": "water or vegetable broth",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-021"
+      ]
+    },
+    {
+      "item": "celery stalks,",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-021"
+      ]
+    },
+    {
+      "item": "teaspoon cumin",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-022"
+      ]
+    },
+    {
+      "item": "arge pumpkin or butternut squash, , seeded, and cubed",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-022"
+      ]
+    },
+    {
+      "item": "tomatoes, and",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-022"
+      ]
+    },
+    {
+      "item": "head broccoli,",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-023"
+      ]
+    },
+    {
+      "item": "filling: 2 eggs,",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-024"
+      ]
+    },
+    {
+      "item": "filling: 1/2 red bell pepper,",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-024"
+      ]
+    },
+    {
+      "item": "filling: seeds",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-024"
+      ]
+    },
+    {
+      "item": "filling: 7 low-fat ricotta",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-024"
+      ]
+    },
+    {
+      "item": "filling: 4 zucchini,",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-024"
+      ]
+    },
+    {
+      "item": "carrots, and",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-025"
+      ]
+    },
+    {
+      "item": "s (15 each) peas, drained",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-026"
+      ]
+    },
+    {
+      "item": "chicken breast (1 serving)",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-027"
+      ]
+    },
+    {
+      "item": "fl milk",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-027"
+      ]
+    },
+    {
+      "item": "pumpkin or butternut squash ()",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-027"
+      ]
+    },
+    {
+      "item": "teaspoon mustard",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-028"
+      ]
+    },
+    {
+      "item": "teaspoon parsley",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-028"
+      ]
+    },
+    {
+      "item": "onion, sautéed and",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-028"
+      ]
+    },
+    {
+      "item": "bs lean beef",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-029"
+      ]
+    },
+    {
+      "item": "rolled oats or whole wheat breadcrumbs as needed",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-029"
+      ]
+    },
+    {
+      "item": "bell pepper, and sautéed",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-029"
+      ]
+    },
+    {
+      "item": "fish fillet (cod, tilapia, or similar)",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-030"
+      ]
+    },
+    {
+      "item": "onion, finely",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-030"
+      ]
+    },
+    {
+      "item": "green beans, halved",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-030"
+      ]
+    },
+    {
+      "item": "mushrooms",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-030"
+      ]
+    },
+    {
+      "item": "bean sprouts",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-031"
+      ]
+    },
+    {
+      "item": "chicken breasts,",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-031"
+      ]
+    },
+    {
+      "item": "tablespoons soy sauce",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-031"
+      ]
+    },
+    {
+      "item": "zucchini,",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-031"
+      ]
+    },
+    {
+      "item": "mushrooms,",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-031"
+      ]
+    },
+    {
+      "item": "carrots,",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-031"
+      ]
+    },
+    {
+      "item": "oregano and basil",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-032"
+      ]
+    },
+    {
+      "item": "tablespoon paprika",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-032"
+      ]
+    },
+    {
+      "item": "olive oil",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-032"
+      ]
+    },
+    {
+      "item": "light semi-soft cheese, cubed",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-032"
+      ]
+    },
+    {
+      "item": "dry quinoa",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-033"
+      ]
+    },
+    {
+      "item": "lentils (well drained)",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-033"
+      ]
+    },
+    {
+      "item": "breadcrumbs as needed",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-033"
+      ]
+    },
+    {
+      "item": "rolled oats as needed",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-034"
+      ]
+    },
+    {
+      "item": "fine textured soy protein (about 10.5 rehydrated)",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-035"
+      ]
+    },
+    {
+      "item": "teaspoon black pepper",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-035"
+      ]
+    },
+    {
+      "item": "extra oat flour for coating",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-035"
+      ]
+    },
+    {
+      "item": "tablespoons oat flour ( oats)",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-035"
+      ]
+    },
+    {
+      "item": "handful parsley",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-035"
+      ]
+    },
+    {
+      "item": "teaspoon onion powder",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-035"
+      ]
+    },
+    {
+      "item": "teaspoon garlic powder",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-035"
+      ]
+    },
+    {
+      "item": "vital wheat gluten",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-036"
+      ]
+    },
+    {
+      "item": "tablespoon soy sauce",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-036"
+      ]
+    },
+    {
+      "item": "teaspoon paprika",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-036"
+      ]
+    },
+    {
+      "item": "tablespoons breadcrumbs or oat bran",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-036"
+      ]
+    },
+    {
+      "item": "bell pepper",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-037"
+      ]
+    },
+    {
+      "item": "onion",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-037"
+      ]
+    },
+    {
+      "item": "carrots",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-037"
+      ]
+    },
+    {
+      "item": "bs white beans",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-037"
+      ]
+    },
+    {
+      "item": "–5 tomatoes",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-037"
+      ]
+    },
+    {
+      "item": "bs pumpkin or butternut squash, cubed",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-038"
+      ]
+    },
+    {
+      "item": "bay leaves",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-038"
+      ]
+    },
+    {
+      "item": "een onion,",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-038"
+      ]
+    },
+    {
+      "item": "light semi-soft cheese",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-039"
+      ]
+    },
+    {
+      "item": "chicken breast,",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-039"
+      ]
+    },
+    {
+      "item": "zucchini, lengthwise",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-039"
+      ]
+    },
+    {
+      "item": "thin slice light semi-soft cheese",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-040"
+      ]
+    },
+    {
+      "item": "eggplant",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-040"
+      ]
+    },
+    {
+      "item": "handful of brown rice",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-040"
+      ]
+    },
+    {
+      "item": "zucchini",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-041"
+      ]
+    },
+    {
+      "item": "eggplant,",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-041"
+      ]
+    },
+    {
+      "item": "serving pasta of choice",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-042"
+      ]
+    },
+    {
+      "item": "brussels sprouts",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-042"
+      ]
+    },
+    {
+      "item": "seeds and seasonings",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-042"
+      ]
+    },
+    {
+      "item": "tablespoon salt",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-043"
+      ]
+    },
+    {
+      "item": "1/4 cups warm water",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-043"
+      ]
+    },
+    {
+      "item": "tablespoons sunflower or olive oil",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-043"
+      ]
+    },
+    {
+      "item": "teaspoons sugar",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-043"
+      ]
+    },
+    {
+      "item": "potato",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-044"
+      ]
+    },
+    {
+      "item": "beets, quartered",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-044"
+      ]
+    },
+    {
+      "item": "gluten-free flour blend (14 corn starch, 10.5 cassava flour, 10.5 rice flour)",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-045"
+      ]
+    },
+    {
+      "item": "beets",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-046"
+      ]
+    },
+    {
+      "item": "gluten-free flour blend (see previous recipe)",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-046"
+      ]
+    },
+    {
+      "item": "teaspoon sugar",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-047"
+      ]
+    },
+    {
+      "item": "mix of gluten-free seeds",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-047"
+      ]
+    },
+    {
+      "item": "bs gluten-free flour blend",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-047"
+      ]
+    },
+    {
+      "item": "active dry yeast",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-047"
+      ]
+    },
+    {
+      "item": "1/4 cups warm milk",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-047"
+      ]
+    },
+    {
+      "item": "3/4 cups warm water",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-048"
+      ]
+    },
+    {
+      "item": "teaspoon seeds",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-050"
+      ]
+    },
+    {
+      "item": "tablespoons chickpea flour",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-050"
+      ]
+    },
+    {
+      "item": "vegetable filling",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-050"
+      ]
+    },
+    {
+      "item": "tablespoons water",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-050"
+      ]
+    },
+    {
+      "item": "seasonings (e.g., smoked paprika)",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-051"
+      ]
+    },
+    {
+      "item": "polenta (cornmeal)",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-051"
+      ]
+    },
+    {
+      "item": ": mixed nuts, dark chocolate, poppy seeds",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-052"
+      ]
+    },
+    {
+      "item": "bananas",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-052"
+      ]
+    },
+    {
+      "item": "plain yogurt",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-053"
+      ]
+    },
+    {
+      "item": "arge egg",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-053"
+      ]
+    },
+    {
+      "item": "heaping teaspoon cream cheese",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-053"
+      ]
+    },
+    {
+      "item": "teaspoons vanilla extract",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-053"
+      ]
+    },
+    {
+      "item": "mandarins",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-054"
+      ]
+    },
+    {
+      "item": "pears, shredded",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-055"
+      ]
+    },
+    {
+      "item": "zucchini, coarsely shredded",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-056"
+      ]
+    },
+    {
+      "item": "carrot, finely or shredded",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-056"
+      ]
+    },
+    {
+      "item": "gluten-free flour blend",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-057"
+      ]
+    },
+    {
+      "item": "fl skim milk",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-057"
+      ]
+    },
+    {
+      "item": "seasonings (oregano, herbs, paprika)",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-057"
+      ]
+    },
+    {
+      "item": "flavorings: 1 garlic clove, 1/2 onion, 1/2 bell pepper",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-057"
+      ]
+    },
+    {
+      "item": "pears",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-058"
+      ]
+    },
+    {
+      "item": "baking powder",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-058"
+      ]
+    },
+    {
+      "item": "egg and 3 egg whites",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-058"
+      ]
+    },
+    {
+      "item": "apples, and thinly",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-059"
+      ]
+    },
+    {
+      "item": "cream cheese",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-059"
+      ]
+    },
+    {
+      "item": "mandarin",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-060"
+      ]
+    },
+    {
+      "item": "oats",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-060"
+      ]
+    },
+    {
+      "item": "teaspoons poppy seeds",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-061"
+      ]
+    },
+    {
+      "item": "zest and juice of 2 lemons",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-061"
+      ]
+    },
+    {
+      "item": "juice of 1/2 lemon",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-062"
+      ]
+    },
+    {
+      "item": "packets stevia (baking-safe)",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-063"
+      ]
+    },
+    {
+      "item": "carrots, shredded",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-063"
+      ]
+    },
+    {
+      "item": "shredded coconut",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-064"
+      ]
+    },
+    {
+      "item": "banana, mashed",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-065"
+      ]
+    },
+    {
+      "item": "vanilla extract ()",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-065"
+      ]
+    },
+    {
+      "item": "black pepper",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-066"
+      ]
+    },
+    {
+      "item": "arlic clove",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-066"
+      ]
+    },
+    {
+      "item": "tablespoon chia seeds",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-067"
+      ]
+    },
+    {
+      "item": "packets sweetener",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-067"
+      ]
+    },
+    {
+      "item": "pint blueberries",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-067"
+      ]
+    },
+    {
+      "item": "base: 1/2 cup mixed berries",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-068"
+      ]
+    },
+    {
+      "item": "topping: blueberries",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-068"
+      ]
+    },
+    {
+      "item": "base: 1 banana",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-068"
+      ]
+    },
+    {
+      "item": "base: 1/2 cup coconut milk",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-068"
+      ]
+    },
+    {
+      "item": "fruit (for serving)",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-069"
+      ]
+    },
+    {
+      "item": "tablespoon cinnamon",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-069"
+      ]
+    },
+    {
+      "item": "tablespoon coconut oil",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-069"
+      ]
+    },
+    {
+      "item": "tablespoon shredded coconut",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-069"
+      ]
+    },
+    {
+      "item": "almonds,",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-069"
+      ]
+    },
+    {
+      "item": "tablespoon vanilla extract",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-069"
+      ]
+    },
+    {
+      "item": "base: 2 bananas",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-070"
+      ]
+    },
+    {
+      "item": "base: 1 teaspoon matcha powder",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-070"
+      ]
+    },
+    {
+      "item": "base: 2 packets stevia",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-070"
+      ]
+    },
+    {
+      "item": "topping: unsalted peanuts",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-070"
+      ]
+    },
+    {
+      "item": "base: 1/4 cup plant-based milk of choice",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-070"
+      ]
+    },
+    {
+      "item": "1/2 cups plant-based milk",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-071"
+      ]
+    },
+    {
+      "item": "teaspoon vanilla",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-071"
+      ]
+    },
+    {
+      "item": "oat flour",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-071"
+      ]
+    },
+    {
+      "item": "splash of milk",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-072"
+      ]
+    },
+    {
+      "item": "egg,",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-072"
+      ]
+    },
+    {
+      "item": "arge tomato",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-073"
+      ]
+    },
+    {
+      "item": "drizzle of olive oil",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-073"
+      ]
+    },
+    {
+      "item": "egg and 1 egg white,",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-074"
+      ]
+    },
+    {
+      "item": "basil",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-074"
+      ]
+    },
+    {
+      "item": "cubes low-fat cheese",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-074"
+      ]
+    },
+    {
+      "item": "fat-free cream cheese",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-075"
+      ]
+    },
+    {
+      "item": "tablespoon cornstarch",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-075"
+      ]
+    },
+    {
+      "item": "egg yolks",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-075"
+      ]
+    },
+    {
+      "item": "tablespoons powdered baking-safe sweetener",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-075"
+      ]
+    },
+    {
+      "item": "egg whites, to stiff peaks",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-075"
+      ]
+    },
+    {
+      "item": "cocoa powder (or 3 scoops chocolate whey protein)",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-075"
+      ]
+    },
+    {
+      "item": "sugar (or 8 packets sweetener)",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-076"
+      ]
+    },
+    {
+      "item": "chocolate chips or dark chocolate",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-076"
+      ]
+    },
+    {
+      "item": "shredded coconut as needed",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-077"
+      ]
+    },
+    {
+      "item": "tablespoons dulce de leche",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-077"
+      ]
+    },
+    {
+      "item": "tablespoons unsweetened cocoa powder",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-077"
+      ]
+    },
+    {
+      "item": ": crushed nuts or scoop of protein powder",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-077"
+      ]
+    },
+    {
+      "item": "tablespoons milk",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-077"
+      ]
+    },
+    {
+      "item": "nutritional yeast",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-078"
+      ]
+    },
+    {
+      "item": "to 1/2 cup water",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-078"
+      ]
+    },
+    {
+      "item": "cashews (unsalted, unroasted)",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-078"
+      ]
+    },
+    {
+      "item": "teaspoon garlic salt",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-078"
+      ]
+    },
+    {
+      "item": "teaspoon turmeric powder (, for color)",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-078"
+      ]
+    },
+    {
+      "item": "emon, juiced",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-079"
+      ]
+    },
+    {
+      "item": "teaspoon dried herbs (e.g., italian seasoning)",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-079"
+      ]
+    },
+    {
+      "item": "rolled oats (traditional, not instant)",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-080"
+      ]
+    },
+    {
+      "item": "shelled sunflower seeds (unsalted, unroasted)",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-081"
+      ]
+    },
+    {
+      "item": "pumpkin seeds",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-082"
+      ]
+    },
+    {
+      "item": "walnuts",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-082"
+      ]
+    },
+    {
+      "item": "flaxseeds",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-082"
+      ]
+    },
+    {
+      "item": "red onion",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-082"
+      ]
+    },
+    {
+      "item": "red bell pepper",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-082"
+      ]
+    },
+    {
+      "item": "carrot",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-082"
+      ]
+    },
+    {
+      "item": "celery stalk",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-082"
+      ]
+    },
+    {
+      "item": "tablespoons coconut oil,",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-083"
+      ]
+    },
+    {
+      "item": "ripe bananas, and into 3/4 to 1-inch thick rounds",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-083"
+      ]
+    },
+    {
+      "item": "raisins, dates, or chocolate chips ()",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-084"
+      ]
+    },
+    {
+      "item": "shredded carrots (about 2 carrots)",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-084"
+      ]
+    },
+    {
+      "item": "walnuts ()",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-084"
+      ]
+    },
+    {
+      "item": "s almond flour",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-084"
+      ]
+    },
+    {
+      "item": "shredded zucchini (about 1 zucchini)",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-084"
+      ]
+    },
+    {
+      "item": "dark amber maple syrup",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-084"
+      ]
+    },
+    {
+      "item": "tablespoons unsalted butter,",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-084"
+      ]
+    },
+    {
+      "item": "teaspoon nutmeg",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-084"
+      ]
+    },
+    {
+      "item": "toppings: berries, chia or sunflower seeds, walnuts, toasted coconut flakes, dates or other dried fruit",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-085"
+      ]
+    },
+    {
+      "item": "splash of vanilla extract ()",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-085"
+      ]
+    },
+    {
+      "item": "teaspoons honey",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-085"
+      ]
+    },
+    {
+      "item": "apple (: unpeeled), shredded",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-085"
+      ]
+    },
+    {
+      "item": "s unsweetened almond milk or milk of choice",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-085"
+      ]
+    },
+    {
+      "item": "pinch of fine sea salt",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-085"
+      ]
+    },
+    {
+      "item": "plain whole-milk yogurt",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-085"
+      ]
+    },
+    {
+      "item": "cinnamon",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-086"
+      ]
+    },
+    {
+      "item": "banana,",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-086"
+      ]
+    },
+    {
+      "item": "nut or almond butter",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-086"
+      ]
+    },
+    {
+      "item": "raisins or berries",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-086"
+      ]
+    },
+    {
+      "item": "instant oats (gluten-free if sensitive)",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-086"
+      ]
+    },
+    {
+      "item": "almond milk or milk of choice",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-086"
+      ]
+    },
+    {
+      "item": "honey ()",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-086"
+      ]
+    },
+    {
+      "item": "pinch of sea salt",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-086"
+      ]
+    },
+    {
+      "item": "1/2 cups spicy black beans or 1 can (15 ), drained",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-087"
+      ]
+    },
+    {
+      "item": "1/2 cups shredded gruyère or favorite cheese",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-087"
+      ]
+    },
+    {
+      "item": "(6 ) baby spinach (about 4 cups packed)",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-087"
+      ]
+    },
+    {
+      "item": "whole wheat burrito-size tortillas (about 10 inches)",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-087"
+      ]
+    },
+    {
+      "item": "pinch of nutmeg ()",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-088"
+      ]
+    },
+    {
+      "item": "twist of freshly black pepper",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-088"
+      ]
+    },
+    {
+      "item": "s 1-inch-thick bread (spelt or bread of choice)",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-088"
+      ]
+    },
+    {
+      "item": ": coarse sea salt, bananas, maple syrup",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-088"
+      ]
+    },
+    {
+      "item": "unsweetened almond milk or milk of choice",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-088"
+      ]
+    },
+    {
+      "item": "teaspoon almond extract",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-088"
+      ]
+    },
+    {
+      "item": "mixed seeds (chia, sesame, pumpkin, sunflower, etc.)",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-089"
+      ]
+    },
+    {
+      "item": "coconut oil",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-089"
+      ]
+    },
+    {
+      "item": "dried cranberries, raisins, or dried fruit of choice",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-089"
+      ]
+    },
+    {
+      "item": "honey",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-089"
+      ]
+    },
+    {
+      "item": "hazelnuts",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-089"
+      ]
+    },
+    {
+      "item": "teaspoons vanilla paste or extract",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-089"
+      ]
+    },
+    {
+      "item": "unsalted almond butter",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-090"
+      ]
+    },
+    {
+      "item": "unsweetened dried cherries",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-090"
+      ]
+    },
+    {
+      "item": "tablespoon unsweetened cocoa powder",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-090"
+      ]
+    },
+    {
+      "item": "arge dates, pitted",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-090"
+      ]
+    },
+    {
+      "item": "unsweetened shredded coconut, toasted",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-090"
+      ]
+    },
+    {
+      "item": "tablespoons finely coffee beans",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-090"
+      ]
+    },
+    {
+      "item": "stick (8 tablespoons) cold unsalted butter, cubed",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-091"
+      ]
+    },
+    {
+      "item": "finely grated zest of 2 lemons",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-091"
+      ]
+    },
+    {
+      "item": "whole-milk greek yogurt",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-091"
+      ]
+    },
+    {
+      "item": "coconut sugar or granulated sugar",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-091"
+      ]
+    },
+    {
+      "item": "stone- cornmeal",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-091"
+      ]
+    },
+    {
+      "item": "teaspoon red pepper",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-092"
+      ]
+    },
+    {
+      "item": "s hazelnuts",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-092"
+      ]
+    },
+    {
+      "item": "honey for drizzling",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-093"
+      ]
+    },
+    {
+      "item": "coarse sea salt",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-093"
+      ]
+    },
+    {
+      "item": "arge or 1 baguette (about 1 foot), 1/2-inch thick",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-093"
+      ]
+    },
+    {
+      "item": "–5 figs, thinly (or 1/2 ripe pear, thinly )",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-093"
+      ]
+    },
+    {
+      "item": "extra-virgin olive oil for drizzling",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-093"
+      ]
+    },
+    {
+      "item": "(4 ) plain chèvre (goat cheese)",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-093"
+      ]
+    },
+    {
+      "item": "arge garlic clove",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-093"
+      ]
+    },
+    {
+      "item": "tablespoon thyme leaves",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-093"
+      ]
+    },
+    {
+      "item": "s pumpkin seeds (pepitas)",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-094"
+      ]
+    },
+    {
+      "item": "tablespoon butter",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-094"
+      ]
+    },
+    {
+      "item": "teaspoon curry powder",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-094"
+      ]
+    },
+    {
+      "item": "crumbled goat cheese or feta",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-095"
+      ]
+    },
+    {
+      "item": "teaspoon coarse sea salt",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-095"
+      ]
+    },
+    {
+      "item": "b asparagus, trimmed",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-095"
+      ]
+    },
+    {
+      "item": "toasted hazelnuts,",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-095"
+      ]
+    },
+    {
+      "item": "recipe basic balsamic vinaigrette",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-095"
+      ]
+    },
+    {
+      "item": "b wild salmon or arctic char, in 2 fillets",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-095"
+      ]
+    },
+    {
+      "item": "s arugula or mixed greens",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-095"
+      ]
+    },
+    {
+      "item": "almond flour",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-096"
+      ]
+    },
+    {
+      "item": "unsweetened cocoa powder",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-096"
+      ]
+    },
+    {
+      "item": "coconut oil,",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-096"
+      ]
+    },
+    {
+      "item": "semi-sweet chocolate chips",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-096"
+      ]
+    },
+    {
+      "item": "teff flour",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-096"
+      ]
+    },
+    {
+      "item": "pure maple syrup",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-096"
+      ]
+    },
+    {
+      "item": "nut butter: 2 cups walnuts",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-097"
+      ]
+    },
+    {
+      "item": "coating: 3 tablespoons unsweetened cocoa powder",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-097"
+      ]
+    },
+    {
+      "item": "nut butter: 10 deglet dates (pitted)",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-097"
+      ]
+    },
+    {
+      "item": "coating: 2 tablespoons virgin coconut oil",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-097"
+      ]
+    },
+    {
+      "item": "nut butter: 1 teaspoon cinnamon",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-097"
+      ]
+    },
+    {
+      "item": "coating: 1 teaspoon coarse sea salt (for finishing)",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-097"
+      ]
+    },
+    {
+      "item": "coating: 3 tablespoons maple syrup",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-097"
+      ]
+    },
+    {
+      "item": "topping: 1/4 cup walnuts",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-098"
+      ]
+    },
+    {
+      "item": "topping: 1/4 teaspoon fine sea salt",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-098"
+      ]
+    },
+    {
+      "item": "topping: 1/4 cup coconut oil,",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-098"
+      ]
+    },
+    {
+      "item": "topping: 2 tablespoons maple syrup",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-098"
+      ]
+    },
+    {
+      "item": "filling: 1 tablespoon cornstarch",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-098"
+      ]
+    },
+    {
+      "item": "filling: 3 cups strawberries",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-098"
+      ]
+    },
+    {
+      "item": "filling: 2 tablespoons honey",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-098"
+      ]
+    },
+    {
+      "item": "topping: 1/2 teaspoon cinnamon",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-098"
+      ]
+    },
+    {
+      "item": "topping: 1 cup rolled oats",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-098"
+      ]
+    },
+    {
+      "item": "filling: 3 cups blueberries",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-098"
+      ]
+    },
+    {
+      "item": "topping: 1/2 cup almond flour",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-098"
+      ]
+    }
+  ]
+}

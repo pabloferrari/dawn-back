@@ -1,6 +1,6 @@
 <!-- templates/budget-planner/yearly-overview.hbs -->
 <!DOCTYPE html>
-<html>
+<html lang="{{lang}}">
 
 <head>
   <style>
@@ -57,9 +57,7 @@
       font-size: 9px;
     }
 
-    .metric-label {
-      color: #666;
-    }
+    .metric-label { color: #666; }
 
     .metric-value {
       font-weight: bold;
@@ -72,13 +70,8 @@
       margin: 5px 0;
     }
 
-    .metric.savings .metric-label {
-      color: #4caf50;
-    }
-
-    .metric.debt .metric-label {
-      color: #e91e63;
-    }
+    .metric.savings .metric-label { color: #4caf50; }
+    .metric.debt .metric-label { color: #e91e63; }
 
     .bottom-section {
       margin-top: 15px;
@@ -156,180 +149,71 @@
       min-height: 14px;
       font-size: 10px;
     }
-
-    .changes-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 6px;
-      margin-top: 8px;
-    }
-
-    .change-item {
-      background: white;
-      padding: 6px;
-      border-radius: 4px;
-      font-size: 9px;
-    }
-
-    .change-num {
-      color: {{customization.primaryColor}};
-      font-weight: bold;
-    }
   </style>
 </head>
 
 <body>
   <div class="header">
-    <h1 class="title">Year at a Glance - {{year}}</h1>
+    <h1 class="title">{{tt t.yearlyOverview.title year=year}}</h1>
   </div>
 
   <div class="year-grid">
+    {{#each monthsData}}
     <div class="month-box">
-      <div class="month-name">January</div>
-      <div class="metric"><span class="metric-label">Income:</span><span class="metric-value">$_____</span></div>
-      <div class="metric"><span class="metric-label">Expenses:</span><span class="metric-value">$_____</span></div>
-      <div class="metric"><span class="metric-label">Balance:</span><span class="metric-value">$_____</span></div>
+      <div class="month-name">{{this.name}}</div>
+      <div class="metric">
+        <span class="metric-label">{{../t.yearlyOverview.income}}:</span>
+        <span class="metric-value">$_____</span>
+      </div>
+      <div class="metric">
+        <span class="metric-label">{{../t.yearlyOverview.expenses}}:</span>
+        <span class="metric-value">$_____</span>
+      </div>
       <div class="divider"></div>
-      <div class="metric savings"><span class="metric-label">Saved:</span><span class="metric-value">$_____</span></div>
-      <div class="metric debt"><span class="metric-label">Debt left:</span><span class="metric-value">$_____</span></div>
+      <div class="metric savings">
+        <span class="metric-label">{{../t.yearlyOverview.saved}}:</span>
+        <span class="metric-value">$_____</span>
+      </div>
+      <div class="metric debt">
+        <span class="metric-label">{{../t.yearlyOverview.debtPaid}}:</span>
+        <span class="metric-value">$_____</span>
+      </div>
     </div>
-    <div class="month-box">
-      <div class="month-name">February</div>
-      <div class="metric"><span class="metric-label">Income:</span><span class="metric-value">$_____</span></div>
-      <div class="metric"><span class="metric-label">Expenses:</span><span class="metric-value">$_____</span></div>
-      <div class="metric"><span class="metric-label">Balance:</span><span class="metric-value">$_____</span></div>
-      <div class="divider"></div>
-      <div class="metric savings"><span class="metric-label">Saved:</span><span class="metric-value">$_____</span></div>
-      <div class="metric debt"><span class="metric-label">Debt left:</span><span class="metric-value">$_____</span></div>
-    </div>
-    <div class="month-box">
-      <div class="month-name">March</div>
-      <div class="metric"><span class="metric-label">Income:</span><span class="metric-value">$_____</span></div>
-      <div class="metric"><span class="metric-label">Expenses:</span><span class="metric-value">$_____</span></div>
-      <div class="metric"><span class="metric-label">Balance:</span><span class="metric-value">$_____</span></div>
-      <div class="divider"></div>
-      <div class="metric savings"><span class="metric-label">Saved:</span><span class="metric-value">$_____</span></div>
-      <div class="metric debt"><span class="metric-label">Debt left:</span><span class="metric-value">$_____</span></div>
-    </div>
-    <div class="month-box">
-      <div class="month-name">April</div>
-      <div class="metric"><span class="metric-label">Income:</span><span class="metric-value">$_____</span></div>
-      <div class="metric"><span class="metric-label">Expenses:</span><span class="metric-value">$_____</span></div>
-      <div class="metric"><span class="metric-label">Balance:</span><span class="metric-value">$_____</span></div>
-      <div class="divider"></div>
-      <div class="metric savings"><span class="metric-label">Saved:</span><span class="metric-value">$_____</span></div>
-      <div class="metric debt"><span class="metric-label">Debt left:</span><span class="metric-value">$_____</span></div>
-    </div>
-    <div class="month-box">
-      <div class="month-name">May</div>
-      <div class="metric"><span class="metric-label">Income:</span><span class="metric-value">$_____</span></div>
-      <div class="metric"><span class="metric-label">Expenses:</span><span class="metric-value">$_____</span></div>
-      <div class="metric"><span class="metric-label">Balance:</span><span class="metric-value">$_____</span></div>
-      <div class="divider"></div>
-      <div class="metric savings"><span class="metric-label">Saved:</span><span class="metric-value">$_____</span></div>
-      <div class="metric debt"><span class="metric-label">Debt left:</span><span class="metric-value">$_____</span></div>
-    </div>
-    <div class="month-box">
-      <div class="month-name">June</div>
-      <div class="metric"><span class="metric-label">Income:</span><span class="metric-value">$_____</span></div>
-      <div class="metric"><span class="metric-label">Expenses:</span><span class="metric-value">$_____</span></div>
-      <div class="metric"><span class="metric-label">Balance:</span><span class="metric-value">$_____</span></div>
-      <div class="divider"></div>
-      <div class="metric savings"><span class="metric-label">Saved:</span><span class="metric-value">$_____</span></div>
-      <div class="metric debt"><span class="metric-label">Debt left:</span><span class="metric-value">$_____</span></div>
-    </div>
-    <div class="month-box">
-      <div class="month-name">July</div>
-      <div class="metric"><span class="metric-label">Income:</span><span class="metric-value">$_____</span></div>
-      <div class="metric"><span class="metric-label">Expenses:</span><span class="metric-value">$_____</span></div>
-      <div class="metric"><span class="metric-label">Balance:</span><span class="metric-value">$_____</span></div>
-      <div class="divider"></div>
-      <div class="metric savings"><span class="metric-label">Saved:</span><span class="metric-value">$_____</span></div>
-      <div class="metric debt"><span class="metric-label">Debt left:</span><span class="metric-value">$_____</span></div>
-    </div>
-    <div class="month-box">
-      <div class="month-name">August</div>
-      <div class="metric"><span class="metric-label">Income:</span><span class="metric-value">$_____</span></div>
-      <div class="metric"><span class="metric-label">Expenses:</span><span class="metric-value">$_____</span></div>
-      <div class="metric"><span class="metric-label">Balance:</span><span class="metric-value">$_____</span></div>
-      <div class="divider"></div>
-      <div class="metric savings"><span class="metric-label">Saved:</span><span class="metric-value">$_____</span></div>
-      <div class="metric debt"><span class="metric-label">Debt left:</span><span class="metric-value">$_____</span></div>
-    </div>
-    <div class="month-box">
-      <div class="month-name">September</div>
-      <div class="metric"><span class="metric-label">Income:</span><span class="metric-value">$_____</span></div>
-      <div class="metric"><span class="metric-label">Expenses:</span><span class="metric-value">$_____</span></div>
-      <div class="metric"><span class="metric-label">Balance:</span><span class="metric-value">$_____</span></div>
-      <div class="divider"></div>
-      <div class="metric savings"><span class="metric-label">Saved:</span><span class="metric-value">$_____</span></div>
-      <div class="metric debt"><span class="metric-label">Debt left:</span><span class="metric-value">$_____</span></div>
-    </div>
-    <div class="month-box">
-      <div class="month-name">October</div>
-      <div class="metric"><span class="metric-label">Income:</span><span class="metric-value">$_____</span></div>
-      <div class="metric"><span class="metric-label">Expenses:</span><span class="metric-value">$_____</span></div>
-      <div class="metric"><span class="metric-label">Balance:</span><span class="metric-value">$_____</span></div>
-      <div class="divider"></div>
-      <div class="metric savings"><span class="metric-label">Saved:</span><span class="metric-value">$_____</span></div>
-      <div class="metric debt"><span class="metric-label">Debt left:</span><span class="metric-value">$_____</span></div>
-    </div>
-    <div class="month-box">
-      <div class="month-name">November</div>
-      <div class="metric"><span class="metric-label">Income:</span><span class="metric-value">$_____</span></div>
-      <div class="metric"><span class="metric-label">Expenses:</span><span class="metric-value">$_____</span></div>
-      <div class="metric"><span class="metric-label">Balance:</span><span class="metric-value">$_____</span></div>
-      <div class="divider"></div>
-      <div class="metric savings"><span class="metric-label">Saved:</span><span class="metric-value">$_____</span></div>
-      <div class="metric debt"><span class="metric-label">Debt left:</span><span class="metric-value">$_____</span></div>
-    </div>
-    <div class="month-box">
-      <div class="month-name">December</div>
-      <div class="metric"><span class="metric-label">Income:</span><span class="metric-value">$_____</span></div>
-      <div class="metric"><span class="metric-label">Expenses:</span><span class="metric-value">$_____</span></div>
-      <div class="metric"><span class="metric-label">Balance:</span><span class="metric-value">$_____</span></div>
-      <div class="divider"></div>
-      <div class="metric savings"><span class="metric-label">Saved:</span><span class="metric-value">$_____</span></div>
-      <div class="metric debt"><span class="metric-label">Debt left:</span><span class="metric-value">$_____</span></div>
-    </div>
+    {{/each}}
   </div>
 
   <div class="bottom-section">
     <div class="summary-box">
-      <div class="summary-title">{{year}} Year-End Totals</div>
+      <div class="summary-title">{{t.yearlyOverview.yearInReview}}</div>
       <div class="summary-grid">
         <div class="summary-item">
-          <div class="summary-label">Total Income</div>
+          <div class="summary-label">{{t.yearlyOverview.totalEarned}}</div>
           <div class="summary-value">$________</div>
         </div>
         <div class="summary-item">
-          <div class="summary-label">Total Expenses</div>
+          <div class="summary-label">{{t.yearlyOverview.totalSpent}}</div>
           <div class="summary-value">$________</div>
         </div>
         <div class="summary-item">
-          <div class="summary-label">Total Saved</div>
+          <div class="summary-label">{{t.yearlyOverview.totalSaved}}</div>
           <div class="summary-value">$________</div>
         </div>
         <div class="summary-item">
-          <div class="summary-label">Debt Paid Off</div>
+          <div class="summary-label">{{t.yearlyOverview.debtPaidOff}}</div>
           <div class="summary-value">$________</div>
         </div>
       </div>
     </div>
 
     <div class="lessons-box">
-      <div class="lessons-title">Lessons from {{year}}</div>
+      <div class="lessons-title">{{t.yearlyOverview.yearInReview}}</div>
       <div class="lesson-item">
-        <div class="lesson-label">What I learned about my spending habits:</div>
+        <div class="lesson-label">{{t.monthlyBudget.whatDidWell}}</div>
         <div class="lesson-input"></div>
       </div>
       <div class="lesson-item">
-        <div class="lesson-label">3 things I'll do differently in {{nextYear}}:</div>
-      </div>
-      <div class="changes-grid">
-        <div class="change-item"><span class="change-num">1.</span> _______________</div>
-        <div class="change-item"><span class="change-num">2.</span> _______________</div>
-        <div class="change-item"><span class="change-num">3.</span> _______________</div>
+        <div class="lesson-label">{{t.monthlyBudget.whatChange}}</div>
+        <div class="lesson-input"></div>
       </div>
     </div>
   </div>

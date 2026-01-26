@@ -1,0 +1,176 @@
+{
+  "cover": {
+    "subtitle": "Communication Made Easy",
+    "tagline": "Connect with your baby before they can talk"
+  },
+  "introWhy": {
+    "title": "Why Baby Hands Talk?",
+    "intro1": "Here's something amazing: your baby understands far more than they can say. Between 6 and 8 months, babies develop a strong desire to communicate—they want to tell you what they need, what they see, and how they feel. But here's the challenge: the complex motor skills needed for speech don't fully develop until around 18 months, and clear verbal communication often doesn't come until age 2 or 3.",
+    "intro2": "This creates a \"communication gap\"—a period where your baby has so much to say but no way to say it. That's where Baby Hands Talk comes in.",
+    "highlightBox": "<strong>Baby Hands Talk bridges this gap.</strong> Using simple hand gestures, your little one can tell you they're hungry, tired, want more, or even that they love you—months before they can speak these words.",
+    "benefits": {
+      "reducesFrustration": {
+        "title": "Reduces Frustration",
+        "description": "When babies can express their needs—whether it's pain, hunger, or wanting a specific toy—tantrums and crying decrease dramatically. You'll spend less time guessing and more time connecting."
+      },
+      "boostsBrainDevelopment": {
+        "title": "Boosts Brain Development",
+        "description": "When your baby signs, they're activating multiple brain areas simultaneously—visual, auditory, and motor. This creates stronger neural connections and enhances overall cognitive development."
+      },
+      "deepensYourBond": {
+        "title": "Deepens Your Bond",
+        "description": "Two-way communication creates a powerful emotional connection. When your baby asks to play ball and you understand, both of you feel seen, heard, and connected."
+      },
+      "acceleratesSpeech": {
+        "title": "Accelerates Speech",
+        "description": "Signing babies don't speak later—they often speak earlier and with larger vocabularies. The signs serve as a bridge to verbal language, not a replacement."
+      },
+      "buildsConfidence": {
+        "title": "Builds Confidence",
+        "description": "Being understood gives babies a sense of accomplishment and self-worth. They become active participants in family life rather than passive observers."
+      },
+      "supportsEmotionalGrowth": {
+        "title": "Supports Emotional Growth",
+        "description": "Signs help babies identify and express emotions like happy, sad, or scared. This early emotional vocabulary is the foundation for healthy self-regulation."
+      }
+    },
+    "researchNote": "<strong>📚 Research shows:</strong> Studies found that babies who signed were speaking like children 4 months ahead by age 2, and nearly a full year ahead by age 3. At age 8, these children scored an average of 12 points higher on IQ tests than their non-signing peers."
+  },
+  "introTips": {
+    "title": "Tips for Success",
+    "positionsTitle": "👀 Best Positions for Signing",
+    "positions": {
+      "faceToFace": {
+        "name": "Face to Face",
+        "description": "The gold standard! Get down to their eye level when possible."
+      },
+      "inFrontOfMirror": {
+        "name": "In Front of Mirror",
+        "description": "Baby sees both you signing and themselves—great for learning!"
+      },
+      "onTheirBody": {
+        "name": "On Their Body",
+        "description": "For signs like EAT or BATH, gently sign on baby so they feel it too."
+      }
+    },
+    "checklistTitle": "✅ How to Know Baby is Really Signing",
+    "checklistIntro": "Not sure if that hand movement was intentional? Look for these three signs:",
+    "checklist": {
+      "intentional": {
+        "label": "Intentional",
+        "description": "Used to express a real need in the right context"
+      },
+      "independent": {
+        "label": "Independent",
+        "description": "Not copying you—they initiate it on their own"
+      },
+      "consistent": {
+        "label": "Consistent",
+        "description": "They use it repeatedly, not just a one-time thing"
+      }
+    },
+    "keysToSuccessTitle": "🔑 Keys to Success",
+    "tips": {
+      "tip1": {
+        "title": "Sign with the Action",
+        "description": "Always sign during, just before, or right after the action. \"Time for BATH\" as you turn on the water helps baby connect sign, word, and meaning."
+      },
+      "tip2": {
+        "title": "Be Consistent",
+        "description": "Use the same sign every time. The more you sign throughout the day, the faster baby will sign back. Try placing reminder notes in key areas!"
+      },
+      "tip3": {
+        "title": "Repeat Naturally",
+        "description": "\"We're going to BATH. Daddy is giving you a BATH. All done with BATH!\" Repetition during activities reinforces learning—just don't overdo it."
+      },
+      "tip4": {
+        "title": "Make Eye Contact",
+        "description": "Unlike speech, signing requires visual attention. Try to be in baby's line of sight. But if they're not looking, sign anyway—you're building the habit!"
+      },
+      "tip5": {
+        "title": "Keep It Fun",
+        "description": "Babies learn through play, not memorization! Use signs during songs, games, and storytime. Their interest grows much faster when it's enjoyable."
+      },
+      "tip6": {
+        "title": "Celebrate Every Attempt",
+        "description": "Baby's sign won't look perfect—and that's okay! Respond enthusiastically to any approximation. They'll refine it over time by watching you model it correctly."
+      },
+      "tip7": {
+        "title": "Don't Stop When They Talk",
+        "description": "Keep signing even after first words appear! Early speech is often unclear. Signs remain a valuable backup that prevents frustration. Let them phase out signs naturally."
+      },
+      "tip8": {
+        "title": "Get Everyone Involved",
+        "description": "Teach signs to partners, grandparents, caregivers, and siblings. The more people who sign with baby, the faster they'll learn and the more connected they'll feel."
+      }
+    },
+    "encouragement": "<strong>Remember:</strong> Every baby learns at their own pace. Some sign back in weeks, others take months. What matters is the connection you're building. You've got this! 🌟"
+  },
+  "introWhen": {
+    "title": "When to Start & What to Expect",
+    "intro": "Even in the womb, your baby begins recognizing your voice and the patterns of your language. From birth, they can distinguish your native language from others! Understanding your baby's developmental journey helps you know when and how to introduce signs.",
+    "milestones": {
+      "0to6": {
+        "title": "The Watching Phase",
+        "description": "During this stage, crying is your baby's main communication tool. They're absorbing everything—your voice, your expressions, your gestures. You can start signing now; your baby is watching and learning even if they can't respond yet."
+      },
+      "6to8": {
+        "title": "Communicative Intent Emerges",
+        "description": "A breakthrough moment! Your baby develops a strong urge to communicate. You'll notice them pointing, reaching, and making sounds with purpose. This is the ideal time to introduce signs consistently."
+      },
+      "8to12": {
+        "title": "First Signs Appear",
+        "description": "Most babies produce their first intentional sign during this window. It might look a little different from yours—that's completely normal! The motor skills for precise hand movements are still developing. Celebrate every attempt!"
+      },
+      "12to18": {
+        "title": "The Sign Explosion",
+        "description": "Once your baby masters a few signs, learning accelerates rapidly. Many babies learn 10-20+ signs during this exciting period. They'll start combining signs and using them spontaneously throughout the day."
+      },
+      "18to24": {
+        "title": "Bridge to Speech",
+        "description": "As verbal skills develop, your child will naturally start replacing signs with words. Keep signing! Even when they say a word, they may not pronounce it clearly yet. Signs remain a helpful backup that prevents frustration."
+      }
+    },
+    "months": "months",
+    "timelineContinued": "📅 Development Timeline (continued)",
+    "brainBoxTitle": "🧠 What's Happening in Your Baby's Brain",
+    "brainBoxContent1": "When you speak a word AND show a sign, your baby's brain lights up in multiple areas: the <strong>auditory cortex</strong> processes the sound, the <strong>visual cortex</strong> processes what they see, and when they sign back, the <strong>motor cortex</strong> gets involved too.",
+    "brainBoxContent2": "This multi-sensory experience creates stronger, more interconnected neural pathways. That's why signing babies often remember words more easily—they've stored them in multiple places in their brain!",
+    "importantLabel": "Most Important",
+    "importantMessage": "It's never too early or too late to start!",
+    "importantHighlight": "Whether you begin at 4 months or 14 months, what matters most is consistency, patience, and making it fun."
+  },
+  "signPage": {
+    "illustrationPlaceholder": "Sign illustration for",
+    "howToSign": "How to Sign",
+    "teachingTip": "Teaching Tip",
+    "example": "Example:"
+  },
+  "practiceLog": {
+    "title": "Practice Log",
+    "subtitle": "Track your baby's learning journey",
+    "tableHeaders": {
+      "sign": "Sign",
+      "firstUsed": "First Used",
+      "progress": "Progress",
+      "notes": "Notes"
+    }
+  },
+  "categoryIndex": {
+    "title": "Sign Categories",
+    "subtitleTemplate": "{{categoriesCount}} categories • {{signsCount}} total signs",
+    "signsLabel": "signs"
+  },
+  "categories": {
+    "foodAndDrink": "Food & Drink",
+    "dailyRoutine": "Daily Routine",
+    "feelingsAndEmotions": "Feelings & Emotions",
+    "animals": "Animals",
+    "family": "Family",
+    "actionsAndActivities": "Actions & Activities"
+  },
+  "common": {
+    "year": "Year",
+    "page": "Page"
+  }
+}

@@ -1,0 +1,279 @@
+<!-- templates/budget-planner/quick-start.hbs -->
+<!DOCTYPE html>
+<html lang="{{lang}}">
+
+<head>
+  <style>
+    @page {
+      size: A4;
+      margin: 12mm;
+    }
+
+    body {
+      font-family: {{customization.fontFamily}};
+      color: #333;
+      line-height: 1.4;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 12px;
+      border-bottom: 3px solid {{customization.primaryColor}};
+      padding-bottom: 10px;
+    }
+
+    .title {
+      font-size: 24px;
+      color: {{customization.primaryColor}};
+      margin-bottom: 5px;
+    }
+
+    .subtitle {
+      font-size: 12px;
+      color: #666;
+    }
+
+    .intro-box {
+      background: #f8f9fa;
+      padding: 12px 15px;
+      border-radius: 10px;
+      margin-bottom: 15px;
+      font-size: 12px;
+      color: #555;
+      text-align: center;
+      font-style: italic;
+    }
+
+    .days-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-bottom: 15px;
+    }
+
+    .day-card {
+      border: 2px solid #e0e0e0;
+      border-radius: 10px;
+      padding: 12px;
+      background: white;
+    }
+
+    .day-card.highlight {
+      border-color: {{customization.primaryColor}};
+      background: linear-gradient(135deg, {{customization.primaryColor}}05, {{customization.secondaryColor}}05);
+    }
+
+    .day-header {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 8px;
+    }
+
+    .day-number {
+      width: 28px;
+      height: 28px;
+      background: {{customization.primaryColor}};
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 12px;
+      flex-shrink: 0;
+    }
+
+    .day-title {
+      font-size: 12px;
+      font-weight: bold;
+      color: {{customization.primaryColor}};
+    }
+
+    .day-desc {
+      font-size: 11px;
+      color: #555;
+      line-height: 1.5;
+    }
+
+    .day-checkbox {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      margin-top: 8px;
+      font-size: 10px;
+      color: #888;
+    }
+
+    .checkbox {
+      width: 14px;
+      height: 14px;
+      border: 2px solid {{customization.primaryColor}};
+      border-radius: 3px;
+      flex-shrink: 0;
+    }
+
+    .intention-box {
+      background: linear-gradient(135deg, {{customization.primaryColor}}, {{customization.secondaryColor}});
+      color: white;
+      padding: 18px 20px;
+      border-radius: 12px;
+      margin-bottom: 12px;
+    }
+
+    .intention-title {
+      font-size: 14px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    .intention-prompt {
+      font-size: 13px;
+      text-align: center;
+      margin-bottom: 12px;
+    }
+
+    .intention-input {
+      background: rgba(255,255,255,0.2);
+      border-radius: 8px;
+      padding: 12px 15px;
+      min-height: 40px;
+      border-bottom: 2px dotted rgba(255,255,255,0.5);
+    }
+
+    .tips-box {
+      background: #fff8e1;
+      border-left: 4px solid #ffc107;
+      padding: 12px 15px;
+      border-radius: 0 10px 10px 0;
+    }
+
+    .tips-title {
+      font-size: 12px;
+      font-weight: bold;
+      color: #f57c00;
+      margin-bottom: 8px;
+    }
+
+    .tips-text {
+      font-size: 11px;
+      color: #555;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    <h1 class="title">{{t.quickStart.title}}</h1>
+    <p class="subtitle">{{t.quickStart.subtitle}}</p>
+  </div>
+
+  <div class="intro-box">
+    {{t.quickStart.intro}}
+  </div>
+
+  <div class="days-grid">
+    <div class="day-card highlight">
+      <div class="day-header">
+        <div class="day-number">1-2</div>
+        <div class="day-title">{{t.quickStart.day1Title}}</div>
+      </div>
+      <div class="day-desc">
+        {{t.quickStart.day1Desc}}
+      </div>
+      <div class="day-checkbox">
+        <div class="checkbox"></div>
+        <span>{{t.quickStart.done}}</span>
+      </div>
+    </div>
+
+    <div class="day-card">
+      <div class="day-header">
+        <div class="day-number">2-3</div>
+        <div class="day-title">{{tt t.quickStart.day2Title year=year}}</div>
+      </div>
+      <div class="day-desc">
+        {{t.quickStart.day2Desc}}
+      </div>
+      <div class="day-checkbox">
+        <div class="checkbox"></div>
+        <span>{{t.quickStart.done}}</span>
+      </div>
+    </div>
+
+    <div class="day-card">
+      <div class="day-header">
+        <div class="day-number">3-4</div>
+        <div class="day-title">{{t.quickStart.day3Title}}</div>
+      </div>
+      <div class="day-desc">
+        {{t.quickStart.day3Desc}}
+      </div>
+      <div class="day-checkbox">
+        <div class="checkbox"></div>
+        <span>{{t.quickStart.done}}</span>
+      </div>
+    </div>
+
+    <div class="day-card">
+      <div class="day-header">
+        <div class="day-number">4-5</div>
+        <div class="day-title">{{t.quickStart.day4Title}}</div>
+      </div>
+      <div class="day-desc">
+        {{t.quickStart.day4Desc}}
+      </div>
+      <div class="day-checkbox">
+        <div class="checkbox"></div>
+        <span>{{t.quickStart.done}}</span>
+      </div>
+    </div>
+
+    <div class="day-card highlight">
+      <div class="day-header">
+        <div class="day-number">5</div>
+        <div class="day-title">{{t.quickStart.day5Title}}</div>
+      </div>
+      <div class="day-desc">
+        {{t.quickStart.day5Desc}}
+      </div>
+      <div class="day-checkbox">
+        <div class="checkbox"></div>
+        <span>{{t.quickStart.day5Checkbox}} ____________</span>
+      </div>
+    </div>
+
+    <div class="day-card">
+      <div class="day-header">
+        <div class="day-number">6</div>
+        <div class="day-title">{{t.quickStart.day6Title}}</div>
+      </div>
+      <div class="day-desc">
+        {{t.quickStart.day6Desc}}
+      </div>
+      <div class="day-checkbox">
+        <div class="checkbox"></div>
+        <span>{{t.quickStart.done}}</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="intention-box">
+    <div class="intention-title">{{tt t.quickStart.day7Title year=year}}</div>
+    <div class="intention-prompt">{{t.quickStart.day7Prompt}}</div>
+    <div class="intention-input">
+      {{tt t.quickStart.day7Input year=year}}
+    </div>
+  </div>
+
+  <div class="tips-box">
+    <div class="tips-title">{{t.quickStart.rememberTitle}}</div>
+    <div class="tips-text">
+      {{t.quickStart.rememberText}}
+    </div>
+  </div>
+</body>
+
+</html>

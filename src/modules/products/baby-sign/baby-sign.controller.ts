@@ -39,13 +39,14 @@ export class BabySignController {
     return {
       productType: 'baby-sign-guide',
       year: 2026,
-      coverTitle: 'Baby Sign Language Guide',
+      coverTitle: 'Baby Hands Talk',
       userName: '',
+      language: 'en',
       theme: 'colorful',
       customization: {
         primaryColor: '#FF6B9D',
         secondaryColor: '#C44569',
-        fontFamily: "'Arial', sans-serif",
+        fontFamily: "'Nunito', sans-serif",
       },
       signs: this.babySignService.getDefaultSigns(),
       includeIntro: true,

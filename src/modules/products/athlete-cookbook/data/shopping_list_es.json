@@ -1,0 +1,3641 @@
+{
+  "language": "es",
+  "total_items": 490,
+  "items": [
+    {
+      "item": "condimentos",
+      "recipe_count": 17,
+      "recipes": [
+        "recipe-001",
+        "recipe-002",
+        "recipe-003",
+        "recipe-004",
+        "recipe-005",
+        "recipe-006",
+        "recipe-007",
+        "recipe-008",
+        "recipe-020",
+        "recipe-021",
+        "recipe-027",
+        "recipe-030",
+        "recipe-033",
+        "recipe-034",
+        "recipe-037",
+        "recipe-039",
+        "recipe-041"
+      ]
+    },
+    {
+      "item": "huevos",
+      "recipe_count": 11,
+      "recipes": [
+        "recipe-018",
+        "recipe-020",
+        "recipe-045",
+        "recipe-046",
+        "recipe-052",
+        "recipe-055",
+        "recipe-056",
+        "recipe-059",
+        "recipe-061",
+        "recipe-088",
+        "recipe-091"
+      ]
+    },
+    {
+      "item": "harina integral",
+      "recipe_count": 10,
+      "recipes": [
+        "recipe-014",
+        "recipe-043",
+        "recipe-052",
+        "recipe-053",
+        "recipe-055",
+        "recipe-056",
+        "recipe-058",
+        "recipe-059",
+        "recipe-060",
+        "recipe-061"
+      ]
+    },
+    {
+      "item": "aceite",
+      "recipe_count": 10,
+      "recipes": [
+        "recipe-047",
+        "recipe-054",
+        "recipe-055",
+        "recipe-056",
+        "recipe-057",
+        "recipe-060",
+        "recipe-061",
+        "recipe-062",
+        "recipe-063",
+        "recipe-076"
+      ]
+    },
+    {
+      "item": "cucharadita de sal marina fina",
+      "recipe_count": 10,
+      "recipes": [
+        "recipe-083",
+        "recipe-084",
+        "recipe-087",
+        "recipe-088",
+        "recipe-090",
+        "recipe-091",
+        "recipe-092",
+        "recipe-094",
+        "recipe-096",
+        "recipe-099"
+      ]
+    },
+    {
+      "item": "cebolla",
+      "recipe_count": 9,
+      "recipes": [
+        "recipe-005",
+        "recipe-021",
+        "recipe-027",
+        "recipe-031",
+        "recipe-034",
+        "recipe-037",
+        "recipe-038",
+        "recipe-039",
+        "recipe-042"
+      ]
+    },
+    {
+      "item": "huevo",
+      "recipe_count": 8,
+      "recipes": [
+        "recipe-044",
+        "recipe-047",
+        "recipe-049",
+        "recipe-053",
+        "recipe-060",
+        "recipe-062",
+        "recipe-072",
+        "recipe-076"
+      ]
+    },
+    {
+      "item": "tomate",
+      "recipe_count": 7,
+      "recipes": [
+        "recipe-001",
+        "recipe-004",
+        "recipe-007",
+        "recipe-027",
+        "recipe-039",
+        "recipe-073",
+        "recipe-074"
+      ]
+    },
+    {
+      "item": "zanahoria rallada",
+      "recipe_count": 6,
+      "recipes": [
+        "recipe-001",
+        "recipe-004",
+        "recipe-027",
+        "recipe-029",
+        "recipe-030",
+        "recipe-040"
+      ]
+    },
+    {
+      "item": "ajo",
+      "recipe_count": 6,
+      "recipes": [
+        "recipe-020",
+        "recipe-032",
+        "recipe-034",
+        "recipe-041",
+        "recipe-066",
+        "recipe-093"
+      ]
+    },
+    {
+      "item": "morrón rojo",
+      "recipe_count": 5,
+      "recipes": [
+        "recipe-010",
+        "recipe-019",
+        "recipe-027",
+        "recipe-041",
+        "recipe-082"
+      ]
+    },
+    {
+      "item": "sal y pimienta",
+      "recipe_count": 5,
+      "recipes": [
+        "recipe-022",
+        "recipe-023",
+        "recipe-025",
+        "recipe-026",
+        "recipe-044"
+      ]
+    },
+    {
+      "item": "claras",
+      "recipe_count": 5,
+      "recipes": [
+        "recipe-029",
+        "recipe-032",
+        "recipe-049",
+        "recipe-057",
+        "recipe-065"
+      ]
+    },
+    {
+      "item": "sal",
+      "recipe_count": 4,
+      "recipes": [
+        "recipe-014",
+        "recipe-043",
+        "recipe-053",
+        "recipe-056"
+      ]
+    },
+    {
+      "item": "morrón",
+      "recipe_count": 4,
+      "recipes": [
+        "recipe-021",
+        "recipe-034",
+        "recipe-037",
+        "recipe-039"
+      ]
+    },
+    {
+      "item": "zanahoria",
+      "recipe_count": 4,
+      "recipes": [
+        "recipe-021",
+        "recipe-034",
+        "recipe-038",
+        "recipe-082"
+      ]
+    },
+    {
+      "item": "s de caldo",
+      "recipe_count": 4,
+      "recipes": [
+        "recipe-022",
+        "recipe-023",
+        "recipe-025",
+        "recipe-026"
+      ]
+    },
+    {
+      "item": "cebolla blanca picada finamente",
+      "recipe_count": 4,
+      "recipes": [
+        "recipe-022",
+        "recipe-023",
+        "recipe-025",
+        "recipe-026"
+      ]
+    },
+    {
+      "item": "cucharadita de sal",
+      "recipe_count": 4,
+      "recipes": [
+        "recipe-035",
+        "recipe-047",
+        "recipe-048",
+        "recipe-079"
+      ]
+    },
+    {
+      "item": "s de stevia",
+      "recipe_count": 4,
+      "recipes": [
+        "recipe-054",
+        "recipe-055",
+        "recipe-069",
+        "recipe-071"
+      ]
+    },
+    {
+      "item": "azúcar",
+      "recipe_count": 4,
+      "recipes": [
+        "recipe-055",
+        "recipe-056",
+        "recipe-060",
+        "recipe-061"
+      ]
+    },
+    {
+      "item": "repollo morado",
+      "recipe_count": 3,
+      "recipes": [
+        "recipe-006",
+        "recipe-008",
+        "recipe-013"
+      ]
+    },
+    {
+      "item": "perejil",
+      "recipe_count": 3,
+      "recipes": [
+        "recipe-010",
+        "recipe-012",
+        "recipe-066"
+      ]
+    },
+    {
+      "item": "cucharada de aceite de oliva",
+      "recipe_count": 3,
+      "recipes": [
+        "recipe-010",
+        "recipe-087",
+        "recipe-095"
+      ]
+    },
+    {
+      "item": "tomate en cubos",
+      "recipe_count": 3,
+      "recipes": [
+        "recipe-012",
+        "recipe-030",
+        "recipe-032"
+      ]
+    },
+    {
+      "item": "puerro",
+      "recipe_count": 3,
+      "recipes": [
+        "recipe-021",
+        "recipe-025",
+        "recipe-030"
+      ]
+    },
+    {
+      "item": "cucharada de jugo de limón",
+      "recipe_count": 3,
+      "recipes": [
+        "recipe-028",
+        "recipe-078",
+        "recipe-083"
+      ]
+    },
+    {
+      "item": "cucharadas de avena",
+      "recipe_count": 3,
+      "recipes": [
+        "recipe-028",
+        "recipe-065",
+        "recipe-077"
+      ]
+    },
+    {
+      "item": "agua",
+      "recipe_count": 3,
+      "recipes": [
+        "recipe-033",
+        "recipe-036",
+        "recipe-086"
+      ]
+    },
+    {
+      "item": "s polvo de hornear",
+      "recipe_count": 3,
+      "recipes": [
+        "recipe-052",
+        "recipe-053",
+        "recipe-059"
+      ]
+    },
+    {
+      "item": "pizca sal",
+      "recipe_count": 3,
+      "recipes": [
+        "recipe-052",
+        "recipe-060",
+        "recipe-061"
+      ]
+    },
+    {
+      "item": "polvo de hornear",
+      "recipe_count": 3,
+      "recipes": [
+        "recipe-056",
+        "recipe-057",
+        "recipe-058"
+      ]
+    },
+    {
+      "item": "esencia de vainilla",
+      "recipe_count": 3,
+      "recipes": [
+        "recipe-058",
+        "recipe-062",
+        "recipe-076"
+      ]
+    },
+    {
+      "item": "semillas de girasol",
+      "recipe_count": 3,
+      "recipes": [
+        "recipe-064",
+        "recipe-079",
+        "recipe-082"
+      ]
+    },
+    {
+      "item": "cucharadita de canela molida",
+      "recipe_count": 3,
+      "recipes": [
+        "recipe-083",
+        "recipe-085",
+        "recipe-088"
+      ]
+    },
+    {
+      "item": "cucharadita de extracto de vainilla",
+      "recipe_count": 3,
+      "recipes": [
+        "recipe-084",
+        "recipe-091",
+        "recipe-096"
+      ]
+    },
+    {
+      "item": "cebolla morada",
+      "recipe_count": 2,
+      "recipes": [
+        "recipe-001",
+        "recipe-082"
+      ]
+    },
+    {
+      "item": "zanahoria en rodajas",
+      "recipe_count": 2,
+      "recipes": [
+        "recipe-002",
+        "recipe-003"
+      ]
+    },
+    {
+      "item": "rúcula",
+      "recipe_count": 2,
+      "recipes": [
+        "recipe-007",
+        "recipe-008"
+      ]
+    },
+    {
+      "item": "pepino",
+      "recipe_count": 2,
+      "recipes": [
+        "recipe-007",
+        "recipe-010"
+      ]
+    },
+    {
+      "item": "tomates cherry",
+      "recipe_count": 2,
+      "recipes": [
+        "recipe-008",
+        "recipe-011"
+      ]
+    },
+    {
+      "item": "imón exprimido",
+      "recipe_count": 2,
+      "recipes": [
+        "recipe-010",
+        "recipe-079"
+      ]
+    },
+    {
+      "item": "tomate en cubitos",
+      "recipe_count": 2,
+      "recipes": [
+        "recipe-010",
+        "recipe-019"
+      ]
+    },
+    {
+      "item": "cucharadas de aceite de oliva",
+      "recipe_count": 2,
+      "recipes": [
+        "recipe-012",
+        "recipe-033"
+      ]
+    },
+    {
+      "item": "agua tibia (cantidad necesaria)",
+      "recipe_count": 2,
+      "recipes": [
+        "recipe-014",
+        "recipe-051"
+      ]
+    },
+    {
+      "item": "filling: condimentos",
+      "recipe_count": 2,
+      "recipes": [
+        "recipe-017",
+        "recipe-024"
+      ]
+    },
+    {
+      "item": "filling: 1 cebolla",
+      "recipe_count": 2,
+      "recipes": [
+        "recipe-017",
+        "recipe-024"
+      ]
+    },
+    {
+      "item": "cebolla picada",
+      "recipe_count": 2,
+      "recipes": [
+        "recipe-019",
+        "recipe-032"
+      ]
+    },
+    {
+      "item": "cucharadas de queso untable light",
+      "recipe_count": 2,
+      "recipes": [
+        "recipe-020",
+        "recipe-049"
+      ]
+    },
+    {
+      "item": "apio",
+      "recipe_count": 2,
+      "recipes": [
+        "recipe-021",
+        "recipe-082"
+      ]
+    },
+    {
+      "item": "s de ajo machacados",
+      "recipe_count": 2,
+      "recipes": [
+        "recipe-022",
+        "recipe-023"
+      ]
+    },
+    {
+      "item": "clara",
+      "recipe_count": 2,
+      "recipes": [
+        "recipe-028",
+        "recipe-034"
+      ]
+    },
+    {
+      "item": ": nueces picadas",
+      "recipe_count": 2,
+      "recipes": [
+        "recipe-031",
+        "recipe-075"
+      ]
+    },
+    {
+      "item": "zanahorias",
+      "recipe_count": 2,
+      "recipes": [
+        "recipe-031",
+        "recipe-037"
+      ]
+    },
+    {
+      "item": "cebollas de verdeo",
+      "recipe_count": 2,
+      "recipes": [
+        "recipe-031",
+        "recipe-041"
+      ]
+    },
+    {
+      "item": "salsa de tomate",
+      "recipe_count": 2,
+      "recipes": [
+        "recipe-032",
+        "recipe-040"
+      ]
+    },
+    {
+      "item": "berenjena",
+      "recipe_count": 2,
+      "recipes": [
+        "recipe-040",
+        "recipe-041"
+      ]
+    },
+    {
+      "item": "remolachas",
+      "recipe_count": 2,
+      "recipes": [
+        "recipe-044",
+        "recipe-046"
+      ]
+    },
+    {
+      "item": "sal, pimienta y nuez moscada",
+      "recipe_count": 2,
+      "recipes": [
+        "recipe-045",
+        "recipe-046"
+      ]
+    },
+    {
+      "item": "premezcla",
+      "recipe_count": 2,
+      "recipes": [
+        "recipe-047",
+        "recipe-057"
+      ]
+    },
+    {
+      "item": "levadura seca",
+      "recipe_count": 2,
+      "recipes": [
+        "recipe-047",
+        "recipe-048"
+      ]
+    },
+    {
+      "item": "cucharadita de polvo de hornear",
+      "recipe_count": 2,
+      "recipes": [
+        "recipe-050",
+        "recipe-075"
+      ]
+    },
+    {
+      "item": "cucharadita de cúrcuma",
+      "recipe_count": 2,
+      "recipes": [
+        "recipe-050",
+        "recipe-094"
+      ]
+    },
+    {
+      "item": "azúcar mascabo",
+      "recipe_count": 2,
+      "recipes": [
+        "recipe-052",
+        "recipe-062"
+      ]
+    },
+    {
+      "item": "bananas",
+      "recipe_count": 2,
+      "recipes": [
+        "recipe-052",
+        "recipe-064"
+      ]
+    },
+    {
+      "item": "s de edulcorante",
+      "recipe_count": 2,
+      "recipes": [
+        "recipe-053",
+        "recipe-067"
+      ]
+    },
+    {
+      "item": "arándanos",
+      "recipe_count": 2,
+      "recipes": [
+        "recipe-053",
+        "recipe-095"
+      ]
+    },
+    {
+      "item": "peras",
+      "recipe_count": 2,
+      "recipes": [
+        "recipe-055",
+        "recipe-058"
+      ]
+    },
+    {
+      "item": "s stevia",
+      "recipe_count": 2,
+      "recipes": [
+        "recipe-056",
+        "recipe-058"
+      ]
+    },
+    {
+      "item": "copos de avena",
+      "recipe_count": 2,
+      "recipes": [
+        "recipe-056",
+        "recipe-089"
+      ]
+    },
+    {
+      "item": "avena",
+      "recipe_count": 2,
+      "recipes": [
+        "recipe-060",
+        "recipe-069"
+      ]
+    },
+    {
+      "item": "s harina integral",
+      "recipe_count": 2,
+      "recipes": [
+        "recipe-062",
+        "recipe-063"
+      ]
+    },
+    {
+      "item": "topping: granola",
+      "recipe_count": 2,
+      "recipes": [
+        "recipe-068",
+        "recipe-070"
+      ]
+    },
+    {
+      "item": "s de pan de molde",
+      "recipe_count": 2,
+      "recipes": [
+        "recipe-072",
+        "recipe-073"
+      ]
+    },
+    {
+      "item": "itro de agua",
+      "recipe_count": 2,
+      "recipes": [
+        "recipe-080",
+        "recipe-081"
+      ]
+    },
+    {
+      "item": "cucharadita de bicarbonato de sodio",
+      "recipe_count": 2,
+      "recipes": [
+        "recipe-084",
+        "recipe-096"
+      ]
+    },
+    {
+      "item": "huevos, batidos",
+      "recipe_count": 2,
+      "recipes": [
+        "recipe-084",
+        "recipe-087"
+      ]
+    },
+    {
+      "item": "copos de avena a la antigua (sin gluten si son sensibles)",
+      "recipe_count": 2,
+      "recipes": [
+        "recipe-084",
+        "recipe-085"
+      ]
+    },
+    {
+      "item": "cucharaditas de canela molida",
+      "recipe_count": 2,
+      "recipes": [
+        "recipe-084",
+        "recipe-092"
+      ]
+    },
+    {
+      "item": "cucharadita de pimienta negra recién molida",
+      "recipe_count": 2,
+      "recipes": [
+        "recipe-087",
+        "recipe-095"
+      ]
+    },
+    {
+      "item": "cucharadas de mantequilla",
+      "recipe_count": 2,
+      "recipes": [
+        "recipe-088",
+        "recipe-092"
+      ]
+    },
+    {
+      "item": "cucharadas de miel",
+      "recipe_count": 2,
+      "recipes": [
+        "recipe-092",
+        "recipe-094"
+      ]
+    },
+    {
+      "item": "cacao en polvo sin azúcar",
+      "recipe_count": 2,
+      "recipes": [
+        "recipe-096",
+        "recipe-099"
+      ]
+    },
+    {
+      "item": "planta pequeña de rúcula",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-001"
+      ]
+    },
+    {
+      "item": "garbanzos hervidos",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-001"
+      ]
+    },
+    {
+      "item": "hojas de lechuga",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-001"
+      ]
+    },
+    {
+      "item": "planta de rúcula",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-002"
+      ]
+    },
+    {
+      "item": "cuadraditos de queso port salut light",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-002"
+      ]
+    },
+    {
+      "item": "jugo de 2 limones",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-002"
+      ]
+    },
+    {
+      "item": "rabanitos",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-002"
+      ]
+    },
+    {
+      "item": "papa chica hervida en rodajas",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-003"
+      ]
+    },
+    {
+      "item": "tomates en rodajas",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-003"
+      ]
+    },
+    {
+      "item": "pepino en rodajas",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-003"
+      ]
+    },
+    {
+      "item": "cebolla morada en rodajas",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-003"
+      ]
+    },
+    {
+      "item": "filet de atún o 1 lata de atún al natural",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-004"
+      ]
+    },
+    {
+      "item": "planta de lechuga morada",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-004"
+      ]
+    },
+    {
+      "item": "planta de lechuga",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-004"
+      ]
+    },
+    {
+      "item": "zanahoria en cuadraditos",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-005"
+      ]
+    },
+    {
+      "item": "planta de espinaca",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-005"
+      ]
+    },
+    {
+      "item": "lentejas hervidas",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-005"
+      ]
+    },
+    {
+      "item": "arroz integral",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-005"
+      ]
+    },
+    {
+      "item": "morrón rojo en cuadraditos",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-005"
+      ]
+    },
+    {
+      "item": "ata de choclo",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-006"
+      ]
+    },
+    {
+      "item": "huevos duros",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-006"
+      ]
+    },
+    {
+      "item": "ata de arvejas",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-006"
+      ]
+    },
+    {
+      "item": "tomatitos cherry",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-006"
+      ]
+    },
+    {
+      "item": "tirabuzones cocidos",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-007"
+      ]
+    },
+    {
+      "item": "brócoli",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-008"
+      ]
+    },
+    {
+      "item": "zanahoria pelada y rallada",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-010"
+      ]
+    },
+    {
+      "item": "ata de choclo entero",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-010"
+      ]
+    },
+    {
+      "item": "s de quinoa cocida",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-010"
+      ]
+    },
+    {
+      "item": "a 2 repollo",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-010"
+      ]
+    },
+    {
+      "item": "aduki (azuki) cocidos",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-011"
+      ]
+    },
+    {
+      "item": "aceite y condimentos",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-011"
+      ]
+    },
+    {
+      "item": "germinados de lentejas ()",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-011"
+      ]
+    },
+    {
+      "item": "hojas verdes",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-011"
+      ]
+    },
+    {
+      "item": "cebolla de verdeo picada",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-012"
+      ]
+    },
+    {
+      "item": "trigo burgol",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-012"
+      ]
+    },
+    {
+      "item": "jugo de limón",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-012"
+      ]
+    },
+    {
+      "item": "zanahoria en tiras",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-013"
+      ]
+    },
+    {
+      "item": "tomates cherry cortados por la mitad",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-013"
+      ]
+    },
+    {
+      "item": "cebolla blanca picada",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-013"
+      ]
+    },
+    {
+      "item": "palta en rodajas finas",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-013"
+      ]
+    },
+    {
+      "item": "lechuga en tiras finas",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-013"
+      ]
+    },
+    {
+      "item": "cucharada sopera de aceite de oliva",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-014"
+      ]
+    },
+    {
+      "item": "filling: 1 calabaza en cubos",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-015"
+      ]
+    },
+    {
+      "item": "filling: 1 cebolla morada en cubos",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-015"
+      ]
+    },
+    {
+      "item": "filling: 1 cucharada de tomillo",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-015"
+      ]
+    },
+    {
+      "item": "filling: 1 huevo",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-015"
+      ]
+    },
+    {
+      "item": "filling: 1/2 queso port salut en cubos",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-015"
+      ]
+    },
+    {
+      "item": "filling: 1 flores de brócoli",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-015"
+      ]
+    },
+    {
+      "item": "filling: 1 cucharada de curry",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-015"
+      ]
+    },
+    {
+      "item": "filling: 2 cucharaditas de semillas de sésamo",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-015"
+      ]
+    },
+    {
+      "item": "filling: 2 cebollas",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-016"
+      ]
+    },
+    {
+      "item": "filling: 2 ramitas de perejil",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-016"
+      ]
+    },
+    {
+      "item": "filling: pimienta negra",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-016"
+      ]
+    },
+    {
+      "item": "filling: 2 ajo",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-016"
+      ]
+    },
+    {
+      "item": "filling: 1/2 pimiento verde",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-016"
+      ]
+    },
+    {
+      "item": "filling: sal",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-016"
+      ]
+    },
+    {
+      "item": "filling: 2 zapallitos",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-016"
+      ]
+    },
+    {
+      "item": "filling: 1/2 pimiento rojo",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-016"
+      ]
+    },
+    {
+      "item": "filling: 2 berenjenas",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-016"
+      ]
+    },
+    {
+      "item": "filling: 1/2 pimiento amarillo",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-016"
+      ]
+    },
+    {
+      "item": "filling: 2 ramitas de tomillo",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-016"
+      ]
+    },
+    {
+      "item": "filling: 2 tomates perita",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-016"
+      ]
+    },
+    {
+      "item": "filling: 50 de queso untable",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-017"
+      ]
+    },
+    {
+      "item": "base: 1 huevo",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-017"
+      ]
+    },
+    {
+      "item": "filling: 300 de espinaca",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-017"
+      ]
+    },
+    {
+      "item": "filling: 50 de leche descremada",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-017"
+      ]
+    },
+    {
+      "item": "filling: 1 cucharadita de aceite",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-017"
+      ]
+    },
+    {
+      "item": "base: 2 cucharadas de maicena",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-017"
+      ]
+    },
+    {
+      "item": "base: 100 de zanahoria",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-017"
+      ]
+    },
+    {
+      "item": "base: condimentos",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-017"
+      ]
+    },
+    {
+      "item": "base: 750 de calabaza",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-017"
+      ]
+    },
+    {
+      "item": "filling: 3 huevos",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-017"
+      ]
+    },
+    {
+      "item": "ricota descremada",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-018"
+      ]
+    },
+    {
+      "item": "cucharadas de queso rallado",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-018"
+      ]
+    },
+    {
+      "item": "pizca de nuez moscada",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-018"
+      ]
+    },
+    {
+      "item": "pizca de pimienta",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-018"
+      ]
+    },
+    {
+      "item": "masa de tarta del recetario",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-018"
+      ]
+    },
+    {
+      "item": "espinaca hervida, escurrida y picada",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-018"
+      ]
+    },
+    {
+      "item": "morrón verde",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-019"
+      ]
+    },
+    {
+      "item": "ata de atún al natural",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-019"
+      ]
+    },
+    {
+      "item": "masa integral del recetario",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-019"
+      ]
+    },
+    {
+      "item": "tomates perita finamente picados",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-020"
+      ]
+    },
+    {
+      "item": "cebolla cortada en aros",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-020"
+      ]
+    },
+    {
+      "item": "berenjenas medianas cortadas en rodajas",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-020"
+      ]
+    },
+    {
+      "item": "quinoa",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-021"
+      ],
+      "images": ["assets/athlete-cookbook/quinoa.png"],
+      "preparation": [
+        "No se puede cocinar en su estado natural porque posee saponina (puede ser muy tóxica).",
+        "Paso 1: Poner la quinoa en un recipiente, cubrir con agua caliente, mover con una cuchara y dejar reposar unos minutos tapada con un paño.",
+        "Paso 2: Escurrir la quinoa para retirarle el agua.",
+        "Paso 3: Lavar nuevamente con agua fría: frotar con las manos para eliminar rastros de suciedad o sustancia tóxica.",
+        "Paso 4: Escurrir y cocinar en una olla a fuego medio durante 15 a 20 minutos."
+      ]
+    },
+    {
+      "item": "cucharadita de comino",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-022"
+      ]
+    },
+    {
+      "item": "zapallo o calabaza , , sin semillas y en trozos pequeños",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-022"
+      ]
+    },
+    {
+      "item": "tomates pelados y picados",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-022"
+      ]
+    },
+    {
+      "item": "espinaca",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-023"
+      ]
+    },
+    {
+      "item": "planta de brócoli",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-023"
+      ]
+    },
+    {
+      "item": "filling: 4 zapallitos",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-024"
+      ]
+    },
+    {
+      "item": "filling: semillas",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-024"
+      ]
+    },
+    {
+      "item": "filling: 200 g de ricota magra",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-024"
+      ]
+    },
+    {
+      "item": "filling: 2 huevos batidos",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-024"
+      ]
+    },
+    {
+      "item": "filling: 1/2 morrón rojo",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-024"
+      ]
+    },
+    {
+      "item": "zanahorias peladas",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-025"
+      ]
+    },
+    {
+      "item": "atas de arvejas",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-026"
+      ]
+    },
+    {
+      "item": "s de ajo picados",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-026"
+      ]
+    },
+    {
+      "item": "leche",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-027"
+      ]
+    },
+    {
+      "item": "calabaza (sin cáscara)",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-027"
+      ]
+    },
+    {
+      "item": "pechuga de pollo (1 porción)",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-027"
+      ]
+    },
+    {
+      "item": "ata de atún al natural escurrido",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-028"
+      ]
+    },
+    {
+      "item": "cucharadita de mostaza",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-028"
+      ]
+    },
+    {
+      "item": "cucharadita de perejil",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-028"
+      ]
+    },
+    {
+      "item": "cebolla salteada en cubitos",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-028"
+      ]
+    },
+    {
+      "item": "carne picada magra",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-029"
+      ]
+    },
+    {
+      "item": "morrón y salteado",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-029"
+      ]
+    },
+    {
+      "item": "cebolla pequeña cortada y salteada",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-029"
+      ]
+    },
+    {
+      "item": "avena o pan rallado integral (cantidad necesaria)",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-029"
+      ]
+    },
+    {
+      "item": "morrón en cubitos",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-030"
+      ]
+    },
+    {
+      "item": "chauchas cortadas a la mitad",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-030"
+      ]
+    },
+    {
+      "item": "champiñones (cantidad )",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-030"
+      ]
+    },
+    {
+      "item": "filet de pescado",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-030"
+      ]
+    },
+    {
+      "item": "cebolla picada muy fina",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-030"
+      ]
+    },
+    {
+      "item": "zucchini",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-031"
+      ]
+    },
+    {
+      "item": "champiñones",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-031"
+      ]
+    },
+    {
+      "item": "pimiento rojo",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-031"
+      ]
+    },
+    {
+      "item": "brotes de soja",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-031"
+      ]
+    },
+    {
+      "item": "pechugas de pollo",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-031"
+      ]
+    },
+    {
+      "item": "pimiento verde",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-031"
+      ]
+    },
+    {
+      "item": "cucharadas de salsa de soja",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-031"
+      ]
+    },
+    {
+      "item": "aceite de oliva",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-032"
+      ]
+    },
+    {
+      "item": "cucharada de pimentón",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-032"
+      ]
+    },
+    {
+      "item": "orégano y albahaca",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-032"
+      ]
+    },
+    {
+      "item": "quinoa cocida",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-032"
+      ]
+    },
+    {
+      "item": "queso port salut light en cubitos",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-032"
+      ]
+    },
+    {
+      "item": "quinoa seca",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-033"
+      ]
+    },
+    {
+      "item": "lentejas cocidas (bien escurridas)",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-033"
+      ]
+    },
+    {
+      "item": "cebolla pequeña picada",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-033"
+      ]
+    },
+    {
+      "item": "claras de huevo",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-033"
+      ]
+    },
+    {
+      "item": "pimiento rojo en cubitos",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-033"
+      ]
+    },
+    {
+      "item": "rebozador (cantidad necesaria)",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-033"
+      ]
+    },
+    {
+      "item": "lentejas cocidas",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-034"
+      ]
+    },
+    {
+      "item": "avena (cantidad necesaria)",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-034"
+      ]
+    },
+    {
+      "item": "soja texturizada fina (aprox. 300 hidratada)",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-035"
+      ]
+    },
+    {
+      "item": "un puñadito de perejil",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-035"
+      ]
+    },
+    {
+      "item": "cucharadita de pimienta negra molida",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-035"
+      ]
+    },
+    {
+      "item": "cucharadita de cebolla en polvo",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-035"
+      ]
+    },
+    {
+      "item": "cucharadas de harina de avena (avena molida)",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-035"
+      ]
+    },
+    {
+      "item": "un poco más de harina de avena para rebozar",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-035"
+      ]
+    },
+    {
+      "item": "cucharadita de ajo en polvo",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-035"
+      ]
+    },
+    {
+      "item": "cucharadita de pimentón",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-036"
+      ]
+    },
+    {
+      "item": "cucharadas de pan rallado o salvado de avena",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-036"
+      ]
+    },
+    {
+      "item": "cucharada de salsa de soja",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-036"
+      ]
+    },
+    {
+      "item": "gluten de trigo",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-036"
+      ]
+    },
+    {
+      "item": "porotos blancos",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-037"
+      ]
+    },
+    {
+      "item": "a 5 tomates",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-037"
+      ]
+    },
+    {
+      "item": "hojas de laurel",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-038"
+      ]
+    },
+    {
+      "item": "pimiento morrón verde",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-038"
+      ]
+    },
+    {
+      "item": "cebolla de verdeo",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-038"
+      ]
+    },
+    {
+      "item": "zapallo",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-038"
+      ]
+    },
+    {
+      "item": "pimiento morrón rojo",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-038"
+      ]
+    },
+    {
+      "item": "s de agua",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-038"
+      ]
+    },
+    {
+      "item": "tomates en cubos",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-038"
+      ]
+    },
+    {
+      "item": "s de ajo",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-038"
+      ]
+    },
+    {
+      "item": "lentejas",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-038"
+      ]
+    },
+    {
+      "item": "zanahoria pequeña",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-039"
+      ]
+    },
+    {
+      "item": "queso port salut light",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-039"
+      ]
+    },
+    {
+      "item": "zucchini rebanado a lo largo",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-039"
+      ]
+    },
+    {
+      "item": "pechuga de pollo",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-039"
+      ]
+    },
+    {
+      "item": "cebolla picada y salteada",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-040"
+      ]
+    },
+    {
+      "item": "puñado de arroz integral / yamaní (ya )",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-040"
+      ]
+    },
+    {
+      "item": "ajo (cantidad suficiente)",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-040"
+      ]
+    },
+    {
+      "item": "fina de queso port salut light",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-040"
+      ]
+    },
+    {
+      "item": "arroz yamaní",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-041"
+      ]
+    },
+    {
+      "item": "zapallitos",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-041"
+      ]
+    },
+    {
+      "item": "cherrys",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-042"
+      ]
+    },
+    {
+      "item": "repollitos de bruselas",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-042"
+      ]
+    },
+    {
+      "item": "semillas y condimentos a elección",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-042"
+      ]
+    },
+    {
+      "item": "porción de pastas a elección",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-042"
+      ]
+    },
+    {
+      "item": "s azúcar",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-043"
+      ]
+    },
+    {
+      "item": "cito de levadura",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-043"
+      ]
+    },
+    {
+      "item": "agua tibia (1.5 tazas aprox.)",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-043"
+      ]
+    },
+    {
+      "item": "s aceite de girasol u oliva",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-043"
+      ]
+    },
+    {
+      "item": "papa mediana",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-044"
+      ]
+    },
+    {
+      "item": "harina",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-044"
+      ]
+    },
+    {
+      "item": "cucharada de aceite",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-044"
+      ]
+    },
+    {
+      "item": "premezcla (400g fécula maíz, 300g mandioca, 300g harina arroz)",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-045"
+      ]
+    },
+    {
+      "item": "kilo de papa",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-045"
+      ]
+    },
+    {
+      "item": "premezcla (ver receta anterior)",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-046"
+      ]
+    },
+    {
+      "item": "papa",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-046"
+      ]
+    },
+    {
+      "item": "leche tibia",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-047"
+      ]
+    },
+    {
+      "item": "cucharadita de azúcar",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-047"
+      ]
+    },
+    {
+      "item": "mix de semillas sin gluten",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-047"
+      ]
+    },
+    {
+      "item": "agua tibia",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-048"
+      ]
+    },
+    {
+      "item": "amos de harina integral",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-048"
+      ]
+    },
+    {
+      "item": "cucharada de polvo para hornear",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-049"
+      ]
+    },
+    {
+      "item": "cucharadita de semillas",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-050"
+      ]
+    },
+    {
+      "item": "relleno (vegetales sugeridos)",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-050"
+      ]
+    },
+    {
+      "item": "cucharadas de agua",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-050"
+      ]
+    },
+    {
+      "item": "cucharadas de harina de garbanzos",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-050"
+      ]
+    },
+    {
+      "item": "polenta",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-051"
+      ]
+    },
+    {
+      "item": "condimentos (ej. pimentón ahumado)",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-051"
+      ]
+    },
+    {
+      "item": "cucharadas aceite de oliva",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-051"
+      ]
+    },
+    {
+      "item": "harina 0000",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-051"
+      ]
+    },
+    {
+      "item": ": mix de frutos secos, chocolate amargo, semillas amapola",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-052"
+      ]
+    },
+    {
+      "item": "yogur natural",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-053"
+      ]
+    },
+    {
+      "item": "bicarbonato",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-053"
+      ]
+    },
+    {
+      "item": "aceite de girasol",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-053"
+      ]
+    },
+    {
+      "item": "s esencia de vainilla",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-053"
+      ]
+    },
+    {
+      "item": "colmada queso crema",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-053"
+      ]
+    },
+    {
+      "item": "pizca de sal",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-054"
+      ]
+    },
+    {
+      "item": "s de harina 0000",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-054"
+      ]
+    },
+    {
+      "item": "mandarinas",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-054"
+      ]
+    },
+    {
+      "item": "s de azúcar",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-054"
+      ]
+    },
+    {
+      "item": "s de harina integral",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-054"
+      ]
+    },
+    {
+      "item": "al ras de polvo de hornear",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-054"
+      ]
+    },
+    {
+      "item": "cucharada de polvo de hornear",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-055"
+      ]
+    },
+    {
+      "item": "zapallito rallado (grueso)",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-056"
+      ]
+    },
+    {
+      "item": "zanahoria picada fina o rallada",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-056"
+      ]
+    },
+    {
+      "item": "harina de trigo",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-056"
+      ]
+    },
+    {
+      "item": "condimentos (orégano, provenzal, pimentón)",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-057"
+      ]
+    },
+    {
+      "item": "saborizantes: 1 diente ajo, 1/2 cebolla, 1/2 morrón",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-057"
+      ]
+    },
+    {
+      "item": "leche descremada",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-057"
+      ]
+    },
+    {
+      "item": "huevo y 3 claras",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-058"
+      ]
+    },
+    {
+      "item": "azúcar rubia",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-059"
+      ]
+    },
+    {
+      "item": "manzanas",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-059"
+      ]
+    },
+    {
+      "item": "almendras molidas",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-059"
+      ]
+    },
+    {
+      "item": "maizena",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-059"
+      ]
+    },
+    {
+      "item": "avena arrollada gruesa",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-059"
+      ]
+    },
+    {
+      "item": "aceite girasol",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-059"
+      ]
+    },
+    {
+      "item": "queso crema",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-059"
+      ]
+    },
+    {
+      "item": "mandarina",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-060"
+      ]
+    },
+    {
+      "item": "postre polvo de hornear",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-060"
+      ]
+    },
+    {
+      "item": "esencia vainilla",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-060"
+      ]
+    },
+    {
+      "item": "bicarbonato de sodio",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-061"
+      ]
+    },
+    {
+      "item": "s postre semillas amapola",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-061"
+      ]
+    },
+    {
+      "item": "ralladura y jugo de 2 limones",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-061"
+      ]
+    },
+    {
+      "item": "jugo de 1/2 limón",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-062"
+      ]
+    },
+    {
+      "item": "bananas pisadas",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-062"
+      ]
+    },
+    {
+      "item": "nueces picadas",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-062"
+      ]
+    },
+    {
+      "item": "polvo para hornear",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-062"
+      ]
+    },
+    {
+      "item": "avena arrollada",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-062"
+      ]
+    },
+    {
+      "item": "s harina leudante",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-063"
+      ]
+    },
+    {
+      "item": "s edulcorante apto cocción",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-063"
+      ]
+    },
+    {
+      "item": "s polvo para hornear",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-063"
+      ]
+    },
+    {
+      "item": "zanahorias medianas",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-063"
+      ]
+    },
+    {
+      "item": "coco rallado",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-064"
+      ]
+    },
+    {
+      "item": "esencia de vainilla ()",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-065"
+      ]
+    },
+    {
+      "item": "banana",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-065"
+      ]
+    },
+    {
+      "item": "pimienta",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-066"
+      ]
+    },
+    {
+      "item": "cucharada de aceite de oliva extra virgen",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-066"
+      ]
+    },
+    {
+      "item": "garbanzos cocidos",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-066"
+      ]
+    },
+    {
+      "item": "jugo de 1 limón",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-066"
+      ]
+    },
+    {
+      "item": "cajita de arándanos",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-067"
+      ]
+    },
+    {
+      "item": "semillas de chía",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-067"
+      ]
+    },
+    {
+      "item": "base: 1/2 leche de coco",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-068"
+      ]
+    },
+    {
+      "item": "topping: coco deshidratado",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-068"
+      ]
+    },
+    {
+      "item": "base: 1/2 mix de arándanos",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-068"
+      ]
+    },
+    {
+      "item": "topping: arándanos frescos",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-068"
+      ]
+    },
+    {
+      "item": "base: 1 banana congelada",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-068"
+      ]
+    },
+    {
+      "item": "cucharada de canela",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-069"
+      ]
+    },
+    {
+      "item": "almendras en trozos",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-069"
+      ]
+    },
+    {
+      "item": "cucharada de extracto de vainilla",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-069"
+      ]
+    },
+    {
+      "item": "cucharada de coco rallado",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-069"
+      ]
+    },
+    {
+      "item": "cucharada de aceite de coco",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-069"
+      ]
+    },
+    {
+      "item": "frutas (para servir)",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-069"
+      ]
+    },
+    {
+      "item": "topping: maní sin sal",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-070"
+      ]
+    },
+    {
+      "item": "base: 2 sobres de stevia",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-070"
+      ]
+    },
+    {
+      "item": "base: 1/4 leche vegetal a elección",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-070"
+      ]
+    },
+    {
+      "item": "topping: coco rallado",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-070"
+      ]
+    },
+    {
+      "item": "base: 2 bananas grandes congeladas",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-070"
+      ]
+    },
+    {
+      "item": "base: 1 cucharadita de matcha en polvo",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-070"
+      ]
+    },
+    {
+      "item": "cucharadita de polvo para hornear",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-071"
+      ]
+    },
+    {
+      "item": "1/2 leche vegetal",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-071"
+      ]
+    },
+    {
+      "item": "fécula de maíz",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-071"
+      ]
+    },
+    {
+      "item": "cucharadita de vainilla",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-071"
+      ]
+    },
+    {
+      "item": "cucharadita de canela en polvo",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-071"
+      ]
+    },
+    {
+      "item": "harina de trigo integral",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-071"
+      ]
+    },
+    {
+      "item": "harina de avena",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-071"
+      ]
+    },
+    {
+      "item": "chorrito de leche",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-072"
+      ]
+    },
+    {
+      "item": "chorrito de aceite de oliva",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-073"
+      ]
+    },
+    {
+      "item": "cubitos pequeños de queso magro",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-074"
+      ]
+    },
+    {
+      "item": "albahaca fresca",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-074"
+      ]
+    },
+    {
+      "item": "huevo y 1 clara batidos",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-074"
+      ]
+    },
+    {
+      "item": "yemas de huevo",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-075"
+      ]
+    },
+    {
+      "item": "cucharada de maicena",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-075"
+      ]
+    },
+    {
+      "item": "cacao en polvo (o 3 medidas de whey protein sabor chocolate)",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-075"
+      ]
+    },
+    {
+      "item": "claras batidas a nieve",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-075"
+      ]
+    },
+    {
+      "item": "cucharadas de edulcorante en polvo para cocinar",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-075"
+      ]
+    },
+    {
+      "item": "queso untable descremado",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-075"
+      ]
+    },
+    {
+      "item": "chips de chocolate o chocolate amargo",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-076"
+      ]
+    },
+    {
+      "item": "harina leudante",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-076"
+      ]
+    },
+    {
+      "item": "azúcar (o 8 sobres de edulcorante)",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-076"
+      ]
+    },
+    {
+      "item": "cucharadas de leche",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-077"
+      ]
+    },
+    {
+      "item": "cucharadas de dulce de leche",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-077"
+      ]
+    },
+    {
+      "item": ": frutos secos triturados o scoop de proteína en polvo",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-077"
+      ]
+    },
+    {
+      "item": "cucharadas de cacao amargo",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-077"
+      ]
+    },
+    {
+      "item": "coco rallado (cantidad necesaria)",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-077"
+      ]
+    },
+    {
+      "item": "a 1/2 agua fresca",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-078"
+      ]
+    },
+    {
+      "item": "castañas de cajú crudas (sin tostar ni salar)",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-078"
+      ]
+    },
+    {
+      "item": "cucharadita de sal de ajo",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-078"
+      ]
+    },
+    {
+      "item": "cucharadita de cúrcuma en polvo ( para color)",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-078"
+      ]
+    },
+    {
+      "item": "levadura nutricional",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-078"
+      ]
+    },
+    {
+      "item": "cucharadita de provenzal",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-079"
+      ]
+    },
+    {
+      "item": "avena arrollada gruesa (tradicional)",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-080"
+      ]
+    },
+    {
+      "item": "semillas de girasol peladas (sin salar ni tostar)",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-081"
+      ]
+    },
+    {
+      "item": "semillas de lino",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-082"
+      ]
+    },
+    {
+      "item": "nueces",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-082"
+      ]
+    },
+    {
+      "item": "semillas de zapallo",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-082"
+      ]
+    },
+    {
+      "item": "cucharadas de aceite de coco,",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-083"
+      ]
+    },
+    {
+      "item": "bananas maduras, peladas y cortadas en rodajas de 2 o 3 cms de grosor",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-083"
+      ]
+    },
+    {
+      "item": "jarabe de arce ámbar oscuro",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-084"
+      ]
+    },
+    {
+      "item": "pasas, dátiles picados o chispas de chocolate ()",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-084"
+      ]
+    },
+    {
+      "item": "calabacín rallado (alrededor de 1 calabacín)",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-084"
+      ]
+    },
+    {
+      "item": "cucharadas de mantequilla sin sal, derretida",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-084"
+      ]
+    },
+    {
+      "item": "nueces picadas ()",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-084"
+      ]
+    },
+    {
+      "item": "cucharadita de nuez moscada molida",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-084"
+      ]
+    },
+    {
+      "item": "s de harina de almendras",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-084"
+      ]
+    },
+    {
+      "item": "zanahorias ralladas (aproximadamente 2 zanahorias)",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-084"
+      ]
+    },
+    {
+      "item": "s de leche de almendras sin azúcar u otra leche de su elección",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-085"
+      ]
+    },
+    {
+      "item": "manzana (opción sin pelar), rallada",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-085"
+      ]
+    },
+    {
+      "item": "yogur de leche entera natural",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-085"
+      ]
+    },
+    {
+      "item": "una pizca de sal marina fina",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-085"
+      ]
+    },
+    {
+      "item": "cucharaditas de miel",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-085"
+      ]
+    },
+    {
+      "item": "opcionales: bayas frescas, semillas de chía o semillas de girasol, nueces, copos de coco tostado, dátiles u otra fruta seca",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-085"
+      ]
+    },
+    {
+      "item": "chorrito de extracto de vainilla ()",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-085"
+      ]
+    },
+    {
+      "item": "nueces o mantequilla de almendras",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-086"
+      ]
+    },
+    {
+      "item": "canela molida",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-086"
+      ]
+    },
+    {
+      "item": "leche de almendras u otra leche de su elección",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-086"
+      ]
+    },
+    {
+      "item": "una pizca de sal marina",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-086"
+      ]
+    },
+    {
+      "item": "plátano, en rodajas",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-086"
+      ]
+    },
+    {
+      "item": "miel ()",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-086"
+      ]
+    },
+    {
+      "item": "pasas o bayas frescas",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-086"
+      ]
+    },
+    {
+      "item": "avena instantánea (sin gluten si es sensible)",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-086"
+      ]
+    },
+    {
+      "item": "1/2 gruyere rallado u otro queso favorito",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-087"
+      ]
+    },
+    {
+      "item": "tortillas integrales tamaño burrito (aprox. 10 pulgadas)",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-087"
+      ]
+    },
+    {
+      "item": "(6 ) de espinacas pequeñas (alrededor de 4 tazas envasadas)",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-087"
+      ]
+    },
+    {
+      "item": "1/2 frijoles negros picantes o 1 lata (15 )",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-087"
+      ]
+    },
+    {
+      "item": "leche de almendras sin azúcar u otra leche a elección",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-088"
+      ]
+    },
+    {
+      "item": "s de pan (espelta) de 1 pulgada de grosor o pan a elección",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-088"
+      ]
+    },
+    {
+      "item": "giro de pimienta negra recién molida",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-088"
+      ]
+    },
+    {
+      "item": "pizca de nuez moscada molida ()",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-088"
+      ]
+    },
+    {
+      "item": "cucharadita de extracto de almendra",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-088"
+      ]
+    },
+    {
+      "item": "opcionales: sal marina gruesa, plátanos en rodajas, jarabe de arce",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-088"
+      ]
+    },
+    {
+      "item": "cucharaditas de canela en polvo",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-089"
+      ]
+    },
+    {
+      "item": "miel",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-089"
+      ]
+    },
+    {
+      "item": "cucharaditas de pasta de vainilla o extracto de vainilla",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-089"
+      ]
+    },
+    {
+      "item": "almendras naturales",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-089"
+      ]
+    },
+    {
+      "item": "semillas varias (chía, sésamo, calabaza, pipas, etc.)",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-089"
+      ]
+    },
+    {
+      "item": "avellanas naturales",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-089"
+      ]
+    },
+    {
+      "item": "aceite de coco",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-089"
+      ]
+    },
+    {
+      "item": "arándanos secos, o pasas, o fruta seca a elección",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-089"
+      ]
+    },
+    {
+      "item": "nueces crudas picadas",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-090"
+      ]
+    },
+    {
+      "item": "coco seco rallado sin azúcar, tostado",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-090"
+      ]
+    },
+    {
+      "item": "cucharada de cacao en polvo sin azúcar",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-090"
+      ]
+    },
+    {
+      "item": "cucharadas de granos de café finamente molidos",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-090"
+      ]
+    },
+    {
+      "item": "mantequilla de almendras sin sal",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-090"
+      ]
+    },
+    {
+      "item": "dátiles grandes, deshuesados",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-090"
+      ]
+    },
+    {
+      "item": "cerezas secas sin azúcar",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-090"
+      ]
+    },
+    {
+      "item": "harina para todo uso",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-091"
+      ]
+    },
+    {
+      "item": "barra (8 cucharadas) de mantequilla fría sin sal, en cubos",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-091"
+      ]
+    },
+    {
+      "item": "ralladura fina de 2 limones",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-091"
+      ]
+    },
+    {
+      "item": "azúcar de coco u otro azúcar granulado",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-091"
+      ]
+    },
+    {
+      "item": "arándanos congelados",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-091"
+      ]
+    },
+    {
+      "item": "harina de maíz molida a la piedra",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-091"
+      ]
+    },
+    {
+      "item": "yogur griego con leche entera",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-091"
+      ]
+    },
+    {
+      "item": "cucharaditas de levadura en polvo",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-091"
+      ]
+    },
+    {
+      "item": "cucharadita de pimiento rojo",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-092"
+      ]
+    },
+    {
+      "item": "s de avellanas crudas",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-092"
+      ]
+    },
+    {
+      "item": "(4 ) de chevre natural (queso de cabra)",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-093"
+      ]
+    },
+    {
+      "item": "aceite de oliva virgen extra, para rociar",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-093"
+      ]
+    },
+    {
+      "item": "cucharada de hojas de tomillo",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-093"
+      ]
+    },
+    {
+      "item": "sal marina gruesa",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-093"
+      ]
+    },
+    {
+      "item": "miel, para rociar",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-093"
+      ]
+    },
+    {
+      "item": "o 5 higos frescos, en rodajas finas (o 1/2 pera madura en rodajas finas)",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-093"
+      ]
+    },
+    {
+      "item": "uette o 1 baguette pequeña (aprox. 1 pie), en rodajas de 1/2 pulgada",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-093"
+      ]
+    },
+    {
+      "item": "s de pepitas crudas (de calabaza)",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-094"
+      ]
+    },
+    {
+      "item": "cucharada de mantequilla",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-094"
+      ]
+    },
+    {
+      "item": "cucharadita de curry en polvo",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-094"
+      ]
+    },
+    {
+      "item": "libra de salmón salvaje o carbón ártico, en 2 filetes",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-095"
+      ]
+    },
+    {
+      "item": "receta de vinagreta balsámica básica",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-095"
+      ]
+    },
+    {
+      "item": "avellanas tostadas picadas",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-095"
+      ]
+    },
+    {
+      "item": "ibra de espárragos, recortados",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-095"
+      ]
+    },
+    {
+      "item": "cucharadita de sal marina gruesa",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-095"
+      ]
+    },
+    {
+      "item": "queso de cabra desmenuzado o queso feta",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-095"
+      ]
+    },
+    {
+      "item": "s de rúcula u hojas verdes",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-095"
+      ]
+    },
+    {
+      "item": "chispas de chocolate semidulce",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-096"
+      ]
+    },
+    {
+      "item": "cucharadita de levadura en polvo",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-096"
+      ]
+    },
+    {
+      "item": "harina de almendras",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-096"
+      ]
+    },
+    {
+      "item": "aceite de coco,",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-096"
+      ]
+    },
+    {
+      "item": "harina teff",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-096"
+      ]
+    },
+    {
+      "item": "jarabe de arce puro",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-096"
+      ]
+    },
+    {
+      "item": "nut butter: 10 dátiles deglet (deshuesados)",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-097"
+      ]
+    },
+    {
+      "item": "cobertura: 3 cucharadas de jarabe de arce",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-097"
+      ]
+    },
+    {
+      "item": "nut butter: 2 nueces",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-097"
+      ]
+    },
+    {
+      "item": "cobertura: 3 cucharadas de cacao en polvo sin azúcar",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-097"
+      ]
+    },
+    {
+      "item": "nut butter: 1 cucharadita de canela molida",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-097"
+      ]
+    },
+    {
+      "item": "cobertura: 1 cucharadita de sal marina gruesa (para terminar)",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-097"
+      ]
+    },
+    {
+      "item": "cobertura: 2 cucharadas de aceite de coco virgen",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-097"
+      ]
+    },
+    {
+      "item": "relleno: 3 arándanos",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-098"
+      ]
+    },
+    {
+      "item": "crumble: 1/4 cucharadita de jengibre",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-098"
+      ]
+    },
+    {
+      "item": "crumble: 1/2 nueces crudas picadas o pacanas",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-098"
+      ]
+    },
+    {
+      "item": "relleno: 1 cucharada de zumo de limón",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-098"
+      ]
+    },
+    {
+      "item": "crumble: 1/4 cucharadita de sal marina fina",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-098"
+      ]
+    },
+    {
+      "item": "relleno: 3 fresas en rodajas",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-098"
+      ]
+    },
+    {
+      "item": "crumble: 1/4 aceite de coco virgen",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-098"
+      ]
+    },
+    {
+      "item": "crumble: 1/2 cucharadita de canela molida",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-098"
+      ]
+    },
+    {
+      "item": "crumble: 1/3 jarabe de arce (grado b)",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-098"
+      ]
+    },
+    {
+      "item": "crumble: 1/2 harina de almendras",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-098"
+      ]
+    },
+    {
+      "item": "crumble: 3/4 copos de avena a la antigua (sin gluten si es sensible)",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-098"
+      ]
+    },
+    {
+      "item": "relleno: 2 cucharadas de harina de tapioca o almidón de tapioca",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-098"
+      ]
+    },
+    {
+      "item": ": helado de vainilla (a base de leche de coco si es sensible a los lácteos)",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-098"
+      ]
+    },
+    {
+      "item": "cucharadas de aceite de coco virgen,",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-099"
+      ]
+    },
+    {
+      "item": "de coco seco rallado sin azúcar (2 1/4 a 3 tazas, depende de la marca)",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-099"
+      ]
+    },
+    {
+      "item": "jarabe de arce",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-099"
+      ]
+    },
+    {
+      "item": "cucharaditas de extracto de vainilla",
+      "recipe_count": 1,
+      "recipes": [
+        "recipe-099"
+      ]
+    }
+  ]
+}

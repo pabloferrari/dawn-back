@@ -1,56 +1,36 @@
 <!-- templates/budget-planner/expense-tracker.hbs -->
 <!DOCTYPE html>
-<html>
+<html lang="{{lang}}">
 
 <head>
   <style>
     @page {
       size: A4;
-      margin: 15mm;
+      margin: 12mm;
     }
 
     body {
-      font-family: {
-          {
-          customization.fontFamily
-        }
-      }
-
-      ;
+      font-family: {{customization.fontFamily}};
       color: #333;
     }
 
     .header {
       text-align: center;
-      margin-bottom: 20px;
-
-      border-bottom: 3px solid {
-          {
-          customization.primaryColor
-        }
-      }
-
-      ;
-      padding-bottom: 12px;
+      margin-bottom: 15px;
+      border-bottom: 3px solid {{customization.primaryColor}};
+      padding-bottom: 10px;
     }
 
     .title {
-      font-size: 24px;
-
-      color: {
-          {
-          customization.primaryColor
-        }
-      }
-
-      ;
+      font-size: 22px;
+      color: {{customization.primaryColor}};
       margin: 0;
     }
 
     .month-label {
-      font-size: 16px;
+      font-size: 14px;
       color: #666;
-      margin-top: 5px;
+      margin-top: 4px;
     }
 
     table {
@@ -60,70 +40,70 @@
     }
 
     th {
-      background: {
-          {
-          customization.primaryColor
-        }
-      }
-
-      ;
+      background: {{customization.primaryColor}};
       color: white;
       padding: 6px 4px;
       text-align: left;
-      font-size: 11px;
+      font-size: 10px;
     }
 
     td {
-      padding: 8px 4px;
+      padding: 7px 4px;
       border-bottom: 1px solid #e0e0e0;
     }
 
-    .date-col {
-      width: 55px;
+    .date-col { width: 50px; }
+    .category-col { width: 85px; }
+    .description-col { width: auto; }
+    .amount-col { width: 65px; text-align: right; }
+    .notes-col { width: 100px; font-size: 9px; }
+
+    tr:nth-child(even) { background: #f9f9f9; }
+
+    .total-section {
+      margin-top: 10px;
+      display: flex;
+      justify-content: flex-end;
     }
 
-    .category-col {
-      width: 90px;
+    .total-box {
+      background: {{customization.primaryColor}};
+      color: white;
+      padding: 10px 20px;
+      border-radius: 8px;
+      text-align: center;
     }
 
-    .description-col {
-      width: auto;
+    .total-label {
+      font-size: 10px;
+      opacity: 0.9;
     }
 
-    .amount-col {
-      width: 70px;
-      text-align: right;
-    }
-
-    .notes-col {
-      width: 110px;
-      font-size: 9px;
-    }
-
-    tr:nth-child(even) {
-      background: #f9f9f9;
+    .total-value {
+      font-size: 18px;
+      font-weight: bold;
     }
   </style>
 </head>
 
 <body>
   <div class="header">
-    <h1 class="title">Expense Tracker</h1>
+    <h1 class="title">{{t.expenseTracker.title}}</h1>
     <p class="month-label">{{currentMonth}} {{year}}</p>
   </div>
 
   <table>
     <thead>
       <tr>
-        <th class="date-col">Date</th>
-        <th class="category-col">Category</th>
-        <th class="description-col">Description</th>
-        <th class="amount-col">Amount</th>
-        <th class="notes-col">Notes</th>
+        <th class="date-col">{{t.expenseTracker.date}}</th>
+        <th class="category-col">{{t.expenseTracker.category}}</th>
+        <th class="description-col">{{t.expenseTracker.description}}</th>
+        <th class="amount-col">{{t.expenseTracker.amount}}</th>
+        <th class="notes-col">{{t.common.notes}}</th>
       </tr>
     </thead>
     <tbody>
-      <!-- REDUCIDO A 25 FILAS (antes 30) -->
+      {{#times 25}}
       <tr>
         <td class="date-col"></td>
         <td class="category-col"></td>
@@ -131,176 +111,16 @@
         <td class="amount-col">$</td>
         <td class="notes-col"></td>
       </tr>
-      <tr>
-        <td class="date-col"></td>
-        <td class="category-col"></td>
-        <td class="description-col"></td>
-        <td class="amount-col">$</td>
-        <td class="notes-col"></td>
-      </tr>
-      <tr>
-        <td class="date-col"></td>
-        <td class="category-col"></td>
-        <td class="description-col"></td>
-        <td class="amount-col">$</td>
-        <td class="notes-col"></td>
-      </tr>
-      <tr>
-        <td class="date-col"></td>
-        <td class="category-col"></td>
-        <td class="description-col"></td>
-        <td class="amount-col">$</td>
-        <td class="notes-col"></td>
-      </tr>
-      <tr>
-        <td class="date-col"></td>
-        <td class="category-col"></td>
-        <td class="description-col"></td>
-        <td class="amount-col">$</td>
-        <td class="notes-col"></td>
-      </tr>
-      <tr>
-        <td class="date-col"></td>
-        <td class="category-col"></td>
-        <td class="description-col"></td>
-        <td class="amount-col">$</td>
-        <td class="notes-col"></td>
-      </tr>
-      <tr>
-        <td class="date-col"></td>
-        <td class="category-col"></td>
-        <td class="description-col"></td>
-        <td class="amount-col">$</td>
-        <td class="notes-col"></td>
-      </tr>
-      <tr>
-        <td class="date-col"></td>
-        <td class="category-col"></td>
-        <td class="description-col"></td>
-        <td class="amount-col">$</td>
-        <td class="notes-col"></td>
-      </tr>
-      <tr>
-        <td class="date-col"></td>
-        <td class="category-col"></td>
-        <td class="description-col"></td>
-        <td class="amount-col">$</td>
-        <td class="notes-col"></td>
-      </tr>
-      <tr>
-        <td class="date-col"></td>
-        <td class="category-col"></td>
-        <td class="description-col"></td>
-        <td class="amount-col">$</td>
-        <td class="notes-col"></td>
-      </tr>
-      <tr>
-        <td class="date-col"></td>
-        <td class="category-col"></td>
-        <td class="description-col"></td>
-        <td class="amount-col">$</td>
-        <td class="notes-col"></td>
-      </tr>
-      <tr>
-        <td class="date-col"></td>
-        <td class="category-col"></td>
-        <td class="description-col"></td>
-        <td class="amount-col">$</td>
-        <td class="notes-col"></td>
-      </tr>
-      <tr>
-        <td class="date-col"></td>
-        <td class="category-col"></td>
-        <td class="description-col"></td>
-        <td class="amount-col">$</td>
-        <td class="notes-col"></td>
-      </tr>
-      <tr>
-        <td class="date-col"></td>
-        <td class="category-col"></td>
-        <td class="description-col"></td>
-        <td class="amount-col">$</td>
-        <td class="notes-col"></td>
-      </tr>
-      <tr>
-        <td class="date-col"></td>
-        <td class="category-col"></td>
-        <td class="description-col"></td>
-        <td class="amount-col">$</td>
-        <td class="notes-col"></td>
-      </tr>
-      <tr>
-        <td class="date-col"></td>
-        <td class="category-col"></td>
-        <td class="description-col"></td>
-        <td class="amount-col">$</td>
-        <td class="notes-col"></td>
-      </tr>
-      <tr>
-        <td class="date-col"></td>
-        <td class="category-col"></td>
-        <td class="description-col"></td>
-        <td class="amount-col">$</td>
-        <td class="notes-col"></td>
-      </tr>
-      <tr>
-        <td class="date-col"></td>
-        <td class="category-col"></td>
-        <td class="description-col"></td>
-        <td class="amount-col">$</td>
-        <td class="notes-col"></td>
-      </tr>
-      <tr>
-        <td class="date-col"></td>
-        <td class="category-col"></td>
-        <td class="description-col"></td>
-        <td class="amount-col">$</td>
-        <td class="notes-col"></td>
-      </tr>
-      <tr>
-        <td class="date-col"></td>
-        <td class="category-col"></td>
-        <td class="description-col"></td>
-        <td class="amount-col">$</td>
-        <td class="notes-col"></td>
-      </tr>
-      <tr>
-        <td class="date-col"></td>
-        <td class="category-col"></td>
-        <td class="description-col"></td>
-        <td class="amount-col">$</td>
-        <td class="notes-col"></td>
-      </tr>
-      <tr>
-        <td class="date-col"></td>
-        <td class="category-col"></td>
-        <td class="description-col"></td>
-        <td class="amount-col">$</td>
-        <td class="notes-col"></td>
-      </tr>
-      <tr>
-        <td class="date-col"></td>
-        <td class="category-col"></td>
-        <td class="description-col"></td>
-        <td class="amount-col">$</td>
-        <td class="notes-col"></td>
-      </tr>
-      <tr>
-        <td class="date-col"></td>
-        <td class="category-col"></td>
-        <td class="description-col"></td>
-        <td class="amount-col">$</td>
-        <td class="notes-col"></td>
-      </tr>
-      <tr>
-        <td class="date-col"></td>
-        <td class="category-col"></td>
-        <td class="description-col"></td>
-        <td class="amount-col">$</td>
-        <td class="notes-col"></td>
-      </tr>
+      {{/times}}
     </tbody>
   </table>
+
+  <div class="total-section">
+    <div class="total-box">
+      <div class="total-label">{{t.expenseTracker.weeklyTotal}}</div>
+      <div class="total-value">$__________</div>
+    </div>
+  </div>
 </body>
 
 </html>

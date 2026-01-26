@@ -3,6 +3,9 @@
 <html>
 
 <head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Lato:wght@400;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
     @page {
       size: A4;
@@ -10,13 +13,7 @@
     }
 
     body {
-      font-family: {
-          {
-          fontFamily
-        }
-      }
-
-      ;
+      font-family: {{customization.fontFamily}};
       color: #333;
     }
 
@@ -27,14 +24,7 @@
 
     .title {
       font-size: 36px;
-
-      color: {
-          {
-          primaryColor
-        }
-      }
-
-      ;
+      color: {{customization.primaryColor}};
       margin: 0;
     }
 

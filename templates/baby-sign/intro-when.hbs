@@ -3,41 +3,90 @@
 <html>
 
 <head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
     @page {
       size: A4;
-      margin: 20mm;
+      margin: 18mm;
     }
 
     body {
       font-family: {{customization.fontFamily}};
       color: #333;
-      line-height: 1.7;
+      line-height: 1.6;
     }
 
     .header {
       text-align: center;
-      margin-bottom: 25px;
+      margin-bottom: 20px;
       padding-bottom: 15px;
       border-bottom: 3px solid {{customization.primaryColor}};
     }
 
     .title {
-      font-size: 32px;
+      font-size: 28px;
       color: {{customization.primaryColor}};
       margin: 0;
     }
 
     .icon {
-      font-size: 50px;
-      margin-bottom: 10px;
+      font-size: 28px;
+      margin-bottom: 5px;
     }
 
     .intro-text {
       font-size: 14px;
-      margin-bottom: 20px;
+      margin-bottom: 25px;
+      text-align: justify;
     }
 
+    .intro-text p {
+      margin: 0;
+    }
+
+    /* Ready Signs Section */
+    .ready-section {
+      background: linear-gradient(135deg, #FFF9E6 0%, #FFF5F5 100%);
+      border-radius: 15px;
+      padding: 20px;
+      margin-bottom: 25px;
+    }
+
+    .ready-section h3 {
+      font-size: 18px;
+      color: {{customization.primaryColor}};
+      margin: 0 0 15px 0;
+      text-align: center;
+    }
+
+    .ready-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    .ready-item {
+      display: flex;
+      align-items: center;
+      background: white;
+      padding: 12px 15px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+
+    .ready-item .emoji {
+      font-size: 24px;
+      margin-right: 12px;
+    }
+
+    .ready-item span {
+      font-size: 13px;
+      color: #444;
+    }
+
+    /* Timeline */
     .timeline {
       position: relative;
       margin: 25px 0;
@@ -46,17 +95,18 @@
     .timeline::before {
       content: '';
       position: absolute;
-      left: 50px;
+      left: 35px;
       top: 0;
       bottom: 0;
-      width: 3px;
+      width: 4px;
       background: linear-gradient(to bottom, {{customization.primaryColor}}, {{customization.secondaryColor}});
+      border-radius: 2px;
     }
 
     .milestone {
       display: flex;
       align-items: flex-start;
-      margin: 15px 0;
+      margin: 20px 0;
       position: relative;
     }
 
@@ -75,82 +125,150 @@
       margin-right: 20px;
       position: relative;
       z-index: 1;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.15);
     }
 
     .age-badge .number {
-      font-size: 22px;
+      font-size: 20px;
       line-height: 1;
     }
 
     .age-badge .label {
       font-size: 9px;
       text-transform: uppercase;
+      margin-top: 2px;
     }
 
     .milestone-content {
       flex: 1;
       background: #FAFAFA;
-      padding: 15px;
-      border-radius: 10px;
-      border-left: 3px solid {{customization.primaryColor}};
+      padding: 15px 18px;
+      border-radius: 12px;
+      border-left: 4px solid {{customization.primaryColor}};
     }
 
     .milestone-title {
-      font-size: 16px;
+      font-size: 17px;
       font-weight: bold;
       color: {{customization.primaryColor}};
-      margin-bottom: 6px;
+      margin-bottom: 8px;
     }
 
     .milestone-content p {
-      font-size: 13px;
+      font-size: 14px;
       margin: 0;
       color: #555;
+      line-height: 1.6;
     }
 
+    /* Page break control */
+    .page-two {
+      page-break-before: always;
+    }
+
+    .page-two-header {
+      text-align: center;
+      margin-bottom: 15px;
+      padding-bottom: 10px;
+      border-bottom: 3px solid {{customization.primaryColor}};
+    }
+
+    .page-two-header h2 {
+      font-size: 22px;
+      color: {{customization.primaryColor}};
+      margin: 0;
+    }
+
+    .page-two-header .icon {
+      font-size: 24px;
+      margin-bottom: 3px;
+    }
+
+    .page-two .timeline {
+      margin: 15px 0;
+    }
+
+    .page-two .milestone {
+      margin: 12px 0;
+    }
+
+    .page-two .milestone-content {
+      padding: 12px 15px;
+    }
+
+    .page-two .milestone-content p {
+      font-size: 13px;
+      line-height: 1.5;
+    }
+
+    /* Brain box */
     .brain-box {
       background: linear-gradient(135deg, #E8F4FD 0%, #F0E8FD 100%);
-      padding: 20px;
+      padding: 15px 18px;
       border-radius: 12px;
-      margin: 25px 0;
+      margin: 15px 0;
     }
 
     .brain-box h3 {
       font-size: 16px;
       color: {{customization.primaryColor}};
-      margin: 0 0 12px 0;
+      margin: 0 0 8px 0;
     }
 
     .brain-box p {
       font-size: 13px;
-      margin: 0 0 10px 0;
+      margin: 0 0 6px 0;
+      line-height: 1.5;
     }
 
     .brain-box p:last-child {
       margin: 0;
     }
 
-    .tip-box {
-      background: #FFF8E7;
-      border: 2px dashed {{customization.primaryColor}};
-      padding: 15px;
-      border-radius: 10px;
-      margin-top: 20px;
-    }
-
-    .tip-box p {
-      font-size: 14px;
-      margin: 0;
+    /* Important box */
+    .important-box {
+      background: linear-gradient(135deg, {{customization.primaryColor}} 0%, {{customization.secondaryColor}} 100%);
+      padding: 20px 25px;
+      border-radius: 15px;
+      margin-top: 15px;
       text-align: center;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.12);
     }
 
-    .tip-box strong {
-      color: {{customization.primaryColor}};
+    .important-box .star-icon {
+      font-size: 30px;
+      margin-bottom: 8px;
+    }
+
+    .important-box .important-label {
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: rgba(255,255,255,0.9);
+      margin-bottom: 8px;
+    }
+
+    .important-box p {
+      font-size: 18px;
+      margin: 0;
+      color: white;
+      font-weight: 600;
+      line-height: 1.3;
+    }
+
+    .important-box .highlight {
+      display: block;
+      font-size: 14px;
+      margin-top: 10px;
+      color: rgba(255,255,255,0.95);
+      font-style: italic;
+      font-weight: 400;
     }
   </style>
 </head>
 
 <body>
+  <!-- PAGE 1: Header + Ready Signs + First 2 milestones -->
   <div class="header">
     <div class="icon">📅</div>
     <h1 class="title">When to Start & What to Expect</h1>
@@ -158,6 +276,36 @@
 
   <div class="intro-text">
     <p>Even in the womb, your baby begins recognizing your voice and the patterns of your language. From birth, they can distinguish your native language from others! Understanding your baby's developmental journey helps you know when and how to introduce signs.</p>
+  </div>
+
+  <div class="ready-section">
+    <h3>👀 Signs Your Baby is Ready to Learn</h3>
+    <div class="ready-grid">
+      <div class="ready-item">
+        <span class="emoji">👆</span>
+        <span>Points at objects they want</span>
+      </div>
+      <div class="ready-item">
+        <span class="emoji">👋</span>
+        <span>Waves bye-bye or claps hands</span>
+      </div>
+      <div class="ready-item">
+        <span class="emoji">👀</span>
+        <span>Makes eye contact when you talk</span>
+      </div>
+      <div class="ready-item">
+        <span class="emoji">🗣️</span>
+        <span>Babbles with expression</span>
+      </div>
+      <div class="ready-item">
+        <span class="emoji">🖐️</span>
+        <span>Reaches arms up to be held</span>
+      </div>
+      <div class="ready-item">
+        <span class="emoji">😊</span>
+        <span>Responds to your gestures</span>
+      </div>
+    </div>
   </div>
 
   <div class="timeline">
@@ -168,7 +316,7 @@
       </div>
       <div class="milestone-content">
         <div class="milestone-title">The Watching Phase</div>
-        <p>During this stage, crying is your baby's main communication tool. They're absorbing everything—your voice, your expressions, your gestures. You can start signing now; your baby is watching and learning even if they can't respond yet.</p>
+        <p>During this stage, crying is your baby's main communication tool. They're absorbing everything—your voice, your expressions, your gestures. You can start signing now! Your baby is watching and learning even if they can't respond yet. This early exposure builds the foundation for later signing success.</p>
       </div>
     </div>
 
@@ -179,52 +327,65 @@
       </div>
       <div class="milestone-content">
         <div class="milestone-title">Communicative Intent Emerges</div>
-        <p>A breakthrough moment! Your baby develops a strong urge to communicate. You'll notice them pointing, reaching, and making sounds with purpose. This is the ideal time to introduce signs consistently. They may naturally develop gestures like raising arms to be picked up.</p>
-      </div>
-    </div>
-
-    <div class="milestone">
-      <div class="age-badge">
-        <span class="number">8-12</span>
-        <span class="label">months</span>
-      </div>
-      <div class="milestone-content">
-        <div class="milestone-title">First Signs Appear</div>
-        <p>Most babies produce their first intentional sign during this window. It might look a little different from yours—that's completely normal! The motor skills for precise hand movements are still developing. Celebrate every attempt!</p>
-      </div>
-    </div>
-
-    <div class="milestone">
-      <div class="age-badge">
-        <span class="number">12-18</span>
-        <span class="label">months</span>
-      </div>
-      <div class="milestone-content">
-        <div class="milestone-title">The Sign Explosion</div>
-        <p>Once your baby masters a few signs, learning accelerates rapidly. Many babies learn 10-20+ signs during this exciting period. They'll start combining signs and using them spontaneously throughout the day.</p>
-      </div>
-    </div>
-
-    <div class="milestone">
-      <div class="age-badge">
-        <span class="number">18-24</span>
-        <span class="label">months</span>
-      </div>
-      <div class="milestone-content">
-        <div class="milestone-title">Bridge to Speech</div>
-        <p>As verbal skills develop, your child will naturally start replacing signs with words. Keep signing! Even when they say a word, they may not pronounce it clearly yet. Signs remain a helpful backup that prevents frustration.</p>
+        <p>A breakthrough moment! Your baby develops a strong urge to communicate. You'll notice them pointing, reaching, and making sounds with purpose. They may naturally develop gestures like raising arms to be picked up. This is the ideal time to introduce signs consistently—they're primed and ready to learn.</p>
       </div>
     </div>
   </div>
 
-  <div class="brain-box">
-    <h3>🧠 What's Happening in Your Baby's Brain</h3>
-    <p>When you speak a word AND show a sign, your baby's brain lights up in multiple areas: the <strong>auditory cortex</strong> processes the sound, the <strong>visual cortex</strong> processes what they see, and when they sign back, the <strong>motor cortex</strong> gets involved too.</p>
-    <p>This multi-sensory experience creates stronger, more interconnected neural pathways. That's why signing babies often remember words more easily—they've stored them in multiple places in their brain!</p>
-  </div>
+  <!-- PAGE 2: Remaining milestones + Brain box + Important message -->
+  <div class="page-two">
+    <div class="page-two-header">
+      <div class="icon">📅</div>
+      <h2>Development Timeline</h2>
+    </div>
 
-  <div class="tip-box">
-    <p>⏰ <strong>Remember:</strong> It's never too early or too late to start! Whether you begin at 4 months or 14 months, what matters most is consistency, patience, and making it fun.</p>
+    <div class="timeline">
+      <div class="milestone">
+        <div class="age-badge">
+          <span class="number">8-12</span>
+          <span class="label">months</span>
+        </div>
+        <div class="milestone-content">
+          <div class="milestone-title">First Signs Appear</div>
+          <p>This is the magical window when most babies produce their first intentional sign! It might look a little different from yours—that's completely normal. The motor skills for precise hand movements are still developing. Celebrate every attempt, even imperfect ones. Your excitement reinforces their efforts.</p>
+        </div>
+      </div>
+
+      <div class="milestone">
+        <div class="age-badge">
+          <span class="number">12-18</span>
+          <span class="label">months</span>
+        </div>
+        <div class="milestone-content">
+          <div class="milestone-title">The Sign Explosion</div>
+          <p>Once your baby masters a few signs, learning accelerates rapidly. Many babies learn 10-20+ signs during this exciting period! They'll start combining signs ("more milk," "daddy play") and using them spontaneously throughout the day. You'll be amazed at how much they understand and want to share.</p>
+        </div>
+      </div>
+
+      <div class="milestone">
+        <div class="age-badge">
+          <span class="number">18-24</span>
+          <span class="label">months</span>
+        </div>
+        <div class="milestone-content">
+          <div class="milestone-title">Bridge to Speech</div>
+          <p>As verbal skills develop, your child will naturally start replacing signs with words. Keep signing alongside speech! Even when they say a word, they may not pronounce it clearly yet. Signs remain a helpful backup that prevents frustration and supports clearer communication during this transition.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="brain-box">
+      <h3>🧠 What's Happening in Your Baby's Brain</h3>
+      <p>When you speak a word AND show a sign, your baby's brain lights up in multiple areas: the <strong>auditory cortex</strong> processes the sound, the <strong>visual cortex</strong> processes what they see, and when they sign back, the <strong>motor cortex</strong> gets involved too.</p>
+      <p>This multi-sensory experience creates stronger, more interconnected neural pathways. That's why signing babies often remember words more easily—they've stored them in multiple places in their brain!</p>
+    </div>
+
+    <div class="important-box">
+      <div class="star-icon">⭐</div>
+      <div class="important-label">Most Important</div>
+      <p>It's never too early or too late to start!</p>
+      <span class="highlight">Whether you begin at 4 months or 14 months, what matters most is consistency, patience, and making it fun.</span>
+    </div>
   </div>
 </body>
 

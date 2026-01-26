@@ -1,6 +1,6 @@
 <!-- templates/budget-planner/cover.hbs -->
 <!DOCTYPE html>
-<html>
+<html lang="{{lang}}">
 
 <head>
   <style>
@@ -37,28 +37,37 @@
     }
 
     .title {
-      font-size: 52px;
+      font-size: 48px;
       font-weight: 700;
-      margin: 15px 0;
+      margin: 10px 0;
       text-transform: uppercase;
       letter-spacing: 3px;
     }
 
+    .system-name {
+      font-size: 28px;
+      font-weight: 600;
+      margin: 15px 0;
+      padding: 12px 35px;
+      background: rgba(255,255,255,0.15);
+      border-radius: 8px;
+      letter-spacing: 1px;
+    }
+
     .subtitle {
-      font-size: 18px;
+      font-size: 17px;
       opacity: 0.95;
-      max-width: 450px;
-      line-height: 1.5;
-      margin-top: 10px;
+      max-width: 480px;
+      line-height: 1.6;
+      margin-top: 15px;
       font-weight: 300;
     }
 
     .badge {
-      margin-top: 40px;
-      padding: 12px 30px;
+      padding: 10px 25px;
       background: rgba(255,255,255,0.2);
       border-radius: 30px;
-      font-size: 14px;
+      font-size: 13px;
       text-transform: uppercase;
       letter-spacing: 2px;
       backdrop-filter: blur(10px);
@@ -90,11 +99,12 @@
 </head>
 
 <body>
-  <div class="badge">For Beginners</div>
+  <div class="badge">{{t.cover.badge}}</div>
 
   <h1 class="year">{{year}}</h1>
-  <h2 class="title">{{coverTitle}}</h2>
-  <p class="subtitle">A Simple 12-Month System to Track Income, Pay Off Debt, and Build Savings</p>
+  <h2 class="title">{{t.cover.title}}</h2>
+  <div class="system-name">{{t.cover.systemName}}</div>
+  <p class="subtitle">{{t.cover.subtitle}}</p>
 
   <div class="icon-row">
     <span>📊</span>
@@ -106,7 +116,7 @@
   <p class="name">{{userName}}</p>
   {{/if}}
 
-  <p class="tagline">Take control of your finances, one month at a time</p>
+  <p class="tagline">{{t.cover.tagline}}</p>
 </body>
 
 </html>

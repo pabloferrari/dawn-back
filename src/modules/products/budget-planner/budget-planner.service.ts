@@ -36,6 +36,16 @@ export class BudgetPlannerService implements ProductGenerator {
       );
       pdfBuffers.push(forYouIfBuffer);
 
+      // 2.5 Quick Start - Your First 7 Days (NUEVO)
+      console.log('Generando página Quick Start...');
+      const quickStartBuffer = await this.pdfGeneratorService.generatePage(
+        browser,
+        this.PRODUCT_TYPE,
+        'quick-start',
+        config,
+      );
+      pdfBuffers.push(quickStartBuffer);
+
       // 3. Your Financial Starting Point (NUEVO - Fase 2)
       console.log('Generando punto de partida financiero...');
       const startingPointBuffer = await this.pdfGeneratorService.generatePage(
@@ -163,7 +173,17 @@ export class BudgetPlannerService implements ProductGenerator {
         pdfBuffers.push(debtBuffer);
       }
 
-      // 8. Merge PDFs
+      // 14. Your Next Year Money Plan (página final)
+      console.log('Generando plan del próximo año...');
+      const nextYearPlanBuffer = await this.pdfGeneratorService.generatePage(
+        browser,
+        this.PRODUCT_TYPE,
+        'next-year-plan',
+        { ...config, nextYear: config.year + 1 },
+      );
+      pdfBuffers.push(nextYearPlanBuffer);
+
+      // 15. Merge PDFs
       console.log('Combinando PDFs...');
       const finalPdf = await this.pdfGeneratorService.mergePdfs(pdfBuffers);
 
@@ -198,6 +218,7 @@ export class BudgetPlannerService implements ProductGenerator {
       year: 2026,
       coverTitle: 'Budget Planner',
       userName: '',
+      language: 'en',
       theme: 'professional',
       sections: {
         monthlyBudget: true,

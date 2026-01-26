@@ -1,6 +1,6 @@
 <!-- templates/budget-planner/savings-goal.hbs -->
 <!DOCTYPE html>
-<html>
+<html lang="{{lang}}">
 
 <head>
   <style>
@@ -26,12 +26,6 @@
       font-size: 24px;
       color: {{customization.primaryColor}};
       margin: 0;
-    }
-
-    .subtitle {
-      font-size: 11px;
-      color: #666;
-      margin-top: 3px;
     }
 
     .goal-card {
@@ -67,10 +61,6 @@
       justify-content: center;
       color: white;
       font-size: 14px;
-    }
-
-    .goal-name-input {
-      flex: 1;
     }
 
     .goal-label {
@@ -151,14 +141,11 @@
 
     .progress-segment:last-child {
       border-right: none;
+      border-radius: 0 10px 10px 0;
     }
 
     .progress-segment:first-child {
       border-radius: 10px 0 0 10px;
-    }
-
-    .progress-segment:last-child {
-      border-radius: 0 10px 10px 0;
     }
 
     .info-grid {
@@ -186,68 +173,38 @@
       font-weight: bold;
       color: {{customization.primaryColor}};
     }
-
-    .ideas-box {
-      margin-top: 10px;
-      padding: 10px 12px;
-      background: #fff8e1;
-      border-radius: 8px;
-      border-left: 4px solid #ffc107;
-    }
-
-    .ideas-title {
-      font-size: 11px;
-      font-weight: bold;
-      color: #f57c00;
-      margin-bottom: 6px;
-    }
-
-    .ideas-list {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 6px;
-    }
-
-    .idea-tag {
-      font-size: 9px;
-      padding: 3px 8px;
-      background: white;
-      border-radius: 10px;
-      color: #666;
-    }
   </style>
 </head>
 
 <body>
   <div class="header">
-    <h1 class="title">Savings Goals {{year}}</h1>
-    <p class="subtitle">Track your progress toward financial freedom</p>
+    <h1 class="title">{{t.savingsGoal.title}} {{year}}</h1>
   </div>
 
-  <!-- Goal 1 -->
+  {{#times 3}}
   <div class="goal-card">
     <div class="goal-header">
       <div class="goal-name-section">
-        <div class="goal-icon">1</div>
+        <div class="goal-icon">{{this}}</div>
         <div class="goal-name-input">
-          <div class="goal-label">Goal Name</div>
+          <div class="goal-label">{{../t.savingsGoal.goalName}}</div>
           <div class="goal-input">_______________________</div>
         </div>
       </div>
       <div class="goal-amount-section">
-        <div class="goal-label">Target Amount</div>
+        <div class="goal-label">{{../t.savingsGoal.targetAmount}}</div>
         <div class="goal-amount">$__________</div>
       </div>
     </div>
 
     <div class="why-section">
-      <div class="why-label">Why this matters to me:</div>
+      <div class="why-label">{{../t.savingsGoal.motivationPrompt}}</div>
       <div class="why-input"></div>
     </div>
 
     <div class="progress-section">
       <div class="progress-label">
-        <span>Shade each segment as you reach 10% milestones</span>
+        <span>{{../t.savingsGoal.progress}}</span>
         <span>0% → 100%</span>
       </div>
       <div class="progress-bar">
@@ -266,157 +223,24 @@
 
     <div class="info-grid">
       <div class="info-item">
-        <div class="info-label">Target Date</div>
-        <div class="info-value">__/__/{{year}}</div>
+        <div class="info-label">{{../t.savingsGoal.deadline}}</div>
+        <div class="info-value">__/__/{{../year}}</div>
       </div>
       <div class="info-item">
-        <div class="info-label">Monthly Needed</div>
+        <div class="info-label">{{../t.savingsGoal.monthlyTarget}}</div>
         <div class="info-value">$______</div>
       </div>
       <div class="info-item">
-        <div class="info-label">Current Amount</div>
+        <div class="info-label">{{../t.savingsGoal.total}}</div>
         <div class="info-value">$______</div>
       </div>
       <div class="info-item">
-        <div class="info-label">Remaining</div>
-        <div class="info-value">$______</div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Goal 2 -->
-  <div class="goal-card">
-    <div class="goal-header">
-      <div class="goal-name-section">
-        <div class="goal-icon">2</div>
-        <div class="goal-name-input">
-          <div class="goal-label">Goal Name</div>
-          <div class="goal-input">_______________________</div>
-        </div>
-      </div>
-      <div class="goal-amount-section">
-        <div class="goal-label">Target Amount</div>
-        <div class="goal-amount">$__________</div>
-      </div>
-    </div>
-
-    <div class="why-section">
-      <div class="why-label">Why this matters to me:</div>
-      <div class="why-input"></div>
-    </div>
-
-    <div class="progress-section">
-      <div class="progress-label">
-        <span>Shade each segment as you reach 10% milestones</span>
-        <span>0% → 100%</span>
-      </div>
-      <div class="progress-bar">
-        <div class="progress-segment">10</div>
-        <div class="progress-segment">20</div>
-        <div class="progress-segment">30</div>
-        <div class="progress-segment">40</div>
-        <div class="progress-segment">50</div>
-        <div class="progress-segment">60</div>
-        <div class="progress-segment">70</div>
-        <div class="progress-segment">80</div>
-        <div class="progress-segment">90</div>
-        <div class="progress-segment">100</div>
-      </div>
-    </div>
-
-    <div class="info-grid">
-      <div class="info-item">
-        <div class="info-label">Target Date</div>
-        <div class="info-value">__/__/{{year}}</div>
-      </div>
-      <div class="info-item">
-        <div class="info-label">Monthly Needed</div>
-        <div class="info-value">$______</div>
-      </div>
-      <div class="info-item">
-        <div class="info-label">Current Amount</div>
-        <div class="info-value">$______</div>
-      </div>
-      <div class="info-item">
-        <div class="info-label">Remaining</div>
+        <div class="info-label">{{../t.savingsGoal.remaining}}</div>
         <div class="info-value">$______</div>
       </div>
     </div>
   </div>
-
-  <!-- Goal 3 -->
-  <div class="goal-card">
-    <div class="goal-header">
-      <div class="goal-name-section">
-        <div class="goal-icon">3</div>
-        <div class="goal-name-input">
-          <div class="goal-label">Goal Name</div>
-          <div class="goal-input">_______________________</div>
-        </div>
-      </div>
-      <div class="goal-amount-section">
-        <div class="goal-label">Target Amount</div>
-        <div class="goal-amount">$__________</div>
-      </div>
-    </div>
-
-    <div class="why-section">
-      <div class="why-label">Why this matters to me:</div>
-      <div class="why-input"></div>
-    </div>
-
-    <div class="progress-section">
-      <div class="progress-label">
-        <span>Shade each segment as you reach 10% milestones</span>
-        <span>0% → 100%</span>
-      </div>
-      <div class="progress-bar">
-        <div class="progress-segment">10</div>
-        <div class="progress-segment">20</div>
-        <div class="progress-segment">30</div>
-        <div class="progress-segment">40</div>
-        <div class="progress-segment">50</div>
-        <div class="progress-segment">60</div>
-        <div class="progress-segment">70</div>
-        <div class="progress-segment">80</div>
-        <div class="progress-segment">90</div>
-        <div class="progress-segment">100</div>
-      </div>
-    </div>
-
-    <div class="info-grid">
-      <div class="info-item">
-        <div class="info-label">Target Date</div>
-        <div class="info-value">__/__/{{year}}</div>
-      </div>
-      <div class="info-item">
-        <div class="info-label">Monthly Needed</div>
-        <div class="info-value">$______</div>
-      </div>
-      <div class="info-item">
-        <div class="info-label">Current Amount</div>
-        <div class="info-value">$______</div>
-      </div>
-      <div class="info-item">
-        <div class="info-label">Remaining</div>
-        <div class="info-value">$______</div>
-      </div>
-    </div>
-  </div>
-
-  <div class="ideas-box">
-    <div class="ideas-title">Goal Ideas (if you need inspiration)</div>
-    <div class="ideas-list">
-      <span class="idea-tag">Emergency Fund (3-6 months)</span>
-      <span class="idea-tag">Vacation</span>
-      <span class="idea-tag">Down Payment</span>
-      <span class="idea-tag">New Car</span>
-      <span class="idea-tag">Education</span>
-      <span class="idea-tag">Wedding</span>
-      <span class="idea-tag">Home Repairs</span>
-      <span class="idea-tag">Retirement</span>
-    </div>
-  </div>
+  {{/times}}
 </body>
 
 </html>

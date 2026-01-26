@@ -1,0 +1,369 @@
+<!-- templates/athlete-cookbook/disclaimer.hbs -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    @page {
+      size: A4;
+      margin: 0;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html, body {
+      height: 297mm;
+      width: 210mm;
+      font-family: {{customization.fontFamily}};
+      color: #333;
+      line-height: 1.5;
+    }
+
+    .page {
+      height: 297mm;
+      width: 210mm;
+      padding: 12mm 15mm;
+      display: flex;
+      flex-direction: column;
+      background: linear-gradient(180deg, #FAFAFA 0%, #FFFFFF 100%);
+    }
+
+    /* Header - más compacto */
+    .page-header {
+      text-align: center;
+      margin-bottom: 8mm;
+    }
+
+    .header-logo {
+      height: 12mm;
+      margin-bottom: 4mm;
+    }
+
+    .disclaimer-icon {
+      font-size: 36px;
+      margin-bottom: 3mm;
+    }
+
+    .page-title {
+      font-size: 22px;
+      font-weight: 800;
+      color: #C62828;
+      letter-spacing: 1px;
+    }
+
+    /* Main content */
+    .content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 5mm;
+    }
+
+    /* Main disclaimer box */
+    .disclaimer-box {
+      background: #FFF3E0;
+      border: 2px solid #FF9800;
+      border-radius: 10px;
+      padding: 5mm 6mm;
+    }
+
+    .disclaimer-intro {
+      font-size: 14px;
+      line-height: 1.6;
+      margin-bottom: 4mm;
+      color: #333;
+    }
+
+    .disclaimer-intro strong {
+      color: #E65100;
+    }
+
+    /* Key points */
+    .key-points {
+      background: white;
+      border-radius: 6px;
+      padding: 4mm 5mm;
+    }
+
+    .key-points-title {
+      font-size: 13px;
+      font-weight: 800;
+      color: #1B5E3F;
+      margin-bottom: 3mm;
+      display: flex;
+      align-items: center;
+      gap: 2mm;
+    }
+
+    .key-points-list {
+      list-style: none;
+    }
+
+    .key-points-list li {
+      font-size: 12px;
+      padding: 2.5mm 0;
+      display: flex;
+      align-items: flex-start;
+      gap: 3mm;
+      border-bottom: 1px dashed #E0E0E0;
+      line-height: 1.4;
+    }
+
+    .key-points-list li:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    .point-icon {
+      font-size: 14px;
+      flex-shrink: 0;
+    }
+
+    .point-text {
+      flex: 1;
+    }
+
+    .point-text strong {
+      color: #1B5E3F;
+    }
+
+    /* Consult section */
+    .consult-section {
+      background: #E3F2FD;
+      border-radius: 10px;
+      padding: 5mm 6mm;
+      border-left: 4px solid #1976D2;
+    }
+
+    .consult-title {
+      font-size: 13px;
+      font-weight: 800;
+      color: #1565C0;
+      margin-bottom: 3mm;
+      display: flex;
+      align-items: center;
+      gap: 2mm;
+    }
+
+    .consult-conditions {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2mm 4mm;
+    }
+
+    .condition-item {
+      font-size: 12px;
+      display: flex;
+      align-items: center;
+      gap: 2mm;
+    }
+
+    .condition-icon {
+      font-size: 12px;
+    }
+
+    /* Nutrition disclaimer */
+    .nutrition-disclaimer {
+      background: #FFF8E1;
+      border-radius: 10px;
+      padding: 4mm 5mm;
+      border-left: 4px solid #FFA000;
+    }
+
+    .nutrition-title {
+      font-size: 12px;
+      font-weight: 800;
+      color: #F57C00;
+      margin-bottom: 2mm;
+      display: flex;
+      align-items: center;
+      gap: 2mm;
+    }
+
+    .nutrition-text {
+      font-size: 11px;
+      color: #555;
+      line-height: 1.5;
+    }
+
+    .nutrition-text strong {
+      color: #E65100;
+    }
+
+    /* Philosophy section */
+    .philosophy-section {
+      background: #E8F5E9;
+      border-radius: 10px;
+      padding: 5mm 6mm;
+      text-align: center;
+    }
+
+    .philosophy-title {
+      font-size: 14px;
+      font-weight: 800;
+      color: #2E7D32;
+      margin-bottom: 2mm;
+    }
+
+    .philosophy-text {
+      font-size: 13px;
+      color: #555;
+      line-height: 1.5;
+      font-style: italic;
+    }
+
+    .philosophy-text strong {
+      color: #1B5E3F;
+      font-style: normal;
+    }
+
+    /* Final note */
+    .final-note {
+      background: #F5F5F5;
+      border-radius: 6px;
+      padding: 4mm;
+      text-align: center;
+      margin-top: auto;
+    }
+
+    .final-note-text {
+      font-size: 12px;
+      color: #666;
+      line-height: 1.4;
+    }
+
+    .final-note-text strong {
+      color: #C62828;
+    }
+
+    /* Footer */
+    .page-footer {
+      margin-top: 4mm;
+      padding-top: 3mm;
+      border-top: 1px solid #E0E0E0;
+      text-align: center;
+      font-size: 9px;
+      color: #888;
+    }
+
+    .page-footer span {
+      color: #1B5E3F;
+      font-weight: 700;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page">
+    <div class="page-header">
+      <img src="{{images.banner}}" alt="Fuel Like a Runner" class="header-logo">
+      <div class="disclaimer-icon">⚠️</div>
+      <div class="page-title">IMPORTANT DISCLAIMER</div>
+    </div>
+
+    <div class="content">
+      <div class="disclaimer-box">
+        <p class="disclaimer-intro">
+          This cookbook is based on <strong>personal experience</strong> as an amateur runner.
+          The author is <strong>NOT</strong> a registered dietitian, nutritionist, or medical professional.
+        </p>
+        
+        <div class="key-points">
+          <div class="key-points-title">
+            <span>📌</span>
+            Please Keep in Mind
+          </div>
+          <ul class="key-points-list">
+            <li>
+              <span class="point-icon">🧬</span>
+              <span class="point-text"><strong>Every body is different.</strong> What works for one runner may not work for another. Your metabolism, genetics, and training history all play a role.</span>
+            </li>
+            <li>
+              <span class="point-icon">🧪</span>
+              <span class="point-text"><strong>Test everything in training.</strong> Never try a new food or nutrition strategy on race day. Use training runs to experiment.</span>
+            </li>
+            <li>
+              <span class="point-icon">👂</span>
+              <span class="point-text"><strong>Listen to your body.</strong> If something doesn't feel right, stop. Pain, discomfort, or persistent GI issues are signals to adjust.</span>
+            </li>
+            <li>
+              <span class="point-icon">📊</span>
+              <span class="point-text"><strong>This is a guide, not a prescription.</strong> Use these recipes as a starting point and adapt them to your needs, preferences, and goals.</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="consult-section">
+        <div class="consult-title">
+          <span>👨‍⚕️</span>
+          Consult a Professional If You Have:
+        </div>
+        <div class="consult-conditions">
+          <div class="condition-item">
+            <span class="condition-icon">💊</span>
+            <span>Medical conditions or take medications</span>
+          </div>
+          <div class="condition-item">
+            <span class="condition-icon">🚫</span>
+            <span>Food allergies or intolerances</span>
+          </div>
+          <div class="condition-item">
+            <span class="condition-icon">🤰</span>
+            <span>Pregnancy or breastfeeding</span>
+          </div>
+          <div class="condition-item">
+            <span class="condition-icon">⚖️</span>
+            <span>History of eating disorders</span>
+          </div>
+          <div class="condition-item">
+            <span class="condition-icon">🏥</span>
+            <span>Chronic digestive issues</span>
+          </div>
+          <div class="condition-item">
+            <span class="condition-icon">🎯</span>
+            <span>Specific performance goals</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="nutrition-disclaimer">
+        <div class="nutrition-title">
+          <span>📊</span>
+          About Nutritional Information
+        </div>
+        <p class="nutrition-text">
+          Calorie counts and macros are <strong>estimates</strong> based on average-sized ingredients and standard portions. Actual values may vary depending on specific brands, ingredient sizes, and preparation methods. Use these numbers as a general guide, not exact measurements.
+        </p>
+      </div>
+
+      <div class="philosophy-section">
+        <div class="philosophy-title">My Philosophy</div>
+        <p class="philosophy-text">
+          "The best nutrition plan is the one <strong>you'll actually follow</strong>.
+          These recipes are what worked for me—use them as inspiration, not as rules. Your journey is yours."
+        </p>
+      </div>
+
+      <div class="final-note">
+        <p class="final-note-text">
+          <strong>This book is a guide, not medical advice.</strong><br>
+          When in doubt, always consult with a qualified sports dietitian or healthcare provider.
+        </p>
+      </div>
+    </div>
+
+    <div class="page-footer">
+      <span>Fuel Like a Runner</span> • Your health and safety always come first
+    </div>
+  </div>
+</body>
+
+</html>

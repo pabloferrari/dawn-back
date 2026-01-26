@@ -1,0 +1,216 @@
+<!-- templates/athlete-cookbook/intro-philosophy.hbs -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    @page {
+      size: A4;
+      margin: 15mm;
+    }
+
+    body {
+      font-family: {{customization.fontFamily}};
+      color: #333;
+      line-height: 1.6;
+      margin: 0;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+      padding-bottom: 12px;
+      border-bottom: 3px solid {{customization.primaryColor}};
+    }
+
+    .header .icon {
+      font-size: 32px;
+      margin-bottom: 6px;
+    }
+
+    .title {
+      font-size: 28px;
+      color: {{customization.primaryColor}};
+      margin: 0;
+    }
+
+    .intro-quote {
+      background: linear-gradient(135deg, {{customization.primaryColor}}15 0%, {{customization.secondaryColor}}15 100%);
+      padding: 18px 25px;
+      border-radius: 12px;
+      margin-bottom: 22px;
+      text-align: center;
+    }
+
+    .intro-quote p {
+      font-size: 17px;
+      font-style: italic;
+      color: #444;
+      margin: 0;
+      line-height: 1.5;
+    }
+
+    .intro-quote .author {
+      font-size: 13px;
+      color: {{customization.primaryColor}};
+      margin-top: 10px;
+      font-style: normal;
+      font-weight: 600;
+    }
+
+    .philosophy-text {
+      font-size: 13px;
+      margin-bottom: 22px;
+      text-align: justify;
+    }
+
+    .philosophy-text p {
+      margin: 0 0 12px 0;
+    }
+
+    .principles-section h3 {
+      font-size: 17px;
+      color: {{customization.primaryColor}};
+      margin: 0 0 15px 0;
+      text-align: center;
+    }
+
+    .principles-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+
+    .principle {
+      background: #FAFAFA;
+      padding: 14px 16px;
+      border-radius: 10px;
+      border-left: 4px solid {{customization.primaryColor}};
+    }
+
+    .principle-header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 6px;
+    }
+
+    .principle-icon {
+      font-size: 22px;
+      margin-right: 10px;
+    }
+
+    .principle-title {
+      font-size: 14px;
+      font-weight: 700;
+      color: {{customization.primaryColor}};
+    }
+
+    .principle p {
+      font-size: 12px;
+      margin: 0;
+      color: #555;
+      line-height: 1.5;
+    }
+
+    .bottom-message {
+      background: linear-gradient(135deg, {{customization.primaryColor}} 0%, {{customization.secondaryColor}} 100%);
+      padding: 18px 25px;
+      border-radius: 12px;
+      margin-top: 22px;
+      text-align: center;
+      color: white;
+    }
+
+    .bottom-message p {
+      font-size: 14px;
+      margin: 0;
+      line-height: 1.5;
+    }
+
+    .bottom-message strong {
+      font-size: 16px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    <div class="icon">🥗</div>
+    <h1 class="title">{{t.sections.philosophy.title}}</h1>
+  </div>
+
+  <div class="intro-quote">
+    <p>"Real food doesn't have ingredients. Real food IS ingredients."</p>
+    <div class="author">— Jamie Oliver</div>
+  </div>
+
+  <div class="philosophy-text">
+    <p>As athletes, we often get caught up in the latest supplements, energy gels, and performance products. But the truth is simpler: <strong>your body performs best when fueled by real, whole foods.</strong></p>
+    <p>This cookbook is built on a fundamental belief: fresh ingredients, prepared simply, will always outperform processed alternatives. Every recipe here uses ingredients you can recognize, pronounce, and find at your local market.</p>
+    <p>No artificial colors. No mystery powders. No ingredient lists that read like chemistry experiments. Just food—the way nature intended.</p>
+  </div>
+
+  <div class="principles-section">
+    <h3>🌱 {{t.sections.philosophy.principlesTitle}}</h3>
+
+    <div class="principles-grid">
+      <div class="principle">
+        <div class="principle-header">
+          <span class="principle-icon">🥕</span>
+          <span class="principle-title">Fresh First</span>
+        </div>
+        <p>Whole vegetables, fruits, and proteins form the foundation of every recipe. The closer to its natural state, the better.</p>
+      </div>
+
+      <div class="principle">
+        <div class="principle-header">
+          <span class="principle-icon">🚫</span>
+          <span class="principle-title">No Processed Junk</span>
+        </div>
+        <p>We skip the ultra-processed foods, artificial sweeteners, and chemical additives. Your body deserves better fuel.</p>
+      </div>
+
+      <div class="principle">
+        <div class="principle-header">
+          <span class="principle-icon">⚡</span>
+          <span class="principle-title">Performance Focused</span>
+        </div>
+        <p>Every recipe is designed with athletes in mind—optimal macros, proper timing, and nutrients that support training and recovery.</p>
+      </div>
+
+      <div class="principle">
+        <div class="principle-header">
+          <span class="principle-icon">🍳</span>
+          <span class="principle-title">Simple to Make</span>
+        </div>
+        <p>You're busy training. These recipes are practical, with accessible ingredients and straightforward preparation.</p>
+      </div>
+
+      <div class="principle">
+        <div class="principle-header">
+          <span class="principle-icon">🌍</span>
+          <span class="principle-title">Sustainably Minded</span>
+        </div>
+        <p>Eating whole foods means less packaging, less waste, and a smaller environmental footprint.</p>
+      </div>
+
+      <div class="principle">
+        <div class="principle-header">
+          <span class="principle-icon">😋</span>
+          <span class="principle-title">Actually Delicious</span>
+        </div>
+        <p>Healthy doesn't mean boring. These recipes prove that nutritious food can—and should—taste amazing.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="bottom-message">
+    <p><strong>Food is fuel. Make it count.</strong></p>
+    <p>Your performance starts in the kitchen.</p>
+  </div>
+</body>
+
+</html>

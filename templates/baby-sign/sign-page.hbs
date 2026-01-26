@@ -3,6 +3,9 @@
 <html>
 
 <head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Lato:wght@400;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
     @page {
       size: A4;
@@ -10,13 +13,7 @@
     }
 
     body {
-      font-family: {
-          {
-          fontFamily
-        }
-      }
-
-      ;
+      font-family: {{customization.fontFamily}};
       color: #333;
       display: flex;
       flex-direction: column;
@@ -26,14 +23,7 @@
     .word-header {
       text-align: center;
       padding: 20px;
-
-      background: {
-          {
-          categoryColor
-        }
-      }
-
-      ;
+      background: {{categoryColor}};
       color: white;
       border-radius: 15px 15px 0 0;
       margin-bottom: 0;
@@ -53,14 +43,7 @@
       justify-content: center;
       align-items: center;
       background: #F8F9FA;
-
-      border: 3px solid {
-          {
-          categoryColor
-        }
-      }
-
-      ;
+      border: 3px solid {{categoryColor}};
       border-top: none;
       border-radius: 0 0 15px 15px;
       padding: 40px;
@@ -89,14 +72,7 @@
 
     .info-section {
       background: white;
-
-      border: 3px solid {
-          {
-          categoryColor
-        }
-      }
-
-      ;
+      border: 3px solid {{categoryColor}};
       border-radius: 15px;
       padding: 20px;
       margin-bottom: 15px;
@@ -105,14 +81,7 @@
     .section-title {
       font-size: 20px;
       font-weight: bold;
-
-      color: {
-          {
-          categoryColor
-        }
-      }
-
-      ;
+      color: {{categoryColor}};
       margin-bottom: 12px;
       display: flex;
       align-items: center;
@@ -131,14 +100,7 @@
 
     .tip-section {
       background: linear-gradient(135deg, #FFF9E6 0%, #FFE5E5 100%);
-
-      border: 3px solid {
-          {
-          categoryColor
-        }
-      }
-
-      ;
+      border: 3px solid {{categoryColor}};
       border-radius: 15px;
       padding: 20px;
     }

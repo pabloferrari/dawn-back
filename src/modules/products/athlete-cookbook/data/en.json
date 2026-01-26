@@ -1,0 +1,2885 @@
+[
+  {
+    "id": "recipe-001",
+    "title": "Chickpea Salad",
+    "ingredients": [
+      "1 cup cooked chickpeas",
+      "1 large tomato, chopped",
+      "Lettuce leaves",
+      "1 small bunch arugula",
+      "1/2 red onion, thinly sliced",
+      "1 carrot, shredded",
+      "Salt, pepper, olive oil, and lemon juice to taste"
+    ],
+    "preparation": [
+      "Wash all vegetables thoroughly.",
+      "Chop them as desired.",
+      "In a large bowl, combine chickpeas with vegetables and season to taste."
+    ],
+    "notes": [],
+    "category": "lunch",
+    "tags": [
+      "fresh-ingredients",
+      "light",
+      "high-fiber",
+      "vegetables",
+      "high-protein",
+      "plant-protein",
+      "vegan",
+      "quick",
+      "no-cook"
+    ]
+  },
+  {
+    "id": "recipe-002",
+    "title": "Radish Salad",
+    "ingredients": [
+      "1 bunch radishes",
+      "1 bunch arugula",
+      "Juice of 2 lemons",
+      "1 carrot, sliced",
+      "Light semi-soft cheese, cubed (Port Salut or similar)",
+      "Salt, pepper, and olive oil to taste"
+    ],
+    "preparation": [
+      "Wash all vegetables thoroughly.",
+      "Slice or chop as desired.",
+      "Toss with lemon juice, cheese, and seasonings."
+    ],
+    "notes": [],
+    "category": "lunch",
+    "tags": [
+      "fresh-ingredients",
+      "light",
+      "high-fiber",
+      "vegetables",
+      "quick",
+      "no-cook"
+    ]
+  },
+  {
+    "id": "recipe-003",
+    "title": "Spiral Veggie Salad",
+    "ingredients": [
+      "1 cucumber, sliced into rounds",
+      "2 tomatoes, sliced",
+      "1 red onion, sliced",
+      "1 carrot, sliced",
+      "1 small potato, boiled and sliced",
+      "Salt, pepper, olive oil, and vinegar to taste"
+    ],
+    "preparation": [
+      "Wash all vegetables thoroughly.",
+      "Slice into thin rounds or spirals.",
+      "Arrange on a plate and season to taste."
+    ],
+    "notes": [],
+    "category": "lunch",
+    "tags": [
+      "fresh-ingredients",
+      "light",
+      "high-fiber",
+      "vegetables",
+      "complex-carbs",
+      "vegan",
+      "quick",
+      "no-cook"
+    ]
+  },
+  {
+    "id": "recipe-004",
+    "title": "Tuna Salad",
+    "ingredients": [
+      "1 tuna fillet, cooked, or 1 can (5 oz) tuna in water, drained",
+      "1 tomato, chopped",
+      "1/2 head green lettuce",
+      "1/2 head red lettuce",
+      "1 carrot, shredded",
+      "Salt, pepper, olive oil, and lemon juice to taste"
+    ],
+    "preparation": [
+      "Wash all vegetables thoroughly.",
+      "Chop as desired.",
+      "Combine with tuna and season to taste."
+    ],
+    "notes": [],
+    "category": "lunch",
+    "tags": [
+      "fresh-ingredients",
+      "light",
+      "high-fiber",
+      "vegetables",
+      "high-protein",
+      "quick",
+      "no-cook"
+    ]
+  },
+  {
+    "id": "recipe-005",
+    "title": "Lentil and Brown Rice Salad",
+    "ingredients": [
+      "1 cup cooked brown rice",
+      "1 cup cooked lentils",
+      "1/2 red bell pepper, diced",
+      "1 carrot, diced",
+      "1 onion, chopped",
+      "1 bunch fresh spinach",
+      "Salt, pepper, olive oil, and vinegar to taste"
+    ],
+    "preparation": [
+      "Wash vegetables thoroughly.",
+      "Chop vegetables and spinach.",
+      "In a large bowl, combine rice, lentils, and vegetables.",
+      "Season to taste and toss well."
+    ],
+    "notes": [],
+    "category": "lunch",
+    "tags": [
+      "fresh-ingredients",
+      "light",
+      "high-fiber",
+      "vegetables",
+      "high-protein",
+      "plant-protein",
+      "complex-carbs",
+      "vegan",
+      "quick",
+      "no-cook",
+      "anti-inflammatory"
+    ]
+  },
+  {
+    "id": "recipe-006",
+    "title": "Pea and Corn Salad",
+    "ingredients": [
+      "1 can (15 oz) peas, drained",
+      "1/2 can (7 oz) corn kernels, drained",
+      "2 hard-boiled eggs, chopped",
+      "3.5 oz cherry tomatoes",
+      "1/2 small red cabbage, shredded",
+      "Salt, pepper, olive oil, and vinegar to taste"
+    ],
+    "preparation": [
+      "Wash vegetables thoroughly.",
+      "Shred cabbage and halve cherry tomatoes.",
+      "Chop hard-boiled eggs.",
+      "Combine all ingredients in a bowl and season to taste."
+    ],
+    "notes": [],
+    "category": "lunch",
+    "tags": [
+      "fresh-ingredients",
+      "light",
+      "high-fiber",
+      "vegetables",
+      "high-protein",
+      "quick",
+      "no-cook"
+    ]
+  },
+  {
+    "id": "recipe-007",
+    "title": "Pasta and Veggie Salad",
+    "ingredients": [
+      "1 cup cooked pasta (rotini or fusilli)",
+      "1 cucumber, chopped",
+      "1 tomato, chopped",
+      "1 bag arugula",
+      "Salt, pepper, olive oil, and vinegar to taste"
+    ],
+    "preparation": [
+      "Wash all vegetables thoroughly.",
+      "Chop cucumber, tomato, and arugula.",
+      "Combine with cooked pasta and season to taste."
+    ],
+    "notes": [],
+    "category": "lunch",
+    "tags": [
+      "fresh-ingredients",
+      "light",
+      "high-fiber",
+      "vegetables",
+      "vegan",
+      "quick",
+      "no-cook"
+    ]
+  },
+  {
+    "id": "recipe-008",
+    "title": "Broccoli and Arugula Salad",
+    "ingredients": [
+      "1 bunch broccoli, steamed",
+      "1 bunch arugula",
+      "9 oz cherry tomatoes",
+      "1/2 small red cabbage, shredded",
+      "Salt, pepper, olive oil, and vinegar to taste"
+    ],
+    "preparation": [
+      "Wash all vegetables thoroughly.",
+      "Chop broccoli, arugula, tomatoes, and cabbage as desired.",
+      "Combine in a large bowl and season to taste."
+    ],
+    "notes": [],
+    "category": "lunch",
+    "tags": [
+      "fresh-ingredients",
+      "light",
+      "high-fiber",
+      "vegetables",
+      "high-protein",
+      "quick",
+      "no-cook"
+    ]
+  },
+  {
+    "id": "recipe-010",
+    "title": "Quinoa Veggie Salad",
+    "ingredients": [
+      "2 cups cooked quinoa",
+      "1/2 red bell pepper, diced",
+      "1 carrot, peeled and shredded",
+      "1 cucumber, diced",
+      "1 tomato, diced",
+      "1/2 can (7 oz) corn kernels",
+      "1–2 cups shredded cabbage",
+      "Juice of 1 lemon",
+      "Fresh parsley to taste",
+      "1 tablespoon extra-virgin olive oil",
+      "Salt and pepper to taste"
+    ],
+    "preparation": [
+      "Wash all vegetables thoroughly.",
+      "Chop or shred as indicated.",
+      "In a large bowl, combine cooked quinoa with vegetables.",
+      "Season with lemon juice, olive oil, salt, and pepper. Toss well."
+    ],
+    "notes": [],
+    "category": "lunch",
+    "tags": [
+      "fresh-ingredients",
+      "light",
+      "high-fiber",
+      "vegetables",
+      "high-protein",
+      "plant-protein",
+      "complex-carbs",
+      "gluten-free",
+      "quick",
+      "no-cook"
+    ]
+  },
+  {
+    "id": "recipe-011",
+    "title": "Adzuki Bean Salad",
+    "ingredients": [
+      "1/4 cup cooked adzuki beans",
+      "1/4 cup lentil sprouts (optional)",
+      "Mixed greens",
+      "8 cherry tomatoes, halved",
+      "Olive oil and seasonings to taste"
+    ],
+    "preparation": [
+      "Soak adzuki beans for 8–12 hours.",
+      "Discard soaking water and place beans in a pot.",
+      "Add boiling water and cook over medium heat for at least 30 minutes or until tender.",
+      "Place cooked adzuki in a bowl, add sprouts, greens, and halved cherry tomatoes.",
+      "Season to taste."
+    ],
+    "notes": [],
+    "category": "lunch",
+    "tags": [
+      "fresh-ingredients",
+      "light",
+      "high-fiber",
+      "vegetables",
+      "high-protein",
+      "plant-protein",
+      "vegan"
+    ]
+  },
+  {
+    "id": "recipe-012",
+    "title": "Tabbouleh Salad",
+    "ingredients": [
+      "1/2 cup bulgur wheat, cooked",
+      "1 green onion, finely chopped",
+      "1 tomato, diced",
+      "2 tablespoons extra-virgin olive oil",
+      "Fresh parsley to taste",
+      "Lemon juice to taste",
+      "Salt and pepper to taste"
+    ],
+    "preparation": [
+      "Place bulgur in a bowl with boiling water and let soak 10–15 minutes until grains swell.",
+      "Drain and squeeze out excess water.",
+      "In a bowl, combine bulgur with remaining ingredients.",
+      "Season with salt, pepper, olive oil, and lemon juice."
+    ],
+    "notes": [],
+    "category": "lunch",
+    "tags": [
+      "fresh-ingredients",
+      "light",
+      "high-fiber",
+      "vegetables",
+      "vegan",
+      "quick",
+      "no-cook"
+    ]
+  },
+  {
+    "id": "recipe-013",
+    "title": "Multicolor Salad",
+    "ingredients": [
+      "8 cherry tomatoes, halved",
+      "1/2 avocado, thinly sliced",
+      "1.7 oz red cabbage, shredded",
+      "1.7 oz lettuce, thinly sliced",
+      "1 carrot, julienned",
+      "1/2 white onion, chopped",
+      "Salt, pepper, and olive oil to taste"
+    ],
+    "preparation": [
+      "Combine all ingredients in a large bowl.",
+      "Season to taste and toss gently."
+    ],
+    "notes": [],
+    "category": "lunch",
+    "tags": [
+      "fresh-ingredients",
+      "light",
+      "high-fiber",
+      "vegetables",
+      "high-protein",
+      "quick",
+      "no-cook"
+    ]
+  },
+  {
+    "id": "recipe-014",
+    "title": "Whole Wheat Pie Crust",
+    "ingredients": [
+      "1 1/2 cups whole wheat flour",
+      "1 tablespoon olive oil",
+      "Pinch of salt",
+      "Warm water as needed"
+    ],
+    "preparation": [
+      "Mix flour with salt and olive oil.",
+      "Gradually add warm water until dough forms.",
+      "Knead the dough.",
+      "Let rest for a few minutes, then roll out."
+    ],
+    "notes": [],
+    "category": "base",
+    "tags": [
+      "base-recipe",
+      "meal-prep",
+      "complex-carbs",
+      "high-fiber",
+      "vegan",
+      "quick",
+      "no-cook"
+    ]
+  },
+  {
+    "id": "recipe-015",
+    "title": "Broccoli and Pumpkin Tart",
+    "ingredients": [
+      "Filling: 1 cup pumpkin or butternut squash, diced",
+      "Filling: 1 cup broccoli florets",
+      "Filling: 1 red onion, diced",
+      "Filling: 1 tablespoon curry powder",
+      "Filling: 1 tablespoon fresh thyme",
+      "Filling: 1/2 cup semi-soft cheese, cubed",
+      "Filling: 2 teaspoons sesame seeds",
+      "Filling: 1 egg, beaten"
+    ],
+    "preparation": [
+      "Wash and chop broccoli and squash as indicated.",
+      "Steam or boil until tender.",
+      "Sauté the onion.",
+      "In a bowl, combine vegetables with beaten egg and seasonings.",
+      "Fill the whole wheat crust, top with cheese cubes and sesame seeds.",
+      "Bake at 350°F until golden."
+    ],
+    "notes": [],
+    "category": "lunch",
+    "tags": [
+      "fresh-ingredients",
+      "meal-prep",
+      "vegetables",
+      "batch-cooking",
+      "high-protein",
+      "complex-carbs",
+      "high-fiber"
+    ]
+  },
+  {
+    "id": "recipe-016",
+    "title": "Vegan Ratatouille Tart",
+    "ingredients": [
+      "Filling: 2 eggplants",
+      "Filling: 2 zucchini",
+      "Filling: 2 Roma tomatoes",
+      "Filling: 1/2 red bell pepper",
+      "Filling: 1/2 green bell pepper",
+      "Filling: 1/2 yellow bell pepper",
+      "Filling: 2 garlic cloves",
+      "Filling: 2 onions",
+      "Filling: 2 sprigs fresh thyme",
+      "Filling: 2 sprigs fresh parsley",
+      "Filling: Black pepper and salt to taste"
+    ],
+    "preparation": [
+      "Wash and slice all vegetables thinly.",
+      "Roast them in the oven or on a grill pan.",
+      "Arrange on the crust in a spiral pattern.",
+      "Bake a few minutes until crust is golden."
+    ],
+    "notes": [],
+    "category": "lunch",
+    "tags": [
+      "fresh-ingredients",
+      "meal-prep",
+      "vegetables",
+      "batch-cooking",
+      "vegan",
+      "quick"
+    ]
+  },
+  {
+    "id": "recipe-017",
+    "title": "Pumpkin Crust Tart",
+    "ingredients": [
+      "Crust: 1.6 lbs pumpkin or butternut squash",
+      "Crust: 3.5 oz carrot, shredded",
+      "Crust: 1 egg",
+      "Crust: 2 tablespoons cornstarch",
+      "Crust: Seasonings to taste",
+      "Filling: 10.5 oz fresh spinach",
+      "Filling: 1 onion, diced",
+      "Filling: 3 eggs",
+      "Filling: 1.7 oz cream cheese",
+      "Filling: 1.7 oz skim milk",
+      "Filling: 1 teaspoon oil",
+      "Filling: Seasonings to taste"
+    ],
+    "preparation": [
+      "Cut squash and steam or microwave until tender.",
+      "Steam spinach and squeeze out all water.",
+      "Sauté the onion.",
+      "Mash squash and mix with shredded carrot, egg, and seasonings.",
+      "Spread into a greased pie dish and bake at 350°F for about 12 minutes until surface sets.",
+      "Mix chopped spinach with sautéed onion and remaining filling ingredients.",
+      "Pour over crust and bake at 350°F for about 35 minutes until set."
+    ],
+    "notes": [],
+    "category": "lunch",
+    "tags": [
+      "fresh-ingredients",
+      "high-protein",
+      "complex-carbs",
+      "high-fiber",
+      "anti-inflammatory"
+    ]
+  },
+  {
+    "id": "recipe-018",
+    "title": "Spinach and Ricotta Tart",
+    "ingredients": [
+      "Whole wheat pie crust (from cookbook)",
+      "1 cup cooked spinach, drained and chopped",
+      "7 oz low-fat ricotta",
+      "2 tablespoons grated cheese",
+      "Pinch of black pepper",
+      "Pinch of nutmeg",
+      "2 eggs"
+    ],
+    "preparation": [
+      "Beat eggs with seasonings.",
+      "Mix with spinach and ricotta.",
+      "Assemble tart with filling and whole wheat crust.",
+      "Bake until crust is golden."
+    ],
+    "notes": [
+      "Tip: Freeze in portions for easy meal prep."
+    ],
+    "category": "lunch",
+    "tags": [
+      "fresh-ingredients",
+      "meal-prep",
+      "vegetables",
+      "batch-cooking",
+      "high-protein",
+      "high-fiber",
+      "quick",
+      "anti-inflammatory"
+    ]
+  },
+  {
+    "id": "recipe-019",
+    "title": "Tuna Tart",
+    "ingredients": [
+      "1 onion, chopped",
+      "1/2 red bell pepper, chopped",
+      "1/2 green bell pepper, chopped",
+      "1 can (5 oz) tuna in water, drained",
+      "1 tomato, diced",
+      "Whole wheat crust (from cookbook)"
+    ],
+    "preparation": [
+      "In a nonstick wok or pan, sauté onion with bell peppers.",
+      "Mix with tuna and tomato.",
+      "Assemble the tart.",
+      "Bake at 350°F until golden."
+    ],
+    "notes": [],
+    "category": "lunch",
+    "tags": [
+      "fresh-ingredients",
+      "meal-prep",
+      "vegetables",
+      "batch-cooking",
+      "high-protein",
+      "high-fiber",
+      "quick"
+    ]
+  },
+  {
+    "id": "recipe-020",
+    "title": "Eggplant Tart",
+    "ingredients": [
+      "1 onion, sliced into rings",
+      "1 garlic clove, minced",
+      "2 Roma tomatoes, finely chopped",
+      "3 medium eggplants, sliced",
+      "2 eggs",
+      "2 tablespoons light cream cheese",
+      "Seasonings to taste"
+    ],
+    "preparation": [
+      "Sauté garlic with onion.",
+      "Add tomatoes and eggplants.",
+      "Cover and cook over low heat for 15 minutes.",
+      "Beat eggs with cream cheese and seasonings.",
+      "Mix egg mixture with eggplant preparation.",
+      "Assemble the tart and bake."
+    ],
+    "notes": [],
+    "category": "lunch",
+    "tags": [
+      "fresh-ingredients",
+      "meal-prep",
+      "vegetables",
+      "batch-cooking",
+      "high-protein"
+    ]
+  },
+  {
+    "id": "recipe-021",
+    "title": "Vegetable and Quinoa Soup",
+    "ingredients": [
+      "1 carrot, chopped",
+      "1 leek, chopped",
+      "1 onion, chopped",
+      "1 bell pepper, chopped",
+      "2 celery stalks, chopped",
+      "3.5 oz quinoa",
+      "Seasonings to taste",
+      "Water or vegetable broth"
+    ],
+    "preparation": [
+      "Finely chop all vegetables.",
+      "In a nonstick pan (no oil), sauté onion, bell pepper, and leek.",
+      "Transfer to a pot with remaining vegetables and cover with water or broth.",
+      "Rinse quinoa well, add to pot, and bring to a boil. Simmer until tender."
+    ],
+    "notes": [],
+    "category": "dinner",
+    "tags": [
+      "fresh-ingredients",
+      "comfort-food",
+      "easy-digest",
+      "hydrating",
+      "recovery",
+      "high-protein",
+      "plant-protein",
+      "complex-carbs",
+      "gluten-free",
+      "vegan",
+      "quick"
+    ]
+  },
+  {
+    "id": "recipe-022",
+    "title": "Pumpkin Soup",
+    "ingredients": [
+      "1 large pumpkin or butternut squash, peeled, seeded, and cubed",
+      "1 white onion, finely chopped",
+      "3 garlic cloves, crushed",
+      "1 teaspoon ground cumin",
+      "4 tomatoes, peeled and chopped",
+      "6 cups vegetable broth",
+      "Salt and pepper to taste"
+    ],
+    "preparation": [
+      "In a nonstick pan, sauté onion with garlic and tomatoes.",
+      "Add broth and pumpkin and boil for about 30 minutes.",
+      "Let cool and blend until smooth.",
+      "Add seasonings and reheat before serving."
+    ],
+    "notes": [],
+    "category": "dinner",
+    "tags": [
+      "fresh-ingredients",
+      "comfort-food",
+      "easy-digest",
+      "hydrating",
+      "recovery",
+      "complex-carbs",
+      "vegan",
+      "quick"
+    ]
+  },
+  {
+    "id": "recipe-023",
+    "title": "Spinach and Broccoli Soup",
+    "ingredients": [
+      "1 bunch spinach",
+      "1 head broccoli, chopped",
+      "1 white onion, finely chopped",
+      "3 garlic cloves, crushed",
+      "6 cups vegetable broth",
+      "Salt and pepper to taste"
+    ],
+    "preparation": [
+      "In a nonstick pan, sauté onions with garlic.",
+      "Add broth, broccoli, and spinach and boil for about 30 minutes.",
+      "Let cool and blend until smooth.",
+      "Add seasonings and reheat before serving."
+    ],
+    "notes": [],
+    "category": "dinner",
+    "tags": [
+      "fresh-ingredients",
+      "comfort-food",
+      "easy-digest",
+      "hydrating",
+      "recovery",
+      "high-fiber",
+      "vegan",
+      "quick",
+      "anti-inflammatory"
+    ]
+  },
+  {
+    "id": "recipe-024",
+    "title": "Zucchini Tart",
+    "ingredients": [
+      "Filling: 4 zucchini, chopped",
+      "Filling: 1 onion, chopped",
+      "Filling: 1/2 red bell pepper, chopped",
+      "Filling: 2 eggs, beaten",
+      "Filling: 7 oz low-fat ricotta",
+      "Filling: Seasonings to taste",
+      "Filling: Seeds to taste"
+    ],
+    "preparation": [
+      "Wash and chop all vegetables.",
+      "Sauté them.",
+      "Add ricotta, eggs, and seeds.",
+      "Fill the tart crust and bake."
+    ],
+    "notes": [],
+    "category": "lunch",
+    "tags": [
+      "fresh-ingredients",
+      "meal-prep",
+      "vegetables",
+      "batch-cooking",
+      "high-protein",
+      "quick"
+    ]
+  },
+  {
+    "id": "recipe-025",
+    "title": "Leek and Carrot Soup",
+    "ingredients": [
+      "1 leek, chopped",
+      "3 carrots, peeled and chopped",
+      "1 white onion, finely chopped",
+      "6 cups vegetable broth",
+      "Salt and pepper to taste"
+    ],
+    "preparation": [
+      "In a nonstick pan, sauté onions with leek.",
+      "Add broth and carrots and boil for about 30 minutes.",
+      "Let cool and blend until smooth.",
+      "Add seasonings and reheat before serving."
+    ],
+    "notes": [],
+    "category": "dinner",
+    "tags": [
+      "fresh-ingredients",
+      "comfort-food",
+      "easy-digest",
+      "hydrating",
+      "recovery",
+      "vegan",
+      "quick"
+    ]
+  },
+  {
+    "id": "recipe-026",
+    "title": "Pea Soup",
+    "ingredients": [
+      "2 cans (15 oz each) peas, drained",
+      "2 garlic cloves, minced",
+      "1 white onion, finely chopped",
+      "4 cups vegetable broth",
+      "Salt and pepper to taste"
+    ],
+    "preparation": [
+      "In a nonstick pan, sauté onions with garlic.",
+      "Add broth and peas and boil for about 20 minutes.",
+      "Let cool and blend until smooth.",
+      "Add seasonings and reheat before serving."
+    ],
+    "notes": [],
+    "category": "dinner",
+    "tags": [
+      "fresh-ingredients",
+      "comfort-food",
+      "easy-digest",
+      "hydrating",
+      "recovery",
+      "vegan",
+      "quick"
+    ]
+  },
+  {
+    "id": "recipe-027",
+    "title": "Chicken and Pumpkin Pie",
+    "ingredients": [
+      "5.3 oz chicken breast (1 serving)",
+      "1 onion, chopped",
+      "1 piece red bell pepper, chopped",
+      "1 small tomato, chopped",
+      "1 carrot, shredded",
+      "Seasonings to taste",
+      "7 oz pumpkin or butternut squash (peeled)",
+      "1.7 fl oz milk"
+    ],
+    "preparation": [
+      "In a nonstick pan, sauté onion until translucent.",
+      "Add bell pepper and chicken pieces until chicken is cooked.",
+      "Add carrot and seasonings. Set aside.",
+      "Make mashed pumpkin with milk.",
+      "In a baking dish, place chicken filling and top with a layer of mashed pumpkin.",
+      "Bake at 350°F for a few minutes."
+    ],
+    "notes": [],
+    "category": "dinner",
+    "tags": [
+      "fresh-ingredients",
+      "high-protein",
+      "satisfying",
+      "complex-carbs"
+    ]
+  },
+  {
+    "id": "recipe-028",
+    "title": "Tuna Burgers",
+    "ingredients": [
+      "1 can (5 oz) tuna in water, drained",
+      "1/2 onion, sautéed and diced",
+      "1 egg white",
+      "1 teaspoon chopped parsley",
+      "1 teaspoon mustard",
+      "1 tablespoon lemon juice",
+      "3 tablespoons rolled oats"
+    ],
+    "preparation": [
+      "Mix all ingredients in a bowl.",
+      "Wet your hands and form small balls.",
+      "Flatten between palms to form burger patties.",
+      "Cook in a nonstick pan or with cooking spray."
+    ],
+    "notes": [
+      "Yields approximately 2–3 burgers."
+    ],
+    "category": "dinner",
+    "tags": [
+      "fresh-ingredients",
+      "high-protein",
+      "satisfying",
+      "complex-carbs",
+      "high-fiber",
+      "quick",
+      "meal-prep"
+    ]
+  },
+  {
+    "id": "recipe-029",
+    "title": "Beef Burgers",
+    "ingredients": [
+      "1.1 lbs lean ground beef",
+      "1 carrot, shredded",
+      "1 small onion, chopped and sautéed",
+      "1/2 bell pepper, chopped and sautéed",
+      "2 egg whites",
+      "Rolled oats or whole wheat breadcrumbs as needed"
+    ],
+    "preparation": [
+      "Mix everything (except oats/breadcrumbs) until well combined.",
+      "Form balls of desired size, then flatten to shape.",
+      "Coat with oats or whole wheat breadcrumbs.",
+      "Place on a baking sheet and bake."
+    ],
+    "notes": [],
+    "category": "dinner",
+    "tags": [
+      "fresh-ingredients",
+      "high-protein",
+      "satisfying",
+      "complex-carbs",
+      "high-fiber",
+      "quick",
+      "meal-prep"
+    ]
+  },
+  {
+    "id": "recipe-030",
+    "title": "Fish Fillet on a Bed of Vegetables",
+    "ingredients": [
+      "1 fish fillet (cod, tilapia, or similar)",
+      "1 onion, finely chopped",
+      "1/2 red bell pepper, diced",
+      "3.5 oz green beans, halved",
+      "1 tomato, diced",
+      "1 carrot, shredded",
+      "1 leek, chopped",
+      "Mushrooms to taste",
+      "Seasonings to taste"
+    ],
+    "preparation": [
+      "Boil fish fillet for 10 minutes.",
+      "Remove and drain well.",
+      "In a nonstick pan, sauté onion, bell pepper, and leek.",
+      "Place those vegetables with the rest on a baking sheet, forming a bed.",
+      "Place fish fillet on top and bake at low heat for a few minutes until golden."
+    ],
+    "notes": [],
+    "category": "dinner",
+    "tags": [
+      "fresh-ingredients",
+      "high-protein",
+      "satisfying"
+    ]
+  },
+  {
+    "id": "recipe-031",
+    "title": "Chicken and Veggie Wok",
+    "ingredients": [
+      "2 chicken breasts, diced",
+      "3 carrots, sliced",
+      "1 red bell pepper, sliced",
+      "1 green bell pepper, sliced",
+      "1 zucchini, sliced",
+      "1 onion, sliced",
+      "3.5 oz mushrooms, sliced",
+      "2 green onions, chopped",
+      "3.5 oz bean sprouts",
+      "3 tablespoons soy sauce",
+      "Optional: chopped walnuts"
+    ],
+    "preparation": [
+      "In a nonstick wok, sauté onion and bell peppers.",
+      "Add chicken and cook until done.",
+      "Add remaining vegetables and stir-fry.",
+      "Add soy sauce and bean sprouts.",
+      "Optional: top with chopped walnuts before serving."
+    ],
+    "notes": [],
+    "category": "dinner",
+    "tags": [
+      "fresh-ingredients",
+      "high-protein",
+      "satisfying",
+      "plant-protein"
+    ]
+  },
+  {
+    "id": "recipe-032",
+    "title": "Quinoa Pizza",
+    "ingredients": [
+      "1 cup cooked quinoa",
+      "3 egg whites",
+      "1 onion, chopped",
+      "1 tablespoon paprika",
+      "1 small tomato, diced",
+      "Oregano and basil",
+      "Minced garlic",
+      "Olive oil",
+      "7 oz light semi-soft cheese, cubed",
+      "Tomato sauce"
+    ],
+    "preparation": [
+      "Preheat oven.",
+      "In a bowl, mix all ingredients except cheese, sauce, and tomato.",
+      "Stir until homogeneous.",
+      "Place in a pizza pan and flatten with hands.",
+      "Top with sauce, cheese, and tomato; add basil and garlic.",
+      "Bake for 15 minutes.",
+      "Can be served with a side salad."
+    ],
+    "notes": [],
+    "category": "dinner",
+    "tags": [
+      "fresh-ingredients",
+      "comfort-food",
+      "high-protein",
+      "plant-protein",
+      "complex-carbs",
+      "gluten-free"
+    ]
+  },
+  {
+    "id": "recipe-033",
+    "title": "Quinoa Meatballs",
+    "ingredients": [
+      "1/2 cup dry quinoa",
+      "1 cup water",
+      "1 cup cooked lentils (well drained)",
+      "1/2 red bell pepper, diced",
+      "1 small onion, chopped",
+      "Breadcrumbs as needed",
+      "Seasonings to taste",
+      "2 egg whites",
+      "2 tablespoons olive oil"
+    ],
+    "preparation": [
+      "Soak quinoa for a few minutes, drain, and rinse with cold water.",
+      "Boil with 1 cup water for 15–20 minutes.",
+      "In a nonstick pan, sauté vegetables with water or cooking spray.",
+      "Let quinoa cool.",
+      "Process/blend quinoa, sautéed vegetables, and lentils.",
+      "Add egg whites and mix.",
+      "Form balls and coat with breadcrumbs.",
+      "Bake for a few minutes."
+    ],
+    "notes": [],
+    "category": "dinner",
+    "tags": [
+      "fresh-ingredients",
+      "high-protein",
+      "satisfying",
+      "plant-protein",
+      "complex-carbs",
+      "high-fiber",
+      "gluten-free"
+    ]
+  },
+  {
+    "id": "recipe-034",
+    "title": "Lentil Burgers",
+    "ingredients": [
+      "9 oz cooked lentils",
+      "1 carrot, shredded",
+      "1/2 onion, chopped",
+      "1 garlic clove, minced",
+      "1 piece bell pepper, chopped",
+      "1 egg white",
+      "Rolled oats as needed",
+      "Seasonings to taste"
+    ],
+    "preparation": [
+      "Mash or process cooked lentils (better if slightly overcooked).",
+      "Shred carrot and add.",
+      "Chop onion, garlic, and bell pepper; sauté with water in a nonstick pan until onion is translucent.",
+      "Mix sautéed vegetables with lentils.",
+      "Add egg white and let rest for a few minutes.",
+      "Form balls, flatten, and coat with oats/bran/breadcrumbs.",
+      "Cook on a griddle or bake."
+    ],
+    "notes": [
+      "Can be frozen with parchment paper separators."
+    ],
+    "category": "dinner",
+    "tags": [
+      "fresh-ingredients",
+      "high-protein",
+      "satisfying",
+      "plant-protein",
+      "complex-carbs",
+      "high-fiber",
+      "meal-prep"
+    ]
+  },
+  {
+    "id": "recipe-035",
+    "title": "Textured Soy Meatballs",
+    "ingredients": [
+      "3.5 oz fine textured soy protein (about 10.5 oz rehydrated)",
+      "2 tablespoons oat flour (ground oats)",
+      "1 teaspoon garlic powder",
+      "1 teaspoon onion powder",
+      "1/2 teaspoon ground black pepper",
+      "1/2 teaspoon salt",
+      "Small handful fresh parsley",
+      "Extra oat flour for coating"
+    ],
+    "preparation": [
+      "Rehydrate soy protein.",
+      "Drain and mix with oat flour, garlic, onion, pepper, salt, and parsley.",
+      "Blend for a few seconds until homogeneous.",
+      "Form meatballs and bake."
+    ],
+    "notes": [],
+    "category": "dinner",
+    "tags": [
+      "fresh-ingredients",
+      "high-protein",
+      "satisfying",
+      "plant-protein",
+      "complex-carbs",
+      "high-fiber",
+      "vegan",
+      "quick"
+    ]
+  },
+  {
+    "id": "recipe-036",
+    "title": "Seitan Cutlets",
+    "ingredients": [
+      "1/2 cup vital wheat gluten",
+      "1/2 cup water",
+      "1 tablespoon soy sauce",
+      "1 teaspoon paprika",
+      "3 tablespoons breadcrumbs or oat bran"
+    ],
+    "preparation": [
+      "Mix all ingredients well.",
+      "Shape into small cutlets.",
+      "Boil for 8 minutes and freeze.",
+      "To cook: sear quickly on both sides on a griddle."
+    ],
+    "notes": [],
+    "category": "dinner",
+    "tags": [
+      "fresh-ingredients",
+      "high-protein",
+      "satisfying",
+      "plant-protein",
+      "complex-carbs",
+      "high-fiber",
+      "vegan",
+      "quick"
+    ]
+  },
+  {
+    "id": "recipe-037",
+    "title": "White Bean Stew",
+    "ingredients": [
+      "1.1 lbs white beans",
+      "4–5 tomatoes",
+      "2 carrots",
+      "1 onion",
+      "1/2 bell pepper",
+      "Seasonings to taste"
+    ],
+    "preparation": [
+      "Soak beans overnight, then boil until tender.",
+      "For the sauce: chop onion, carrots, and bell pepper; sauté in a pan with a little water or cooking spray.",
+      "When onion is golden, add crushed/blended tomatoes (and water to taste).",
+      "Drain beans and mix with sauce."
+    ],
+    "notes": [],
+    "category": "dinner",
+    "tags": [
+      "fresh-ingredients",
+      "high-protein",
+      "satisfying",
+      "plant-protein",
+      "vegan"
+    ]
+  },
+  {
+    "id": "recipe-038",
+    "title": "Lentil Stew",
+    "ingredients": [
+      "1 cup lentils",
+      "1 onion, chopped",
+      "1 green onion, chopped",
+      "1 carrot, diced",
+      "1/2 green bell pepper, diced",
+      "1/2 red bell pepper, diced",
+      "2 tomatoes, diced",
+      "1.1 lbs pumpkin or butternut squash, cubed",
+      "2 garlic cloves, minced",
+      "2 bay leaves",
+      "3 cups water"
+    ],
+    "preparation": [
+      "In a pot, boil squash cubes with lentils, bay leaves, and 3 cups water.",
+      "Dice carrots; chop onions, bell peppers, and garlic.",
+      "Sauté vegetables.",
+      "Add diced tomatoes and cook for about 10 minutes.",
+      "Add sautéed vegetables to the pot, season, and finish cooking together."
+    ],
+    "notes": [],
+    "category": "dinner",
+    "tags": [
+      "fresh-ingredients",
+      "high-protein",
+      "satisfying",
+      "plant-protein",
+      "complex-carbs",
+      "high-fiber",
+      "vegan"
+    ]
+  },
+  {
+    "id": "recipe-039",
+    "title": "Zucchini Lasagna",
+    "ingredients": [
+      "1 zucchini, sliced lengthwise",
+      "1.7 oz light semi-soft cheese",
+      "1 small carrot, diced",
+      "1 tomato, diced",
+      "1/2 onion, chopped",
+      "1/4 bell pepper, diced",
+      "3.5 oz chicken breast, diced",
+      "Seasonings to taste"
+    ],
+    "preparation": [
+      "Make a sauce with diced tomato, carrot, and seasonings; set aside.",
+      "In a nonstick pan, sauté onion; add bell pepper and chicken cubes until chicken is cooked.",
+      "In a baking dish, pour a little sauce and cover bottom with a layer of zucchini.",
+      "Add chicken filling and cheese cubes.",
+      "Repeat layers (zucchini, sauce, filling) until ingredients are used.",
+      "Bake at 350°F for 20 minutes."
+    ],
+    "notes": [],
+    "category": "dinner",
+    "tags": [
+      "fresh-ingredients",
+      "high-protein",
+      "satisfying"
+    ]
+  },
+  {
+    "id": "recipe-040",
+    "title": "Stuffed Eggplant Neapolitan",
+    "ingredients": [
+      "1 eggplant",
+      "Small handful of cooked brown rice",
+      "1/2 carrot, shredded",
+      "1/2 onion, chopped and sautéed",
+      "Minced garlic to taste",
+      "Tomato sauce",
+      "1 thin slice light semi-soft cheese"
+    ],
+    "preparation": [
+      "Cut eggplant in half lengthwise.",
+      "Boil in water with vinegar and bay leaf until it loses rigidity. Drain and remove seeds.",
+      "Combine cooked rice with carrot, onion, and garlic.",
+      "Stuff eggplant with rice mixture.",
+      "Place in baking dish, cover with sauce, and bake at moderate heat for 15 minutes.",
+      "Top with cheese and bake until cheese melts."
+    ],
+    "notes": [],
+    "category": "dinner",
+    "tags": [
+      "fresh-ingredients",
+      "high-protein",
+      "satisfying",
+      "complex-carbs",
+      "high-fiber"
+    ]
+  },
+  {
+    "id": "recipe-041",
+    "title": "Stuffed Zucchini",
+    "ingredients": [
+      "2 zucchini",
+      "1 cup brown rice",
+      "2 green onions, chopped",
+      "1 piece red bell pepper, diced",
+      "1 garlic clove, minced",
+      "1/2 eggplant, diced",
+      "Seasonings to taste"
+    ],
+    "preparation": [
+      "Boil whole zucchini for 10 minutes. Cool, cut in half, and scoop out.",
+      "Sauté chopped vegetables with zucchini pulp over low heat.",
+      "Mix vegetables with rice and stuff zucchini.",
+      "Bake until golden."
+    ],
+    "notes": [],
+    "category": "dinner",
+    "tags": [
+      "fresh-ingredients",
+      "high-protein",
+      "satisfying",
+      "vegan",
+      "quick"
+    ]
+  },
+  {
+    "id": "recipe-042",
+    "title": "Pasta with Brussels Sprouts and Cherry Tomatoes",
+    "ingredients": [
+      "1 serving pasta of choice",
+      "15 Brussels sprouts",
+      "3.5 oz cherry tomatoes",
+      "1/2 onion, chopped",
+      "Seeds and seasonings to taste"
+    ],
+    "preparation": [
+      "Boil Brussels sprouts for 3 minutes.",
+      "In a wok with oil or cooking spray, sauté onion.",
+      "When translucent, add halved Brussels sprouts and cherry tomatoes.",
+      "Add seeds, seasonings, and toss with cooked pasta."
+    ],
+    "notes": [],
+    "category": "dinner",
+    "tags": [
+      "fresh-ingredients",
+      "high-protein",
+      "satisfying",
+      "vegan",
+      "quick"
+    ]
+  },
+  {
+    "id": "recipe-043",
+    "title": "Whole Wheat Pizza Dough",
+    "ingredients": [
+      "3.5 cups whole wheat flour",
+      "1 packet active dry yeast",
+      "1 1/4 cups warm water",
+      "2 teaspoons sugar",
+      "2 tablespoons sunflower or olive oil",
+      "1 tablespoon salt"
+    ],
+    "preparation": [
+      "Make a well in the flour; in the center place yeast, oil, sugar, and part of the water.",
+      "Place salt on the outer edges.",
+      "Dissolve yeast with your fingers and gradually incorporate water with flour.",
+      "Form a ball and let rest for a few minutes.",
+      "Roll out in pizza pans and bake."
+    ],
+    "notes": [],
+    "category": "dinner",
+    "tags": [
+      "fresh-ingredients",
+      "comfort-food",
+      "complex-carbs",
+      "high-fiber",
+      "vegan"
+    ]
+  },
+  {
+    "id": "recipe-044",
+    "title": "Beet Gnocchi",
+    "ingredients": [
+      "2 beets, quartered",
+      "1 medium potato",
+      "1 cup all-purpose flour",
+      "1 egg",
+      "1 tablespoon oil",
+      "Salt and pepper to taste"
+    ],
+    "preparation": [
+      "Boil beets (quartered) and add peeled potato halfway through cooking.",
+      "Drain beets, let water evaporate, and process until smooth purée.",
+      "Mash hot potato and let cool.",
+      "Mix both purées, form a well, and add egg, seasonings, and half the flour.",
+      "Knead, adding flour as needed until dough is smooth. Rest for 10 minutes.",
+      "Form cylinders and cut into pieces."
+    ],
+    "notes": [],
+    "category": "base",
+    "tags": [
+      "base-recipe",
+      "meal-prep",
+      "high-protein",
+      "complex-carbs"
+    ]
+  },
+  {
+    "id": "recipe-045",
+    "title": "Gluten-Free Potato Gnocchi",
+    "ingredients": [
+      "2.2 lbs potatoes",
+      "14 oz gluten-free flour blend (14 oz corn starch, 10.5 oz cassava flour, 10.5 oz rice flour)",
+      "2 eggs",
+      "Salt, pepper, and nutmeg to taste"
+    ],
+    "preparation": [
+      "Boil potatoes and mash.",
+      "In a bowl, mix with eggs and combine well.",
+      "Gradually add flour blend until dough is smooth and doesn't stick.",
+      "Rest for a few minutes, form cylinders, and cut."
+    ],
+    "notes": [],
+    "category": "base",
+    "tags": [
+      "base-recipe",
+      "meal-prep",
+      "high-protein",
+      "complex-carbs",
+      "gluten-free",
+      "quick"
+    ]
+  },
+  {
+    "id": "recipe-046",
+    "title": "Gluten-Free Beet Gnocchi",
+    "ingredients": [
+      "1.6 lbs potatoes",
+      "3 beets",
+      "2 eggs",
+      "14 oz gluten-free flour blend (see previous recipe)",
+      "Salt, pepper, and nutmeg to taste"
+    ],
+    "preparation": [
+      "Boil potatoes and beets; mash both together.",
+      "Mix with eggs and seasonings.",
+      "Gradually add flour blend until dough is smooth.",
+      "Rest, form cylinders, and cut."
+    ],
+    "notes": [],
+    "category": "base",
+    "tags": [
+      "base-recipe",
+      "meal-prep",
+      "high-protein",
+      "complex-carbs",
+      "gluten-free",
+      "quick"
+    ]
+  },
+  {
+    "id": "recipe-047",
+    "title": "Gluten-Free Dinner Rolls",
+    "ingredients": [
+      "1.1 lbs gluten-free flour blend",
+      "1 teaspoon salt",
+      "0.35 oz active dry yeast",
+      "3.5 oz oil",
+      "1 teaspoon sugar",
+      "1 1/4 cups warm milk",
+      "1 egg",
+      "Mix of gluten-free seeds"
+    ],
+    "preparation": [
+      "Mix milk, yeast, and sugar; rest for 10 minutes.",
+      "Mix flour blend with salt; make a well and add oil, egg, and activated yeast.",
+      "Form homogeneous dough and let rise for 40 minutes.",
+      "Shape into rolls, place on baking sheet, sprinkle with seeds, and bake at medium heat for about 20 minutes."
+    ],
+    "notes": [],
+    "category": "base",
+    "tags": [
+      "base-recipe",
+      "meal-prep",
+      "high-protein",
+      "gluten-free",
+      "quick"
+    ]
+  },
+  {
+    "id": "recipe-048",
+    "title": "Homemade Whole Wheat Bread",
+    "ingredients": [
+      "4.5 cups whole wheat flour",
+      "1 teaspoon salt",
+      "1 packet active dry yeast",
+      "1 3/4 cups warm water"
+    ],
+    "preparation": [
+      "Dissolve yeast in 1/2 cup warm water; rest for 10 minutes.",
+      "Mix flour and salt in a bowl; make a well in center and add yeast.",
+      "Mix with hands, gradually adding remaining water.",
+      "Form dough and let rest for 30 minutes.",
+      "Bake for 30–40 minutes."
+    ],
+    "notes": [],
+    "category": "base",
+    "tags": [
+      "base-recipe",
+      "meal-prep",
+      "complex-carbs",
+      "high-fiber",
+      "vegan"
+    ]
+  },
+  {
+    "id": "recipe-049",
+    "title": "Cloud Bread",
+    "ingredients": [
+      "1 egg",
+      "2 egg whites",
+      "2 tablespoons light cream cheese",
+      "1 tablespoon baking powder"
+    ],
+    "preparation": [
+      "Mix yolk with cream cheese until smooth.",
+      "Add baking powder to egg whites and beat to stiff peaks.",
+      "Fold yolk mixture into whites with gentle motions.",
+      "Drop spoonfuls onto parchment-lined baking sheet and bake for 20 minutes at medium heat."
+    ],
+    "notes": [],
+    "category": "base",
+    "tags": [
+      "base-recipe",
+      "meal-prep",
+      "high-protein",
+      "quick"
+    ]
+  },
+  {
+    "id": "recipe-050",
+    "title": "Vegan Omelet",
+    "ingredients": [
+      "4 tablespoons chickpea flour",
+      "4 tablespoons water",
+      "1 teaspoon seeds",
+      "1/2 teaspoon baking powder",
+      "1/2 teaspoon turmeric",
+      "Vegetable filling to taste"
+    ],
+    "preparation": [
+      "Place ingredients in a bowl and blend or whisk.",
+      "Cook in a nonstick pan, flipping once."
+    ],
+    "notes": [],
+    "category": "breakfast",
+    "tags": [
+      "fresh-ingredients",
+      "morning-fuel",
+      "high-protein",
+      "plant-protein",
+      "high-fiber",
+      "vegan",
+      "quick",
+      "anti-inflammatory"
+    ]
+  },
+  {
+    "id": "recipe-051",
+    "title": "Homemade Tacos",
+    "ingredients": [
+      "3/4 cup polenta (cornmeal)",
+      "1/2 cup all-purpose flour",
+      "3 tablespoons olive oil",
+      "Warm water as needed",
+      "Seasonings (e.g., smoked paprika)"
+    ],
+    "preparation": [
+      "Mix polenta, flour, oil, and seasonings.",
+      "Add water until dough forms; knead and rest for a few minutes.",
+      "Divide into balls and roll into circles.",
+      "Cook in a nonstick pan, flipping once.",
+      "Fill as desired (e.g., sautéed vegetables)."
+    ],
+    "notes": [],
+    "category": "lunch",
+    "tags": [
+      "fresh-ingredients",
+      "vegan"
+    ]
+  },
+  {
+    "id": "recipe-052",
+    "title": "Banana Muffins",
+    "ingredients": [
+      "2 bananas",
+      "2.8 oz brown sugar",
+      "2 eggs",
+      "1.5 cups whole wheat flour",
+      "2 teaspoons baking powder",
+      "Pinch of salt",
+      "Optional: mixed nuts, dark chocolate, poppy seeds"
+    ],
+    "preparation": [
+      "Blend eggs, sugar, sweetener, and bananas.",
+      "Add dry ingredients and beat.",
+      "Fold in optionals and pour into muffin liners.",
+      "Bake at 375°F in preheated oven."
+    ],
+    "notes": [],
+    "category": "snacks",
+    "tags": [
+      "fresh-ingredients",
+      "portable",
+      "sweet",
+      "high-protein",
+      "complex-carbs",
+      "high-fiber",
+      "quick",
+      "meal-prep"
+    ]
+  },
+  {
+    "id": "recipe-053",
+    "title": "Blueberry Muffins",
+    "ingredients": [
+      "5 oz blueberries",
+      "1.5 cups whole wheat flour",
+      "7 packets stevia",
+      "2 teaspoons baking powder",
+      "1/2 teaspoon baking soda",
+      "1/2 teaspoon salt",
+      "2.7 fl oz sunflower oil",
+      "1 large egg",
+      "1 plain yogurt",
+      "2 teaspoons vanilla extract",
+      "1 heaping teaspoon cream cheese"
+    ],
+    "preparation": [
+      "Mix dry ingredients in one bowl and wet in another.",
+      "Combine both mixtures without overmixing.",
+      "Toss blueberries in flour and fold into batter.",
+      "Pour into muffin tins and bake for 20–25 minutes."
+    ],
+    "notes": [],
+    "category": "snacks",
+    "tags": [
+      "fresh-ingredients",
+      "portable",
+      "sweet",
+      "high-protein",
+      "complex-carbs",
+      "high-fiber",
+      "quick",
+      "anti-inflammatory",
+      "meal-prep"
+    ]
+  },
+  {
+    "id": "recipe-054",
+    "title": "Mandarin Muffins",
+    "ingredients": [
+      "4 mandarins",
+      "3.5 oz sugar",
+      "3 packets stevia",
+      "2.7 fl oz oil",
+      "1 tablespoon baking powder",
+      "Pinch of salt",
+      "1 cup whole wheat flour",
+      "3.5 oz all-purpose flour"
+    ],
+    "preparation": [
+      "Juice 2 mandarins and chop the other 2 (seedless).",
+      "Blend juice and chopped mandarins; add sugar and stevia and blend again.",
+      "Add oil, baking powder, and salt.",
+      "Transfer to a bowl and gradually add flour. Rest for 15 minutes.",
+      "Fill muffin liners and bake at 350°F for 25 minutes."
+    ],
+    "notes": [],
+    "category": "snacks",
+    "tags": [
+      "fresh-ingredients",
+      "portable",
+      "sweet",
+      "complex-carbs",
+      "high-fiber",
+      "vegan",
+      "meal-prep"
+    ]
+  },
+  {
+    "id": "recipe-055",
+    "title": "Pear Muffins",
+    "ingredients": [
+      "1 cup whole wheat flour",
+      "1 tablespoon baking powder",
+      "3 eggs",
+      "3.4 fl oz oil",
+      "2 pears, shredded",
+      "5.3 oz sugar",
+      "5 packets stevia"
+    ],
+    "preparation": [
+      "Beat eggs with sugar and stevia; add oil.",
+      "Shred pears and add to mixture with flour and baking powder.",
+      "Pour into muffin tins and bake at 350°F for about 25 minutes."
+    ],
+    "notes": [],
+    "category": "snacks",
+    "tags": [
+      "fresh-ingredients",
+      "portable",
+      "sweet",
+      "high-protein",
+      "complex-carbs",
+      "high-fiber",
+      "quick",
+      "meal-prep"
+    ]
+  },
+  {
+    "id": "recipe-056",
+    "title": "Sweet Veggie Muffins",
+    "ingredients": [
+      "1 cup whole wheat flour",
+      "1.7 oz all-purpose flour",
+      "1.7 oz rolled oats",
+      "3.5 oz sugar",
+      "5 packets stevia",
+      "1 tablespoon baking powder",
+      "1 teaspoon salt",
+      "2 eggs",
+      "3.4 fl oz oil",
+      "3.5 oz zucchini, coarsely shredded",
+      "3.5 oz carrot, finely chopped or shredded"
+    ],
+    "preparation": [
+      "Mix dry ingredients.",
+      "Add beaten eggs and oil to the center and combine.",
+      "Fold in zucchini and carrot.",
+      "Pour into muffin tins and bake for about 20 minutes."
+    ],
+    "notes": [],
+    "category": "snacks",
+    "tags": [
+      "fresh-ingredients",
+      "portable",
+      "sweet",
+      "high-protein",
+      "complex-carbs",
+      "high-fiber",
+      "quick",
+      "meal-prep"
+    ]
+  },
+  {
+    "id": "recipe-057",
+    "title": "Savory Muffins",
+    "ingredients": [
+      "3 egg whites",
+      "7 oz gluten-free flour blend",
+      "1 teaspoon baking powder",
+      "6.7 fl oz skim milk",
+      "1 tablespoon oil",
+      "Seasonings (oregano, herbs, paprika)",
+      "Flavorings: 1 garlic clove, 1/2 onion, 1/2 bell pepper"
+    ],
+    "preparation": [
+      "Mix flour blend and baking powder.",
+      "Beat egg whites and add to flour with milk until smooth batter forms.",
+      "Add oil and seasonings.",
+      "Sauté garlic, onion, and bell pepper; fold into batter.",
+      "Pour into muffin liners and bake at medium heat for about 15 minutes."
+    ],
+    "notes": [],
+    "category": "snacks",
+    "tags": [
+      "fresh-ingredients",
+      "portable",
+      "sweet",
+      "meal-prep"
+    ]
+  },
+  {
+    "id": "recipe-058",
+    "title": "Pear Loaf",
+    "ingredients": [
+      "2 pears",
+      "1 egg and 3 egg whites",
+      "8 packets stevia",
+      "Vanilla extract",
+      "1 cup whole wheat flour",
+      "Baking powder"
+    ],
+    "preparation": [
+      "Blend pears, eggs, stevia, and vanilla.",
+      "Add whole wheat flour and baking powder.",
+      "Bake at medium heat until a toothpick comes out clean."
+    ],
+    "notes": [],
+    "category": "snacks",
+    "tags": [
+      "fresh-ingredients",
+      "portable",
+      "sweet",
+      "high-protein",
+      "complex-carbs",
+      "high-fiber",
+      "quick"
+    ]
+  },
+  {
+    "id": "recipe-059",
+    "title": "Apple Loaf",
+    "ingredients": [
+      "1.7 oz cornstarch",
+      "3.5 oz whole wheat flour",
+      "2 oz rolled oats",
+      "2 oz brown sugar",
+      "1.7 oz ground almonds",
+      "3 eggs",
+      "1.7 fl oz sunflower oil",
+      "7 oz cream cheese",
+      "3 teaspoons baking powder",
+      "14 oz apples, peeled and thinly sliced"
+    ],
+    "preparation": [
+      "Mix dry ingredients (cornstarch, flours, baking powder, almonds, sugar, oats).",
+      "Add eggs, oil, and cream cheese; beat until smooth.",
+      "Fold in thinly sliced apples.",
+      "Pour into greased loaf pan and bake for 45 minutes at moderate heat."
+    ],
+    "notes": [],
+    "category": "snacks",
+    "tags": [
+      "fresh-ingredients",
+      "portable",
+      "sweet",
+      "high-protein",
+      "complex-carbs",
+      "high-fiber",
+      "quick"
+    ]
+  },
+  {
+    "id": "recipe-060",
+    "title": "Mandarin Loaf",
+    "ingredients": [
+      "1 mandarin",
+      "1 egg",
+      "1/2 cup whole wheat flour",
+      "1/2 cup oats",
+      "1/4 cup oil",
+      "1/4 cup sugar",
+      "1 teaspoon baking powder",
+      "Pinch of salt",
+      "1 teaspoon vanilla extract"
+    ],
+    "preparation": [
+      "Beat egg with salt and sugar until foamy.",
+      "Add oil, mandarin zest, and vanilla.",
+      "Add mandarin juice and oats.",
+      "Fold in whole wheat flour and baking powder.",
+      "Bake at 350°F for 25 minutes in a floured loaf pan."
+    ],
+    "notes": [],
+    "category": "snacks",
+    "tags": [
+      "fresh-ingredients",
+      "portable",
+      "sweet",
+      "high-protein",
+      "complex-carbs",
+      "high-fiber"
+    ]
+  },
+  {
+    "id": "recipe-061",
+    "title": "Whole Wheat Lemon Poppy Seed Loaf",
+    "ingredients": [
+      "Zest and juice of 2 lemons",
+      "2 teaspoons poppy seeds",
+      "1 cup whole wheat flour",
+      "2 eggs",
+      "1/2 cup oil",
+      "1/4 cup sugar",
+      "1 teaspoon baking soda",
+      "Pinch of salt"
+    ],
+    "preparation": [
+      "Beat eggs with zest, salt, sugar, and oil.",
+      "Mix sifted flour with baking powder and poppy seeds.",
+      "Add lemon juice to first mixture (top off with milk/water if needed to reach 1 cup).",
+      "Combine both mixtures and bake for about 30 minutes."
+    ],
+    "notes": [],
+    "category": "snacks",
+    "tags": [
+      "fresh-ingredients",
+      "portable",
+      "sweet",
+      "high-protein",
+      "complex-carbs",
+      "high-fiber",
+      "quick"
+    ]
+  },
+  {
+    "id": "recipe-062",
+    "title": "Banana Loaf",
+    "ingredients": [
+      "1 1/2 cups whole wheat flour",
+      "1/2 cup rolled oats",
+      "15 walnuts, chopped",
+      "1/3 cup brown sugar",
+      "1 teaspoon baking powder",
+      "4 bananas, mashed",
+      "Juice of 1/2 lemon",
+      "1 egg",
+      "1/3 cup oil",
+      "Vanilla extract"
+    ],
+    "preparation": [
+      "Blend bananas with lemon juice.",
+      "Beat egg, sugar, oil, and vanilla; add banana purée.",
+      "In another bowl, mix dry ingredients and fold into wet mixture.",
+      "Bake for 60 minutes at medium heat in a parchment-lined loaf pan."
+    ],
+    "notes": [],
+    "category": "snacks",
+    "tags": [
+      "fresh-ingredients",
+      "portable",
+      "sweet",
+      "high-protein",
+      "complex-carbs",
+      "high-fiber",
+      "quick"
+    ]
+  },
+  {
+    "id": "recipe-063",
+    "title": "Carrot Cookies",
+    "ingredients": [
+      "2 medium carrots, shredded",
+      "3.4 fl oz oil",
+      "10 packets stevia (baking-safe)",
+      "2 teaspoons baking powder",
+      "5.3 oz whole wheat flour",
+      "8.8 oz self-rising flour"
+    ],
+    "preparation": [
+      "Mix shredded carrots with oil.",
+      "Fold in flours to form dough.",
+      "Roll out and cut with cookie cutters.",
+      "Bake for 25 minutes at medium heat."
+    ],
+    "notes": [],
+    "category": "snacks",
+    "tags": [
+      "fresh-ingredients",
+      "portable",
+      "sweet",
+      "complex-carbs",
+      "high-fiber",
+      "vegan",
+      "quick"
+    ]
+  },
+  {
+    "id": "recipe-064",
+    "title": "Coconut Banana Cookies",
+    "ingredients": [
+      "2 bananas, mashed",
+      "3.5 oz shredded coconut",
+      "1.7 oz sunflower seeds"
+    ],
+    "preparation": [
+      "Mash bananas and mix with coconut and sunflower seeds.",
+      "Drop spoonfuls onto nonstick baking sheet and shape into cookies.",
+      "Bake for 15 minutes at medium heat, flip, and bake a few more minutes."
+    ],
+    "notes": [],
+    "category": "energy-bars",
+    "tags": [
+      "fresh-ingredients",
+      "portable",
+      "energy-dense",
+      "race-fuel",
+      "vegan",
+      "quick"
+    ]
+  },
+  {
+    "id": "recipe-065",
+    "title": "Oat and Banana Pancakes",
+    "ingredients": [
+      "1/2 banana, mashed",
+      "2 egg whites",
+      "3 tablespoons rolled oats",
+      "Vanilla extract (optional)"
+    ],
+    "preparation": [
+      "Mash banana, add egg whites and vanilla.",
+      "Fold in oats and mix.",
+      "Cook in hot nonstick pan, flipping once."
+    ],
+    "notes": [],
+    "category": "breakfast",
+    "tags": [
+      "fresh-ingredients",
+      "morning-fuel",
+      "complex-carbs",
+      "high-fiber",
+      "quick"
+    ]
+  },
+  {
+    "id": "recipe-066",
+    "title": "Chickpea Hummus",
+    "ingredients": [
+      "9 oz cooked chickpeas",
+      "1 tablespoon extra-virgin olive oil",
+      "Black pepper to taste",
+      "Juice of 1 lemon",
+      "1 garlic clove",
+      "Fresh parsley"
+    ],
+    "preparation": [
+      "Place chickpeas, oil, lemon juice, and a few parsley leaves in a food processor.",
+      "Process until smooth and creamy.",
+      "Season to taste."
+    ],
+    "notes": [
+      "Great for spreading on toast as a breakfast alternative."
+    ],
+    "category": "breakfast",
+    "tags": [
+      "fresh-ingredients",
+      "morning-fuel",
+      "high-protein",
+      "plant-protein",
+      "high-fiber",
+      "vegan",
+      "quick",
+      "no-cook"
+    ]
+  },
+  {
+    "id": "recipe-067",
+    "title": "Sugar-Free Blueberry Jam",
+    "ingredients": [
+      "1 pint blueberries",
+      "1 tablespoon chia seeds",
+      "3 packets sweetener"
+    ],
+    "preparation": [
+      "Place cleaned blueberries in a hot pan.",
+      "Stir with a wooden spoon and mash lightly with a potato masher.",
+      "Add remaining ingredients and cook for 2 more minutes until desired consistency.",
+      "Cool and store in a sterilized jar. Refrigerate."
+    ],
+    "notes": [],
+    "category": "base",
+    "tags": [
+      "base-recipe",
+      "meal-prep",
+      "vegan",
+      "quick",
+      "anti-inflammatory"
+    ]
+  },
+  {
+    "id": "recipe-068",
+    "title": "Blueberry Smoothie Bowl",
+    "ingredients": [
+      "Base: 1 frozen banana",
+      "Base: 1/2 cup mixed berries",
+      "Base: 1/2 cup coconut milk",
+      "Topping: Shredded coconut",
+      "Topping: Granola",
+      "Topping: Fresh blueberries"
+    ],
+    "preparation": [
+      "Place all base ingredients in a bowl.",
+      "Blend until perfectly smooth.",
+      "Serve and top with granola, blueberries, and shredded coconut (or toppings of choice)."
+    ],
+    "notes": [],
+    "category": "breakfast",
+    "tags": [
+      "fresh-ingredients",
+      "morning-fuel",
+      "quick",
+      "no-cook",
+      "anti-inflammatory"
+    ]
+  },
+  {
+    "id": "recipe-069",
+    "title": "Almond and Coconut Granola",
+    "ingredients": [
+      "1 cup rolled oats",
+      "1 tablespoon shredded coconut",
+      "4 almonds, chopped",
+      "2 packets stevia",
+      "1 tablespoon coconut oil",
+      "1/2 tablespoon vanilla extract",
+      "1/4 tablespoon cinnamon",
+      "Fresh fruit (for serving)"
+    ],
+    "preparation": [
+      "Mix all ingredients in a bowl.",
+      "Spread mixture on a baking sheet.",
+      "Preheat oven for 15 minutes.",
+      "Bake at medium heat for 15–20 minutes.",
+      "Remove from oven and let cool for 1 hour.",
+      "Serve with fresh fruit."
+    ],
+    "notes": [],
+    "category": "breakfast",
+    "tags": [
+      "fresh-ingredients",
+      "morning-fuel",
+      "complex-carbs",
+      "high-fiber",
+      "vegan"
+    ]
+  },
+  {
+    "id": "recipe-070",
+    "title": "Matcha Smoothie Bowl",
+    "ingredients": [
+      "Base: 2 large frozen bananas",
+      "Base: 1/4 cup plant-based milk of choice",
+      "Base: 1 teaspoon matcha powder",
+      "Base: 2 packets stevia",
+      "Topping: Granola",
+      "Topping: Shredded coconut",
+      "Topping: Unsalted peanuts"
+    ],
+    "preparation": [
+      "Place all base ingredients in a food processor or blender.",
+      "Blend until perfectly smooth.",
+      "Serve in a shallow bowl with desired toppings."
+    ],
+    "notes": [],
+    "category": "breakfast",
+    "tags": [
+      "fresh-ingredients",
+      "morning-fuel",
+      "quick",
+      "no-cook"
+    ]
+  },
+  {
+    "id": "recipe-071",
+    "title": "Whole Wheat Waffles",
+    "ingredients": [
+      "1 cup whole wheat flour",
+      "3/4 cup oat flour",
+      "1/4 cup cornstarch",
+      "4 packets stevia",
+      "1 teaspoon cinnamon",
+      "1 teaspoon baking powder",
+      "1 teaspoon vanilla",
+      "1 1/2 cups plant-based milk"
+    ],
+    "preparation": [
+      "Mix all ingredients in a bowl until smooth batter forms.",
+      "Pour batter into waffle maker following equipment instructions."
+    ],
+    "notes": [],
+    "category": "breakfast",
+    "tags": [
+      "fresh-ingredients",
+      "morning-fuel",
+      "complex-carbs",
+      "high-fiber",
+      "quick"
+    ]
+  },
+  {
+    "id": "recipe-072",
+    "title": "French Toast",
+    "ingredients": [
+      "2 slices bread",
+      "1 egg, beaten",
+      "Splash of milk"
+    ],
+    "preparation": [
+      "Mix egg with milk.",
+      "Soak bread slices on both sides.",
+      "Cook in nonstick pan, flipping once.",
+      "Serve with fruit, seeds, tomato, or arugula."
+    ],
+    "notes": [],
+    "category": "breakfast",
+    "tags": [
+      "fresh-ingredients",
+      "morning-fuel",
+      "high-protein",
+      "quick"
+    ]
+  },
+  {
+    "id": "recipe-073",
+    "title": "Mediterranean Toast",
+    "ingredients": [
+      "2 slices bread",
+      "1 large tomato",
+      "Drizzle of olive oil"
+    ],
+    "preparation": [
+      "Blend or process tomato with olive oil drizzle.",
+      "Serve toast or fresh bread slices with this mixture."
+    ],
+    "notes": [],
+    "category": "breakfast",
+    "tags": [
+      "fresh-ingredients",
+      "morning-fuel",
+      "vegan",
+      "quick",
+      "no-cook"
+    ]
+  },
+  {
+    "id": "recipe-074",
+    "title": "Caprese Omelet",
+    "ingredients": [
+      "1 egg and 1 egg white, beaten",
+      "4 small cubes low-fat cheese",
+      "1/2 tomato, diced",
+      "Fresh basil"
+    ],
+    "preparation": [
+      "Pour beaten egg and egg white into nonstick pan.",
+      "Cook for a few minutes over low heat.",
+      "Flip omelet and place cheese cubes on top until melted.",
+      "Fold omelet and serve with tomato and basil."
+    ],
+    "notes": [],
+    "category": "breakfast",
+    "tags": [
+      "fresh-ingredients",
+      "morning-fuel",
+      "high-protein",
+      "quick"
+    ]
+  },
+  {
+    "id": "recipe-075",
+    "title": "Protein Brownies",
+    "ingredients": [
+      "2 egg yolks",
+      "3.5 oz fat-free cream cheese",
+      "1 tablespoon cornstarch",
+      "5.3 oz cocoa powder (or 3 scoops chocolate whey protein)",
+      "3 tablespoons powdered baking-safe sweetener",
+      "1 teaspoon baking powder",
+      "3 egg whites, beaten to stiff peaks",
+      "Optional: chopped walnuts"
+    ],
+    "preparation": [
+      "In a bowl, mix yolks, cream cheese, cornstarch, cocoa (or protein powder), sweetener, and baking powder.",
+      "Beat egg whites to stiff peaks and gently fold into mixture.",
+      "Bake for 20 minutes."
+    ],
+    "notes": [],
+    "category": "snacks",
+    "tags": [
+      "fresh-ingredients",
+      "portable",
+      "sweet",
+      "high-protein",
+      "quick"
+    ]
+  },
+  {
+    "id": "recipe-076",
+    "title": "Chocolate Chip Cookies",
+    "ingredients": [
+      "1 cup self-rising flour",
+      "1 egg",
+      "1/2 cup sugar (or 8 packets sweetener)",
+      "1/2 cup oil",
+      "Chocolate chips or chopped dark chocolate",
+      "Vanilla extract"
+    ],
+    "preparation": [
+      "Mix oil with sugar and vanilla.",
+      "Add beaten egg.",
+      "Gradually add flour until smooth batter forms.",
+      "Fold in chocolate chips (about 1/3 cup).",
+      "Refrigerate dough for 20 minutes.",
+      "Roll out dough, cut shapes, and bake at low heat for 20 minutes."
+    ],
+    "notes": [],
+    "category": "snacks",
+    "tags": [
+      "fresh-ingredients",
+      "portable",
+      "sweet",
+      "high-protein"
+    ]
+  },
+  {
+    "id": "recipe-077",
+    "title": "Oat Energy Balls",
+    "ingredients": [
+      "3 tablespoons rolled oats",
+      "3 tablespoons dulce de leche",
+      "2 tablespoons unsweetened cocoa powder",
+      "2 tablespoons milk",
+      "Shredded coconut as needed",
+      "Optional: crushed nuts or scoop of protein powder"
+    ],
+    "preparation": [
+      "Mix all ingredients (except coconut) in a bowl.",
+      "Form balls and roll in shredded coconut.",
+      "Place on a tray and freeze until firm."
+    ],
+    "notes": [
+      "Can use crushed crackers if oats are unavailable.",
+      "For protein version, replace cocoa with protein powder or add skim milk powder."
+    ],
+    "category": "energy-bars",
+    "tags": [
+      "fresh-ingredients",
+      "portable",
+      "energy-dense",
+      "race-fuel",
+      "complex-carbs",
+      "high-fiber",
+      "quick",
+      "no-cook"
+    ]
+  },
+  {
+    "id": "recipe-078",
+    "title": "Cashew Cheese Spread",
+    "ingredients": [
+      "1/2 cup raw cashews (unsalted, unroasted)",
+      "1/4 to 1/2 cup fresh water",
+      "1/4 cup nutritional yeast",
+      "1 tablespoon lemon juice",
+      "1/4 teaspoon turmeric powder (optional, for color)",
+      "1/2 teaspoon garlic salt"
+    ],
+    "preparation": [
+      "Soak cashews in water for 30 minutes to 24 hours.",
+      "Rinse and discard soaking water.",
+      "Process cashews with remaining ingredients until smooth and creamy.",
+      "Refrigerate covered until serving."
+    ],
+    "notes": [],
+    "category": "base",
+    "tags": [
+      "base-recipe",
+      "meal-prep",
+      "vegan",
+      "quick",
+      "no-cook",
+      "anti-inflammatory"
+    ]
+  },
+  {
+    "id": "recipe-079",
+    "title": "Sunflower Seed Spread",
+    "ingredients": [
+      "7 oz sunflower seeds",
+      "1/2 teaspoon salt",
+      "1 teaspoon dried herbs (e.g., Italian seasoning)",
+      "1/2 lemon, juiced"
+    ],
+    "preparation": [
+      "Soak sunflower seeds in water for 6–8 hours.",
+      "Place in food processor with a little water (about 1/2 cup) and blend.",
+      "Add salt, herbs, and lemon juice.",
+      "Blend until desired consistency."
+    ],
+    "notes": [],
+    "category": "base",
+    "tags": [
+      "base-recipe",
+      "meal-prep",
+      "vegan",
+      "quick",
+      "no-cook"
+    ]
+  },
+  {
+    "id": "recipe-080",
+    "title": "Oat Milk",
+    "ingredients": [
+      "4 cups water",
+      "5 oz rolled oats (traditional, not instant)"
+    ],
+    "preparation": [
+      "Soak oats in plenty of water for at least 5 hours.",
+      "Drain, rinse, and place in blender with 4 cups water.",
+      "Blend for a few seconds until liquid is white and oats dissolve.",
+      "Strain through fine-mesh strainer and discard pulp.",
+      "Pour into bottle and cover."
+    ],
+    "notes": [],
+    "category": "breakfast",
+    "tags": [
+      "fresh-ingredients",
+      "morning-fuel",
+      "complex-carbs",
+      "high-fiber",
+      "vegan",
+      "no-cook"
+    ]
+  },
+  {
+    "id": "recipe-081",
+    "title": "Sunflower Seed Milk",
+    "ingredients": [
+      "4 cups water",
+      "2 oz shelled sunflower seeds (unsalted, unroasted)"
+    ],
+    "preparation": [
+      "Soak seeds in plenty of water for at least 4 hours.",
+      "Drain, rinse, and place in blender with 4 cups water.",
+      "Blend for a few seconds until liquid is white.",
+      "Strain through fine-mesh strainer and discard pulp.",
+      "Pour into bottle and cover."
+    ],
+    "notes": [],
+    "category": "hydration",
+    "tags": [
+      "fresh-ingredients",
+      "plant-based",
+      "dairy-free",
+      "vegan",
+      "no-cook"
+    ]
+  },
+  {
+    "id": "recipe-082",
+    "title": "Seed Crackers",
+    "ingredients": [
+      "1/2 cup walnuts",
+      "1/4 cup pumpkin seeds",
+      "1/4 cup sunflower seeds",
+      "1/4 cup flaxseeds",
+      "1/2 red onion",
+      "1/2 red bell pepper",
+      "1 carrot",
+      "1 celery stalk"
+    ],
+    "preparation": [
+      "Soak walnuts, sunflower seeds, and pumpkin seeds for 8 hours or overnight. Drain.",
+      "Soak flaxseeds for 30 minutes.",
+      "Shred carrot and finely chop bell pepper, onion, and celery.",
+      "Mix everything in a bowl and process until moist paste forms.",
+      "Spread mixture on a baking sheet and bake at low heat for a few minutes."
+    ],
+    "notes": [],
+    "category": "energy-bars",
+    "tags": [
+      "fresh-ingredients",
+      "portable",
+      "energy-dense",
+      "race-fuel",
+      "complex-carbs",
+      "vegan"
+    ]
+  },
+  {
+    "id": "recipe-083",
+    "title": "Chewy Banana Bites",
+    "ingredients": [
+      "2 tablespoons coconut oil, melted",
+      "1 tablespoon lemon juice",
+      "1 teaspoon ground cinnamon",
+      "1/4 teaspoon fine sea salt",
+      "3 ripe bananas, peeled and sliced into 3/4 to 1-inch thick rounds"
+    ],
+    "preparation": [
+      "Preheat oven to 250°F. Line baking sheet with parchment paper and brush with about 1 tablespoon coconut oil.",
+      "In a small bowl, combine remaining 1 tablespoon coconut oil, lemon juice, cinnamon, and salt.",
+      "Spread bananas evenly on baking sheet and brush each slice with lemon mixture.",
+      "Bake in center of oven for 2 hours. After 1 hour, remove from oven, use tongs to flip each banana slice, and return to oven.",
+      "Place baking sheet on wire rack to cool completely. Store in glass jar or airtight container for up to 1 month."
+    ],
+    "notes": [],
+    "category": "energy-bars",
+    "tags": [
+      "fresh-ingredients",
+      "portable",
+      "energy-dense",
+      "race-fuel",
+      "vegan"
+    ]
+  },
+  {
+    "id": "recipe-084",
+    "title": "Power Muffins",
+    "ingredients": [
+      "2 cups almond flour",
+      "1 cup old-fashioned rolled oats (gluten-free if sensitive)",
+      "2 teaspoons ground cinnamon",
+      "1/2 teaspoon ground nutmeg",
+      "1 teaspoon baking soda",
+      "1/2 teaspoon fine sea salt",
+      "1/2 cup chopped walnuts (optional)",
+      "1/2 cup raisins, chopped dates, or chocolate chips (optional)",
+      "3 eggs, beaten",
+      "1 cup shredded zucchini (about 1 zucchini)",
+      "1 cup shredded carrots (about 2 carrots)",
+      "6 tablespoons unsalted butter, melted",
+      "1/2 cup dark amber maple syrup",
+      "1 teaspoon vanilla extract"
+    ],
+    "preparation": [
+      "Place rack in center of oven. Preheat oven to 350°F. Line a standard 12-cup muffin tin with paper liners.",
+      "In a large bowl, combine almond flour, oats, cinnamon, nutmeg, baking soda, salt, and nuts/raisins/dates/chips (if using).",
+      "In a separate bowl, mix eggs, zucchini, carrots, butter, maple syrup, and vanilla.",
+      "Add wet ingredients to dry and stir until combined (batter will be thick).",
+      "Pour batter into muffin cups, filling to the top.",
+      "Bake until well-browned on top and toothpick comes out clean: 25–35 minutes."
+    ],
+    "notes": [],
+    "category": "snacks",
+    "tags": [
+      "fresh-ingredients",
+      "portable",
+      "sweet",
+      "high-protein",
+      "complex-carbs",
+      "high-fiber",
+      "meal-prep"
+    ]
+  },
+  {
+    "id": "recipe-085",
+    "title": "My Everyday Oatmeal",
+    "ingredients": [
+      "1 cup old-fashioned rolled oats (gluten-free if sensitive)",
+      "4 cups unsweetened almond milk or milk of choice",
+      "3/4 cup plain whole-milk yogurt",
+      "2 teaspoons honey",
+      "1 teaspoon ground cinnamon",
+      "Splash of vanilla extract (optional)",
+      "Pinch of fine sea salt",
+      "1 apple (optional: unpeeled), shredded",
+      "Optional toppings: fresh berries, chia or sunflower seeds, walnuts, toasted coconut flakes, dates or other dried fruit"
+    ],
+    "preparation": [
+      "In a medium bowl, combine oats, milk, yogurt, honey, cinnamon, vanilla (if using), and salt.",
+      "Cover and let soak for at least 1 hour or refrigerate overnight.",
+      "Stir in shredded apple. If too thick, add more milk.",
+      "Divide between 2 bowls and add optional toppings as desired."
+    ],
+    "notes": [],
+    "category": "breakfast",
+    "tags": [
+      "fresh-ingredients",
+      "morning-fuel",
+      "high-protein",
+      "complex-carbs",
+      "high-fiber",
+      "quick",
+      "no-cook"
+    ]
+  },
+  {
+    "id": "recipe-086",
+    "title": "My Race Day Oatmeal",
+    "ingredients": [
+      "1/2 cup instant oats (gluten-free if sensitive)",
+      "1 banana, sliced",
+      "Pinch of sea salt",
+      "1/4 cup almond milk or milk of choice",
+      "Nut or almond butter",
+      "Raisins or fresh berries",
+      "Ground cinnamon",
+      "Honey (optional)",
+      "3/4 cup water"
+    ],
+    "preparation": [
+      "Combine oats, banana, salt, and 3/4 cup water in a microwave-safe bowl.",
+      "Microwave on high for 1–2 minutes, or until thickened.",
+      "Lightly mash banana and add milk.",
+      "Top with nut or almond butter and raisins or berries.",
+      "Sprinkle with cinnamon and drizzle with honey if desired."
+    ],
+    "notes": [],
+    "category": "pre-race",
+    "tags": [
+      "fresh-ingredients",
+      "race-day",
+      "easy-digest",
+      "high-carb",
+      "complex-carbs",
+      "high-fiber",
+      "no-cook"
+    ]
+  },
+  {
+    "id": "recipe-087",
+    "title": "Post-Workout Breakfast Burritos",
+    "ingredients": [
+      "1 tablespoon olive oil",
+      "1 bag (6 oz) baby spinach (about 4 cups packed)",
+      "10 eggs, beaten",
+      "1/2 teaspoon fine sea salt",
+      "1/4 teaspoon freshly ground black pepper",
+      "6 whole wheat burrito-size tortillas (about 10 inches)",
+      "1 1/2 cups shredded Gruyère or favorite cheese",
+      "1 1/2 cups spicy black beans or 1 can (15 oz), drained"
+    ],
+    "preparation": [
+      "Heat oil in large nonstick skillet over medium heat.",
+      "Add spinach and cook until wilted.",
+      "Add eggs, salt, and pepper and cook, stirring continuously, until scrambled. Remove from heat.",
+      "Place each tortilla on a sheet of foil (12 x 12 inches) and sprinkle with 1/4 cup cheese.",
+      "Divide egg and spinach mixture among 6 tortillas (in a strip down center) and top each with 1/4 cup beans.",
+      "Roll each tortilla like a burrito (folding top and bottom in) and wrap tightly in foil.",
+      "Place together in a large freezer bag and freeze for up to 2 months.",
+      "To reheat: unwrap foil, place on microwave-safe plate, and heat 2–3 minutes, turning after 1 minute."
+    ],
+    "notes": [],
+    "category": "post-workout",
+    "tags": [
+      "fresh-ingredients",
+      "recovery",
+      "anti-inflammatory",
+      "high-protein",
+      "high-fiber"
+    ]
+  },
+  {
+    "id": "recipe-088",
+    "title": "Banana French Toast",
+    "ingredients": [
+      "4 eggs",
+      "1/4 cup unsweetened almond milk or milk of choice",
+      "1/2 teaspoon ground cinnamon",
+      "1/2 teaspoon almond extract",
+      "1/8 teaspoon fine sea salt",
+      "Pinch of ground nutmeg (optional)",
+      "Twist of freshly ground black pepper",
+      "2 tablespoons butter",
+      "8 slices 1-inch-thick bread (spelt or bread of choice)",
+      "Optional: coarse sea salt, sliced bananas, maple syrup"
+    ],
+    "preparation": [
+      "In an 8 x 8-inch baking dish (or shallow bowl), whisk eggs, milk, cinnamon, almond extract, salt, nutmeg (if using), and pepper.",
+      "Melt 1 tablespoon butter in a large skillet over medium-high heat.",
+      "Dip each bread slice in egg mixture (coating both sides) and place on a plate.",
+      "Place 4 slices in skillet, pouring a bit more egg mixture on top. Fry until browned (1–2 minutes).",
+      "Flip and brown second side.",
+      "If butter burns, wipe with paper towel, add another tablespoon of butter, and repeat with remaining slices.",
+      "Serve with coarse sea salt, sliced bananas, and/or maple syrup (optional)."
+    ],
+    "notes": [],
+    "category": "lunch",
+    "tags": [
+      "fresh-ingredients",
+      "high-protein"
+    ]
+  },
+  {
+    "id": "recipe-089",
+    "title": "My Granola Recipe",
+    "ingredients": [
+      "14 oz rolled oats",
+      "3.5 oz raw almonds",
+      "3.5 oz raw hazelnuts",
+      "2.3 oz mixed seeds (chia, sesame, pumpkin, sunflower, etc.)",
+      "2 teaspoons ground cinnamon",
+      "5.3 oz honey",
+      "3.5 oz coconut oil",
+      "2 teaspoons vanilla paste or extract",
+      "2.6 oz dried cranberries, raisins, or dried fruit of choice"
+    ],
+    "preparation": [
+      "Preheat oven to 340°F and prepare a large baking sheet.",
+      "In a saucepan, heat coconut oil with honey (or syrup) and vanilla.",
+      "Mix oats, nuts (whole or chopped), seeds, and cinnamon.",
+      "Pour melted coconut oil and honey over oat mixture and stir.",
+      "Reserve cranberries/raisins for after baking.",
+      "Spread mixture on baking sheet and bake for about 25 minutes, stirring every 5 minutes.",
+      "Let cool completely.",
+      "Add reserved dried fruit and store in airtight jar."
+    ],
+    "notes": [],
+    "category": "breakfast",
+    "tags": [
+      "fresh-ingredients",
+      "morning-fuel",
+      "complex-carbs",
+      "high-fiber",
+      "vegan",
+      "anti-inflammatory",
+      "meal-prep"
+    ]
+  },
+  {
+    "id": "recipe-090",
+    "title": "Energy Bites (Perfect Replacement for Store-Bought Bars)",
+    "ingredients": [
+      "12 large dates, pitted",
+      "1 cup unsweetened dried cherries",
+      "1 cup raw walnuts, chopped",
+      "1/4 cup unsalted almond butter",
+      "1 tablespoon unsweetened cocoa powder",
+      "2 tablespoons finely ground coffee beans",
+      "1/4 teaspoon fine sea salt",
+      "1/2 cup unsweetened shredded coconut, toasted"
+    ],
+    "preparation": [
+      "In a food processor, combine dates, cherries, walnuts, almond butter, cocoa, coffee, and salt.",
+      "Pulse to chop, then process for 1–2 minutes, scraping sides if needed, until mixture begins to clump.",
+      "Transfer to a bowl and form 24 walnut-size balls.",
+      "Roll each ball in toasted coconut.",
+      "Store in airtight container for up to 1 month or freeze for up to 6 months."
+    ],
+    "notes": [],
+    "category": "energy-bars",
+    "tags": [
+      "fresh-ingredients",
+      "portable",
+      "energy-dense",
+      "race-fuel",
+      "no-cook"
+    ]
+  },
+  {
+    "id": "recipe-091",
+    "title": "Cornmeal Scones with Blueberries and Lemon",
+    "ingredients": [
+      "1 cup stone-ground cornmeal",
+      "1 cup all-purpose flour",
+      "1/4 cup coconut sugar or granulated sugar",
+      "2 teaspoons baking powder",
+      "1/2 teaspoon fine sea salt",
+      "1 stick (8 tablespoons) cold unsalted butter, cubed",
+      "2 eggs",
+      "1/3 cup whole-milk Greek yogurt",
+      "1 teaspoon vanilla extract",
+      "Finely grated zest of 2 lemons",
+      "1 cup frozen blueberries"
+    ],
+    "preparation": [
+      "Place rack in center of oven. Preheat to 350°F. Line baking sheet with parchment paper.",
+      "In a large bowl, mix cornmeal, flour, sugar, baking powder, and salt.",
+      "Using fingers or pastry cutter, work butter into dry ingredients until pea-sized.",
+      "In another bowl, whisk eggs, yogurt, vanilla, and lemon zest. Add to dry ingredients and stir until just combined.",
+      "Fold in blueberries (batter will be thick and sticky).",
+      "On a floured surface, form into a semi-flat log about 2 inches in diameter and cut into 10 triangles; place separated on baking sheet.",
+      "Alternative: drop large spoonfuls of batter onto sheet.",
+      "Bake 15–20 minutes until lightly browned on bottom. Cool on wire rack."
+    ],
+    "notes": [],
+    "category": "snacks",
+    "tags": [
+      "fresh-ingredients",
+      "portable",
+      "sweet",
+      "high-protein",
+      "anti-inflammatory"
+    ]
+  },
+  {
+    "id": "recipe-092",
+    "title": "Spiced Hazelnuts",
+    "ingredients": [
+      "2 tablespoons butter",
+      "2 teaspoons ground cinnamon",
+      "1/2 teaspoon ground red pepper",
+      "2 tablespoons honey",
+      "3/4 teaspoon fine sea salt",
+      "2 cups raw hazelnuts"
+    ],
+    "preparation": [
+      "Preheat oven to 350°F. Line baking sheet with parchment paper.",
+      "Melt butter over medium-low heat. Add cinnamon and red pepper and cook for 1 minute, stirring.",
+      "Remove from heat and stir in honey and salt. Add hazelnuts and stir to coat.",
+      "Spread on baking sheet and roast for 15 minutes, stirring every 5 minutes.",
+      "Cool completely in a single layer, break up clusters, and store in jar."
+    ],
+    "notes": [],
+    "category": "snacks",
+    "tags": [
+      "fresh-ingredients",
+      "portable",
+      "sweet"
+    ]
+  },
+  {
+    "id": "recipe-093",
+    "title": "Fig, Cheese, and Thyme Toasts",
+    "ingredients": [
+      "1/2 large or 1 small baguette (about 1 foot), sliced 1/2-inch thick",
+      "Extra-virgin olive oil for drizzling",
+      "1 large garlic clove",
+      "1 package (4 oz) plain chèvre (goat cheese)",
+      "4–5 fresh figs, thinly sliced (or 1/2 ripe pear, thinly sliced)",
+      "Honey for drizzling",
+      "1 tablespoon fresh thyme leaves",
+      "Coarse sea salt"
+    ],
+    "preparation": [
+      "Set oven to broil with rack on top shelf.",
+      "Place baguette slices on baking sheet and drizzle one side generously with oil.",
+      "Broil until lightly golden (about 1 minute). Remove, flip, and broil second side (30 seconds to 1 minute).",
+      "Rub one side of each toast with garlic and transfer to serving platter.",
+      "Top with goat cheese, fig (or pear), a drizzle of honey, thyme, and salt."
+    ],
+    "notes": [],
+    "category": "lunch",
+    "tags": [
+      "fresh-ingredients"
+    ]
+  },
+  {
+    "id": "recipe-094",
+    "title": "Turmeric Pepitas (Post-Workout Snack)",
+    "ingredients": [
+      "1 tablespoon butter",
+      "1 teaspoon turmeric",
+      "1 teaspoon curry powder",
+      "2 tablespoons honey",
+      "1/2 teaspoon fine sea salt",
+      "2 cups raw pumpkin seeds (pepitas)"
+    ],
+    "preparation": [
+      "Preheat oven to 350°F. Line baking sheet with parchment paper.",
+      "Melt butter over medium-low heat. Add turmeric and curry and cook for about 1 minute, stirring.",
+      "Turn off heat and stir in honey and salt. Add pepitas and stir to coat.",
+      "Spread on baking sheet and roast for 10 minutes, stirring after 5 minutes.",
+      "Cool completely; they become crispy as they cool. Break up clusters and store in jar."
+    ],
+    "notes": [],
+    "category": "post-workout",
+    "tags": [
+      "fresh-ingredients",
+      "recovery",
+      "anti-inflammatory",
+      "complex-carbs"
+    ]
+  },
+  {
+    "id": "recipe-095",
+    "title": "Fresh Greens Salad with Grilled Salmon",
+    "ingredients": [
+      "1 tablespoon olive oil",
+      "1/4 lb wild salmon or Arctic char, in 2 fillets",
+      "1/2 lb asparagus, trimmed",
+      "1/2 teaspoon coarse sea salt",
+      "1/4 teaspoon freshly ground black pepper",
+      "3 cups arugula or mixed greens",
+      "1/2 cup blueberries",
+      "1/2 cup toasted hazelnuts, chopped",
+      "1/2 cup crumbled goat cheese or feta",
+      "1 recipe basic balsamic vinaigrette"
+    ],
+    "preparation": [
+      "Preheat grill to medium-high (or oven broiler with rack on top).",
+      "Drizzle oil over salmon and asparagus and season with salt and pepper.",
+      "Grill salmon 2–3 minutes per side (depending on thickness) and asparagus 3–4 minutes, rotating.",
+      "Oven alternative: place on foil-lined baking sheet and broil until salmon is opaque (6–10 min) and asparagus is lightly charred (3–4 min).",
+      "Assemble salad bowls with arugula/greens. Top with blueberries, hazelnuts, and cheese.",
+      "Cut asparagus into 2-inch pieces. Place a salmon fillet and asparagus on each salad and drizzle with dressing."
+    ],
+    "notes": [],
+    "category": "lunch",
+    "tags": [
+      "fresh-ingredients",
+      "light",
+      "high-fiber",
+      "vegetables",
+      "high-protein",
+      "anti-inflammatory"
+    ]
+  },
+  {
+    "id": "recipe-096",
+    "title": "Double Chocolate Cookies",
+    "ingredients": [
+      "3/4 cup teff flour",
+      "1/2 cup almond flour",
+      "1/3 cup semi-sweet chocolate chips",
+      "1/4 cup unsweetened cocoa powder",
+      "1 teaspoon baking powder",
+      "1/4 teaspoon baking soda",
+      "1/4 teaspoon fine sea salt",
+      "1/2 cup pure maple syrup",
+      "1/3 cup coconut oil, melted",
+      "1 teaspoon vanilla extract"
+    ],
+    "preparation": [
+      "In a large bowl, mix teff flour, almond flour, chocolate chips, cocoa, baking powder, baking soda, and salt.",
+      "Add maple syrup, coconut oil, and vanilla; stir until combined.",
+      "Optional: cover dough and refrigerate overnight for a softer cookie.",
+      "Preheat oven to 350°F. Line baking sheet with parchment.",
+      "Drop spoonfuls of dough about 1 inch apart.",
+      "Bake for 12 minutes (until bottom is lightly golden). Cool for 5 minutes, then transfer to wire rack."
+    ],
+    "notes": [],
+    "category": "snacks",
+    "tags": [
+      "fresh-ingredients",
+      "portable",
+      "sweet",
+      "vegan"
+    ]
+  },
+  {
+    "id": "recipe-097",
+    "title": "Chocolate Nut Butter Truffles with Sea Salt",
+    "ingredients": [
+      "Nut butter: 2 cups raw walnuts",
+      "Nut butter: 10 Deglet dates (pitted)",
+      "Nut butter: 1 teaspoon ground cinnamon",
+      "Coating: 2 tablespoons virgin coconut oil",
+      "Coating: 3 tablespoons maple syrup",
+      "Coating: 3 tablespoons unsweetened cocoa powder",
+      "Coating: 1 teaspoon coarse sea salt (for finishing)"
+    ],
+    "preparation": [
+      "Preheat oven to 350°F. Line baking sheet with parchment.",
+      "For nut butter: roast walnuts for 8 minutes, stirring after 4 minutes. Cool completely.",
+      "Process walnuts, dates, and cinnamon until thick paste forms (don't over-process).",
+      "Form bite-size balls and place on baking sheet. If too soft, chill.",
+      "For coating: melt coconut oil (microwave in short bursts or saucepan). Mix with maple syrup and cocoa until smooth.",
+      "Dip each ball in chocolate, drain excess with fork, and return to sheet. Top with a pinch of sea salt.",
+      "Refrigerate 10–15 minutes until firm.",
+      "Store in airtight container (with parchment) in fridge for up to 1 week or freezer for up to 3 months."
+    ],
+    "notes": [],
+    "category": "energy-bars",
+    "tags": [
+      "fresh-ingredients",
+      "portable",
+      "energy-dense",
+      "race-fuel",
+      "vegan"
+    ]
+  },
+  {
+    "id": "recipe-098",
+    "title": "Oregon Berry Crumble",
+    "ingredients": [
+      "Filling: 3 cups sliced strawberries",
+      "Filling: 3 cups blueberries",
+      "Filling: 1 tablespoon cornstarch",
+      "Filling: 2 tablespoons honey",
+      "Topping: 1 cup rolled oats",
+      "Topping: 1/2 cup almond flour",
+      "Topping: 1/4 cup chopped walnuts",
+      "Topping: 1/4 cup coconut oil, melted",
+      "Topping: 2 tablespoons maple syrup",
+      "Topping: 1/2 teaspoon ground cinnamon",
+      "Topping: 1/4 teaspoon fine sea salt"
+    ],
+    "preparation": [
+      "Preheat oven to 350°F.",
+      "In a bowl, toss strawberries, blueberries, cornstarch, and honey. Pour into 8 x 8-inch baking dish.",
+      "In another bowl, combine oats, almond flour, walnuts, coconut oil, maple syrup, cinnamon, and salt.",
+      "Sprinkle topping evenly over fruit.",
+      "Bake for 30–35 minutes until topping is golden and fruit is bubbling.",
+      "Cool for at least 10 minutes before serving."
+    ],
+    "notes": [],
+    "category": "snacks",
+    "tags": [
+      "fresh-ingredients",
+      "portable",
+      "sweet",
+      "anti-inflammatory",
+      "vegan"
+    ]
+  }
+]

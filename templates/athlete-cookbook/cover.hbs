@@ -1,0 +1,266 @@
+<!-- templates/athlete-cookbook/cover.hbs -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    @page {
+      size: A4;
+      margin: 0;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: {{customization.fontFamily}};
+      background: linear-gradient(180deg, #FFFFFF 0%, #F5F5F5 50%, #E8E8E8 100%);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .cover {
+      text-align: center;
+      padding: 40px;
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Decorative background elements */
+    .bg-decoration {
+      position: absolute;
+      border-radius: 50%;
+      opacity: 0.08;
+    }
+
+    .bg-decoration.green-1 {
+      width: 400px;
+      height: 400px;
+      background: #1B5E3F;
+      top: -100px;
+      right: -100px;
+    }
+
+    .bg-decoration.orange-1 {
+      width: 300px;
+      height: 300px;
+      background: #F58442;
+      bottom: -80px;
+      left: -80px;
+    }
+
+    .bg-decoration.green-2 {
+      width: 200px;
+      height: 200px;
+      background: #1B5E3F;
+      bottom: 100px;
+      right: 50px;
+    }
+
+    /* Main logo */
+    .logo-container {
+      margin-bottom: 40px;
+      z-index: 1;
+    }
+
+    .logo-container img {
+      width: 320px;
+      height: auto;
+    }
+
+    /* Content area */
+    .content {
+      z-index: 1;
+    }
+
+    .tagline {
+      font-size: 18px;
+      color: #555;
+      max-width: 420px;
+      line-height: 1.7;
+      margin-bottom: 40px;
+    }
+
+    .tagline strong {
+      color: #1B5E3F;
+    }
+
+    /* Features badges */
+    .features {
+      display: flex;
+      gap: 15px;
+      margin-bottom: 50px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .feature-badge {
+      background: white;
+      border: 2px solid #E0E0E0;
+      padding: 10px 20px;
+      border-radius: 25px;
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #1B5E3F;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    .feature-badge .icon {
+      font-size: 16px;
+    }
+
+    /* Recipe count */
+    .recipe-count {
+      background: linear-gradient(135deg, #1B5E3F 0%, #2E7D52 100%);
+      color: white;
+      padding: 15px 40px;
+      border-radius: 30px;
+      font-size: 16px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      box-shadow: 0 4px 15px rgba(27, 94, 63, 0.3);
+      margin-bottom: 30px;
+    }
+
+    .recipe-count span {
+      font-size: 24px;
+      margin-right: 8px;
+    }
+
+    /* Athlete type badge */
+    .athlete-badge {
+      background: linear-gradient(135deg, #F58442 0%, #E67333 100%);
+      color: white;
+      padding: 12px 30px;
+      border-radius: 25px;
+      font-size: 14px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      box-shadow: 0 4px 15px rgba(245, 132, 66, 0.3);
+    }
+
+    /* Footer */
+    .footer {
+      position: absolute;
+      bottom: 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+      z-index: 1;
+    }
+
+    .footer-text {
+      font-size: 11px;
+      color: #999;
+      letter-spacing: 1px;
+    }
+
+    .footer-year {
+      font-size: 13px;
+      font-weight: 700;
+      color: #1B5E3F;
+    }
+
+    /* Decorative food icons */
+    .food-decoration {
+      position: absolute;
+      font-size: 35px;
+      opacity: 0.15;
+    }
+
+    .food-1 { top: 80px; left: 60px; transform: rotate(-15deg); }
+    .food-2 { top: 120px; right: 80px; transform: rotate(10deg); }
+    .food-3 { bottom: 150px; left: 100px; transform: rotate(5deg); }
+    .food-4 { bottom: 180px; right: 120px; transform: rotate(-10deg); }
+    .food-5 { top: 250px; left: 40px; transform: rotate(20deg); }
+    .food-6 { top: 200px; right: 50px; transform: rotate(-5deg); }
+  </style>
+</head>
+
+<body>
+  <div class="cover">
+    <!-- Background decorations -->
+    <div class="bg-decoration green-1"></div>
+    <div class="bg-decoration orange-1"></div>
+    <div class="bg-decoration green-2"></div>
+
+    <!-- Food decorations -->
+    <div class="food-decoration food-1">🥕</div>
+    <div class="food-decoration food-2">🥑</div>
+    <div class="food-decoration food-3">🍌</div>
+    <div class="food-decoration food-4">🥗</div>
+    <div class="food-decoration food-5">🍳</div>
+    <div class="food-decoration food-6">🥜</div>
+
+    <!-- Logo -->
+    <div class="logo-container">
+      <img src="{{images.logo}}" alt="Fuel Like a Runner">
+    </div>
+
+    <div class="content">
+      <p class="tagline">
+        <strong>Fresh ingredients. Real food. No processed junk.</strong><br>
+        Fuel your training the natural way with recipes designed for performance.
+      </p>
+
+      <div class="features">
+        <div class="feature-badge">
+          <span class="icon">🥗</span>
+          Fresh Ingredients
+        </div>
+        <div class="feature-badge">
+          <span class="icon">⚡</span>
+          Quick & Easy
+        </div>
+        <div class="feature-badge">
+          <span class="icon">💪</span>
+          Performance Focused
+        </div>
+      </div>
+
+      <div class="recipe-count">
+        <span>98</span> Wholesome Recipes
+      </div>
+
+      <div class="athlete-badge">
+        {{#if (eq athleteType 'runner')}}
+        🏃 For Runners
+        {{else if (eq athleteType 'cyclist')}}
+        🚴 For Cyclists
+        {{else if (eq athleteType 'triathlete')}}
+        🏊 For Triathletes
+        {{else}}
+        🏃 For Athletes
+        {{/if}}
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="footer-year">{{year}} Edition</div>
+      <div class="footer-text">THE AMATEUR ATHLETE'S COOKBOOK</div>
+    </div>
+  </div>
+</body>
+
+</html>

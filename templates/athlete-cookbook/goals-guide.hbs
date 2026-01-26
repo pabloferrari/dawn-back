@@ -1,0 +1,356 @@
+<!-- templates/athlete-cookbook/goals-guide.hbs -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    @page {
+      size: A4;
+      margin: 0;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html, body {
+      height: 297mm;
+      width: 210mm;
+      font-family: {{customization.fontFamily}};
+      color: #333;
+      line-height: 1.3;
+    }
+
+    .page {
+      height: 297mm;
+      width: 210mm;
+      padding: 8mm 10mm;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Header */
+    .page-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 2px solid #1B5E3F;
+      padding-bottom: 2mm;
+      margin-bottom: 3mm;
+    }
+
+    .header-logo {
+      height: 9mm;
+    }
+
+    .page-title {
+      font-size: 18px;
+      font-weight: 800;
+      color: #1B5E3F;
+      display: flex;
+      align-items: center;
+      gap: 2mm;
+    }
+
+    .page-title-icon {
+      font-size: 20px;
+    }
+
+    .page-subtitle {
+      text-align: center;
+      font-size: 10px;
+      color: #666;
+      margin-bottom: 3mm;
+      font-style: italic;
+    }
+
+    /* Content */
+    .content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 2.5mm;
+    }
+
+    /* Goal Card - Compact horizontal layout */
+    .goal-card {
+      background: white;
+      border-radius: 6px;
+      border: 1px solid #E0E0E0;
+      display: flex;
+      align-items: stretch;
+      overflow: hidden;
+    }
+
+    /* Left side - Icon and title */
+    .goal-left {
+      flex: 0 0 28%;
+      padding: 2.5mm 3mm;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      border-right: 1px solid #E0E0E0;
+    }
+
+    .goal-header {
+      display: flex;
+      align-items: center;
+      gap: 2mm;
+      margin-bottom: 1.5mm;
+    }
+
+    .goal-icon {
+      font-size: 18px;
+      flex-shrink: 0;
+    }
+
+    .goal-title {
+      font-size: 11px;
+      font-weight: 800;
+      line-height: 1.2;
+    }
+
+    .focus-list {
+      list-style: none;
+      margin-left: 1mm;
+    }
+
+    .focus-list li {
+      font-size: 8px;
+      padding: 0.5mm 0;
+      display: flex;
+      align-items: center;
+      gap: 1mm;
+      color: #555;
+    }
+
+    .focus-check {
+      color: #4CAF50;
+      font-size: 8px;
+    }
+
+    /* Right side - Recipes */
+    .goal-right {
+      flex: 1;
+      padding: 2.5mm 3mm;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .recipes-title {
+      font-size: 8px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.3px;
+      margin-bottom: 1.5mm;
+      color: #666;
+    }
+
+    .recipe-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5mm;
+    }
+
+    .recipe-tag {
+      display: inline-block;
+      padding: 1mm 2.5mm;
+      border-radius: 8px;
+      font-size: 8px;
+      font-weight: 600;
+    }
+
+    /* Goal colors */
+    .goal-card.weight .goal-left { background: linear-gradient(135deg, #E8F5E9 0%, #C8E6C9 100%); }
+    .goal-card.weight .goal-title { color: #2E7D32; }
+    .goal-card.weight .recipe-tag { background: #E8F5E9; color: #2E7D32; }
+
+    .goal-card.performance .goal-left { background: linear-gradient(135deg, #FFF3E0 0%, #FFE0B2 100%); }
+    .goal-card.performance .goal-title { color: #E65100; }
+    .goal-card.performance .recipe-tag { background: #FFF3E0; color: #E65100; }
+
+    .goal-card.digestive .goal-left { background: linear-gradient(135deg, #E3F2FD 0%, #BBDEFB 100%); }
+    .goal-card.digestive .goal-title { color: #1565C0; }
+    .goal-card.digestive .recipe-tag { background: #E3F2FD; color: #1565C0; }
+
+    .goal-card.recovery .goal-left { background: linear-gradient(135deg, #F3E5F5 0%, #E1BEE7 100%); }
+    .goal-card.recovery .goal-title { color: #7B1FA2; }
+    .goal-card.recovery .recipe-tag { background: #F3E5F5; color: #7B1FA2; }
+
+    .goal-card.busy .goal-left { background: linear-gradient(135deg, #ECEFF1 0%, #CFD8DC 100%); }
+    .goal-card.busy .goal-title { color: #455A64; }
+    .goal-card.busy .recipe-tag { background: #ECEFF1; color: #455A64; }
+
+    /* Footer */
+    .page-footer {
+      margin-top: 2mm;
+      padding-top: 2mm;
+      border-top: 1px solid #E0E0E0;
+      text-align: center;
+      font-size: 8px;
+      color: #888;
+    }
+
+    .page-footer span {
+      color: #1B5E3F;
+      font-weight: 700;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page">
+    <div class="page-header">
+      <img src="{{images.banner}}" alt="Fuel Like a Runner" class="header-logo">
+      <div class="page-title">
+        <span class="page-title-icon">🎯</span>
+        How to Use This Book
+      </div>
+    </div>
+    <p class="page-subtitle">Find the right recipes for YOUR specific goals</p>
+
+    <div class="content">
+      <!-- Weight Management -->
+      <div class="goal-card weight">
+        <div class="goal-left">
+          <div class="goal-header">
+            <span class="goal-icon">⚖️</span>
+            <div class="goal-title">Losing Weight<br>While Running</div>
+          </div>
+          <ul class="focus-list">
+            <li><span class="focus-check">✓</span> High fiber recipes</li>
+            <li><span class="focus-check">✓</span> Lean proteins</li>
+            <li><span class="focus-check">✓</span> Vegetable-based meals</li>
+          </ul>
+        </div>
+        <div class="goal-right">
+          <div class="recipes-title">📖 Try These Recipes</div>
+          <div class="recipe-tags">
+            <span class="recipe-tag">Chickpea Salad</span>
+            <span class="recipe-tag">Tuna Salad</span>
+            <span class="recipe-tag">Lentil and Brown Rice Salad</span>
+            <span class="recipe-tag">Vegetable and Quinoa Soup</span>
+            <span class="recipe-tag">Chicken and Veggie Wok</span>
+            <span class="recipe-tag">Zucchini Lasagna</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Performance -->
+      <div class="goal-card performance">
+        <div class="goal-left">
+          <div class="goal-header">
+            <span class="goal-icon">🚀</span>
+            <div class="goal-title">Improving Speed<br>& Performance</div>
+          </div>
+          <ul class="focus-list">
+            <li><span class="focus-check">✓</span> Complex carbs</li>
+            <li><span class="focus-check">✓</span> Pre-race meals</li>
+            <li><span class="focus-check">✓</span> Energy-dense snacks</li>
+          </ul>
+        </div>
+        <div class="goal-right">
+          <div class="recipes-title">📖 Try These Recipes</div>
+          <div class="recipe-tags">
+            <span class="recipe-tag">My Race Day Oatmeal</span>
+            <span class="recipe-tag">Banana French Toast</span>
+            <span class="recipe-tag">Energy Bites</span>
+            <span class="recipe-tag">Oat and Banana Pancakes</span>
+            <span class="recipe-tag">Pasta and Veggie Salad</span>
+            <span class="recipe-tag">Whole Wheat Waffles</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Digestive Issues -->
+      <div class="goal-card digestive">
+        <div class="goal-left">
+          <div class="goal-header">
+            <span class="goal-icon">🫃</span>
+            <div class="goal-title">Sensitive Stomach<br>/ GI Issues</div>
+          </div>
+          <ul class="focus-list">
+            <li><span class="focus-check">✓</span> Low fiber pre-run</li>
+            <li><span class="focus-check">✓</span> Easy digest recipes</li>
+            <li><span class="focus-check">✓</span> Simple ingredients</li>
+          </ul>
+        </div>
+        <div class="goal-right">
+          <div class="recipes-title">📖 Try These Recipes</div>
+          <div class="recipe-tags">
+            <span class="recipe-tag">Cloud Bread</span>
+            <span class="recipe-tag">Oat and Banana Pancakes</span>
+            <span class="recipe-tag">French Toast</span>
+            <span class="recipe-tag">My Race Day Oatmeal</span>
+            <span class="recipe-tag">Blueberry Smoothie Bowl</span>
+            <span class="recipe-tag">Banana Muffins</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Recovery -->
+      <div class="goal-card recovery">
+        <div class="goal-left">
+          <div class="goal-header">
+            <span class="goal-icon">💪</span>
+            <div class="goal-title">Faster Recovery<br>/ Reduce Soreness</div>
+          </div>
+          <ul class="focus-list">
+            <li><span class="focus-check">✓</span> Anti-inflammatory foods</li>
+            <li><span class="focus-check">✓</span> High protein</li>
+            <li><span class="focus-check">✓</span> Omega-3 rich foods</li>
+          </ul>
+        </div>
+        <div class="goal-right">
+          <div class="recipes-title">📖 Try These Recipes</div>
+          <div class="recipe-tags">
+            <span class="recipe-tag">Post-Workout Breakfast Burritos</span>
+            <span class="recipe-tag">Turmeric Pepitas</span>
+            <span class="recipe-tag">Blueberry Smoothie Bowl</span>
+            <span class="recipe-tag">Fresh Greens with Salmon</span>
+            <span class="recipe-tag">Tuna Salad</span>
+            <span class="recipe-tag">Lentil Stew</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Busy Runners -->
+      <div class="goal-card busy">
+        <div class="goal-left">
+          <div class="goal-header">
+            <span class="goal-icon">⏰</span>
+            <div class="goal-title">Busy Schedule<br>/ Quick Meals</div>
+          </div>
+          <ul class="focus-list">
+            <li><span class="focus-check">✓</span> Quick recipes (&lt;15 min)</li>
+            <li><span class="focus-check">✓</span> No-cook options</li>
+            <li><span class="focus-check">✓</span> Meal prep friendly</li>
+          </ul>
+        </div>
+        <div class="goal-right">
+          <div class="recipes-title">📖 Try These Recipes</div>
+          <div class="recipe-tags">
+            <span class="recipe-tag">My Everyday Oatmeal</span>
+            <span class="recipe-tag">Post-Workout Burritos</span>
+            <span class="recipe-tag">Chickpea Hummus</span>
+            <span class="recipe-tag">Energy Bites</span>
+            <span class="recipe-tag">Oat Energy Balls</span>
+            <span class="recipe-tag">Seed Crackers</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="page-footer">
+      <span>Fuel Like a Runner</span> • Mix and match based on your training phase and daily needs
+    </div>
+  </div>
+</body>
+
+</html>

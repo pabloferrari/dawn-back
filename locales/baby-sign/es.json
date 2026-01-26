@@ -1,0 +1,176 @@
+{
+  "cover": {
+    "subtitle": "Comunicación Fácil",
+    "tagline": "Conecta con tu bebé antes de que pueda hablar"
+  },
+  "introWhy": {
+    "title": "¿Por Qué Signos para Bebés?",
+    "intro1": "Aquí hay algo asombroso: tu bebé entiende mucho más de lo que puede decir. Entre los 6 y 8 meses, los bebés desarrollan un fuerte deseo de comunicarse—quieren decirte lo que necesitan, lo que ven y cómo se sienten. Pero aquí está el desafío: las habilidades motoras complejas necesarias para el habla no se desarrollan completamente hasta alrededor de los 18 meses, y la comunicación verbal clara a menudo no llega hasta los 2 o 3 años.",
+    "intro2": "Esto crea una \"brecha de comunicación\"—un período donde tu bebé tiene mucho que decir pero no tiene forma de decirlo. Ahí es donde entran los Signos para Bebés.",
+    "highlightBox": "<strong>Los Signos para Bebés cierran esta brecha.</strong> Usando gestos simples con las manos, tu pequeño puede decirte que tiene hambre, está cansado, quiere más, o incluso que te ama—meses antes de que pueda decir estas palabras.",
+    "benefits": {
+      "reducesFrustration": {
+        "title": "Reduce la Frustración",
+        "description": "Cuando los bebés pueden expresar sus necesidades—ya sea dolor, hambre o querer un juguete específico—las rabietas y el llanto disminuyen dramáticamente. Pasarás menos tiempo adivinando y más tiempo conectando."
+      },
+      "boostsBrainDevelopment": {
+        "title": "Impulsa el Desarrollo Cerebral",
+        "description": "Cuando tu bebé hace señas, está activando múltiples áreas cerebrales simultáneamente—visual, auditiva y motora. Esto crea conexiones neuronales más fuertes y mejora el desarrollo cognitivo general."
+      },
+      "deepensYourBond": {
+        "title": "Profundiza tu Vínculo",
+        "description": "La comunicación bidireccional crea una poderosa conexión emocional. Cuando tu bebé pide jugar a la pelota y tú entiendes, ambos se sienten vistos, escuchados y conectados."
+      },
+      "acceleratesSpeech": {
+        "title": "Acelera el Habla",
+        "description": "Los bebés que usan signos no hablan más tarde—a menudo hablan más temprano y con vocabularios más amplios. Los signos sirven como puente hacia el lenguaje verbal, no como reemplazo."
+      },
+      "buildsConfidence": {
+        "title": "Construye Confianza",
+        "description": "Ser comprendido le da a los bebés una sensación de logro y autoestima. Se convierten en participantes activos de la vida familiar en lugar de observadores pasivos."
+      },
+      "supportsEmotionalGrowth": {
+        "title": "Apoya el Crecimiento Emocional",
+        "description": "Los signos ayudan a los bebés a identificar y expresar emociones como feliz, triste o asustado. Este vocabulario emocional temprano es la base para una autorregulación saludable."
+      }
+    },
+    "researchNote": "<strong>📚 La investigación muestra:</strong> Los estudios encontraron que los bebés que usaban signos hablaban como niños 4 meses adelantados a los 2 años, y casi un año completo adelantados a los 3 años. A los 8 años, estos niños obtuvieron un promedio de 12 puntos más alto en pruebas de CI que sus compañeros que no usaron signos."
+  },
+  "introTips": {
+    "title": "Consejos para el Éxito",
+    "positionsTitle": "👀 Mejores Posiciones para Hacer Signos",
+    "positions": {
+      "faceToFace": {
+        "name": "Cara a Cara",
+        "description": "¡El estándar de oro! Ponte a la altura de sus ojos cuando sea posible."
+      },
+      "inFrontOfMirror": {
+        "name": "Frente al Espejo",
+        "description": "El bebé te ve haciendo signos y a sí mismo—¡excelente para aprender!"
+      },
+      "onTheirBody": {
+        "name": "En su Cuerpo",
+        "description": "Para signos como COMER o BAÑO, haz el signo suavemente en el bebé para que también lo sienta."
+      }
+    },
+    "checklistTitle": "✅ Cómo Saber si el Bebé Realmente Está Haciendo Signos",
+    "checklistIntro": "¿No estás seguro si ese movimiento de mano fue intencional? Busca estas tres señales:",
+    "checklist": {
+      "intentional": {
+        "label": "Intencional",
+        "description": "Usado para expresar una necesidad real en el contexto correcto"
+      },
+      "independent": {
+        "label": "Independiente",
+        "description": "No te está copiando—lo inicia por su cuenta"
+      },
+      "consistent": {
+        "label": "Consistente",
+        "description": "Lo usa repetidamente, no es algo de una sola vez"
+      }
+    },
+    "keysToSuccessTitle": "🔑 Claves para el Éxito",
+    "tips": {
+      "tip1": {
+        "title": "Haz el Signo con la Acción",
+        "description": "Siempre haz el signo durante, justo antes o justo después de la acción. \"Hora del BAÑO\" mientras abres el agua ayuda al bebé a conectar el signo, la palabra y el significado."
+      },
+      "tip2": {
+        "title": "Sé Consistente",
+        "description": "Usa el mismo signo cada vez. Cuanto más hagas signos durante el día, más rápido el bebé responderá con signos. ¡Intenta poner notas recordatorias en áreas clave!"
+      },
+      "tip3": {
+        "title": "Repite Naturalmente",
+        "description": "\"Vamos al BAÑO. Papá te está dando un BAÑO. ¡Terminamos el BAÑO!\" La repetición durante las actividades refuerza el aprendizaje—solo no exageres."
+      },
+      "tip4": {
+        "title": "Haz Contacto Visual",
+        "description": "A diferencia del habla, hacer signos requiere atención visual. Intenta estar en la línea de visión del bebé. ¡Pero si no está mirando, haz el signo de todos modos—estás construyendo el hábito!"
+      },
+      "tip5": {
+        "title": "Hazlo Divertido",
+        "description": "¡Los bebés aprenden a través del juego, no de la memorización! Usa signos durante canciones, juegos y cuentos. Su interés crece mucho más rápido cuando es agradable."
+      },
+      "tip6": {
+        "title": "Celebra Cada Intento",
+        "description": "El signo del bebé no se verá perfecto—¡y está bien! Responde con entusiasmo a cualquier aproximación. Lo refinará con el tiempo viéndote modelarlo correctamente."
+      },
+      "tip7": {
+        "title": "No Pares Cuando Hablen",
+        "description": "¡Sigue haciendo signos incluso después de que aparezcan las primeras palabras! El habla temprana a menudo no es clara. Los signos siguen siendo un respaldo valioso que previene la frustración. Deja que eliminen los signos naturalmente."
+      },
+      "tip8": {
+        "title": "Involucra a Todos",
+        "description": "Enseña los signos a parejas, abuelos, cuidadores y hermanos. Cuanta más gente haga signos con el bebé, más rápido aprenderá y más conectado se sentirá."
+      }
+    },
+    "encouragement": "<strong>Recuerda:</strong> Cada bebé aprende a su propio ritmo. Algunos responden con signos en semanas, otros tardan meses. Lo que importa es la conexión que estás construyendo. ¡Tú puedes! 🌟"
+  },
+  "introWhen": {
+    "title": "Cuándo Empezar y Qué Esperar",
+    "intro": "Incluso en el útero, tu bebé comienza a reconocer tu voz y los patrones de tu idioma. ¡Desde el nacimiento, pueden distinguir tu idioma nativo de otros! Entender el viaje de desarrollo de tu bebé te ayuda a saber cuándo y cómo introducir los signos.",
+    "milestones": {
+      "0to6": {
+        "title": "La Fase de Observación",
+        "description": "Durante esta etapa, el llanto es la principal herramienta de comunicación de tu bebé. Están absorbiendo todo—tu voz, tus expresiones, tus gestos. Puedes empezar a hacer signos ahora; tu bebé está observando y aprendiendo aunque aún no pueda responder."
+      },
+      "6to8": {
+        "title": "Emerge la Intención Comunicativa",
+        "description": "¡Un momento decisivo! Tu bebé desarrolla un fuerte impulso de comunicarse. Notarás que señalan, alcanzan y hacen sonidos con propósito. Este es el momento ideal para introducir signos de manera consistente."
+      },
+      "8to12": {
+        "title": "Aparecen los Primeros Signos",
+        "description": "La mayoría de los bebés producen su primer signo intencional durante esta ventana. Puede verse un poco diferente al tuyo—¡eso es completamente normal! Las habilidades motoras para movimientos precisos de manos aún se están desarrollando. ¡Celebra cada intento!"
+      },
+      "12to18": {
+        "title": "La Explosión de Signos",
+        "description": "Una vez que tu bebé domina algunos signos, el aprendizaje se acelera rápidamente. Muchos bebés aprenden más de 10-20 signos durante este emocionante período. Comenzarán a combinar signos y usarlos espontáneamente durante todo el día."
+      },
+      "18to24": {
+        "title": "Puente hacia el Habla",
+        "description": "A medida que se desarrollan las habilidades verbales, tu hijo naturalmente comenzará a reemplazar los signos con palabras. ¡Sigue haciendo signos! Incluso cuando digan una palabra, puede que no la pronuncien claramente todavía. Los signos siguen siendo un respaldo útil que previene la frustración."
+      }
+    },
+    "months": "meses",
+    "timelineContinued": "📅 Línea de Tiempo del Desarrollo (continuación)",
+    "brainBoxTitle": "🧠 Qué Está Pasando en el Cerebro de tu Bebé",
+    "brainBoxContent1": "Cuando dices una palabra Y muestras un signo, el cerebro de tu bebé se ilumina en múltiples áreas: la <strong>corteza auditiva</strong> procesa el sonido, la <strong>corteza visual</strong> procesa lo que ven, y cuando responden con signos, la <strong>corteza motora</strong> también se involucra.",
+    "brainBoxContent2": "Esta experiencia multisensorial crea vías neuronales más fuertes e interconectadas. ¡Por eso los bebés que usan signos a menudo recuerdan palabras más fácilmente—las han almacenado en múltiples lugares de su cerebro!",
+    "importantLabel": "Lo Más Importante",
+    "importantMessage": "¡Nunca es demasiado temprano ni demasiado tarde para empezar!",
+    "importantHighlight": "Ya sea que empieces a los 4 meses o a los 14 meses, lo que más importa es la consistencia, la paciencia y hacerlo divertido."
+  },
+  "signPage": {
+    "illustrationPlaceholder": "Ilustración del signo para",
+    "howToSign": "Cómo Hacer el Signo",
+    "teachingTip": "Consejo de Enseñanza",
+    "example": "Ejemplo:"
+  },
+  "practiceLog": {
+    "title": "Registro de Práctica",
+    "subtitle": "Sigue el viaje de aprendizaje de tu bebé",
+    "tableHeaders": {
+      "sign": "Signo",
+      "firstUsed": "Primer Uso",
+      "progress": "Progreso",
+      "notes": "Notas"
+    }
+  },
+  "categoryIndex": {
+    "title": "Categorías de Signos",
+    "subtitleTemplate": "{{categoriesCount}} categorías • {{signsCount}} signos en total",
+    "signsLabel": "signos"
+  },
+  "categories": {
+    "foodAndDrink": "Comida y Bebida",
+    "dailyRoutine": "Rutina Diaria",
+    "feelingsAndEmotions": "Sentimientos y Emociones",
+    "animals": "Animales",
+    "family": "Familia",
+    "actionsAndActivities": "Acciones y Actividades"
+  },
+  "common": {
+    "year": "Año",
+    "page": "Página"
+  }
+}

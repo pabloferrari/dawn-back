@@ -9,232 +9,346 @@
   <style>
     @page {
       size: A4;
-      margin: 12mm;
+      margin: 0;
     }
 
-    body {
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html, body {
+      height: 297mm;
+      width: 210mm;
       font-family: {{customization.fontFamily}};
       color: #333;
-      line-height: 1.4;
-      margin: 0;
+      line-height: 1.3;
     }
 
+    .page {
+      height: 297mm;
+      width: 210mm;
+      padding: 8mm 10mm;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Header */
     .header {
-      text-align: center;
-      margin-bottom: 15px;
-      padding-bottom: 10px;
-      border-bottom: 3px solid {{customization.primaryColor}};
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 2px solid #1B5E3F;
+      padding-bottom: 2mm;
+      margin-bottom: 3mm;
     }
 
-    .header-content {
+    .header-logo {
+      height: 9mm;
+    }
+
+    .header-title {
       display: flex;
       align-items: center;
-      justify-content: center;
-      gap: 12px;
+      gap: 2mm;
     }
 
-    .header .icon {
-      font-size: 28px;
+    .header-icon {
+      font-size: 20px;
     }
 
-    .title {
-      font-size: 24px;
-      color: {{customization.primaryColor}};
-      margin: 0;
+    .header-text {
+      font-size: 18px;
+      font-weight: 800;
+      color: #1B5E3F;
     }
 
-    .subtitle {
-      font-size: 11px;
-      color: #888;
-      margin-top: 5px;
+    .header-week {
+      font-size: 9px;
+      color: #666;
+      display: flex;
+      align-items: center;
+      gap: 2mm;
     }
 
-    /* Shopping list grid - 3 columns */
-    .list-container {
+    .week-line {
+      width: 25mm;
+      border-bottom: 1px solid #999;
+    }
+
+    /* Categories grid */
+    .categories-container {
+      flex: 1;
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 8px;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2.5mm;
+      overflow: hidden;
+    }
+
+    /* Category card */
+    .category-card {
+      background: #FAFAFA;
+      border-radius: 6px;
+      padding: 2mm;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    .category-header {
+      display: flex;
+      align-items: center;
+      gap: 1.5mm;
+      padding-bottom: 1.5mm;
+      border-bottom: 1px solid #E0E0E0;
+      margin-bottom: 1.5mm;
+    }
+
+    .category-icon {
+      font-size: 12px;
+    }
+
+    .category-name {
+      font-size: 9px;
+      font-weight: 800;
+      color: #1B5E3F;
+      flex: 1;
+    }
+
+    .category-count {
+      font-size: 7px;
+      color: #888;
+      background: white;
+      padding: 1px 4px;
+      border-radius: 6px;
+    }
+
+    /* Items list */
+    .items-list {
+      list-style: none;
+      flex: 1;
+      overflow: hidden;
     }
 
     .item {
       display: flex;
       align-items: center;
-      padding: 5px 8px;
-      background: #FAFAFA;
-      border-radius: 5px;
-      border-left: 3px solid {{customization.primaryColor}};
+      padding: 0.8mm 0;
+      gap: 1.5mm;
     }
 
     .checkbox {
-      width: 14px;
-      height: 14px;
-      border: 2px solid {{customization.primaryColor}};
-      border-radius: 3px;
-      margin-right: 8px;
+      width: 8px;
+      height: 8px;
+      border: 1.5px solid #1B5E3F;
+      border-radius: 2px;
       flex-shrink: 0;
     }
 
     .item-name {
       flex: 1;
-      font-size: 10px;
+      font-size: 8px;
       color: #444;
       text-transform: capitalize;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
 
     .item-count {
-      font-size: 8px;
+      font-size: 6px;
       color: #999;
       background: #EEE;
-      padding: 2px 5px;
-      border-radius: 10px;
-      margin-left: 5px;
-    }
-
-    /* Notes section */
-    .notes-section {
-      margin-top: 15px;
-      padding: 12px;
-      background: linear-gradient(135deg, {{customization.primaryColor}}10 0%, {{customization.secondaryColor}}10 100%);
-      border-radius: 10px;
-    }
-
-    .notes-title {
-      font-size: 12px;
-      font-weight: 700;
-      color: {{customization.primaryColor}};
-      margin: 0 0 10px 0;
-      text-align: center;
-    }
-
-    .notes-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 8px;
-    }
-
-    .note-box {
-      background: white;
-      padding: 8px;
+      padding: 1px 3px;
       border-radius: 6px;
-      text-align: center;
+      flex-shrink: 0;
     }
 
-    .note-icon {
-      font-size: 18px;
-      margin-bottom: 4px;
+    .item-badge {
+      font-size: 8px;
+      flex-shrink: 0;
     }
 
-    .note-text {
-      font-size: 9px;
-      color: #666;
+    .other-essentials {
+      background: #F5F5F5;
+    }
+
+    .other-essentials .category-header {
+      border-color: #BDBDBD;
+    }
+
+    .other-essentials .category-name {
+      color: #616161;
     }
 
     /* Write-in section */
     .write-in-section {
-      margin-top: 12px;
-      padding: 10px;
-      background: #F8F9FA;
-      border-radius: 8px;
+      margin-top: 2mm;
+      padding: 2mm 3mm;
+      background: #F5F5F5;
+      border-radius: 6px;
     }
 
     .write-in-title {
-      font-size: 11px;
-      font-weight: 600;
-      color: {{customization.primaryColor}};
-      margin-bottom: 8px;
+      font-size: 9px;
+      font-weight: 700;
+      color: #1B5E3F;
+      margin-bottom: 2mm;
     }
 
     .write-in-grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 6px;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2mm;
     }
 
     .write-in-item {
       display: flex;
       align-items: center;
-      padding: 4px 6px;
-      border-bottom: 1px dashed #CCC;
+      gap: 1.5mm;
     }
 
-    .write-in-item .checkbox {
-      width: 12px;
-      height: 12px;
-    }
-
-    .write-in-item .line {
+    .write-in-line {
       flex: 1;
-      border-bottom: 1px solid #DDD;
-      margin-left: 6px;
-      height: 12px;
+      border-bottom: 1px dashed #CCC;
+      height: 10px;
     }
 
-    .footer-info {
-      margin-top: 10px;
+    /* Tips section */
+    .tips-section {
+      margin-top: 2mm;
+      padding: 2mm 3mm;
+      background: linear-gradient(135deg, #E8F5E9 0%, #C8E6C9 100%);
+      border-radius: 6px;
+      display: flex;
+      gap: 3mm;
+    }
+
+    .tip-item {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      gap: 2mm;
+      background: white;
+      padding: 2mm;
+      border-radius: 4px;
+    }
+
+    .tip-icon {
+      font-size: 14px;
+      flex-shrink: 0;
+    }
+
+    .tip-text {
+      font-size: 7px;
+      color: #555;
+      line-height: 1.3;
+    }
+
+    /* Footer */
+    .page-footer {
+      margin-top: 2mm;
       text-align: center;
-      font-size: 9px;
+      font-size: 7px;
       color: #999;
+    }
+
+    .page-footer span {
+      color: #1B5E3F;
+      font-weight: 700;
     }
   </style>
 </head>
 
 <body>
-  <div class="header">
-    <div class="header-content">
-      <span class="icon">🛒</span>
-      <div>
-        <h1 class="title">Shopping List</h1>
-        <p class="subtitle">Most common ingredients from {{totalItems}} items • Week of: _______________</p>
+  <div class="page">
+    <div class="header">
+      <img src="{{images.banner}}" alt="Fuel Like a Runner" class="header-logo">
+      <div class="header-title">
+        <span class="header-icon">🛒</span>
+        <span class="header-text">Shopping List</span>
+      </div>
+      <div class="header-week">
+        Week of: <span class="week-line"></span>
       </div>
     </div>
-  </div>
 
-  <div class="list-container">
-    {{#each shoppingItems}}
-    <div class="item">
-      <span class="checkbox"></span>
-      <span class="item-name">{{this.name}}</span>
-      <span class="item-count">{{this.recipeCount}}</span>
+    <div class="categories-container">
+      {{#each shoppingCategories}}
+      <div class="category-card">
+        <div class="category-header">
+          <span class="category-icon">{{this.icon}}</span>
+          <span class="category-name">{{this.name}}</span>
+          <span class="category-count">{{this.items.length}}</span>
+        </div>
+        <ul class="items-list">
+          {{#each this.items}}
+          <li class="item">
+            <span class="checkbox"></span>
+            <span class="item-name">{{this.name}}</span>
+            <span class="item-count">{{this.recipeCount}}</span>
+          </li>
+          {{/each}}
+        </ul>
+      </div>
+      {{/each}}
+
+      {{#if hasOtherEssentials}}
+      <div class="category-card other-essentials">
+        <div class="category-header">
+          <span class="category-icon">🧺</span>
+          <span class="category-name">Other Essentials</span>
+          <span class="category-count">{{otherEssentials.length}}</span>
+        </div>
+        <ul class="items-list">
+          {{#each otherEssentials}}
+          <li class="item">
+            <span class="checkbox"></span>
+            <span class="item-badge">{{this.categoryIcon}}</span>
+            <span class="item-name">{{this.name}}</span>
+            <span class="item-count">{{this.recipeCount}}</span>
+          </li>
+          {{/each}}
+        </ul>
+      </div>
+      {{/if}}
     </div>
-    {{/each}}
-  </div>
 
-  <div class="write-in-section">
-    <div class="write-in-title">✏️ Additional Items</div>
-    <div class="write-in-grid">
-      {{#times 12}}
-      <div class="write-in-item">
-        <span class="checkbox"></span>
-        <span class="line"></span>
-      </div>
-      {{/times}}
-    </div>
-  </div>
-
-  <div class="notes-section">
-    <h3 class="notes-title">🏃 Athlete Shopping Tips</h3>
-    <div class="notes-grid">
-      <div class="note-box">
-        <div class="note-icon">🛒</div>
-        <div class="note-text">Shop the perimeter first — fresh foods are there</div>
-      </div>
-      <div class="note-box">
-        <div class="note-icon">📅</div>
-        <div class="note-text">Buy enough for meal prep day (usually Sunday)</div>
-      </div>
-      <div class="note-box">
-        <div class="note-icon">❄️</div>
-        <div class="note-text">Frozen fruits & veggies are just as nutritious</div>
-      </div>
-      <div class="note-box">
-        <div class="note-icon">🔢</div>
-        <div class="note-text">Numbers show how many recipes use each item</div>
+    <div class="write-in-section">
+      <div class="write-in-title">✏️ Additional Items</div>
+      <div class="write-in-grid">
+        {{#times 8}}
+        <div class="write-in-item">
+          <span class="checkbox"></span>
+          <span class="write-in-line"></span>
+        </div>
+        {{/times}}
       </div>
     </div>
-  </div>
 
-  <div class="footer-info">
-    Items sorted by frequency of use across all recipes in this cookbook
+    <div class="tips-section">
+      <div class="tip-item">
+        <span class="tip-icon">🛒</span>
+        <span class="tip-text">Shop the perimeter first—fresh foods are there</span>
+      </div>
+      <div class="tip-item">
+        <span class="tip-icon">📅</span>
+        <span class="tip-text">Buy enough for meal prep day (usually Sunday)</span>
+      </div>
+      <div class="tip-item">
+        <span class="tip-icon">❄️</span>
+        <span class="tip-text">Frozen fruits & veggies are just as nutritious</span>
+      </div>
+      <div class="tip-item">
+        <span class="tip-icon">🔢</span>
+        <span class="tip-text">Numbers show how many recipes use each item</span>
+      </div>
+    </div>
+
+    <div class="page-footer">
+      <span>Fuel Like a Runner</span> • Items sorted by frequency of use across all recipes
+    </div>
   </div>
 </body>
 

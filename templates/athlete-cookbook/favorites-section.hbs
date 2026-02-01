@@ -1,0 +1,354 @@
+<!-- templates/athlete-cookbook/favorites-section.hbs -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    @page {
+      size: A4;
+      margin: 0;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html, body {
+      height: 297mm;
+      width: 210mm;
+      font-family: {{customization.fontFamily}};
+      color: #333;
+      line-height: 1.4;
+      overflow: hidden;
+    }
+
+    .page {
+      height: 297mm;
+      width: 210mm;
+      display: flex;
+      flex-direction: column;
+      background: linear-gradient(180deg, #FFF9E6 0%, #FFFFFF 30%);
+    }
+
+    /* Hero Header */
+    .hero-header {
+      background: linear-gradient(135deg, {{customization.primaryColor}} 0%, #D84315 100%);
+      padding: 12mm 15mm 15mm;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-header::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      right: -20%;
+      width: 60%;
+      height: 200%;
+      background: rgba(255,255,255,0.08);
+      transform: rotate(15deg);
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 2mm;
+      background: rgba(255,255,255,0.2);
+      padding: 2mm 4mm;
+      border-radius: 20px;
+      margin-bottom: 4mm;
+    }
+
+    .hero-badge-icon {
+      font-size: 16px;
+    }
+
+    .hero-badge-text {
+      font-size: 10px;
+      font-weight: 700;
+      color: white;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .hero-title {
+      font-size: 36px;
+      font-weight: 900;
+      color: white;
+      margin-bottom: 3mm;
+      text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    }
+
+    .hero-subtitle {
+      font-size: 13px;
+      color: rgba(255,255,255,0.9);
+      max-width: 85%;
+      line-height: 1.6;
+    }
+
+    /* Content area */
+    .content {
+      flex: 1;
+      padding: 8mm 12mm;
+      display: flex;
+      flex-direction: column;
+      gap: 5mm;
+    }
+
+    /* Meal row */
+    .meal-row {
+      display: flex;
+      gap: 4mm;
+      align-items: stretch;
+      flex: 1;
+    }
+
+    /* Meal label */
+    .meal-label {
+      width: 22mm;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 3mm;
+      border-radius: 8px;
+      flex-shrink: 0;
+    }
+
+    .meal-label[data-meal="breakfast"] {
+      background: linear-gradient(135deg, #FFE0B2 0%, #FFCC80 100%);
+    }
+    .meal-label[data-meal="lunch"] {
+      background: linear-gradient(135deg, #C8E6C9 0%, #A5D6A7 100%);
+    }
+    .meal-label[data-meal="snack"] {
+      background: linear-gradient(135deg, #FFCCBC 0%, #FFAB91 100%);
+    }
+    .meal-label[data-meal="dinner"] {
+      background: linear-gradient(135deg, #D1C4E9 0%, #B39DDB 100%);
+    }
+
+    .meal-icon {
+      font-size: 24px;
+      margin-bottom: 1mm;
+    }
+
+    .meal-name {
+      font-size: 8px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      text-align: center;
+    }
+
+    .meal-label[data-meal="breakfast"] .meal-name { color: #E65100; }
+    .meal-label[data-meal="lunch"] .meal-name { color: #2E7D32; }
+    .meal-label[data-meal="snack"] .meal-name { color: #D84315; }
+    .meal-label[data-meal="dinner"] .meal-name { color: #4527A0; }
+
+    /* Recipes container */
+    .recipes-container {
+      flex: 1;
+      display: flex;
+      gap: 3mm;
+      overflow: hidden;
+    }
+
+    /* Recipe card */
+    .recipe-card {
+      flex: 1;
+      background: white;
+      border-radius: 8px;
+      padding: 4mm;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+      border: 1px solid #F0F0F0;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      overflow: hidden;
+      min-width: 0;
+    }
+
+    .recipe-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+    }
+
+    .meal-row[data-meal="breakfast"] .recipe-card::before {
+      background: linear-gradient(90deg, #FF8F00 0%, #FFB300 100%);
+    }
+    .meal-row[data-meal="lunch"] .recipe-card::before {
+      background: linear-gradient(90deg, #43A047 0%, #66BB6A 100%);
+    }
+    .meal-row[data-meal="snack"] .recipe-card::before {
+      background: linear-gradient(90deg, #EF6C00 0%, #FF9800 100%);
+    }
+    .meal-row[data-meal="dinner"] .recipe-card::before {
+      background: linear-gradient(90deg, #7E57C2 0%, #9575CD 100%);
+    }
+
+    .recipe-title {
+      font-size: 10px;
+      font-weight: 700;
+      color: #333;
+      margin-bottom: 2mm;
+      line-height: 1.3;
+    }
+
+    .recipe-why {
+      font-size: 8px;
+      color: #666;
+      line-height: 1.5;
+      flex: 1;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    .recipe-meta {
+      display: flex;
+      align-items: center;
+      gap: 2mm;
+      margin-top: auto;
+      padding-top: 2mm;
+    }
+
+    .complexity-badge {
+      font-size: 7px;
+      font-weight: 700;
+      padding: 1mm 2.5mm;
+      border-radius: 3px;
+      text-transform: uppercase;
+    }
+
+    .complexity-simple {
+      background: #E8F5E9;
+      color: #2E7D32;
+    }
+
+    .complexity-moderate {
+      background: #FFF3E0;
+      color: #E65100;
+    }
+
+    .complexity-complex {
+      background: #FCE4EC;
+      color: #C2185B;
+    }
+
+    /* Empty card */
+    .recipe-card.empty {
+      background: #FAFAFA;
+      border: 2px dashed #E0E0E0;
+      box-shadow: none;
+      align-items: center;
+      justify-content: center;
+      color: #BBB;
+    }
+
+    .recipe-card.empty::before {
+      display: none;
+    }
+
+    .empty-icon {
+      font-size: 20px;
+      margin-bottom: 1mm;
+      opacity: 0.5;
+    }
+
+    .empty-text {
+      font-size: 8px;
+    }
+
+    /* Footer */
+    .page-footer {
+      padding: 4mm 12mm;
+      background: #FAFAFA;
+      border-top: 1px solid #EEE;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .footer-tip {
+      font-size: 9px;
+      color: #666;
+    }
+
+    .footer-tip strong {
+      color: {{customization.primaryColor}};
+    }
+
+    .footer-logo {
+      height: 8mm;
+      opacity: 0.7;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page">
+    <!-- Hero Header -->
+    <div class="hero-header">
+      <div class="hero-badge">
+        <span class="hero-badge-icon">⭐</span>
+        <span class="hero-badge-text">Start Here</span>
+      </div>
+      <h1 class="hero-title">{{section.title}}</h1>
+      <p class="hero-subtitle">{{section.intro}}</p>
+    </div>
+
+    <!-- Content -->
+    <div class="content">
+      {{#each meals}}
+      <div class="meal-row" data-meal="{{this.id}}">
+        <div class="meal-label" data-meal="{{this.id}}">
+          <span class="meal-icon">{{this.icon}}</span>
+          <span class="meal-name">{{this.name}}</span>
+        </div>
+
+        <div class="recipes-container">
+          {{#if this.recipes.length}}
+            {{#each this.recipes}}
+            <div class="recipe-card">
+              <div class="recipe-title">{{this.title}}</div>
+              {{#if this.whyFavorite}}
+              <div class="recipe-why">{{this.whyFavorite}}</div>
+              {{/if}}
+              {{#if this.prepComplexity}}
+              <div class="recipe-meta">
+                <span class="complexity-badge complexity-{{this.prepComplexity}}">{{this.prepComplexity}}</span>
+              </div>
+              {{/if}}
+            </div>
+            {{/each}}
+          {{else}}
+          <div class="recipe-card empty">
+            <span class="empty-icon">{{this.emptyIcon}}</span>
+            <span class="empty-text">{{this.emptyText}}</span>
+          </div>
+          {{/if}}
+        </div>
+      </div>
+      {{/each}}
+    </div>
+
+    <!-- Footer -->
+    <div class="page-footer">
+      <span class="footer-tip"><strong>💡 Pro tip:</strong> {{section.footer}}</span>
+      <img src="{{images.banner}}" alt="Fuel Like a Runner" class="footer-logo">
+    </div>
+  </div>
+</body>
+
+</html>

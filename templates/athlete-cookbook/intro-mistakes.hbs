@@ -1,0 +1,272 @@
+<!-- templates/athlete-cookbook/intro-mistakes.hbs -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;600;700;800&family=Merriweather:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+  <style>
+    @page {
+      size: A4;
+      margin: 0;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html, body {
+      height: 297mm;
+      width: 210mm;
+      font-family: {{customization.fontFamily}};
+      color: #333;
+      line-height: 1.6;
+      overflow: hidden;
+    }
+
+    .page {
+      height: 297mm;
+      width: 210mm;
+      display: flex;
+      flex-direction: column;
+      background: #FFFDF9;
+    }
+
+    /* Header */
+    .header {
+      padding: 10mm 18mm;
+      background: linear-gradient(135deg, #37474F 0%, #263238 100%);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .header::before {
+      content: '';
+      position: absolute;
+      top: -30%;
+      right: -10%;
+      width: 40%;
+      height: 160%;
+      background: rgba(255,255,255,0.03);
+      transform: rotate(15deg);
+    }
+
+    .header-icon {
+      font-size: 32px;
+      margin-bottom: 3mm;
+    }
+
+    .header-title {
+      font-size: 28px;
+      font-weight: 800;
+      color: white;
+      margin-bottom: 2mm;
+    }
+
+    .header-subtitle {
+      font-size: 12px;
+      color: rgba(255,255,255,0.7);
+      font-family: 'Merriweather', Georgia, serif;
+      font-style: italic;
+    }
+
+    /* Content */
+    .content {
+      flex: 1;
+      padding: 10mm 18mm;
+      display: flex;
+      flex-direction: column;
+      gap: 6mm;
+    }
+
+    /* Mistake card */
+    .mistake-card {
+      background: white;
+      border-radius: 8px;
+      padding: 5mm 6mm;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+      border: 1px solid #F0F0F0;
+      display: flex;
+      gap: 5mm;
+      position: relative;
+    }
+
+    .mistake-number {
+      width: 12mm;
+      height: 12mm;
+      background: linear-gradient(135deg, #EF5350 0%, #C62828 100%);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      font-weight: 800;
+      color: white;
+      flex-shrink: 0;
+    }
+
+    .mistake-content {
+      flex: 1;
+    }
+
+    .mistake-title {
+      font-size: 13px;
+      font-weight: 800;
+      color: #C62828;
+      margin-bottom: 2mm;
+      display: flex;
+      align-items: center;
+      gap: 2mm;
+    }
+
+    .mistake-title-icon {
+      font-size: 14px;
+    }
+
+    .mistake-text {
+      font-family: 'Merriweather', Georgia, serif;
+      font-size: 10px;
+      line-height: 1.7;
+      color: #444;
+    }
+
+    .mistake-text strong {
+      color: #333;
+      font-weight: 600;
+    }
+
+    /* Lesson learned badge */
+    .lesson {
+      margin-top: 3mm;
+      padding: 2.5mm 4mm;
+      background: linear-gradient(135deg, #E8F5E9 0%, #C8E6C9 100%);
+      border-radius: 6px;
+      border-left: 3px solid #43A047;
+      display: flex;
+      align-items: flex-start;
+      gap: 2mm;
+    }
+
+    .lesson-icon {
+      font-size: 12px;
+      flex-shrink: 0;
+    }
+
+    .lesson-text {
+      font-size: 9px;
+      font-weight: 600;
+      color: #2E7D32;
+      line-height: 1.5;
+    }
+
+    /* Footer */
+    .page-footer {
+      padding: 4mm 18mm;
+      background: #F5F5F5;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 9px;
+      color: #888;
+    }
+
+    .page-number {
+      font-weight: 700;
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page">
+    <div class="header">
+      <div class="header-icon">🚫</div>
+      <h1 class="header-title">Mistakes I Made</h1>
+      <p class="header-subtitle">So you don't have to make them yourself</p>
+    </div>
+
+    <div class="content">
+      <!-- Mistake 1: Alcohol -->
+      <div class="mistake-card">
+        <div class="mistake-number">1</div>
+        <div class="mistake-content">
+          <div class="mistake-title">
+            <span class="mistake-title-icon">🍺</span>
+            Thinking alcohol didn't make a difference
+          </div>
+          <div class="mistake-text">
+            Every other Friday, we'd get together with friends for dinner and a few beers. Nothing excessive. But I started noticing a pattern. On Sundays after a Friday of drinking, my legs felt heavier during easy runs, and I'd often cut the session short due to fatigue. On Sundays following a beer-free Friday? I'd finish my planned session without any issues. <strong>Once again, my body was telling me what didn't work for it.</strong>
+          </div>
+          <div class="lesson">
+            <span class="lesson-icon">✓</span>
+            <span class="lesson-text">Even moderate alcohol consumption affects recovery and performance days later. Listen to the patterns.</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mistake 2: Racing fasted -->
+      <div class="mistake-card">
+        <div class="mistake-number">2</div>
+        <div class="mistake-content">
+          <div class="mistake-title">
+            <span class="mistake-title-icon">🍳</span>
+            Racing on an empty stomach
+          </div>
+          <div class="mistake-text">
+            On race days, I'd start early and run fasted, afraid of feeling heavy. I could finish races this way, sure. But the difference was night and day when I started eating a <strong>light breakfast 90 minutes to 2 hours before competing</strong>. The performance improvement was massive—more energy, better pacing, stronger finish.
+          </div>
+          <div class="lesson">
+            <span class="lesson-icon">✓</span>
+            <span class="lesson-text">Your body needs fuel. A light, practiced pre-race meal is essential for peak performance.</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mistake 3: Hydration -->
+      <div class="mistake-card">
+        <div class="mistake-number">3</div>
+        <div class="mistake-content">
+          <div class="mistake-title">
+            <span class="mistake-title-icon">💧</span>
+            Only drinking when thirsty
+          </div>
+          <div class="mistake-text">
+            For a long time, I only hydrated when I felt thirsty. Big mistake. <strong>By the time you feel thirst, you're already dehydrated</strong>, and it takes your body much longer to recover than if you had maintained preventive hydration throughout the day.
+          </div>
+          <div class="lesson">
+            <span class="lesson-icon">✓</span>
+            <span class="lesson-text">Hydrate consistently throughout the day—don't wait for thirst to tell you it's too late.</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mistake 4: Improvising -->
+      <div class="mistake-card">
+        <div class="mistake-number">4</div>
+        <div class="mistake-content">
+          <div class="mistake-title">
+            <span class="mistake-title-icon">⚠️</span>
+            Improvising the night before a race
+          </div>
+          <div class="mistake-text">
+            A rookie mistake. There's a simple rule: <strong>nothing new on race day</strong>. No new clothes, no new shoes, no changes to your preparation or nutrition. I learned this the hard way—it was probably my worst race ever. Stomach cramps and heavy legs from the very start, all because I decided to "try something different" the night before.
+          </div>
+          <div class="lesson">
+            <span class="lesson-icon">✓</span>
+            <span class="lesson-text">Race day is not for experiments. Test everything during training. Stick to what works.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="page-footer">
+      <span>Fuel Like a Runner • Learning from mistakes</span>
+      <span class="page-number">Page {{pageNumber}}</span>
+    </div>
+  </div>
+</body>
+
+</html>

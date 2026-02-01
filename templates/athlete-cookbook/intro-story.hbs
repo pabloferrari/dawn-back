@@ -1,0 +1,228 @@
+<!-- templates/athlete-cookbook/intro-story.hbs -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;600;700;800&family=Merriweather:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+  <style>
+    @page {
+      size: A4;
+      margin: 0;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html, body {
+      height: 297mm;
+      width: 210mm;
+      font-family: {{customization.fontFamily}};
+      color: #333;
+      line-height: 1.6;
+      overflow: hidden;
+    }
+
+    .page {
+      height: 297mm;
+      width: 210mm;
+      display: flex;
+      flex-direction: column;
+      background: #FFFDF9;
+    }
+
+    /* Header accent */
+    .header-accent {
+      height: 8mm;
+      background: linear-gradient(90deg, {{customization.primaryColor}} 0%, #D84315 100%);
+    }
+
+    /* Content */
+    .content {
+      flex: 1;
+      padding: 12mm 18mm;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Title section */
+    .title-section {
+      margin-bottom: 8mm;
+    }
+
+    .subtitle {
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: {{customization.primaryColor}};
+      margin-bottom: 3mm;
+    }
+
+    .main-title {
+      font-size: 32px;
+      font-weight: 800;
+      color: #1a1a1a;
+      line-height: 1.2;
+    }
+
+    /* Story content */
+    .story {
+      flex: 1;
+      columns: 2;
+      column-gap: 8mm;
+      text-align: justify;
+    }
+
+    .story p {
+      font-family: 'Merriweather', Georgia, serif;
+      font-size: 11px;
+      line-height: 1.8;
+      margin-bottom: 4mm;
+      text-indent: 5mm;
+    }
+
+    .story p:first-of-type {
+      text-indent: 0;
+    }
+
+    .story p:first-of-type::first-letter {
+      font-size: 42px;
+      font-weight: 700;
+      float: left;
+      line-height: 1;
+      padding-right: 3mm;
+      padding-top: 2mm;
+      color: {{customization.primaryColor}};
+      font-family: {{customization.fontFamily}};
+    }
+
+    .emphasis {
+      font-style: italic;
+      color: #555;
+    }
+
+    .highlight {
+      background: linear-gradient(180deg, transparent 60%, #FFE0B2 60%);
+      padding: 0 1mm;
+    }
+
+    /* Pull quote */
+    .pull-quote {
+      break-inside: avoid;
+      background: linear-gradient(135deg, {{customization.primaryColor}}10 0%, {{customization.primaryColor}}05 100%);
+      border-left: 3px solid {{customization.primaryColor}};
+      padding: 4mm 5mm;
+      margin: 4mm 0;
+      font-family: {{customization.fontFamily}};
+      font-size: 12px;
+      font-weight: 600;
+      font-style: italic;
+      color: #333;
+      text-indent: 0 !important;
+    }
+
+    /* Closing */
+    .closing {
+      margin-top: 6mm;
+      padding-top: 4mm;
+      border-top: 1px solid #E0E0E0;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+
+    .signature {
+      font-family: 'Merriweather', Georgia, serif;
+      font-style: italic;
+      font-size: 12px;
+      color: #666;
+    }
+
+    .signature-name {
+      font-family: {{customization.fontFamily}};
+      font-weight: 700;
+      font-size: 14px;
+      color: #333;
+      font-style: normal;
+      margin-top: 2mm;
+    }
+
+    .logo {
+      height: 12mm;
+      opacity: 0.8;
+    }
+
+    /* Footer */
+    .page-footer {
+      padding: 4mm 18mm;
+      background: #F5F5F5;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 9px;
+      color: #888;
+    }
+
+    .page-number {
+      font-weight: 700;
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page">
+    <div class="header-accent"></div>
+
+    <div class="content">
+      <div class="title-section">
+        <div class="subtitle">My Story</div>
+        <h1 class="main-title">Why I Wrote This Book</h1>
+      </div>
+
+      <div class="story">
+        <p>I've always been overweight. For as long as I can remember. And I was never particularly good at sports—mediocre at best. But there was something I noticed early on: I had endurance. More than most people around me. That got me thinking that maybe running, a sport where you don't compete against others but against yourself, could be my thing.</p>
+
+        <p>It wasn't. I wasn't fast. But I was consistent. And that's how it started—first just as a way to "do something." Then I joined a running group at my gym, and things clicked. I started with 10K races, and while my training partners, all 4 to 8 years younger than me, would fade, I'd arrive at the halfway point with more left in the tank, allowing me to push harder at the end.</p>
+
+        <p>I kept going. Two or three times a week—intervals, hill repeats, recovery runs. Then came the 15Ks, and eventually, I signed up for my first half marathon. I did well. My personal benchmark became finishing under 2 hours. I thought it was nothing special, until I learned that time puts you above average among amateur runners. That motivated me even more.</p>
+
+        <div class="pull-quote">
+          "Everything I've found online is about elite athletes with privileged bodies competing for medals. All I wanted was to cross the finish line. To be a little better than my previous self."
+        </div>
+
+        <p>Then came the pandemic. A month before a race, everything stopped. I abandoned training completely. A year passed, several extra kilos accumulated, and when I returned, my times hovered around 1:50-1:55. I lost motivation.</p>
+
+        <p>So I went back to functional training at the gym, three times a week, just to "do something." Then motivation returned when I saw my city was hosting a half marathon with 25,000 participants. I signed up with no proper training—no long runs, no intervals. Just functional workouts. The result? I beat my personal best by two minutes: <span class="highlight">1:47</span>.</p>
+
+        <p>Something clicked. Suddenly I wanted to run a full marathon—something I'd never considered because I didn't think I was mentally prepared, and I expected to get bored running for 4 hours. But what I felt that day was different. I needed to take on the challenge.</p>
+
+        <p>I went all in: functional training plus running classes. It was going well, but I had no energy. Still overweight, I couldn't even raise my arms properly. That's when I found a sports nutritionist. Over three months, we tried everything. My body wasn't responding like other athletes he worked with. Trial and error, trial and error, until we found exactly what I needed: a plan adapted to my body, my tendency to gain weight, with just the right amount of fuel to not feel exhausted all the time.</p>
+
+        <p>It was a success. In the following months, I lost body fat and gained muscle. I was leaner, faster, stronger—mentally and physically. Everything improved.</p>
+
+        <p>That's why I wrote this book. I know the vast majority of amateur athletes are or have been like me. If sharing my experience and discoveries helps even a few of them, my work is more than justified. In the following pages, you'll find the plans I developed, the adjustments I made along the way, and the recipes that fuel my training. The main thing is that <span class="emphasis">each person must try and listen to their own body</span>.</p>
+      </div>
+
+      <div class="closing">
+        <div class="signature">
+          Here we go,
+          <div class="signature-name">— The Amateur Athlete</div>
+        </div>
+        <img src="{{images.banner}}" alt="Fuel Like a Runner" class="logo">
+      </div>
+    </div>
+
+    <div class="page-footer">
+      <span>Fuel Like a Runner</span>
+      <span class="page-number">Page {{pageNumber}}</span>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -60,6 +60,11 @@ interface RecipeData {
   servings?: number;
   // Personal touch - coach notes from personal experience
   coachNote?: string;
+  // New favorite system fields
+  tier?: 'favorite' | 'standard';
+  sortOrder?: number | null;
+  whyFavorite?: string | null;
+  prepComplexity?: 'simple' | 'moderate' | 'complex';
 }
 
 // Types for translations
@@ -122,29 +127,23 @@ export class AthleteCookbookService implements ProductGenerator {
   private loadData(): void {
     try {
       console.log(`[AthleteCookbook] Loading data from: ${this.dataPath}`);
-      // Load recipes - prefer enriched version if available
-      const enEnrichedPath = path.join(this.dataPath, 'fuel_like_a_runner-en-enriched.json');
-      const enPath = path.join(this.dataPath, 'fuel_like_a_runner-en.json');
-      const esEnrichedPath = path.join(this.dataPath, 'fuel_like_a_runner-es-enriched.json');
-      const esPath = path.join(this.dataPath, 'fuel_like_a_runner-es.json');
+      // Load recipes - use new updated files with favorites system
+      const enUpdatedPath = path.join(this.dataPath, 'en_updated.json');
+      const esUpdatedPath = path.join(this.dataPath, 'es.json');
       const translationsPath = path.join(this.dataPath, 'translations.json');
 
-      // English: use enriched if available, fallback to original
-      if (fs.existsSync(enEnrichedPath)) {
-        this.recipesEn = JSON.parse(fs.readFileSync(enEnrichedPath, 'utf8'));
-        console.log(`Loaded ${this.recipesEn.length} English recipes (enriched with nutrition data)`);
-      } else if (fs.existsSync(enPath)) {
-        this.recipesEn = JSON.parse(fs.readFileSync(enPath, 'utf8'));
-        console.log(`Loaded ${this.recipesEn.length} English recipes (basic)`);
+      // English: use updated file with favorites
+      if (fs.existsSync(enUpdatedPath)) {
+        this.recipesEn = JSON.parse(fs.readFileSync(enUpdatedPath, 'utf8'));
+        const favorites = this.recipesEn.filter(r => r.tier === 'favorite');
+        console.log(`Loaded ${this.recipesEn.length} English recipes (${favorites.length} favorites)`);
       }
 
-      // Spanish: use enriched if available, fallback to original
-      if (fs.existsSync(esEnrichedPath)) {
-        this.recipesEs = JSON.parse(fs.readFileSync(esEnrichedPath, 'utf8'));
-        console.log(`Loaded ${this.recipesEs.length} Spanish recipes (enriched with nutrition data)`);
-      } else if (fs.existsSync(esPath)) {
-        this.recipesEs = JSON.parse(fs.readFileSync(esPath, 'utf8'));
-        console.log(`Loaded ${this.recipesEs.length} Spanish recipes (basic)`);
+      // Spanish: use updated file with favorites
+      if (fs.existsSync(esUpdatedPath)) {
+        this.recipesEs = JSON.parse(fs.readFileSync(esUpdatedPath, 'utf8'));
+        const favorites = this.recipesEs.filter(r => r.tier === 'favorite');
+        console.log(`Loaded ${this.recipesEs.length} Spanish recipes (${favorites.length} favorites)`);
       }
 
       if (fs.existsSync(translationsPath)) {
@@ -193,6 +192,9 @@ export class AthleteCookbookService implements ProductGenerator {
     const logoBase64 = imageToBase64(path.join(assetsPath, 'fuel-like-a-runner-logo.png'));
     const bannerBase64 = imageToBase64(path.join(assetsPath, 'fuel-like-a-runner-banner.png'));
 
+    // Page counter for pagination
+    let currentPage = 1;
+
     const configWithAssets = {
       ...config,
       assetsPath,
@@ -205,7 +207,24 @@ export class AthleteCookbookService implements ProductGenerator {
     try {
       const pdfBuffers: Buffer[] = [];
 
-      // 1. Cover page
+      // Helper to add page with pagination
+      const addPage = async (template: string, data: Record<string, unknown> = {}) => {
+        const pageData = { ...configWithAssets, ...data, pageNumber: currentPage };
+        const buffer = await this.pdfGeneratorService.generatePage(
+          browser,
+          this.PRODUCT_TYPE,
+          template,
+          pageData,
+        );
+        pdfBuffers.push(buffer);
+        currentPage++;
+        return buffer;
+      };
+
+      const language = (config.language || 'en') as 'en' | 'es';
+      const isSpanish = language === 'es';
+
+      // 1. Cover page (no page number)
       console.log('Generating cover...');
       const coverBuffer = await this.pdfGeneratorService.generatePage(
         browser,
@@ -215,100 +234,97 @@ export class AthleteCookbookService implements ProductGenerator {
       );
       pdfBuffers.push(coverBuffer);
 
-      // 1b. Disclaimer page (always included for legal protection)
-      console.log('Generating disclaimer...');
-      const disclaimerBuffer = await this.pdfGeneratorService.generatePage(
-        browser,
-        this.PRODUCT_TYPE,
-        'disclaimer',
-        configWithAssets,
-      );
-      pdfBuffers.push(disclaimerBuffer);
+      // 2. My Story / Why I wrote this book
+      console.log('Generating intro story...');
+      await addPage('intro-story');
 
-      // 2. Introduction pages
+      // 3. Mistakes I Made
+      console.log('Generating mistakes page...');
+      await addPage('intro-mistakes');
+
+      // 4. Disclaimer page
+      console.log('Generating disclaimer...');
+      await addPage('disclaimer');
+
+      // 4. Introduction pages (Philosophy + How to Use)
       if (config.includeIntro) {
         console.log('Generating introduction...');
-
-        // Philosophy page - fresh ingredients focus
-        const philosophyBuffer = await this.pdfGeneratorService.generatePage(
-          browser,
-          this.PRODUCT_TYPE,
-          'intro-philosophy',
-          configWithAssets,
-        );
-        pdfBuffers.push(philosophyBuffer);
-
-        // How to use this book
-        const howToBuffer = await this.pdfGeneratorService.generatePage(
-          browser,
-          this.PRODUCT_TYPE,
-          'intro-how-to-use',
-          configWithAssets,
-        );
-        pdfBuffers.push(howToBuffer);
+        await addPage('intro-philosophy');
+        await addPage('intro-how-to-use');
       }
 
-      // 3. Nutrition guide
+      // 5. Nutrition guide (4 pages)
       if (config.includeNutritionGuide) {
         console.log('Generating nutrition guide...');
-        const nutritionBuffer = await this.pdfGeneratorService.generatePage(
-          browser,
-          this.PRODUCT_TYPE,
-          'nutrition-guide',
-          configWithAssets,
-        );
-        pdfBuffers.push(nutritionBuffer);
-
-        // 3b. Quick Reference Card
-        console.log('Generating quick reference card...');
-        const quickRefBuffer = await this.pdfGeneratorService.generatePage(
-          browser,
-          this.PRODUCT_TYPE,
-          'quick-reference',
-          configWithAssets,
-        );
-        pdfBuffers.push(quickRefBuffer);
-
-        // 3c. Troubleshooting Guide
-        console.log('Generating troubleshooting guide...');
-        const troubleshootingBuffer = await this.pdfGeneratorService.generatePage(
-          browser,
-          this.PRODUCT_TYPE,
-          'troubleshooting',
-          configWithAssets,
-        );
-        pdfBuffers.push(troubleshootingBuffer);
-
-        // 3d. Goals Guide - How to use this book by goal
-        console.log('Generating goals guide...');
-        const goalsGuideBuffer = await this.pdfGeneratorService.generatePage(
-          browser,
-          this.PRODUCT_TYPE,
-          'goals-guide',
-          configWithAssets,
-        );
-        pdfBuffers.push(goalsGuideBuffer);
+        await addPage('nutrition-guide');
+        await addPage('quick-reference');
+        await addPage('troubleshooting');
+        await addPage('goals-guide');
       }
 
-      // 4. Table of contents / Category index
-      console.log('Generating table of contents...');
-      const indexData = {
-        ...this.generateCategoryIndex(config),
-        assetsPath,
-      };
-      const indexBuffer = await this.pdfGeneratorService.generatePage(
-        browser,
-        this.PRODUCT_TYPE,
-        'category-index',
-        indexData,
-      );
-      pdfBuffers.push(indexBuffer);
+      // 6. MY FAVORITES - 4 pages with full recipe details (one per meal)
+      console.log('Generating favorites section (4 pages with full recipes)...');
+      const favorites = this.getFavoritesByMeal(language);
 
-      // 5. Recipe pages - 3 recipes per page, organized by category
+      const mealConfigs = [
+        {
+          id: 'breakfast',
+          name: isSpanish ? 'Desayuno' : 'Breakfast',
+          icon: '🌅',
+          color: '#FF8F00',
+          recipes: favorites.breakfast.slice(0, 3) // Max 3 per page
+        },
+        {
+          id: 'lunch',
+          name: isSpanish ? 'Almuerzo' : 'Lunch',
+          icon: '☀️',
+          color: '#43A047',
+          recipes: favorites.lunch.slice(0, 3)
+        },
+        {
+          id: 'snacks',
+          name: isSpanish ? 'Merienda' : 'Snacks',
+          icon: '🍎',
+          color: '#EF6C00',
+          recipes: favorites.snacks.slice(0, 3)
+        },
+        {
+          id: 'dinner',
+          name: isSpanish ? 'Cena' : 'Dinner',
+          icon: '🌙',
+          color: '#7E57C2',
+          recipes: favorites.dinner.slice(0, 3)
+        },
+      ];
+
+      for (let i = 0; i < mealConfigs.length; i++) {
+        const meal = mealConfigs[i];
+        if (meal.recipes.length > 0) {
+          await addPage('favorites-meal-page', {
+            meal,
+            isFirstFavoritesPage: i === 0,
+            favoritesPageIndex: i + 1,
+            totalFavoritesPages: mealConfigs.length,
+            section: {
+              title: isSpanish ? 'Mis Favoritos' : 'My Favorites',
+              intro: isSpanish
+                ? 'Las recetas que realmente uso. Representan el 90% de lo que como.'
+                : 'The recipes I actually use. They represent 90% of what I eat.',
+            }
+          });
+        }
+      }
+
+      // 7. Table of contents / Category index (for "Other Recipes")
+      console.log('Generating recipe index...');
+      const indexData = this.generateCategoryIndex(config);
+      await addPage('category-index', indexData);
+
+      // 6. Recipe pages - 3 recipes per page, organized by category
       console.log('Generating recipe pages...');
 
       // Get recipes organized by category
-      const recipesByCategory = this.getRecipesByCategory(config.language as 'en' | 'es');
+      const recipesByCategory = this.getRecipesByCategory(language);
       const categoryOrder = this.getCategoryOrder();
 
       // Flatten recipes in category order
@@ -325,59 +341,39 @@ export class AthleteCookbookService implements ProductGenerator {
         }
       }
 
-      console.log(`[Recipes] Total valid recipes: ${orderedRecipes.length}`);
+      // TESTING: Limit to 15 recipes for faster PDF generation
+      const TEST_RECIPE_LIMIT = 15;
+      const limitedRecipes = orderedRecipes.slice(0, TEST_RECIPE_LIMIT);
+      console.log(`[Recipes] Total valid recipes: ${orderedRecipes.length}, using ${limitedRecipes.length} for testing`);
 
       // Group recipes into chunks of 3
       const RECIPES_PER_PAGE = 3;
       const recipeChunks: RecipeData[][] = [];
-      for (let i = 0; i < orderedRecipes.length; i += RECIPES_PER_PAGE) {
-        recipeChunks.push(orderedRecipes.slice(i, i + RECIPES_PER_PAGE));
+      for (let i = 0; i < limitedRecipes.length; i += RECIPES_PER_PAGE) {
+        recipeChunks.push(limitedRecipes.slice(i, i + RECIPES_PER_PAGE));
       }
 
       console.log(`[Recipes] Generating ${recipeChunks.length} pages...`);
 
-      // Generate multi-recipe pages
+      // Generate multi-recipe pages with pagination
       for (const recipeGroup of recipeChunks) {
-        const pageData = {
-          ...configWithAssets,
-          recipes: recipeGroup,
-        };
-        const recipeBuffer = await this.pdfGeneratorService.generatePage(
-          browser,
-          this.PRODUCT_TYPE,
-          'recipe-page-multi',
-          pageData,
-        );
-        pdfBuffers.push(recipeBuffer);
+        await addPage('recipe-page-multi', { recipes: recipeGroup });
       }
 
-      // 6. Meal planner templates
+      // 7. Meal planner templates
       if (config.includeMealPlanner) {
         console.log('Generating meal planner...');
-        const plannerBuffer = await this.pdfGeneratorService.generatePage(
-          browser,
-          this.PRODUCT_TYPE,
-          'meal-planner',
-          configWithAssets,
-        );
-        pdfBuffers.push(plannerBuffer);
+        await addPage('meal-planner');
       }
 
-      // 7. Shopping list (if enabled)
+      // 8. Shopping list (if enabled)
       if (config.includeShoppingList) {
         console.log('Generating shopping list...');
-        const shoppingData = {
-          ...this.generateShoppingList(config),
-          assetsPath,
-        };
-        const shoppingBuffer = await this.pdfGeneratorService.generatePage(
-          browser,
-          this.PRODUCT_TYPE,
-          'shopping-list',
-          shoppingData,
-        );
-        pdfBuffers.push(shoppingBuffer);
+        const shoppingData = this.generateShoppingList(config);
+        await addPage('shopping-list', shoppingData);
       }
+
+      console.log(`[PDF] Total pages: ${currentPage - 1}`);
 
       // 8. Merge all PDFs
       console.log('Merging PDFs...');
@@ -477,10 +473,10 @@ export class AthleteCookbookService implements ProductGenerator {
 
     let totalRecipes = 0;
 
-    // Category display names for badges
+    // Category display names for badges (keep short to avoid line breaks)
     const categoryBadgeNames: Record<string, string> = {
       'pre-race': 'PRE-RACE',
-      'post-workout': 'POST-WORKOUT',
+      'post-workout': 'RECOVERY',
       'hydration': 'HYDRATION',
       'info': 'INFO',
     };
@@ -542,6 +538,61 @@ export class AthleteCookbookService implements ProductGenerator {
     );
   }
 
+  private generateFavoritesSection(config: AthleteCookbookConfig) {
+    const language = (config.language || 'en') as 'en' | 'es';
+    const favorites = this.getFavoritesByMeal(language);
+
+    const isSpanish = language === 'es';
+
+    const section = {
+      icon: '⭐',
+      title: isSpanish ? 'Mis Favoritos' : 'My Favorites',
+      intro: isSpanish
+        ? 'Estas son las recetas que realmente uso. Las roto durante la semana para no aburrirme, y representan el 90% de lo que como. Si no sabés por dónde empezar, empezá por acá.'
+        : 'These are the recipes I actually use. I rotate them throughout the week to keep things interesting, and they represent 90% of what I eat. If you don\'t know where to start, start here.',
+      footer: isSpanish
+        ? 'Cada receta incluye por qué me gusta y su nivel de complejidad'
+        : 'Each recipe includes why I like it and its complexity level',
+    };
+
+    const meals = [
+      {
+        id: 'breakfast',
+        name: isSpanish ? 'Desayuno' : 'Breakfast',
+        icon: '🌅',
+        recipes: favorites.breakfast,
+        emptyIcon: '🍳',
+        emptyText: isSpanish ? 'Próximamente...' : 'Coming soon...',
+      },
+      {
+        id: 'lunch',
+        name: isSpanish ? 'Almuerzo' : 'Lunch',
+        icon: '☀️',
+        recipes: favorites.lunch,
+        emptyIcon: '🥗',
+        emptyText: isSpanish ? 'Próximamente...' : 'Coming soon...',
+      },
+      {
+        id: 'snack',
+        name: isSpanish ? 'Merienda' : 'Snacks',
+        icon: '🍎',
+        recipes: favorites.snacks,
+        emptyIcon: '🥜',
+        emptyText: isSpanish ? 'Próximamente...' : 'Coming soon...',
+      },
+      {
+        id: 'dinner',
+        name: isSpanish ? 'Cena' : 'Dinner',
+        icon: '🌙',
+        recipes: favorites.dinner,
+        emptyIcon: '🍽️',
+        emptyText: isSpanish ? 'Próximamente...' : 'Coming soon...',
+      },
+    ];
+
+    return { section, meals };
+  }
+
   private generateShoppingList(config: AthleteCookbookConfig) {
     // Use pre-generated shopping list data from JSON files
     const language = config.language || 'en';
@@ -551,23 +602,128 @@ export class AthleteCookbookService implements ProductGenerator {
       // Fallback to empty list if data not loaded
       return {
         ...config,
-        shoppingItems: [],
+        shoppingCategories: [],
         totalItems: 0,
       };
     }
 
-    // Get top items (most frequently used across recipes)
-    // Limit to reasonable number for display (e.g., top 60 items)
-    const topItems = shoppingData.items
-      .slice(0, 60)
-      .map(item => ({
-        name: item.item.replace(/,\s*$/, '').trim(), // Clean trailing commas
+    // Category definitions with keywords for matching
+    const categoryDefs = [
+      {
+        id: 'vegetables',
+        name: language === 'es' ? 'Verduras' : 'Vegetables',
+        icon: '🥬',
+        keywords: ['onion', 'tomato', 'pepper', 'carrot', 'lettuce', 'spinach', 'broccoli', 'zucchini', 'cucumber', 'celery', 'garlic', 'mushroom', 'eggplant', 'cabbage', 'arugula', 'leek', 'asparagus', 'pumpkin', 'squash', 'radish', 'beet', 'potato', 'corn', 'pea', 'bean sprout', 'green onion', 'scallion', 'kale', 'chard', 'brussels'],
+      },
+      {
+        id: 'fruits',
+        name: language === 'es' ? 'Frutas' : 'Fruits',
+        icon: '🍎',
+        keywords: ['banana', 'apple', 'lemon', 'orange', 'berry', 'blueberry', 'strawberry', 'raspberry', 'cherry', 'mango', 'pear', 'peach', 'grape', 'melon', 'watermelon', 'pineapple', 'kiwi', 'mandarin', 'lime', 'fig', 'date', 'raisin', 'cranberry', 'avocado'],
+      },
+      {
+        id: 'proteins',
+        name: language === 'es' ? 'Proteínas' : 'Proteins',
+        icon: '🥩',
+        keywords: ['chicken', 'beef', 'fish', 'tuna', 'salmon', 'egg', 'turkey', 'pork', 'shrimp', 'meat', 'fillet', 'breast', 'thigh'],
+      },
+      {
+        id: 'dairy',
+        name: language === 'es' ? 'Lácteos' : 'Dairy',
+        icon: '🧀',
+        keywords: ['cheese', 'milk', 'yogurt', 'cream', 'butter', 'ricotta', 'mozzarella', 'parmesan', 'feta', 'cottage', 'sour cream', 'whey'],
+      },
+      {
+        id: 'grains',
+        name: language === 'es' ? 'Granos y Cereales' : 'Grains & Cereals',
+        icon: '🌾',
+        keywords: ['oat', 'rice', 'quinoa', 'pasta', 'bread', 'flour', 'wheat', 'barley', 'corn', 'tortilla', 'noodle', 'couscous', 'cereal', 'granola', 'cornmeal'],
+      },
+      {
+        id: 'legumes',
+        name: language === 'es' ? 'Legumbres' : 'Legumes',
+        icon: '🫘',
+        keywords: ['chickpea', 'lentil', 'bean', 'black bean', 'kidney', 'pinto', 'white bean', 'soy', 'tofu', 'tempeh', 'seitan', 'edamame', 'hummus'],
+      },
+      {
+        id: 'nuts',
+        name: language === 'es' ? 'Frutos Secos' : 'Nuts & Seeds',
+        icon: '🥜',
+        keywords: ['almond', 'walnut', 'cashew', 'peanut', 'hazelnut', 'pistachio', 'pecan', 'nut', 'seed', 'sunflower', 'pumpkin seed', 'chia', 'flax', 'sesame', 'coconut'],
+      },
+      {
+        id: 'pantry',
+        name: language === 'es' ? 'Despensa' : 'Pantry Staples',
+        icon: '🏪',
+        keywords: ['oil', 'olive', 'vinegar', 'salt', 'pepper', 'sugar', 'honey', 'maple', 'vanilla', 'cinnamon', 'spice', 'seasoning', 'sauce', 'soy sauce', 'broth', 'stock', 'baking', 'cocoa', 'chocolate', 'yeast', 'powder'],
+      },
+    ];
+
+    // Get top items and categorize them
+    const topItems = shoppingData.items.slice(0, 70);
+    
+    // Categorize items
+    const categorizedItems: Record<string, Array<{ name: string; recipeCount: number }>> = {};
+    
+    for (const item of topItems) {
+      const cleanName = item.item.replace(/,\s*$/, '').trim().toLowerCase();
+      let assignedCategory = 'pantry'; // default
+      
+      for (const cat of categoryDefs) {
+        if (cat.keywords.some(keyword => cleanName.includes(keyword))) {
+          assignedCategory = cat.id;
+          break;
+        }
+      }
+      
+      if (!categorizedItems[assignedCategory]) {
+        categorizedItems[assignedCategory] = [];
+      }
+      
+      categorizedItems[assignedCategory].push({
+        name: item.item.replace(/,\s*$/, '').trim(),
         recipeCount: item.recipe_count,
-      }));
+      });
+    }
+
+    // Minimum items to have its own category
+    const MIN_ITEMS_FOR_CATEGORY = 4;
+
+    // Build final categories - separate large from small
+    const mainCategories: Array<{ id: string; name: string; icon: string; items: Array<{ name: string; recipeCount: number }> }> = [];
+    const otherItems: Array<{ name: string; recipeCount: number; categoryIcon: string }> = [];
+
+    for (const cat of categoryDefs) {
+      const items = categorizedItems[cat.id];
+      if (!items || items.length === 0) continue;
+
+      if (items.length >= MIN_ITEMS_FOR_CATEGORY) {
+        // Large enough for its own category
+        mainCategories.push({
+          id: cat.id,
+          name: cat.name,
+          icon: cat.icon,
+          items: items,
+        });
+      } else {
+        // Add to "Other Essentials" with category icon as badge
+        for (const item of items) {
+          otherItems.push({
+            ...item,
+            categoryIcon: cat.icon,
+          });
+        }
+      }
+    }
+
+    // Sort other items by recipe count
+    otherItems.sort((a, b) => b.recipeCount - a.recipeCount);
 
     return {
       ...config,
-      shoppingItems: topItems,
+      shoppingCategories: mainCategories,
+      otherEssentials: otherItems,
+      hasOtherEssentials: otherItems.length > 0,
       totalItems: shoppingData.total_items,
     };
   }
@@ -602,6 +758,38 @@ export class AthleteCookbookService implements ProductGenerator {
       'hydration',
       'base',
     ];
+  }
+
+  // Get favorite recipes organized by meal type
+  getFavoritesByMeal(language: 'en' | 'es' = 'en'): {
+    breakfast: RecipeData[];
+    lunch: RecipeData[];
+    snacks: RecipeData[];
+    dinner: RecipeData[];
+  } {
+    const recipes = language === 'es' ? this.recipesEs : this.recipesEn;
+    const favorites = recipes.filter(r => r.tier === 'favorite');
+
+    // Sort by sortOrder (nulls/undefined last)
+    const sorted = favorites.sort((a, b) => {
+      if (a.sortOrder == null && b.sortOrder == null) return 0;
+      if (a.sortOrder == null) return 1;
+      if (b.sortOrder == null) return -1;
+      return a.sortOrder - b.sortOrder;
+    });
+
+    return {
+      breakfast: sorted.filter(r => r.category === 'breakfast' || r.category === 'base'),
+      lunch: sorted.filter(r => r.category === 'lunch'),
+      snacks: sorted.filter(r => r.category === 'snacks' || r.category === 'energy-bars'),
+      dinner: sorted.filter(r => r.category === 'dinner'),
+    };
+  }
+
+  // Get non-favorite recipes (for "When I'm Inspired" section)
+  getStandardRecipes(language: 'en' | 'es' = 'en'): RecipeData[] {
+    const recipes = language === 'es' ? this.recipesEs : this.recipesEn;
+    return recipes.filter(r => r.tier !== 'favorite' && r.ingredients && r.ingredients.length > 0);
   }
 
   // Get recipes organized by training phase

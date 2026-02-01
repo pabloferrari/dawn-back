@@ -1,0 +1,355 @@
+<!-- templates/athlete-cookbook/favorites-page-2.hbs - Snacks & Dinner -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    @page {
+      size: A4;
+      margin: 0;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html, body {
+      height: 297mm;
+      width: 210mm;
+      font-family: {{customization.fontFamily}};
+      color: #333;
+      line-height: 1.4;
+      overflow: hidden;
+    }
+
+    .page {
+      height: 297mm;
+      width: 210mm;
+      display: flex;
+      flex-direction: column;
+      background: linear-gradient(180deg, #FFFFFF 0%, #FAFAFA 100%);
+    }
+
+    /* Header */
+    .page-header {
+      padding: 10mm 15mm;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 2px solid {{customization.primaryColor}};
+    }
+
+    .header-title {
+      display: flex;
+      align-items: center;
+      gap: 3mm;
+    }
+
+    .header-icon {
+      font-size: 20px;
+    }
+
+    .header-text {
+      font-size: 18px;
+      font-weight: 800;
+      color: {{customization.primaryColor}};
+    }
+
+    .header-logo {
+      height: 10mm;
+      opacity: 0.8;
+    }
+
+    /* Content area */
+    .content {
+      flex: 1;
+      padding: 10mm 15mm;
+      display: flex;
+      flex-direction: column;
+      gap: 10mm;
+    }
+
+    /* Meal section */
+    .meal-section {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .meal-header {
+      display: flex;
+      align-items: center;
+      gap: 4mm;
+      margin-bottom: 6mm;
+      padding-bottom: 3mm;
+      border-bottom: 2px solid currentColor;
+    }
+
+    .meal-icon {
+      font-size: 28px;
+    }
+
+    .meal-title {
+      font-size: 18px;
+      font-weight: 800;
+    }
+
+    .meal-count {
+      margin-left: auto;
+      font-size: 10px;
+      background: rgba(0,0,0,0.05);
+      padding: 2mm 4mm;
+      border-radius: 12px;
+      color: #666;
+    }
+
+    .meal-section[data-meal="snack"] .meal-header {
+      color: #D84315;
+      border-color: #FFAB91;
+    }
+
+    .meal-section[data-meal="dinner"] .meal-header {
+      color: #4527A0;
+      border-color: #B39DDB;
+    }
+
+    /* Recipe cards grid */
+    .recipes-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 4mm;
+      flex: 1;
+    }
+
+    /* Recipe card */
+    .recipe-card {
+      background: white;
+      border-radius: 10px;
+      padding: 5mm;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+      border: 1px solid #F0F0F0;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .recipe-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+    }
+
+    .meal-section[data-meal="snack"] .recipe-card::before {
+      background: linear-gradient(90deg, #EF6C00 0%, #FF9800 100%);
+    }
+
+    .meal-section[data-meal="dinner"] .recipe-card::before {
+      background: linear-gradient(90deg, #7E57C2 0%, #9575CD 100%);
+    }
+
+    .recipe-title {
+      font-size: 11px;
+      font-weight: 700;
+      color: #333;
+      margin-bottom: 3mm;
+      line-height: 1.3;
+    }
+
+    .recipe-why {
+      font-size: 9px;
+      color: #666;
+      line-height: 1.6;
+      flex: 1;
+    }
+
+    .recipe-meta {
+      display: flex;
+      align-items: center;
+      gap: 2mm;
+      margin-top: 3mm;
+      padding-top: 3mm;
+      border-top: 1px dashed #EEE;
+    }
+
+    .complexity-badge {
+      font-size: 8px;
+      font-weight: 700;
+      padding: 1.5mm 3mm;
+      border-radius: 4px;
+      text-transform: uppercase;
+    }
+
+    .complexity-simple {
+      background: #E8F5E9;
+      color: #2E7D32;
+    }
+
+    .complexity-moderate {
+      background: #FFF3E0;
+      color: #E65100;
+    }
+
+    .complexity-complex {
+      background: #FCE4EC;
+      color: #C2185B;
+    }
+
+    /* Empty state */
+    .recipe-card.empty {
+      background: #FAFAFA;
+      border: 2px dashed #E0E0E0;
+      box-shadow: none;
+      align-items: center;
+      justify-content: center;
+      color: #BBB;
+      min-height: 25mm;
+    }
+
+    .recipe-card.empty::before {
+      display: none;
+    }
+
+    .empty-icon {
+      font-size: 24px;
+      margin-bottom: 2mm;
+      opacity: 0.5;
+    }
+
+    .empty-text {
+      font-size: 9px;
+    }
+
+    /* Footer */
+    .page-footer {
+      padding: 4mm 15mm;
+      background: #FAFAFA;
+      border-top: 1px solid #EEE;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .footer-cta {
+      font-size: 10px;
+      color: #666;
+    }
+
+    .footer-cta strong {
+      color: {{customization.primaryColor}};
+    }
+
+    .footer-page {
+      font-size: 9px;
+      color: #999;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page">
+    <!-- Header -->
+    <div class="page-header">
+      <div class="header-title">
+        <span class="header-icon">⭐</span>
+        <span class="header-text">{{section.title}}</span>
+      </div>
+      <img src="{{images.banner}}" alt="Fuel Like a Runner" class="header-logo">
+    </div>
+
+    <!-- Content -->
+    <div class="content">
+      <!-- Snacks Section -->
+      {{#each meals}}
+      {{#if (eq this.id "snack")}}
+      <div class="meal-section" data-meal="snack">
+        <div class="meal-header">
+          <span class="meal-icon">{{this.icon}}</span>
+          <span class="meal-title">{{this.name}}</span>
+          {{#if this.recipes.length}}
+          <span class="meal-count">{{this.recipes.length}} favorites</span>
+          {{/if}}
+        </div>
+
+        <div class="recipes-grid">
+          {{#if this.recipes.length}}
+            {{#each this.recipes}}
+            <div class="recipe-card">
+              <div class="recipe-title">{{this.title}}</div>
+              {{#if this.whyFavorite}}
+              <div class="recipe-why">{{this.whyFavorite}}</div>
+              {{/if}}
+              {{#if this.prepComplexity}}
+              <div class="recipe-meta">
+                <span class="complexity-badge complexity-{{this.prepComplexity}}">{{this.prepComplexity}}</span>
+              </div>
+              {{/if}}
+            </div>
+            {{/each}}
+          {{else}}
+          <div class="recipe-card empty">
+            <span class="empty-icon">{{this.emptyIcon}}</span>
+            <span class="empty-text">{{this.emptyText}}</span>
+          </div>
+          {{/if}}
+        </div>
+      </div>
+      {{/if}}
+      {{/each}}
+
+      <!-- Dinner Section -->
+      {{#each meals}}
+      {{#if (eq this.id "dinner")}}
+      <div class="meal-section" data-meal="dinner">
+        <div class="meal-header">
+          <span class="meal-icon">{{this.icon}}</span>
+          <span class="meal-title">{{this.name}}</span>
+          {{#if this.recipes.length}}
+          <span class="meal-count">{{this.recipes.length}} favorites</span>
+          {{/if}}
+        </div>
+
+        <div class="recipes-grid">
+          {{#if this.recipes.length}}
+            {{#each this.recipes}}
+            <div class="recipe-card">
+              <div class="recipe-title">{{this.title}}</div>
+              {{#if this.whyFavorite}}
+              <div class="recipe-why">{{this.whyFavorite}}</div>
+              {{/if}}
+              {{#if this.prepComplexity}}
+              <div class="recipe-meta">
+                <span class="complexity-badge complexity-{{this.prepComplexity}}">{{this.prepComplexity}}</span>
+              </div>
+              {{/if}}
+            </div>
+            {{/each}}
+          {{else}}
+          <div class="recipe-card empty">
+            <span class="empty-icon">{{this.emptyIcon}}</span>
+            <span class="empty-text">{{this.emptyText}}</span>
+          </div>
+          {{/if}}
+        </div>
+      </div>
+      {{/if}}
+      {{/each}}
+    </div>
+
+    <!-- Footer -->
+    <div class="page-footer">
+      <span class="footer-cta"><strong>→</strong> Find the full recipes in the following pages</span>
+      <span class="footer-page">2/2</span>
+    </div>
+  </div>
+</body>
+
+</html>

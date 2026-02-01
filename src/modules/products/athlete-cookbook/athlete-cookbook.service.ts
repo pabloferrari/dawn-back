@@ -661,25 +661,25 @@ export class AthleteCookbookService implements ProductGenerator {
 
     // Get top items and categorize them
     const topItems = shoppingData.items.slice(0, 70);
-    
+
     // Categorize items
     const categorizedItems: Record<string, Array<{ name: string; recipeCount: number }>> = {};
-    
+
     for (const item of topItems) {
       const cleanName = item.item.replace(/,\s*$/, '').trim().toLowerCase();
       let assignedCategory = 'pantry'; // default
-      
+
       for (const cat of categoryDefs) {
         if (cat.keywords.some(keyword => cleanName.includes(keyword))) {
           assignedCategory = cat.id;
           break;
         }
       }
-      
+
       if (!categorizedItems[assignedCategory]) {
         categorizedItems[assignedCategory] = [];
       }
-      
+
       categorizedItems[assignedCategory].push({
         name: item.item.replace(/,\s*$/, '').trim(),
         recipeCount: item.recipe_count,
